@@ -1,0 +1,1346 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>mapdata &#8212; ZQuest Classic  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/classes/mapdata';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="messagedata" href="messagedata.html" />
+    <link rel="prev" title="lweapon" href="lweapon.html" />
+    <link href="../../_static/main.css" rel="stylesheet" type="text/css">
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/ZC_Logo.png" class="logo__image only-light" alt="ZQuest Classic  documentation - Home"/>
+    <img src="../../_static/ZC_Logo.png" class="logo__image only-dark pst-js-only" alt="ZQuest Classic  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../about/introduction.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../about/introduction.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Audio.html">Audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Debug.html">Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/FileSystem.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Game.html">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Graphics.html">Graphics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Text.html">Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/ZInfo.html">ZInfo</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="bitmap.html">bitmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bottledata.html">bottledata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bottleshopdata.html">bottleshopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="combodata.html">combodata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="directory.html">directory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dmapdata.html">dmapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dropsetdata.html">dropsetdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eweapon.html">eweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ffc.html">ffc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file.html">file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genericdata.html">genericdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="itemdata.html">itemdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="itemsprite.html">itemsprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lweapon.html">lweapon</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">mapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="messagedata.html">messagedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="npc.html">npc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="npcdata.html">npcdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paldata.html">paldata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="player.html">player</a></li>
+<li class="toctree-l1"><a class="reference internal" href="portal.html">portal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="randgen.html">randgen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="savedportal.html">savedportal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="screendata.html">screendata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shopdata.html">shopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sprite.html">sprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spritedata.html">spritedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stack.html">stack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subscreendata.html">subscreendata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subscreenpage.html">subscreenpage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subscreenwidget.html">subscreenwidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="websocket.html">websocket</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/limits.html">limits.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/script_runners.html">script_runners.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_constants.html">std_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_extension.html">std_extension.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_functions.html">std_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_keyboard.html">std_keyboard.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/string_constants.html">string_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/string_functions.html">string_functions.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ghost/index.html">ghost</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost.html">ghost.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_common.html">ghost2_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_deprecated.html">ghost2_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_drawing.html">ghost2_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweapon.html">ghost2_eweapon.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweaponDeath.html">ghost2_eweaponDeath.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweaponMovement.html">ghost2_eweaponMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_flags.html">ghost2_flags.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_global.html">ghost2_global.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_init.html">ghost2_init.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_modification.html">ghost2_modification.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_movement.html">ghost2_movement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_other.html">ghost2_other.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_scripts.html">ghost2_scripts.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_update.html">ghost2_update.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/tango/index.html">tango</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango.html">tango.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_access.html">tango_access.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_common.html">tango_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_deprecated.html">tango_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_drawing.html">tango_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_font.html">tango_font.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_functions.html">tango_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_loading.html">tango_loading.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_loggingMinimal.html">tango_loggingMinimal.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_menu.html">tango_menu.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_messages.html">tango_messages.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_metrics.html">tango_metrics.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_processing.html">tango_processing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_script.html">tango_script.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_stringControlCode.html">tango_stringControlCode.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_style.html">tango_style.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_user.html">tango_user.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_validation.html">tango_validation.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/gui/index.html">gui</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/gui.html">gui.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_button.html">guizh_button.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_checkbox.html">guizh_checkbox.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_common.html">guizh_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_event.html">guizh_event.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_label.html">guizh_label.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_main.html">guizh_main.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_radioButton.html">guizh_radioButton.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_root.html">guizh_root.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_spinner.html">guizh_spinner.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_types.html">guizh_types.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_widget.html">guizh_widget.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ffcscript/ffcscript.html">ffcscript.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">ZScript</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">mapdata</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="mapdata">
+<span id="classes-mapdata"></span><h1>mapdata<a class="headerlink" href="#mapdata" title="Link to this heading">#</a></h1>
+<section id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-valid"><span class="std std-ref">Valid</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-guy"><span class="std std-ref">Guy</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-string"><span class="std std-ref">String</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-roomtype"><span class="std std-ref">RoomType</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-item"><span class="std std-ref">Item</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-tilewarptype"><span class="std std-ref">TileWarpType</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-script"><span class="std std-ref">Script</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-initd"><span class="std std-ref">InitD</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-tilewarpoverlay"><span class="std std-ref">TileWarpOverlay</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-doorcomboset"><span class="std std-ref">DoorComboSet</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-warpreturnx"><span class="std std-ref">WarpReturnX</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-warpreturny"><span class="std std-ref">WarpReturnY</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-stairsx"><span class="std std-ref">StairsX</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-stairsy"><span class="std std-ref">StairsY</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-itemx"><span class="std std-ref">ItemX</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-itemy"><span class="std std-ref">ItemY</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-palette"><span class="std std-ref">Palette</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-door"><span class="std std-ref">Door</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-tilewarpdmap"><span class="std std-ref">TileWarpDMap</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-tilewarpscreen"><span class="std std-ref">TileWarpScreen</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-exitdir"><span class="std std-ref">ExitDir</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-enemy"><span class="std std-ref">Enemy</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-pattern"><span class="std std-ref">Pattern</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-sidewarptype"><span class="std std-ref">SideWarpType</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-sidewarpoverlay"><span class="std std-ref">SideWarpOverlay</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-warparrivalx"><span class="std std-ref">WarpArrivalX</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-warparrivaly"><span class="std std-ref">WarpArrivalY</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-mazepath"><span class="std std-ref">MazePath</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-sidewarpscreen"><span class="std std-ref">SideWarpScreen</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-sidewarpid"><span class="std std-ref">SideWarpID</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-tilewarpreturnsquare"><span class="std std-ref">TileWarpReturnSquare</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-sidewarpreturnsquare"><span class="std std-ref">SideWarpReturnSquare</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-sidewarpdmap"><span class="std std-ref">SideWarpDMap</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-undercombo"><span class="std std-ref">UnderCombo</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-undercset"><span class="std std-ref">UnderCSet</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-catchall"><span class="std std-ref">Catchall</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-csensitive"><span class="std std-ref">CSensitive</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-noreset"><span class="std std-ref">NoReset</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-nocarry"><span class="std std-ref">NoCarry</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-layermap"><span class="std std-ref">LayerMap</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-layerscreen"><span class="std std-ref">LayerScreen</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-layeropacity"><span class="std std-ref">LayerOpacity</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-layerinvisible"><span class="std std-ref">LayerInvisible</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-scriptdraws"><span class="std std-ref">ScriptDraws</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-timedwarptimer"><span class="std std-ref">TimedWarpTimer</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-nextmap"><span class="std std-ref">NextMap</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-nextscreen"><span class="std std-ref">NextScreen</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-secretcombo"><span class="std std-ref">SecretCombo</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-secretcset"><span class="std std-ref">SecretCSet</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-secretflags"><span class="std std-ref">SecretFlags</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ffcdata"><span class="std std-ref">FFCData</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ffccset"><span class="std std-ref">FFCCSet</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ffcdelay"><span class="std std-ref">FFCDelay</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ffcx"><span class="std std-ref">FFCX</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ffcy"><span class="std std-ref">FFCY</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ffcvx"><span class="std std-ref">FFCVx</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ffcvy"><span class="std std-ref">FFCVy</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ffcax"><span class="std std-ref">FFCAx</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ffcay"><span class="std std-ref">FFCAy</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ffcflags"><span class="std std-ref">FFCFlags</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ffceffectwidth"><span class="std std-ref">FFCEffectWidth</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ffceffectheight"><span class="std std-ref">FFCEffectHeight</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ffctilewidth"><span class="std std-ref">FFCTileWidth</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ffctileheight"><span class="std std-ref">FFCTileHeight</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ffclink"><span class="std std-ref">FFCLink</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ffcscript"><span class="std std-ref">FFCScript</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ambientsfx"><span class="std std-ref">AmbientSFX</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-bosssfx"><span class="std std-ref">BossSFX</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-secretsfx"><span class="std std-ref">SecretSFX</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-itemsfx"><span class="std std-ref">ItemSFX</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-midi"><span class="std std-ref">MIDI</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-flags"><span class="std std-ref">Flags</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-combod"><span class="std std-ref">ComboD</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-comboc"><span class="std std-ref">ComboC</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-combof"><span class="std std-ref">ComboF</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-comboi"><span class="std std-ref">ComboI</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-combot"><span class="std std-ref">ComboT</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-combos"><span class="std std-ref">ComboS</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-comboe"><span class="std std-ref">ComboE</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-state"><span class="std std-ref">State</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-exstate"><span class="std std-ref">ExState</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-eflags"><span class="std std-ref">EFlags</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-map"><span class="std std-ref">Map</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-screen"><span class="std std-ref">Screen</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-lensshows"><span class="std std-ref">LensShows</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-lenshides"><span class="std std-ref">LensHides</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-datasize"><span class="std std-ref">DataSize</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-data"><span class="std std-ref">Data</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-guycount"><span class="std std-ref">GuyCount</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-ffcrunning"><span class="std std-ref">FFCRunning</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-oceansfx"><span class="std std-ref">OceanSFX</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-cset"><span class="std std-ref">CSet</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-carryovermap"><span class="std std-ref">CarryoverMap</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-carryoverscreen"><span class="std std-ref">CarryoverScreen</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-d"><span class="std std-ref">D</span></a> <strong>deprecated</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-hasitem"><span class="std std-ref">HasItem</span></a> <strong>deprecated</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-sflags"><span class="std std-ref">SFlags</span></a> <strong>deprecated</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-warpreturnc"><span class="std std-ref">WarpReturnC</span></a> <strong>deprecated</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-enemyflags"><span class="std std-ref">EnemyFlags</span></a> <strong>deprecated</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-sidewarpindex"><span class="std std-ref">SideWarpIndex</span></a> <strong>deprecated</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-entryx"><span class="std std-ref">EntryX</span></a> <strong>deprecated</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-entryy"><span class="std std-ref">EntryY</span></a> <strong>deprecated</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-numffcs"><span class="std std-ref">NumFFCs</span></a> <strong>deprecated</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-var-lenslayer"><span class="std std-ref">LensLayer</span></a> <strong>deprecated</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-fun-issolid"><span class="std std-ref">isSolid</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y)</p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-fun-issolidlayer"><span class="std std-ref">isSolidLayer</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-fun-getffcinitd"><span class="std std-ref">GetFFCInitD</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ffc_index, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-fun-setffcinitd"><span class="std std-ref">SetFFCInitD</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ffc_index, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n, <abbr title="Could be any type.">untyped</abbr> value)</p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-fun-getexdoor"><span class="std std-ref">GetExDoor</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-fun-setexdoor"><span class="std std-ref">SetExDoor</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index, bool state)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-fun-getffcinita"><span class="std std-ref">GetFFCInitA</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ffc_index, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-mapdata-fun-setffcinita"><span class="std std-ref">SetFFCInitA</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ffc_index, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> init_a, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> value)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="variable-descriptions">
+<h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
+<p id="classes-mapdata-var-valid"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Valid</strong>  <a class="reference internal" href="#classes-mapdata-var-valid"><span class="std std-ref">🔗</span></a></p>
+<p>Returns true if the screen is ‘valid’. Screens that appear with the
+default blue background in ZQuest are ‘invalid’. Modifying a combo on a
+screen makes it become ‘valid’. If a layer is ‘invalid’, it will not be
+drawn.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-guy"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Guy</strong>  <a class="reference internal" href="#classes-mapdata-var-guy"><span class="std std-ref">🔗</span></a></p>
+<p>The screen guy.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-string"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>String</strong>  <a class="reference internal" href="#classes-mapdata-var-string"><span class="std std-ref">🔗</span></a></p>
+<p>The screen string.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-roomtype"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RoomType</strong>  <a class="reference internal" href="#classes-mapdata-var-roomtype"><span class="std std-ref">🔗</span></a></p>
+<p>The screen room type. Use the <cite>RT_</cite> constants for this value.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-item"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Item</strong>  <a class="reference internal" href="#classes-mapdata-var-item"><span class="std std-ref">🔗</span></a></p>
+<p>The item placed on the screen. -1 if no item placed.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-tilewarptype"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TileWarpType</strong>  <a class="reference internal" href="#classes-mapdata-var-tilewarptype"><span class="std std-ref">🔗</span></a></p>
+<p>The Tile Warp type for Tile Warps A, B, C, and D; 0, 1, 2, and 3
+respectively.</p>
+<p>Valid values: <a class="reference internal" href="../global_constants.html#globals-enum-warptype"><span class="std std-ref">WarpType</span></a> (<cite>WT_</cite>).</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-script"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Script</strong>  <a class="reference internal" href="#classes-mapdata-var-script"><span class="std std-ref">🔗</span></a></p>
+<p>The screen script that runs on this screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-initd"><abbr title="Could be any type.">untyped</abbr> <strong>InitD</strong>  <a class="reference internal" href="#classes-mapdata-var-initd"><span class="std std-ref">🔗</span></a></p>
+<p>The 8 script arguments for the script that runs on this screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-tilewarpoverlay">bool[] <strong>TileWarpOverlay</strong>  <a class="reference internal" href="#classes-mapdata-var-tilewarpoverlay"><span class="std std-ref">🔗</span></a></p>
+<p>Set or get the overlay state for the warp ID corresponding to the index
+of this array.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-doorcomboset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DoorComboSet</strong>  <a class="reference internal" href="#classes-mapdata-var-doorcomboset"><span class="std std-ref">🔗</span></a></p>
+<p>The Door Set used for the NES dungeon doors on this screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-warpreturnx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WarpReturnX</strong>  <a class="reference internal" href="#classes-mapdata-var-warpreturnx"><span class="std std-ref">🔗</span></a></p>
+<p>The X-component for each of the four 2.50+ (blue) warp return squares.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-warpreturny"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WarpReturnY</strong>  <a class="reference internal" href="#classes-mapdata-var-warpreturny"><span class="std std-ref">🔗</span></a></p>
+<p>The Y-component for each of the four 2.50+ (blue) warp return squares.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-stairsx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>StairsX</strong>  <a class="reference internal" href="#classes-mapdata-var-stairsx"><span class="std std-ref">🔗</span></a></p>
+<p>The X/Y position of the ‘Stairs’ secret on the screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-stairsy"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>StairsY</strong>  <a class="reference internal" href="#classes-mapdata-var-stairsy"><span class="std std-ref">🔗</span></a></p>
+<p>The X/Y position of the ‘Stairs’ secret on the screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-itemx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ItemX</strong>  <a class="reference internal" href="#classes-mapdata-var-itemx"><span class="std std-ref">🔗</span></a></p>
+<p>The X/Y position the screen’s item spawns at.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-itemy"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ItemY</strong>  <a class="reference internal" href="#classes-mapdata-var-itemy"><span class="std std-ref">🔗</span></a></p>
+<p>The X/Y position the screen’s item spawns at.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-palette"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Palette</strong>  <a class="reference internal" href="#classes-mapdata-var-palette"><span class="std std-ref">🔗</span></a></p>
+<p>The palette set in the F4 menu in ZQuest for this screen. Has no effect
+during play, but can be read and written.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-door"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Door</strong>  <a class="reference internal" href="#classes-mapdata-var-door"><span class="std std-ref">🔗</span></a></p>
+<p>The 4 door states of the screen.</p>
+<p>Valid indices: DIR_UP, DIR_DOWN, DIR_LEFT, DIR_RIGHT</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-tilewarpdmap"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TileWarpDMap</strong>  <a class="reference internal" href="#classes-mapdata-var-tilewarpdmap"><span class="std std-ref">🔗</span></a></p>
+<p>The destination DMap for each of the four warp types.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-tilewarpscreen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TileWarpScreen</strong>  <a class="reference internal" href="#classes-mapdata-var-tilewarpscreen"><span class="std std-ref">🔗</span></a></p>
+<p>The destination screen for each of the four warp types.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-exitdir"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ExitDir</strong>  <a class="reference internal" href="#classes-mapdata-var-exitdir"><span class="std std-ref">🔗</span></a></p>
+<p>The Maze Path ‘Exit Direction’.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-enemy"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Enemy</strong>  <a class="reference internal" href="#classes-mapdata-var-enemy"><span class="std std-ref">🔗</span></a></p>
+<p>The 10 enemies that appear on this screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-pattern"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Pattern</strong>  <a class="reference internal" href="#classes-mapdata-var-pattern"><span class="std std-ref">🔗</span></a></p>
+<p>The spawn pattern for the screen enemies.</p>
+<p>Valid values: <a class="reference internal" href="../global_constants.html#globals-enum-enemypattern"><span class="std std-ref">EnemyPattern</span></a> (<cite>PATTERN_</cite>).</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-sidewarptype"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SideWarpType</strong>  <a class="reference internal" href="#classes-mapdata-var-sidewarptype"><span class="std std-ref">🔗</span></a></p>
+<p>The Sidewarp type for Sidewarps A, B, C, and D; 0, 1, 2, and 3
+respectively.</p>
+<p>Valid values: <a class="reference internal" href="../global_constants.html#globals-enum-warptype"><span class="std std-ref">WarpType</span></a> (<cite>WT_</cite>).</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-sidewarpoverlay"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SideWarpOverlay</strong>  <a class="reference internal" href="#classes-mapdata-var-sidewarpoverlay"><span class="std std-ref">🔗</span></a></p>
+<p>Set or get the overlay state for the warp ID corresponding to the index
+of this array.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-warparrivalx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WarpArrivalX</strong>  <a class="reference internal" href="#classes-mapdata-var-warparrivalx"><span class="std std-ref">🔗</span></a></p>
+<p>The X-component for the pre-2.50 (green) arrival square.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-warparrivaly"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WarpArrivalY</strong>  <a class="reference internal" href="#classes-mapdata-var-warparrivaly"><span class="std std-ref">🔗</span></a></p>
+<p>The X-component for the pre-2.50 (green) arrival square.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-mazepath"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MazePath</strong>  <a class="reference internal" href="#classes-mapdata-var-mazepath"><span class="std std-ref">🔗</span></a></p>
+<p>The four directions you must go for the maze path.</p>
+<p>Valid indices: DIR_UP, DIR_DOWN, DIR_LEFT, DIR_RIGHT</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-sidewarpscreen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SideWarpScreen</strong>  <a class="reference internal" href="#classes-mapdata-var-sidewarpscreen"><span class="std std-ref">🔗</span></a></p>
+<p>The destination screen for each of the four sidewarps.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-sidewarpid"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SideWarpID</strong>  <a class="reference internal" href="#classes-mapdata-var-sidewarpid"><span class="std std-ref">🔗</span></a></p>
+<p>Returns the sidewarp ID for a given screen edge, as SideWarpIDdir;</p>
+<p>Returns SIDEWARP_NONE if there is no sidewarp in that direction.</p>
+<p>Valid indices: DIR_UP, DIR_DOWN, DIR_LEFT, DIR_RIGHT
+Valid values: <a class="reference internal" href="../global_constants.html#globals-enum-sidewarpindex"><span class="std std-ref">SideWarpIndex</span></a> (<cite>SIDEWARP_</cite>)</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-tilewarpreturnsquare"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TileWarpReturnSquare</strong>  <a class="reference internal" href="#classes-mapdata-var-tilewarpreturnsquare"><span class="std std-ref">🔗</span></a></p>
+<p>The return square (A-&gt;D) used by Tile WarpA-&gt;D.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-sidewarpreturnsquare"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SideWarpReturnSquare</strong>  <a class="reference internal" href="#classes-mapdata-var-sidewarpreturnsquare"><span class="std std-ref">🔗</span></a></p>
+<p>The return square (A-&gt;D) used by Side WarpA-&gt;D.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-sidewarpdmap"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SideWarpDMap</strong>  <a class="reference internal" href="#classes-mapdata-var-sidewarpdmap"><span class="std std-ref">🔗</span></a></p>
+<p>The destination DMap for each of the four sidewarps.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-undercombo"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>UnderCombo</strong>  <a class="reference internal" href="#classes-mapdata-var-undercombo"><span class="std std-ref">🔗</span></a></p>
+<p>The screen’s undercombo, which will appear as a result of various combo
+interactions, such as pushing blocks, awakening armos, etc.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-undercset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>UnderCSet</strong>  <a class="reference internal" href="#classes-mapdata-var-undercset"><span class="std std-ref">🔗</span></a></p>
+<p>The CSet associated with the undercombo.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-catchall"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Catchall</strong>  <a class="reference internal" href="#classes-mapdata-var-catchall"><span class="std std-ref">🔗</span></a></p>
+<p>The screen’s ‘catchall’ value. This is the roomtype-specific data, such
+as the ‘Special Item’ in a ‘Special Item’ room.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-csensitive"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CSensitive</strong>  <a class="reference internal" href="#classes-mapdata-var-csensitive"><span class="std std-ref">🔗</span></a></p>
+<p>The value of damage combo sensitivity for the screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-noreset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NoReset</strong>  <a class="reference internal" href="#classes-mapdata-var-noreset"><span class="std std-ref">🔗</span></a></p>
+<p>The <cite>No Reset</cite> carryover flags.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-nocarry"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NoCarry</strong>  <a class="reference internal" href="#classes-mapdata-var-nocarry"><span class="std std-ref">🔗</span></a></p>
+<p>The <cite>No Carry Over</cite> carryover flags.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-layermap"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LayerMap</strong>  <a class="reference internal" href="#classes-mapdata-var-layermap"><span class="std std-ref">🔗</span></a></p>
+<p>The map and screen for each layer. Index 0 of these arrays does
+nothing, and is invalid to access.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-layerscreen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LayerScreen</strong>  <a class="reference internal" href="#classes-mapdata-var-layerscreen"><span class="std std-ref">🔗</span></a></p>
+<p>The map and screen for each layer. Index 0 of these arrays does
+nothing, and is invalid to access.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-layeropacity"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LayerOpacity</strong>  <a class="reference internal" href="#classes-mapdata-var-layeropacity"><span class="std std-ref">🔗</span></a></p>
+<p>The opacity value (<cite>OP_OPAQUE</cite> or <cite>OP_TRANS</cite>) for each layer. Index 0
+does nothing, and is invalid to access.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-layerinvisible">bool[] <strong>LayerInvisible</strong>  <a class="reference internal" href="#classes-mapdata-var-layerinvisible"><span class="std std-ref">🔗</span></a></p>
+<p>If true, the given layer is invisible and will not be drawn.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-scriptdraws">bool[] <strong>ScriptDraws</strong>  <a class="reference internal" href="#classes-mapdata-var-scriptdraws"><span class="std std-ref">🔗</span></a></p>
+<p>If false, the given layer of script draws will be disabled on this
+screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-timedwarptimer"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TimedWarpTimer</strong>  <a class="reference internal" href="#classes-mapdata-var-timedwarptimer"><span class="std std-ref">🔗</span></a></p>
+<p>The timer used by ‘Time Warp Tics’ in Screen Data-&gt;T.Warp</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-nextmap"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NextMap</strong>  <a class="reference internal" href="#classes-mapdata-var-nextmap"><span class="std std-ref">🔗</span></a></p>
+<p>The map and screen that screen states carry over to.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-nextscreen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NextScreen</strong>  <a class="reference internal" href="#classes-mapdata-var-nextscreen"><span class="std std-ref">🔗</span></a></p>
+<p>The map and screen that screen states carry over to.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-secretcombo"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SecretCombo</strong>  <a class="reference internal" href="#classes-mapdata-var-secretcombo"><span class="std std-ref">🔗</span></a></p>
+<p>The combo that will be placed for each secret type.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-secretcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SecretCSet</strong>  <a class="reference internal" href="#classes-mapdata-var-secretcset"><span class="std std-ref">🔗</span></a></p>
+<p>The cset that will be placed for each secret type.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-secretflags"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SecretFlags</strong>  <a class="reference internal" href="#classes-mapdata-var-secretflags"><span class="std std-ref">🔗</span></a></p>
+<p>The screen flags that will be placed for each secret type.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ffcdata"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FFCData</strong>  <a class="reference internal" href="#classes-mapdata-var-ffcdata"><span class="std std-ref">🔗</span></a></p>
+<p>The Data (combo ID) variable for each of the ffcs on the screen.</p>
+<p>See ffc::Data for more details.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ffccset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FFCCSet</strong>  <a class="reference internal" href="#classes-mapdata-var-ffccset"><span class="std std-ref">🔗</span></a></p>
+<p>The CSet variable for each of the ffcs on the screen.</p>
+<p>See ffc::CSet for more details.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ffcdelay"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FFCDelay</strong>  <a class="reference internal" href="#classes-mapdata-var-ffcdelay"><span class="std std-ref">🔗</span></a></p>
+<p>The Delay variable for each of the ffcs on the screen.</p>
+<p>See ffc::Delay for more details.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ffcx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FFCX</strong>  <a class="reference internal" href="#classes-mapdata-var-ffcx"><span class="std std-ref">🔗</span></a></p>
+<p>The X variable for each of the ffcs on the screen.</p>
+<p>See ffc::X for more details.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ffcy"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FFCY</strong>  <a class="reference internal" href="#classes-mapdata-var-ffcy"><span class="std std-ref">🔗</span></a></p>
+<p>The Y variable for each of the ffcs on the screen.</p>
+<p>See ffc::Y for more details.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ffcvx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FFCVx</strong>  <a class="reference internal" href="#classes-mapdata-var-ffcvx"><span class="std std-ref">🔗</span></a></p>
+<p>The Vx variable for each of the ffcs on the screen.</p>
+<p>See ffc::Vx for more details.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ffcvy"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FFCVy</strong>  <a class="reference internal" href="#classes-mapdata-var-ffcvy"><span class="std std-ref">🔗</span></a></p>
+<p>The Vy variable for each of the ffcs on the screen.</p>
+<p>See ffc::Vy for more details.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ffcax"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FFCAx</strong>  <a class="reference internal" href="#classes-mapdata-var-ffcax"><span class="std std-ref">🔗</span></a></p>
+<p>The Ax variable for each of the ffcs on the screen.</p>
+<p>See ffc::Ax for more details.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ffcay"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FFCAy</strong>  <a class="reference internal" href="#classes-mapdata-var-ffcay"><span class="std std-ref">🔗</span></a></p>
+<p>The Vy variable for each of the ffcs on the screen.</p>
+<p>See ffc::Vy for more details.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ffcflags"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FFCFlags</strong>  <a class="reference internal" href="#classes-mapdata-var-ffcflags"><span class="std std-ref">🔗</span></a></p>
+<p>The Flags variable for each of the ffcs on the screen.</p>
+<p>See ffc::Flags for more details.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ffceffectwidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FFCEffectWidth</strong>  <a class="reference internal" href="#classes-mapdata-var-ffceffectwidth"><span class="std std-ref">🔗</span></a></p>
+<p>The EffectWidth variable for each of the ffcs on the screen.</p>
+<p>See ffc::EffectWidth for more details.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ffceffectheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FFCEffectHeight</strong>  <a class="reference internal" href="#classes-mapdata-var-ffceffectheight"><span class="std std-ref">🔗</span></a></p>
+<p>The EffectHeight variable for each of the ffcs on the screen.</p>
+<p>See ffc::EffectHeight for more details.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ffctilewidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FFCTileWidth</strong>  <a class="reference internal" href="#classes-mapdata-var-ffctilewidth"><span class="std std-ref">🔗</span></a></p>
+<p>The TileWidth variable for each of the ffcs on the screen.</p>
+<p>See ffc::TilwWidth for more details.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ffctileheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FFCTileHeight</strong>  <a class="reference internal" href="#classes-mapdata-var-ffctileheight"><span class="std std-ref">🔗</span></a></p>
+<p>The TileHeighr variable for each of the ffcs on the screen.</p>
+<p>See ffc::TilwHeight for more details.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ffclink"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FFCLink</strong>  <a class="reference internal" href="#classes-mapdata-var-ffclink"><span class="std std-ref">🔗</span></a></p>
+<p>The Link variable for each of the ffcs on the screen.</p>
+<p>See ffc::Link for more details.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ffcscript"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FFCScript</strong>  <a class="reference internal" href="#classes-mapdata-var-ffcscript"><span class="std std-ref">🔗</span></a></p>
+<p>The Script variable for each of the ffcs on the screen.</p>
+<p>See ffc::Script for more details.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ambientsfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>AmbientSFX</strong>  <a class="reference internal" href="#classes-mapdata-var-ambientsfx"><span class="std std-ref">🔗</span></a></p>
+<p>The SFX for the ambient sound of the screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-bosssfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>BossSFX</strong>  <a class="reference internal" href="#classes-mapdata-var-bosssfx"><span class="std std-ref">🔗</span></a></p>
+<p>The SFX for the boss roar on this screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-secretsfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SecretSFX</strong>  <a class="reference internal" href="#classes-mapdata-var-secretsfx"><span class="std std-ref">🔗</span></a></p>
+<p>The SFX that will play when secrets are triggered on this screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-itemsfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ItemSFX</strong>  <a class="reference internal" href="#classes-mapdata-var-itemsfx"><span class="std std-ref">🔗</span></a></p>
+<p>The SFX that will play when an item is held up on this screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-midi"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MIDI</strong>  <a class="reference internal" href="#classes-mapdata-var-midi"><span class="std std-ref">🔗</span></a></p>
+<p>The ‘Screen MIDI’ to play for this screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-flags"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Flags</strong>  <a class="reference internal" href="#classes-mapdata-var-flags"><span class="std std-ref">🔗</span></a></p>
+<p>Arrays containing flag data for each screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-combod"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ComboD</strong>  <a class="reference internal" href="#classes-mapdata-var-combod"><span class="std std-ref">🔗</span></a></p>
+<p>The Combo ID placed at each position on the screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-comboc"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ComboC</strong>  <a class="reference internal" href="#classes-mapdata-var-comboc"><span class="std std-ref">🔗</span></a></p>
+<p>The CSet of the combo placed at each position on the screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-combof"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ComboF</strong>  <a class="reference internal" href="#classes-mapdata-var-combof"><span class="std std-ref">🔗</span></a></p>
+<p>The mapflag placed at each position on the screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-comboi"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ComboI</strong>  <a class="reference internal" href="#classes-mapdata-var-comboi"><span class="std std-ref">🔗</span></a></p>
+<p>The inherent flag of the combo placed at each position on the screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-combot"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ComboT</strong>  <a class="reference internal" href="#classes-mapdata-var-combot"><span class="std std-ref">🔗</span></a></p>
+<p>The combo type of the combo placed at each position on the screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-combos"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ComboS</strong>  <a class="reference internal" href="#classes-mapdata-var-combos"><span class="std std-ref">🔗</span></a></p>
+<p>The solidity map of the combo placed at each position on the screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-comboe"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ComboE</strong>  <a class="reference internal" href="#classes-mapdata-var-comboe"><span class="std std-ref">🔗</span></a></p>
+<p>The effect map of the combo placed at each position on the screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-state">bool[] <strong>State</strong>  <a class="reference internal" href="#classes-mapdata-var-state"><span class="std std-ref">🔗</span></a></p>
+<p>The screen states used for this screen. Use the <cite>ST_</cite> constants to access
+this.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-exstate">bool[] <strong>ExState</strong>  <a class="reference internal" href="#classes-mapdata-var-exstate"><span class="std std-ref">🔗</span></a></p>
+<p>The 32 ‘Extra States’ used for this screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-eflags"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EFlags</strong>  <a class="reference internal" href="#classes-mapdata-var-eflags"><span class="std std-ref">🔗</span></a></p>
+<p>Arrays containing flag data for each screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-map"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Map</strong>  <a class="reference internal" href="#classes-mapdata-var-map"><span class="std std-ref">🔗</span></a></p>
+<p>Returns the map this mapdata points to.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-screen"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Screen</strong>  <a class="reference internal" href="#classes-mapdata-var-screen"><span class="std std-ref">🔗</span></a></p>
+<p>Returns the screen this mapdata points to.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-lensshows">bool[] <strong>LensShows</strong>  <a class="reference internal" href="#classes-mapdata-var-lensshows"><span class="std std-ref">🔗</span></a></p>
+<p>Arrays of the 7 layer show/hide values for the lens of truth.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-lenshides">bool[] <strong>LensHides</strong>  <a class="reference internal" href="#classes-mapdata-var-lenshides"><span class="std std-ref">🔗</span></a></p>
+<p>Arrays of the 7 layer show/hide values for the lens of truth.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-datasize"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DataSize</strong>  <a class="reference internal" href="#classes-mapdata-var-datasize"><span class="std std-ref">🔗</span></a></p>
+<p>Read-write, the size of the <cite>Data[]</cite> array.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-data"><abbr title="Could be any type.">untyped</abbr> <strong>Data</strong>  <a class="reference internal" href="#classes-mapdata-var-data"><span class="std std-ref">🔗</span></a></p>
+<p>Resizable array of data for scripts to use. All changes are saved to the
+save file.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-guycount"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GuyCount</strong>  <a class="reference internal" href="#classes-mapdata-var-guycount"><span class="std std-ref">🔗</span></a></p>
+<p>Number of enemies remaining alive on this screen.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-ffcrunning">bool[] <strong>FFCRunning</strong>  <a class="reference internal" href="#classes-mapdata-var-ffcrunning"><span class="std std-ref">🔗</span></a></p>
+<p>Returns true if the specified ffc is running a script?</p>
+<p>May be used to pause/resume ffc script execution?</p>
+<p>This needs to be cloned over to ffc-&gt;Running</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-oceansfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>OceanSFX</strong>  <a class="reference internal" href="#classes-mapdata-var-oceansfx"><span class="std std-ref">🔗</span></a></p>
+<p>The ‘Ambient Sound’ under S.Data2.</p>
+<p>Rename this to AmbientSFX, or just SFX.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-cset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CSet</strong>  <a class="reference internal" href="#classes-mapdata-var-cset"><span class="std std-ref">🔗</span></a></p>
+<p>The screen palette.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-carryovermap"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CarryoverMap</strong>  <a class="reference internal" href="#classes-mapdata-var-carryovermap"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-carryoverscreen"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CarryoverScreen</strong>  <a class="reference internal" href="#classes-mapdata-var-carryoverscreen"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-d"><abbr title="Could be any type.">untyped</abbr> <strong>D</strong>  <a class="reference internal" href="#classes-mapdata-var-d"><span class="std std-ref">🔗</span></a></p>
+<p>Improperly implemented. Was meant to relate as Screen-&gt;D, except that</p>
+<p>Screen-&gt;D is not bound to layermap.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> mapdata-&gt;D[] has never worked!</p>
+</div>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-hasitem"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HasItem</strong>  <a class="reference internal" href="#classes-mapdata-var-hasitem"><span class="std std-ref">🔗</span></a></p>
+<p>If not zero, then the item for this screen will be shown.</p>
+<p>When Link takes the item on a screen, this is set to 0.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> Check ‘-&gt;Item &gt; -1’ instead!</p>
+</div>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-sflags"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SFlags</strong>  <a class="reference internal" href="#classes-mapdata-var-sflags"><span class="std std-ref">🔗</span></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> Use Flags instead!</p>
+</div>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-warpreturnc"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WarpReturnC</strong>  <a class="reference internal" href="#classes-mapdata-var-warpreturnc"><span class="std std-ref">🔗</span></a></p>
+<p>Stores the information on warp returns, butwise.</p>
+<p>The bits are <cite>DDCCBBAADDCCBBAA</cite>, where the left section is sidewarp
+returns, and the right is tilewarp returns.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> by SideWarpReturnSquare4 and TileWarpReturnSquare4</p>
+</div>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-enemyflags"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EnemyFlags</strong>  <a class="reference internal" href="#classes-mapdata-var-enemyflags"><span class="std std-ref">🔗</span></a></p>
+<p>A flagset for enemies on the screen (E.Flags).</p>
+<p>Valid values (ORd) together, are:</p>
+<p>TODO: write the values here</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> This has been deprecated.</p>
+</div>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-sidewarpindex"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SideWarpIndex</strong>  <a class="reference internal" href="#classes-mapdata-var-sidewarpindex"><span class="std std-ref">🔗</span></a></p>
+<p>The warp return IDs.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> by SideWarpID[].</p>
+</div>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-entryx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EntryX</strong>  <a class="reference internal" href="#classes-mapdata-var-entryx"><span class="std std-ref">🔗</span></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> Use Hero-&gt;RespawnX instead!</p>
+</div>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-entryy"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EntryY</strong>  <a class="reference internal" href="#classes-mapdata-var-entryy"><span class="std std-ref">🔗</span></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> Use Hero-&gt;RespawnY instead!</p>
+</div>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-numffcs"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> bool[] <strong>NumFFCs</strong>  <a class="reference internal" href="#classes-mapdata-var-numffcs"><span class="std std-ref">🔗</span></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> This has been deprecated.</p>
+</div>
+<hr class="classref-item-separator docutils" />
+<p id="classes-mapdata-var-lenslayer"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LensLayer</strong>  <a class="reference internal" href="#classes-mapdata-var-lenslayer"><span class="std std-ref">🔗</span></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> This has been deprecated.</p>
+</div>
+</section>
+<hr class="classref-item-separator docutils" />
+<section id="function-descriptions">
+<h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
+<p class="classref-method" id="classes-mapdata-fun-issolid">bool <strong>isSolid</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y) <a class="reference internal" href="#classes-mapdata-fun-issolid"><span class="std std-ref">🔗</span></a></p>
+<p>Returns true if the given x,y position on the screen is ‘solid’.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-mapdata-fun-issolidlayer">bool <strong>isSolidLayer</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer) <a class="reference internal" href="#classes-mapdata-fun-issolidlayer"><span class="std std-ref">🔗</span></a></p>
+<p>Returns true if the given x,y position on the screen is ‘solid’.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-mapdata-fun-getffcinitd"><abbr title="Could be any type.">untyped</abbr> <strong>GetFFCInitD</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ffc_index, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#classes-mapdata-fun-getffcinitd"><span class="std std-ref">🔗</span></a></p>
+<p>Returns the value of InitDn for the ffc on the screen with an ID of
+ffc_index.</p>
+<p>This needs to be converted to the type ‘untyped’ to comply with the
+change of float ffc-&gt;InitD] to untyped ffc-&gt;InitD[</p>
+<p>Note: Expressed as a function due to lack of 2D arrays in ZScript.</p>
+<p>With 2D arrays, this would simply be FFCInitD328.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-mapdata-fun-setffcinitd"><abbr title="No return value.">void</abbr> <strong>SetFFCInitD</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ffc_index, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n, <abbr title="Could be any type.">untyped</abbr> value) <a class="reference internal" href="#classes-mapdata-fun-setffcinitd"><span class="std std-ref">🔗</span></a></p>
+<p>Sets the value of InitDn for the ffc on the screen with an ID of
+ffc_index.</p>
+<p>‘int value’ needs to be converted to the type ‘untyped’ to comply with
+the change of float ffc-&gt;InitD] to untyped ffc-&gt;InitD[</p>
+<p>Note: Expressed as a function due to lack of 2D arrays in ZScript.</p>
+<p>With 2D arrays, this would simply be FFCInitD328.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-mapdata-fun-getexdoor">bool <strong>GetExDoor</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index) <a class="reference internal" href="#classes-mapdata-fun-getexdoor"><span class="std std-ref">🔗</span></a></p>
+<p>Returns a door state for the screen.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-mapdata-fun-setexdoor"><abbr title="No return value.">void</abbr> <strong>SetExDoor</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index, bool state) <a class="reference internal" href="#classes-mapdata-fun-setexdoor"><span class="std std-ref">🔗</span></a></p>
+<p>Sets a door state for the screen.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-mapdata-fun-getffcinita"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetFFCInitA</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ffc_index, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#classes-mapdata-fun-getffcinita"><span class="std std-ref">🔗</span></a></p>
+<p>Returns the value of InitAn for the ffc on the screen with an ID of
+ffc_index.</p>
+<p>Note: Expressed as a function due to lack of 2D arrays in ZScript.</p>
+<p>With 2D arrays, this would simply be FFCInitA322.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-mapdata-fun-setffcinita"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SetFFCInitA</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ffc_index, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> init_a, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> value) <a class="reference internal" href="#classes-mapdata-fun-setffcinita"><span class="std std-ref">🔗</span></a></p>
+<p>Sets the value of InitAn for the ffc on the screen with an ID of
+ffc_index.</p>
+<p>Note: Expressed as a function due to lack of 2D arrays in ZScript.</p>
+<p>With 2D arrays, this would simply be FFCInitA322.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="lweapon.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">lweapon</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="messagedata.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">messagedata</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-descriptions">Function descriptions</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024, ZQuest Classic Foundation.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

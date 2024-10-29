@@ -1,0 +1,1605 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>npc &#8212; ZQuest Classic  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/classes/npc';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="npcdata" href="npcdata.html" />
+    <link rel="prev" title="messagedata" href="messagedata.html" />
+    <link href="../../_static/main.css" rel="stylesheet" type="text/css">
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/ZC_Logo.png" class="logo__image only-light" alt="ZQuest Classic  documentation - Home"/>
+    <img src="../../_static/ZC_Logo.png" class="logo__image only-dark pst-js-only" alt="ZQuest Classic  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../about/introduction.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../about/introduction.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Audio.html">Audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Debug.html">Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/FileSystem.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Game.html">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Graphics.html">Graphics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Text.html">Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/ZInfo.html">ZInfo</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="bitmap.html">bitmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bottledata.html">bottledata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bottleshopdata.html">bottleshopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="combodata.html">combodata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="directory.html">directory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dmapdata.html">dmapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dropsetdata.html">dropsetdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eweapon.html">eweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ffc.html">ffc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file.html">file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genericdata.html">genericdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="itemdata.html">itemdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="itemsprite.html">itemsprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lweapon.html">lweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapdata.html">mapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="messagedata.html">messagedata</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">npc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="npcdata.html">npcdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paldata.html">paldata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="player.html">player</a></li>
+<li class="toctree-l1"><a class="reference internal" href="portal.html">portal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="randgen.html">randgen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="savedportal.html">savedportal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="screendata.html">screendata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shopdata.html">shopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sprite.html">sprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spritedata.html">spritedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stack.html">stack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subscreendata.html">subscreendata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subscreenpage.html">subscreenpage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subscreenwidget.html">subscreenwidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="websocket.html">websocket</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/limits.html">limits.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/script_runners.html">script_runners.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_constants.html">std_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_extension.html">std_extension.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_functions.html">std_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_keyboard.html">std_keyboard.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/string_constants.html">string_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/string_functions.html">string_functions.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ghost/index.html">ghost</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost.html">ghost.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_common.html">ghost2_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_deprecated.html">ghost2_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_drawing.html">ghost2_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweapon.html">ghost2_eweapon.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweaponDeath.html">ghost2_eweaponDeath.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweaponMovement.html">ghost2_eweaponMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_flags.html">ghost2_flags.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_global.html">ghost2_global.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_init.html">ghost2_init.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_modification.html">ghost2_modification.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_movement.html">ghost2_movement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_other.html">ghost2_other.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_scripts.html">ghost2_scripts.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_update.html">ghost2_update.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/tango/index.html">tango</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango.html">tango.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_access.html">tango_access.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_common.html">tango_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_deprecated.html">tango_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_drawing.html">tango_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_font.html">tango_font.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_functions.html">tango_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_loading.html">tango_loading.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_loggingMinimal.html">tango_loggingMinimal.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_menu.html">tango_menu.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_messages.html">tango_messages.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_metrics.html">tango_metrics.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_processing.html">tango_processing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_script.html">tango_script.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_stringControlCode.html">tango_stringControlCode.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_style.html">tango_style.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_user.html">tango_user.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_validation.html">tango_validation.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/gui/index.html">gui</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/gui.html">gui.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_button.html">guizh_button.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_checkbox.html">guizh_checkbox.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_common.html">guizh_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_event.html">guizh_event.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_label.html">guizh_label.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_main.html">guizh_main.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_radioButton.html">guizh_radioButton.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_root.html">guizh_root.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_spinner.html">guizh_spinner.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_types.html">guizh_types.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_widget.html">guizh_widget.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ffcscript/ffcscript.html">ffcscript.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">ZScript</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">npc</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="npc">
+<span id="classes-npc"></span><h1>npc<a class="headerlink" href="#npc" title="Link to this heading">#</a></h1>
+<p>Inherits: <a class="reference internal" href="sprite.html#classes-sprite"><span class="std std-ref">sprite</span></a></p>
+<section id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-frame"><span class="std std-ref">Frame</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-max"><span class="std std-ref">Max</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-slideclock"><span class="std std-ref">SlideClock</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-fading"><span class="std std-ref">Fading</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-rate"><span class="std std-ref">Rate</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-homing"><span class="std std-ref">Homing</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-step"><span class="std std-ref">Step</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-aspeed"><span class="std std-ref">ASpeed</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-halt"><span class="std std-ref">Halt</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-movestatus"><span class="std std-ref">MoveStatus</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-haltrate"><span class="std std-ref">Haltrate</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-random"><span class="std std-ref">Random</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-hp"><span class="std std-ref">HP</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-id"><span class="std std-ref">ID</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-type"><span class="std std-ref">Type</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-family"><span class="std std-ref">Family</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-damage"><span class="std std-ref">Damage</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-weapondamage"><span class="std std-ref">WeaponDamage</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-originaltile"><span class="std std-ref">OriginalTile</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-weapon"><span class="std std-ref">Weapon</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-itemset"><span class="std std-ref">ItemSet</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-dropset"><span class="std std-ref">Dropset</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-bosspal"><span class="std std-ref">BossPal</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-sfx"><span class="std std-ref">SFX</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-totaldyoffset"><span class="std std-ref">TotalDYOffset</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-initd"><span class="std std-ref">InitD</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-attributes"><span class="std std-ref">Attributes</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-miscflags"><span class="std std-ref">MiscFlags</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-colldetection"><span class="std std-ref">CollDetection</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-stun"><span class="std std-ref">Stun</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-core"><span class="std std-ref">Core</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-defense"><span class="std std-ref">Defense</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-hitby"><span class="std std-ref">HitBy</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-hunger"><span class="std std-ref">Hunger</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-weaponsprite"><span class="std std-ref">WeaponSprite</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-weaponsfx"><span class="std std-ref">WeaponSFX</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-scriptdefense"><span class="std std-ref">ScriptDefense</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-invframes"><span class="std std-ref">InvFrames</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-invincible"><span class="std std-ref">Invincible</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-ringleader"><span class="std std-ref">Ringleader</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-hasitem"><span class="std std-ref">HasItem</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-shield"><span class="std std-ref">Shield</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-bflags"><span class="std std-ref">BFlags</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-hitdir"><span class="std std-ref">HitDir</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-script"><span class="std std-ref">Script</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-immortal"><span class="std std-ref">Immortal</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-noslide"><span class="std std-ref">NoSlide</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-noscriptknockback"><span class="std std-ref">NoScriptKnockback</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-slidespeed"><span class="std std-ref">SlideSpeed</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-lightradius"><span class="std std-ref">LightRadius</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-lightshape"><span class="std std-ref">LightShape</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-spawnsprite"><span class="std std-ref">SpawnSprite</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-deathsprite"><span class="std std-ref">DeathSprite</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-invflicker"><span class="std std-ref">InvFlicker</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-flickercolor"><span class="std std-ref">FlickerColor</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-flickertransparencypasses"><span class="std std-ref">FlickerTransparencyPasses</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-flashingcset"><span class="std std-ref">FlashingCSet</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-frozen"><span class="std std-ref">Frozen</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-frozentile"><span class="std std-ref">FrozenTile</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-frozencset"><span class="std std-ref">FrozenCSet</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-uid"><span class="std std-ref">UID</span></a> <strong>deprecated</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-var-parentuid"><span class="std std-ref">ParentUID</span></a> <strong>deprecated</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-max"><span class="std std-ref">Max</span></a>() <strong>deprecated</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-max-2"><span class="std std-ref">Max</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> value) <strong>deprecated</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-isvalid"><span class="std std-ref">isValid</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-explode"><span class="std std-ref">Explode</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-submerged"><span class="std std-ref">Submerged</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-getname"><span class="std std-ref">GetName</span></a>(char32[] buffer)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-breakshield"><span class="std std-ref">BreakShield</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-isdead"><span class="std std-ref">isDead</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-canslide"><span class="std std-ref">CanSlide</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-slide"><span class="std std-ref">Slide</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-remove"><span class="std std-ref">Remove</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-stopbgsfx"><span class="std std-ref">StopBGSFX</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-attack"><span class="std std-ref">Attack</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-newdir"><span class="std std-ref">NewDir</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-constantwalk"><span class="std std-ref">ConstantWalk</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-constantwalk8"><span class="std std-ref">ConstantWalk8</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-variablewalk"><span class="std std-ref">VariableWalk</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-variablewalk8"><span class="std std-ref">VariableWalk8</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-haltingwalk"><span class="std std-ref">HaltingWalk</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-haltingwalk8"><span class="std std-ref">HaltingWalk8</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-floatingwalk"><span class="std std-ref">FloatingWalk</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-breathattack"><span class="std std-ref">BreathAttack</span></a>(bool seeklink = <code class="docutils literal notranslate"><span class="pre">false</span></code>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-newdir8"><span class="std std-ref">NewDir8</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr)</p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-collision"><span class="std std-ref">Collision</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> obj_type, <abbr title="Could be any type.">untyped</abbr> obj_pointer)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-linedup"><span class="std std-ref">LinedUp</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> range, bool dir8 = <code class="docutils literal notranslate"><span class="pre">false</span></code>)</p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-linkinrange"><span class="std std-ref">LinkInRange</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dist_in_pixels)</p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-canmove"><span class="std std-ref">CanMove</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> array)</p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-simulatehit"><span class="std std-ref">SimulateHit</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> array)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#classes-npc"><span class="std std-ref">npc</span></a></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-create"><span class="std std-ref">Create</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> array)</p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-knockback"><span class="std std-ref">Knockback</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> time, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> speed = <code class="docutils literal notranslate"><span class="pre">4</span></code>)</p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-switch"><span class="std std-ref">Switch</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> effect)</p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-movepaused"><span class="std std-ref">MovePaused</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-move"><span class="std std-ref">Move</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pxamnt, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> special = <code class="docutils literal notranslate"><span class="pre">0</span></code>)</p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-moveatangle"><span class="std std-ref">MoveAtAngle</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> degrees, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pxamnt, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> special = <code class="docutils literal notranslate"><span class="pre">0</span></code>)</p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-movexy"><span class="std std-ref">MoveXY</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dx, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dy, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> special = <code class="docutils literal notranslate"><span class="pre">0</span></code>)</p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-canmove-2"><span class="std std-ref">CanMove</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pxamnt, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> special = <code class="docutils literal notranslate"><span class="pre">0</span></code>)</p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-canmoveatangle"><span class="std std-ref">CanMoveAtAngle</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> degrees, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pxamnt, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> special = <code class="docutils literal notranslate"><span class="pre">0</span></code>)</p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-canmovexy"><span class="std std-ref">CanMoveXY</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dx, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dy, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> special = <code class="docutils literal notranslate"><span class="pre">0</span></code>)</p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-canplace"><span class="std std-ref">CanPlace</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> nx, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ny, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> special = <code class="docutils literal notranslate"><span class="pre">0</span></code>, bool knockback = <code class="docutils literal notranslate"><span class="pre">false</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> nw = <code class="docutils literal notranslate"><span class="pre">-1</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> nh = <code class="docutils literal notranslate"><span class="pre">-1</span></code>)</p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-isflickerframe"><span class="std std-ref">isFlickerFrame</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-own"><span class="std std-ref">Own</span></a>(<a class="reference internal" href="bitmap.html#classes-bitmap"><span class="std std-ref">bitmap</span></a> b)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-own-2"><span class="std std-ref">Own</span></a>(<a class="reference internal" href="paldata.html#classes-paldata"><span class="std std-ref">paldata</span></a> b)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-own-3"><span class="std std-ref">Own</span></a>(<a class="reference internal" href="file.html#classes-file"><span class="std std-ref">file</span></a> b)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-own-4"><span class="std std-ref">Own</span></a>(<a class="reference internal" href="directory.html#classes-directory"><span class="std std-ref">directory</span></a> b)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-own-5"><span class="std std-ref">Own</span></a>(<a class="reference internal" href="stack.html#classes-stack"><span class="std std-ref">stack</span></a> b)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-own-6"><span class="std std-ref">Own</span></a>(<a class="reference internal" href="randgen.html#classes-randgen"><span class="std std-ref">randgen</span></a> b)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-ownarray"><span class="std std-ref">OwnArray</span></a>(<abbr title="Could be any type.">untyped</abbr> array)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-npc-fun-ownobject"><span class="std std-ref">OwnObject</span></a>(<abbr title="Could be any type.">untyped</abbr> object)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Link to this heading">#</a></h2>
+<p id="globals-enum-npctype">enum <strong>NpcType</strong>: <a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-guy"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_GUY</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-walk"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_WALK</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-tektite"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_TEKTITE</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-leever"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_LEEVER</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-peahat"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_PEAHAT</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-zora"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_ZORA</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-rock"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_ROCK</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-ghini"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_GHINI</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-armos"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_ARMOS</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-keese"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_KEESE</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-trap"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_TRAP</strong> = <code class="docutils literal notranslate"><span class="pre">15</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-wallmaster"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_WALLMASTER</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-wizzrobe"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_WIZZROBE</strong> = <code class="docutils literal notranslate"><span class="pre">21</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-aquamentus"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_AQUAMENTUS</strong> = <code class="docutils literal notranslate"><span class="pre">22</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-moldorm"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_MOLDORM</strong> = <code class="docutils literal notranslate"><span class="pre">23</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-dodongo"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_DODONGO</strong> = <code class="docutils literal notranslate"><span class="pre">24</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-manhandla"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_MANHANDLA</strong> = <code class="docutils literal notranslate"><span class="pre">25</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-gleeok"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_GLEEOK</strong> = <code class="docutils literal notranslate"><span class="pre">26</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-digdogger"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_DIGDOGGER</strong> = <code class="docutils literal notranslate"><span class="pre">27</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-gohma"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_GOHMA</strong> = <code class="docutils literal notranslate"><span class="pre">28</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-lanmola"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_LANMOLA</strong> = <code class="docutils literal notranslate"><span class="pre">29</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-patra"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_PATRA</strong> = <code class="docutils literal notranslate"><span class="pre">30</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-ganon"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_GANON</strong> = <code class="docutils literal notranslate"><span class="pre">31</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-projectile"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_PROJECTILE</strong> = <code class="docutils literal notranslate"><span class="pre">32</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-spintile"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SPINTILE</strong> = <code class="docutils literal notranslate"><span class="pre">37</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-none"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">38</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-fairy"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_FAIRY</strong> = <code class="docutils literal notranslate"><span class="pre">39</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-otherfloat"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_OTHERFLOAT</strong> = <code class="docutils literal notranslate"><span class="pre">40</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-other"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_OTHER</strong> = <code class="docutils literal notranslate"><span class="pre">41</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-01"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_01</strong> = <code class="docutils literal notranslate"><span class="pre">43</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-01"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_01</strong> = <code class="docutils literal notranslate"><span class="pre">43</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-02"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_02</strong> = <code class="docutils literal notranslate"><span class="pre">44</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-02"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_02</strong> = <code class="docutils literal notranslate"><span class="pre">44</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-03"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_03</strong> = <code class="docutils literal notranslate"><span class="pre">45</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-03"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_03</strong> = <code class="docutils literal notranslate"><span class="pre">45</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-04"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_04</strong> = <code class="docutils literal notranslate"><span class="pre">46</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-04"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_04</strong> = <code class="docutils literal notranslate"><span class="pre">46</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-05"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_05</strong> = <code class="docutils literal notranslate"><span class="pre">47</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-05"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_05</strong> = <code class="docutils literal notranslate"><span class="pre">47</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-06"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_06</strong> = <code class="docutils literal notranslate"><span class="pre">48</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-06"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_06</strong> = <code class="docutils literal notranslate"><span class="pre">48</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-07"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_07</strong> = <code class="docutils literal notranslate"><span class="pre">49</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-07"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_07</strong> = <code class="docutils literal notranslate"><span class="pre">49</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-08"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_08</strong> = <code class="docutils literal notranslate"><span class="pre">50</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-08"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_08</strong> = <code class="docutils literal notranslate"><span class="pre">50</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-09"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_09</strong> = <code class="docutils literal notranslate"><span class="pre">51</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-09"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_09</strong> = <code class="docutils literal notranslate"><span class="pre">51</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-10"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_10</strong> = <code class="docutils literal notranslate"><span class="pre">52</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-10"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_10</strong> = <code class="docutils literal notranslate"><span class="pre">52</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-11"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_11</strong> = <code class="docutils literal notranslate"><span class="pre">53</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-11"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_11</strong> = <code class="docutils literal notranslate"><span class="pre">53</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-12"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_12</strong> = <code class="docutils literal notranslate"><span class="pre">54</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-12"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_12</strong> = <code class="docutils literal notranslate"><span class="pre">54</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-13"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_13</strong> = <code class="docutils literal notranslate"><span class="pre">55</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-13"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_13</strong> = <code class="docutils literal notranslate"><span class="pre">55</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-14"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_14</strong> = <code class="docutils literal notranslate"><span class="pre">56</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-14"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_14</strong> = <code class="docutils literal notranslate"><span class="pre">56</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-15"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_15</strong> = <code class="docutils literal notranslate"><span class="pre">57</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-15"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_15</strong> = <code class="docutils literal notranslate"><span class="pre">57</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-16"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_16</strong> = <code class="docutils literal notranslate"><span class="pre">58</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-16"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_16</strong> = <code class="docutils literal notranslate"><span class="pre">58</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-17"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_17</strong> = <code class="docutils literal notranslate"><span class="pre">59</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-17"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_17</strong> = <code class="docutils literal notranslate"><span class="pre">59</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-18"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_18</strong> = <code class="docutils literal notranslate"><span class="pre">60</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-18"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_18</strong> = <code class="docutils literal notranslate"><span class="pre">60</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-19"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_19</strong> = <code class="docutils literal notranslate"><span class="pre">61</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-19"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_19</strong> = <code class="docutils literal notranslate"><span class="pre">61</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-custom-20"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_CUSTOM_20</strong> = <code class="docutils literal notranslate"><span class="pre">62</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-script-20"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_SCRIPT_20</strong> = <code class="docutils literal notranslate"><span class="pre">62</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-friendly-01"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_FRIENDLY_01</strong> = <code class="docutils literal notranslate"><span class="pre">63</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-friendly-02"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_FRIENDLY_02</strong> = <code class="docutils literal notranslate"><span class="pre">64</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-friendly-03"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_FRIENDLY_03</strong> = <code class="docutils literal notranslate"><span class="pre">65</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-friendly-04"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_FRIENDLY_04</strong> = <code class="docutils literal notranslate"><span class="pre">66</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-friendly-05"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_FRIENDLY_05</strong> = <code class="docutils literal notranslate"><span class="pre">67</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-friendly-06"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_FRIENDLY_06</strong> = <code class="docutils literal notranslate"><span class="pre">68</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-friendly-07"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_FRIENDLY_07</strong> = <code class="docutils literal notranslate"><span class="pre">69</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-friendly-08"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_FRIENDLY_08</strong> = <code class="docutils literal notranslate"><span class="pre">70</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-friendly-09"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_FRIENDLY_09</strong> = <code class="docutils literal notranslate"><span class="pre">71</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npct-friendly-10"><a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> <strong>NPCT_FRIENDLY_10</strong> = <code class="docutils literal notranslate"><span class="pre">72</span></code></p>
+<hr class="classref-item-separator docutils" />
+<p id="globals-enum-npcdefenseindex">enum <strong>NpcDefenseIndex</strong>: <a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">🔗</span></a></p>
+<p>Use as index for npc-&gt;Defense[].</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-brang"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_BRANG</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-bomb"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_BOMB</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-sbomb"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_SBOMB</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-arrow"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_ARROW</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-fire"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_FIRE</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-wand"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_WAND</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-magic"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_MAGIC</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-hookshot"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_HOOKSHOT</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-hammer"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_HAMMER</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-sword"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_SWORD</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-beam"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_BEAM</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-refbeam"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_REFBEAM</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-refmagic"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_REFMAGIC</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-reffireball"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_REFFIREBALL</strong> = <code class="docutils literal notranslate"><span class="pre">13</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-refrock"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_REFROCK</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-stomp"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_STOMP</strong> = <code class="docutils literal notranslate"><span class="pre">15</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-byrna"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_BYRNA</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-script"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_SCRIPT</strong> = <code class="docutils literal notranslate"><span class="pre">17</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-script1"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_SCRIPT1</strong> = <code class="docutils literal notranslate"><span class="pre">20</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-script2"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_SCRIPT2</strong> = <code class="docutils literal notranslate"><span class="pre">21</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-script3"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_SCRIPT3</strong> = <code class="docutils literal notranslate"><span class="pre">22</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-script4"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_SCRIPT4</strong> = <code class="docutils literal notranslate"><span class="pre">23</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-script5"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_SCRIPT5</strong> = <code class="docutils literal notranslate"><span class="pre">24</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-script6"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_SCRIPT6</strong> = <code class="docutils literal notranslate"><span class="pre">25</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-script7"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_SCRIPT7</strong> = <code class="docutils literal notranslate"><span class="pre">26</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-script8"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_SCRIPT8</strong> = <code class="docutils literal notranslate"><span class="pre">27</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-script9"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_SCRIPT9</strong> = <code class="docutils literal notranslate"><span class="pre">28</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-script10"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_SCRIPT10</strong> = <code class="docutils literal notranslate"><span class="pre">29</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-whistle"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_WHISTLE</strong> = <code class="docutils literal notranslate"><span class="pre">35</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-switchhook"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_SWITCHHOOK</strong> = <code class="docutils literal notranslate"><span class="pre">36</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-thrown"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_THROWN</strong> = <code class="docutils literal notranslate"><span class="pre">37</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-refarrow"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_REFARROW</strong> = <code class="docutils literal notranslate"><span class="pre">38</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-reffire"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_REFFIRE</strong> = <code class="docutils literal notranslate"><span class="pre">39</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcd-reffire2"><a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> <strong>NPCD_REFFIRE2</strong> = <code class="docutils literal notranslate"><span class="pre">40</span></code></p>
+<hr class="classref-item-separator docutils" />
+<p id="globals-enum-npcdefensetype">enum <strong>NpcDefenseType</strong>: <a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">🔗</span></a></p>
+<p>Use as value type for npc-&gt;Defense[].</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-none"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-halfdamage"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_HALFDAMAGE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-quarterdamage"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_QUARTERDAMAGE</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-stun"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_STUN</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-stunorblock"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_STUNORBLOCK</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-stunorignore"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_STUNORIGNORE</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-block1"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_BLOCK1</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-block2"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_BLOCK2</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-block4"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_BLOCK4</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-block6"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_BLOCK6</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-block8"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_BLOCK8</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-block"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_BLOCK</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-ignore1"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_IGNORE1</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-ignore"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_IGNORE</strong> = <code class="docutils literal notranslate"><span class="pre">13</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-onehitkill"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_ONEHITKILL</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-block10"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_BLOCK10</strong> = <code class="docutils literal notranslate"><span class="pre">15</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-2xdamage"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_2XDAMAGE</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-3xdamage"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_3XDAMAGE</strong> = <code class="docutils literal notranslate"><span class="pre">17</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-4xdamage"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_4XDAMAGE</strong> = <code class="docutils literal notranslate"><span class="pre">18</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-heal"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_HEAL</strong> = <code class="docutils literal notranslate"><span class="pre">19</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-triggersecrets"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_TRIGGERSECRETS</strong> = <code class="docutils literal notranslate"><span class="pre">20</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcdt-switch"><a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> <strong>NPCDT_SWITCH</strong> = <code class="docutils literal notranslate"><span class="pre">50</span></code></p>
+<hr class="classref-item-separator docutils" />
+<p id="globals-enum-npcweapon">enum <strong>NpcWeapon</strong>: <a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">🔗</span></a></p>
+<p>Enemy projectile weapon selections. Use with npc-&gt;Weapon.
+Note: Don’t use these with Screen-&gt;CreateEWeapon! Use the <cite>EW_</cite> constants instead.
+Use WeaponTypeToID to convert this enum to a <cite>EW_</cite> value.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-none"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-enemyflame"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_ENEMYFLAME</strong> = <code class="docutils literal notranslate"><span class="pre">140</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-enemywind"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_ENEMYWIND</strong> = <code class="docutils literal notranslate"><span class="pre">141</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-enemyfireball"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_ENEMYFIREBALL</strong> = <code class="docutils literal notranslate"><span class="pre">129</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-enemyarrow"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_ENEMYARROW</strong> = <code class="docutils literal notranslate"><span class="pre">130</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-enemybrang"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_ENEMYBRANG</strong> = <code class="docutils literal notranslate"><span class="pre">131</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-enemysword"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_ENEMYSWORD</strong> = <code class="docutils literal notranslate"><span class="pre">132</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-enemyrock"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_ENEMYROCK</strong> = <code class="docutils literal notranslate"><span class="pre">133</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-enemymagic"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_ENEMYMAGIC</strong> = <code class="docutils literal notranslate"><span class="pre">134</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-enemybomb"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_ENEMYBOMB</strong> = <code class="docutils literal notranslate"><span class="pre">135</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-enemysbomb"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_ENEMYSBOMB</strong> = <code class="docutils literal notranslate"><span class="pre">136</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-enemylitbomb"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_ENEMYLITBOMB</strong> = <code class="docutils literal notranslate"><span class="pre">137</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-enemylitsbomb"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_ENEMYLITSBOMB</strong> = <code class="docutils literal notranslate"><span class="pre">138</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-enemyfiretrail"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_ENEMYFIRETRAIL</strong> = <code class="docutils literal notranslate"><span class="pre">139</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-enemyflame2"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_ENEMYFLAME2</strong> = <code class="docutils literal notranslate"><span class="pre">142</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-enemyflame2trail"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_ENEMYFLAME2TRAIL</strong> = <code class="docutils literal notranslate"><span class="pre">143</span></code></p>
+<p>Not implemented</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-enemyice"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_ENEMYICE</strong> = <code class="docutils literal notranslate"><span class="pre">144</span></code></p>
+<p>Not implemented</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-wpn-enemyfireball2"><a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> <strong>WPN_ENEMYFIREBALL2</strong> = <code class="docutils literal notranslate"><span class="pre">145</span></code></p>
+<p>A fireball that doesn’t fly toward Link</p>
+<hr class="classref-item-separator docutils" />
+<p id="globals-enum-itemset">enum <strong>ItemSet</strong>: <a class="reference internal" href="#globals-enum-itemset"><span class="std std-ref">🔗</span></a></p>
+<p>Default item drop sets.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-is-none"><a class="reference internal" href="#globals-enum-itemset"><span class="std std-ref">ItemSet</span></a> <strong>IS_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-is-default"><a class="reference internal" href="#globals-enum-itemset"><span class="std std-ref">ItemSet</span></a> <strong>IS_DEFAULT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-is-bombs"><a class="reference internal" href="#globals-enum-itemset"><span class="std std-ref">ItemSet</span></a> <strong>IS_BOMBS</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-is-money"><a class="reference internal" href="#globals-enum-itemset"><span class="std std-ref">ItemSet</span></a> <strong>IS_MONEY</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-is-life"><a class="reference internal" href="#globals-enum-itemset"><span class="std std-ref">ItemSet</span></a> <strong>IS_LIFE</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-is-bomb100"><a class="reference internal" href="#globals-enum-itemset"><span class="std std-ref">ItemSet</span></a> <strong>IS_BOMB100</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p>Used by Dodongos</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-is-sbomb100"><a class="reference internal" href="#globals-enum-itemset"><span class="std std-ref">ItemSet</span></a> <strong>IS_SBOMB100</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p>Used by Dodongos</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-is-magic"><a class="reference internal" href="#globals-enum-itemset"><span class="std std-ref">ItemSet</span></a> <strong>IS_MAGIC</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-is-magicbombs"><a class="reference internal" href="#globals-enum-itemset"><span class="std std-ref">ItemSet</span></a> <strong>IS_MAGICBOMBS</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-is-magicmoney"><a class="reference internal" href="#globals-enum-itemset"><span class="std std-ref">ItemSet</span></a> <strong>IS_MAGICMONEY</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-is-magiclife"><a class="reference internal" href="#globals-enum-itemset"><span class="std std-ref">ItemSet</span></a> <strong>IS_MAGICLIFE</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-is-magic2"><a class="reference internal" href="#globals-enum-itemset"><span class="std std-ref">ItemSet</span></a> <strong>IS_MAGIC2</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-is-combos"><a class="reference internal" href="#globals-enum-itemset"><span class="std std-ref">ItemSet</span></a> <strong>IS_COMBOS</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+<p>Used by Tall Grass / Bush / Slash combos.</p>
+<hr class="classref-item-separator docutils" />
+<p id="globals-enum-bosspal">enum <strong>BossPal</strong>: <a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">🔗</span></a></p>
+<p>Boss palettes.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-bpal-aqua"><a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a> <strong>BPAL_AQUA</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-bpal-gleeok"><a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a> <strong>BPAL_GLEEOK</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-bpal-dodongo"><a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a> <strong>BPAL_DODONGO</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-bpal-ganon"><a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a> <strong>BPAL_GANON</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-bpal-brown"><a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a> <strong>BPAL_BROWN</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-bpal-pile"><a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a> <strong>BPAL_PILE</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p>Used for the Dust Pile.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-bpal-blue"><a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a> <strong>BPAL_BLUE</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-bpal-red"><a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a> <strong>BPAL_RED</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-bpal-gold"><a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a> <strong>BPAL_GOLD</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-bpal-icon1"><a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a> <strong>BPAL_ICON1</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p>Used for Quest Icon 1.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-bpal-icon2"><a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a> <strong>BPAL_ICON2</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p>Used for Quest Icon 2.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-bpal-icon3"><a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a> <strong>BPAL_ICON3</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code></p>
+<p>Used for Quest Icon 3.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-bpal-icon4"><a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a> <strong>BPAL_ICON4</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+<p>Used for Quest Icon 4.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-bpal-gleeokf"><a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a> <strong>BPAL_GLEEOKF</strong> = <code class="docutils literal notranslate"><span class="pre">13</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-bpal-frozen"><a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a> <strong>BPAL_FROZEN</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code></p>
+<p>Unused</p>
+<hr class="classref-item-separator docutils" />
+<p id="globals-enum-npcmoveflagindex">enum <strong>NpcMoveFlagIndex</strong>: <a class="reference internal" href="#globals-enum-npcmoveflagindex"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcmv-obeys-gravity"><a class="reference internal" href="#globals-enum-npcmoveflagindex"><span class="std std-ref">NpcMoveFlagIndex</span></a> <strong>NPCMV_OBEYS_GRAVITY</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcmv-can-pitfall"><a class="reference internal" href="#globals-enum-npcmoveflagindex"><span class="std std-ref">NpcMoveFlagIndex</span></a> <strong>NPCMV_CAN_PITFALL</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcmv-can-pit-walk"><a class="reference internal" href="#globals-enum-npcmoveflagindex"><span class="std std-ref">NpcMoveFlagIndex</span></a> <strong>NPCMV_CAN_PIT_WALK</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcmv-can-waterdrown"><a class="reference internal" href="#globals-enum-npcmoveflagindex"><span class="std std-ref">NpcMoveFlagIndex</span></a> <strong>NPCMV_CAN_WATERDROWN</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcmv-can-water-walk"><a class="reference internal" href="#globals-enum-npcmoveflagindex"><span class="std std-ref">NpcMoveFlagIndex</span></a> <strong>NPCMV_CAN_WATER_WALK</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcmv-only-water-walk"><a class="reference internal" href="#globals-enum-npcmoveflagindex"><span class="std std-ref">NpcMoveFlagIndex</span></a> <strong>NPCMV_ONLY_WATER_WALK</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcmv-only-shallow-water-walk"><a class="reference internal" href="#globals-enum-npcmoveflagindex"><span class="std std-ref">NpcMoveFlagIndex</span></a> <strong>NPCMV_ONLY_SHALLOW_WATER_WALK</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcmv-only-pit-walk"><a class="reference internal" href="#globals-enum-npcmoveflagindex"><span class="std std-ref">NpcMoveFlagIndex</span></a> <strong>NPCMV_ONLY_PIT_WALK</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcmv-no-fake-z"><a class="reference internal" href="#globals-enum-npcmoveflagindex"><span class="std std-ref">NpcMoveFlagIndex</span></a> <strong>NPCMV_NO_FAKE_Z</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcmv-no-real-z"><a class="reference internal" href="#globals-enum-npcmoveflagindex"><span class="std std-ref">NpcMoveFlagIndex</span></a> <strong>NPCMV_NO_REAL_Z</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcmv-use-fake-z"><a class="reference internal" href="#globals-enum-npcmoveflagindex"><span class="std std-ref">NpcMoveFlagIndex</span></a> <strong>NPCMV_USE_FAKE_Z</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcmv-ignore-solidity"><a class="reference internal" href="#globals-enum-npcmoveflagindex"><span class="std std-ref">NpcMoveFlagIndex</span></a> <strong>NPCMV_IGNORE_SOLIDITY</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcmv-ignore-blockflags"><a class="reference internal" href="#globals-enum-npcmoveflagindex"><span class="std std-ref">NpcMoveFlagIndex</span></a> <strong>NPCMV_IGNORE_BLOCKFLAGS</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcmv-ignore-screenedge"><a class="reference internal" href="#globals-enum-npcmoveflagindex"><span class="std std-ref">NpcMoveFlagIndex</span></a> <strong>NPCMV_IGNORE_SCREENEDGE</strong> = <code class="docutils literal notranslate"><span class="pre">13</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcmv-use-scripted-movement-engine"><a class="reference internal" href="#globals-enum-npcmoveflagindex"><span class="std std-ref">NpcMoveFlagIndex</span></a> <strong>NPCMV_USE_SCRIPTED_MOVEMENT_ENGINE</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcmv-not-pushable-by-solids"><a class="reference internal" href="#globals-enum-npcmoveflagindex"><span class="std std-ref">NpcMoveFlagIndex</span></a> <strong>NPCMV_NOT_PUSHABLE_BY_SOLIDS</strong> = <code class="docutils literal notranslate"><span class="pre">15</span></code></p>
+<hr class="classref-item-separator docutils" />
+<p id="globals-enum-npcshieldindex">enum <strong>NpcShieldIndex</strong>: <a class="reference internal" href="#globals-enum-npcshieldindex"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-shld-front"><a class="reference internal" href="#globals-enum-npcshieldindex"><span class="std std-ref">NpcShieldIndex</span></a> <strong>SHLD_FRONT</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-shld-back"><a class="reference internal" href="#globals-enum-npcshieldindex"><span class="std std-ref">NpcShieldIndex</span></a> <strong>SHLD_BACK</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-shld-left"><a class="reference internal" href="#globals-enum-npcshieldindex"><span class="std std-ref">NpcShieldIndex</span></a> <strong>SHLD_LEFT</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-shld-right"><a class="reference internal" href="#globals-enum-npcshieldindex"><span class="std std-ref">NpcShieldIndex</span></a> <strong>SHLD_RIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-shld-can-break"><a class="reference internal" href="#globals-enum-npcshieldindex"><span class="std std-ref">NpcShieldIndex</span></a> <strong>SHLD_CAN_BREAK</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<hr class="classref-item-separator docutils" />
+<p id="globals-enum-npcfade">enum <strong>NpcFade</strong>: <a class="reference internal" href="#globals-enum-npcfade"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcf-none"><a class="reference internal" href="#globals-enum-npcfade"><span class="std std-ref">NpcFade</span></a> <strong>NPCF_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcf-flicker"><a class="reference internal" href="#globals-enum-npcfade"><span class="std std-ref">NpcFade</span></a> <strong>NPCF_FLICKER</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcf-invisible"><a class="reference internal" href="#globals-enum-npcfade"><span class="std std-ref">NpcFade</span></a> <strong>NPCF_INVISIBLE</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcf-flash"><a class="reference internal" href="#globals-enum-npcfade"><span class="std std-ref">NpcFade</span></a> <strong>NPCF_FLASH</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-npcf-poof"><a class="reference internal" href="#globals-enum-npcfade"><span class="std std-ref">NpcFade</span></a> <strong>NPCF_POOF</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+</section>
+<hr class="classref-item-separator docutils" />
+<section id="variable-descriptions">
+<h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
+<p id="classes-npc-var-frame"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Frame</strong>  <a class="reference internal" href="#classes-npc-var-frame"><span class="std std-ref">🔗</span></a></p>
+<p>The current frame of the npc’s animation.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-max"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Max</strong>  <a class="reference internal" href="#classes-npc-var-max"><span class="std std-ref">🔗</span></a></p>
+<p>Returns the max number of npcs currently allowed.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-slideclock"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SlideClock</strong>  <a class="reference internal" href="#classes-npc-var-slideclock"><span class="std std-ref">🔗</span></a></p>
+<p>The timer used for enemy knockback.
+The first byte is the clock.
+The second byte is the dir.
+Enemies that split do not slide.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-fading"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Fading</strong>  <a class="reference internal" href="#classes-npc-var-fading"><span class="std std-ref">🔗</span></a></p>
+<p>The death effect for the npc.</p>
+<p>Valid values: <a class="reference internal" href="#globals-enum-npcfade"><span class="std std-ref">NpcFade</span></a> (<cite>NPCF_</cite>).</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-rate"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Rate</strong>  <a class="reference internal" href="#classes-npc-var-rate"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-homing"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Homing</strong>  <a class="reference internal" href="#classes-npc-var-homing"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-step"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Step</strong>  <a class="reference internal" href="#classes-npc-var-step"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-aspeed"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ASpeed</strong>  <a class="reference internal" href="#classes-npc-var-aspeed"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-halt"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Halt</strong>  <a class="reference internal" href="#classes-npc-var-halt"><span class="std std-ref">🔗</span></a></p>
+<p>The clock for how long an npc is halted.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-movestatus"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MoveStatus</strong>  <a class="reference internal" href="#classes-npc-var-movestatus"><span class="std std-ref">🔗</span></a></p>
+<p>The movement status of an npc, usually flying.</p>
+<p>See enum NPCMoveStatus in &lt;std.zh&gt;.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-haltrate"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Haltrate</strong>  <a class="reference internal" href="#classes-npc-var-haltrate"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-random"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Random</strong>  <a class="reference internal" href="#classes-npc-var-random"><span class="std std-ref">🔗</span></a></p>
+<p>Corresponds to the Enemy Editor Random Rate value.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-hp"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HP</strong>  <a class="reference internal" href="#classes-npc-var-hp"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-id"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ID</strong>  <a class="reference internal" href="#classes-npc-var-id"><span class="std std-ref">🔗</span></a></p>
+<p>The enemy ID of the enemy.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-type"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Type</strong>  <a class="reference internal" href="#classes-npc-var-type"><span class="std std-ref">🔗</span></a></p>
+<p>The type, or ‘enemy class’ of the enemy.</p>
+<p>Valid values: <a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> (<cite>NPCT_</cite>).</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-family"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Family</strong>  <a class="reference internal" href="#classes-npc-var-family"><span class="std std-ref">🔗</span></a></p>
+<p>The type, or ‘enemy class’ of the enemy. Same as Type.</p>
+<p>Valid values: <a class="reference internal" href="#globals-enum-npctype"><span class="std std-ref">NpcType</span></a> (<cite>NPCT_</cite>).</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-damage"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Damage</strong>  <a class="reference internal" href="#classes-npc-var-damage"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-weapondamage"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponDamage</strong>  <a class="reference internal" href="#classes-npc-var-weapondamage"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-originaltile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>OriginalTile</strong>  <a class="reference internal" href="#classes-npc-var-originaltile"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-weapon"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Weapon</strong>  <a class="reference internal" href="#classes-npc-var-weapon"><span class="std std-ref">🔗</span></a></p>
+<p>Valid values: <a class="reference internal" href="#globals-enum-npcweapon"><span class="std std-ref">NpcWeapon</span></a> (<cite>WPN_</cite>).</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-itemset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ItemSet</strong>  <a class="reference internal" href="#classes-npc-var-itemset"><span class="std std-ref">🔗</span></a></p>
+<p>The Dropset ID that this enemy will drop from when killed.</p>
+<p>Valid values: <a class="reference internal" href="#globals-enum-itemset"><span class="std std-ref">ItemSet</span></a> (<cite>IS_</cite>).</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-dropset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Dropset</strong>  <a class="reference internal" href="#classes-npc-var-dropset"><span class="std std-ref">🔗</span></a></p>
+<p>Alias for npc-&gt;ItemSet.</p>
+<p>Read or write the item dropset used by the npc.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-bosspal"><a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a> <strong>BossPal</strong>  <a class="reference internal" href="#classes-npc-var-bosspal"><span class="std std-ref">🔗</span></a></p>
+<p>Valid values: <a class="reference internal" href="#globals-enum-bosspal"><span class="std std-ref">BossPal</span></a> (<cite>BPAL_</cite>).</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-sfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SFX</strong>  <a class="reference internal" href="#classes-npc-var-sfx"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-totaldyoffset"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TotalDYOffset</strong>  <a class="reference internal" href="#classes-npc-var-totaldyoffset"><span class="std std-ref">🔗</span></a></p>
+<p>the weapon’s total visual Y-offset.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-initd"><abbr title="Could be any type.">untyped</abbr> <strong>InitD</strong>  <a class="reference internal" href="#classes-npc-var-initd"><span class="std std-ref">🔗</span></a></p>
+<p>The 8 InitD[] arguments for the npc script.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-attributes"><abbr title="Could be any type.">untyped</abbr> <strong>Attributes</strong>  <a class="reference internal" href="#classes-npc-var-attributes"><span class="std std-ref">🔗</span></a></p>
+<p>Expanded to size 32, and made datatype-insensitive.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-miscflags"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MiscFlags</strong>  <a class="reference internal" href="#classes-npc-var-miscflags"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-colldetection">bool <strong>CollDetection</strong>  <a class="reference internal" href="#classes-npc-var-colldetection"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-stun"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Stun</strong>  <a class="reference internal" href="#classes-npc-var-stun"><span class="std std-ref">🔗</span></a></p>
+<p>The duration the npc is stunned for. If 0, the npc is not stunned.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-core">bool <strong>Core</strong>  <a class="reference internal" href="#classes-npc-var-core"><span class="std std-ref">🔗</span></a></p>
+<p>This returns true if the NPC is the core segment of a segmented engine
+enemy.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-defense"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Defense</strong>  <a class="reference internal" href="#classes-npc-var-defense"><span class="std std-ref">🔗</span></a></p>
+<p>Expanded to a size of 42 to cover new defense categories.</p>
+<p>Valid indices are <a class="reference internal" href="#globals-enum-npcdefenseindex"><span class="std std-ref">NpcDefenseIndex</span></a> (<cite>NPCD_</cite>).
+Valid values: <a class="reference internal" href="#globals-enum-npcdefensetype"><span class="std std-ref">NpcDefenseType</span></a> (<cite>NPCDT_</cite>).</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-hitby"><abbr title="Could be any type.">untyped</abbr> <strong>HitBy</strong>  <a class="reference internal" href="#classes-npc-var-hitby"><span class="std std-ref">🔗</span></a></p>
+<p>Stores the ID/UIDs of objects that hurt the npc this frame.</p>
+<p>Indices:</p>
+<p>The first four indices are for the *screen index* of objects:</p>
+<p>Description             Index   Status
+- HIT_BY_NPC          0       Not used at this time.
+- HIT_BY_EWEAPON      1       Not used at this time.
+- HIT_BY_LWEAPON      2           In use by the engine.
+- HIT_BY_FFC          3       Not used at this time.</p>
+<p>The next four, are for the FFCore ‘script’ UIDs of objects:</p>
+<p>Description             Index   Status
+- HIT_BY_NPC_UID     4       Not used at this time.
+- HIT_BY_EWEAPON_UID 5       Not used at this time.
+- HIT_BY_LWEAPON_UID 6           In use by the engine.
+- HIT_BY_FFC_UID     7       Not used at this time.</p>
+<p>The last two, are reserved for special damage-object types.</p>
+<p>Description             Index   Status
+- HIT_BY_COMBO        8       Not used at this time.
+- HIT_BY_MAPFLAG 9 Not used at this time.</p>
+<p>These indices are uniform across all HitBy[] array members, for any
+datatype with that member.</p>
+<p>Some lweapons, notably some melee weapons such as swords (but not sword
+beams), and boomerangs are not yet implemented in this mechanic.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-hunger"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Hunger</strong>  <a class="reference internal" href="#classes-npc-var-hunger"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-weaponsprite"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponSprite</strong>  <a class="reference internal" href="#classes-npc-var-weaponsprite"><span class="std std-ref">🔗</span></a></p>
+<p>The sprite (Quest-&gt;Graphics-&gt;Sprites-&gt;Weapons) used to draw the weapon
+fired by the npc.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-weaponsfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponSFX</strong>  <a class="reference internal" href="#classes-npc-var-weaponsfx"><span class="std std-ref">🔗</span></a></p>
+<p>The sfx (Quest-&gt;Audio-&gt;SFXData) used whenever the npc fires its weapon.
+If WeaponSFX &lt;= 0 no sound will be played.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-scriptdefense"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ScriptDefense</strong>  <a class="reference internal" href="#classes-npc-var-scriptdefense"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-invframes"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>InvFrames</strong>  <a class="reference internal" href="#classes-npc-var-invframes"><span class="std std-ref">🔗</span></a></p>
+<p>Returns the number of remaining invincibility frames if the enemy is
+invincible, otherwise 0.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-invincible"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Invincible</strong>  <a class="reference internal" href="#classes-npc-var-invincible"><span class="std std-ref">🔗</span></a></p>
+<p>Returns if the enemy is invincible, because of ( superman variable ).</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-ringleader">bool <strong>Ringleader</strong>  <a class="reference internal" href="#classes-npc-var-ringleader"><span class="std std-ref">🔗</span></a></p>
+<p>If true, the enemy is a Ringleader, and killing this npc will kill every
+npc in the room.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-hasitem">bool <strong>HasItem</strong>  <a class="reference internal" href="#classes-npc-var-hasitem"><span class="std std-ref">🔗</span></a></p>
+<p>True if the enemy is carrying an item.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-shield">bool[] <strong>Shield</strong>  <a class="reference internal" href="#classes-npc-var-shield"><span class="std std-ref">🔗</span></a></p>
+<p>Flags related to the enemy’s shield.</p>
+<p>Valid indices are <a class="reference internal" href="#globals-enum-npcshieldindex"><span class="std std-ref">NpcShieldIndex</span></a> (<cite>SHLD_</cite>).</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-bflags">bool[] <strong>BFlags</strong>  <a class="reference internal" href="#classes-npc-var-bflags"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-hitdir"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitDir</strong>  <a class="reference internal" href="#classes-npc-var-hitdir"><span class="std std-ref">🔗</span></a></p>
+<p>Returns a direction constant if the npc is being knocked back.</p>
+<p>Returns -1 if the npc is not being knockd back.</p>
+<p>Writing to this has no effect, and is ignored.</p>
+<p>This value is set both from engine, and from scripted knockback.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-script"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Script</strong>  <a class="reference internal" href="#classes-npc-var-script"><span class="std std-ref">🔗</span></a></p>
+<p>The npc script running on this npc.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-immortal">bool <strong>Immortal</strong>  <a class="reference internal" href="#classes-npc-var-immortal"><span class="std std-ref">🔗</span></a></p>
+<p>If true, the enemy will not ‘die’ even if it has 0hp or is too far
+off-screen.</p>
+<p>Remove() will still delete the npc.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-noslide">bool <strong>NoSlide</strong>  <a class="reference internal" href="#classes-npc-var-noslide"><span class="std std-ref">🔗</span></a></p>
+<p>False by default. If set to ‘true’, engine knockback is ignored.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-noscriptknockback">bool <strong>NoScriptKnockback</strong>  <a class="reference internal" href="#classes-npc-var-noscriptknockback"><span class="std std-ref">🔗</span></a></p>
+<p>False by default. If set to ‘true’, scripted knockback via
+‘npc-&gt;Knockback()’ is ignored.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-slidespeed"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SlideSpeed</strong>  <a class="reference internal" href="#classes-npc-var-slidespeed"><span class="std std-ref">🔗</span></a></p>
+<p>The number of pixels engine knockback moves the enemy at a time.
+Default 4.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-lightradius"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LightRadius</strong>  <a class="reference internal" href="#classes-npc-var-lightradius"><span class="std std-ref">🔗</span></a></p>
+<p>The radius of light this object emits in a dark room</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-lightshape"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LightShape</strong>  <a class="reference internal" href="#classes-npc-var-lightshape"><span class="std std-ref">🔗</span></a></p>
+<p>The shape of light this object emits in a dark room.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-spawnsprite"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SpawnSprite</strong>  <a class="reference internal" href="#classes-npc-var-spawnsprite"><span class="std std-ref">🔗</span></a></p>
+<p>The spawn sprite used by the npc, 0-255</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-deathsprite"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DeathSprite</strong>  <a class="reference internal" href="#classes-npc-var-deathsprite"><span class="std std-ref">🔗</span></a></p>
+<p>The death sprite used by the npc, 0-255</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-invflicker">bool <strong>InvFlicker</strong>  <a class="reference internal" href="#classes-npc-var-invflicker"><span class="std std-ref">🔗</span></a></p>
+<p>If set false, the npc will neither flash, nor flicker when invincible.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-flickercolor"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FlickerColor</strong>  <a class="reference internal" href="#classes-npc-var-flickercolor"><span class="std std-ref">🔗</span></a></p>
+<p>This sets what color the enemy is drawn when flickering.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-flickertransparencypasses"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FlickerTransparencyPasses</strong>  <a class="reference internal" href="#classes-npc-var-flickertransparencypasses"><span class="std std-ref">🔗</span></a></p>
+<p>This sets how many times the transparency effect is applied to the
+enemy’s flicker effect.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-flashingcset"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FlashingCSet</strong>  <a class="reference internal" href="#classes-npc-var-flashingcset"><span class="std std-ref">🔗</span></a></p>
+<p>This returns the enemy’s current displayed cset when taking damage or
+invincible. If not in one of these states, will return its normal cset.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-frozen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Frozen</strong>  <a class="reference internal" href="#classes-npc-var-frozen"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-frozentile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FrozenTile</strong>  <a class="reference internal" href="#classes-npc-var-frozentile"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-frozencset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FrozenCSet</strong>  <a class="reference internal" href="#classes-npc-var-frozencset"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-uid"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>UID</strong>  <a class="reference internal" href="#classes-npc-var-uid"><span class="std std-ref">🔗</span></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> This has been deprecated.</p>
+</div>
+<hr class="classref-item-separator docutils" />
+<p id="classes-npc-var-parentuid"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ParentUID</strong>  <a class="reference internal" href="#classes-npc-var-parentuid"><span class="std std-ref">🔗</span></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> This has been deprecated.</p>
+</div>
+</section>
+<hr class="classref-item-separator docutils" />
+<section id="function-descriptions">
+<h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
+<p class="classref-method" id="classes-npc-fun-max"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Max</strong>() <a class="reference internal" href="#classes-npc-fun-max"><span class="std std-ref">🔗</span></a></p>
+<p>Returns the max number of npcs currently allowed.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> Use Max instead!</p>
+</div>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-max-2"><abbr title="No return value.">void</abbr> <strong>Max</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> value) <a class="reference internal" href="#classes-npc-fun-max-2"><span class="std std-ref">🔗</span></a></p>
+<p>Sets the max number of npcs allowed to a new value. Range <cite>1-1024</cite>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> Use Max instead!</p>
+</div>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-isvalid">bool <strong>isValid</strong>() <a class="reference internal" href="#classes-npc-fun-isvalid"><span class="std std-ref">🔗</span></a></p>
+<p>Returns true if this pointer points to a valid npc. If this returns
+false, using any other value of this pointer will error.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-explode"><abbr title="No return value.">void</abbr> <strong>Explode</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg1) <a class="reference internal" href="#classes-npc-fun-explode"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-submerged">bool <strong>Submerged</strong>() <a class="reference internal" href="#classes-npc-fun-submerged"><span class="std std-ref">🔗</span></a></p>
+<p>Returns true if the npc is submerged (ex. underground/underwater)</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-getname"><abbr title="No return value.">void</abbr> <strong>GetName</strong>(char32[] buffer) <a class="reference internal" href="#classes-npc-fun-getname"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-breakshield"><abbr title="No return value.">void</abbr> <strong>BreakShield</strong>() <a class="reference internal" href="#classes-npc-fun-breakshield"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-isdead">bool <strong>isDead</strong>() <a class="reference internal" href="#classes-npc-fun-isdead"><span class="std std-ref">🔗</span></a></p>
+<p>Returns if the NPC is dead, or dying</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-canslide">bool <strong>CanSlide</strong>() <a class="reference internal" href="#classes-npc-fun-canslide"><span class="std std-ref">🔗</span></a></p>
+<p>Unimplemented</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-slide">bool <strong>Slide</strong>() <a class="reference internal" href="#classes-npc-fun-slide"><span class="std std-ref">🔗</span></a></p>
+<p>Run Engine knockback (Only does anything if a knockback is in-progress)</p>
+<p>This is automatically called for most engine enemy types</p>
+<p>Calling this from enemy types such as ‘Other’ will allow them to recieve
+knockback</p>
+<p>This is called as a part of scripted walking functions, such as
+‘ConstantWalk()’, automatically.</p>
+<p>Return: 0 if no knockback occurred, 1 if scripted knockback
+(‘-&gt;Knockback()’) occurred, 2 if engine knockback occurred.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-remove"><abbr title="No return value.">void</abbr> <strong>Remove</strong>() <a class="reference internal" href="#classes-npc-fun-remove"><span class="std std-ref">🔗</span></a></p>
+<p>Instantly DELETES an npc. No items will be dropped, no sound will play;
+the npc is simply DELETED OUTRIGHT.</p>
+<p>This will immediately invalidate the npc pointer, as well as update
+‘Screen-&gt;NumNPCs()’, and change the indexes for ‘Screen-&gt;LoadNPC()’</p>
+<p>If called from an NPC script on the NPC running the script, immediately
+terminates the script.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-stopbgsfx"><abbr title="No return value.">void</abbr> <strong>StopBGSFX</strong>() <a class="reference internal" href="#classes-npc-fun-stopbgsfx"><span class="std std-ref">🔗</span></a></p>
+<p>Stops the background sounds that the npc is generating.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-attack"><abbr title="No return value.">void</abbr> <strong>Attack</strong>() <a class="reference internal" href="#classes-npc-fun-attack"><span class="std std-ref">🔗</span></a></p>
+<p>Causes the npc to attack with its weapon.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-newdir"><abbr title="No return value.">void</abbr> <strong>NewDir</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr) <a class="reference internal" href="#classes-npc-fun-newdir"><span class="std std-ref">🔗</span></a></p>
+<p>The npc chooses a new direction.</p>
+<p>Uses an array literal for its args:</p>
+<p>{ int rate, int homing, int special }</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-constantwalk"><abbr title="No return value.">void</abbr> <strong>ConstantWalk</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr) <a class="reference internal" href="#classes-npc-fun-constantwalk"><span class="std std-ref">🔗</span></a></p>
+<p>Causes the npc to walk.</p>
+<p>Uses an array literal for its args.</p>
+<p>Pass NULL as the pointer to run without args, or use:</p>
+<p>{int rate, int homing, int special}</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-constantwalk8"><abbr title="No return value.">void</abbr> <strong>ConstantWalk8</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr) <a class="reference internal" href="#classes-npc-fun-constantwalk8"><span class="std std-ref">🔗</span></a></p>
+<p>As ConstantWalk(), but 8-directions.</p>
+<p>{int rate, int homing, int special}</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-variablewalk"><abbr title="No return value.">void</abbr> <strong>VariableWalk</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr) <a class="reference internal" href="#classes-npc-fun-variablewalk"><span class="std std-ref">🔗</span></a></p>
+<p>Causes the npc to walk and occasionally change speed.</p>
+<p>{int rate, int homing, int special}</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-variablewalk8"><abbr title="No return value.">void</abbr> <strong>VariableWalk8</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr) <a class="reference internal" href="#classes-npc-fun-variablewalk8"><span class="std std-ref">🔗</span></a></p>
+<p>As VariableWalk(), but 8-directions.</p>
+<p>{int rate, int homing, int newclk, int special}</p>
+<p>{int rate, int homing, int newclk, int special, int dx1, int dy1, int
+dx2, int dy2}</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-haltingwalk"><abbr title="No return value.">void</abbr> <strong>HaltingWalk</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr) <a class="reference internal" href="#classes-npc-fun-haltingwalk"><span class="std std-ref">🔗</span></a></p>
+<p>Causes an enemy to walk, and occasionally halt.</p>
+<p>{int rate, int homing, int special, int hrate, int haltcnt}</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-haltingwalk8"><abbr title="No return value.">void</abbr> <strong>HaltingWalk8</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr) <a class="reference internal" href="#classes-npc-fun-haltingwalk8"><span class="std std-ref">🔗</span></a></p>
+<p>As HaltingWalk(), but 8-directions.</p>
+<p>{int newrate, int newhoming, int newclk, int special, int newhrate, int
+haltcnt}</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-floatingwalk"><abbr title="No return value.">void</abbr> <strong>FloatingWalk</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr) <a class="reference internal" href="#classes-npc-fun-floatingwalk"><span class="std std-ref">🔗</span></a></p>
+<p>Causes an enemy to move, ignoring solidity on the screen.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-breathattack"><abbr title="No return value.">void</abbr> <strong>BreathAttack</strong>(bool seeklink = <code class="docutils literal notranslate"><span class="pre">false</span></code>) <a class="reference internal" href="#classes-npc-fun-breathattack"><span class="std std-ref">🔗</span></a></p>
+<p>Fires the breath weapon set to the enemy.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-newdir8"><abbr title="No return value.">void</abbr> <strong>NewDir8</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr) <a class="reference internal" href="#classes-npc-fun-newdir8"><span class="std std-ref">🔗</span></a></p>
+<p>As NewDir(), but 8-directions.</p>
+<p>{int rate, int homing, int special}</p>
+<p>{int rate, int homing, int special, int dx1, int dy1, int dx2, int dy2}</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-collision">bool <strong>Collision</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> obj_type, <abbr title="Could be any type.">untyped</abbr> obj_pointer) <a class="reference internal" href="#classes-npc-fun-collision"><span class="std std-ref">🔗</span></a></p>
+<p>Returns if either an object is colliding with the npc, or if an arbitrary
+set of</p>
+<p>coordinates would collide.</p>
+<p>Valid Object Types:</p>
+<p>obj_type_lweapon, obj_type_eweapon, obj_type_npc, obj_type_link,
+obj_type_ffc, obj_type_combo_pos, obj_type_item</p>
+<p>** Not fully implemented!</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-linedup"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LinedUp</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> range, bool dir8 = <code class="docutils literal notranslate"><span class="pre">false</span></code>) <a class="reference internal" href="#classes-npc-fun-linedup"><span class="std std-ref">🔗</span></a></p>
+<p>Checks if enemy is lined up with Link.</p>
+<p>If so, returns direction Link is at as compared to enemy.</p>
+<p>Returns -1 if not lined up. Range is inclusive.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-linkinrange">bool <strong>LinkInRange</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dist_in_pixels) <a class="reference internal" href="#classes-npc-fun-linkinrange"><span class="std std-ref">🔗</span></a></p>
+<p>Returns true if Link is within ‘range’ pixels of the enemy.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-canmove">bool <strong>CanMove</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> array) <a class="reference internal" href="#classes-npc-fun-canmove"><span class="std std-ref">🔗</span></a></p>
+<p>Returns true if the npc can move in a given direction.</p>
+<p>Uses an array literal for varying args.</p>
+<p>Overloaded for a number of options:</p>
+<p>{int dir}: Dir only, should use the default step distance.</p>
+<p>{int dir, int special}</p>
+<p>{int ndir, int step, int special}</p>
+<p>{int ndir,int step,int special,int dx1,int dy1,int dx2,int dy2}</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-simulatehit">bool <strong>SimulateHit</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> array) <a class="reference internal" href="#classes-npc-fun-simulatehit"><span class="std std-ref">🔗</span></a></p>
+<p>Simulates hitting the npc with a weapon, another sprite, or an arbitrary
+set of</p>
+<p>values passed as an overloaded array literal.</p>
+<p>Returns true if that object would hit the npc.</p>
+<p>{TYPE, pointer} : Specify the type, such as PTR_TYPE_LWEAPON, then pass
+an object pointer.</p>
+<p>{int tx, int ty, int tz, int txsz, int tysz, int tzsz} : Arbitrary
+values.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-create"><a class="reference internal" href="#classes-npc"><span class="std std-ref">npc</span></a> <strong>Create</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> array) <a class="reference internal" href="#classes-npc-fun-create"><span class="std std-ref">🔗</span></a></p>
+<p>Similar to Screen-&gt;CreateNPC(), except:</p>
+<ol class="arabic simple">
+<li><p>It uses an arry literal for its args, with varying size.</p></li>
+<li><p>You can either create an npc only by its ID, or you can do</p></li>
+</ol>
+<p>that and set its spawn coordinates at the same time.</p>
+<ol class="arabic simple" start="3">
+<li><p>It works based on an existing pointer, such as:</p></li>
+</ol>
+<p>npc n; n-&gt;Create{args});</p>
+<p>{ int id }</p>
+<p>{ int id, int x, int y }</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-knockback">bool <strong>Knockback</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> time, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> speed = <code class="docutils literal notranslate"><span class="pre">4</span></code>) <a class="reference internal" href="#classes-npc-fun-knockback"><span class="std std-ref">🔗</span></a></p>
+<p>Attempt to knock back the npc in ‘dir’ direction, for ‘time’ frames, at a
+rate of ‘speed’ pixels per frame.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-switch">bool <strong>Switch</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> effect) <a class="reference internal" href="#classes-npc-fun-switch"><span class="std std-ref">🔗</span></a></p>
+<p>Switch the player with this sprite.</p>
+<p>Valid values for effect is <a class="reference internal" href="../global_constants.html#globals-enum-switcheffect"><span class="std std-ref">SwitchEffect</span></a> (<cite>SW_EFF_</cite>).</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-movepaused">bool <strong>MovePaused</strong>() <a class="reference internal" href="#classes-npc-fun-movepaused"><span class="std std-ref">🔗</span></a></p>
+<p>Returns true if the enemy is in a state in which it should not be allowed
+to move (ex. spawning, dying, stunned, time frozen by clock)</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-move">bool <strong>Move</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pxamnt, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> special = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#classes-npc-fun-move"><span class="std std-ref">🔗</span></a></p>
+<p>Attempts to move the enemy by ‘pxamnt’ pixels in the ‘dir’ direction,
+failing if it is blocked by something it cannot walk through.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-moveatangle">bool <strong>MoveAtAngle</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> degrees, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pxamnt, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> special = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#classes-npc-fun-moveatangle"><span class="std std-ref">🔗</span></a></p>
+<p>Attempts to move the enemy by ‘pxamnt’ pixels in the ‘degrees’ angle,
+failing if it is blocked by something it cannot walk through.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-movexy">bool <strong>MoveXY</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dx, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dy, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> special = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#classes-npc-fun-movexy"><span class="std std-ref">🔗</span></a></p>
+<p>Attempts to move the enemy by ‘dx’ in the x direction and ‘dy’ in the y
+direction, failing if it is blocked by something it cannot walk through.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-canmove-2">bool <strong>CanMove</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pxamnt, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> special = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#classes-npc-fun-canmove-2"><span class="std std-ref">🔗</span></a></p>
+<p>Attempts to move the enemy by ‘pxamnt’ pixels in the ‘dir’ direction,
+failing if it is blocked by something it cannot walk through.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-canmoveatangle">bool <strong>CanMoveAtAngle</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> degrees, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pxamnt, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> special = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#classes-npc-fun-canmoveatangle"><span class="std std-ref">🔗</span></a></p>
+<p>Attempts to move the enemy by ‘pxamnt’ pixels in the ‘degrees’ angle,
+failing if it is blocked by something it cannot walk through.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-canmovexy">bool <strong>CanMoveXY</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dx, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dy, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> special = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#classes-npc-fun-canmovexy"><span class="std std-ref">🔗</span></a></p>
+<p>Attempts to move the enemy by ‘dx’ in the x direction and ‘dy’ in the y
+direction, failing if it is blocked by something it cannot walk through.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-canplace">bool <strong>CanPlace</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> nx, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ny, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> special = <code class="docutils literal notranslate"><span class="pre">0</span></code>, bool knockback = <code class="docutils literal notranslate"><span class="pre">false</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> nw = <code class="docutils literal notranslate"><span class="pre">-1</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> nh = <code class="docutils literal notranslate"><span class="pre">-1</span></code>) <a class="reference internal" href="#classes-npc-fun-canplace"><span class="std std-ref">🔗</span></a></p>
+<p>Checks if the enemy could be arbitrarily placed (teleported) at ‘nx,ny’.</p>
+<p>If ‘nw’ or ‘nh’ are &gt; -1, they will be used as the width/height of the
+enemy for the check.</p>
+<p>Otherwise, the enemy’s hitwidth/hitheight are used.</p>
+<p>Some enemies treat pits/liquid as solid, EXCEPT if they are being knocked
+back.</p>
+<p>‘bool knockback’ here affects this for the placement checks.</p>
+<p>Use the ‘SPW_’ constants to provide a special value;</p>
+<p>i.e. ‘SPW_FLOATER’ for flying enemies.</p>
+<p>Use ‘SPW_NONE’ if you don’t know what to use.</p>
+<p>Returns true if the enemy could be placed successfully, false otherwise.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-isflickerframe">bool <strong>isFlickerFrame</strong>() <a class="reference internal" href="#classes-npc-fun-isflickerframe"><span class="std std-ref">🔗</span></a></p>
+<p>This returns true if the enemy is currently in a flicker frame (either
+invisible or color masked).</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-own"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="bitmap.html#classes-bitmap"><span class="std std-ref">bitmap</span></a> b) <a class="reference internal" href="#classes-npc-fun-own"><span class="std std-ref">🔗</span></a></p>
+<p>Grants ‘Ownership’ of the parameter object to the npc.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-own-2"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="paldata.html#classes-paldata"><span class="std std-ref">paldata</span></a> b) <a class="reference internal" href="#classes-npc-fun-own-2"><span class="std std-ref">🔗</span></a></p>
+<p>Grants ‘Ownership’ of the parameter object to the npc.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-own-3"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="file.html#classes-file"><span class="std std-ref">file</span></a> b) <a class="reference internal" href="#classes-npc-fun-own-3"><span class="std std-ref">🔗</span></a></p>
+<p>Grants ‘Ownership’ of the parameter object to the npc.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-own-4"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="directory.html#classes-directory"><span class="std std-ref">directory</span></a> b) <a class="reference internal" href="#classes-npc-fun-own-4"><span class="std std-ref">🔗</span></a></p>
+<p>Grants ‘Ownership’ of the parameter object to the npc.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-own-5"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="stack.html#classes-stack"><span class="std std-ref">stack</span></a> b) <a class="reference internal" href="#classes-npc-fun-own-5"><span class="std std-ref">🔗</span></a></p>
+<p>Grants ‘Ownership’ of the parameter object to the npc.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-own-6"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="randgen.html#classes-randgen"><span class="std std-ref">randgen</span></a> b) <a class="reference internal" href="#classes-npc-fun-own-6"><span class="std std-ref">🔗</span></a></p>
+<p>Grants ‘Ownership’ of the parameter object to the npc.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-ownarray"><abbr title="No return value.">void</abbr> <strong>OwnArray</strong>(<abbr title="Could be any type.">untyped</abbr> array) <a class="reference internal" href="#classes-npc-fun-ownarray"><span class="std std-ref">🔗</span></a></p>
+<p>Grants ‘Ownership’ of the parameter object to the npc.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-npc-fun-ownobject"><abbr title="No return value.">void</abbr> <strong>OwnObject</strong>(<abbr title="Could be any type.">untyped</abbr> object) <a class="reference internal" href="#classes-npc-fun-ownobject"><span class="std std-ref">🔗</span></a></p>
+<p>Grants ‘Ownership’ of the parameter object to the npc.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="messagedata.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">messagedata</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="npcdata.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">npcdata</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerations">Enumerations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-descriptions">Function descriptions</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024, ZQuest Classic Foundation.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

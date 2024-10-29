@@ -1,0 +1,962 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ghost.zh &#8212; ZQuest Classic  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/libs/ghost/ghost';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="ghost2_common.zh" href="ghost2_common.html" />
+    <link rel="prev" title="ghost" href="index.html" />
+    <link href="../../../_static/main.css" rel="stylesheet" type="text/css">
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/ZC_Logo.png" class="logo__image only-light" alt="ZQuest Classic  documentation - Home"/>
+    <img src="../../../_static/ZC_Logo.png" class="logo__image only-dark pst-js-only" alt="ZQuest Classic  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../about/introduction.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../about/introduction.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../global_constants.html">Global constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../global_functions.html">Global functions</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Audio.html">Audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Debug.html">Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/FileSystem.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Game.html">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Graphics.html">Graphics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Text.html">Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/ZInfo.html">ZInfo</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../classes/bitmap.html">bitmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/bottledata.html">bottledata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/bottleshopdata.html">bottleshopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/combodata.html">combodata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/directory.html">directory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/dmapdata.html">dmapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/dropsetdata.html">dropsetdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/eweapon.html">eweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/ffc.html">ffc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/file.html">file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/genericdata.html">genericdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/itemdata.html">itemdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/itemsprite.html">itemsprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/lweapon.html">lweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/mapdata.html">mapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/messagedata.html">messagedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/player.html">player</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/portal.html">portal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/randgen.html">randgen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/savedportal.html">savedportal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/screendata.html">screendata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/shopdata.html">shopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/sprite.html">sprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/spritedata.html">spritedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/stack.html">stack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/subscreendata.html">subscreendata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenpage.html">subscreenpage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenwidget.html">subscreenwidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/websocket.html">websocket</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../std/cfg.html">std.cfg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/limits.html">limits.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/script_runners.html">script_runners.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/std_constants.html">std_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/std_extension.html">std_extension.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/std_functions.html">std_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/std_keyboard.html">std_keyboard.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/string_constants.html">string_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/string_functions.html">string_functions.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">ghost</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">ghost.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghost2_common.html">ghost2_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghost2_deprecated.html">ghost2_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghost2_drawing.html">ghost2_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghost2_eweapon.html">ghost2_eweapon.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghost2_eweaponDeath.html">ghost2_eweaponDeath.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghost2_eweaponMovement.html">ghost2_eweaponMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghost2_flags.html">ghost2_flags.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghost2_global.html">ghost2_global.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghost2_init.html">ghost2_init.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghost2_modification.html">ghost2_modification.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghost2_movement.html">ghost2_movement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghost2_other.html">ghost2_other.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghost2_scripts.html">ghost2_scripts.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghost2_update.html">ghost2_update.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tango/index.html">tango</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango.html">tango.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango_access.html">tango_access.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango_common.html">tango_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango_deprecated.html">tango_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango_drawing.html">tango_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango_font.html">tango_font.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango_functions.html">tango_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango_loading.html">tango_loading.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango_loggingMinimal.html">tango_loggingMinimal.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango_menu.html">tango_menu.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango_messages.html">tango_messages.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango_metrics.html">tango_metrics.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango_processing.html">tango_processing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango_script.html">tango_script.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango_stringControlCode.html">tango_stringControlCode.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango_style.html">tango_style.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango_user.html">tango_user.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tango/tango_validation.html">tango_validation.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../gui/index.html">gui</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../gui/gui.html">gui.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_button.html">guizh_button.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_checkbox.html">guizh_checkbox.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_common.html">guizh_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_event.html">guizh_event.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_label.html">guizh_label.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_main.html">guizh_main.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_radioButton.html">guizh_radioButton.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_root.html">guizh_root.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_spinner.html">guizh_spinner.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_types.html">guizh_types.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_widget.html">guizh_widget.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_window.html">guizh_window.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ffcscript/ffcscript.html">ffcscript.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">ZScript</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">ghost</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">ghost.zh</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="ghost-zh">
+<h1>ghost.zh<a class="headerlink" href="#ghost-zh" title="Link to this heading">#</a></h1>
+<section id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-shadow-tile"><span class="std std-ref">GH_SHADOW_TILE</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-shadow-cset"><span class="std std-ref">GH_SHADOW_CSET</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-shadow-frames"><span class="std std-ref">GH_SHADOW_FRAMES</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-shadow-anim-speed"><span class="std std-ref">GH_SHADOW_ANIM_SPEED</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-shadow-translucent"><span class="std std-ref">GH_SHADOW_TRANSLUCENT</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-shadow-flicker"><span class="std std-ref">GH_SHADOW_FLICKER</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-large-shadow-tile"><span class="std std-ref">GH_LARGE_SHADOW_TILE</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-large-shadow-cset"><span class="std std-ref">GH_LARGE_SHADOW_CSET</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-large-shadow-frames"><span class="std std-ref">GH_LARGE_SHADOW_FRAMES</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-large-shadow-anim-speed"><span class="std std-ref">GH_LARGE_SHADOW_ANIM_SPEED</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-large-shadow-min-width"><span class="std std-ref">GH_LARGE_SHADOW_MIN_WIDTH</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-large-shadow-min-height"><span class="std std-ref">GH_LARGE_SHADOW_MIN_HEIGHT</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-autoghost-min-ffc"><span class="std std-ref">AUTOGHOST_MIN_FFC</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-autoghost-max-ffc"><span class="std std-ref">AUTOGHOST_MAX_FFC</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-autoghost-min-enemy-id"><span class="std std-ref">AUTOGHOST_MIN_ENEMY_ID</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-autoghost-max-enemy-id"><span class="std std-ref">AUTOGHOST_MAX_ENEMY_ID</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-draw-over-threshold"><span class="std std-ref">GH_DRAW_OVER_THRESHOLD</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-gravity"><span class="std std-ref">GH_GRAVITY</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-terminal-velocity"><span class="std std-ref">GH_TERMINAL_VELOCITY</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-spawn-sprite"><span class="std std-ref">GH_SPAWN_SPRITE</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-fake-z"><span class="std std-ref">GH_FAKE_Z</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-fake-eweapon-z"><span class="std std-ref">__GH_FAKE_EWEAPON_Z</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-enemies-flicker"><span class="std std-ref">GH_ENEMIES_FLICKER</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-prefer-ghost-zh-shadows"><span class="std std-ref">GH_PREFER_GHOST_ZH_SHADOWS</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-blank-tile"><span class="std std-ref">GH_BLANK_TILE</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-invisible-combo"><span class="std std-ref">GH_INVISIBLE_COMBO</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-always-use-name"><span class="std std-ref">__GH_ALWAYS_USE_NAME</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-autoghost-read-name"><span class="std std-ref">AUTOGHOST_READ_NAME</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-autoghost-delimiter"><span class="std std-ref">AUTOGHOST_DELIMITER</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-invisible-alt"><span class="std std-ref">__GH_INVISIBLE_ALT</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-invisible-extend"><span class="std std-ref">__GH_INVISIBLE_EXTEND</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-use-drawcombo"><span class="std std-ref">__GH_USE_DRAWCOMBO</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-flash-time"><span class="std std-ref">__GH_FLASH_TIME</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-knockback-time"><span class="std std-ref">__GH_KNOCKBACK_TIME</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-knockback-step"><span class="std std-ref">__GH_KNOCKBACK_STEP</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-default-imprecision"><span class="std std-ref">__GH_DEFAULT_IMPRECISION</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-clear-ffc-link"><span class="std std-ref">__GH_CLEAR_FFC_LINK</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-fix-255-anone"><span class="std std-ref">__GH_FIX_255_ANONE</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-ethereal"><span class="std std-ref">__GH_ETHEREAL</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-weapons-hit-platforms"><span class="std std-ref">__GH_WEAPONS_HIT_PLATFORMS</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-fix-ewm-fall"><span class="std std-ref">__GH_FIX_EWM_FALL</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-gh-fix-ewm-throw"><span class="std std-ref">__GH_FIX_EWM_THROW</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-ghi-npc-data"><span class="std std-ref">__GHI_NPC_DATA</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-ewi-flags"><span class="std std-ref">__EWI_FLAGS</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-ewi-id"><span class="std std-ref">__EWI_ID</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-ewi-xpos"><span class="std std-ref">__EWI_XPOS</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-ewi-ypos"><span class="std std-ref">__EWI_YPOS</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-ewi-work"><span class="std std-ref">__EWI_WORK</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-ewi-work-2"><span class="std std-ref">__EWI_WORK_2</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-ewi-movement"><span class="std std-ref">__EWI_MOVEMENT</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-ewi-movement-arg"><span class="std std-ref">__EWI_MOVEMENT_ARG</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-ewi-movement-arg-2"><span class="std std-ref">__EWI_MOVEMENT_ARG_2</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-ewi-lifespan"><span class="std std-ref">__EWI_LIFESPAN</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-ewi-lifespan-arg"><span class="std std-ref">__EWI_LIFESPAN_ARG</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-ewi-on-death"><span class="std std-ref">__EWI_ON_DEATH</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-ewi-on-death-arg"><span class="std std-ref">__EWI_ON_DEATH_ARG</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-ewi-dummy-sound"><span class="std std-ref">__EWI_DUMMY_SOUND</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-ewi-dummy-step"><span class="std std-ref">__EWI_DUMMY_STEP</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-ghost-var-ewi-dummy-sprite"><span class="std std-ref">__EWI_DUMMY_SPRITE</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#libs-ghost-fun-ispit"><span class="std std-ref">__IsPit</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> combo)</p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#libs-ghost-fun-haveamulet"><span class="std std-ref">__HaveAmulet</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#libs-ghost-fun-ghost2-onsideplatform"><span class="std std-ref">ghost2__OnSidePlatform</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> xOff, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> yOff, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> h, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> w)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="variable-descriptions">
+<h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
+<p id="libs-ghost-var-gh-shadow-tile"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_SHADOW_TILE</strong> = <code class="docutils literal notranslate"><span class="pre">27400</span></code> <a class="reference internal" href="#libs-ghost-var-gh-shadow-tile"><span class="std std-ref">🔗</span></a></p>
+<p>See docs/ghost/index.html for documentation.
+All User Settings
+Standard settings ———————————————————–
+Small (1x1) shadow settings</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-shadow-cset"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_SHADOW_CSET</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code> <a class="reference internal" href="#libs-ghost-var-gh-shadow-cset"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-shadow-frames"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_SHADOW_FRAMES</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code> <a class="reference internal" href="#libs-ghost-var-gh-shadow-frames"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-shadow-anim-speed"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_SHADOW_ANIM_SPEED</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code> <a class="reference internal" href="#libs-ghost-var-gh-shadow-anim-speed"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-shadow-translucent"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_SHADOW_TRANSLUCENT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-gh-shadow-translucent"><span class="std std-ref">🔗</span></a></p>
+<p>0 = No, 1 = Yes</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-shadow-flicker"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_SHADOW_FLICKER</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-ghost-var-gh-shadow-flicker"><span class="std std-ref">🔗</span></a></p>
+<p>0 = No, 1 = Yes</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-large-shadow-tile"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_LARGE_SHADOW_TILE</strong> = <code class="docutils literal notranslate"><span class="pre">27392</span></code> <a class="reference internal" href="#libs-ghost-var-gh-large-shadow-tile"><span class="std std-ref">🔗</span></a></p>
+<p>Top-left corner</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-large-shadow-cset"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_LARGE_SHADOW_CSET</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code> <a class="reference internal" href="#libs-ghost-var-gh-large-shadow-cset"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-large-shadow-frames"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_LARGE_SHADOW_FRAMES</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code> <a class="reference internal" href="#libs-ghost-var-gh-large-shadow-frames"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-large-shadow-anim-speed"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_LARGE_SHADOW_ANIM_SPEED</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code> <a class="reference internal" href="#libs-ghost-var-gh-large-shadow-anim-speed"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-large-shadow-min-width"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_LARGE_SHADOW_MIN_WIDTH</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code> <a class="reference internal" href="#libs-ghost-var-gh-large-shadow-min-width"><span class="std std-ref">🔗</span></a></p>
+<p>Enemies must be at least this wide</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-large-shadow-min-height"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_LARGE_SHADOW_MIN_HEIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code> <a class="reference internal" href="#libs-ghost-var-gh-large-shadow-min-height"><span class="std std-ref">🔗</span></a></p>
+<p>and this high to use large shadows</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-autoghost-min-ffc"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>AUTOGHOST_MIN_FFC</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-autoghost-min-ffc"><span class="std std-ref">🔗</span></a></p>
+<p>Min: 1, Max: 32</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-autoghost-max-ffc"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>AUTOGHOST_MAX_FFC</strong> = <code class="docutils literal notranslate"><span class="pre">32</span></code> <a class="reference internal" href="#libs-ghost-var-autoghost-max-ffc"><span class="std std-ref">🔗</span></a></p>
+<p>Min: 1, Max: 32</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-autoghost-min-enemy-id"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>AUTOGHOST_MIN_ENEMY_ID</strong> = <code class="docutils literal notranslate"><span class="pre">20</span></code> <a class="reference internal" href="#libs-ghost-var-autoghost-min-enemy-id"><span class="std std-ref">🔗</span></a></p>
+<p>Min: 20, Max: 511</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-autoghost-max-enemy-id"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>AUTOGHOST_MAX_ENEMY_ID</strong> = <code class="docutils literal notranslate"><span class="pre">511</span></code> <a class="reference internal" href="#libs-ghost-var-autoghost-max-enemy-id"><span class="std std-ref">🔗</span></a></p>
+<p>Min: 20, Max: 511</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-draw-over-threshold"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_DRAW_OVER_THRESHOLD</strong> = <code class="docutils literal notranslate"><span class="pre">32</span></code> <a class="reference internal" href="#libs-ghost-var-gh-draw-over-threshold"><span class="std std-ref">🔗</span></a></p>
+<p>Other settings</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-gravity"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_GRAVITY</strong> = <code class="docutils literal notranslate"><span class="pre">0.16</span></code> <a class="reference internal" href="#libs-ghost-var-gh-gravity"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-terminal-velocity"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_TERMINAL_VELOCITY</strong> = <code class="docutils literal notranslate"><span class="pre">3.2</span></code> <a class="reference internal" href="#libs-ghost-var-gh-terminal-velocity"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-spawn-sprite"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_SPAWN_SPRITE</strong> = <code class="docutils literal notranslate"><span class="pre">22</span></code> <a class="reference internal" href="#libs-ghost-var-gh-spawn-sprite"><span class="std std-ref">🔗</span></a></p>
+<p>Min: 0, Max: 255, Default: 22</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-fake-z"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_FAKE_Z</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-ghost-var-gh-fake-z"><span class="std std-ref">🔗</span></a></p>
+<p>0 = No, 1 = Yes</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-fake-eweapon-z"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_FAKE_EWEAPON_Z</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-ghost-var-gh-fake-eweapon-z"><span class="std std-ref">🔗</span></a></p>
+<p>0 = No, 1 = Yes</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-enemies-flicker"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_ENEMIES_FLICKER</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-ghost-var-gh-enemies-flicker"><span class="std std-ref">🔗</span></a></p>
+<p>0 = No, 1 = Yes</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-prefer-ghost-zh-shadows"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_PREFER_GHOST_ZH_SHADOWS</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-ghost-var-gh-prefer-ghost-zh-shadows"><span class="std std-ref">🔗</span></a></p>
+<p>0 = No, 1 = Yes</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-blank-tile"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_BLANK_TILE</strong> = <code class="docutils literal notranslate"><span class="pre">65456</span></code> <a class="reference internal" href="#libs-ghost-var-gh-blank-tile"><span class="std std-ref">🔗</span></a></p>
+<p>Min: 0, Max: 65456</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-invisible-combo"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GH_INVISIBLE_COMBO</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-gh-invisible-combo"><span class="std std-ref">🔗</span></a></p>
+<p>Min: 1, Max: 65279</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-always-use-name"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_ALWAYS_USE_NAME</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-ghost-var-gh-always-use-name"><span class="std std-ref">🔗</span></a></p>
+<p>Always read script name and combo from the enemy’s name,
+freeing up attributes 11 and 12</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-autoghost-read-name"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>AUTOGHOST_READ_NAME</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code> <a class="reference internal" href="#libs-ghost-var-autoghost-read-name"><span class="std std-ref">🔗</span></a></p>
+<p>End standard settings ——————————————————-
+Advanced settings ———————————————————–
+AutoGhost will read a script name from the enemy’s name if attribute 12
+is set to this. Must be a negative number.</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-autoghost-delimiter"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>AUTOGHOST_DELIMITER</strong> = <code class="docutils literal notranslate"><span class="pre">64</span></code> <a class="reference internal" href="#libs-ghost-var-autoghost-delimiter"><span class="std std-ref">🔗</span></a></p>
+<p>When reading a script from the enemy name, this character marks the
+beginning of the script name.
+Default: 64 ( &#64; )</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-invisible-alt"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_INVISIBLE_ALT</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code> <a class="reference internal" href="#libs-ghost-var-gh-invisible-alt"><span class="std std-ref">🔗</span></a></p>
+<p>Misc. attribute 11 can be set to this instead of GH_INVISIBLE_COMBO.
+Must be a negative number.</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-invisible-extend"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_INVISIBLE_EXTEND</strong> = <code class="docutils literal notranslate"><span class="pre">-2</span></code> <a class="reference internal" href="#libs-ghost-var-gh-invisible-extend"><span class="std std-ref">🔗</span></a></p>
+<p>This will use the invisible combo, but also set npc-&gt;Extend to 3 or 4,
+hiding the initial spawn puff. Must be a negative number.</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-use-drawcombo"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_USE_DRAWCOMBO</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-gh-use-drawcombo"><span class="std std-ref">🔗</span></a></p>
+<p>If enabled, the FFC will be invisible, and Screen-&gt;DrawCombo will be used
+to display enemies.</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-flash-time"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_FLASH_TIME</strong> = <code class="docutils literal notranslate"><span class="pre">32</span></code> <a class="reference internal" href="#libs-ghost-var-gh-flash-time"><span class="std std-ref">🔗</span></a></p>
+<p>Enemies flash or flicker for this many frames when hit. This does not
+affect enemies that use the invisible combo.
+Default: 32</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-knockback-time"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_KNOCKBACK_TIME</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code> <a class="reference internal" href="#libs-ghost-var-gh-knockback-time"><span class="std std-ref">🔗</span></a></p>
+<p>Enemies will be knocked back for this many frames when hit.
+Default: 16
+Max: 4095</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-knockback-step"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_KNOCKBACK_STEP</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code> <a class="reference internal" href="#libs-ghost-var-gh-knockback-step"><span class="std std-ref">🔗</span></a></p>
+<p>The speed at which enemies are knocked back, in pixels per frame.
+Default: 4</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-default-imprecision"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_DEFAULT_IMPRECISION</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-ghost-var-gh-default-imprecision"><span class="std std-ref">🔗</span></a></p>
+<p>The imprecision setting used when a movement function is called internally
+(except for walking functions).</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-clear-ffc-link"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_CLEAR_FFC_LINK</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-ghost-var-gh-clear-ffc-link"><span class="std std-ref">🔗</span></a></p>
+<p>Whether to set ffc-&gt;Link=0 when cleaning up an FFC. In 2.50.3 RC1 and before,
+this does not work due to a bug. Set this to 1 only if you’re using a newer
+ZC version than 2.50.3 RC1.</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-fix-255-anone"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_FIX_255_ANONE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-gh-fix-255-anone"><span class="std std-ref">🔗</span></a></p>
+<p>For ZC Versions where Animation Style (None) does not set -&gt;Tile, enable this.</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-ethereal"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_ETHEREAL</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-gh-ethereal"><span class="std std-ref">🔗</span></a></p>
+<p>Set to 1 to make ghost ffcs Ethereal so that they cannot block
+other combo types/flags on the screen.
+Added in 2.8.12. The prior versions did not have this.
+Set to 0 if this causes bugs in legacy quests or scripts.</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-weapons-hit-platforms"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_WEAPONS_HIT_PLATFORMS</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-gh-weapons-hit-platforms"><span class="std std-ref">🔗</span></a></p>
+<p>If set to 1, weapons in sideview will die when they hit
+a solid sideview platform.
+Set to 0 if this causes bugs in legacy quests or scripts.</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-fix-ewm-fall"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_FIX_EWM_FALL</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-gh-fix-ewm-fall"><span class="std std-ref">🔗</span></a></p>
+<p>If set to 1, this will patch bugs where falling weapons can
+be inappropriately destroyed because of their position.
+Set to 0 if this causes bugs in legacy quests or scripts.</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-gh-fix-ewm-throw"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_FIX_EWM_THROW</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-gh-fix-ewm-throw"><span class="std std-ref">🔗</span></a></p>
+<p>If set to 1, this will patch bugs where thrown weapons can
+be inappropriately destroyed because of their position.
+Set to 0 if this causes bugs in legacy quests or scripts.</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-ghi-npc-data"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHI_NPC_DATA</strong> = <code class="docutils literal notranslate"><span class="pre">15</span></code> <a class="reference internal" href="#libs-ghost-var-ghi-npc-data"><span class="std std-ref">🔗</span></a></p>
+<p>npc-&gt;Misc[] index
+Set this so it doesn’t conflict with other scripts. Legal values are 0-15.</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-ewi-flags"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWI_FLAGS</strong> = <code class="docutils literal notranslate"><span class="pre">15</span></code> <a class="reference internal" href="#libs-ghost-var-ewi-flags"><span class="std std-ref">🔗</span></a></p>
+<p>Every index but this one can be used by non-ghost.zh EWeapons</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-ewi-id"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWI_ID</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code> <a class="reference internal" href="#libs-ghost-var-ewi-id"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-ewi-xpos"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWI_XPOS</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code> <a class="reference internal" href="#libs-ghost-var-ewi-xpos"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-ewi-ypos"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWI_YPOS</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code> <a class="reference internal" href="#libs-ghost-var-ewi-ypos"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-ewi-work"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWI_WORK</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code> <a class="reference internal" href="#libs-ghost-var-ewi-work"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-ewi-work-2"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWI_WORK_2</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code> <a class="reference internal" href="#libs-ghost-var-ewi-work-2"><span class="std std-ref">🔗</span></a></p>
+<p>Only used by a few movement types</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-ewi-movement"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWI_MOVEMENT</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code> <a class="reference internal" href="#libs-ghost-var-ewi-movement"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-ewi-movement-arg"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWI_MOVEMENT_ARG</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code> <a class="reference internal" href="#libs-ghost-var-ewi-movement-arg"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-ewi-movement-arg-2"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWI_MOVEMENT_ARG_2</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code> <a class="reference internal" href="#libs-ghost-var-ewi-movement-arg-2"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-ewi-lifespan"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWI_LIFESPAN</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code> <a class="reference internal" href="#libs-ghost-var-ewi-lifespan"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-ewi-lifespan-arg"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWI_LIFESPAN_ARG</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code> <a class="reference internal" href="#libs-ghost-var-ewi-lifespan-arg"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-ewi-on-death"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWI_ON_DEATH</strong> = <code class="docutils literal notranslate"><span class="pre">13</span></code> <a class="reference internal" href="#libs-ghost-var-ewi-on-death"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-ewi-on-death-arg"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWI_ON_DEATH_ARG</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code> <a class="reference internal" href="#libs-ghost-var-ewi-on-death-arg"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-ewi-dummy-sound"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWI_DUMMY_SOUND</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-ghost-var-ewi-dummy-sound"><span class="std std-ref">🔗</span></a></p>
+<p>These are only used by dummy EWeapons;
+they can use the same values as __EWI_XPOS and __EWI_YPOS</p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-ewi-dummy-step"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWI_DUMMY_STEP</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code> <a class="reference internal" href="#libs-ghost-var-ewi-dummy-step"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="libs-ghost-var-ewi-dummy-sprite"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWI_DUMMY_SPRITE</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code> <a class="reference internal" href="#libs-ghost-var-ewi-dummy-sprite"><span class="std std-ref">🔗</span></a></p>
+</section>
+<hr class="classref-item-separator docutils" />
+<section id="function-descriptions">
+<h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
+<p class="classref-method" id="libs-ghost-fun-ispit">bool <strong>__IsPit</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> combo) <a class="reference internal" href="#libs-ghost-fun-ispit"><span class="std std-ref">🔗</span></a></p>
+<p>Returns true if the given combo should be considered a pit.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="libs-ghost-fun-haveamulet">bool <strong>__HaveAmulet</strong>() <a class="reference internal" href="#libs-ghost-fun-haveamulet"><span class="std std-ref">🔗</span></a></p>
+<p>Returns true if enemies are visible on screens with the
+“All Enemies Are Invisible” flag enabled</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="libs-ghost-fun-ghost2-onsideplatform">bool <strong>ghost2__OnSidePlatform</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> xOff, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> yOff, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> h, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> w) <a class="reference internal" href="#libs-ghost-fun-ghost2-onsideplatform"><span class="std std-ref">🔗</span></a></p>
+<p>Used to determine if a weapon hit a platform in sideview.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">ghost</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="ghost2_common.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">ghost2_common.zh</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-descriptions">Function descriptions</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024, ZQuest Classic Foundation.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,633 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>tango_drawing.zh &#8212; ZQuest Classic  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/libs/tango/tango_drawing';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="tango_font.zh" href="tango_font.html" />
+    <link rel="prev" title="tango_deprecated.zh" href="tango_deprecated.html" />
+    <link href="../../../_static/main.css" rel="stylesheet" type="text/css">
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/ZC_Logo.png" class="logo__image only-light" alt="ZQuest Classic  documentation - Home"/>
+    <img src="../../../_static/ZC_Logo.png" class="logo__image only-dark pst-js-only" alt="ZQuest Classic  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../about/introduction.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../about/introduction.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../global_constants.html">Global constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../global_functions.html">Global functions</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Audio.html">Audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Debug.html">Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/FileSystem.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Game.html">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Graphics.html">Graphics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Text.html">Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/ZInfo.html">ZInfo</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../classes/bitmap.html">bitmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/bottledata.html">bottledata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/bottleshopdata.html">bottleshopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/combodata.html">combodata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/directory.html">directory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/dmapdata.html">dmapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/dropsetdata.html">dropsetdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/eweapon.html">eweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/ffc.html">ffc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/file.html">file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/genericdata.html">genericdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/itemdata.html">itemdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/itemsprite.html">itemsprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/lweapon.html">lweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/mapdata.html">mapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/messagedata.html">messagedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/player.html">player</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/portal.html">portal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/randgen.html">randgen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/savedportal.html">savedportal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/screendata.html">screendata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/shopdata.html">shopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/sprite.html">sprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/spritedata.html">spritedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/stack.html">stack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/subscreendata.html">subscreendata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenpage.html">subscreenpage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenwidget.html">subscreenwidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/websocket.html">websocket</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../std/cfg.html">std.cfg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/limits.html">limits.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/script_runners.html">script_runners.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/std_constants.html">std_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/std_extension.html">std_extension.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/std_functions.html">std_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/std_keyboard.html">std_keyboard.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/string_constants.html">string_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/string_functions.html">string_functions.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ghost/index.html">ghost</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost.html">ghost.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_common.html">ghost2_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_deprecated.html">ghost2_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_drawing.html">ghost2_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_eweapon.html">ghost2_eweapon.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_eweaponDeath.html">ghost2_eweaponDeath.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_eweaponMovement.html">ghost2_eweaponMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_flags.html">ghost2_flags.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_global.html">ghost2_global.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_init.html">ghost2_init.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_modification.html">ghost2_modification.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_movement.html">ghost2_movement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_other.html">ghost2_other.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_scripts.html">ghost2_scripts.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_update.html">ghost2_update.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ghost/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">tango</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tango.html">tango.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tango_access.html">tango_access.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tango_common.html">tango_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tango_deprecated.html">tango_deprecated.zh</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">tango_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tango_font.html">tango_font.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tango_functions.html">tango_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tango_loading.html">tango_loading.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tango_loggingMinimal.html">tango_loggingMinimal.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tango_menu.html">tango_menu.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tango_messages.html">tango_messages.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tango_metrics.html">tango_metrics.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tango_processing.html">tango_processing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tango_script.html">tango_script.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tango_stringControlCode.html">tango_stringControlCode.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tango_style.html">tango_style.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tango_user.html">tango_user.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tango_validation.html">tango_validation.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../gui/index.html">gui</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../gui/gui.html">gui.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_button.html">guizh_button.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_checkbox.html">guizh_checkbox.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_common.html">guizh_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_event.html">guizh_event.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_label.html">guizh_label.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_main.html">guizh_main.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_radioButton.html">guizh_radioButton.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_root.html">guizh_root.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_spinner.html">guizh_spinner.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_types.html">guizh_types.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_widget.html">guizh_widget.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_window.html">guizh_window.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ffcscript/ffcscript.html">ffcscript.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">ZScript</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">tango</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">tango_drawing.zh</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="tango-drawing-zh">
+<h1>tango_drawing.zh<a class="headerlink" href="#tango-drawing-zh" title="Link to this heading">#</a></h1>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-putchar"><span class="std std-ref">__Tango_PutChar</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> character, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> font, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> tileOffset, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-drawtoscreen"><span class="std std-ref">__Tango_DrawToScreen</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-drawcolorbackdrop"><span class="std std-ref">__Tango_DrawColorBackdrop</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> styleStart, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-drawtilebackdrop"><span class="std std-ref">__Tango_DrawTileBackdrop</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> styleStart, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-drawcombobackdrop"><span class="std std-ref">__Tango_DrawComboBackdrop</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> styleStart, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-drawcomplexbackdrop"><span class="std std-ref">__Tango_DrawComplexBackdrop</span></a>(<abbr title="Could be any type.">untyped</abbr> backdrop, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-drawframetext"><span class="std std-ref">__Tango_DrawFrameText</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> type, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> str, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> font, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-transfertext"><span class="std std-ref">__Tango_TransferText</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dataStart, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> styleStart, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> screenX, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> screenY)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-drawmoreicon"><span class="std std-ref">__Tango_DrawMoreIcon</span></a>()</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-drawmenucursor"><span class="std std-ref">__Tango_DrawMenuCursor</span></a>()</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-drawmenuscrollindicators"><span class="std std-ref">__Tango_DrawMenuScrollIndicators</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slotX, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slotY)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-clearslotbitmap"><span class="std std-ref">__Tango_ClearSlotBitmap</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="function-descriptions">
+<h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
+<p class="classref-method" id="libs-tango-fun-tango-putchar"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__Tango_PutChar</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> character, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> font, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> tileOffset, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer) <a class="reference internal" href="#libs-tango-fun-tango-putchar"><span class="std std-ref">🔗</span></a></p>
+<p>Functions used to draw to the screen or an offscreen bitmap.
+Draws a single character and returns the width of the character drawn.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="libs-tango-fun-tango-drawtoscreen"><abbr title="No return value.">void</abbr> <strong>__Tango_DrawToScreen</strong>() <a class="reference internal" href="#libs-tango-fun-tango-drawtoscreen"><span class="std std-ref">🔗</span></a></p>
+<p>Draws the current text slot.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="libs-tango-fun-tango-drawcolorbackdrop"><abbr title="No return value.">void</abbr> <strong>__Tango_DrawColorBackdrop</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> styleStart, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y) <a class="reference internal" href="#libs-tango-fun-tango-drawcolorbackdrop"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="libs-tango-fun-tango-drawtilebackdrop"><abbr title="No return value.">void</abbr> <strong>__Tango_DrawTileBackdrop</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> styleStart, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y) <a class="reference internal" href="#libs-tango-fun-tango-drawtilebackdrop"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="libs-tango-fun-tango-drawcombobackdrop"><abbr title="No return value.">void</abbr> <strong>__Tango_DrawComboBackdrop</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> styleStart, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y) <a class="reference internal" href="#libs-tango-fun-tango-drawcombobackdrop"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="libs-tango-fun-tango-drawcomplexbackdrop"><abbr title="No return value.">void</abbr> <strong>__Tango_DrawComplexBackdrop</strong>(<abbr title="Could be any type.">untyped</abbr> backdrop, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y) <a class="reference internal" href="#libs-tango-fun-tango-drawcomplexbackdrop"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="libs-tango-fun-tango-drawframetext"><abbr title="No return value.">void</abbr> <strong>__Tango_DrawFrameText</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> type, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> str, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> font, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y) <a class="reference internal" href="#libs-tango-fun-tango-drawframetext"><span class="std std-ref">🔗</span></a></p>
+<p>Draws text for a complex backdrop</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="libs-tango-fun-tango-transfertext"><abbr title="No return value.">void</abbr> <strong>__Tango_TransferText</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dataStart, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> styleStart, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> screenX, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> screenY) <a class="reference internal" href="#libs-tango-fun-tango-transfertext"><span class="std std-ref">🔗</span></a></p>
+<p>Transfers the printed text from the bitmap to the screen.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="libs-tango-fun-tango-drawmoreicon"><abbr title="No return value.">void</abbr> <strong>__Tango_DrawMoreIcon</strong>() <a class="reference internal" href="#libs-tango-fun-tango-drawmoreicon"><span class="std std-ref">🔗</span></a></p>
+<p>Draw the “press A” prompt if needed.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="libs-tango-fun-tango-drawmenucursor"><abbr title="No return value.">void</abbr> <strong>__Tango_DrawMenuCursor</strong>() <a class="reference internal" href="#libs-tango-fun-tango-drawmenucursor"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="libs-tango-fun-tango-drawmenuscrollindicators"><abbr title="No return value.">void</abbr> <strong>__Tango_DrawMenuScrollIndicators</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slotX, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slotY) <a class="reference internal" href="#libs-tango-fun-tango-drawmenuscrollindicators"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="libs-tango-fun-tango-clearslotbitmap"><abbr title="No return value.">void</abbr> <strong>__Tango_ClearSlotBitmap</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot) <a class="reference internal" href="#libs-tango-fun-tango-clearslotbitmap"><span class="std std-ref">🔗</span></a></p>
+<p>Clears a string’s area of the offscreen bitmap.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="tango_deprecated.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">tango_deprecated.zh</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="tango_font.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">tango_font.zh</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-descriptions">Function descriptions</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024, ZQuest Classic Foundation.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,774 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>messagedata &#8212; ZQuest Classic  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/classes/messagedata';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="npc" href="npc.html" />
+    <link rel="prev" title="mapdata" href="mapdata.html" />
+    <link href="../../_static/main.css" rel="stylesheet" type="text/css">
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/ZC_Logo.png" class="logo__image only-light" alt="ZQuest Classic  documentation - Home"/>
+    <img src="../../_static/ZC_Logo.png" class="logo__image only-dark pst-js-only" alt="ZQuest Classic  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../about/introduction.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../about/introduction.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Audio.html">Audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Debug.html">Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/FileSystem.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Game.html">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Graphics.html">Graphics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Text.html">Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/ZInfo.html">ZInfo</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="bitmap.html">bitmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bottledata.html">bottledata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bottleshopdata.html">bottleshopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="combodata.html">combodata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="directory.html">directory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dmapdata.html">dmapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dropsetdata.html">dropsetdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eweapon.html">eweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ffc.html">ffc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file.html">file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genericdata.html">genericdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="itemdata.html">itemdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="itemsprite.html">itemsprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lweapon.html">lweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapdata.html">mapdata</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">messagedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="npc.html">npc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="npcdata.html">npcdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paldata.html">paldata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="player.html">player</a></li>
+<li class="toctree-l1"><a class="reference internal" href="portal.html">portal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="randgen.html">randgen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="savedportal.html">savedportal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="screendata.html">screendata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shopdata.html">shopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sprite.html">sprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spritedata.html">spritedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stack.html">stack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subscreendata.html">subscreendata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subscreenpage.html">subscreenpage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subscreenwidget.html">subscreenwidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="websocket.html">websocket</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/limits.html">limits.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/script_runners.html">script_runners.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_constants.html">std_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_extension.html">std_extension.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_functions.html">std_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_keyboard.html">std_keyboard.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/string_constants.html">string_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/string_functions.html">string_functions.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ghost/index.html">ghost</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost.html">ghost.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_common.html">ghost2_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_deprecated.html">ghost2_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_drawing.html">ghost2_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweapon.html">ghost2_eweapon.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweaponDeath.html">ghost2_eweaponDeath.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweaponMovement.html">ghost2_eweaponMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_flags.html">ghost2_flags.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_global.html">ghost2_global.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_init.html">ghost2_init.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_modification.html">ghost2_modification.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_movement.html">ghost2_movement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_other.html">ghost2_other.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_scripts.html">ghost2_scripts.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_update.html">ghost2_update.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/tango/index.html">tango</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango.html">tango.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_access.html">tango_access.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_common.html">tango_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_deprecated.html">tango_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_drawing.html">tango_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_font.html">tango_font.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_functions.html">tango_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_loading.html">tango_loading.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_loggingMinimal.html">tango_loggingMinimal.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_menu.html">tango_menu.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_messages.html">tango_messages.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_metrics.html">tango_metrics.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_processing.html">tango_processing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_script.html">tango_script.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_stringControlCode.html">tango_stringControlCode.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_style.html">tango_style.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_user.html">tango_user.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_validation.html">tango_validation.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/gui/index.html">gui</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/gui.html">gui.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_button.html">guizh_button.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_checkbox.html">guizh_checkbox.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_common.html">guizh_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_event.html">guizh_event.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_label.html">guizh_label.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_main.html">guizh_main.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_radioButton.html">guizh_radioButton.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_root.html">guizh_root.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_spinner.html">guizh_spinner.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_types.html">guizh_types.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_widget.html">guizh_widget.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ffcscript/ffcscript.html">ffcscript.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">ZScript</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">messagedata</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="messagedata">
+<span id="classes-messagedata"></span><h1>messagedata<a class="headerlink" href="#messagedata" title="Link to this heading">#</a></h1>
+<section id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-next"><span class="std std-ref">Next</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-tile"><span class="std std-ref">Tile</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-cset"><span class="std std-ref">CSet</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-font"><span class="std std-ref">Font</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-x"><span class="std std-ref">X</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-y"><span class="std std-ref">Y</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-width"><span class="std std-ref">Width</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-height"><span class="std std-ref">Height</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-sound"><span class="std std-ref">Sound</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-listposition"><span class="std std-ref">ListPosition</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-vspace"><span class="std std-ref">VSpace</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-hspace"><span class="std std-ref">HSpace</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-flags"><span class="std std-ref">Flags</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-margins"><span class="std std-ref">Margins</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-portraittile"><span class="std std-ref">PortraitTile</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-portraitcset"><span class="std std-ref">PortraitCSet</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-portraitx"><span class="std std-ref">PortraitX</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-portraity"><span class="std std-ref">PortraitY</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-portraittilewidth"><span class="std std-ref">PortraitTileWidth</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-portraittileheight"><span class="std std-ref">PortraitTileHeight</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-textheight"><span class="std std-ref">TextHeight</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-textwidth"><span class="std std-ref">TextWidth</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-length"><span class="std std-ref">Length</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-transparent"><span class="std std-ref">Transparent</span></a> <strong>deprecated</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-var-flag"><span class="std std-ref">Flag</span></a> <strong>deprecated</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-fun-get"><span class="std std-ref">Get</span></a>(char32[] str)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-fun-set"><span class="std std-ref">Set</span></a>(char32[] str)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-fun-textheight"><span class="std std-ref">TextHeight</span></a>() <strong>deprecated</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-messagedata-fun-textwidth"><span class="std std-ref">TextWidth</span></a>() <strong>deprecated</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="variable-descriptions">
+<h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
+<p id="classes-messagedata-var-next"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Next</strong>  <a class="reference internal" href="#classes-messagedata-var-next"><span class="std std-ref">🔗</span></a></p>
+<p>The ‘next’ message, which will be automatically displayed when this
+message finishes.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-tile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Tile</strong>  <a class="reference internal" href="#classes-messagedata-var-tile"><span class="std std-ref">🔗</span></a></p>
+<p>The tile used for the background.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-cset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CSet</strong>  <a class="reference internal" href="#classes-messagedata-var-cset"><span class="std std-ref">🔗</span></a></p>
+<p>The CSet to draw the background in.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-font"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Font</strong>  <a class="reference internal" href="#classes-messagedata-var-font"><span class="std std-ref">🔗</span></a></p>
+<p>The font to display the message in. Use the <cite>FONT_</cite> constants for this
+value.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-x"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>X</strong>  <a class="reference internal" href="#classes-messagedata-var-x"><span class="std std-ref">🔗</span></a></p>
+<p>The X position of the message box.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-y"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Y</strong>  <a class="reference internal" href="#classes-messagedata-var-y"><span class="std std-ref">🔗</span></a></p>
+<p>The Y position of the message box.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-width"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Width</strong>  <a class="reference internal" href="#classes-messagedata-var-width"><span class="std std-ref">🔗</span></a></p>
+<p>The width of the message box, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-height"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Height</strong>  <a class="reference internal" href="#classes-messagedata-var-height"><span class="std std-ref">🔗</span></a></p>
+<p>The height of the message box, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-sound"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Sound</strong>  <a class="reference internal" href="#classes-messagedata-var-sound"><span class="std std-ref">🔗</span></a></p>
+<p>The SFX to play when a new character is drawn (including spaces).</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-listposition"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ListPosition</strong>  <a class="reference internal" href="#classes-messagedata-var-listposition"><span class="std std-ref">🔗</span></a></p>
+<p>The list position of the messagedata as it is displayed in ZQ.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-vspace"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>VSpace</strong>  <a class="reference internal" href="#classes-messagedata-var-vspace"><span class="std std-ref">🔗</span></a></p>
+<p>The spacing between lines/characters, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-hspace"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HSpace</strong>  <a class="reference internal" href="#classes-messagedata-var-hspace"><span class="std std-ref">🔗</span></a></p>
+<p>The spacing between lines/characters, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-messagedata-var-flags"><span class="std std-ref">🔗</span></a></p>
+<p>A set of flags for the messagedata.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-margins"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Margins</strong>  <a class="reference internal" href="#classes-messagedata-var-margins"><span class="std std-ref">🔗</span></a></p>
+<p>The margins, in pixels, from each edge of the text box.</p>
+<p>Valid indices: DIR_UP, DIR_DOWN, DIR_LEFT, DIR_RIGHT</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-portraittile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitTile</strong>  <a class="reference internal" href="#classes-messagedata-var-portraittile"><span class="std std-ref">🔗</span></a></p>
+<p>The upper-left corner tile of the portrait. If set to 0, no portrait will
+be displayed.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-portraitcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitCSet</strong>  <a class="reference internal" href="#classes-messagedata-var-portraitcset"><span class="std std-ref">🔗</span></a></p>
+<p>The CSet to draw the portrait in</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-portraitx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitX</strong>  <a class="reference internal" href="#classes-messagedata-var-portraitx"><span class="std std-ref">🔗</span></a></p>
+<p>The X/Y position of the portrait.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-portraity"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitY</strong>  <a class="reference internal" href="#classes-messagedata-var-portraity"><span class="std std-ref">🔗</span></a></p>
+<p>The X/Y position of the portrait.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-portraittilewidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitTileWidth</strong>  <a class="reference internal" href="#classes-messagedata-var-portraittilewidth"><span class="std std-ref">🔗</span></a></p>
+<p>The tile width/height of the portrait. Max 16 and 14 respectively. If
+either is ‘0’, no portrait will be displayed.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-portraittileheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitTileHeight</strong>  <a class="reference internal" href="#classes-messagedata-var-portraittileheight"><span class="std std-ref">🔗</span></a></p>
+<p>The tile width/height of the portrait. Max 16 and 14 respectively. If
+either is ‘0’, no portrait will be displayed.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-textheight"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TextHeight</strong>  <a class="reference internal" href="#classes-messagedata-var-textheight"><span class="std std-ref">🔗</span></a></p>
+<p>Returns the height, in pixels, of the message text - not including line
+wrap / breaks.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-textwidth"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TextWidth</strong>  <a class="reference internal" href="#classes-messagedata-var-textwidth"><span class="std std-ref">🔗</span></a></p>
+<p>Returns the width, in pixels, of the message text - not including line
+wrap / breaks.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-length"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Length</strong>  <a class="reference internal" href="#classes-messagedata-var-length"><span class="std std-ref">🔗</span></a></p>
+<p>The length, in characters, of the message.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-transparent">bool <strong>Transparent</strong>  <a class="reference internal" href="#classes-messagedata-var-transparent"><span class="std std-ref">🔗</span></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> Unused! Does nothing!</p>
+</div>
+<hr class="classref-item-separator docutils" />
+<p id="classes-messagedata-var-flag"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Flag</strong>  <a class="reference internal" href="#classes-messagedata-var-flag"><span class="std std-ref">🔗</span></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> Use Flags[] instead!</p>
+</div>
+</section>
+<hr class="classref-item-separator docutils" />
+<section id="function-descriptions">
+<h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
+<p class="classref-method" id="classes-messagedata-fun-get"><abbr title="No return value.">void</abbr> <strong>Get</strong>(char32[] str) <a class="reference internal" href="#classes-messagedata-fun-get"><span class="std std-ref">🔗</span></a></p>
+<p>Loads the message into the provided string buffer.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-messagedata-fun-set"><abbr title="No return value.">void</abbr> <strong>Set</strong>(char32[] str) <a class="reference internal" href="#classes-messagedata-fun-set"><span class="std std-ref">🔗</span></a></p>
+<p>Sets the message to the provided string.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-messagedata-fun-textheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TextHeight</strong>() <a class="reference internal" href="#classes-messagedata-fun-textheight"><span class="std std-ref">🔗</span></a></p>
+<p>Returns the width/height, in pixels, of the message text - not including
+line wrap / breaks.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> Use TextHeight instead!</p>
+</div>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-messagedata-fun-textwidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TextWidth</strong>() <a class="reference internal" href="#classes-messagedata-fun-textwidth"><span class="std std-ref">🔗</span></a></p>
+<p>Returns the width/height, in pixels, of the message text - not including
+line wrap / breaks.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Deprecated!</strong> Use TextWidth instead!</p>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="mapdata.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">mapdata</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="npc.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">npc</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-descriptions">Function descriptions</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024, ZQuest Classic Foundation.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

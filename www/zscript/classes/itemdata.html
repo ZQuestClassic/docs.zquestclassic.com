@@ -1,0 +1,1365 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>itemdata &#8212; ZQuest Classic  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/classes/itemdata';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="itemsprite" href="itemsprite.html" />
+    <link rel="prev" title="genericdata" href="genericdata.html" />
+    <link href="../../_static/main.css" rel="stylesheet" type="text/css">
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/ZC_Logo.png" class="logo__image only-light" alt="ZQuest Classic  documentation - Home"/>
+    <img src="../../_static/ZC_Logo.png" class="logo__image only-dark pst-js-only" alt="ZQuest Classic  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../about/introduction.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../about/introduction.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Audio.html">Audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Debug.html">Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/FileSystem.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Game.html">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Graphics.html">Graphics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Text.html">Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/ZInfo.html">ZInfo</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="bitmap.html">bitmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bottledata.html">bottledata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bottleshopdata.html">bottleshopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="combodata.html">combodata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="directory.html">directory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dmapdata.html">dmapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dropsetdata.html">dropsetdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eweapon.html">eweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ffc.html">ffc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file.html">file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genericdata.html">genericdata</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">itemdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="itemsprite.html">itemsprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lweapon.html">lweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapdata.html">mapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="messagedata.html">messagedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="npc.html">npc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="npcdata.html">npcdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paldata.html">paldata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="player.html">player</a></li>
+<li class="toctree-l1"><a class="reference internal" href="portal.html">portal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="randgen.html">randgen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="savedportal.html">savedportal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="screendata.html">screendata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shopdata.html">shopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sprite.html">sprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spritedata.html">spritedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stack.html">stack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subscreendata.html">subscreendata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subscreenpage.html">subscreenpage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subscreenwidget.html">subscreenwidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="websocket.html">websocket</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/limits.html">limits.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/script_runners.html">script_runners.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_constants.html">std_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_extension.html">std_extension.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_functions.html">std_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_keyboard.html">std_keyboard.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/string_constants.html">string_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/string_functions.html">string_functions.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ghost/index.html">ghost</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost.html">ghost.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_common.html">ghost2_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_deprecated.html">ghost2_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_drawing.html">ghost2_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweapon.html">ghost2_eweapon.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweaponDeath.html">ghost2_eweaponDeath.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweaponMovement.html">ghost2_eweaponMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_flags.html">ghost2_flags.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_global.html">ghost2_global.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_init.html">ghost2_init.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_modification.html">ghost2_modification.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_movement.html">ghost2_movement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_other.html">ghost2_other.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_scripts.html">ghost2_scripts.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_update.html">ghost2_update.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/tango/index.html">tango</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango.html">tango.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_access.html">tango_access.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_common.html">tango_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_deprecated.html">tango_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_drawing.html">tango_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_font.html">tango_font.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_functions.html">tango_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_loading.html">tango_loading.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_loggingMinimal.html">tango_loggingMinimal.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_menu.html">tango_menu.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_messages.html">tango_messages.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_metrics.html">tango_metrics.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_processing.html">tango_processing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_script.html">tango_script.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_stringControlCode.html">tango_stringControlCode.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_style.html">tango_style.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_user.html">tango_user.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_validation.html">tango_validation.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/gui/index.html">gui</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/gui.html">gui.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_button.html">guizh_button.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_checkbox.html">guizh_checkbox.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_common.html">guizh_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_event.html">guizh_event.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_label.html">guizh_label.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_main.html">guizh_main.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_radioButton.html">guizh_radioButton.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_root.html">guizh_root.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_spinner.html">guizh_spinner.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_types.html">guizh_types.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_widget.html">guizh_widget.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ffcscript/ffcscript.html">ffcscript.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">ZScript</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">itemdata</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="itemdata">
+<span id="classes-itemdata"></span><h1>itemdata<a class="headerlink" href="#itemdata" title="Link to this heading">#</a></h1>
+<section id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-family"><span class="std std-ref">Family</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-type"><span class="std std-ref">Type</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-level"><span class="std std-ref">Level</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-amount"><span class="std std-ref">Amount</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-max"><span class="std std-ref">Max</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-maxincrement"><span class="std std-ref">MaxIncrement</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-equipmentitem"><span class="std std-ref">EquipmentItem</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-counter"><span class="std std-ref">Counter</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-pickupsound"><span class="std std-ref">PickupSound</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-usesound"><span class="std std-ref">UseSound</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-usesound2"><span class="std std-ref">UseSound2</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-id"><span class="std std-ref">ID</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-power"><span class="std std-ref">Power</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-damage"><span class="std std-ref">Damage</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-initd"><span class="std std-ref">InitD</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-tilemod"><span class="std std-ref">TileMod</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-script"><span class="std std-ref">Script</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-pscript"><span class="std std-ref">PScript</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-spritescript"><span class="std std-ref">SpriteScript</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-pstring"><span class="std std-ref">PString</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-pickupstring"><span class="std std-ref">PickupString</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-pickupstringflags"><span class="std std-ref">PickupStringFlags</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-cost"><span class="std std-ref">Cost</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-cost2"><span class="std std-ref">Cost2</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-costcounter"><span class="std std-ref">CostCounter</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-costcounter2"><span class="std std-ref">CostCounter2</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-minhearts"><span class="std std-ref">MinHearts</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-tile"><span class="std std-ref">Tile</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-miscflags"><span class="std std-ref">MiscFlags</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-cset"><span class="std std-ref">CSet</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-aframes"><span class="std std-ref">AFrames</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-aspeed"><span class="std std-ref">ASpeed</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-delay"><span class="std std-ref">Delay</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-combine"><span class="std std-ref">Combine</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-downgrade"><span class="std std-ref">Downgrade</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-keepold"><span class="std std-ref">KeepOld</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-gradual"><span class="std std-ref">Gradual</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-edible"><span class="std std-ref">Edible</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-gainlower"><span class="std std-ref">GainLower</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-attributes"><span class="std std-ref">Attributes</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="ZScript's real integer type.">long</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-lattributes"><span class="std std-ref">LAttributes</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-flags"><span class="std std-ref">Flags</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-sprites"><span class="std std-ref">Sprites</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-weapon"><span class="std std-ref">Weapon</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-defense"><span class="std std-ref">Defense</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-weaponinitd"><span class="std std-ref">WeaponInitD</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-weaponscript"><span class="std std-ref">WeaponScript</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-weaponhitxoffset"><span class="std std-ref">WeaponHitXOffset</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-weaponhityoffset"><span class="std std-ref">WeaponHitYOffset</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-weaponhitwidth"><span class="std std-ref">WeaponHitWidth</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-weaponhitheight"><span class="std std-ref">WeaponHitHeight</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-weaponhitzheight"><span class="std std-ref">WeaponHitZHeight</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-weapondrawxoffset"><span class="std std-ref">WeaponDrawXOffset</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-weapondrawyoffset"><span class="std std-ref">WeaponDrawYOffset</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-weapondrawzoffset"><span class="std std-ref">WeaponDrawZOffset</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-costtimer"><span class="std std-ref">CostTimer</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-costtimer2"><span class="std std-ref">CostTimer2</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-hitxoffset"><span class="std std-ref">HitXOffset</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-hityoffset"><span class="std std-ref">HitYOffset</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-drawxoffset"><span class="std std-ref">DrawXOffset</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-drawyoffset"><span class="std std-ref">DrawYOffset</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-hitwidth"><span class="std std-ref">HitWidth</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-hitheight"><span class="std std-ref">HitHeight</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-hitzheight"><span class="std std-ref">HitZHeight</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-tilewidth"><span class="std std-ref">TileWidth</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-tileheight"><span class="std std-ref">TileHeight</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-pickup"><span class="std std-ref">Pickup</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-sizeflags"><span class="std std-ref">SizeFlags</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-weapontilewidth"><span class="std std-ref">WeaponTileWidth</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-weapontileheight"><span class="std std-ref">WeaponTileHeight</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-weaponsizeflags"><span class="std std-ref">WeaponSizeFlags</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-validate"><span class="std std-ref">Validate</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-validate2"><span class="std std-ref">Validate2</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-constantscript"><span class="std std-ref">ConstantScript</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-sideswimdisabled"><span class="std std-ref">SideSwimDisabled</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-bunnyusable"><span class="std std-ref">BunnyUsable</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-jinximmune"><span class="std std-ref">JinxImmune</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-jinxswapped"><span class="std std-ref">JinxSwapped</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-useburnsprites"><span class="std std-ref">UseBurnSprites</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-burnsprites"><span class="std std-ref">BurnSprites</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-burnlightradius"><span class="std std-ref">BurnLightRadius</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-keep"><span class="std std-ref">Keep</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-modifier"><span class="std std-ref">Modifier</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-magiccost"><span class="std std-ref">MagicCost</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-magiccosttimer"><span class="std std-ref">MagicCostTimer</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-misc"><span class="std std-ref">Misc</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-flash"><span class="std std-ref">Flash</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-overrideflags"><span class="std std-ref">OverrideFlags</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-weaponoverrideflags"><span class="std std-ref">WeaponOverrideFlags</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-defence"><span class="std std-ref">Defence</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-range"><span class="std std-ref">Range</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-duration"><span class="std std-ref">Duration</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-duplicates"><span class="std std-ref">Duplicates</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-drawlayer"><span class="std std-ref">DrawLayer</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-rupeecost"><span class="std std-ref">RupeeCost</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-unused"><span class="std std-ref">Unused</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-collectflags"><span class="std std-ref">CollectFlags</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-var-weaponmisc"><span class="std std-ref">WeaponMisc</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-fun-getname"><span class="std std-ref">GetName</span></a>(char32[] buf)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-fun-getdisplayname"><span class="std std-ref">GetDisplayName</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> buf)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-fun-setdisplayname"><span class="std std-ref">SetDisplayName</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> buf)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-fun-getshownname"><span class="std std-ref">GetShownName</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> buf)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-itemdata-fun-runscript"><span class="std std-ref">RunScript</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> mode = <code class="docutils literal notranslate"><span class="pre">1</span></code>)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Link to this heading">#</a></h2>
+<p id="globals-enum-itemclass">enum <strong>ItemClass</strong>: <a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">🔗</span></a></p>
+<p>Item class ids, used by itemdata::Family.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-sword"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_SWORD</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-brang"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_BRANG</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-arrow"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_ARROW</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-candle"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CANDLE</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-whistle"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WHISTLE</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-bait"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_BAIT</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-letter"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_LETTER</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-potion"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_POTION</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wand"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WAND</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-ring"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_RING</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wallet"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WALLET</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-amulet"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_AMULET</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-shield"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_SHIELD</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-bow"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_BOW</strong> = <code class="docutils literal notranslate"><span class="pre">13</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-raft"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_RAFT</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-ladder"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_LADDER</strong> = <code class="docutils literal notranslate"><span class="pre">15</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-book"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_BOOK</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-magickey"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_MAGICKEY</strong> = <code class="docutils literal notranslate"><span class="pre">17</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-bracelet"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_BRACELET</strong> = <code class="docutils literal notranslate"><span class="pre">18</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-flippers"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_FLIPPERS</strong> = <code class="docutils literal notranslate"><span class="pre">19</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-boots"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_BOOTS</strong> = <code class="docutils literal notranslate"><span class="pre">20</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-hookshot"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_HOOKSHOT</strong> = <code class="docutils literal notranslate"><span class="pre">21</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-lens"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_LENS</strong> = <code class="docutils literal notranslate"><span class="pre">22</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-hammer"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_HAMMER</strong> = <code class="docutils literal notranslate"><span class="pre">23</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-dinsfire"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_DINSFIRE</strong> = <code class="docutils literal notranslate"><span class="pre">24</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-faroreswind"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_FARORESWIND</strong> = <code class="docutils literal notranslate"><span class="pre">25</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-nayruslove"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_NAYRUSLOVE</strong> = <code class="docutils literal notranslate"><span class="pre">26</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-bomb"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_BOMB</strong> = <code class="docutils literal notranslate"><span class="pre">27</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-sbomb"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_SBOMB</strong> = <code class="docutils literal notranslate"><span class="pre">28</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-clock"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CLOCK</strong> = <code class="docutils literal notranslate"><span class="pre">29</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-key"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_KEY</strong> = <code class="docutils literal notranslate"><span class="pre">30</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-magiccontainer"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_MAGICCONTAINER</strong> = <code class="docutils literal notranslate"><span class="pre">31</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-triforce"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_TRIFORCE</strong> = <code class="docutils literal notranslate"><span class="pre">32</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-map"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_MAP</strong> = <code class="docutils literal notranslate"><span class="pre">33</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-compass"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_COMPASS</strong> = <code class="docutils literal notranslate"><span class="pre">34</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-bosskey"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_BOSSKEY</strong> = <code class="docutils literal notranslate"><span class="pre">35</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-quiver"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_QUIVER</strong> = <code class="docutils literal notranslate"><span class="pre">36</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-levelkey"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_LEVELKEY</strong> = <code class="docutils literal notranslate"><span class="pre">37</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-cbyrna"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CBYRNA</strong> = <code class="docutils literal notranslate"><span class="pre">38</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-rupee"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_RUPEE</strong> = <code class="docutils literal notranslate"><span class="pre">39</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-arrowammo"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_ARROWAMMO</strong> = <code class="docutils literal notranslate"><span class="pre">40</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-fairy"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_FAIRY</strong> = <code class="docutils literal notranslate"><span class="pre">41</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-magic"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_MAGIC</strong> = <code class="docutils literal notranslate"><span class="pre">42</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-heart"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_HEART</strong> = <code class="docutils literal notranslate"><span class="pre">43</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-heartcontainer"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_HEARTCONTAINER</strong> = <code class="docutils literal notranslate"><span class="pre">44</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-heartpiece"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_HEARTPIECE</strong> = <code class="docutils literal notranslate"><span class="pre">45</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-killall"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_KILLALL</strong> = <code class="docutils literal notranslate"><span class="pre">46</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-bombammo"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_BOMBAMMO</strong> = <code class="docutils literal notranslate"><span class="pre">47</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-bombbag"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_BOMBBAG</strong> = <code class="docutils literal notranslate"><span class="pre">48</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-rocs"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_ROCS</strong> = <code class="docutils literal notranslate"><span class="pre">49</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-hoverboots"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_HOVERBOOTS</strong> = <code class="docutils literal notranslate"><span class="pre">50</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-spinscroll"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_SPINSCROLL</strong> = <code class="docutils literal notranslate"><span class="pre">51</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-crossscroll"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CROSSSCROLL</strong> = <code class="docutils literal notranslate"><span class="pre">52</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-quakescroll"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_QUAKESCROLL</strong> = <code class="docutils literal notranslate"><span class="pre">53</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-whispring"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WHISPRING</strong> = <code class="docutils literal notranslate"><span class="pre">54</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-chargering"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CHARGERING</strong> = <code class="docutils literal notranslate"><span class="pre">55</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-perilscroll"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_PERILSCROLL</strong> = <code class="docutils literal notranslate"><span class="pre">56</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wealthmedal"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WEALTHMEDAL</strong> = <code class="docutils literal notranslate"><span class="pre">57</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-heartring"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_HEARTRING</strong> = <code class="docutils literal notranslate"><span class="pre">58</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-magicring"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_MAGICRING</strong> = <code class="docutils literal notranslate"><span class="pre">59</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-hurricanescroll"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_HURRICANESCROLL</strong> = <code class="docutils literal notranslate"><span class="pre">60</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-squakescroll"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_SQUAKESCROLL</strong> = <code class="docutils literal notranslate"><span class="pre">61</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-stoneagony"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_STONEAGONY</strong> = <code class="docutils literal notranslate"><span class="pre">62</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-stompboots"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_STOMPBOOTS</strong> = <code class="docutils literal notranslate"><span class="pre">63</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-whimsicalring"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WHIMSICALRING</strong> = <code class="docutils literal notranslate"><span class="pre">64</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-perilring"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_PERILRING</strong> = <code class="docutils literal notranslate"><span class="pre">65</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-misc"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_MISC</strong> = <code class="docutils literal notranslate"><span class="pre">66</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom1"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM1</strong> = <code class="docutils literal notranslate"><span class="pre">67</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom2"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM2</strong> = <code class="docutils literal notranslate"><span class="pre">68</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom3"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM3</strong> = <code class="docutils literal notranslate"><span class="pre">69</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom4"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM4</strong> = <code class="docutils literal notranslate"><span class="pre">70</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom5"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM5</strong> = <code class="docutils literal notranslate"><span class="pre">71</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom6"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM6</strong> = <code class="docutils literal notranslate"><span class="pre">72</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom7"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM7</strong> = <code class="docutils literal notranslate"><span class="pre">73</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom8"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM8</strong> = <code class="docutils literal notranslate"><span class="pre">74</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom9"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM9</strong> = <code class="docutils literal notranslate"><span class="pre">75</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom10"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM10</strong> = <code class="docutils literal notranslate"><span class="pre">76</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom11"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM11</strong> = <code class="docutils literal notranslate"><span class="pre">77</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom12"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM12</strong> = <code class="docutils literal notranslate"><span class="pre">78</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom13"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM13</strong> = <code class="docutils literal notranslate"><span class="pre">79</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom14"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM14</strong> = <code class="docutils literal notranslate"><span class="pre">80</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom15"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM15</strong> = <code class="docutils literal notranslate"><span class="pre">81</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom16"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM16</strong> = <code class="docutils literal notranslate"><span class="pre">82</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom17"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM17</strong> = <code class="docutils literal notranslate"><span class="pre">83</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom18"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM18</strong> = <code class="docutils literal notranslate"><span class="pre">84</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom19"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM19</strong> = <code class="docutils literal notranslate"><span class="pre">85</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-custom20"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_CUSTOM20</strong> = <code class="docutils literal notranslate"><span class="pre">86</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-bowandarrow"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_BOWANDARROW</strong> = <code class="docutils literal notranslate"><span class="pre">87</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-letterpotion"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_LETTERPOTION</strong> = <code class="docutils literal notranslate"><span class="pre">88</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-custom-01"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_CUSTOM_01</strong> = <code class="docutils literal notranslate"><span class="pre">256</span></code></p>
+<p>89-255 free use
+These item classes create a projectile of the
+type LW_CUSTOM/LW_SCRIPT, 01 to 10</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-script-01"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_SCRIPT_01</strong> = <code class="docutils literal notranslate"><span class="pre">256</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-custom-02"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_CUSTOM_02</strong> = <code class="docutils literal notranslate"><span class="pre">257</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-script-02"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_SCRIPT_02</strong> = <code class="docutils literal notranslate"><span class="pre">257</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-custom-03"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_CUSTOM_03</strong> = <code class="docutils literal notranslate"><span class="pre">258</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-script-03"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_SCRIPT_03</strong> = <code class="docutils literal notranslate"><span class="pre">258</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-custom-04"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_CUSTOM_04</strong> = <code class="docutils literal notranslate"><span class="pre">259</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-script-04"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_SCRIPT_04</strong> = <code class="docutils literal notranslate"><span class="pre">259</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-custom-05"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_CUSTOM_05</strong> = <code class="docutils literal notranslate"><span class="pre">260</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-script-05"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_SCRIPT_05</strong> = <code class="docutils literal notranslate"><span class="pre">260</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-custom-06"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_CUSTOM_06</strong> = <code class="docutils literal notranslate"><span class="pre">261</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-script-06"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_SCRIPT_06</strong> = <code class="docutils literal notranslate"><span class="pre">261</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-custom-07"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_CUSTOM_07</strong> = <code class="docutils literal notranslate"><span class="pre">262</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-script-07"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_SCRIPT_07</strong> = <code class="docutils literal notranslate"><span class="pre">262</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-custom-08"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_CUSTOM_08</strong> = <code class="docutils literal notranslate"><span class="pre">263</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-script-08"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_SCRIPT_08</strong> = <code class="docutils literal notranslate"><span class="pre">263</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-custom-09"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_CUSTOM_09</strong> = <code class="docutils literal notranslate"><span class="pre">264</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-script-09"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_SCRIPT_09</strong> = <code class="docutils literal notranslate"><span class="pre">264</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-custom-10"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_CUSTOM_10</strong> = <code class="docutils literal notranslate"><span class="pre">265</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-wpn-script-10"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_WPN_SCRIPT_10</strong> = <code class="docutils literal notranslate"><span class="pre">265</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-icerod"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_ICEROD</strong> = <code class="docutils literal notranslate"><span class="pre">266</span></code></p>
+<p>Not Implemented</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-atkring"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_ATKRING</strong> = <code class="docutils literal notranslate"><span class="pre">267</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-lantern"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_LANTERN</strong> = <code class="docutils literal notranslate"><span class="pre">268</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-pearl"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_PEARL</strong> = <code class="docutils literal notranslate"><span class="pre">269</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-bottle"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_BOTTLE</strong> = <code class="docutils literal notranslate"><span class="pre">270</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-bottle-fill"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_BOTTLE_FILL</strong> = <code class="docutils literal notranslate"><span class="pre">271</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-bug-net"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_BUG_NET</strong> = <code class="docutils literal notranslate"><span class="pre">272</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-mirrors"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_MIRRORS</strong> = <code class="docutils literal notranslate"><span class="pre">273</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-switchhook"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_SWITCHHOOK</strong> = <code class="docutils literal notranslate"><span class="pre">274</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-item-bundle"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_ITEM_BUNDLE</strong> = <code class="docutils literal notranslate"><span class="pre">275</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-progressive"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_PROGRESSIVE</strong> = <code class="docutils literal notranslate"><span class="pre">276</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-note"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_NOTE</strong> = <code class="docutils literal notranslate"><span class="pre">277</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-refill"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_REFILL</strong> = <code class="docutils literal notranslate"><span class="pre">278</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-liftglove"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_LIFTGLOVE</strong> = <code class="docutils literal notranslate"><span class="pre">279</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-maxusable"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_MAXUSABLE</strong> = <code class="docutils literal notranslate"><span class="pre">280</span></code></p>
+<p>Itemclasses not less than this are reserved for future engine itemclasses</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ic-max"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">512</span></code></p>
+<p>Last of enum. All itemclassesare &lt; this.</p>
+</section>
+<hr class="classref-item-separator docutils" />
+<section id="variable-descriptions">
+<h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
+<p id="classes-itemdata-var-family"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Family</strong>  <a class="reference internal" href="#classes-itemdata-var-family"><span class="std std-ref">🔗</span></a></p>
+<p>The type <a class="reference internal" href="#classes-itemdata"><span class="std std-ref">itemdata</span></a> of the item. Uses the <cite>IC_</cite> constants.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-type"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Type</strong>  <a class="reference internal" href="#classes-itemdata-var-type"><span class="std std-ref">🔗</span></a></p>
+<p>The type <a class="reference internal" href="#classes-itemdata"><span class="std std-ref">itemdata</span></a> of the item. Uses the <cite>IC_</cite> constants.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-level"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Level</strong>  <a class="reference internal" href="#classes-itemdata-var-level"><span class="std std-ref">🔗</span></a></p>
+<p>The level of the item.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-amount"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Amount</strong>  <a class="reference internal" href="#classes-itemdata-var-amount"><span class="std std-ref">🔗</span></a></p>
+<p>The amount of the ‘Counter’ to increase when this item is picked up.
+Range <cite>-9999 to 16383</cite>.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-max"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Max</strong>  <a class="reference internal" href="#classes-itemdata-var-max"><span class="std std-ref">🔗</span></a></p>
+<p>The ‘…But not above’ field- the amount the max of ‘Counter’ will not be
+increased above.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-maxincrement"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MaxIncrement</strong>  <a class="reference internal" href="#classes-itemdata-var-maxincrement"><span class="std std-ref">🔗</span></a></p>
+<p>How much to increase the max of the ‘Counter’ by</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-equipmentitem">bool <strong>EquipmentItem</strong>  <a class="reference internal" href="#classes-itemdata-var-equipmentitem"><span class="std std-ref">🔗</span></a></p>
+<p>If the item is an equipment item or not. Items which are not equipment
+items cannot be “owned” by the player or put on buttons.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-counter"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Counter</strong>  <a class="reference internal" href="#classes-itemdata-var-counter"><span class="std std-ref">🔗</span></a></p>
+<p>The counter to increase when this item is picked up.</p>
+<p>Valid values: <a class="reference internal" href="../global_constants.html#globals-enum-counterindex"><span class="std std-ref">CounterIndex</span></a> (<cite>CR_</cite>).</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-pickupsound"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PickupSound</strong>  <a class="reference internal" href="#classes-itemdata-var-pickupsound"><span class="std std-ref">🔗</span></a></p>
+<p>The sound to play when the item is picked up.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-usesound"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>UseSound</strong>  <a class="reference internal" href="#classes-itemdata-var-usesound"><span class="std std-ref">🔗</span></a></p>
+<p>The item’s usage sound. If/how this is used depends on itemclass.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-usesound2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>UseSound2</strong>  <a class="reference internal" href="#classes-itemdata-var-usesound2"><span class="std std-ref">🔗</span></a></p>
+<p>The item’s second usage sound. If/how this is used depends on itemclass.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-id"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ID</strong>  <a class="reference internal" href="#classes-itemdata-var-id"><span class="std std-ref">🔗</span></a></p>
+<p>the item ID this itemdata is associated with.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-power"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Power</strong>  <a class="reference internal" href="#classes-itemdata-var-power"><span class="std std-ref">🔗</span></a></p>
+<p>The item power. Usage depends on itemclass.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-damage"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Damage</strong>  <a class="reference internal" href="#classes-itemdata-var-damage"><span class="std std-ref">🔗</span></a></p>
+<p>The item power. Usage depends on itemclass.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-initd"><abbr title="Could be any type.">untyped</abbr> <strong>InitD</strong>  <a class="reference internal" href="#classes-itemdata-var-initd"><span class="std std-ref">🔗</span></a></p>
+<p>The 8 InitD values shared by the item’s Action, Pickup, and Sprite
+scripts.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-tilemod"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TileMod</strong>  <a class="reference internal" href="#classes-itemdata-var-tilemod"><span class="std std-ref">🔗</span></a></p>
+<p>The Player Tile Modifier associated with this item.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-script"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Script</strong>  <a class="reference internal" href="#classes-itemdata-var-script"><span class="std std-ref">🔗</span></a></p>
+<p>The item’s Action Script</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-pscript"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PScript</strong>  <a class="reference internal" href="#classes-itemdata-var-pscript"><span class="std std-ref">🔗</span></a></p>
+<p>The item’s Pickup Script</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-spritescript"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SpriteScript</strong>  <a class="reference internal" href="#classes-itemdata-var-spritescript"><span class="std std-ref">🔗</span></a></p>
+<p>The item’s ItemSprite Script</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-pstring"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PString</strong>  <a class="reference internal" href="#classes-itemdata-var-pstring"><span class="std std-ref">🔗</span></a></p>
+<p>The message string to display upon picking up the item.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-pickupstring"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PickupString</strong>  <a class="reference internal" href="#classes-itemdata-var-pickupstring"><span class="std std-ref">🔗</span></a></p>
+<p>The message string to display upon picking up the item.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-pickupstringflags"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PickupStringFlags</strong>  <a class="reference internal" href="#classes-itemdata-var-pickupstringflags"><span class="std std-ref">🔗</span></a></p>
+<p>The flags associated with the pickup string, as bitwise flags. Use the
+<cite>IPSTR_</cite> constants to access this.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-cost"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Cost</strong>  <a class="reference internal" href="#classes-itemdata-var-cost"><span class="std std-ref">🔗</span></a></p>
+<p>The ‘Use Cost’/’Use Cost 2’ of the item.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-cost2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Cost2</strong>  <a class="reference internal" href="#classes-itemdata-var-cost2"><span class="std std-ref">🔗</span></a></p>
+<p>The ‘Use Cost’/’Use Cost 2’ of the item.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-costcounter"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CostCounter</strong>  <a class="reference internal" href="#classes-itemdata-var-costcounter"><span class="std std-ref">🔗</span></a></p>
+<p>The counter for the ‘Use Cost’/’Use Cost 2’ of the item.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-costcounter2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CostCounter2</strong>  <a class="reference internal" href="#classes-itemdata-var-costcounter2"><span class="std std-ref">🔗</span></a></p>
+<p>The counter for the ‘Use Cost’/’Use Cost 2’ of the item.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-minhearts"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MinHearts</strong>  <a class="reference internal" href="#classes-itemdata-var-minhearts"><span class="std std-ref">🔗</span></a></p>
+<p>The number of max hearts required to pick up the item.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-tile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Tile</strong>  <a class="reference internal" href="#classes-itemdata-var-tile"><span class="std std-ref">🔗</span></a></p>
+<p>The starting tile of the item’s animation</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-miscflags"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MiscFlags</strong>  <a class="reference internal" href="#classes-itemdata-var-miscflags"><span class="std std-ref">🔗</span></a></p>
+<p>Misc flags for the item graphics, bitwise flagset. Use the <cite>IMISC_</cite>
+constants to access.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-cset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CSet</strong>  <a class="reference internal" href="#classes-itemdata-var-cset"><span class="std std-ref">🔗</span></a></p>
+<p>The CSet the item sprite uses</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-aframes"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>AFrames</strong>  <a class="reference internal" href="#classes-itemdata-var-aframes"><span class="std std-ref">🔗</span></a></p>
+<p>The number of frames in the animation</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-aspeed"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ASpeed</strong>  <a class="reference internal" href="#classes-itemdata-var-aspeed"><span class="std std-ref">🔗</span></a></p>
+<p>The speed of the animation, in frames per frame.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-delay"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Delay</strong>  <a class="reference internal" href="#classes-itemdata-var-delay"><span class="std std-ref">🔗</span></a></p>
+<p>The number of delay frames at the start of the animation.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-combine">bool <strong>Combine</strong>  <a class="reference internal" href="#classes-itemdata-var-combine"><span class="std std-ref">🔗</span></a></p>
+<p>The ‘Upgrade When Collected Twice’ flag</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-downgrade">bool <strong>Downgrade</strong>  <a class="reference internal" href="#classes-itemdata-var-downgrade"><span class="std std-ref">🔗</span></a></p>
+<p>The ‘Remove Item When Used’ flag.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-keepold">bool <strong>KeepOld</strong>  <a class="reference internal" href="#classes-itemdata-var-keepold"><span class="std std-ref">🔗</span></a></p>
+<p>The ‘Keep Lower Level Items’ flag</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-gradual">bool <strong>Gradual</strong>  <a class="reference internal" href="#classes-itemdata-var-gradual"><span class="std std-ref">🔗</span></a></p>
+<p>The ‘Gradual’ flag.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-edible">bool <strong>Edible</strong>  <a class="reference internal" href="#classes-itemdata-var-edible"><span class="std std-ref">🔗</span></a></p>
+<p>The <cite>Can Be Eaten By Enemies</cite> flag.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-gainlower">bool <strong>GainLower</strong>  <a class="reference internal" href="#classes-itemdata-var-gainlower"><span class="std std-ref">🔗</span></a></p>
+<p>The ‘Gain All Lower Level Items’ flag</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-attributes"><abbr title="Could be any type.">untyped</abbr> <strong>Attributes</strong>  <a class="reference internal" href="#classes-itemdata-var-attributes"><span class="std std-ref">🔗</span></a></p>
+<p>The 10 item attributes.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-lattributes"><abbr title="ZScript's real integer type.">long</abbr> <strong>LAttributes</strong>  <a class="reference internal" href="#classes-itemdata-var-lattributes"><span class="std std-ref">🔗</span></a></p>
+<p>The item’s Attributes, accesses as ‘long’ values</p>
+<p>An editor value of ‘1’ will read as ‘1L’, or ‘0.0001’. This allows all
+values to “fit”.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-itemdata-var-flags"><span class="std std-ref">🔗</span></a></p>
+<p>The 16 item flags. <cite>Flags0</cite> through <cite>Flags14</cite> change depending on the
+item type; <cite>Flags15</cite> is the <cite>Constant Script</cite> flag.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-sprites"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Sprites</strong>  <a class="reference internal" href="#classes-itemdata-var-sprites"><span class="std std-ref">🔗</span></a></p>
+<p>The 10 sprites used by the item. How they are used depends on the item
+type.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-weapon"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Weapon</strong>  <a class="reference internal" href="#classes-itemdata-var-weapon"><span class="std std-ref">🔗</span></a></p>
+<p>The overrided weapon type that the weapon will act like.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-defense"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Defense</strong>  <a class="reference internal" href="#classes-itemdata-var-defense"><span class="std std-ref">🔗</span></a></p>
+<p>The default defense of the weapon.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-weaponinitd"><abbr title="Could be any type.">untyped</abbr> <strong>WeaponInitD</strong>  <a class="reference internal" href="#classes-itemdata-var-weaponinitd"><span class="std std-ref">🔗</span></a></p>
+<p>The 8 InitD values for the weapon script.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-weaponscript"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponScript</strong>  <a class="reference internal" href="#classes-itemdata-var-weaponscript"><span class="std std-ref">🔗</span></a></p>
+<p>The item’s lweapon script</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-weaponhitxoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponHitXOffset</strong>  <a class="reference internal" href="#classes-itemdata-var-weaponhitxoffset"><span class="std std-ref">🔗</span></a></p>
+<p>The hitbox offset of the sprite, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-weaponhityoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponHitYOffset</strong>  <a class="reference internal" href="#classes-itemdata-var-weaponhityoffset"><span class="std std-ref">🔗</span></a></p>
+<p>The hitbox offset of the sprite, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-weaponhitwidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponHitWidth</strong>  <a class="reference internal" href="#classes-itemdata-var-weaponhitwidth"><span class="std std-ref">🔗</span></a></p>
+<p>The hitbox size of the sprite, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-weaponhitheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponHitHeight</strong>  <a class="reference internal" href="#classes-itemdata-var-weaponhitheight"><span class="std std-ref">🔗</span></a></p>
+<p>The hitbox size of the sprite, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-weaponhitzheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponHitZHeight</strong>  <a class="reference internal" href="#classes-itemdata-var-weaponhitzheight"><span class="std std-ref">🔗</span></a></p>
+<p>The Z-Height of the hitbox, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-weapondrawxoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponDrawXOffset</strong>  <a class="reference internal" href="#classes-itemdata-var-weapondrawxoffset"><span class="std std-ref">🔗</span></a></p>
+<p>The visual offset of the sprite, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-weapondrawyoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponDrawYOffset</strong>  <a class="reference internal" href="#classes-itemdata-var-weapondrawyoffset"><span class="std std-ref">🔗</span></a></p>
+<p>The visual offset of the sprite, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-weapondrawzoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponDrawZOffset</strong>  <a class="reference internal" href="#classes-itemdata-var-weapondrawzoffset"><span class="std std-ref">🔗</span></a></p>
+<p>The default DrawZOffset used by this weapon when the item generates it.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-costtimer"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CostTimer</strong>  <a class="reference internal" href="#classes-itemdata-var-costtimer"><span class="std std-ref">🔗</span></a></p>
+<p>The timer for the ‘Use Cost’/’Use Cost 2’ of the item.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-costtimer2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CostTimer2</strong>  <a class="reference internal" href="#classes-itemdata-var-costtimer2"><span class="std std-ref">🔗</span></a></p>
+<p>The timer for the ‘Use Cost’/’Use Cost 2’ of the item.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-hitxoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitXOffset</strong>  <a class="reference internal" href="#classes-itemdata-var-hitxoffset"><span class="std std-ref">🔗</span></a></p>
+<p>The hitbox offset of the sprite, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-hityoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitYOffset</strong>  <a class="reference internal" href="#classes-itemdata-var-hityoffset"><span class="std std-ref">🔗</span></a></p>
+<p>The hitbox offset of the sprite, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-drawxoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawXOffset</strong>  <a class="reference internal" href="#classes-itemdata-var-drawxoffset"><span class="std std-ref">🔗</span></a></p>
+<p>The visual offset of the sprite, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-drawyoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawYOffset</strong>  <a class="reference internal" href="#classes-itemdata-var-drawyoffset"><span class="std std-ref">🔗</span></a></p>
+<p>The visual offset of the sprite, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-hitwidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitWidth</strong>  <a class="reference internal" href="#classes-itemdata-var-hitwidth"><span class="std std-ref">🔗</span></a></p>
+<p>The hitbox size of the sprite, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-hitheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitHeight</strong>  <a class="reference internal" href="#classes-itemdata-var-hitheight"><span class="std std-ref">🔗</span></a></p>
+<p>The hitbox size of the sprite, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-hitzheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitZHeight</strong>  <a class="reference internal" href="#classes-itemdata-var-hitzheight"><span class="std std-ref">🔗</span></a></p>
+<p>The Z-Height of the hitbox, in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-tilewidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TileWidth</strong>  <a class="reference internal" href="#classes-itemdata-var-tilewidth"><span class="std std-ref">🔗</span></a></p>
+<p>The visual size of the sprite, in tiles.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-tileheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TileHeight</strong>  <a class="reference internal" href="#classes-itemdata-var-tileheight"><span class="std std-ref">🔗</span></a></p>
+<p>The visual size of the sprite, in tiles.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-pickup"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Pickup</strong>  <a class="reference internal" href="#classes-itemdata-var-pickup"><span class="std std-ref">🔗</span></a></p>
+<p>The item pickup flags, as a bitwise flagset. Use the <cite>IP_</cite> constants to
+access. Take care when using any <cite>INTERNAL</cite> flags.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-sizeflags"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SizeFlags</strong>  <a class="reference internal" href="#classes-itemdata-var-sizeflags"><span class="std std-ref">🔗</span></a></p>
+<p>A bitwise flagset representing all the checkboxes for which sizes to
+apply from the itemdata. Use the <cite>SZFLAG_</cite> constants to access.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-weapontilewidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponTileWidth</strong>  <a class="reference internal" href="#classes-itemdata-var-weapontilewidth"><span class="std std-ref">🔗</span></a></p>
+<p>The visual size of the sprite, in tiles.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-weapontileheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponTileHeight</strong>  <a class="reference internal" href="#classes-itemdata-var-weapontileheight"><span class="std std-ref">🔗</span></a></p>
+<p>The visual size of the sprite, in tiles.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-weaponsizeflags"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponSizeFlags</strong>  <a class="reference internal" href="#classes-itemdata-var-weaponsizeflags"><span class="std std-ref">🔗</span></a></p>
+<p>A bitwise flagset representing all the checkboxes for which sizes to
+apply from the itemdata. Use the <cite>SZFLAG_</cite> constants to access.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-validate">bool <strong>Validate</strong>  <a class="reference internal" href="#classes-itemdata-var-validate"><span class="std std-ref">🔗</span></a></p>
+<p>The ‘Only Validate Cost’/’Only Validate Cost 2’ checkboxes</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-validate2">bool <strong>Validate2</strong>  <a class="reference internal" href="#classes-itemdata-var-validate2"><span class="std std-ref">🔗</span></a></p>
+<p>The ‘Only Validate Cost’/’Only Validate Cost 2’ checkboxes</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-constantscript">bool <strong>ConstantScript</strong>  <a class="reference internal" href="#classes-itemdata-var-constantscript"><span class="std std-ref">🔗</span></a></p>
+<p>The <cite>Constant Script</cite> flag.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-sideswimdisabled">bool <strong>SideSwimDisabled</strong>  <a class="reference internal" href="#classes-itemdata-var-sideswimdisabled"><span class="std std-ref">🔗</span></a></p>
+<p>The <cite>Disabled In Sideview Water</cite> flag.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-bunnyusable">bool <strong>BunnyUsable</strong>  <a class="reference internal" href="#classes-itemdata-var-bunnyusable"><span class="std std-ref">🔗</span></a></p>
+<p>The <cite>Usable as a Bunny</cite> flag.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-jinximmune">bool <strong>JinxImmune</strong>  <a class="reference internal" href="#classes-itemdata-var-jinximmune"><span class="std std-ref">🔗</span></a></p>
+<p>The <cite>Immune to jinxes</cite> flag.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-jinxswapped">bool <strong>JinxSwapped</strong>  <a class="reference internal" href="#classes-itemdata-var-jinxswapped"><span class="std std-ref">🔗</span></a></p>
+<p>The <cite>Uses Other Jinx</cite> flag.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-useburnsprites">bool <strong>UseBurnSprites</strong>  <a class="reference internal" href="#classes-itemdata-var-useburnsprites"><span class="std std-ref">🔗</span></a></p>
+<p>If true, the weapon created by this item will update its sprite when lit
+on fire using BurnSprites[].</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-burnsprites"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>BurnSprites</strong>  <a class="reference internal" href="#classes-itemdata-var-burnsprites"><span class="std std-ref">🔗</span></a></p>
+<p>The sprites used for making the weapon change appearance when lit on
+fire.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-burnlightradius"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>BurnLightRadius</strong>  <a class="reference internal" href="#classes-itemdata-var-burnlightradius"><span class="std std-ref">🔗</span></a></p>
+<p>The burning light radii from ‘Graphics-&gt;Sprites-&gt;Burning’. Use the
+<cite>ITM_BURNSPR_</cite> constants.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-keep">bool <strong>Keep</strong>  <a class="reference internal" href="#classes-itemdata-var-keep"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-modifier"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Modifier</strong>  <a class="reference internal" href="#classes-itemdata-var-modifier"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-magiccost"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MagicCost</strong>  <a class="reference internal" href="#classes-itemdata-var-magiccost"><span class="std std-ref">🔗</span></a></p>
+<p>The cost of the item, in units. Whenever the item is used, this value is
+decremented from the counter supplied to CostCounter.</p>
+<p>If the item runs for more than one frame, this amount will be decremented
+every CostTimer frames.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-magiccosttimer"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MagicCostTimer</strong>  <a class="reference internal" href="#classes-itemdata-var-magiccosttimer"><span class="std std-ref">🔗</span></a></p>
+<p>The number of frames between counter decrements, when using an item with
+a perpetual upkeep cost, such as Boots and Cane items.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-misc"><abbr title="Could be any type.">untyped</abbr> <strong>Misc</strong>  <a class="reference internal" href="#classes-itemdata-var-misc"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-flash"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Flash</strong>  <a class="reference internal" href="#classes-itemdata-var-flash"><span class="std std-ref">🔗</span></a></p>
+<p>The Flash value for the CSet</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-overrideflags"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>OverrideFlags</strong>  <a class="reference internal" href="#classes-itemdata-var-overrideflags"><span class="std std-ref">🔗</span></a></p>
+<p>A flagset that determines which Item Editor ‘Size’ tab attribute values
+are applied to the item, overriding engine defaults.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-weaponoverrideflags"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponOverrideFlags</strong>  <a class="reference internal" href="#classes-itemdata-var-weaponoverrideflags"><span class="std std-ref">🔗</span></a></p>
+<p>A flagset that determines which Item Editor ‘Size’ tab attribute values
+are applied to the weapon generated by this item, overriding engine
+defaults.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-defence"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Defence</strong>  <a class="reference internal" href="#classes-itemdata-var-defence"><span class="std std-ref">🔗</span></a></p>
+<p>The default defence resolution (e.g. OHKO) that the weapon uses
+when it strikes an enemy.</p>
+<p>If &gt; -1, and the enemy had a defence resolution of ‘None’, the default
+defense resolution is used in place of ‘None’.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-range"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Range</strong>  <a class="reference internal" href="#classes-itemdata-var-range"><span class="std std-ref">🔗</span></a></p>
+<p>The distance that the weapon is allowed to travel.</p>
+<p>See lweapon::Distance</p>
+<p>Not implemented at this time.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-duration"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Duration</strong>  <a class="reference internal" href="#classes-itemdata-var-duration"><span class="std std-ref">🔗</span></a></p>
+<p>The duration of the weapon.</p>
+<p>See weapon-&gt;Duration.</p>
+<p>Not implemented at this time.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-duplicates"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Duplicates</strong>  <a class="reference internal" href="#classes-itemdata-var-duplicates"><span class="std std-ref">🔗</span></a></p>
+<p>The number of extra weapons that this weapon creates.</p>
+<p>Not implemented at this time.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-drawlayer"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawLayer</strong>  <a class="reference internal" href="#classes-itemdata-var-drawlayer"><span class="std std-ref">🔗</span></a></p>
+<p>The layer used to draw the weapon to the screen.</p>
+<p>Not implemented at this time.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-rupeecost">bool <strong>RupeeCost</strong>  <a class="reference internal" href="#classes-itemdata-var-rupeecost"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-unused">bool <strong>Unused</strong>  <a class="reference internal" href="#classes-itemdata-var-unused"><span class="std std-ref">🔗</span></a></p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-collectflags"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CollectFlags</strong>  <a class="reference internal" href="#classes-itemdata-var-collectflags"><span class="std std-ref">🔗</span></a></p>
+<p>The items (in CSV format, using a SCV list ID) that the weapon created by
+this item, collects on contact.</p>
+<p>Not implemented at this time.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-itemdata-var-weaponmisc"><abbr title="Could be any type.">untyped</abbr> <strong>WeaponMisc</strong>  <a class="reference internal" href="#classes-itemdata-var-weaponmisc"><span class="std std-ref">🔗</span></a></p>
+<p>An array the 32 Misc[] values used by the weapon.</p>
+<p>This may be only partially implemented.</p>
+</section>
+<hr class="classref-item-separator docutils" />
+<section id="function-descriptions">
+<h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
+<p class="classref-method" id="classes-itemdata-fun-getname"><abbr title="No return value.">void</abbr> <strong>GetName</strong>(char32[] buf) <a class="reference internal" href="#classes-itemdata-fun-getname"><span class="std std-ref">🔗</span></a></p>
+<p>Fills the buffer with the item’s Name.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-itemdata-fun-getdisplayname"><abbr title="No return value.">void</abbr> <strong>GetDisplayName</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> buf) <a class="reference internal" href="#classes-itemdata-fun-getdisplayname"><span class="std std-ref">🔗</span></a></p>
+<p>Fills the buffer with the item’s Display Name.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-itemdata-fun-setdisplayname"><abbr title="No return value.">void</abbr> <strong>SetDisplayName</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> buf) <a class="reference internal" href="#classes-itemdata-fun-setdisplayname"><span class="std std-ref">🔗</span></a></p>
+<p>Sets the item’s Display Name to the contents of the buffer.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-itemdata-fun-getshownname"><abbr title="No return value.">void</abbr> <strong>GetShownName</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> buf) <a class="reference internal" href="#classes-itemdata-fun-getshownname"><span class="std std-ref">🔗</span></a></p>
+<p>Fills the buffer with the name of the item as shown on the subscreen.
+This automatically handles display names, including special instances
+such as the contents of Bottles.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-itemdata-fun-runscript"><abbr title="No return value.">void</abbr> <strong>RunScript</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> mode = <code class="docutils literal notranslate"><span class="pre">1</span></code>) <a class="reference internal" href="#classes-itemdata-fun-runscript"><span class="std std-ref">🔗</span></a></p>
+<p>Runs or ends the item script, depending on the mode <cite>ISCR_</cite> constants.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="genericdata.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">genericdata</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="itemsprite.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">itemsprite</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerations">Enumerations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-descriptions">Function descriptions</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024, ZQuest Classic Foundation.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

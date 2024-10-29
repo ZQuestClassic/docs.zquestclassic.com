@@ -1,0 +1,20 @@
+.bd-main .bd-content .bd-article-container {
+    max-width: 100%;
+}
+
+.bd-sidebar-primary {
+    max-width: 230px;
+}
+
+.classref-enumeration-constant {
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+.classref-enumeration-constant+p {
+    margin-left: 60px;
+}
+
+.del {
+    text-decoration: line-through;
+}
