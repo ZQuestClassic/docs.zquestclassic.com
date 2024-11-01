@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">std</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="cfg.html">std.cfg</a></li>
@@ -688,7 +692,7 @@
 <td><p><a class="reference internal" href="#libs-std-fun-givelinkitem-2"><span class="std std-ref">GiveLinkItem</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> itm_id)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-greatestindex"><span class="std std-ref">GreatestIndex</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-greatestindex"><span class="std std-ref">GreatestIndex</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] arr)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-fun-hitboxbottom"><span class="std std-ref">HitboxBottom</span></a>()</p></td>
@@ -727,10 +731,10 @@
 <td><p><a class="reference internal" href="#libs-std-fun-inroom"><span class="std std-ref">inRoom</span></a>()</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-least"><span class="std std-ref">Least</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-least"><span class="std std-ref">Least</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] arr)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-leastindex"><span class="std std-ref">LeastIndex</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-leastindex"><span class="std std-ref">LeastIndex</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] arr)</p></td>
 </tr>
 <tr class="row-even"><td><p>bool</p></td>
 <td><p><a class="reference internal" href="#libs-std-fun-linkfacing"><span class="std std-ref">LinkFacing</span></a>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> f)</p></td>
@@ -775,64 +779,64 @@
 <td><p><a class="reference internal" href="#libs-std-fun-lweapontoeweaponid"><span class="std std-ref">LWeaponToEWeaponID</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> type)</p></td>
 </tr>
 <tr class="row-even"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchaction"><span class="std std-ref">MatchAction</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchaction"><span class="std std-ref">MatchAction</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list)</p></td>
 </tr>
 <tr class="row-odd"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchcomboc"><span class="std std-ref">MatchComboC</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchcomboc"><span class="std std-ref">MatchComboC</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
 </tr>
 <tr class="row-even"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchcombod"><span class="std std-ref">MatchComboD</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchcombod"><span class="std std-ref">MatchComboD</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
 </tr>
 <tr class="row-odd"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchcombof"><span class="std std-ref">MatchComboF</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchcombof"><span class="std std-ref">MatchComboF</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
 </tr>
 <tr class="row-even"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchcomboi"><span class="std std-ref">MatchComboI</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchcomboi"><span class="std std-ref">MatchComboI</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
 </tr>
 <tr class="row-odd"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchcombos"><span class="std std-ref">MatchComboS</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchcombos"><span class="std std-ref">MatchComboS</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
 </tr>
 <tr class="row-even"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchcombot"><span class="std std-ref">MatchComboT</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchcombot"><span class="std std-ref">MatchComboT</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
 </tr>
 <tr class="row-odd"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matcheweapontype"><span class="std std-ref">MatchEWeaponType</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> e)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matcheweapontype"><span class="std std-ref">MatchEWeaponType</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> e)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-fun-matchffcscript"><span class="std std-ref">MatchFFCScript</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> script_id)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchffcscript-2"><span class="std std-ref">MatchFFCScript</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> script_id, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchffcscript-2"><span class="std std-ref">MatchFFCScript</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> script_id, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list)</p></td>
 </tr>
 <tr class="row-even"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchitem"><span class="std std-ref">MatchItem</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <a class="reference internal" href="../../classes/itemsprite.html#classes-itemsprite"><span class="std std-ref">itemsprite</span></a> i)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchitem"><span class="std std-ref">MatchItem</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <a class="reference internal" href="../../classes/itemsprite.html#classes-itemsprite"><span class="std std-ref">itemsprite</span></a> i)</p></td>
 </tr>
 <tr class="row-odd"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchlayercomboc"><span class="std std-ref">MatchLayerComboC</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchlayercomboc"><span class="std std-ref">MatchLayerComboC</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
 </tr>
 <tr class="row-even"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchlayercombod"><span class="std std-ref">MatchLayerComboD</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchlayercombod"><span class="std std-ref">MatchLayerComboD</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
 </tr>
 <tr class="row-odd"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchlayercombof"><span class="std std-ref">MatchLayerComboF</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchlayercombof"><span class="std std-ref">MatchLayerComboF</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
 </tr>
 <tr class="row-even"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchlayercomboi"><span class="std std-ref">MatchLayerComboI</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchlayercomboi"><span class="std std-ref">MatchLayerComboI</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
 </tr>
 <tr class="row-odd"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchlayercombos"><span class="std std-ref">MatchLayerComboS</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchlayercombos"><span class="std std-ref">MatchLayerComboS</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
 </tr>
 <tr class="row-even"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchlayercombot"><span class="std std-ref">MatchLayerComboT</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchlayercombot"><span class="std std-ref">MatchLayerComboT</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb)</p></td>
 </tr>
 <tr class="row-odd"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchlweapontype"><span class="std std-ref">MatchLWeaponType</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> l)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchlweapontype"><span class="std std-ref">MatchLWeaponType</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> l)</p></td>
 </tr>
 <tr class="row-even"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchnpc"><span class="std std-ref">MatchNPC</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> n)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchnpc"><span class="std std-ref">MatchNPC</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> n)</p></td>
 </tr>
 <tr class="row-odd"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-matchnpct"><span class="std std-ref">MatchNPCT</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> n)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-matchnpct"><span class="std std-ref">MatchNPCT</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> n)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-fun-noinput"><span class="std std-ref">NoInput</span></a>()</p></td>
@@ -1360,10 +1364,10 @@
 <td><p><a class="reference internal" href="#libs-std-fun-speedrev"><span class="std std-ref">SpeedRev</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> speed, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> reduceinertia)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-tracearray"><span class="std std-ref">TraceArray</span></a>(<abbr title="Could be any type.">untyped</abbr> arr)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-tracearray"><span class="std std-ref">TraceArray</span></a>(<abbr title="Could be any type.">untyped</abbr>[] arr)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-tracearray-2"><span class="std std-ref">TraceArray</span></a>(<abbr title="Could be any type.">untyped</abbr> arr, bool verbose)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-tracearray-2"><span class="std std-ref">TraceArray</span></a>(<abbr title="Could be any type.">untyped</abbr>[] arr, bool verbose)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-fun-tracearrayb"><span class="std std-ref">TraceArrayB</span></a>(bool[] arr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> size)</p></td>
@@ -1387,93 +1391,93 @@
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
 <p class="classref-method" id="libs-std-fun-adjacentcombo"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>AdjacentCombo</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dist) <a class="reference internal" href="#libs-std-fun-adjacentcombo"><span class="std std-ref">🔗</span></a></p>
-<p>As AdjacentCombo, but ‘dist’ squares away in a given direction.</p>
+<p class="classref-comment">As AdjacentCombo, but ‘dist’ squares away in a given direction.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-booltofloat"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>BoolToFloat</strong>(bool input) <a class="reference internal" href="#libs-std-fun-booltofloat"><span class="std std-ref">🔗</span></a></p>
-<p>Convert boolean variable ‘input’ to floating point, or int.</p>
+<p class="classref-comment">Convert boolean variable ‘input’ to floating point, or int.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-booltoint"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>BoolToInt</strong>(bool input) <a class="reference internal" href="#libs-std-fun-booltoint"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-centerlinky"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CenterLinkY</strong>(bool hitoffset, bool drawoffset) <a class="reference internal" href="#libs-std-fun-centerlinky"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-centerx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CenterX</strong>(<a class="reference internal" href="../../classes/itemsprite.html#classes-itemsprite"><span class="std std-ref">itemsprite</span></a> it, bool usehitbox) <a class="reference internal" href="#libs-std-fun-centerx"><span class="std std-ref">🔗</span></a></p>
-<p>Returns center of npc, with option to use either its actual coordinates, or those of its sprite.
+<p class="classref-comment">Returns center of npc, with option to use either its actual coordinates, or those of its sprite.
 Set ‘usehitbox’ true to use the hitbox center, or false to use the sprite center.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-centerx-2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CenterX</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> n, bool usehitbox) <a class="reference internal" href="#libs-std-fun-centerx-2"><span class="std std-ref">🔗</span></a></p>
-<p>Returns center of npc, with option to use either its actual coordinates, or those of its sprite.
+<p class="classref-comment">Returns center of npc, with option to use either its actual coordinates, or those of its sprite.
 Set ‘usehitbox’ true to use the hitbox center, or false to use the sprite center.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-centerx-3"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CenterX</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> anEWeapon, bool usehitbox) <a class="reference internal" href="#libs-std-fun-centerx-3"><span class="std std-ref">🔗</span></a></p>
-<p>Returns center of eweapon, with option to use either its actual coordinates, or those of its sprite.
+<p class="classref-comment">Returns center of eweapon, with option to use either its actual coordinates, or those of its sprite.
 Set ‘usehitbox’ true to use the hitbox center, or false to use the sprite center.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-centerx-4"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CenterX</strong>(<a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> anLWeapon, bool usehitbox) <a class="reference internal" href="#libs-std-fun-centerx-4"><span class="std std-ref">🔗</span></a></p>
-<p>Returns center of lweapon, with option to use either its actual coordinates, or those of its sprite.
+<p class="classref-comment">Returns center of lweapon, with option to use either its actual coordinates, or those of its sprite.
 Set ‘usehitbox’ true to use the hitbox center, or false to use the sprite center.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-centerx-5"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CenterX</strong>(<a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> anLWeapon, bool usehitbox, bool trueoffset, bool drawoffset) <a class="reference internal" href="#libs-std-fun-centerx-5"><span class="std std-ref">🔗</span></a></p>
-<p>Returns center of lweapon, with option to include its HitXOffset and DrawXOffset (individually).
+<p class="classref-comment">Returns center of lweapon, with option to include its HitXOffset and DrawXOffset (individually).
 Set ‘usehitbox’ true to use the hitbox center, or false to use the sprite center.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-centerx-6"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CenterX</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> anEWeapon, bool usehitbox, bool trueoffset, bool drawoffset) <a class="reference internal" href="#libs-std-fun-centerx-6"><span class="std std-ref">🔗</span></a></p>
-<p>Returns center of eweapon, with option to include its HitXOffset and DrawXOffset (individually).
+<p class="classref-comment">Returns center of eweapon, with option to include its HitXOffset and DrawXOffset (individually).
 Set ‘usehitbox’ true to use the hitbox center, or false to use the sprite center.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-centerx-7"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CenterX</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> n, bool usehitbox, bool trueoffset, bool drawoffset) <a class="reference internal" href="#libs-std-fun-centerx-7"><span class="std std-ref">🔗</span></a></p>
-<p>Returns center of npc, with option to include its HitXOffset and DrawXOffset (individually).
+<p class="classref-comment">Returns center of npc, with option to include its HitXOffset and DrawXOffset (individually).
 Set ‘usehitbox’ true to use the hitbox center, or false to use the sprite center.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-centerx-8"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CenterX</strong>(<a class="reference internal" href="../../classes/itemsprite.html#classes-itemsprite"><span class="std std-ref">itemsprite</span></a> i, bool usehitbox, bool trueoffset, bool drawoffset) <a class="reference internal" href="#libs-std-fun-centerx-8"><span class="std std-ref">🔗</span></a></p>
-<p>Returns center of item, with option to include its HitXOffset and DrawXOffset (individually).
+<p class="classref-comment">Returns center of item, with option to include its HitXOffset and DrawXOffset (individually).
 Set ‘usehitbox’ true to use the hitbox center, or false to use the sprite center.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-centery"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CenterY</strong>(<a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> anLWeapon, bool usehitbox) <a class="reference internal" href="#libs-std-fun-centery"><span class="std std-ref">🔗</span></a></p>
-<p>Returns center of lweapon, with option to use either its actual coordinates, or those of its sprite.
+<p class="classref-comment">Returns center of lweapon, with option to use either its actual coordinates, or those of its sprite.
 Set ‘usehitbox’ true to use the hitbox center, or false to use the sprite center.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-centery-2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CenterY</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> anEWeapon, bool usehitbox) <a class="reference internal" href="#libs-std-fun-centery-2"><span class="std std-ref">🔗</span></a></p>
-<p>Returns center of eweapon, with option to use either its actual coordinates, or those of its sprite.
+<p class="classref-comment">Returns center of eweapon, with option to use either its actual coordinates, or those of its sprite.
 Set ‘usehitbox’ true to use the hitbox center, or false to use the sprite center.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-centery-3"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CenterY</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> n, bool usehitbox) <a class="reference internal" href="#libs-std-fun-centery-3"><span class="std std-ref">🔗</span></a></p>
-<p>Returns center of npc, with option to use either its actual coordinates, or those of its sprite.
+<p class="classref-comment">Returns center of npc, with option to use either its actual coordinates, or those of its sprite.
 Set ‘usehitbox’ true to use the hitbox center, or false to use the sprite center.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-centery-4"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CenterY</strong>(<a class="reference internal" href="../../classes/itemsprite.html#classes-itemsprite"><span class="std std-ref">itemsprite</span></a> it, bool usehitbox) <a class="reference internal" href="#libs-std-fun-centery-4"><span class="std std-ref">🔗</span></a></p>
-<p>Returns center of npc, with option to use either its actual coordinates, or those of its sprite.
+<p class="classref-comment">Returns center of npc, with option to use either its actual coordinates, or those of its sprite.
 Set ‘usehitbox’ true to use the hitbox center, or false to use the sprite center.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-centery-5"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CenterY</strong>(<a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> anLWeapon, bool usehitbox, bool trueoffset, bool drawoffset) <a class="reference internal" href="#libs-std-fun-centery-5"><span class="std std-ref">🔗</span></a></p>
-<p>Returns center of lweapon, with option to include its HitYOffset and DrawYOffset (individually).
+<p class="classref-comment">Returns center of lweapon, with option to include its HitYOffset and DrawYOffset (individually).
 Set ‘usehitbox’ true to use the hitbox center, or false to use the sprite center.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-centery-6"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CenterY</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> anEWeapon, bool usehitbox, bool trueoffset, bool drawoffset) <a class="reference internal" href="#libs-std-fun-centery-6"><span class="std std-ref">🔗</span></a></p>
-<p>Returns center of eweapon, with option to include its HitYOffset and DrawYOffset (individually).
+<p class="classref-comment">Returns center of eweapon, with option to include its HitYOffset and DrawYOffset (individually).
 Set ‘usehitbox’ true to use the hitbox center, or false to use the sprite center.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-centery-7"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CenterY</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> n, bool usehitbox, bool trueoffset, bool drawoffset) <a class="reference internal" href="#libs-std-fun-centery-7"><span class="std std-ref">🔗</span></a></p>
-<p>Returns center of npc, with option to include its HitYOffset and DrawYOffset (individually).
+<p class="classref-comment">Returns center of npc, with option to include its HitYOffset and DrawYOffset (individually).
 Set ‘usehitbox’ true to use the hitbox center, or false to use the sprite center.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-centery-8"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CenterY</strong>(<a class="reference internal" href="../../classes/itemsprite.html#classes-itemsprite"><span class="std std-ref">itemsprite</span></a> i, bool usehitbox, bool trueoffset, bool drawoffset) <a class="reference internal" href="#libs-std-fun-centery-8"><span class="std std-ref">🔗</span></a></p>
-<p>Returns center of item, with option to include its HitYOffset and DrawYOffset (individually).
+<p class="classref-comment">Returns center of item, with option to include its HitYOffset and DrawYOffset (individually).
 Set ‘usehitbox’ true to use the hitbox center, or false to use the sprite center.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision">bool <strong>Collision</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-collision"><span class="std std-ref">🔗</span></a></p>
-<p>Check for collision between Link and a combo at location ‘cmb’.</p>
+<p class="classref-comment">Check for collision between Link and a combo at location ‘cmb’.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision-2">bool <strong>Collision</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, <a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> l) <a class="reference internal" href="#libs-std-fun-collision-2"><span class="std std-ref">🔗</span></a></p>
-<p>Check for collision between lweapon ‘l’ and a combo at location ‘cmb’.</p>
+<p class="classref-comment">Check for collision between lweapon ‘l’ and a combo at location ‘cmb’.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision-3">bool <strong>Collision</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, <a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> l) <a class="reference internal" href="#libs-std-fun-collision-3"><span class="std std-ref">🔗</span></a></p>
-<p>Check for collision between eweapon ‘e’ and a combo at location ‘cmb’.</p>
+<p class="classref-comment">Check for collision between eweapon ‘e’ and a combo at location ‘cmb’.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision-4">bool <strong>Collision</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> l) <a class="reference internal" href="#libs-std-fun-collision-4"><span class="std std-ref">🔗</span></a></p>
-<p>Check for collision between npc ‘n’ and a combo at location ‘cmb’.</p>
+<p class="classref-comment">Check for collision between npc ‘n’ and a combo at location ‘cmb’.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision-5">bool <strong>Collision</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, <a class="reference internal" href="../../classes/itemsprite.html#classes-itemsprite"><span class="std std-ref">itemsprite</span></a> l) <a class="reference internal" href="#libs-std-fun-collision-5"><span class="std std-ref">🔗</span></a></p>
-<p>Check for collision between item ‘i’ and a combo at location ‘cmb’.</p>
+<p class="classref-comment">Check for collision between item ‘i’ and a combo at location ‘cmb’.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision-6">bool <strong>Collision</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> f, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-collision-6"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -1486,36 +1490,36 @@ Set ‘usehitbox’ true to use the hitbox center, or false to use the sprite ce
 <p class="classref-method" id="libs-std-fun-collision-10">bool <strong>Collision</strong>(<a class="reference internal" href="../../classes/itemsprite.html#classes-itemsprite"><span class="std std-ref">itemsprite</span></a> i, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-collision-10"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision-11">bool <strong>Collision</strong>(<a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> l, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, bool checkcoldetection) <a class="reference internal" href="#libs-std-fun-collision-11"><span class="std std-ref">🔗</span></a></p>
-<p>Check for collision between lweapon ‘l’ and a combo at location ‘cmb’.
+<p class="classref-comment">Check for collision between lweapon ‘l’ and a combo at location ‘cmb’.
 Set checkcoldetection to true if you wish to return false from an lweapon with ColDetection disabled.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision-12">bool <strong>Collision</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, <a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> l, bool checkcoldetection) <a class="reference internal" href="#libs-std-fun-collision-12"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision-13">bool <strong>Collision</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> e, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, bool checkcoldetection) <a class="reference internal" href="#libs-std-fun-collision-13"><span class="std std-ref">🔗</span></a></p>
-<p>Check for collision between eweapon ‘e’ and a combo at location ‘cmb’ .
+<p class="classref-comment">Check for collision between eweapon ‘e’ and a combo at location ‘cmb’ .
 Set checkcoldetection to true if you wish to return false from an eweapon with ColDetection disabled.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision-14">bool <strong>Collision</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, <a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> e, bool checkcoldetection) <a class="reference internal" href="#libs-std-fun-collision-14"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision-15">bool <strong>Collision</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> n, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, bool checkcoldetection) <a class="reference internal" href="#libs-std-fun-collision-15"><span class="std std-ref">🔗</span></a></p>
-<p>Check for collision between NPC ‘n’ and a combo at location ‘cmb’ .
+<p class="classref-comment">Check for collision between NPC ‘n’ and a combo at location ‘cmb’ .
 Set checkcoldetection to true if you wish to return false from an NPC with ColDetection disabled.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision-16">bool <strong>Collision</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> n, bool checkcoldetection) <a class="reference internal" href="#libs-std-fun-collision-16"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision-17">bool <strong>Collision</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, bool checkcoldetection) <a class="reference internal" href="#libs-std-fun-collision-17"><span class="std std-ref">🔗</span></a></p>
-<p>Check for collision between Link and a combo at location ‘cmb’ .
+<p class="classref-comment">Check for collision between Link and a combo at location ‘cmb’ .
 Set checkcoldetection to true if you wish to return false from an NPC with ColDetection disabled.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision-18">bool <strong>Collision</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, <a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> f) <a class="reference internal" href="#libs-std-fun-collision-18"><span class="std std-ref">🔗</span></a></p>
-<p>Check for collision between ffc ‘f’ and a combo at location ‘cmb’.</p>
+<p class="classref-comment">Check for collision between ffc ‘f’ and a combo at location ‘cmb’.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision-19">bool <strong>Collision</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, <a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> f, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> c1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> d1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> c2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> d2) <a class="reference internal" href="#libs-std-fun-collision-19"><span class="std std-ref">🔗</span></a></p>
-<p>! Collision with hitbox constraints.
+<p class="classref-comment">! Collision with hitbox constraints.
 Check for collision between ffc ‘f’ and a combo at location ‘cmb’.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision-20">bool <strong>Collision</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, <a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> l, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> c1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> d1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> c2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> d2) <a class="reference internal" href="#libs-std-fun-collision-20"><span class="std std-ref">🔗</span></a></p>
-<p>Check for collision between lweapon ‘l’ and a combo at location ‘cmb’.</p>
+<p class="classref-comment">Check for collision between lweapon ‘l’ and a combo at location ‘cmb’.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision-21">bool <strong>Collision</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, <a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> l, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> c1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> d1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> c2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> d2) <a class="reference internal" href="#libs-std-fun-collision-21"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -1524,21 +1528,21 @@ Check for collision between ffc ‘f’ and a combo at location ‘cmb’.</p>
 <p class="classref-method" id="libs-std-fun-collision-23">bool <strong>Collision</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, <a class="reference internal" href="../../classes/itemsprite.html#classes-itemsprite"><span class="std std-ref">itemsprite</span></a> l, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> c1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> d1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> c2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> d2) <a class="reference internal" href="#libs-std-fun-collision-23"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collision-24">bool <strong>Collision</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> c1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> d1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> c2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> d2) <a class="reference internal" href="#libs-std-fun-collision-24"><span class="std std-ref">🔗</span></a></p>
-<p>Check for collision between Link and a combo at location ‘cmb’.</p>
+<p class="classref-comment">Check for collision between Link and a combo at location ‘cmb’.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collisiondir">bool <strong>CollisionDir</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, <a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> l, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, bool checkcoldetection) <a class="reference internal" href="#libs-std-fun-collisiondir"><span class="std std-ref">🔗</span></a></p>
-<p>Returns collision between an lweapon and a combo, only if its direction is ‘dir’.
+<p class="classref-comment">Returns collision between an lweapon and a combo, only if its direction is ‘dir’.
 Set checkcoldetection true if you wish weapons without collision to automatically return false.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-collisiondir-2">bool <strong>CollisionDir</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb, <a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> l, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, bool facingspecificdir, bool checkcoldetection) <a class="reference internal" href="#libs-std-fun-collisiondir-2"><span class="std std-ref">🔗</span></a></p>
-<p>Returns collision between an lweapon and a combo.
+<p class="classref-comment">Returns collision between an lweapon and a combo.
 Returns false base don direction:
 Set ‘facingspecificdir’ to true, to check only if a weapon is facing a specific direction.
 Set it false, if you want to check if a weapon is NOT facing a specific direction.
 Set checkcoldetection true if you wish weapons without collision to automatically return false.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-decimaltoint"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DecimalToInt</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> v) <a class="reference internal" href="#libs-std-fun-decimaltoint"><span class="std std-ref">🔗</span></a></p>
-<p>D
+<p class="classref-comment">D
 Converts floating point value ‘v’, after the decimal, to an integer.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-dirrev"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DirRev</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir) <a class="reference internal" href="#libs-std-fun-dirrev"><span class="std std-ref">🔗</span></a></p>
@@ -1550,36 +1554,36 @@ Converts floating point value ‘v’, after the decimal, to an integer.</p>
 <p class="classref-method" id="libs-std-fun-dirrev-4"><abbr title="No return value.">void</abbr> <strong>DirRev</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> l) <a class="reference internal" href="#libs-std-fun-dirrev-4"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-dirx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DirX</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir) <a class="reference internal" href="#libs-std-fun-dirx"><span class="std std-ref">🔗</span></a></p>
-<p>Returns a multiplication factor for -&gt;Step based on direction.
+<p class="classref-comment">Returns a multiplication factor for -&gt;Step based on direction.
 Specifically, return the x component of a line with a length of 1 extending
 in the given direction from origin.
 Step = step * DirX(dir);
 Valid only if dir is 0 to 7.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-diry"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DirY</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir) <a class="reference internal" href="#libs-std-fun-diry"><span class="std std-ref">🔗</span></a></p>
-<p>Returns a multiplication factor for -&gt;Step based on direction.
+<p class="classref-comment">Returns a multiplication factor for -&gt;Step based on direction.
 Step = step * DirY(dir);
 Valid only if dir is 0 to 7.
 Specifically, return the y component of a line with a length of 1 extending
 in the given direction from origin.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-distance2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Distance2</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y2) <a class="reference internal" href="#libs-std-fun-distance2"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the distance between two sets of coordinates using Pythagoras’ Theorem</p>
+<p class="classref-comment">Returns the distance between two sets of coordinates using Pythagoras’ Theorem</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-distx">bool <strong>DistX</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> distance) <a class="reference internal" href="#libs-std-fun-distx"><span class="std std-ref">🔗</span></a></p>
-<p>Returns if two pointers are within a proximity of ‘distance’ in pixels.
+<p class="classref-comment">Returns if two pointers are within a proximity of ‘distance’ in pixels.
 Link and an object (X-Axis)</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-distx-2">bool <strong>DistX</strong>(<abbr title="Generic type, can bound to any type.">T</abbr> a, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> distance) <a class="reference internal" href="#libs-std-fun-distx-2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-disty">bool <strong>DistY</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> distance) <a class="reference internal" href="#libs-std-fun-disty"><span class="std std-ref">🔗</span></a></p>
-<p>Returns if two pointers are within a proximity of ‘distance’ in pixels.
+<p class="classref-comment">Returns if two pointers are within a proximity of ‘distance’ in pixels.
 Link and an object (Y-Axis)</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-disty-2">bool <strong>DistY</strong>(<abbr title="Generic type, can bound to any type.">T</abbr> a, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> distance) <a class="reference internal" href="#libs-std-fun-disty-2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-distx-3">bool <strong>DistX</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> distance) <a class="reference internal" href="#libs-std-fun-distx-3"><span class="std std-ref">🔗</span></a></p>
-<p>Returns if two pointers are within a proximity of ‘distance’ in pixels.
+<p class="classref-comment">Returns if two pointers are within a proximity of ‘distance’ in pixels.
 Two objects (X-Axis)</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-distx-4">bool <strong>DistX</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a, <abbr title="Generic type, can bound to any type.">T</abbr> b, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> distance) <a class="reference internal" href="#libs-std-fun-distx-4"><span class="std std-ref">🔗</span></a></p>
@@ -1589,7 +1593,7 @@ Two objects (X-Axis)</p>
 <p class="classref-method" id="libs-std-fun-distx-6">bool <strong>DistX</strong>(<abbr title="Generic type, can bound to any type, as long as all generic types match.">T1</abbr> a, <abbr title="Generic type, can bound to any type, as long as all generic types match.">T2</abbr> b, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> distance) <a class="reference internal" href="#libs-std-fun-distx-6"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-disty-3">bool <strong>DistY</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> distance) <a class="reference internal" href="#libs-std-fun-disty-3"><span class="std std-ref">🔗</span></a></p>
-<p>Returns if two pointers are within a proximity of ‘distance’ in pixels.
+<p class="classref-comment">Returns if two pointers are within a proximity of ‘distance’ in pixels.
 Link and an object (X-Axis)</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-disty-4">bool <strong>DistY</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a, <abbr title="Generic type, can bound to any type.">T</abbr> b, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> distance) <a class="reference internal" href="#libs-std-fun-disty-4"><span class="std std-ref">🔗</span></a></p>
@@ -1609,15 +1613,15 @@ Link and an object (X-Axis)</p>
 <p class="classref-method" id="libs-std-fun-eweapontolweapon"><abbr title="No return value.">void</abbr> <strong>EWeaponToLWeapon</strong>(<a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> b, <a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> a) <a class="reference internal" href="#libs-std-fun-eweapontolweapon"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-eweapontolweapon-2"><a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> <strong>EWeaponToLWeapon</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> a) <a class="reference internal" href="#libs-std-fun-eweapontolweapon-2"><span class="std std-ref">🔗</span></a></p>
-<p>Copy the attributes of a given eweapon to a new lweapon.
+<p class="classref-comment">Copy the attributes of a given eweapon to a new lweapon.
 Returns -1 on error, including if the type (weap-&gt;ID) conversion is illegal.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-eweapontolweapon-3"><abbr title="No return value.">void</abbr> <strong>EWeaponToLWeapon</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> a, <a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> b) <a class="reference internal" href="#libs-std-fun-eweapontolweapon-3"><span class="std std-ref">🔗</span></a></p>
-<p>Copy the attributes of a given eweapon to an lweapon.
+<p class="classref-comment">Copy the attributes of a given eweapon to an lweapon.
 Returns -1 on error, including if the type (weap-&gt;ID) conversion is illegal.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-eweapontolweaponid"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EWeaponToLWeaponID</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> type) <a class="reference internal" href="#libs-std-fun-eweapontolweaponid"><span class="std std-ref">🔗</span></a></p>
-<p>not assigning weapon script stuff here, because that would never work.
+<p class="classref-comment">not assigning weapon script stuff here, because that would never work.
 not assigning -&gt;Parent, because that would be invalid.
 not assigning Weapon or -&gt;Defence because that would be invalid.
 Not assigning -&gt;Level, because that would be invalid.
@@ -1625,37 +1629,37 @@ Converts the ID (type) of a given weapon to its opposite class.
 Returns -1 if the type is illegal.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-getdigitvalue"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetDigitValue</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> place) <a class="reference internal" href="#libs-std-fun-getdigitvalue"><span class="std std-ref">🔗</span></a></p>
-<p>Extracts a single digit from n at the place specified.
+<p class="classref-comment">Extracts a single digit from n at the place specified.
 -4 is the ten-thousandTHs place, 0 is the ones spot, and 4 is the ten-thousanDs spot.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-gethighfloat"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetHighFloat</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-gethighfloat"><span class="std std-ref">🔗</span></a></p>
-<p>Takes a float as input ‘n’, and returns the integer portion as int.</p>
+<p class="classref-comment">Takes a float as input ‘n’, and returns the integer portion as int.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-getlowfloat"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetLowFloat</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-getlowfloat"><span class="std std-ref">🔗</span></a></p>
-<p>Takes a float as input ‘n’, and returns the decimal portion as int.</p>
+<p class="classref-comment">Takes a float as input ‘n’, and returns the decimal portion as int.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-getpartialvalue"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetPartialValue</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> place, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> num) <a class="reference internal" href="#libs-std-fun-getpartialvalue"><span class="std std-ref">🔗</span></a></p>
-<p>Extracts an integer using specific places of any value ‘n’, from position ‘place’ plus a number of places ‘num’.</p>
+<p class="classref-comment">Extracts an integer using specific places of any value ‘n’, from position ‘place’ plus a number of places ‘num’.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-givelinkitem"><abbr title="No return value.">void</abbr> <strong>GiveLinkItem</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> itm_id, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> holdtype) <a class="reference internal" href="#libs-std-fun-givelinkitem"><span class="std std-ref">🔗</span></a></p>
-<p>Creates an item on the screen at link’s
+<p class="classref-comment">Creates an item on the screen at link’s
 position, giving it to him,a nd running its pick-up script.
 itm_id is the item ID number
 if holdtype is set to a Link-&gt;Action for holding up an item
 then Link will hold the item up as desired.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-givelinkitem-2"><abbr title="No return value.">void</abbr> <strong>GiveLinkItem</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> itm_id) <a class="reference internal" href="#libs-std-fun-givelinkitem-2"><span class="std std-ref">🔗</span></a></p>
-<p>Creates an item ont he screen at link’s
+<p class="classref-comment">Creates an item ont he screen at link’s
 position, giving it to him,a nd running its pick-up script.
 itm_id is the item ID number
 Link does not hold up this item.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-greatestindex"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GreatestIndex</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr) <a class="reference internal" href="#libs-std-fun-greatestindex"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the index holding the highest value in an array
+<p class="classref-method" id="libs-std-fun-greatestindex"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GreatestIndex</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] arr) <a class="reference internal" href="#libs-std-fun-greatestindex"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Returns the index holding the highest value in an array
 If the highest value is present in two or more indices, this will return the highest-numbered index of the set.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-hitboxbottom"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitboxBottom</strong>() <a class="reference internal" href="#libs-std-fun-hitboxbottom"><span class="std std-ref">🔗</span></a></p>
-<p>Read link’s HitBox values</p>
+<p class="classref-comment">Read link’s HitBox values</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-hitboxleft"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitboxLeft</strong>() <a class="reference internal" href="#libs-std-fun-hitboxleft"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -1670,38 +1674,38 @@ If the highest value is present in two or more indices, this will return the hig
 <p class="classref-method" id="libs-std-fun-holdupitem-3"><abbr title="No return value.">void</abbr> <strong>HoldUpItem</strong>(<a class="reference internal" href="../../classes/itemdata.html#classes-itemdata"><span class="std std-ref">itemdata</span></a> i, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> twohands) <a class="reference internal" href="#libs-std-fun-holdupitem-3"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-impactvelocity"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ImpactVelocity</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> mass1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> velocity1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> mass2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> velociy2) <a class="reference internal" href="#libs-std-fun-impactvelocity"><span class="std std-ref">🔗</span></a></p>
-<p>I
+<p class="classref-comment">I
 Accepts the mass, and velocity if two objects. Determins the acceleration on impact.
 Returns the net change that would affect both objects.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-impactvelocitya"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ImpactVelocityA</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> massA, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> velocityA, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> massB, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> velociyB) <a class="reference internal" href="#libs-std-fun-impactvelocitya"><span class="std std-ref">🔗</span></a></p>
-<p>Accepts the mass, and velocity if two objects. Determins the acceleration on impact.
+<p class="classref-comment">Accepts the mass, and velocity if two objects. Determins the acceleration on impact.
 Returns the change of acceleration for object ‘B’.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-impactvelocityb"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ImpactVelocityB</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> massA, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> velocityA, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> massB, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> velociyB) <a class="reference internal" href="#libs-std-fun-impactvelocityb"><span class="std std-ref">🔗</span></a></p>
-<p>Accepts the mass, and velocity if two objects. Determins the acceleration on impact.
+<p class="classref-comment">Accepts the mass, and velocity if two objects. Determins the acceleration on impact.
 Returns the change of acceleration for object ‘B’.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-impactvelocity-2"><abbr title="No return value.">void</abbr> <strong>ImpactVelocity</strong>(<a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> a, <a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> b, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> massA, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> velocityA, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> massB, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> velociyB) <a class="reference internal" href="#libs-std-fun-impactvelocity-2"><span class="std std-ref">🔗</span></a></p>
-<p>Accepts the mass, and velocity if two weapons. Determins the acceleration on impact.
+<p class="classref-comment">Accepts the mass, and velocity if two weapons. Determins the acceleration on impact.
 Changes the Step of both to reflect their mass on collision.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-inroom">bool <strong>inRoom</strong>() <a class="reference internal" href="#libs-std-fun-inroom"><span class="std std-ref">🔗</span></a></p>
-<p>Returns true if the player is inside a dungeon screen room.
+<p class="classref-comment">Returns true if the player is inside a dungeon screen room.
 If he is still in a doorway, it returns false.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-least"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Least</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr) <a class="reference internal" href="#libs-std-fun-least"><span class="std std-ref">🔗</span></a></p>
-<p>J
+<p class="classref-method" id="libs-std-fun-least"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Least</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] arr) <a class="reference internal" href="#libs-std-fun-least"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">J
 K
 L
 Returns the lowest value in an array</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-leastindex"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LeastIndex</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr) <a class="reference internal" href="#libs-std-fun-leastindex"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the index holding the lowest value in an array
+<p class="classref-method" id="libs-std-fun-leastindex"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LeastIndex</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] arr) <a class="reference internal" href="#libs-std-fun-leastindex"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Returns the index holding the lowest value in an array
 If the lowest value is present in two or more indices, this will return the highest-numbered index of the set.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-linkfacing">bool <strong>LinkFacing</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> f) <a class="reference internal" href="#libs-std-fun-linkfacing"><span class="std std-ref">🔗</span></a></p>
-<p>Returns if Link is facing an object.</p>
+<p class="classref-comment">Returns if Link is facing an object.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-linkfacing-2">bool <strong>LinkFacing</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> f) <a class="reference internal" href="#libs-std-fun-linkfacing-2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -1724,11 +1728,11 @@ If the lowest value is present in two or more indices, this will return the high
 <p class="classref-method" id="libs-std-fun-lweapontoeweapon"><abbr title="No return value.">void</abbr> <strong>LWeaponToEWeapon</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> b, <a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> a) <a class="reference internal" href="#libs-std-fun-lweapontoeweapon"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-lweapontoeweapon-2"><abbr title="No return value.">void</abbr> <strong>LWeaponToEWeapon</strong>(<a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> a, <a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> b) <a class="reference internal" href="#libs-std-fun-lweapontoeweapon-2"><span class="std std-ref">🔗</span></a></p>
-<p>Copy the attributes of a given lweapon to an eweapon.
+<p class="classref-comment">Copy the attributes of a given lweapon to an eweapon.
 Returns -1 on error, including if the type (weap-&gt;ID) conversion is illegal.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-lweapontoeweapon-3"><a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> <strong>LWeaponToEWeapon</strong>(<a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> a) <a class="reference internal" href="#libs-std-fun-lweapontoeweapon-3"><span class="std std-ref">🔗</span></a></p>
-<p>not assigning weapon script stuff here, because that would never work.
+<p class="classref-comment">not assigning weapon script stuff here, because that would never work.
 not assigning -&gt;Parent, because that would be invalid.
 not assigning Weapon or -&gt;Defence because that would be invalid.
 Not assigning -&gt;Level, because that would be invalid.
@@ -1736,115 +1740,115 @@ Copy the attributes of a given lweapon to a new eweapon.
 Returns -1 on error, including if the type (weap-&gt;ID) conversion is illegal.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-lweapontoeweaponid"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LWeaponToEWeaponID</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> type) <a class="reference internal" href="#libs-std-fun-lweapontoeweaponid"><span class="std std-ref">🔗</span></a></p>
-<p>Converts the ID (type) of a given weapon to its opposite class.
+<p class="classref-comment">Converts the ID (type) of a given weapon to its opposite class.
 Returns -1 if the type is illegal.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchaction">bool <strong>MatchAction</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list) <a class="reference internal" href="#libs-std-fun-matchaction"><span class="std std-ref">🔗</span></a></p>
-<p>M
+<p class="classref-method" id="libs-std-fun-matchaction">bool <strong>MatchAction</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list) <a class="reference internal" href="#libs-std-fun-matchaction"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">M
 Match the present Link-&gt;Action to those on array ‘list’.
 Returns true of any of the entries on the list match.
 Checks if the present Link-&gt;Action is one from a predefined list.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchcomboc">bool <strong>MatchComboC</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchcomboc"><span class="std std-ref">🔗</span></a></p>
-<p>Compares combo ‘cmb’ and compares it to the values in array ‘list’.
+<p class="classref-method" id="libs-std-fun-matchcomboc">bool <strong>MatchComboC</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchcomboc"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Compares combo ‘cmb’ and compares it to the values in array ‘list’.
 Returns true of any of the entries on the list match its CSet.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchcombod">bool <strong>MatchComboD</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchcombod"><span class="std std-ref">🔗</span></a></p>
-<p>Compares combo ‘cmb’ and compares it to the values in array ‘list’.
+<p class="classref-method" id="libs-std-fun-matchcombod">bool <strong>MatchComboD</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchcombod"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Compares combo ‘cmb’ and compares it to the values in array ‘list’.
 Returns true of any of the entries on the list match its Data.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchcombof">bool <strong>MatchComboF</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchcombof"><span class="std std-ref">🔗</span></a></p>
-<p>Compares combo ‘cmb’ and compares it to the values in array ‘list’.
+<p class="classref-method" id="libs-std-fun-matchcombof">bool <strong>MatchComboF</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchcombof"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Compares combo ‘cmb’ and compares it to the values in array ‘list’.
 Returns true of any of the entries on the list match its Flag.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchcomboi">bool <strong>MatchComboI</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchcomboi"><span class="std std-ref">🔗</span></a></p>
-<p>Compares combo ‘cmb’ and compares it to the values in array ‘list’.
+<p class="classref-method" id="libs-std-fun-matchcomboi">bool <strong>MatchComboI</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchcomboi"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Compares combo ‘cmb’ and compares it to the values in array ‘list’.
 Returns true of any of the entries on the list match its Inherent Flag.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchcombos">bool <strong>MatchComboS</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchcombos"><span class="std std-ref">🔗</span></a></p>
-<p>Compares combo ‘cmb’ and compares it to the values in array ‘list’.
+<p class="classref-method" id="libs-std-fun-matchcombos">bool <strong>MatchComboS</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchcombos"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Compares combo ‘cmb’ and compares it to the values in array ‘list’.
 Returns true of any of the entries on the list match its Solidity.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchcombot">bool <strong>MatchComboT</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchcombot"><span class="std std-ref">🔗</span></a></p>
-<p>Compares combo ‘cmb’ and compares it to the values in array ‘list’.
+<p class="classref-method" id="libs-std-fun-matchcombot">bool <strong>MatchComboT</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchcombot"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Compares combo ‘cmb’ and compares it to the values in array ‘list’.
 Returns true of any of the entries on the list match its Type.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matcheweapontype">bool <strong>MatchEWeaponType</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> e) <a class="reference internal" href="#libs-std-fun-matcheweapontype"><span class="std std-ref">🔗</span></a></p>
-<p>Match a given eweapon to the contents of an array ‘list’
+<p class="classref-method" id="libs-std-fun-matcheweapontype">bool <strong>MatchEWeaponType</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> e) <a class="reference internal" href="#libs-std-fun-matcheweapontype"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Match a given eweapon to the contents of an array ‘list’
 Returns true of any of the entries on the list match.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-matchffcscript"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MatchFFCScript</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> script_id) <a class="reference internal" href="#libs-std-fun-matchffcscript"><span class="std std-ref">🔗</span></a></p>
-<p>Matches a running ffc script to script_id.</p>
+<p class="classref-comment">Matches a running ffc script to script_id.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchffcscript-2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MatchFFCScript</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> script_id, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list) <a class="reference internal" href="#libs-std-fun-matchffcscript-2"><span class="std std-ref">🔗</span></a></p>
-<p>Compares the scripts of all running ffcs, to all indices of an array ‘list’ searching for
+<p class="classref-method" id="libs-std-fun-matchffcscript-2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MatchFFCScript</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> script_id, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list) <a class="reference internal" href="#libs-std-fun-matchffcscript-2"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Compares the scripts of all running ffcs, to all indices of an array ‘list’ searching for
 a match to ffc script ‘script_id’.
 If there is a match, it MatchScript() will return the first match (FFC number) found.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchitem">bool <strong>MatchItem</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <a class="reference internal" href="../../classes/itemsprite.html#classes-itemsprite"><span class="std std-ref">itemsprite</span></a> i) <a class="reference internal" href="#libs-std-fun-matchitem"><span class="std std-ref">🔗</span></a></p>
-<p>Match a given item ID number to the contents of an array ‘list’
+<p class="classref-method" id="libs-std-fun-matchitem">bool <strong>MatchItem</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <a class="reference internal" href="../../classes/itemsprite.html#classes-itemsprite"><span class="std std-ref">itemsprite</span></a> i) <a class="reference internal" href="#libs-std-fun-matchitem"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Match a given item ID number to the contents of an array ‘list’
 Returns true of any of the entries on the list match.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchlayercomboc">bool <strong>MatchLayerComboC</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchlayercomboc"><span class="std std-ref">🔗</span></a></p>
-<p>Compares combo ‘cmb’ on Layer ‘layer’ and compares it to the values in array ‘list’.
+<p class="classref-method" id="libs-std-fun-matchlayercomboc">bool <strong>MatchLayerComboC</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchlayercomboc"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Compares combo ‘cmb’ on Layer ‘layer’ and compares it to the values in array ‘list’.
 Returns true of any of the entries on the list match its CSet.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchlayercombod">bool <strong>MatchLayerComboD</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchlayercombod"><span class="std std-ref">🔗</span></a></p>
-<p>Compares combo ‘cmb’ on Layer ‘layer’ and compares it to the values in array ‘list’.
+<p class="classref-method" id="libs-std-fun-matchlayercombod">bool <strong>MatchLayerComboD</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchlayercombod"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Compares combo ‘cmb’ on Layer ‘layer’ and compares it to the values in array ‘list’.
 Returns true of any of the entries on the list match its Data.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchlayercombof">bool <strong>MatchLayerComboF</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchlayercombof"><span class="std std-ref">🔗</span></a></p>
-<p>Compares combo ‘cmb’ on Layer ‘layer’ and compares it to the values in array ‘list’.
+<p class="classref-method" id="libs-std-fun-matchlayercombof">bool <strong>MatchLayerComboF</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchlayercombof"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Compares combo ‘cmb’ on Layer ‘layer’ and compares it to the values in array ‘list’.
 Returns true of any of the entries on the list match its Flag.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchlayercomboi">bool <strong>MatchLayerComboI</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchlayercomboi"><span class="std std-ref">🔗</span></a></p>
-<p>Compares combo ‘cmb’ on Layer ‘layer’ and compares it to the values in array ‘list’.
+<p class="classref-method" id="libs-std-fun-matchlayercomboi">bool <strong>MatchLayerComboI</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchlayercomboi"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Compares combo ‘cmb’ on Layer ‘layer’ and compares it to the values in array ‘list’.
 Returns true of any of the entries on the list match its Inherent Flag.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchlayercombos">bool <strong>MatchLayerComboS</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchlayercombos"><span class="std std-ref">🔗</span></a></p>
-<p>Compares combo ‘cmb’ on Layer ‘layer’ and compares it to the values in array ‘list’.
+<p class="classref-method" id="libs-std-fun-matchlayercombos">bool <strong>MatchLayerComboS</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchlayercombos"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Compares combo ‘cmb’ on Layer ‘layer’ and compares it to the values in array ‘list’.
 Returns true of any of the entries on the list match its Solidity.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchlayercombot">bool <strong>MatchLayerComboT</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchlayercombot"><span class="std std-ref">🔗</span></a></p>
-<p>Compares combo ‘cmb’ on Layer ‘layer’ and compares it to the values in array ‘list’.
+<p class="classref-method" id="libs-std-fun-matchlayercombot">bool <strong>MatchLayerComboT</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cmb) <a class="reference internal" href="#libs-std-fun-matchlayercombot"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Compares combo ‘cmb’ on Layer ‘layer’ and compares it to the values in array ‘list’.
 Returns true of any of the entries on the list match its Type.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchlweapontype">bool <strong>MatchLWeaponType</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> l) <a class="reference internal" href="#libs-std-fun-matchlweapontype"><span class="std std-ref">🔗</span></a></p>
-<p>Match a given lweapon to the contents of an array ‘list’
+<p class="classref-method" id="libs-std-fun-matchlweapontype">bool <strong>MatchLWeaponType</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> l) <a class="reference internal" href="#libs-std-fun-matchlweapontype"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Match a given lweapon to the contents of an array ‘list’
 Returns true of any of the entries on the list match.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchnpc">bool <strong>MatchNPC</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> n) <a class="reference internal" href="#libs-std-fun-matchnpc"><span class="std std-ref">🔗</span></a></p>
-<p>Match a given npc ID number to the contents of an array ‘list’
+<p class="classref-method" id="libs-std-fun-matchnpc">bool <strong>MatchNPC</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> n) <a class="reference internal" href="#libs-std-fun-matchnpc"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Match a given npc ID number to the contents of an array ‘list’
 Returns true of any of the entries on the list match.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-matchnpct">bool <strong>MatchNPCT</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> list, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> n) <a class="reference internal" href="#libs-std-fun-matchnpct"><span class="std std-ref">🔗</span></a></p>
-<p>Match a given NPC TYPE to the contents of an array ‘list’
+<p class="classref-method" id="libs-std-fun-matchnpct">bool <strong>MatchNPCT</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] list, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> n) <a class="reference internal" href="#libs-std-fun-matchnpct"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Match a given NPC TYPE to the contents of an array ‘list’
 Returns true of any of the entries on the list match.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-noinput"><abbr title="No return value.">void</abbr> <strong>NoInput</strong>() <a class="reference internal" href="#libs-std-fun-noinput"><span class="std std-ref">🔗</span></a></p>
-<p>N
+<p class="classref-comment">N
 Kills inputs from A, B, L, R, Start, Map, and Ex buttons.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-noinput-2"><abbr title="No return value.">void</abbr> <strong>NoInput</strong>(bool stick) <a class="reference internal" href="#libs-std-fun-noinput-2"><span class="std std-ref">🔗</span></a></p>
-<p>Kills inputs from A, B, L, R, Start, Map, and Ex buttons.</p>
+<p class="classref-comment">Kills inputs from A, B, L, R, Start, Map, and Ex buttons.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-nolinkknockback"><abbr title="No return value.">void</abbr> <strong>NoLinkKnockback</strong>() <a class="reference internal" href="#libs-std-fun-nolinkknockback"><span class="std std-ref">🔗</span></a></p>
-<p>Negates engine knockback for Link on land, or in water.</p>
+<p class="classref-comment">Negates engine knockback for Link on land, or in water.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-nolinkknockbackland"><abbr title="No return value.">void</abbr> <strong>NoLinkKnockbackLand</strong>() <a class="reference internal" href="#libs-std-fun-nolinkknockbackland"><span class="std std-ref">🔗</span></a></p>
-<p>Negates engine knockback for Link only on land.</p>
+<p class="classref-comment">Negates engine knockback for Link only on land.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-nolinkknockbackwater"><abbr title="No return value.">void</abbr> <strong>NoLinkKnockbackWater</strong>() <a class="reference internal" href="#libs-std-fun-nolinkknockbackwater"><span class="std std-ref">🔗</span></a></p>
-<p>Negates engine knockback for Link only in water.</p>
+<p class="classref-comment">Negates engine knockback for Link only in water.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-nopress"><abbr title="No return value.">void</abbr> <strong>NoPress</strong>() <a class="reference internal" href="#libs-std-fun-nopress"><span class="std std-ref">🔗</span></a></p>
-<p>Kills presses from A, B, L, R, Start, Map, and Ex buttons.</p>
+<p class="classref-comment">Kills presses from A, B, L, R, Start, Map, and Ex buttons.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-nopress-2"><abbr title="No return value.">void</abbr> <strong>NoPress</strong>(bool stick) <a class="reference internal" href="#libs-std-fun-nopress-2"><span class="std std-ref">🔗</span></a></p>
-<p>Kills presses from A, B, L, R, Start, Map, and Ex buttons.</p>
+<p class="classref-comment">Kills presses from A, B, L, R, Start, Map, and Ex buttons.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-proximityx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ProximityX</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> a, <a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> b) <a class="reference internal" href="#libs-std-fun-proximityx"><span class="std std-ref">🔗</span></a></p>
-<p>O
+<p class="classref-comment">O
 P
 Proximinity between Link and object, or two objects.</p>
 <hr class="classref-item-separator docutils" />
@@ -1929,10 +1933,10 @@ Proximinity between Link and object, or two objects.</p>
 <p class="classref-method" id="libs-std-fun-proximityx-41"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ProximityX</strong>(<a class="reference internal" href="../../classes/itemsprite.html#classes-itemsprite"><span class="std std-ref">itemsprite</span></a> a) <a class="reference internal" href="#libs-std-fun-proximityx-41"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-proximityx-42"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ProximityX</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> a, <a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> b, bool fromcentre) <a class="reference internal" href="#libs-std-fun-proximityx-42"><span class="std std-ref">🔗</span></a></p>
-<p>Proximity from center of object’s hitbox:</p>
+<p class="classref-comment">Proximity from center of object’s hitbox:</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-proximityx-43"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ProximityX</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> a, <a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> b, bool fromcentre) <a class="reference internal" href="#libs-std-fun-proximityx-43"><span class="std std-ref">🔗</span></a></p>
-<p>Rid these of varible declaration inefficiency?</p>
+<p class="classref-comment">Rid these of varible declaration inefficiency?</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-proximityx-44"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ProximityX</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> a, <a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> b, bool fromcentre) <a class="reference internal" href="#libs-std-fun-proximityx-44"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -2003,7 +2007,7 @@ Proximinity between Link and object, or two objects.</p>
 <p class="classref-method" id="libs-std-fun-proximityx-77"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ProximityX</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a, bool center) <a class="reference internal" href="#libs-std-fun-proximityx-77"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-proximityx-78"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ProximityX</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a) <a class="reference internal" href="#libs-std-fun-proximityx-78"><span class="std std-ref">🔗</span></a></p>
-<p>ProximityY Functions</p>
+<p class="classref-comment">ProximityY Functions</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-proximityy"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ProximityY</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> a, <a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> b) <a class="reference internal" href="#libs-std-fun-proximityy"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -2090,10 +2094,10 @@ Proximinity between Link and object, or two objects.</p>
 <p class="classref-method" id="libs-std-fun-proximityy-42"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ProximityY</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a) <a class="reference internal" href="#libs-std-fun-proximityy-42"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-proximityy-43"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ProximityY</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> a, <a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> b, bool fromcentre) <a class="reference internal" href="#libs-std-fun-proximityy-43"><span class="std std-ref">🔗</span></a></p>
-<p>Proximity from center of object’s hitbox:</p>
+<p class="classref-comment">Proximity from center of object’s hitbox:</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-proximityy-44"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ProximityY</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> a, <a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> b, bool fromcentre) <a class="reference internal" href="#libs-std-fun-proximityy-44"><span class="std std-ref">🔗</span></a></p>
-<p>Rid these of varible declaration inefficiency?</p>
+<p class="classref-comment">Rid these of varible declaration inefficiency?</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-proximityy-45"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ProximityY</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> a, <a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> b, bool fromcentre) <a class="reference internal" href="#libs-std-fun-proximityy-45"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -2164,70 +2168,70 @@ Proximinity between Link and object, or two objects.</p>
 <p class="classref-method" id="libs-std-fun-proximityy-78"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ProximityY</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a, bool center) <a class="reference internal" href="#libs-std-fun-proximityy-78"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-randb">bool <strong>RandB</strong>() <a class="reference internal" href="#libs-std-fun-randb"><span class="std std-ref">🔗</span></a></p>
-<p>Q
+<p class="classref-comment">Q
 R
 Randomly returns true, or false.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-randb-2">bool <strong>RandB</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> percentTrue) <a class="reference internal" href="#libs-std-fun-randb-2"><span class="std std-ref">🔗</span></a></p>
-<p>Randomly returns true, or false, using input percentTrue to determine the percentage change of a ‘true return’</p>
+<p class="classref-comment">Randomly returns true, or false, using input percentTrue to determine the percentage change of a ‘true return’</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-safedistance"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SafeDistance</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y2) <a class="reference internal" href="#libs-std-fun-safedistance"><span class="std std-ref">🔗</span></a></p>
-<p>S
+<p class="classref-comment">S
 Returns the distance between two sets of coordinates using Pythagoras’ Theorem</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-safesqrt"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SafeSqrt</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> val) <a class="reference internal" href="#libs-std-fun-safesqrt"><span class="std std-ref">🔗</span></a></p>
-<p>Safe Sqrt functions if an irrational number would be involved.
+<p class="classref-comment">Safe Sqrt functions if an irrational number would be involved.
 Returns ‘464’ (square root of 215296), if the value passed is negative.
 Returns ‘0’ on Sqrt(0).</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-safesqrt-2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SafeSqrt</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> val, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> specifyNegRet) <a class="reference internal" href="#libs-std-fun-safesqrt-2"><span class="std std-ref">🔗</span></a></p>
-<p>Returns square root of ‘val’. Returns ‘specifyNegRet’ if a negative value is passed as ‘val’. Returns ‘0’ for Sqrt(0).</p>
+<p class="classref-comment">Returns square root of ‘val’. Returns ‘specifyNegRet’ if a negative value is passed as ‘val’. Returns ‘0’ for Sqrt(0).</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-screentolayer"><abbr title="No return value.">void</abbr> <strong>ScreenToLayer</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sourceMap, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sourceScreen, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layerMin, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layerMax, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> drawOpacity, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> destLayer) <a class="reference internal" href="#libs-std-fun-screentolayer"><span class="std std-ref">🔗</span></a></p>
-<p>Draws a screen specified by ‘sourceMap and sourceScreen;, from layers specified by ‘layerMin and layerMax’,
+<p class="classref-comment">Draws a screen specified by ‘sourceMap and sourceScreen;, from layers specified by ‘layerMin and layerMax’,
 at a desired opacity, to the layer specified by ‘destLayer’ of the current screen.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-screentolayer-2"><abbr title="No return value.">void</abbr> <strong>ScreenToLayer</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sourceMap, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sourceScreen, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> drawOpacity, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> destLayer) <a class="reference internal" href="#libs-std-fun-screentolayer-2"><span class="std std-ref">🔗</span></a></p>
-<p>Draws all layers of a screen specified by ‘sourceMap and sourceScreen;,
+<p class="classref-comment">Draws all layers of a screen specified by ‘sourceMap and sourceScreen;,
 at a desired opacity, to the layer specified by ‘destLayer’ of the current screen.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-setcombo"><abbr title="No return value.">void</abbr> <strong>SetCombo</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> data, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> type, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> flag, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> inh_flag, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> solid) <a class="reference internal" href="#libs-std-fun-setcombo"><span class="std std-ref">🔗</span></a></p>
-<p>Sets the values for combo at position ‘pos’ to those specified. Pass -1 to leave a value unchanged.</p>
+<p class="classref-comment">Sets the values for combo at position ‘pos’ to those specified. Pass -1 to leave a value unchanged.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-setlayercombovalues"><abbr title="No return value.">void</abbr> <strong>SetLayerComboValues</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> layer, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> data, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> type, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> flag, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> inh_flag, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> solid) <a class="reference internal" href="#libs-std-fun-setlayercombovalues"><span class="std std-ref">🔗</span></a></p>
-<p>Sets the values for a combo on layer ‘layer’, at position ‘pos’ to the values specified.
+<p class="classref-comment">Sets the values for a combo on layer ‘layer’, at position ‘pos’ to the values specified.
 Pass -1 to any value to leave it unchanged.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-shuffle"><abbr title="No return value.">void</abbr> <strong>Shuffle</strong>(<abbr title="Could be any type.">untyped</abbr> ptr) <a class="reference internal" href="#libs-std-fun-shuffle"><span class="std std-ref">🔗</span></a></p>
-<p>Shuffles the values of an array.</p>
+<p class="classref-comment">Shuffles the values of an array.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-shufflestring"><abbr title="No return value.">void</abbr> <strong>ShuffleString</strong>(char32[] ptr) <a class="reference internal" href="#libs-std-fun-shufflestring"><span class="std std-ref">🔗</span></a></p>
-<p>Shuffles the values of an string.</p>
+<p class="classref-comment">Shuffles the values of an string.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-speedrev"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SpeedRev</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> speed, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> reduceinertia) <a class="reference internal" href="#libs-std-fun-speedrev"><span class="std std-ref">🔗</span></a></p>
-<p>Returns a reversed speed, given a new speed for an object given a base speed and an interia factor.</p>
+<p class="classref-comment">Returns a reversed speed, given a new speed for an object given a base speed and an interia factor.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-tracearray"><abbr title="No return value.">void</abbr> <strong>TraceArray</strong>(<abbr title="Could be any type.">untyped</abbr> arr) <a class="reference internal" href="#libs-std-fun-tracearray"><span class="std std-ref">🔗</span></a></p>
-<p>Trace the indices of an array, with a space between each. max 20 per line.
+<p class="classref-method" id="libs-std-fun-tracearray"><abbr title="No return value.">void</abbr> <strong>TraceArray</strong>(<abbr title="Could be any type.">untyped</abbr>[] arr) <a class="reference internal" href="#libs-std-fun-tracearray"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Trace the indices of an array, with a space between each. max 20 per line.
 NOT overloaded to accept all array types. Trace() does not work on ffc, item, itemdata, lweapon, or eweapon until 2.54.x-&gt;2.55.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-tracearray-2"><abbr title="No return value.">void</abbr> <strong>TraceArray</strong>(<abbr title="Could be any type.">untyped</abbr> arr, bool verbose) <a class="reference internal" href="#libs-std-fun-tracearray-2"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-method" id="libs-std-fun-tracearray-2"><abbr title="No return value.">void</abbr> <strong>TraceArray</strong>(<abbr title="Could be any type.">untyped</abbr>[] arr, bool verbose) <a class="reference internal" href="#libs-std-fun-tracearray-2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-tracearrayb"><abbr title="No return value.">void</abbr> <strong>TraceArrayB</strong>(bool[] arr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> size) <a class="reference internal" href="#libs-std-fun-tracearrayb"><span class="std std-ref">🔗</span></a></p>
-<p>Trace the indices of a Boolean array, with a space between each. max 20 per line.</p>
+<p class="classref-comment">Trace the indices of a Boolean array, with a space between each. max 20 per line.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-tracearrayb-2"><abbr title="No return value.">void</abbr> <strong>TraceArrayB</strong>(bool[] arr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> size, bool verbose) <a class="reference internal" href="#libs-std-fun-tracearrayb-2"><span class="std std-ref">🔗</span></a></p>
-<p>Trace the indices of a Boolean array, allows verbose logging.</p>
+<p class="classref-comment">Trace the indices of a Boolean array, allows verbose logging.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-tracestr"><abbr title="No return value.">void</abbr> <strong>TraceStr</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> value) <a class="reference internal" href="#libs-std-fun-tracestr"><span class="std std-ref">🔗</span></a></p>
-<p>Traces a float, or int; whether a variable, an internal variable, array index, or other
+<p class="classref-comment">Traces a float, or int; whether a variable, an internal variable, array index, or other
 along with a given string in one function.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-tracestrb"><abbr title="No return value.">void</abbr> <strong>TraceStrB</strong>(char32[] ptr, bool val) <a class="reference internal" href="#libs-std-fun-tracestrb"><span class="std std-ref">🔗</span></a></p>
-<p>As TraceStr, but for boolean values.</p>
+<p class="classref-comment">As TraceStr, but for boolean values.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-distance"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Distance</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> scale) <a class="reference internal" href="#libs-std-fun-distance"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the distance between two sets of coordinates using Pythagoras’ Theorem
+<p class="classref-comment">Returns the distance between two sets of coordinates using Pythagoras’ Theorem
 Allows scaling for large distance determinations.
 Argument ‘scale’ represents a ratio of 1:scale.
 Argument ‘scale’ is most precise when using powers of 10 (e.g.. 0.1, 1, 10, 100, 1000, 10000).

@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="Game.html">Game</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
@@ -444,7 +448,7 @@
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#namespaces-graphics-var-isblanktile"><span class="std std-ref">IsBlankTile</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
@@ -507,7 +511,7 @@
 <td><p><a class="reference internal" href="#namespaces-graphics-fun-convertfromrgb"><span class="std std-ref">ConvertFromRGB</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg1, rgb arg2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg3)</p></td>
 </tr>
 <tr class="row-odd"><td><p>rgb</p></td>
-<td><p><a class="reference internal" href="#namespaces-graphics-fun-converttorgb"><span class="std std-ref">ConvertToRGB</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr)</p></td>
+<td><p><a class="reference internal" href="#namespaces-graphics-fun-converttorgb"><span class="std std-ref">ConvertToRGB</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] arr)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#namespaces-graphics-fun-gettilepixel"><span class="std std-ref">GetTilePixel</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> tile, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset = <code class="docutils literal notranslate"><span class="pre">0</span></code>)</p></td>
@@ -521,95 +525,95 @@
 </section>
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="namespaces-graphics-var-isblanktile"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>IsBlankTile</strong>  <a class="reference internal" href="#namespaces-graphics-var-isblanktile"><span class="std std-ref">🔗</span></a></p>
-<p>True if the given tile is entirely blank (all color 0).</p>
+<p id="namespaces-graphics-var-isblanktile"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>IsBlankTile</strong>  <a class="reference internal" href="#namespaces-graphics-var-isblanktile"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">True if the given tile is entirely blank (all color 0).</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-graphics-var-numdraws"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NumDraws</strong>  <a class="reference internal" href="#namespaces-graphics-var-numdraws"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the number of script drawing commands that are currently waiting
+<p class="classref-comment">Returns the number of script drawing commands that are currently waiting
 in the draw queue.</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-graphics-var-maxdraws"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MaxDraws</strong>  <a class="reference internal" href="#namespaces-graphics-var-maxdraws"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the limit of the drawing queue. If NumDraws returns the same as
+<p class="classref-comment">Returns the limit of the drawing queue. If <a class="reference internal" href="#namespaces-graphics-var-numdraws"><span class="std std-ref">NumDraws</span></a> returns the same as
 this, no further drawing commands will work until the queue has been
 cleared (i.e. the next frame)</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-graphics-var-is8bittile"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> bool[] <strong>Is8BitTile</strong>  <a class="reference internal" href="#namespaces-graphics-var-is8bittile"><span class="std std-ref">🔗</span></a></p>
-<p>True if the given tile uses 8-bit color.</p>
+<p class="classref-comment">True if the given tile uses 8-bit color.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
 <p class="classref-method" id="namespaces-graphics-fun-wavy"><abbr title="No return value.">void</abbr> <strong>Wavy</strong>(bool style_in) <a class="reference internal" href="#namespaces-graphics-fun-wavy"><span class="std std-ref">🔗</span></a></p>
-<p>Creates a ‘wave’ effect, as a ‘Wavy’ warp type uses.</p>
+<p class="classref-comment">Creates a ‘wave’ effect, as a ‘Wavy’ warp type uses.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-graphics-fun-zap"><abbr title="No return value.">void</abbr> <strong>Zap</strong>(bool style_in) <a class="reference internal" href="#namespaces-graphics-fun-zap"><span class="std std-ref">🔗</span></a></p>
-<p>Creates a ‘zap’ effect, as a ‘Zap’ warp type uses.</p>
+<p class="classref-comment">Creates a ‘zap’ effect, as a ‘Zap’ warp type uses.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-graphics-fun-tint"><abbr title="No return value.">void</abbr> <strong>Tint</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> red, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> green, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> blue) <a class="reference internal" href="#namespaces-graphics-fun-tint"><span class="std std-ref">🔗</span></a></p>
-<p>Tints the palette by adding <cite>red</cite>, <cite>green</cite>, and <cite>blue</cite> to the respective
+<p class="classref-comment">Tints the palette by adding <code class="docutils literal notranslate"><span class="pre">red</span></code>, <code class="docutils literal notranslate"><span class="pre">green</span></code>, and <code class="docutils literal notranslate"><span class="pre">blue</span></code> to the respective
 values of every palette swatch. Subsequent calls to these functions will
 SUM the tint with all previous tints.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-graphics-fun-monochromehue"><abbr title="No return value.">void</abbr> <strong>MonochromeHue</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> red, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> green, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> blue, bool distributed = <code class="docutils literal notranslate"><span class="pre">true</span></code>) <a class="reference internal" href="#namespaces-graphics-fun-monochromehue"><span class="std std-ref">🔗</span></a></p>
-<p>Tints the palette by adding <cite>red</cite>, <cite>green</cite>, and <cite>blue</cite> to the respective
+<p class="classref-comment">Tints the palette by adding <code class="docutils literal notranslate"><span class="pre">red</span></code>, <code class="docutils literal notranslate"><span class="pre">green</span></code>, and <code class="docutils literal notranslate"><span class="pre">blue</span></code> to the respective
 values of every palette swatch. Subsequent calls to these functions will
 SUM the tint with all previous tints.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-graphics-fun-cleartint"><abbr title="No return value.">void</abbr> <strong>ClearTint</strong>() <a class="reference internal" href="#namespaces-graphics-fun-cleartint"><span class="std std-ref">🔗</span></a></p>
-<p>Clears all tint effects.</p>
+<p class="classref-comment">Clears all tint effects.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-graphics-fun-numdraws"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NumDraws</strong>() <a class="reference internal" href="#namespaces-graphics-fun-numdraws"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the number of script drawing commands that are currently waiting
+<p class="classref-comment">Returns the number of script drawing commands that are currently waiting
 in the draw queue.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Deprecated!</strong> Use NumDraws instead!</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Deprecated!</strong> Use <a class="reference internal" href="#namespaces-graphics-var-numdraws"><span class="std std-ref">NumDraws</span></a> instead!</p>
 </div>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-graphics-fun-maxdraws"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MaxDraws</strong>() <a class="reference internal" href="#namespaces-graphics-fun-maxdraws"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the limit of the drawing queue. If NumDraws returns the same as
+<p class="classref-comment">Returns the limit of the drawing queue. If <a class="reference internal" href="#namespaces-graphics-var-numdraws"><span class="std std-ref">NumDraws</span></a> returns the same as
 this, no further drawing commands will work until the queue has been
 cleared (i.e. the next frame)</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Deprecated!</strong> Use MaxDraws instead!</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Deprecated!</strong> Use <a class="reference internal" href="#namespaces-graphics-var-maxdraws"><span class="std std-ref">MaxDraws</span></a> instead!</p>
 </div>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-graphics-fun-getpixel"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetPixel</strong>(<abbr title="Could be any type.">untyped</abbr> b, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y) <a class="reference internal" href="#namespaces-graphics-fun-getpixel"><span class="std std-ref">🔗</span></a></p>
-<p>Same as bitmap::GetPixel</p>
+<p class="classref-comment">Same as <a class="reference internal" href="../classes/bitmap.html#classes-bitmap-fun-getpixel"><span class="std std-ref">bitmap::GetPixel()</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-graphics-fun-createpaldata"><a class="reference internal" href="../classes/paldata.html#classes-paldata"><span class="std std-ref">paldata</span></a> <strong>CreatePalData</strong>() <a class="reference internal" href="#namespaces-graphics-fun-createpaldata"><span class="std std-ref">🔗</span></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Deprecated!</strong> Use <cite>new paldata()</cite> instead!</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Deprecated!</strong> Use <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">paldata()</span></code> instead!</p>
 </div>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-graphics-fun-createpaldata-2"><a class="reference internal" href="../classes/paldata.html#classes-paldata"><span class="std std-ref">paldata</span></a> <strong>CreatePalData</strong>(rgb color) <a class="reference internal" href="#namespaces-graphics-fun-createpaldata-2"><span class="std std-ref">🔗</span></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Deprecated!</strong> Use <cite>new paldata(color)</cite> instead!</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Deprecated!</strong> Use <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">paldata(color)</span></code> instead!</p>
 </div>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-graphics-fun-mixcolor">rgb <strong>MixColor</strong>(rgb start, rgb end, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> percent, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#namespaces-graphics-fun-mixcolor"><span class="std std-ref">🔗</span></a></p>
-<p>Interpolates a color between start and end and then returns the resulting
+<p class="classref-comment">Interpolates a color between start and end and then returns the resulting
 rgb.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-graphics-fun-creatergb">rgb <strong>CreateRGB</strong>(<abbr title="ZScript's real integer type.">long</abbr> hexcode) <a class="reference internal" href="#namespaces-graphics-fun-creatergb"><span class="std std-ref">🔗</span></a></p>
-<p>Takes a long hexcode (0xRRGGBBL), with each rgb section 0 &lt;= n &lt;= 255.</p>
+<p class="classref-comment">Takes a long hexcode (0xRRGGBBL), with each rgb section 0 &lt;= n &lt;= 255.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-graphics-fun-creatergb-2">rgb <strong>CreateRGB</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> r, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> g, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b) <a class="reference internal" href="#namespaces-graphics-fun-creatergb-2"><span class="std std-ref">🔗</span></a></p>
-<p>Takes an (r,g,b) ranging 0 &lt;= n &lt;= 255.</p>
+<p class="classref-comment">Takes an (r,g,b) ranging 0 &lt;= n &lt;= 255.</p>
 <p>0 &lt;= n &lt;= 63 if compat QR “Scripts use 6-bit color (0-63) instead of 8-bit (0-255)” is enabled.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-graphics-fun-convertfromrgb"><abbr title="No return value.">void</abbr> <strong>ConvertFromRGB</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg1, rgb arg2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg3) <a class="reference internal" href="#namespaces-graphics-fun-convertfromrgb"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="namespaces-graphics-fun-converttorgb">rgb <strong>ConvertToRGB</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arr) <a class="reference internal" href="#namespaces-graphics-fun-converttorgb"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-method" id="namespaces-graphics-fun-converttorgb">rgb <strong>ConvertToRGB</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] arr) <a class="reference internal" href="#namespaces-graphics-fun-converttorgb"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-graphics-fun-gettilepixel"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetTilePixel</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> tile, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#namespaces-graphics-fun-gettilepixel"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the color index at an x,y coordinate of a tile.</p>
+<p class="classref-comment">Returns the color index at an x,y coordinate of a tile.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-graphics-fun-settilepixel"><abbr title="No return value.">void</abbr> <strong>SetTilePixel</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> tile, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color) <a class="reference internal" href="#namespaces-graphics-fun-settilepixel"><span class="std std-ref">🔗</span></a></p>
-<p>Sets the color index an an x,y coordinate of a tile.</p>
+<p class="classref-comment">Sets the color index an an x,y coordinate of a tile.</p>
 </section>
 </section>
 

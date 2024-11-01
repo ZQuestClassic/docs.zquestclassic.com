@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="npc.html">npc</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
@@ -567,13 +571,13 @@
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-npcdata-var-weaponsfx"><span class="std std-ref">WeaponSFX</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-npcdata-var-defense"><span class="std std-ref">Defense</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>bool[]</p></td>
 <td><p><a class="reference internal" href="#classes-npcdata-var-sizeflag"><span class="std std-ref">SizeFlag</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-npcdata-var-attributes"><span class="std std-ref">Attributes</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>bool[]</p></td>
@@ -591,13 +595,13 @@
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-npcdata-var-script"><span class="std std-ref">Script</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-npcdata-var-initd"><span class="std std-ref">InitD</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-npcdata-var-weaponscript"><span class="std std-ref">WeaponScript</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-npcdata-var-weaponinitd"><span class="std std-ref">WeaponInitD</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
@@ -627,193 +631,193 @@
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
 <p id="classes-npcdata-var-tile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Tile</strong>  <a class="reference internal" href="#classes-npcdata-var-tile"><span class="std std-ref">🔗</span></a></p>
-<p>The base tile used by the enemy.</p>
+<p class="classref-comment">The base tile used by the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-npcdata-var-flags"><span class="std std-ref">🔗</span></a></p>
-<p>Undocumented. Refer to <a class="github reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/main/src/base/flags.h#L31">ZQuestClassic/ZQuestClassic</a></p>
+<p class="classref-comment">Undocumented. Refer to <a class="github reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/main/src/base/flags.h#L31">ZQuestClassic/ZQuestClassic</a></p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-width"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Width</strong>  <a class="reference internal" href="#classes-npcdata-var-width"><span class="std std-ref">🔗</span></a></p>
-<p>The ‘width’ (W) of base tile used by the enemy.</p>
+<p class="classref-comment">The ‘width’ (W) of base tile used by the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-height"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Height</strong>  <a class="reference internal" href="#classes-npcdata-var-height"><span class="std std-ref">🔗</span></a></p>
-<p>The ‘height’ (H) of base tile used by the enemy.</p>
+<p class="classref-comment">The ‘height’ (H) of base tile used by the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-stile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>STile</strong>  <a class="reference internal" href="#classes-npcdata-var-stile"><span class="std std-ref">🔗</span></a></p>
-<p>The base ‘special’ tile used by the enemy.</p>
+<p class="classref-comment">The base ‘special’ tile used by the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-swidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SWidth</strong>  <a class="reference internal" href="#classes-npcdata-var-swidth"><span class="std std-ref">🔗</span></a></p>
-<p>The ‘width’ (W) of base ‘special’ tile used by the enemy.</p>
+<p class="classref-comment">The ‘width’ (W) of base ‘special’ tile used by the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-sheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SHeight</strong>  <a class="reference internal" href="#classes-npcdata-var-sheight"><span class="std std-ref">🔗</span></a></p>
-<p>The ‘height’ (H) of base ‘special’ tile used by the enemy.</p>
+<p class="classref-comment">The ‘height’ (H) of base ‘special’ tile used by the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-extile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ExTile</strong>  <a class="reference internal" href="#classes-npcdata-var-extile"><span class="std std-ref">🔗</span></a></p>
-<p>The base EXPANDED (‘New’) tile used by the enemy.</p>
+<p class="classref-comment">The base EXPANDED (‘New’) tile used by the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-exwidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ExWidth</strong>  <a class="reference internal" href="#classes-npcdata-var-exwidth"><span class="std std-ref">🔗</span></a></p>
-<p>The ‘width’ (W) of base EXPANDED (‘New’) tile used by the enemy.</p>
+<p class="classref-comment">The ‘width’ (W) of base EXPANDED (‘New’) tile used by the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-exheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ExHeight</strong>  <a class="reference internal" href="#classes-npcdata-var-exheight"><span class="std std-ref">🔗</span></a></p>
-<p>The ‘height’ (H) of base EXPANDED (‘New’) tile used by the enemy.</p>
+<p class="classref-comment">The ‘height’ (H) of base EXPANDED (‘New’) tile used by the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-hp"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HP</strong>  <a class="reference internal" href="#classes-npcdata-var-hp"><span class="std std-ref">🔗</span></a></p>
-<p>The enemy’s base hit points.</p>
+<p class="classref-comment">The enemy’s base hit points.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-family"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Family</strong>  <a class="reference internal" href="#classes-npcdata-var-family"><span class="std std-ref">🔗</span></a></p>
-<p>The Family (Enemy Class) of the npc.</p>
+<p class="classref-comment">The Family (Enemy Class) of the npc.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-cset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CSet</strong>  <a class="reference internal" href="#classes-npcdata-var-cset"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-anim"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Anim</strong>  <a class="reference internal" href="#classes-npcdata-var-anim"><span class="std std-ref">🔗</span></a></p>
-<p>The ‘O.Anim’ used by the enemy.</p>
+<p class="classref-comment">The ‘O.Anim’ used by the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-exanim"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ExAnim</strong>  <a class="reference internal" href="#classes-npcdata-var-exanim"><span class="std std-ref">🔗</span></a></p>
-<p>The ‘E.Anim’ used by the enemy.</p>
+<p class="classref-comment">The ‘E.Anim’ used by the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-framerate"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Framerate</strong>  <a class="reference internal" href="#classes-npcdata-var-framerate"><span class="std std-ref">🔗</span></a></p>
-<p>The ‘O.Anim’ animation framerate used by the enemy.</p>
+<p class="classref-comment">The ‘O.Anim’ animation framerate used by the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-exframerate"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ExFramerate</strong>  <a class="reference internal" href="#classes-npcdata-var-exframerate"><span class="std std-ref">🔗</span></a></p>
-<p>The ‘E.Anim’ animation framerate used by the enemy.</p>
+<p class="classref-comment">The ‘E.Anim’ animation framerate used by the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-touchdamage"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TouchDamage</strong>  <a class="reference internal" href="#classes-npcdata-var-touchdamage"><span class="std std-ref">🔗</span></a></p>
-<p>The amount of contact damage that the enemy causes when it collides with
+<p class="classref-comment">The amount of contact damage that the enemy causes when it collides with
 Link.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-weapondamage"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponDamage</strong>  <a class="reference internal" href="#classes-npcdata-var-weapondamage"><span class="std std-ref">🔗</span></a></p>
-<p>The power of the weapons fired by the enemy.</p>
+<p class="classref-comment">The power of the weapons fired by the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-weapon"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Weapon</strong>  <a class="reference internal" href="#classes-npcdata-var-weapon"><span class="std std-ref">🔗</span></a></p>
-<p>The weapon type used by the enemy.</p>
+<p class="classref-comment">The weapon type used by the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-random"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Random</strong>  <a class="reference internal" href="#classes-npcdata-var-random"><span class="std std-ref">🔗</span></a></p>
-<p>The ‘random rate’ of the enemy.</p>
+<p class="classref-comment">The ‘random rate’ of the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-haltrate"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Haltrate</strong>  <a class="reference internal" href="#classes-npcdata-var-haltrate"><span class="std std-ref">🔗</span></a></p>
-<p>The ‘turn frequency’ used by the enemy during its movement phase.</p>
+<p class="classref-comment">The ‘turn frequency’ used by the enemy during its movement phase.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-step"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Step</strong>  <a class="reference internal" href="#classes-npcdata-var-step"><span class="std std-ref">🔗</span></a></p>
-<p>The enem’s step speed.</p>
+<p class="classref-comment">The enem’s step speed.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-homing"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Homing</strong>  <a class="reference internal" href="#classes-npcdata-var-homing"><span class="std std-ref">🔗</span></a></p>
-<p>The homing factor of the enemy. Greater values home more keenly on Link.</p>
+<p class="classref-comment">The homing factor of the enemy. Greater values home more keenly on Link.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-hunger"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Hunger</strong>  <a class="reference internal" href="#classes-npcdata-var-hunger"><span class="std std-ref">🔗</span></a></p>
-<p>The ‘hunger’ value of the enemy.</p>
+<p class="classref-comment">The ‘hunger’ value of the enemy.</p>
 <p>Higher values make it more likely that the enemy is attracted to Bait.</p>
-<p>Valid only for NPCT_WALKING enemies.</p>
+<p>Valid only for <code class="docutils literal notranslate"><span class="pre">NPCT_WALKING</span></code> enemies.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-dropset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Dropset</strong>  <a class="reference internal" href="#classes-npcdata-var-dropset"><span class="std std-ref">🔗</span></a></p>
-<p>The dropset used by the enemy.</p>
+<p class="classref-comment">The dropset used by the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-bgsfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>BGSFX</strong>  <a class="reference internal" href="#classes-npcdata-var-bgsfx"><span class="std std-ref">🔗</span></a></p>
-<p>The Ambient sound that the enemy emits.</p>
+<p class="classref-comment">The Ambient sound that the enemy emits.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-deathsfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DeathSFX</strong>  <a class="reference internal" href="#classes-npcdata-var-deathsfx"><span class="std std-ref">🔗</span></a></p>
-<p>The sound that is played when the enemy dies.</p>
+<p class="classref-comment">The sound that is played when the enemy dies.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-hitsfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitSFX</strong>  <a class="reference internal" href="#classes-npcdata-var-hitsfx"><span class="std std-ref">🔗</span></a></p>
-<p>The sound that is played when the enemy is hit by an lweapon.</p>
+<p class="classref-comment">The sound that is played when the enemy is hit by an lweapon.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-drawxoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawXOffset</strong>  <a class="reference internal" href="#classes-npcdata-var-drawxoffset"><span class="std std-ref">🔗</span></a></p>
-<p>The horizontal draw offset of the enemy.</p>
-<p>Note: SizeFlag?? must be enabled for this to function.</p>
+<p class="classref-comment">The horizontal draw offset of the enemy.</p>
+<p>Note: SizeFlag[??] must be enabled for this to function.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-drawyoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawYOffset</strong>  <a class="reference internal" href="#classes-npcdata-var-drawyoffset"><span class="std std-ref">🔗</span></a></p>
-<p>The vertical draw offset of the enemy.</p>
-<p>Note: SizeFlag?? must be enabled for this to function.</p>
+<p class="classref-comment">The vertical draw offset of the enemy.</p>
+<p>Note: SizeFlag[??] must be enabled for this to function.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-drawzoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawZOffset</strong>  <a class="reference internal" href="#classes-npcdata-var-drawzoffset"><span class="std std-ref">🔗</span></a></p>
-<p>The depth draw offset of the enemy.</p>
-<p>Note: SizeFlag?? must be enabled for this to function.</p>
+<p class="classref-comment">The depth draw offset of the enemy.</p>
+<p>Note: SizeFlag[??] must be enabled for this to function.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-hitxoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitXOffset</strong>  <a class="reference internal" href="#classes-npcdata-var-hitxoffset"><span class="std std-ref">🔗</span></a></p>
-<p>The horizontal hitbox offset of the enemy.</p>
-<p>Note: SizeFlag?? must be enabled for this to function.</p>
+<p class="classref-comment">The horizontal hitbox offset of the enemy.</p>
+<p>Note: SizeFlag[??] must be enabled for this to function.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-hityoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitYOffset</strong>  <a class="reference internal" href="#classes-npcdata-var-hityoffset"><span class="std std-ref">🔗</span></a></p>
-<p>The vertical hitbox offset of the enemy.</p>
-<p>Note: SizeFlag?? must be enabled for this to function.</p>
+<p class="classref-comment">The vertical hitbox offset of the enemy.</p>
+<p>Note: SizeFlag[??] must be enabled for this to function.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-hitwidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitWidth</strong>  <a class="reference internal" href="#classes-npcdata-var-hitwidth"><span class="std std-ref">🔗</span></a></p>
-<p>The hitbox width (X component), in pixels, for the enemy.</p>
-<p>Note: SizeFlag?? must be enabled for this to function.</p>
+<p class="classref-comment">The hitbox width (X component), in pixels, for the enemy.</p>
+<p>Note: SizeFlag[??] must be enabled for this to function.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-hitheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitHeight</strong>  <a class="reference internal" href="#classes-npcdata-var-hitheight"><span class="std std-ref">🔗</span></a></p>
-<p>The hitbox height (Y component), in pixels, for the enemy.</p>
-<p>Note: SizeFlag?? must be enabled for this to function.</p>
+<p class="classref-comment">The hitbox height (Y component), in pixels, for the enemy.</p>
+<p>Note: SizeFlag[??] must be enabled for this to function.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-hitzheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitZHeight</strong>  <a class="reference internal" href="#classes-npcdata-var-hitzheight"><span class="std std-ref">🔗</span></a></p>
-<p>The hitbox height (Z component), in pixels, for the enemy.</p>
-<p>Note: SizeFlag?? must be enabled for this to function.</p>
+<p class="classref-comment">The hitbox height (Z component), in pixels, for the enemy.</p>
+<p>Note: SizeFlag[??] must be enabled for this to function.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-tilewidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TileWidth</strong>  <a class="reference internal" href="#classes-npcdata-var-tilewidth"><span class="std std-ref">🔗</span></a></p>
-<p>The drawn width (X component) of the enemy in increments of one tile.</p>
-<p>Note: SizeFlag?? must be enabled for this to function.</p>
+<p class="classref-comment">The drawn width (X component) of the enemy in increments of one tile.</p>
+<p>Note: SizeFlag[??] must be enabled for this to function.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-tileheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TileHeight</strong>  <a class="reference internal" href="#classes-npcdata-var-tileheight"><span class="std std-ref">🔗</span></a></p>
-<p>The drawn height (Y component) of the enemy in increments of one tile.</p>
-<p>Note: SizeFlag?? must be enabled for this to function.</p>
+<p class="classref-comment">The drawn height (Y component) of the enemy in increments of one tile.</p>
+<p>Note: SizeFlag[??] must be enabled for this to function.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-weaponsprite"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponSprite</strong>  <a class="reference internal" href="#classes-npcdata-var-weaponsprite"><span class="std std-ref">🔗</span></a></p>
-<p>The sprite used to draw the enemy weapon.</p>
+<p class="classref-comment">The sprite used to draw the enemy weapon.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-weaponsfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponSFX</strong>  <a class="reference internal" href="#classes-npcdata-var-weaponsfx"><span class="std std-ref">🔗</span></a></p>
-<p>The sfx used when the enemy fires its weapon.
+<p class="classref-comment">The sfx used when the enemy fires its weapon.
 If WeaponSFX &lt;= 0 no sound will be played.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-npcdata-var-defense"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Defense</strong>  <a class="reference internal" href="#classes-npcdata-var-defense"><span class="std std-ref">🔗</span></a></p>
-<p>The defense categories for the enemy.</p>
+<p id="classes-npcdata-var-defense"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Defense</strong>  <a class="reference internal" href="#classes-npcdata-var-defense"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The defense categories for the enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-sizeflag">bool[] <strong>SizeFlag</strong>  <a class="reference internal" href="#classes-npcdata-var-sizeflag"><span class="std std-ref">🔗</span></a></p>
-<p>A set of flags that determine if the values for the Enemy Editor ‘Size’
+<p class="classref-comment">A set of flags that determine if the values for the Enemy Editor ‘Size’
 tab are rendered by the engine.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-npcdata-var-attributes"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Attributes</strong>  <a class="reference internal" href="#classes-npcdata-var-attributes"><span class="std std-ref">🔗</span></a></p>
-<p>The ‘Misc. Attributes’ of the enemy; now 32 of these; and
+<p id="classes-npcdata-var-attributes"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Attributes</strong>  <a class="reference internal" href="#classes-npcdata-var-attributes"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The ‘Misc. Attributes’ of the enemy; now 32 of these; and
 datatype-insensitive.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-shield">bool[] <strong>Shield</strong>  <a class="reference internal" href="#classes-npcdata-var-shield"><span class="std std-ref">🔗</span></a></p>
-<p>The shield status of the enemy.</p>
-<p>Valid indices: DIR_UP (front), DIR_DOWN (back), DIR_LEFT, DIR_RIGHT,
-<cite>4</cite> (Shield can be broken).</p>
+<p class="classref-comment">The shield status of the enemy.</p>
+<p>Valid indices: <a class="reference internal" href="../global_constants.html#globals-enum-member-dir-up"><span class="std std-ref">DIR_UP</span></a> (front), <a class="reference internal" href="../global_constants.html#globals-enum-member-dir-down"><span class="std std-ref">DIR_DOWN</span></a> (back), <a class="reference internal" href="../global_constants.html#globals-enum-member-dir-left"><span class="std std-ref">DIR_LEFT</span></a>, <a class="reference internal" href="../global_constants.html#globals-enum-member-dir-right"><span class="std std-ref">DIR_RIGHT</span></a>,
+<code class="docutils literal notranslate"><span class="pre">4</span></code> (Shield can be broken).</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-bflags">bool[] <strong>BFlags</strong>  <a class="reference internal" href="#classes-npcdata-var-bflags"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-frozentile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FrozenTile</strong>  <a class="reference internal" href="#classes-npcdata-var-frozentile"><span class="std std-ref">🔗</span></a></p>
-<p>The base tile used to draw the enemy, when the enemy is frozen solid.
+<p class="classref-comment">The base tile used to draw the enemy, when the enemy is frozen solid.
 //Not yet implemented in-engine.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-frozencset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FrozenCSet</strong>  <a class="reference internal" href="#classes-npcdata-var-frozencset"><span class="std std-ref">🔗</span></a></p>
-<p>The CSet value used to render the enemy, when the enemy is frozen solid.
+<p class="classref-comment">The CSet value used to render the enemy, when the enemy is frozen solid.
 //Not yet implemented in-engine.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-script"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Script</strong>  <a class="reference internal" href="#classes-npcdata-var-script"><span class="std std-ref">🔗</span></a></p>
-<p>The npc action script used by this enemy.</p>
+<p class="classref-comment">The npc action script used by this enemy.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-npcdata-var-initd"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>InitD</strong>  <a class="reference internal" href="#classes-npcdata-var-initd"><span class="std std-ref">🔗</span></a></p>
-<p>The eight InitD args used by the npc action script for this enemy.</p>
+<p id="classes-npcdata-var-initd"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>InitD</strong>  <a class="reference internal" href="#classes-npcdata-var-initd"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The eight InitD args used by the npc action script for this enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-weaponscript"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponScript</strong>  <a class="reference internal" href="#classes-npcdata-var-weaponscript"><span class="std std-ref">🔗</span></a></p>
-<p>The weapon action script assigned to this enemy.</p>
+<p class="classref-comment">The weapon action script assigned to this enemy.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-npcdata-var-weaponinitd"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponInitD</strong>  <a class="reference internal" href="#classes-npcdata-var-weaponinitd"><span class="std std-ref">🔗</span></a></p>
-<p>The eight InitD args assigned to the weapon script used by this enemy.</p>
+<p id="classes-npcdata-var-weaponinitd"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>WeaponInitD</strong>  <a class="reference internal" href="#classes-npcdata-var-weaponinitd"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The eight InitD args assigned to the weapon script used by this enemy.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-shadowsprite"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ShadowSprite</strong>  <a class="reference internal" href="#classes-npcdata-var-shadowsprite"><span class="std std-ref">🔗</span></a></p>
-<p>The shadow sprite used by the enemy, 0-255</p>
+<p class="classref-comment">The shadow sprite used by the enemy, 0-255</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-spawnsprite"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SpawnSprite</strong>  <a class="reference internal" href="#classes-npcdata-var-spawnsprite"><span class="std std-ref">🔗</span></a></p>
-<p>The spawn sprite used by the enemy, 0-255</p>
+<p class="classref-comment">The spawn sprite used by the enemy, 0-255</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-npcdata-var-deathsprite"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DeathSprite</strong>  <a class="reference internal" href="#classes-npcdata-var-deathsprite"><span class="std std-ref">🔗</span></a></p>
-<p>The death sprite used by the enemy, 0-255</p>
+<p class="classref-comment">The death sprite used by the enemy, 0-255</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
 <p class="classref-method" id="classes-npcdata-fun-getname"><abbr title="No return value.">void</abbr> <strong>GetName</strong>(char32[] ptr) <a class="reference internal" href="#classes-npcdata-fun-getname"><span class="std std-ref">🔗</span></a></p>
-<p>Puts the text of the Enemy Name field into string ‘ptr’.</p>
+<p class="classref-comment">Puts the text of the Enemy Name field into string ‘ptr’.</p>
 </section>
 </section>
 

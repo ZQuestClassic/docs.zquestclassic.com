@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../std/cfg.html">std.cfg</a></li>
@@ -463,10 +467,10 @@
 <td><p><a class="reference internal" href="#libs-ghost-fun-ghost-replacenpc"><span class="std std-ref">Ghost_ReplaceNPC</span></a>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> oldGhost, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> newGhost, bool copyHP)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-ghost-fun-ghost-storedefenses"><span class="std std-ref">Ghost_StoreDefenses</span></a>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> storedDefense)</p></td>
+<td><p><a class="reference internal" href="#libs-ghost-fun-ghost-storedefenses"><span class="std std-ref">Ghost_StoreDefenses</span></a>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] storedDefense)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-ghost-fun-ghost-setdefenses"><span class="std std-ref">Ghost_SetDefenses</span></a>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> defense)</p></td>
+<td><p><a class="reference internal" href="#libs-ghost-fun-ghost-setdefenses"><span class="std std-ref">Ghost_SetDefenses</span></a>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] defense)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-ghost-fun-ghost-setalldefenses"><span class="std std-ref">Ghost_SetAllDefenses</span></a>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> defType)</p></td>
@@ -505,9 +509,9 @@
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-ghost-replacenpc"><abbr title="No return value.">void</abbr> <strong>Ghost_ReplaceNPC</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> oldGhost, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> newGhost, bool copyHP) <a class="reference internal" href="#libs-ghost-fun-ghost-replacenpc"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-ghost-storedefenses"><abbr title="No return value.">void</abbr> <strong>Ghost_StoreDefenses</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> storedDefense) <a class="reference internal" href="#libs-ghost-fun-ghost-storedefenses"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-method" id="libs-ghost-fun-ghost-storedefenses"><abbr title="No return value.">void</abbr> <strong>Ghost_StoreDefenses</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] storedDefense) <a class="reference internal" href="#libs-ghost-fun-ghost-storedefenses"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-ghost-setdefenses"><abbr title="No return value.">void</abbr> <strong>Ghost_SetDefenses</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> defense) <a class="reference internal" href="#libs-ghost-fun-ghost-setdefenses"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-method" id="libs-ghost-fun-ghost-setdefenses"><abbr title="No return value.">void</abbr> <strong>Ghost_SetDefenses</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] defense) <a class="reference internal" href="#libs-ghost-fun-ghost-setdefenses"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-ghost-setalldefenses"><abbr title="No return value.">void</abbr> <strong>Ghost_SetAllDefenses</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> defType) <a class="reference internal" href="#libs-ghost-fun-ghost-setalldefenses"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />

@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">std</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">std.cfg</a></li>
@@ -493,43 +497,43 @@
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
 <p id="libs-std-var-std-force-old-distance"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>STD_FORCE_OLD_DISTANCE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-std-var-std-force-old-distance"><span class="std std-ref">🔗</span></a></p>
-<p>If enabled, Distance() will use Sqrt() instead of SafeSqrt().</p>
+<p class="classref-comment">If enabled, Distance() will use Sqrt() instead of SafeSqrt().</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-std-distance-use-safesqrt"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>STD_DISTANCE_USE_SAFESQRT</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-std-distance-use-safesqrt"><span class="std std-ref">🔗</span></a></p>
-<p>If enabled, Distance will use SafeSqrt(). Otherwise, it will return a factor,</p>
+<p class="classref-comment">If enabled, Distance will use SafeSqrt(). Otherwise, it will return a factor,</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-std-emulate-engine-collision"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>STD_EMULATE_ENGINE_COLLISION</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-std-emulate-engine-collision"><span class="std std-ref">🔗</span></a></p>
-<p>If enabled, Collision hitboxs will more precisely emulate the</p>
+<p class="classref-comment">If enabled, Collision hitboxs will more precisely emulate the</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-std-centerxy-uses-hitboxes"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>STD_CENTERXY_USES_HITBOXES</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-std-centerxy-uses-hitboxes"><span class="std std-ref">🔗</span></a></p>
-<p>If enabled, CenterX() and CenterY() will use object hitboxes</p>
+<p class="classref-comment">If enabled, CenterX() and CenterY() will use object hitboxes</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-std-never-use-safesqrt"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>STD_NEVER_USE_SAFESQRT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-std-var-std-never-use-safesqrt"><span class="std std-ref">🔗</span></a></p>
-<p>Enable to force any calls to SafeSqrt() to use Sqrt() instead.</p>
+<p class="classref-comment">Enable to force any calls to SafeSqrt() to use Sqrt() instead.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-max-highest-level-item-check"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MAX_HIGHEST_LEVEL_ITEM_CHECK</strong> = <code class="docutils literal notranslate"><span class="pre">255</span></code> <a class="reference internal" href="#libs-std-var-max-highest-level-item-check"><span class="std std-ref">🔗</span></a></p>
-<p>The highest item ID checked by GetHighestLevelItem().</p>
+<p class="classref-comment">The highest item ID checked by GetHighestLevelItem().</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-revised-rotatepoint-x-function"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>REVISED_ROTATEPOINT_X_FUNCTION</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-std-var-revised-rotatepoint-x-function"><span class="std std-ref">🔗</span></a></p>
-<p>Set to 0 to use 2.50.x RotatePointX()</p>
+<p class="classref-comment">Set to 0 to use 2.50.x RotatePointX()</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-revised-rotatepoint-y-function"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>REVISED_ROTATEPOINT_Y_FUNCTION</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-std-var-revised-rotatepoint-y-function"><span class="std std-ref">🔗</span></a></p>
-<p>Set to 0 to use 2.50.x RotatePointY()</p>
+<p class="classref-comment">Set to 0 to use 2.50.x RotatePointY()</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-max-noaction-input"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MAX_NOACTION_INPUT</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code> <a class="reference internal" href="#libs-std-var-max-noaction-input"><span class="std std-ref">🔗</span></a></p>
-<p>Checks A, B, L, R, U/D/L/R, Ex1, Ex2, Ex3, Ex4</p>
+<p class="classref-comment">Checks A, B, L, R, U/D/L/R, Ex1, Ex2, Ex3, Ex4</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-noaction-skip-map"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NOACTION_SKIP_MAP</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-noaction-skip-map"><span class="std std-ref">🔗</span></a></p>
-<p>If enabled, NoAction will not disable pressing the Map button</p>
+<p class="classref-comment">If enabled, NoAction will not disable pressing the Map button</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-noaction-skip-start"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NOACTION_SKIP_START</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-noaction-skip-start"><span class="std std-ref">🔗</span></a></p>
-<p>If enabled, NoAction will not disable pressing the Start button</p>
+<p class="classref-comment">If enabled, NoAction will not disable pressing the Start button</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-old-onsideplatform"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>OLD_ONSIDEPLATFORM</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-old-onsideplatform"><span class="std std-ref">🔗</span></a></p>
-<p>Change to 1 to use old OnSidePlatform calls.</p>
+<p class="classref-comment">Change to 1 to use old OnSidePlatform calls.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-old-rand-funcs"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>OLD_RAND_FUNCS</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-old-rand-funcs"><span class="std std-ref">🔗</span></a></p>
-<p>Change to 1 to use old Rand() logic</p>
+<p class="classref-comment">Change to 1 to use old Rand() logic</p>
 </section>
 </section>
 

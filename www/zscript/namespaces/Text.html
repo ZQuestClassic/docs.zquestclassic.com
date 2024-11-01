@@ -45,7 +45,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="ZInfo" href="ZInfo.html" />
-    <link rel="prev" title="Region" href="Region.html" />
+    <link rel="prev" title="Screen" href="Screen.html" />
     <link href="../../_static/main.css" rel="stylesheet" type="text/css">
 
   </head>
@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Screen.html">Screen</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
@@ -472,28 +476,28 @@
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
 <p class="classref-method" id="namespaces-text-fun-stringwidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>StringWidth</strong>(char32[] s, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> font) <a class="reference internal" href="#namespaces-text-fun-stringwidth"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the width of the character c in the given font, as
-Screen-&gt;DrawString() would draw it.</p>
+<p class="classref-comment">Returns the width of the character <code class="docutils literal notranslate"><span class="pre">c</span></code> in the given <code class="docutils literal notranslate"><span class="pre">font</span></code>, as
+<code class="docutils literal notranslate"><span class="pre">Screen-&gt;DrawString</span></code> would draw it.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-text-fun-charwidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CharWidth</strong>(char32 c, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> font) <a class="reference internal" href="#namespaces-text-fun-charwidth"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the width of the character c, in the given font,
-as Screen-&gt;DrawString() would draw it.</p>
+<p class="classref-comment">Returns the width of the character <code class="docutils literal notranslate"><span class="pre">c</span></code>, in the given font,
+as <code class="docutils literal notranslate"><span class="pre">Screen-&gt;DrawString</span></code> would draw it.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-text-fun-stringheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>StringHeight</strong>(char32[] s, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> font) <a class="reference internal" href="#namespaces-text-fun-stringheight"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the height of c in font, in pixels.</p>
+<p class="classref-comment">Returns the height of <code class="docutils literal notranslate"><span class="pre">c</span></code> in <code class="docutils literal notranslate"><span class="pre">font</span></code>, in pixels.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-text-fun-charheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CharHeight</strong>(char32 c, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> font) <a class="reference internal" href="#namespaces-text-fun-charheight"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the height of c in font, in pixels.</p>
+<p class="classref-comment">Returns the height of <code class="docutils literal notranslate"><span class="pre">c</span></code> in <code class="docutils literal notranslate"><span class="pre">font</span></code>, in pixels.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-text-fun-fontheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FontHeight</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> font) <a class="reference internal" href="#namespaces-text-fun-fontheight"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the height of font, in pixels.</p>
+<p class="classref-comment">Returns the height of <code class="docutils literal notranslate"><span class="pre">font</span></code>, in pixels.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-text-fun-messagewidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MessageWidth</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> msg) <a class="reference internal" href="#namespaces-text-fun-messagewidth"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the width of the <a class="reference internal" href="../classes/messagedata.html#classes-messagedata"><span class="std std-ref">messagedata</span></a> ‘msg’, as Screen-&gt;DrawString()
+<p class="classref-comment">Returns the width of the <a class="reference internal" href="../classes/messagedata.html#classes-messagedata"><span class="std std-ref">messagedata</span></a> ‘msg’, as <code class="docutils literal notranslate"><span class="pre">Screen-&gt;DrawString</span></code>
 would draw it.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-text-fun-messageheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MessageHeight</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> msg) <a class="reference internal" href="#namespaces-text-fun-messageheight"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the height of the font assigned to the ‘msg’ <a class="reference internal" href="../classes/messagedata.html#classes-messagedata"><span class="std std-ref">messagedata</span></a>.</p>
+<p class="classref-comment">Returns the height of the font assigned to the ‘msg’ <a class="reference internal" href="../classes/messagedata.html#classes-messagedata"><span class="std std-ref">messagedata</span></a>.</p>
 </section>
 </section>
 
@@ -508,12 +512,12 @@ would draw it.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Region.html"
+       href="Screen.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Region</p>
+        <p class="prev-next-title">Screen</p>
       </div>
     </a>
     <a class="right-next"

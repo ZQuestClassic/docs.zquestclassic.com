@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../std/cfg.html">std.cfg</a></li>
@@ -690,7 +694,7 @@
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
 <p id="libs-ghost-var-ewm-sine-wave"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EWM_SINE_WAVE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-ewm-sine-wave"><span class="std std-ref">🔗</span></a></p>
-<p>ghost.zh
+<p class="classref-comment">ghost.zh
 Version 2.8.15
 Arguments to SetEWeaponMovement()</p>
 <hr class="classref-item-separator docutils" />
@@ -717,19 +721,19 @@ Arguments to SetEWeaponMovement()</p>
 <p id="libs-ghost-var-ewm-homing-reaim-p2"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EWM_HOMING_REAIM_P2</strong> = <code class="docutils literal notranslate"><span class="pre">31</span></code> <a class="reference internal" href="#libs-ghost-var-ewm-homing-reaim-p2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ewmf-die"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EWMF_DIE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-ewmf-die"><span class="std std-ref">🔗</span></a></p>
-<p>Flags used by certain EWeapon movement types</p>
+<p class="classref-comment">Flags used by certain EWeapon movement types</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ewmf-bounce"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EWMF_BOUNCE</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-ghost-var-ewmf-bounce"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ewl-timer"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EWL_TIMER</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-ewl-timer"><span class="std std-ref">🔗</span></a></p>
-<p>Arguments to SetEWeaponLifespan()</p>
+<p class="classref-comment">Arguments to SetEWeaponLifespan()</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ewl-near-link"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EWL_NEAR_LINK</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-ghost-var-ewl-near-link"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ewl-slow-to-halt"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EWL_SLOW_TO_HALT</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code> <a class="reference internal" href="#libs-ghost-var-ewl-slow-to-halt"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ewd-vanish"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EWD_VANISH</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-ewd-vanish"><span class="std std-ref">🔗</span></a></p>
-<p>Arguments to SetEWeaponDeathEffect()</p>
+<p class="classref-comment">Arguments to SetEWeaponDeathEffect()</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ewd-aim-at-link"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EWD_AIM_AT_LINK</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-ghost-var-ewd-aim-at-link"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -762,14 +766,14 @@ Arguments to SetEWeaponMovement()</p>
 <p id="libs-ghost-var-ewd-aim-at-p2"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EWD_AIM_AT_P2</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code> <a class="reference internal" href="#libs-ghost-var-ewd-aim-at-p2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ewd-even"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EWD_EVEN</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-ewd-even"><span class="std std-ref">🔗</span></a></p>
-<p>Prototype-based version</p>
+<p class="classref-comment">Prototype-based version</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ewd-random"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EWD_RANDOM</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-ghost-var-ewd-random"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ewd-aimed"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EWD_AIMED</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code> <a class="reference internal" href="#libs-ghost-var-ewd-aimed"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ewf-unblockable"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EWF_UNBLOCKABLE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-ewf-unblockable"><span class="std std-ref">🔗</span></a></p>
-<p>EWeapon flags</p>
+<p class="classref-comment">EWeapon flags</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ewf-rotate"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EWF_ROTATE</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-ghost-var-ewf-rotate"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -784,7 +788,7 @@ Arguments to SetEWeaponMovement()</p>
 <p id="libs-ghost-var-ewf-fake-z"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EWF_FAKE_Z</strong> = <code class="docutils literal notranslate"><span class="pre">64</span></code> <a class="reference internal" href="#libs-ghost-var-ewf-fake-z"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ewfi-dead"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWFI_DEAD</strong> = <code class="docutils literal notranslate"><span class="pre">128</span></code> <a class="reference internal" href="#libs-ghost-var-ewfi-dead"><span class="std std-ref">🔗</span></a></p>
-<p>Internal EWeapon flags</p>
+<p class="classref-comment">Internal EWeapon flags</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ewfi-dummy"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__EWFI_DUMMY</strong> = <code class="docutils literal notranslate"><span class="pre">256</span></code> <a class="reference internal" href="#libs-ghost-var-ewfi-dummy"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -800,90 +804,90 @@ Arguments to SetEWeaponMovement()</p>
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
 <p class="classref-method" id="libs-ghost-fun-fireeweapon"><a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> <strong>FireEWeapon</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> weaponID, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> angle, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> step, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> damage, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sprite, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sound, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> flags) <a class="reference internal" href="#libs-ghost-fun-fireeweapon"><span class="std std-ref">🔗</span></a></p>
-<p>Fire an eweapon</p>
+<p class="classref-comment">Fire an eweapon</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-fireaimedeweapon"><a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> <strong>FireAimedEWeapon</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> weaponID, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> angle, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> step, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> damage, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sprite, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sound, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> flags) <a class="reference internal" href="#libs-ghost-fun-fireaimedeweapon"><span class="std std-ref">🔗</span></a></p>
-<p>Fire an eweapon aimed based on Link’s position</p>
+<p class="classref-comment">Fire an eweapon aimed based on Link’s position</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-firenonangulareweapon"><a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> <strong>FireNonAngularEWeapon</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> weaponID, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> step, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> damage, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sprite, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sound, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> flags) <a class="reference internal" href="#libs-ghost-fun-firenonangulareweapon"><span class="std std-ref">🔗</span></a></p>
-<p>Fire a non-angular eweapon</p>
+<p class="classref-comment">Fire a non-angular eweapon</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-firebigeweapon"><a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> <strong>FireBigEWeapon</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> weaponID, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> angle, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> step, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> damage, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sprite, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sound, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> flags, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> width, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> height) <a class="reference internal" href="#libs-ghost-fun-firebigeweapon"><span class="std std-ref">🔗</span></a></p>
-<p>Fire an eweapon larger than 1x1</p>
+<p class="classref-comment">Fire an eweapon larger than 1x1</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-firebigaimedeweapon"><a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> <strong>FireBigAimedEWeapon</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> weaponID, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> angle, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> step, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> damage, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sprite, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sound, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> flags, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> width, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> height) <a class="reference internal" href="#libs-ghost-fun-firebigaimedeweapon"><span class="std std-ref">🔗</span></a></p>
-<p>Fire an eweapon larger than 1x1 aimed based on Link’s position</p>
+<p class="classref-comment">Fire an eweapon larger than 1x1 aimed based on Link’s position</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-firebignonangulareweapon"><a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> <strong>FireBigNonAngularEWeapon</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> weaponID, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> step, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> damage, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sprite, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sound, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> flags, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> width, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> height) <a class="reference internal" href="#libs-ghost-fun-firebignonangulareweapon"><span class="std std-ref">🔗</span></a></p>
-<p>Fire a non-angular eweapon larger than 1x1</p>
+<p class="classref-comment">Fire a non-angular eweapon larger than 1x1</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-createdummyeweapon"><a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> <strong>CreateDummyEWeapon</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> weaponID, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> step, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> damage, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sprite, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sound, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> flags) <a class="reference internal" href="#libs-ghost-fun-createdummyeweapon"><span class="std std-ref">🔗</span></a></p>
-<p>Create a dummy eweapon to use as a prototype</p>
+<p class="classref-comment">Create a dummy eweapon to use as a prototype</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-createbigdummyeweapon"><a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> <strong>CreateBigDummyEWeapon</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> weaponID, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> step, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> damage, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sprite, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sound, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> flags, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> width, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> height) <a class="reference internal" href="#libs-ghost-fun-createbigdummyeweapon"><span class="std std-ref">🔗</span></a></p>
-<p>Create a dummy eweapon larger than 1x1</p>
+<p class="classref-comment">Create a dummy eweapon larger than 1x1</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-seteweaponmovement-2"><abbr title="No return value.">void</abbr> <strong>SetEWeaponMovement</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> wpn, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> type, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg2) <a class="reference internal" href="#libs-ghost-fun-seteweaponmovement-2"><span class="std std-ref">🔗</span></a></p>
-<p>Set an eweapon’s movement type</p>
+<p class="classref-comment">Set an eweapon’s movement type</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-geteweaponthrowheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GetEWeaponThrowHeight</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> wpn) <a class="reference internal" href="#libs-ghost-fun-geteweaponthrowheight"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the Z velocity at which a weapon should be thrown
+<p class="classref-comment">Returns the Z velocity at which a weapon should be thrown
 to land at Link’s position.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-seteweaponlifespan"><abbr title="No return value.">void</abbr> <strong>SetEWeaponLifespan</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> wpn, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> type, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg) <a class="reference internal" href="#libs-ghost-fun-seteweaponlifespan"><span class="std std-ref">🔗</span></a></p>
-<p>Set an eweapon’s lifespan</p>
+<p class="classref-comment">Set an eweapon’s lifespan</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-seteweapondeatheffect"><abbr title="No return value.">void</abbr> <strong>SetEWeaponDeathEffect</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> wpn, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> type, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg) <a class="reference internal" href="#libs-ghost-fun-seteweapondeatheffect"><span class="std std-ref">🔗</span></a></p>
-<p>Set an eweapon to use a standard death effect</p>
+<p class="classref-comment">Set an eweapon to use a standard death effect</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-seteweapondeatheffect-2"><abbr title="No return value.">void</abbr> <strong>SetEWeaponDeathEffect</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> wpn, <a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> prototype, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> numShots, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spreadType, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> angle) <a class="reference internal" href="#libs-ghost-fun-seteweapondeatheffect-2"><span class="std std-ref">🔗</span></a></p>
-<p>Set an eweapon to spawn more eweapons on death</p>
+<p class="classref-comment">Set an eweapon to spawn more eweapons on death</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-updateeweapon"><abbr title="No return value.">void</abbr> <strong>UpdateEWeapon</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> wpn) <a class="reference internal" href="#libs-ghost-fun-updateeweapon"><span class="std std-ref">🔗</span></a></p>
-<p>Update a weapon’s movement, lifespan, and death effects</p>
+<p class="classref-comment">Update a weapon’s movement, lifespan, and death effects</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-updateeweaponvisualflags"><abbr title="No return value.">void</abbr> <strong>__UpdateEWeaponVisualFlags</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> wpn) <a class="reference internal" href="#libs-ghost-fun-updateeweaponvisualflags"><span class="std std-ref">🔗</span></a></p>
-<p>End flags
+<p class="classref-comment">End flags
 Used when Link is holding up an item. UpdateEWeapon() doesn’t run, but
 the appearance-related flags still need handled.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-seteweapondir"><abbr title="No return value.">void</abbr> <strong>SetEWeaponDir</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> wpn) <a class="reference internal" href="#libs-ghost-fun-seteweapondir"><span class="std std-ref">🔗</span></a></p>
-<p>Set the weapon’s direction based on its angle;
+<p class="classref-comment">Set the weapon’s direction based on its angle;
 Can also makes weapons unblockable</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-seteweaponrotation"><abbr title="No return value.">void</abbr> <strong>SetEWeaponRotation</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> wpn) <a class="reference internal" href="#libs-ghost-fun-seteweaponrotation"><span class="std std-ref">🔗</span></a></p>
-<p>Flip the weapon’s sprite to match its direction</p>
+<p class="classref-comment">Flip the weapon’s sprite to match its direction</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-seteweaponrotation-2"><abbr title="No return value.">void</abbr> <strong>SetEWeaponRotation</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> wpn, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir) <a class="reference internal" href="#libs-ghost-fun-seteweaponrotation-2"><span class="std std-ref">🔗</span></a></p>
-<p>Flip the weapon’s sprite to match the given direction</p>
+<p class="classref-comment">Flip the weapon’s sprite to match the given direction</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-killeweapon"><abbr title="No return value.">void</abbr> <strong>KillEWeapon</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> wpn) <a class="reference internal" href="#libs-ghost-fun-killeweapon"><span class="std std-ref">🔗</span></a></p>
-<p>Kill an eweapon, triggering any death effects</p>
+<p class="classref-comment">Kill an eweapon, triggering any death effects</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-draweweaponshadow"><abbr title="No return value.">void</abbr> <strong>DrawEWeaponShadow</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> wpn) <a class="reference internal" href="#libs-ghost-fun-draweweaponshadow"><span class="std std-ref">🔗</span></a></p>
-<p>Draw a shadow under an eweapon</p>
+<p class="classref-comment">Draw a shadow under an eweapon</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-getdefaulteweaponsprite"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetDefaultEWeaponSprite</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> weaponID) <a class="reference internal" href="#libs-ghost-fun-getdefaulteweaponsprite"><span class="std std-ref">🔗</span></a></p>
-<p>Get the standard sprite for this weapon type</p>
+<p class="classref-comment">Get the standard sprite for this weapon type</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-getdefaulteweaponsound"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetDefaultEWeaponSound</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> weaponID) <a class="reference internal" href="#libs-ghost-fun-getdefaulteweaponsound"><span class="std std-ref">🔗</span></a></p>
-<p>Find the sound normally made by weapons of this type</p>
+<p class="classref-comment">Find the sound normally made by weapons of this type</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-getassociatedeweapon"><a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> <strong>GetAssociatedEWeapon</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> weaponID) <a class="reference internal" href="#libs-ghost-fun-getassociatedeweapon"><span class="std std-ref">🔗</span></a></p>
-<p>Use this in a script started on eweapon death to find the weapon
+<p class="classref-comment">Use this in a script started on eweapon death to find the weapon
 that created it</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-isghostzheweapon">bool <strong>IsGhostZHEWeapon</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> wpn) <a class="reference internal" href="#libs-ghost-fun-isghostzheweapon"><span class="std std-ref">🔗</span></a></p>
-<p>Is this a ghost.zh-controlled weapon?</p>
+<p class="classref-comment">Is this a ghost.zh-controlled weapon?</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-isdummyeweapon">bool <strong>IsDummyEWeapon</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> wpn) <a class="reference internal" href="#libs-ghost-fun-isdummyeweapon"><span class="std std-ref">🔗</span></a></p>
-<p>Is this a dummy weapon?</p>
+<p class="classref-comment">Is this a dummy weapon?</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-copyeweapon"><abbr title="No return value.">void</abbr> <strong>__CopyEWeapon</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> prototype, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> centerX, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> centerY, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> angle) <a class="reference internal" href="#libs-ghost-fun-copyeweapon"><span class="std std-ref">🔗</span></a></p>
-<p>Make a copy of the given eweapon, which should be a dummy</p>
+<p class="classref-comment">Make a copy of the given eweapon, which should be a dummy</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-unblockabledir"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__UnblockableDir</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir) <a class="reference internal" href="#libs-ghost-fun-unblockabledir"><span class="std std-ref">🔗</span></a></p>
-<p>Get the unblockable version (8-15) of a direction</p>
+<p class="classref-comment">Get the unblockable version (8-15) of a direction</p>
 </section>
 </section>
 

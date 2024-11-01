@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../std/cfg.html">std.cfg</a></li>
@@ -496,22 +500,22 @@
 <td><p><a class="reference internal" href="#libs-tango-fun-tango-sync"><span class="std std-ref">Tango_Sync</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> value)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-tango-fun-tango-saveslotstate"><span class="std std-ref">Tango_SaveSlotState</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> output)</p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-saveslotstate"><span class="std std-ref">Tango_SaveSlotState</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] output)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-tango-fun-tango-saveslotstate-2"><span class="std std-ref">Tango_SaveSlotState</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> output, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> the_bitmap)</p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-saveslotstate-2"><span class="std std-ref">Tango_SaveSlotState</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] output, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> the_bitmap)</p></td>
 </tr>
 <tr class="row-odd"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-tango-fun-tango-saveslotstateinternal"><span class="std std-ref">__Tango_SaveSlotStateInternal</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> output)</p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-saveslotstateinternal"><span class="std std-ref">__Tango_SaveSlotStateInternal</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] output)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-tango-fun-tango-restoreslotstate"><span class="std std-ref">Tango_RestoreSlotState</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> oldState)</p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-restoreslotstate"><span class="std std-ref">Tango_RestoreSlotState</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] oldState)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-tango-fun-tango-restoreslotstate-2"><span class="std std-ref">Tango_RestoreSlotState</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> oldState, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> the_bitmap)</p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-restoreslotstate-2"><span class="std std-ref">Tango_RestoreSlotState</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] oldState, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> the_bitmap)</p></td>
 </tr>
 <tr class="row-even"><td><p>bool</p></td>
-<td><p><a class="reference internal" href="#libs-tango-fun-tango-restoreslotstateinternal"><span class="std std-ref">__Tango_RestoreSlotStateInternal</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> oldState)</p></td>
+<td><p><a class="reference internal" href="#libs-tango-fun-tango-restoreslotstateinternal"><span class="std std-ref">__Tango_RestoreSlotStateInternal</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] oldState)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-tango-fun-tango-convertfunctionname"><span class="std std-ref">Tango_ConvertFunctionName</span></a>(char32[] name)</p></td>
@@ -544,7 +548,7 @@
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
 <p class="classref-method" id="libs-tango-fun-tango-start"><abbr title="No return value.">void</abbr> <strong>Tango_Start</strong>() <a class="reference internal" href="#libs-tango-fun-tango-start"><span class="std std-ref">🔗</span></a></p>
-<p>Functions for the user’s use that don’t really fit elsewhere.</p>
+<p class="classref-comment">Functions for the user’s use that don’t really fit elsewhere.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-tango-fun-tango-clearslot"><abbr title="No return value.">void</abbr> <strong>Tango_ClearSlot</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot) <a class="reference internal" href="#libs-tango-fun-tango-clearslot"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -576,30 +580,30 @@
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-tango-fun-tango-sync"><abbr title="No return value.">void</abbr> <strong>Tango_Sync</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> value) <a class="reference internal" href="#libs-tango-fun-tango-sync"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-tango-fun-tango-saveslotstate"><abbr title="No return value.">void</abbr> <strong>Tango_SaveSlotState</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> output) <a class="reference internal" href="#libs-tango-fun-tango-saveslotstate"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-method" id="libs-tango-fun-tango-saveslotstate"><abbr title="No return value.">void</abbr> <strong>Tango_SaveSlotState</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] output) <a class="reference internal" href="#libs-tango-fun-tango-saveslotstate"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-tango-fun-tango-saveslotstate-2"><abbr title="No return value.">void</abbr> <strong>Tango_SaveSlotState</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> output, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> the_bitmap) <a class="reference internal" href="#libs-tango-fun-tango-saveslotstate-2"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-method" id="libs-tango-fun-tango-saveslotstate-2"><abbr title="No return value.">void</abbr> <strong>Tango_SaveSlotState</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] output, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> the_bitmap) <a class="reference internal" href="#libs-tango-fun-tango-saveslotstate-2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-tango-fun-tango-saveslotstateinternal">bool <strong>__Tango_SaveSlotStateInternal</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> output) <a class="reference internal" href="#libs-tango-fun-tango-saveslotstateinternal"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-method" id="libs-tango-fun-tango-saveslotstateinternal">bool <strong>__Tango_SaveSlotStateInternal</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] output) <a class="reference internal" href="#libs-tango-fun-tango-saveslotstateinternal"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-tango-fun-tango-restoreslotstate"><abbr title="No return value.">void</abbr> <strong>Tango_RestoreSlotState</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> oldState) <a class="reference internal" href="#libs-tango-fun-tango-restoreslotstate"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-method" id="libs-tango-fun-tango-restoreslotstate"><abbr title="No return value.">void</abbr> <strong>Tango_RestoreSlotState</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] oldState) <a class="reference internal" href="#libs-tango-fun-tango-restoreslotstate"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-tango-fun-tango-restoreslotstate-2"><abbr title="No return value.">void</abbr> <strong>Tango_RestoreSlotState</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> oldState, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> the_bitmap) <a class="reference internal" href="#libs-tango-fun-tango-restoreslotstate-2"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-method" id="libs-tango-fun-tango-restoreslotstate-2"><abbr title="No return value.">void</abbr> <strong>Tango_RestoreSlotState</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] oldState, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> the_bitmap) <a class="reference internal" href="#libs-tango-fun-tango-restoreslotstate-2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-tango-fun-tango-restoreslotstateinternal">bool <strong>__Tango_RestoreSlotStateInternal</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> oldState) <a class="reference internal" href="#libs-tango-fun-tango-restoreslotstateinternal"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-method" id="libs-tango-fun-tango-restoreslotstateinternal">bool <strong>__Tango_RestoreSlotStateInternal</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] oldState) <a class="reference internal" href="#libs-tango-fun-tango-restoreslotstateinternal"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-tango-fun-tango-convertfunctionname"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Tango_ConvertFunctionName</strong>(char32[] name) <a class="reference internal" href="#libs-tango-fun-tango-convertfunctionname"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-tango-fun-tango-convertvariablename"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Tango_ConvertVariableName</strong>(char32[] name) <a class="reference internal" href="#libs-tango-fun-tango-convertvariablename"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-tango-fun-tango-convertname"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__Tango_ConvertName</strong>(char32[] name, char32[] type, char32[] prefix) <a class="reference internal" href="#libs-tango-fun-tango-convertname"><span class="std std-ref">🔗</span></a></p>
-<p>Used by Tango_ConvertFunctionName() and Tango_ConvertVariableName()</p>
+<p class="classref-comment">Used by Tango_ConvertFunctionName() and Tango_ConvertVariableName()</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-tango-fun-tango-getconvertedname"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__Tango_GetConvertedName</strong>(char32[] name) <a class="reference internal" href="#libs-tango-fun-tango-getconvertedname"><span class="std std-ref">🔗</span></a></p>
-<p>Used by Tango_ConvertFunctionName() and Tango_ConvertVariableName()</p>
+<p class="classref-comment">Used by Tango_ConvertFunctionName() and Tango_ConvertVariableName()</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-tango-fun-tango-printconstant"><abbr title="No return value.">void</abbr> <strong>__Tango_PrintConstant</strong>(char32[] prefix, char32[] name, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> value) <a class="reference internal" href="#libs-tango-fun-tango-printconstant"><span class="std std-ref">🔗</span></a></p>
-<p>Used by Tango_ConvertFunctionName() and Tango_ConvertVariableName()</p>
+<p class="classref-comment">Used by Tango_ConvertFunctionName() and Tango_ConvertVariableName()</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-tango-fun-tango-getslotscrollpos"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Tango_GetSlotScrollPos</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot) <a class="reference internal" href="#libs-tango-fun-tango-getslotscrollpos"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />

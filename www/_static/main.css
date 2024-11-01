@@ -1,3 +1,11 @@
+html {
+    --pst-header-height: 5rem;
+}
+
+.navbar-brand img {
+    padding: 3px;
+}
+
 .bd-main .bd-content .bd-article-container {
     max-width: 100%;
 }
@@ -6,13 +14,24 @@
     max-width: 230px;
 }
 
+.bd-page-width {
+  max-width: 100%; /* default is 88rem */
+}
+
 .classref-enumeration-constant {
     margin-left: 30px;
     margin-bottom: 5px;
 }
 
-.classref-enumeration-constant+p {
+.classref-enumeration-constant+.classref-comment {
     margin-left: 60px;
+}
+
+.toctree-wrapper ul {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
 }
 
 .del {

@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="bitmap.html">bitmap</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
@@ -444,10 +448,10 @@
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
-<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-bottledata-var-counter"><span class="std std-ref">Counter</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-bottledata-var-amount"><span class="std std-ref">Amount</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>bool[]</p></td>
@@ -479,31 +483,31 @@
 </section>
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="classes-bottledata-var-counter"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Counter</strong>  <a class="reference internal" href="#classes-bottledata-var-counter"><span class="std std-ref">🔗</span></a></p>
-<p>The refill counters of this bottle type.</p>
+<p id="classes-bottledata-var-counter"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Counter</strong>  <a class="reference internal" href="#classes-bottledata-var-counter"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The refill counters of this bottle type.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-bottledata-var-amount"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Amount</strong>  <a class="reference internal" href="#classes-bottledata-var-amount"><span class="std std-ref">🔗</span></a></p>
-<p>The amount to refill each counter (0-65535)</p>
+<p id="classes-bottledata-var-amount"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Amount</strong>  <a class="reference internal" href="#classes-bottledata-var-amount"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The amount to refill each counter (0-65535)</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-bottledata-var-ispercent">bool[] <strong>IsPercent</strong>  <a class="reference internal" href="#classes-bottledata-var-ispercent"><span class="std std-ref">🔗</span></a></p>
-<p>Whether the given counter refill is a percentage of max, instead of a
+<p class="classref-comment">Whether the given counter refill is a percentage of max, instead of a
 direct value.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-bottledata-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-bottledata-var-flags"><span class="std std-ref">🔗</span></a></p>
-<p>Valid indices: <a class="reference internal" href="../libs/std/std_constants.html#libs-std-enum-bottleflag"><span class="std std-ref">BottleFlag</span></a> (<cite>BTF_</cite>).</p>
+<p class="classref-comment">Valid indices: <a class="reference internal" href="../libs/std/std_constants.html#libs-std-enum-bottleflag"><span class="std std-ref">BottleFlag</span></a> (<code class="docutils literal notranslate"><span class="pre">BTF_</span></code>).</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-bottledata-var-nexttype"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NextType</strong>  <a class="reference internal" href="#classes-bottledata-var-nexttype"><span class="std std-ref">🔗</span></a></p>
-<p>What bottle type will remain in the bottle after drinking the current
+<p class="classref-comment">What bottle type will remain in the bottle after drinking the current
 type.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
 <p class="classref-method" id="classes-bottledata-fun-getname"><abbr title="No return value.">void</abbr> <strong>GetName</strong>(char32[] str) <a class="reference internal" href="#classes-bottledata-fun-getname"><span class="std std-ref">🔗</span></a></p>
-<p>Loads the name of the bottledata into the provided string buffer.</p>
+<p class="classref-comment">Loads the name of the bottledata into the provided string buffer.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-bottledata-fun-setname"><abbr title="No return value.">void</abbr> <strong>SetName</strong>(char32[] str) <a class="reference internal" href="#classes-bottledata-fun-setname"><span class="std std-ref">🔗</span></a></p>
-<p>Sets the name of the bottledata to the provided string.</p>
+<p class="classref-comment">Sets the name of the bottledata to the provided string.</p>
 </section>
 </section>
 

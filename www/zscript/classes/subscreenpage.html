@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
@@ -492,39 +496,39 @@
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
 <p id="classes-subscreenpage-var-index"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Index</strong>  <a class="reference internal" href="#classes-subscreenpage-var-index"><span class="std std-ref">🔗</span></a></p>
-<p>The index of this page within the subscreen.</p>
+<p class="classref-comment">The index of this page within the subscreen.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreenpage-var-numwidgets"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NumWidgets</strong>  <a class="reference internal" href="#classes-subscreenpage-var-numwidgets"><span class="std std-ref">🔗</span></a></p>
-<p>The number of widgets on the page.</p>
+<p class="classref-comment">The number of widgets on the page.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreenpage-var-widgets"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <a class="reference internal" href="subscreenwidget.html#classes-subscreenwidget"><span class="std std-ref">subscreenwidget[]</span></a> <strong>Widgets</strong>  <a class="reference internal" href="#classes-subscreenpage-var-widgets"><span class="std std-ref">🔗</span></a></p>
-<p>The widgets on the page, ordered by their index.</p>
+<p class="classref-comment">The widgets on the page, ordered by their index.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreenpage-var-subdata"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <a class="reference internal" href="subscreendata.html#classes-subscreendata"><span class="std std-ref">subscreendata</span></a> <strong>SubData</strong>  <a class="reference internal" href="#classes-subscreenpage-var-subdata"><span class="std std-ref">🔗</span></a></p>
-<p>The subscreendata that owns this page.</p>
+<p class="classref-comment">The subscreendata that owns this page.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreenpage-var-cursorpos"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CursorPos</strong>  <a class="reference internal" href="#classes-subscreenpage-var-cursorpos"><span class="std std-ref">🔗</span></a></p>
-<p>The position value of the selector.</p>
+<p class="classref-comment">The position value of the selector.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
 <p class="classref-method" id="classes-subscreenpage-fun-getwidget"><a class="reference internal" href="subscreenwidget.html#classes-subscreenwidget"><span class="std std-ref">subscreenwidget</span></a> <strong>GetWidget</strong>(char32[] label) <a class="reference internal" href="#classes-subscreenpage-fun-getwidget"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the first widget with a matching label, or NULL if none exists.</p>
+<p class="classref-comment">Returns the first widget with a matching label, or NULL if none exists.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-subscreenpage-fun-createwidget"><a class="reference internal" href="subscreenwidget.html#classes-subscreenwidget"><span class="std std-ref">subscreenwidget</span></a> <strong>CreateWidget</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> type) <a class="reference internal" href="#classes-subscreenpage-fun-createwidget"><span class="std std-ref">🔗</span></a></p>
-<p>Adds a new widget of the specified type to the end of the page.</p>
+<p class="classref-comment">Adds a new widget of the specified type to the end of the page.</p>
 <p>Returns that widget, or NULL if fails.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-subscreenpage-fun-swapwidgets"><abbr title="No return value.">void</abbr> <strong>SwapWidgets</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index2) <a class="reference internal" href="#classes-subscreenpage-fun-swapwidgets"><span class="std std-ref">🔗</span></a></p>
-<p>Swaps the widgets at the two indexes.</p>
+<p class="classref-comment">Swaps the widgets at the two indexes.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-subscreenpage-fun-findwidget"><a class="reference internal" href="subscreenwidget.html#classes-subscreenwidget"><span class="std std-ref">subscreenwidget</span></a> <strong>FindWidget</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cursor_pos) <a class="reference internal" href="#classes-subscreenpage-fun-findwidget"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the widget designated by the specified cursor position, or NULL
+<p class="classref-comment">Returns the widget designated by the specified cursor position, or NULL
 if it fails.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-subscreenpage-fun-selectormove"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorMove</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cursor_pos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> flags) <a class="reference internal" href="#classes-subscreenpage-fun-selectormove"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the new cursor position found by moving in ‘dir’ from
+<p class="classref-comment">Returns the new cursor position found by moving in ‘dir’ from
 ‘cursor_pos’.</p>
 <p>‘flags’ determines:</p>
 <ul class="simple">
@@ -533,7 +537,7 @@ if it fails.</p>
 </ul>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-subscreenpage-fun-delete"><abbr title="No return value.">void</abbr> <strong>Delete</strong>() <a class="reference internal" href="#classes-subscreenpage-fun-delete"><span class="std std-ref">🔗</span></a></p>
-<p>Deletes the page.</p>
+<p class="classref-comment">Deletes the page.</p>
 <p>If it is the last page, an empty page will be created in its’ place.</p>
 </section>
 </section>

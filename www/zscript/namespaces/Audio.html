@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
@@ -440,7 +444,7 @@
                   
   <section id="audio">
 <span id="namespaces-audio"></span><h1>Audio<a class="headerlink" href="#audio" title="Link to this heading">#</a></h1>
-<p>Access with <cite>Audio-&gt;</cite>.</p>
+<p class="classref-comment">Access with <code class="docutils literal notranslate"><span class="pre">Audio-&gt;</span></code>.</p>
 <section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -451,7 +455,7 @@
 <tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#namespaces-audio-var-midi"><span class="std std-ref">MIDI</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#namespaces-audio-var-volume"><span class="std std-ref">Volume</span></a> <strong>deprecated</strong></p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
@@ -538,109 +542,109 @@
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
 <p id="namespaces-audio-var-panstyle"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PanStyle</strong>  <a class="reference internal" href="#namespaces-audio-var-panstyle"><span class="std std-ref">🔗</span></a></p>
-<p>The audio panning style. Use the <cite>PAN_</cite> constants for this value.</p>
+<p class="classref-comment">The audio panning style. Use the <code class="docutils literal notranslate"><span class="pre">PAN_</span></code> constants for this value.</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-audio-var-midi"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MIDI</strong>  <a class="reference internal" href="#namespaces-audio-var-midi"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p id="namespaces-audio-var-volume"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Volume</strong>  <a class="reference internal" href="#namespaces-audio-var-volume"><span class="std std-ref">🔗</span></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Deprecated!</strong> This has been deprecated.</p>
+<p id="namespaces-audio-var-volume"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Volume</strong>  <a class="reference internal" href="#namespaces-audio-var-volume"><span class="std std-ref">🔗</span></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Deprecated!</strong> Use <a class="reference internal" href="#namespaces-audio-fun-adjustmusicvolume"><span class="std std-ref">AdjustMusicVolume()</span></a> or <a class="reference internal" href="#namespaces-audio-fun-adjustsfxvolume"><span class="std std-ref">AdjustSFXVolume()</span></a> instead.</p>
 </div>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-audio-var-musicrefresh"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MusicRefresh</strong>  <a class="reference internal" href="#namespaces-audio-var-musicrefresh"><span class="std std-ref">🔗</span></a></p>
-<p>Controls how often the engine refreshes the currently playing music while
+<p class="classref-comment">Controls how often the engine refreshes the currently playing music while
 warping.</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-audio-var-musicrefreshflags">bool[] <strong>MusicRefreshFlags</strong>  <a class="reference internal" href="#namespaces-audio-var-musicrefreshflags"><span class="std std-ref">🔗</span></a></p>
-<p>A set of flags for handling extra effects on MusicRefresh.</p>
+<p class="classref-comment">A set of flags for handling extra effects on MusicRefresh.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
 <p class="classref-method" id="namespaces-audio-fun-playsound"><abbr title="No return value.">void</abbr> <strong>PlaySound</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sfx) <a class="reference internal" href="#namespaces-audio-fun-playsound"><span class="std std-ref">🔗</span></a></p>
-<p>Plays the quest SFX sfx.</p>
+<p class="classref-comment">Plays the quest SFX <code class="docutils literal notranslate"><span class="pre">sfx</span></code>.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-endsound"><abbr title="No return value.">void</abbr> <strong>EndSound</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sfx) <a class="reference internal" href="#namespaces-audio-fun-endsound"><span class="std std-ref">🔗</span></a></p>
-<p>If sfx is playing, immediately stop it.</p>
+<p class="classref-comment">If <code class="docutils literal notranslate"><span class="pre">sfx</span></code> is playing, immediately stop it.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-pausesound"><abbr title="No return value.">void</abbr> <strong>PauseSound</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sfx) <a class="reference internal" href="#namespaces-audio-fun-pausesound"><span class="std std-ref">🔗</span></a></p>
-<p>If sfx is playing, pause it (so that it may be resumed later).</p>
+<p class="classref-comment">If <code class="docutils literal notranslate"><span class="pre">sfx</span></code> is playing, pause it (so that it may be resumed later).</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-resumesound"><abbr title="No return value.">void</abbr> <strong>ResumeSound</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sfx) <a class="reference internal" href="#namespaces-audio-fun-resumesound"><span class="std std-ref">🔗</span></a></p>
-<p>Resume sfx from where it was paused.</p>
+<p class="classref-comment">Resume <code class="docutils literal notranslate"><span class="pre">sfx</span></code> from where it was paused.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-continuesound"><abbr title="No return value.">void</abbr> <strong>ContinueSound</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sfx) <a class="reference internal" href="#namespaces-audio-fun-continuesound"><span class="std std-ref">🔗</span></a></p>
-<p>Resume sfx from where it was paused.</p>
+<p class="classref-comment">Resume <code class="docutils literal notranslate"><span class="pre">sfx</span></code> from where it was paused.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-adjustmusicvolume"><abbr title="No return value.">void</abbr> <strong>AdjustMusicVolume</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> percent) <a class="reference internal" href="#namespaces-audio-fun-adjustmusicvolume"><span class="std std-ref">🔗</span></a></p>
-<p>Adjusts a multiplier for the volume of all MIDI, DIGI, and Enhanced
+<p class="classref-comment">Adjusts a multiplier for the volume of all MIDI, DIGI, and Enhanced
 Music.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-adjustsfxvolume"><abbr title="No return value.">void</abbr> <strong>AdjustSFXVolume</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> percent) <a class="reference internal" href="#namespaces-audio-fun-adjustsfxvolume"><span class="std std-ref">🔗</span></a></p>
-<p>Adjusts a multiplier for the volume of all Sound Effects (WAV).</p>
+<p class="classref-comment">Adjusts a multiplier for the volume of all Sound Effects (WAV).</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-pausecurmidi"><abbr title="No return value.">void</abbr> <strong>PauseCurMIDI</strong>() <a class="reference internal" href="#namespaces-audio-fun-pausecurmidi"><span class="std std-ref">🔗</span></a></p>
-<p>Pauses the currently playing MIDI so that it may be resumed later.</p>
+<p class="classref-comment">Pauses the currently playing MIDI so that it may be resumed later.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-resumecurmidi"><abbr title="No return value.">void</abbr> <strong>ResumeCurMIDI</strong>() <a class="reference internal" href="#namespaces-audio-fun-resumecurmidi"><span class="std std-ref">🔗</span></a></p>
-<p>Resumes the previously paused MIDI.</p>
+<p class="classref-comment">Resumes the previously paused MIDI.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-playmidi"><abbr title="No return value.">void</abbr> <strong>PlayMIDI</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> midi) <a class="reference internal" href="#namespaces-audio-fun-playmidi"><span class="std std-ref">🔗</span></a></p>
-<p>Plays the MIDI midi. Will revert upon changing screens.</p>
+<p class="classref-comment">Plays the MIDI <code class="docutils literal notranslate"><span class="pre">midi</span></code>. Will revert upon changing screens.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-playenhancedmusic">bool <strong>PlayEnhancedMusic</strong>(char32[] filename, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> track = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#namespaces-audio-fun-playenhancedmusic"><span class="std std-ref">🔗</span></a></p>
-<p>Play the specified enhanced music if available. If the music cannot
+<p class="classref-comment">Play the specified enhanced music if available. If the music cannot
 be played, the current music will continue. Reverts to
 normal upon leaving the screen.</p>
 <p>Returns true if the music file was loaded successfully.</p>
-<p>filename cannot be more than 255 characters.</p>
-<p>If the music format does not support multiple tracks, track is ignored.</p>
+<p><code class="docutils literal notranslate"><span class="pre">filename</span></code> cannot be more than 255 characters.</p>
+<p>If the music format does not support multiple tracks, <code class="docutils literal notranslate"><span class="pre">track</span></code> is ignored.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-adjustsound"><abbr title="No return value.">void</abbr> <strong>AdjustSound</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> id, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> volume, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pan = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="ZScript's real integer type.">long</abbr> freq = <code class="docutils literal notranslate"><span class="pre">-1L</span></code>, bool loop_sfx = <code class="docutils literal notranslate"><span class="pre">false</span></code>) <a class="reference internal" href="#namespaces-audio-fun-adjustsound"><span class="std std-ref">🔗</span></a></p>
-<p>Change properties on a currently playing sound.</p>
+<p class="classref-comment">Change properties on a currently playing sound.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-playogg">bool <strong>PlayOgg</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg2) <a class="reference internal" href="#namespaces-audio-fun-playogg"><span class="std std-ref">🔗</span></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Deprecated!</strong> Use PlayEnhancedMusic instead!</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Deprecated!</strong> Use <a class="reference internal" href="#namespaces-audio-fun-playenhancedmusic"><span class="std std-ref">PlayEnhancedMusic()</span></a> instead!</p>
 </div>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-getmusicpos"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetMusicPos</strong>() <a class="reference internal" href="#namespaces-audio-fun-getmusicpos"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the current seek position of the currently playing enhanced music
+<p class="classref-comment">Returns the current seek position of the currently playing enhanced music
 in seconds.</p>
 <p>CURRENTLY ONLY SUPPORTS MP3 / OGG / IT / XM / S3M / MOD</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-setmusicpos"><abbr title="No return value.">void</abbr> <strong>SetMusicPos</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos) <a class="reference internal" href="#namespaces-audio-fun-setmusicpos"><span class="std std-ref">🔗</span></a></p>
-<p>Sets the position for the currently playing enhanced music, in seconds.</p>
+<p class="classref-comment">Sets the position for the currently playing enhanced music, in seconds.</p>
 <p>CURRENTLY ONLY SUPPORTS MP3 / OGG / IT / XM / S3M / MOD</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-setmusicspeed"><abbr title="No return value.">void</abbr> <strong>SetMusicSpeed</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> speed) <a class="reference internal" href="#namespaces-audio-fun-setmusicspeed"><span class="std std-ref">🔗</span></a></p>
-<p>Sets the playback speed of the currently playing enhanced music.</p>
+<p class="classref-comment">Sets the playback speed of the currently playing enhanced music.</p>
 <p>CURRENTLY ONLY SUPPORTS MP3 / OGG / IT / XM / S3M / MOD</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-getmusiclength"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetMusicLength</strong>() <a class="reference internal" href="#namespaces-audio-fun-getmusiclength"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the length of the current playing enhanced music in seconds.</p>
+<p class="classref-comment">Returns the length of the current playing enhanced music in seconds.</p>
 <p>CURRENTLY ONLY SUPPORTS MP3 / OGG / IT / XM / S3M / MOD</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-setmusicloop"><abbr title="No return value.">void</abbr> <strong>SetMusicLoop</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> start, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> end) <a class="reference internal" href="#namespaces-audio-fun-setmusicloop"><span class="std std-ref">🔗</span></a></p>
-<p>Loops the currently playing enhanced music between two timestamps in
+<p class="classref-comment">Loops the currently playing enhanced music between two timestamps in
 seconds.</p>
 <p>CURRENTLY ONLY SUPPORTS MP3 / OGG / IT / XM / S3M / MOD</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-playsoundex"><abbr title="No return value.">void</abbr> <strong>PlaySoundEx</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> id, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> volume, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pan = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="ZScript's real integer type.">long</abbr> freq = <code class="docutils literal notranslate"><span class="pre">-1L</span></code>, bool loop_sfx = <code class="docutils literal notranslate"><span class="pre">false</span></code>) <a class="reference internal" href="#namespaces-audio-fun-playsoundex"><span class="std std-ref">🔗</span></a></p>
-<p>Plays the quest SFX sfx but with different properties.</p>
+<p class="classref-comment">Plays the quest SFX <code class="docutils literal notranslate"><span class="pre">sfx</span></code> but with different properties.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-getsoundcompletion"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetSoundCompletion</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sfx) <a class="reference internal" href="#namespaces-audio-fun-getsoundcompletion"><span class="std std-ref">🔗</span></a></p>
-<p>Returns a rough completion percentage (0-100) for how much of a sound has
+<p class="classref-comment">Returns a rough completion percentage (0-100) for how much of a sound has
 played.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-audio-fun-crossfadeenhancedmusic">bool <strong>CrossfadeEnhancedMusic</strong>(char32[] filename, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> track, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> fadeoutframes, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> fadeinframes, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> delayframes = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> startpos = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#namespaces-audio-fun-crossfadeenhancedmusic"><span class="std std-ref">🔗</span></a></p>
-<p>Crossfade to the specified enhanced music if available. If the music
+<p class="classref-comment">Crossfade to the specified enhanced music if available. If the music
 cannot be played, the current music will continue.</p>
 <p>Reverts to normal upon leaving the screen.</p>
 <p>Returns true if loaded successfully.</p>
-<p>filename cannot be more than 255 characters.</p>
+<p><code class="docutils literal notranslate"><span class="pre">filename</span></code> cannot be more than 255 characters.</p>
 <p>Currently only supports MP3 / OGG / IT / XM / S3M / MOD.</p>
 </section>
 </section>

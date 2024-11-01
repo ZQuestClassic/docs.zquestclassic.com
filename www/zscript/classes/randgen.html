@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="portal.html">portal</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
@@ -481,42 +485,42 @@
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
 <p class="classref-method" id="classes-randgen-fun-rand"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Rand</strong>() <a class="reference internal" href="#classes-randgen-fun-rand"><span class="std std-ref">🔗</span></a></p>
-<p>Returns a random number <cite>-214748 to 214748</cite>, inclusive.</p>
+<p class="classref-comment">Returns a random number <code class="docutils literal notranslate"><span class="pre">-214748</span> <span class="pre">to</span> <span class="pre">214748</span></code>, inclusive.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-randgen-fun-rand-2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Rand</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> bound) <a class="reference internal" href="#classes-randgen-fun-rand-2"><span class="std std-ref">🔗</span></a></p>
-<p>Returns a random number <cite>0 to bound</cite>, inclusive.</p>
+<p class="classref-comment">Returns a random number <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">to</span> <span class="pre">bound</span></code>, inclusive.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-randgen-fun-rand-3"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Rand</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> bound1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> bound2) <a class="reference internal" href="#classes-randgen-fun-rand-3"><span class="std std-ref">🔗</span></a></p>
-<p>Returns a random number <cite>bound1 to bound2</cite>, inclusive.</p>
+<p class="classref-comment">Returns a random number <code class="docutils literal notranslate"><span class="pre">bound1</span> <span class="pre">to</span> <span class="pre">bound2</span></code>, inclusive.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-randgen-fun-lrand"><abbr title="ZScript's real integer type.">long</abbr> <strong>LRand</strong>() <a class="reference internal" href="#classes-randgen-fun-lrand"><span class="std std-ref">🔗</span></a></p>
-<p>Returns a random long number <cite>-2147483648L to 2147483647L</cite>, inclusive.</p>
+<p class="classref-comment">Returns a random long number <code class="docutils literal notranslate"><span class="pre">-2147483648L</span> <span class="pre">to</span> <span class="pre">2147483647L</span></code>, inclusive.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-randgen-fun-lrand-2"><abbr title="ZScript's real integer type.">long</abbr> <strong>LRand</strong>(<abbr title="ZScript's real integer type.">long</abbr> bound) <a class="reference internal" href="#classes-randgen-fun-lrand-2"><span class="std std-ref">🔗</span></a></p>
-<p>Returns a random long number <cite>0L to bound</cite>, inclusive.</p>
+<p class="classref-comment">Returns a random long number <code class="docutils literal notranslate"><span class="pre">0L</span> <span class="pre">to</span> <span class="pre">bound</span></code>, inclusive.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-randgen-fun-lrand-3"><abbr title="ZScript's real integer type.">long</abbr> <strong>LRand</strong>(<abbr title="ZScript's real integer type.">long</abbr> bound1, <abbr title="ZScript's real integer type.">long</abbr> bound2) <a class="reference internal" href="#classes-randgen-fun-lrand-3"><span class="std std-ref">🔗</span></a></p>
-<p>Returns a random long number <cite>bound1 to bound2</cite>, inclusive.</p>
+<p class="classref-comment">Returns a random long number <code class="docutils literal notranslate"><span class="pre">bound1</span> <span class="pre">to</span> <span class="pre">bound2</span></code>, inclusive.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-randgen-fun-srand"><abbr title="No return value.">void</abbr> <strong>SRand</strong>(<abbr title="ZScript's real integer type.">long</abbr> seed) <a class="reference internal" href="#classes-randgen-fun-srand"><span class="std std-ref">🔗</span></a></p>
-<p>Seeds the RNG with the given seed.</p>
+<p class="classref-comment">Seeds the RNG with the given seed.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-randgen-fun-srand-2"><abbr title="ZScript's real integer type.">long</abbr> <strong>SRand</strong>() <a class="reference internal" href="#classes-randgen-fun-srand-2"><span class="std std-ref">🔗</span></a></p>
-<p>Seeds the RNG with a randomly-determined seed, based off of the system
+<p class="classref-comment">Seeds the RNG with a randomly-determined seed, based off of the system
 clock and the previous RNG.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-randgen-fun-free"><abbr title="No return value.">void</abbr> <strong>Free</strong>() <a class="reference internal" href="#classes-randgen-fun-free"><span class="std std-ref">🔗</span></a></p>
-<p>De-allocates this <cite>randgen</cite> pointer, so that its’ pointer ID may be
+<p class="classref-comment">De-allocates this <code class="docutils literal notranslate"><span class="pre">randgen</span></code> pointer, so that its’ pointer ID may be
 re-used. You may only have a limited number of randgen pointers active at
 a time; freeing them when you are done with them helps not reach the
 limit.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p><strong>Deprecated!</strong> Free() no longer does anything as of ZC 3.0. Objects are now freed automatically.</p>
 </div>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-randgen-fun-own"><abbr title="No return value.">void</abbr> <strong>Own</strong>() <a class="reference internal" href="#classes-randgen-fun-own"><span class="std std-ref">🔗</span></a></p>
-<p>Grants ‘Ownership’ of the randgen pointer to the script that calls this
+<p class="classref-comment">Grants ‘Ownership’ of the randgen pointer to the script that calls this
 function. When the script with ‘Ownership’ terminates (at the same time
 its’ local arrays are deallocated), this randgen pointer will
 automatically be ‘Free()’d.</p>

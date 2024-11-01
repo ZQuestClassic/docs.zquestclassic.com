@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../std/cfg.html">std.cfg</a></li>
@@ -514,7 +518,7 @@
 <p class="classref-method" id="libs-ghost-fun-ghost-waitframelight-2"><abbr title="No return value.">void</abbr> <strong>Ghost_WaitframeLight</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> this, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost) <a class="reference internal" href="#libs-ghost-fun-ghost-waitframelight-2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-hideffcandwait"><abbr title="No return value.">void</abbr> <strong>__HideFFCAndWait</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> this) <a class="reference internal" href="#libs-ghost-fun-hideffcandwait"><span class="std std-ref">🔗</span></a></p>
-<p>Hides the FFC and waits a frame.
+<p class="classref-comment">Hides the FFC and waits a frame.
 Just used to reduce redundancy in Ghost_WaitframeLight</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-ghost-waitframes">bool <strong>Ghost_Waitframes</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> this, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, bool clearOnDeath, bool quitOnDeath, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> numFrames) <a class="reference internal" href="#libs-ghost-fun-ghost-waitframes"><span class="std std-ref">🔗</span></a></p>
@@ -540,13 +544,13 @@ Just used to reduce redundancy in Ghost_WaitframeLight</p>
 <p class="classref-method" id="libs-ghost-fun-ghost-checkfreeze">bool <strong>Ghost_CheckFreeze</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> this, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost) <a class="reference internal" href="#libs-ghost-fun-ghost-checkfreeze"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-ghost-waitframepart1"><abbr title="No return value.">void</abbr> <strong>__Ghost_WaitframePart1</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> this, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, bool useNPCDir) <a class="reference internal" href="#libs-ghost-fun-ghost-waitframepart1"><span class="std std-ref">🔗</span></a></p>
-<p>Before waiting: Update direction, set combo, set overlay flag, draw shadow</p>
+<p class="classref-comment">Before waiting: Update direction, set combo, set overlay flag, draw shadow</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-ghost-waitframepart2">bool <strong>__Ghost_WaitframePart2</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> this, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, bool clearOnDeath, bool quitOnDeath) <a class="reference internal" href="#libs-ghost-fun-ghost-waitframepart2"><span class="std std-ref">🔗</span></a></p>
-<p>After waiting: Check whether the enemy was hit, stunned, or killed</p>
+<p class="classref-comment">After waiting: Check whether the enemy was hit, stunned, or killed</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-ghost-fun-ghost-updateflashing"><abbr title="No return value.">void</abbr> <strong>__Ghost_UpdateFlashing</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> this, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost) <a class="reference internal" href="#libs-ghost-fun-ghost-updateflashing"><span class="std std-ref">🔗</span></a></p>
-<p>Update the flash/flicker timer and change CSet if flashing</p>
+<p class="classref-comment">Update the flash/flicker timer and change CSet if flashing</p>
 </section>
 </section>
 

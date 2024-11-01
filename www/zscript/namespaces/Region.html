@@ -44,8 +44,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/namespaces/Region';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Text" href="Text.html" />
-    <link rel="prev" title="Input" href="Input.html" />
+    <link rel="next" title="Screen" href="Screen.html" />
+    <link rel="prev" title="Hero" href="Hero.html" />
     <link href="../../_static/main.css" rel="stylesheet" type="text/css">
 
   </head>
@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hero.html">Hero</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
@@ -462,7 +466,7 @@
 <tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr></p></td>
 <td><p><a class="reference internal" href="#namespaces-region-var-numcombos"><span class="std std-ref">NumCombos</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <a class="reference internal" href="../classes/screendata.html#classes-screendata"><span class="std std-ref">screendata</span></a></p></td>
+<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <a class="reference internal" href="Screen.html#namespaces-screen"><span class="std std-ref">Screen</span></a></p></td>
 <td><p><a class="reference internal" href="#namespaces-region-var-originscreen"><span class="std std-ref">OriginScreen</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr></p></td>
@@ -476,7 +480,7 @@
 <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="../classes/screendata.html#classes-screendata"><span class="std std-ref">screendata</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="Screen.html#namespaces-screen"><span class="std std-ref">Screen</span></a></p></td>
 <td><p><a class="reference internal" href="#namespaces-region-fun-getscreenforcomobopos"><span class="std std-ref">GetScreenForComoboPos</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
@@ -494,32 +498,32 @@
 <p id="namespaces-region-var-id"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>ID</strong>  <a class="reference internal" href="#namespaces-region-var-id"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-region-var-width"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>Width</strong>  <a class="reference internal" href="#namespaces-region-var-width"><span class="std std-ref">🔗</span></a></p>
-<p>The number of pixels horizontally. 256 per screen.</p>
+<p class="classref-comment">The number of pixels horizontally. 256 per screen.</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-region-var-height"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>Height</strong>  <a class="reference internal" href="#namespaces-region-var-height"><span class="std std-ref">🔗</span></a></p>
-<p>The number of pixels vertically. 176 per screen.</p>
+<p class="classref-comment">The number of pixels vertically. 176 per screen.</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-region-var-screenwidth"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>ScreenWidth</strong>  <a class="reference internal" href="#namespaces-region-var-screenwidth"><span class="std std-ref">🔗</span></a></p>
-<p>The number of screens horizontally.</p>
+<p class="classref-comment">The number of screens horizontally.</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-region-var-screenheight"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>ScreenHeight</strong>  <a class="reference internal" href="#namespaces-region-var-screenheight"><span class="std std-ref">🔗</span></a></p>
-<p>The number of screens vertically.</p>
+<p class="classref-comment">The number of screens vertically.</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-region-var-numcombos"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>NumCombos</strong>  <a class="reference internal" href="#namespaces-region-var-numcombos"><span class="std std-ref">🔗</span></a></p>
-<p>The number of combo positions. 176 per screen.</p>
+<p class="classref-comment">The number of combo positions. 176 per screen.</p>
 <hr class="classref-item-separator docutils" />
-<p id="namespaces-region-var-originscreen"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <a class="reference internal" href="../classes/screendata.html#classes-screendata"><span class="std std-ref">screendata</span></a> <strong>OriginScreen</strong>  <a class="reference internal" href="#namespaces-region-var-originscreen"><span class="std std-ref">🔗</span></a></p>
-<p>The top-left screen in the current region.
-If not in a large region, this is the same as Screen.</p>
+<p id="namespaces-region-var-originscreen"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <a class="reference internal" href="Screen.html#namespaces-screen"><span class="std std-ref">Screen</span></a> <strong>OriginScreen</strong>  <a class="reference internal" href="#namespaces-region-var-originscreen"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The top-left screen in the current region.
+If not in a large region, this is the same as <a class="reference internal" href="../global_constants.html#globals-var-screen"><span class="std std-ref">Screen</span></a>.</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-region-var-originscreenindex"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>OriginScreenIndex</strong>  <a class="reference internal" href="#namespaces-region-var-originscreenindex"><span class="std std-ref">🔗</span></a></p>
-<p>The index of the top-left screen in the current region.
-If not in a large region, this is the same as Game-&gt;CurScreen.</p>
+<p class="classref-comment">The index of the top-left screen in the current region.
+If not in a large region, this is the same as <code class="docutils literal notranslate"><span class="pre">Game-&gt;CurScreen</span></code>.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="namespaces-region-fun-getscreenforcomobopos"><a class="reference internal" href="../classes/screendata.html#classes-screendata"><span class="std std-ref">screendata</span></a> <strong>GetScreenForComoboPos</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos) <a class="reference internal" href="#namespaces-region-fun-getscreenforcomobopos"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-method" id="namespaces-region-fun-getscreenforcomobopos"><a class="reference internal" href="Screen.html#namespaces-screen"><span class="std std-ref">Screen</span></a> <strong>GetScreenForComoboPos</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos) <a class="reference internal" href="#namespaces-region-fun-getscreenforcomobopos"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="namespaces-region-fun-getscreenindexforcomobopos"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetScreenIndexForComoboPos</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos) <a class="reference internal" href="#namespaces-region-fun-getscreenindexforcomobopos"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -538,20 +542,20 @@ If not in a large region, this is the same as Game-&gt;CurScreen.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Input.html"
+       href="Hero.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Input</p>
+        <p class="prev-next-title">Hero</p>
       </div>
     </a>
     <a class="right-next"
-       href="Text.html"
+       href="Screen.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Text</p>
+        <p class="prev-next-title">Screen</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

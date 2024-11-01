@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
@@ -465,7 +469,7 @@
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-subscreendata-var-script"><span class="std std-ref">Script</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="Could be any type.">untyped</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-subscreendata-var-initd"><span class="std std-ref">InitD</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>bool[]</p></td>
@@ -483,7 +487,7 @@
 <tr class="row-odd"><td><p>bool[]</p></td>
 <td><p><a class="reference internal" href="#classes-subscreendata-var-transleftflags"><span class="std std-ref">TransLeftFlags</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-subscreendata-var-transleftargs"><span class="std std-ref">TransLeftArgs</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
@@ -495,7 +499,7 @@
 <tr class="row-odd"><td><p>bool[]</p></td>
 <td><p><a class="reference internal" href="#classes-subscreendata-var-transrightflags"><span class="std std-ref">TransRightFlags</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-subscreendata-var-transrightargs"><span class="std std-ref">TransRightArgs</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
@@ -510,28 +514,28 @@
 <tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-subscreendata-var-selectordesth"><span class="std std-ref">SelectorDestH</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-subscreendata-var-selectorwid"><span class="std std-ref">SelectorWid</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-subscreendata-var-selectorhei"><span class="std std-ref">SelectorHei</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-subscreendata-var-selectortile"><span class="std std-ref">SelectorTile</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-subscreendata-var-selectorcset"><span class="std std-ref">SelectorCSet</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-subscreendata-var-selectorflashcset"><span class="std std-ref">SelectorFlashCSet</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-subscreendata-var-selectorframes"><span class="std std-ref">SelectorFrames</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-subscreendata-var-selectoraspeed"><span class="std std-ref">SelectorASpeed</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-subscreendata-var-selectordelay"><span class="std std-ref">SelectorDelay</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
@@ -543,7 +547,7 @@
 <tr class="row-odd"><td><p>bool[]</p></td>
 <td><p><a class="reference internal" href="#classes-subscreendata-var-transflags"><span class="std std-ref">TransFlags</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-subscreendata-var-transargs"><span class="std std-ref">TransArgs</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
@@ -576,176 +580,176 @@
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
 <p id="classes-subscreendata-var-curpage"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CurPage</strong>  <a class="reference internal" href="#classes-subscreendata-var-curpage"><span class="std std-ref">🔗</span></a></p>
-<p>The currently selected page.</p>
+<p class="classref-comment">The currently selected page.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-numpages"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NumPages</strong>  <a class="reference internal" href="#classes-subscreendata-var-numpages"><span class="std std-ref">🔗</span></a></p>
-<p>The total number of pages</p>
+<p class="classref-comment">The total number of pages</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-pages"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <a class="reference internal" href="subscreenpage.html#classes-subscreenpage"><span class="std std-ref">subscreenpage[]</span></a> <strong>Pages</strong>  <a class="reference internal" href="#classes-subscreendata-var-pages"><span class="std std-ref">🔗</span></a></p>
-<p>The array containing the pages</p>
+<p class="classref-comment">The array containing the pages</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-type"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Type</strong>  <a class="reference internal" href="#classes-subscreendata-var-type"><span class="std std-ref">🔗</span></a></p>
-<p>Compare with the <cite>SSTYPE_</cite> constants.</p>
+<p class="classref-comment">Compare with the <code class="docutils literal notranslate"><span class="pre">SSTYPE_</span></code> constants.</p>
 <p>The type of the subscreen.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-subscreendata-var-flags"><span class="std std-ref">🔗</span></a></p>
-<p>The flags of the subscreen. Use the <cite>SSFL_*_</cite> constants to access.</p>
+<p class="classref-comment">The flags of the subscreen. Use the <code class="docutils literal notranslate"><span class="pre">SSFL_*_</span></code> constants to access.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-cursorpos"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CursorPos</strong>  <a class="reference internal" href="#classes-subscreendata-var-cursorpos"><span class="std std-ref">🔗</span></a></p>
-<p>The position value of the selector.</p>
+<p class="classref-comment">The position value of the selector.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-script"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Script</strong>  <a class="reference internal" href="#classes-subscreendata-var-script"><span class="std std-ref">🔗</span></a></p>
-<p>The subscreen’s script.</p>
+<p class="classref-comment">The subscreen’s script.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreendata-var-initd"><abbr title="Could be any type.">untyped</abbr> <strong>InitD</strong>  <a class="reference internal" href="#classes-subscreendata-var-initd"><span class="std std-ref">🔗</span></a></p>
-<p>The subscreen’s InitD[] parameters</p>
+<p id="classes-subscreendata-var-initd"><abbr title="Could be any type.">untyped</abbr>[] <strong>InitD</strong>  <a class="reference internal" href="#classes-subscreendata-var-initd"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The subscreen’s InitD[] parameters</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-btnpageleft">bool[] <strong>BtnPageLeft</strong>  <a class="reference internal" href="#classes-subscreendata-var-btnpageleft"><span class="std std-ref">🔗</span></a></p>
-<p>Use the <cite>INTBTN_</cite> constants to index this array.</p>
+<p class="classref-comment">Use the <code class="docutils literal notranslate"><span class="pre">INTBTN_</span></code> constants to index this array.</p>
 <p>The ‘true’ buttons here, when pressed, change pages leftwards.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-btnpageright">bool[] <strong>BtnPageRight</strong>  <a class="reference internal" href="#classes-subscreendata-var-btnpageright"><span class="std std-ref">🔗</span></a></p>
-<p>Use the <cite>INTBTN_</cite> constants to index this array.</p>
+<p class="classref-comment">Use the <code class="docutils literal notranslate"><span class="pre">INTBTN_</span></code> constants to index this array.</p>
 <p>The ‘true’ buttons here, when pressed, change pages rightwards.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-translefttype"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TransLeftType</strong>  <a class="reference internal" href="#classes-subscreendata-var-translefttype"><span class="std std-ref">🔗</span></a></p>
-<p>The transition type for left/right transitions.</p>
-<p>Compare with the <cite>TRANS_TY_</cite> constants.</p>
+<p class="classref-comment">The transition type for left/right transitions.</p>
+<p>Compare with the <code class="docutils literal notranslate"><span class="pre">TRANS_TY_</span></code> constants.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-transleftsfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TransLeftSFX</strong>  <a class="reference internal" href="#classes-subscreendata-var-transleftsfx"><span class="std std-ref">🔗</span></a></p>
-<p>The transition sfx for left/right transitions.</p>
+<p class="classref-comment">The transition sfx for left/right transitions.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-transleftflags">bool[] <strong>TransLeftFlags</strong>  <a class="reference internal" href="#classes-subscreendata-var-transleftflags"><span class="std std-ref">🔗</span></a></p>
-<p>The flags for left/right transitions.</p>
-<p>Use the <cite>TRANSFLAG_</cite> constants to access these.</p>
+<p class="classref-comment">The flags for left/right transitions.</p>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">TRANSFLAG_</span></code> constants to access these.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreendata-var-transleftargs"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TransLeftArgs</strong>  <a class="reference internal" href="#classes-subscreendata-var-transleftargs"><span class="std std-ref">🔗</span></a></p>
-<p>The arguments used for left/right transitions.</p>
-<p>Use the ‘TRANS_`_ARG_` constants to access these</p>
+<p id="classes-subscreendata-var-transleftargs"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>TransLeftArgs</strong>  <a class="reference internal" href="#classes-subscreendata-var-transleftargs"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The arguments used for left/right transitions.</p>
+<p>Use the ‘TRANS_``_ARG_`` constants to access these</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-transrighttype"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TransRightType</strong>  <a class="reference internal" href="#classes-subscreendata-var-transrighttype"><span class="std std-ref">🔗</span></a></p>
-<p>The transition type for left/right transitions.</p>
-<p>Compare with the <cite>TRANS_TY_</cite> constants.</p>
+<p class="classref-comment">The transition type for left/right transitions.</p>
+<p>Compare with the <code class="docutils literal notranslate"><span class="pre">TRANS_TY_</span></code> constants.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-transrightsfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TransRightSFX</strong>  <a class="reference internal" href="#classes-subscreendata-var-transrightsfx"><span class="std std-ref">🔗</span></a></p>
-<p>The transition sfx for left/right transitions.</p>
+<p class="classref-comment">The transition sfx for left/right transitions.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-transrightflags">bool[] <strong>TransRightFlags</strong>  <a class="reference internal" href="#classes-subscreendata-var-transrightflags"><span class="std std-ref">🔗</span></a></p>
-<p>The flags for left/right transitions.</p>
-<p>Use the <cite>TRANSFLAG_</cite> constants to access these.</p>
+<p class="classref-comment">The flags for left/right transitions.</p>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">TRANSFLAG_</span></code> constants to access these.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreendata-var-transrightargs"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TransRightArgs</strong>  <a class="reference internal" href="#classes-subscreendata-var-transrightargs"><span class="std std-ref">🔗</span></a></p>
-<p>The arguments used for left/right transitions.</p>
-<p>Use the ‘TRANS_`_ARG_` constants to access these</p>
+<p id="classes-subscreendata-var-transrightargs"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>TransRightArgs</strong>  <a class="reference internal" href="#classes-subscreendata-var-transrightargs"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The arguments used for left/right transitions.</p>
+<p>Use the ‘TRANS_``_ARG_`` constants to access these</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-selectordestx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorDestX</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectordestx"><span class="std std-ref">🔗</span></a></p>
-<p>The X/Y/W/H offsets for the selector on this subscreen, if the selector
-is overridden (see Flags[]).</p>
+<p class="classref-comment">The X/Y/W/H offsets for the selector on this subscreen, if the selector
+is overridden (see <a class="reference internal" href="#classes-subscreendata-var-flags"><span class="std std-ref">Flags[]</span></a>).</p>
 <p>These values will be ADDED to the x/y/w/h that the selector would
 normally draw to.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-selectordesty"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorDestY</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectordesty"><span class="std std-ref">🔗</span></a></p>
-<p>The X/Y/W/H offsets for the selector on this subscreen, if the selector
-is overridden (see Flags[]).</p>
+<p class="classref-comment">The X/Y/W/H offsets for the selector on this subscreen, if the selector
+is overridden (see <a class="reference internal" href="#classes-subscreendata-var-flags"><span class="std std-ref">Flags[]</span></a>).</p>
 <p>These values will be ADDED to the x/y/w/h that the selector would
 normally draw to.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-selectordestw"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorDestW</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectordestw"><span class="std std-ref">🔗</span></a></p>
-<p>The X/Y/W/H offsets for the selector on this subscreen, if the selector
-is overridden (see Flags[]).</p>
+<p class="classref-comment">The X/Y/W/H offsets for the selector on this subscreen, if the selector
+is overridden (see <a class="reference internal" href="#classes-subscreendata-var-flags"><span class="std std-ref">Flags[]</span></a>).</p>
 <p>These values will be ADDED to the x/y/w/h that the selector would
 normally draw to.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-selectordesth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorDestH</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectordesth"><span class="std std-ref">🔗</span></a></p>
-<p>The X/Y/W/H offsets for the selector on this subscreen, if the selector
-is overridden (see Flags[]).</p>
+<p class="classref-comment">The X/Y/W/H offsets for the selector on this subscreen, if the selector
+is overridden (see <a class="reference internal" href="#classes-subscreendata-var-flags"><span class="std std-ref">Flags[]</span></a>).</p>
 <p>These values will be ADDED to the x/y/w/h that the selector would
 normally draw to.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreendata-var-selectorwid"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorWid</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectorwid"><span class="std std-ref">🔗</span></a></p>
-<p>The pixel-size, tile, cset/flashcset, and animation information for the
+<p id="classes-subscreendata-var-selectorwid"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorWid</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectorwid"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The pixel-size, tile, cset/flashcset, and animation information for the
 two selector overrides.</p>
 <p>These will be used by the selector on this subscreen, if the selector is
-overridden (see Flags[]).</p>
+overridden (see <a class="reference internal" href="#classes-subscreendata-var-flags"><span class="std std-ref">Flags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreendata-var-selectorhei"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorHei</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectorhei"><span class="std std-ref">🔗</span></a></p>
-<p>The pixel-size, tile, cset/flashcset, and animation information for the
+<p id="classes-subscreendata-var-selectorhei"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorHei</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectorhei"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The pixel-size, tile, cset/flashcset, and animation information for the
 two selector overrides.</p>
 <p>These will be used by the selector on this subscreen, if the selector is
-overridden (see Flags[]).</p>
+overridden (see <a class="reference internal" href="#classes-subscreendata-var-flags"><span class="std std-ref">Flags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreendata-var-selectortile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorTile</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectortile"><span class="std std-ref">🔗</span></a></p>
-<p>The pixel-size, tile, cset/flashcset, and animation information for the
+<p id="classes-subscreendata-var-selectortile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorTile</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectortile"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The pixel-size, tile, cset/flashcset, and animation information for the
 two selector overrides.</p>
 <p>These will be used by the selector on this subscreen, if the selector is
-overridden (see Flags[]).</p>
+overridden (see <a class="reference internal" href="#classes-subscreendata-var-flags"><span class="std std-ref">Flags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreendata-var-selectorcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorCSet</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectorcset"><span class="std std-ref">🔗</span></a></p>
-<p>The pixel-size, tile, cset/flashcset, and animation information for the
+<p id="classes-subscreendata-var-selectorcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorCSet</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectorcset"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The pixel-size, tile, cset/flashcset, and animation information for the
 two selector overrides.</p>
 <p>These will be used by the selector on this subscreen, if the selector is
-overridden (see Flags[]).</p>
+overridden (see <a class="reference internal" href="#classes-subscreendata-var-flags"><span class="std std-ref">Flags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreendata-var-selectorflashcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorFlashCSet</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectorflashcset"><span class="std std-ref">🔗</span></a></p>
-<p>The pixel-size, tile, cset/flashcset, and animation information for the
+<p id="classes-subscreendata-var-selectorflashcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorFlashCSet</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectorflashcset"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The pixel-size, tile, cset/flashcset, and animation information for the
 two selector overrides.</p>
 <p>These will be used by the selector on this subscreen, if the selector is
-overridden (see Flags[]).</p>
+overridden (see <a class="reference internal" href="#classes-subscreendata-var-flags"><span class="std std-ref">Flags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreendata-var-selectorframes"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorFrames</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectorframes"><span class="std std-ref">🔗</span></a></p>
-<p>The pixel-size, tile, cset/flashcset, and animation information for the
+<p id="classes-subscreendata-var-selectorframes"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorFrames</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectorframes"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The pixel-size, tile, cset/flashcset, and animation information for the
 two selector overrides.</p>
 <p>These will be used by the selector on this subscreen, if the selector is
-overridden (see Flags[]).</p>
+overridden (see <a class="reference internal" href="#classes-subscreendata-var-flags"><span class="std std-ref">Flags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreendata-var-selectoraspeed"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorASpeed</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectoraspeed"><span class="std std-ref">🔗</span></a></p>
-<p>The pixel-size, tile, cset/flashcset, and animation information for the
+<p id="classes-subscreendata-var-selectoraspeed"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorASpeed</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectoraspeed"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The pixel-size, tile, cset/flashcset, and animation information for the
 two selector overrides.</p>
 <p>These will be used by the selector on this subscreen, if the selector is
-overridden (see Flags[]).</p>
+overridden (see <a class="reference internal" href="#classes-subscreendata-var-flags"><span class="std std-ref">Flags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreendata-var-selectordelay"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorDelay</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectordelay"><span class="std std-ref">🔗</span></a></p>
-<p>The pixel-size, tile, cset/flashcset, and animation information for the
+<p id="classes-subscreendata-var-selectordelay"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorDelay</strong>  <a class="reference internal" href="#classes-subscreendata-var-selectordelay"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The pixel-size, tile, cset/flashcset, and animation information for the
 two selector overrides.</p>
 <p>These will be used by the selector on this subscreen, if the selector is
-overridden (see Flags[]).</p>
+overridden (see <a class="reference internal" href="#classes-subscreendata-var-flags"><span class="std std-ref">Flags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-transclock"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TransClock</strong>  <a class="reference internal" href="#classes-subscreendata-var-transclock"><span class="std std-ref">🔗</span></a></p>
-<p>The timer clock used by the currently active transition.</p>
+<p class="classref-comment">The timer clock used by the currently active transition.</p>
 <p>‘-1’ indicates no transition. Writing to ‘-1’ clears the current
 transition.</p>
 <p>Writing a positive value starts a transition if none is currently active.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-transtype"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TransType</strong>  <a class="reference internal" href="#classes-subscreendata-var-transtype"><span class="std std-ref">🔗</span></a></p>
-<p>The transition type currently active.</p>
-<p>Compare with the <cite>TRANS_TY_</cite> constants.</p>
+<p class="classref-comment">The transition type currently active.</p>
+<p>Compare with the <code class="docutils literal notranslate"><span class="pre">TRANS_TY_</span></code> constants.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-transflags">bool[] <strong>TransFlags</strong>  <a class="reference internal" href="#classes-subscreendata-var-transflags"><span class="std std-ref">🔗</span></a></p>
-<p>The flags for the current transition.</p>
-<p>Use the <cite>TRANSFLAG_</cite> constants to access these.</p>
+<p class="classref-comment">The flags for the current transition.</p>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">TRANSFLAG_</span></code> constants to access these.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreendata-var-transargs"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TransArgs</strong>  <a class="reference internal" href="#classes-subscreendata-var-transargs"><span class="std std-ref">🔗</span></a></p>
-<p>The arguments used for the current transition.</p>
-<p>Use the ‘TRANS_`_ARG_` constants to access these</p>
+<p id="classes-subscreendata-var-transargs"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>TransArgs</strong>  <a class="reference internal" href="#classes-subscreendata-var-transargs"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The arguments used for the current transition.</p>
+<p>Use the ‘TRANS_``_ARG_`` constants to access these</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-transfrompage"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TransFromPage</strong>  <a class="reference internal" href="#classes-subscreendata-var-transfrompage"><span class="std std-ref">🔗</span></a></p>
-<p>The page the currently active transition is going from/to.</p>
+<p class="classref-comment">The page the currently active transition is going from/to.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-subscreendata-var-transtopage"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TransToPage</strong>  <a class="reference internal" href="#classes-subscreendata-var-transtopage"><span class="std std-ref">🔗</span></a></p>
-<p>The page the currently active transition is going from/to.</p>
+<p class="classref-comment">The page the currently active transition is going from/to.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
 <p class="classref-method" id="classes-subscreendata-fun-getname"><abbr title="No return value.">void</abbr> <strong>GetName</strong>(char32[] buf) <a class="reference internal" href="#classes-subscreendata-fun-getname"><span class="std std-ref">🔗</span></a></p>
-<p>Puts the subscreen’s name in the buffer.</p>
+<p class="classref-comment">Puts the subscreen’s name in the buffer.</p>
 <p>If the buffer is too small, resizes it for you!</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-subscreendata-fun-setname"><abbr title="No return value.">void</abbr> <strong>SetName</strong>(char32[] buf) <a class="reference internal" href="#classes-subscreendata-fun-setname"><span class="std std-ref">🔗</span></a></p>
-<p>Sets the subscreen’s name from the buffer.</p>
+<p class="classref-comment">Sets the subscreen’s name from the buffer.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-subscreendata-fun-swappages"><abbr title="No return value.">void</abbr> <strong>SwapPages</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index2) <a class="reference internal" href="#classes-subscreendata-fun-swappages"><span class="std std-ref">🔗</span></a></p>
-<p>Swaps the pages at the two indexes.</p>
+<p class="classref-comment">Swaps the pages at the two indexes.</p>
 </section>
 </section>
 

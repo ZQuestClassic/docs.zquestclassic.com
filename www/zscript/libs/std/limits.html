@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">std</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="cfg.html">std.cfg</a></li>
@@ -541,82 +545,82 @@
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
 <p id="libs-std-var-char-bit"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CHAR_BIT</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code> <a class="reference internal" href="#libs-std-var-char-bit"><span class="std std-ref">🔗</span></a></p>
-<p>Number of bits in one byte.</p>
+<p class="classref-comment">Number of bits in one byte.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-short-bit"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SHORT_BIT</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code> <a class="reference internal" href="#libs-std-var-short-bit"><span class="std std-ref">🔗</span></a></p>
-<p>Number of bits in one short.</p>
+<p class="classref-comment">Number of bits in one short.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-int-bit"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>INT_BIT</strong> = <code class="docutils literal notranslate"><span class="pre">18</span></code> <a class="reference internal" href="#libs-std-var-int-bit"><span class="std std-ref">🔗</span></a></p>
-<p>Number of bits in one int.</p>
+<p class="classref-comment">Number of bits in one int.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-char-min"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CHAR_MIN</strong> = <code class="docutils literal notranslate"><span class="pre">-128</span></code> <a class="reference internal" href="#libs-std-var-char-min"><span class="std std-ref">🔗</span></a></p>
-<p>Minimum value of a signed byte.</p>
+<p class="classref-comment">Minimum value of a signed byte.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-schar-min"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SCHAR_MIN</strong> = <code class="docutils literal notranslate"><span class="pre">-128</span></code> <a class="reference internal" href="#libs-std-var-schar-min"><span class="std std-ref">🔗</span></a></p>
-<p>Minimum value of a signed byte.</p>
+<p class="classref-comment">Minimum value of a signed byte.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-sbyte-min"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SBYTE_MIN</strong> = <code class="docutils literal notranslate"><span class="pre">-128</span></code> <a class="reference internal" href="#libs-std-var-sbyte-min"><span class="std std-ref">🔗</span></a></p>
-<p>Minimum value of a signed byte.</p>
+<p class="classref-comment">Minimum value of a signed byte.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-sbyte-max"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SBYTE_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">127</span></code> <a class="reference internal" href="#libs-std-var-sbyte-max"><span class="std std-ref">🔗</span></a></p>
-<p>Maximum values of a signed byte.</p>
+<p class="classref-comment">Maximum values of a signed byte.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-char-max"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CHAR_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">127</span></code> <a class="reference internal" href="#libs-std-var-char-max"><span class="std std-ref">🔗</span></a></p>
-<p>Maximum values of a signed byte.</p>
+<p class="classref-comment">Maximum values of a signed byte.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-byte-min"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>BYTE_MIN</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-byte-min"><span class="std std-ref">🔗</span></a></p>
-<p>Minimum values of a signed byte.</p>
+<p class="classref-comment">Minimum values of a signed byte.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-schar-max"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SCHAR_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">127</span></code> <a class="reference internal" href="#libs-std-var-schar-max"><span class="std std-ref">🔗</span></a></p>
-<p>Maximum values of a signed byte.</p>
+<p class="classref-comment">Maximum values of a signed byte.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-uchar-max"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>UCHAR_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">255</span></code> <a class="reference internal" href="#libs-std-var-uchar-max"><span class="std std-ref">🔗</span></a></p>
-<p>Minimum value of an unsigned byte.</p>
+<p class="classref-comment">Minimum value of an unsigned byte.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-byte-max"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>BYTE_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">255</span></code> <a class="reference internal" href="#libs-std-var-byte-max"><span class="std std-ref">🔗</span></a></p>
-<p>Minimum value of an unsigned byte.</p>
+<p class="classref-comment">Minimum value of an unsigned byte.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-ushrt-min"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>USHRT_MIN</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-ushrt-min"><span class="std std-ref">🔗</span></a></p>
-<p>Minimum value of an unsigned short.</p>
+<p class="classref-comment">Minimum value of an unsigned short.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-word-min"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WORD_MIN</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-word-min"><span class="std std-ref">🔗</span></a></p>
-<p>Minimum value of an unsigned short.</p>
+<p class="classref-comment">Minimum value of an unsigned short.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-short-min"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SHORT_MIN</strong> = <code class="docutils literal notranslate"><span class="pre">-32768</span></code> <a class="reference internal" href="#libs-std-var-short-min"><span class="std std-ref">🔗</span></a></p>
-<p>Minimum value of a signed short.</p>
+<p class="classref-comment">Minimum value of a signed short.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-sshrt-min"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SSHRT_MIN</strong> = <code class="docutils literal notranslate"><span class="pre">-32768</span></code> <a class="reference internal" href="#libs-std-var-sshrt-min"><span class="std std-ref">🔗</span></a></p>
-<p>Minimum value of a signed short.</p>
+<p class="classref-comment">Minimum value of a signed short.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-word-max"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WORD_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">65535</span></code> <a class="reference internal" href="#libs-std-var-word-max"><span class="std std-ref">🔗</span></a></p>
-<p>Maximum value of an unsigned short.</p>
+<p class="classref-comment">Maximum value of an unsigned short.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-ushrt-max"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>USHRT_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">65535</span></code> <a class="reference internal" href="#libs-std-var-ushrt-max"><span class="std std-ref">🔗</span></a></p>
-<p>Maximum value of an unsigned short.</p>
+<p class="classref-comment">Maximum value of an unsigned short.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-short-max"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SHORT_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">32767</span></code> <a class="reference internal" href="#libs-std-var-short-max"><span class="std std-ref">🔗</span></a></p>
-<p>Maximum value of a signed short.</p>
+<p class="classref-comment">Maximum value of a signed short.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-sshrt-max"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SSHRT_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">32767</span></code> <a class="reference internal" href="#libs-std-var-sshrt-max"><span class="std std-ref">🔗</span></a></p>
-<p>Maximum value of a signed short.</p>
+<p class="classref-comment">Maximum value of a signed short.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-int-min"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>INT_MIN</strong> = <code class="docutils literal notranslate"><span class="pre">-214748</span></code> <a class="reference internal" href="#libs-std-var-int-min"><span class="std std-ref">🔗</span></a></p>
-<p>Minimum value of an int.</p>
+<p class="classref-comment">Minimum value of an int.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-int-max"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>INT_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">214748</span></code> <a class="reference internal" href="#libs-std-var-int-max"><span class="std std-ref">🔗</span></a></p>
-<p>Maximum value of an int.</p>
+<p class="classref-comment">Maximum value of an int.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-long-min"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LONG_MIN</strong> = <code class="docutils literal notranslate"><span class="pre">-214748</span></code> <a class="reference internal" href="#libs-std-var-long-min"><span class="std std-ref">🔗</span></a></p>
-<p>Minimum value of an int.</p>
+<p class="classref-comment">Minimum value of an int.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-float-min"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FLOAT_MIN</strong> = <code class="docutils literal notranslate"><span class="pre">-214748</span></code> <a class="reference internal" href="#libs-std-var-float-min"><span class="std std-ref">🔗</span></a></p>
-<p>Minimum value of a ZScript ‘float’ (int with fixed four-decimal places).</p>
+<p class="classref-comment">Minimum value of a ZScript ‘float’ (int with fixed four-decimal places).</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-float-max"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FLOAT_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">214748</span></code> <a class="reference internal" href="#libs-std-var-float-max"><span class="std std-ref">🔗</span></a></p>
-<p>Maximum value of a ZScript ‘float’ (int with fixed four-decimal places).</p>
+<p class="classref-comment">Maximum value of a ZScript ‘float’ (int with fixed four-decimal places).</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-counter-min"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>COUNTER_MIN</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-counter-min"><span class="std std-ref">🔗</span></a></p>
-<p>Game Elements</p>
+<p class="classref-comment">Game Elements</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-counter-max"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>COUNTER_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">65535</span></code> <a class="reference internal" href="#libs-std-var-counter-max"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />

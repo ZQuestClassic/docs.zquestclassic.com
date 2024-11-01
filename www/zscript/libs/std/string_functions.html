@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">std</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="cfg.html">std.cfg</a></li>
@@ -502,34 +506,34 @@
 <td><p><a class="reference internal" href="#libs-std-fun-convertcase"><span class="std std-ref">ConvertCase</span></a>(char32 chr)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-memset"><span class="std std-ref">memset</span></a>(<abbr title="Could be any type.">untyped</abbr> ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, <abbr title="Could be any type.">untyped</abbr> value, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-memset"><span class="std std-ref">memset</span></a>(<abbr title="Could be any type.">untyped</abbr>[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, <abbr title="Could be any type.">untyped</abbr> value, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-memset-2"><span class="std std-ref">memset</span></a>(<abbr title="Could be any type.">untyped</abbr> ptr, <abbr title="Could be any type.">untyped</abbr> value, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-memset-2"><span class="std std-ref">memset</span></a>(<abbr title="Could be any type.">untyped</abbr>[] ptr, <abbr title="Could be any type.">untyped</abbr> value, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-memcpy"><span class="std std-ref">memcpy</span></a>(<abbr title="Could be any type.">untyped</abbr> dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dpos, <abbr title="Could be any type.">untyped</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-memcpy"><span class="std std-ref">memcpy</span></a>(<abbr title="Could be any type.">untyped</abbr>[] dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dpos, <abbr title="Could be any type.">untyped</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-memcpy-2"><span class="std std-ref">memcpy</span></a>(<abbr title="Could be any type.">untyped</abbr> dest, <abbr title="Could be any type.">untyped</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-memcpy-2"><span class="std std-ref">memcpy</span></a>(<abbr title="Could be any type.">untyped</abbr>[] dest, <abbr title="Could be any type.">untyped</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-memcpy-3"><span class="std std-ref">memcpy</span></a>(<abbr title="Could be any type.">untyped</abbr> dest, <abbr title="Could be any type.">untyped</abbr> src)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-memcpy-3"><span class="std std-ref">memcpy</span></a>(<abbr title="Could be any type.">untyped</abbr>[] dest, <abbr title="Could be any type.">untyped</abbr>[] src)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-memmove"><span class="std std-ref">memmove</span></a>(<abbr title="Could be any type.">untyped</abbr> dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dpos, <abbr title="Could be any type.">untyped</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-memmove"><span class="std std-ref">memmove</span></a>(<abbr title="Could be any type.">untyped</abbr>[] dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dpos, <abbr title="Could be any type.">untyped</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-arrayset"><span class="std std-ref">arrayset</span></a>(<abbr title="Could be any type.">untyped</abbr> a, <abbr title="Could be any type.">untyped</abbr> args, untyped <abbr title="This method accepts any number of parameters after the ones described here.">varargs</abbr> …)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-arrayset"><span class="std std-ref">arrayset</span></a>(<abbr title="Could be any type.">untyped</abbr>[] a, <abbr title="Could be any type.">untyped</abbr>[] args, untyped <abbr title="This method accepts any number of parameters after the ones described here.">varargs</abbr> …)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-strcpy"><span class="std std-ref">strcpy</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dpos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-strcpy"><span class="std std-ref">strcpy</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dpos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-strncpy"><span class="std std-ref">strncpy</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dpos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-strncpy"><span class="std std-ref">strncpy</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dpos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-strncpy-2"><span class="std std-ref">strncpy</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-strncpy-2"><span class="std std-ref">strncpy</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-fun-remchr"><span class="std std-ref">remchr</span></a>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos)</p></td>
@@ -541,13 +545,13 @@
 <td><p><a class="reference internal" href="#libs-std-fun-remnchr"><span class="std std-ref">remnchr</span></a>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-strcat"><span class="std std-ref">strcat</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-strcat"><span class="std std-ref">strcat</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-strncat"><span class="std std-ref">strncat</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-strncat"><span class="std std-ref">strncat</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-strncat-2"><span class="std std-ref">strncat</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-strncat-2"><span class="std std-ref">strncat</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-fun-strchr"><span class="std std-ref">strchr</span></a>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, char32 chr)</p></td>
@@ -622,10 +626,10 @@
 <td><p><a class="reference internal" href="#libs-std-fun-ntoa-2"><span class="std std-ref">ntoa</span></a>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> num)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-strcatf"><span class="std std-ref">strcatf</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest, <abbr title="Could be any type.">untyped</abbr> arg, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> format)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-strcatf"><span class="std std-ref">strcatf</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] dest, <abbr title="Could be any type.">untyped</abbr> arg, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> format)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-strncatf"><span class="std std-ref">strncatf</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest, <abbr title="Could be any type.">untyped</abbr> arg, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> format, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-strncatf"><span class="std std-ref">strncatf</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] dest, <abbr title="Could be any type.">untyped</abbr> arg, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> format, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n)</p></td>
 </tr>
 <tr class="row-odd"><td><p>bool</p></td>
 <td><p><a class="reference internal" href="#libs-std-fun-sprintf-ismfcode"><span class="std std-ref">sprintf_isMFCode</span></a>(char32 chr)</p></td>
@@ -652,7 +656,7 @@
 <td><p><a class="reference internal" href="#libs-std-fun-ischar-2"><span class="std std-ref">IsChar</span></a>(char32 chr, char32 comp)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#libs-std-fun-screenprint"><span class="std std-ref">ScreenPrint</span></a>(char32[] s, <abbr title="Could be any type.">untyped</abbr> v, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> args)</p></td>
+<td><p><a class="reference internal" href="#libs-std-fun-screenprint"><span class="std std-ref">ScreenPrint</span></a>(char32[] s, <abbr title="Could be any type.">untyped</abbr> v, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] args)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-fun-strcmp-2"><span class="std std-ref">strcmp</span></a>(char32[] ptr1, char32[] ptr2)</p></td>
@@ -712,197 +716,197 @@
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
 <p class="classref-method" id="libs-std-fun-numcharsof"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NumCharsOf</strong>(char32[] ptr, char32 chr) <a class="reference internal" href="#libs-std-fun-numcharsof"><span class="std std-ref">🔗</span></a></p>
-<p>ZScript string handling functions, akin to those found in C
+<p class="classref-comment">ZScript string handling functions, akin to those found in C
 Returns the number of chracters of a given type in a specified string.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-numcharsof-2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NumCharsOf</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, char32 chr) <a class="reference internal" href="#libs-std-fun-numcharsof-2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-iscontrolcode">bool <strong>isControlCode</strong>(char32 chr) <a class="reference internal" href="#libs-std-fun-iscontrolcode"><span class="std std-ref">🔗</span></a></p>
-<p>Single character functions
+<p class="classref-comment">Single character functions
 Returns true if ‘chr’ is in the control code range of ascii characters</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-isnumber">bool <strong>isNumber</strong>(char32 chr) <a class="reference internal" href="#libs-std-fun-isnumber"><span class="std std-ref">🔗</span></a></p>
-<p>Returns true if ‘chr’ is in the range of ascii characters ‘0’ to ‘9’</p>
+<p class="classref-comment">Returns true if ‘chr’ is in the range of ascii characters ‘0’ to ‘9’</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-isalphabetic">bool <strong>isAlphabetic</strong>(char32 chr) <a class="reference internal" href="#libs-std-fun-isalphabetic"><span class="std std-ref">🔗</span></a></p>
-<p>Returns true if ‘chr’ is an alphabetic character</p>
+<p class="classref-comment">Returns true if ‘chr’ is an alphabetic character</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-isalphanumeric">bool <strong>isAlphaNumeric</strong>(char32 chr) <a class="reference internal" href="#libs-std-fun-isalphanumeric"><span class="std std-ref">🔗</span></a></p>
-<p>Returns true if ‘chr’ is an alphanumeric character</p>
+<p class="classref-comment">Returns true if ‘chr’ is an alphanumeric character</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-ishex">bool <strong>isHex</strong>(char32 chr) <a class="reference internal" href="#libs-std-fun-ishex"><span class="std std-ref">🔗</span></a></p>
-<p>Returns true if ‘chr’ is in the set { ‘0’-‘9’, ‘A’-‘F’ , ‘a’-‘f’ }</p>
+<p class="classref-comment">Returns true if ‘chr’ is in the set { ‘0’-‘9’, ‘A’-‘F’ , ‘a’-‘f’ }</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-isuppercase">bool <strong>isUpperCase</strong>(char32 chr) <a class="reference internal" href="#libs-std-fun-isuppercase"><span class="std std-ref">🔗</span></a></p>
-<p>Returns true if ‘chr’ is an upper-case character</p>
+<p class="classref-comment">Returns true if ‘chr’ is an upper-case character</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-islowercase">bool <strong>isLowerCase</strong>(char32 chr) <a class="reference internal" href="#libs-std-fun-islowercase"><span class="std std-ref">🔗</span></a></p>
-<p>Returns true if ‘chr’ is a lower-case character</p>
+<p class="classref-comment">Returns true if ‘chr’ is a lower-case character</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-isspace">bool <strong>isSpace</strong>(char32 chr) <a class="reference internal" href="#libs-std-fun-isspace"><span class="std std-ref">🔗</span></a></p>
-<p>Retruns true if a ‘chr’ is a blank space.</p>
+<p class="classref-comment">Retruns true if a ‘chr’ is a blank space.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-isvowel">bool <strong>isVowel</strong>(char32 chr) <a class="reference internal" href="#libs-std-fun-isvowel"><span class="std std-ref">🔗</span></a></p>
-<p>Returns true if ‘chr’ is a vowel.</p>
+<p class="classref-comment">Returns true if ‘chr’ is a vowel.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-containschar">bool <strong>ContainsChar</strong>(char32 chr, char32[] buffer) <a class="reference internal" href="#libs-std-fun-containschar"><span class="std std-ref">🔗</span></a></p>
-<p>Returns true if the string contains a specific character.</p>
+<p class="classref-comment">Returns true if the string contains a specific character.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-containscharpos"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ContainsCharPos</strong>(char32 chr, char32[] buffer) <a class="reference internal" href="#libs-std-fun-containscharpos"><span class="std std-ref">🔗</span></a></p>
-<p>Returns first character position if the string contains a specific character, else -1.</p>
+<p class="classref-comment">Returns first character position if the string contains a specific character, else -1.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-containschar-2">bool <strong>ContainsChar</strong>(char32 chr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, char32[] buffer) <a class="reference internal" href="#libs-std-fun-containschar-2"><span class="std std-ref">🔗</span></a></p>
-<p>Returns true if the string contains a specific character.</p>
+<p class="classref-comment">Returns true if the string contains a specific character.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-containscharpos-2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ContainsCharPos</strong>(char32 chr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, char32[] buffer) <a class="reference internal" href="#libs-std-fun-containscharpos-2"><span class="std std-ref">🔗</span></a></p>
-<p>Returns first character position if the string contains a specific character, else -1.</p>
+<p class="classref-comment">Returns first character position if the string contains a specific character, else -1.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-uppertolower">char32 <strong>UpperToLower</strong>(char32 chr) <a class="reference internal" href="#libs-std-fun-uppertolower"><span class="std std-ref">🔗</span></a></p>
-<p>Converts all upper case characters to lower case, leaving non-alphabetic
+<p class="classref-comment">Converts all upper case characters to lower case, leaving non-alphabetic
 characters unchanged</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-lowertoupper">char32 <strong>LowerToUpper</strong>(char32 chr) <a class="reference internal" href="#libs-std-fun-lowertoupper"><span class="std std-ref">🔗</span></a></p>
-<p>Converts all lower case characters to upper case, leaving non-alphabetic
+<p class="classref-comment">Converts all lower case characters to upper case, leaving non-alphabetic
 characters unchanged</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-convertcase">char32 <strong>ConvertCase</strong>(char32 chr) <a class="reference internal" href="#libs-std-fun-convertcase"><span class="std std-ref">🔗</span></a></p>
-<p>Converts lower case to upper case and upper case to lower case</p>
+<p class="classref-comment">Converts lower case to upper case and upper case to lower case</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-memset"><abbr title="No return value.">void</abbr> <strong>memset</strong>(<abbr title="Could be any type.">untyped</abbr> ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, <abbr title="Could be any type.">untyped</abbr> value, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-memset"><span class="std std-ref">🔗</span></a></p>
-<p>Memory Manipulation
+<p class="classref-method" id="libs-std-fun-memset"><abbr title="No return value.">void</abbr> <strong>memset</strong>(<abbr title="Could be any type.">untyped</abbr>[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, <abbr title="Could be any type.">untyped</abbr> value, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-memset"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Memory Manipulation
 Memory Set
 Sets block of memory of size ‘n’ pointed by ‘ptr’ to ‘value’</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-memset-2"><abbr title="No return value.">void</abbr> <strong>memset</strong>(<abbr title="Could be any type.">untyped</abbr> ptr, <abbr title="Could be any type.">untyped</abbr> value, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-memset-2"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-method" id="libs-std-fun-memset-2"><abbr title="No return value.">void</abbr> <strong>memset</strong>(<abbr title="Could be any type.">untyped</abbr>[] ptr, <abbr title="Could be any type.">untyped</abbr> value, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-memset-2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-memcpy"><abbr title="No return value.">void</abbr> <strong>memcpy</strong>(<abbr title="Could be any type.">untyped</abbr> dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dpos, <abbr title="Could be any type.">untyped</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-memcpy"><span class="std std-ref">🔗</span></a></p>
-<p>Memory Copy
+<p class="classref-method" id="libs-std-fun-memcpy"><abbr title="No return value.">void</abbr> <strong>memcpy</strong>(<abbr title="Could be any type.">untyped</abbr>[] dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dpos, <abbr title="Could be any type.">untyped</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-memcpy"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Memory Copy
 Copys block of memory pointed by ‘src’ of size ‘n’ to ‘dest’</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-memcpy-2"><abbr title="No return value.">void</abbr> <strong>memcpy</strong>(<abbr title="Could be any type.">untyped</abbr> dest, <abbr title="Could be any type.">untyped</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-memcpy-2"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-method" id="libs-std-fun-memcpy-2"><abbr title="No return value.">void</abbr> <strong>memcpy</strong>(<abbr title="Could be any type.">untyped</abbr>[] dest, <abbr title="Could be any type.">untyped</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-memcpy-2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-memcpy-3"><abbr title="No return value.">void</abbr> <strong>memcpy</strong>(<abbr title="Could be any type.">untyped</abbr> dest, <abbr title="Could be any type.">untyped</abbr> src) <a class="reference internal" href="#libs-std-fun-memcpy-3"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-method" id="libs-std-fun-memcpy-3"><abbr title="No return value.">void</abbr> <strong>memcpy</strong>(<abbr title="Could be any type.">untyped</abbr>[] dest, <abbr title="Could be any type.">untyped</abbr>[] src) <a class="reference internal" href="#libs-std-fun-memcpy-3"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-memmove"><abbr title="Could be any type.">untyped</abbr> <strong>memmove</strong>(<abbr title="Could be any type.">untyped</abbr> dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dpos, <abbr title="Could be any type.">untyped</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-memmove"><span class="std std-ref">🔗</span></a></p>
-<p>Memory Move
+<p class="classref-method" id="libs-std-fun-memmove"><abbr title="Could be any type.">untyped</abbr> <strong>memmove</strong>(<abbr title="Could be any type.">untyped</abbr>[] dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dpos, <abbr title="Could be any type.">untyped</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-memmove"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Memory Move
 As memcpy, but uses a buffer so memory space can overlap</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-arrayset"><abbr title="No return value.">void</abbr> <strong>arrayset</strong>(<abbr title="Could be any type.">untyped</abbr> a, <abbr title="Could be any type.">untyped</abbr> args, untyped <abbr title="This method accepts any number of parameters after the ones described here.">varargs</abbr> …) <a class="reference internal" href="#libs-std-fun-arrayset"><span class="std std-ref">🔗</span></a></p>
-<p>Array Set
+<p class="classref-method" id="libs-std-fun-arrayset"><abbr title="No return value.">void</abbr> <strong>arrayset</strong>(<abbr title="Could be any type.">untyped</abbr>[] a, <abbr title="Could be any type.">untyped</abbr>[] args, untyped <abbr title="This method accepts any number of parameters after the ones described here.">varargs</abbr> …) <a class="reference internal" href="#libs-std-fun-arrayset"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Array Set
 Assign all elements of array.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-strcpy"><abbr title="No return value.">void</abbr> <strong>strcpy</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dpos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos) <a class="reference internal" href="#libs-std-fun-strcpy"><span class="std std-ref">🔗</span></a></p>
-<p>String Manipulation
+<p class="classref-method" id="libs-std-fun-strcpy"><abbr title="No return value.">void</abbr> <strong>strcpy</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dpos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos) <a class="reference internal" href="#libs-std-fun-strcpy"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">String Manipulation
 String Copy
 Copys string ‘src’ into string ‘dest’ without checking for overflow in ‘dest’</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-strncpy"><abbr title="No return value.">void</abbr> <strong>strncpy</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dpos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-strncpy"><span class="std std-ref">🔗</span></a></p>
-<p>As strcpy, but only takes the first ‘n’ characters from src</p>
+<p class="classref-method" id="libs-std-fun-strncpy"><abbr title="No return value.">void</abbr> <strong>strncpy</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dpos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-strncpy"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">As strcpy, but only takes the first ‘n’ characters from src</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-strncpy-2"><abbr title="No return value.">void</abbr> <strong>strncpy</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-strncpy-2"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-method" id="libs-std-fun-strncpy-2"><abbr title="No return value.">void</abbr> <strong>strncpy</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-strncpy-2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-remchr"><abbr title="No return value.">void</abbr> <strong>remchr</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos) <a class="reference internal" href="#libs-std-fun-remchr"><span class="std std-ref">🔗</span></a></p>
-<p>Remove Characters
+<p class="classref-comment">Remove Characters
 Remove all characters starting from pointer ‘string’</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-remchr-2"><abbr title="No return value.">void</abbr> <strong>remchr</strong>(char32[] ptr) <a class="reference internal" href="#libs-std-fun-remchr-2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-remnchr"><abbr title="No return value.">void</abbr> <strong>remnchr</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-remnchr"><span class="std std-ref">🔗</span></a></p>
-<p>Remove ‘n’ characters and shift string back to pointer ‘string’</p>
+<p class="classref-comment">Remove ‘n’ characters and shift string back to pointer ‘string’</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-strcat"><abbr title="No return value.">void</abbr> <strong>strcat</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos) <a class="reference internal" href="#libs-std-fun-strcat"><span class="std std-ref">🔗</span></a></p>
-<p>String Concatenate
+<p class="classref-method" id="libs-std-fun-strcat"><abbr title="No return value.">void</abbr> <strong>strcat</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos) <a class="reference internal" href="#libs-std-fun-strcat"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">String Concatenate
 Appends string ‘src’ onto string ‘dest’ (assuming dest has enough extra memory
 allocated to allow the operation)</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-strncat"><abbr title="No return value.">void</abbr> <strong>strncat</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-strncat"><span class="std std-ref">🔗</span></a></p>
-<p>strcat up to ‘n’ characters in src</p>
+<p class="classref-method" id="libs-std-fun-strncat"><abbr title="No return value.">void</abbr> <strong>strncat</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-strncat"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">strcat up to ‘n’ characters in src</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-strncat-2"><abbr title="No return value.">void</abbr> <strong>strncat</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-strncat-2"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-method" id="libs-std-fun-strncat-2"><abbr title="No return value.">void</abbr> <strong>strncat</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] dest, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] src, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-strncat-2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-strchr"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>strchr</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, char32 chr) <a class="reference internal" href="#libs-std-fun-strchr"><span class="std std-ref">🔗</span></a></p>
-<p>String Searching
+<p class="classref-comment">String Searching
 String Character
 Returns the position of the first occurence of ‘character’ in ‘string’,
 or -1 if none are found</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-strrchr"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>strrchr</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, char32 chr) <a class="reference internal" href="#libs-std-fun-strrchr"><span class="std std-ref">🔗</span></a></p>
-<p>String Reverse Character
+<p class="classref-comment">String Reverse Character
 Returns the position of the last occurence of ‘character’ in ‘string’
 starting from the end, or -1 if none are found</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-strstr"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>strstr</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, char32[] sub) <a class="reference internal" href="#libs-std-fun-strstr"><span class="std std-ref">🔗</span></a></p>
-<p>String Sub-String
+<p class="classref-comment">String Sub-String
 Returns the position of the first occurence of sub-string ‘sub’ in ‘string’,
 or -1 if sub is not found</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-strspn"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>strspn</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, char32[] keys) <a class="reference internal" href="#libs-std-fun-strspn"><span class="std std-ref">🔗</span></a></p>
-<p>String Span
+<p class="classref-comment">String Span
 Returns the length of characters in ‘ptr’ before a character not contained in
 ‘keys’ is found</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-strcspn"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>strcspn</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, char32[] keys) <a class="reference internal" href="#libs-std-fun-strcspn"><span class="std std-ref">🔗</span></a></p>
-<p>String Complement Span
+<p class="classref-comment">String Complement Span
 Returns the length of characters in ‘ptr’ before a character contained in
 ‘keys’ is found</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-strcmp"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>strcmp</strong>(char32[] ptr1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos1, char32[] ptr2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos2) <a class="reference internal" href="#libs-std-fun-strcmp"><span class="std std-ref">🔗</span></a></p>
-<p>String Comparison
+<p class="classref-comment">String Comparison
 String Compare
 Iterates through ptr1 and ptr2 until a character is found which is not the same in
 both strings, and then returns &gt; 0 if the character is larger in ptr1, and &lt; 0 if it is
 larger in ptr2. Returns 0 if the strings are equal</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-strncmp"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>strncmp</strong>(char32[] ptr1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos1, char32[] ptr2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-strncmp"><span class="std std-ref">🔗</span></a></p>
-<p>strcmp up to ‘n’ characters</p>
+<p class="classref-comment">strcmp up to ‘n’ characters</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-atoi"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>atoi</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos) <a class="reference internal" href="#libs-std-fun-atoi"><span class="std std-ref">🔗</span></a></p>
-<p>Converting between variables and strings
+<p class="classref-comment">Converting between variables and strings
 ASCII to Integer
 Returns the decimal integer pointed by ‘string’</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-ilen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ilen</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos) <a class="reference internal" href="#libs-std-fun-ilen"><span class="std std-ref">🔗</span></a></p>
-<p>Integer Length
+<p class="classref-comment">Integer Length
 Returns the length of characters of the decimal integer pointed by ‘string’</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-xtoi"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>xtoi</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos) <a class="reference internal" href="#libs-std-fun-xtoi"><span class="std std-ref">🔗</span></a></p>
-<p>Hexadecimal ASCII to Integer
+<p class="classref-comment">Hexadecimal ASCII to Integer
 Returns the (positive) hexadecimal integer pointed by ‘string’</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-xlen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>xlen</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#libs-std-fun-xlen"><span class="std std-ref">🔗</span></a></p>
-<p>Hexadecimal Length
+<p class="classref-comment">Hexadecimal Length
 Returns the length of characters of the (positive) hexadecimal integer pointed by ‘string’</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-atof"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>atof</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#libs-std-fun-atof"><span class="std std-ref">🔗</span></a></p>
-<p>ASCII to Float
+<p class="classref-comment">ASCII to Float
 Returns the floating point number pointed by ‘string’</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-flen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>flen</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#libs-std-fun-flen"><span class="std std-ref">🔗</span></a></p>
-<p>Float Length
+<p class="classref-comment">Float Length
 Returns the length of characters of the floating point number pointed by ‘string’</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-aton"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>aton</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#libs-std-fun-aton"><span class="std std-ref">🔗</span></a></p>
-<p>ASCII to Number
+<p class="classref-comment">ASCII to Number
 Calls either atoi or atof depending on context</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-nlen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>nlen</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#libs-std-fun-nlen"><span class="std std-ref">🔗</span></a></p>
-<p>Number Length
+<p class="classref-comment">Number Length
 Calls either flen or ilen depending on context</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-itoa"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>itoa</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> num) <a class="reference internal" href="#libs-std-fun-itoa"><span class="std std-ref">🔗</span></a></p>
-<p>Integer to ASCII
+<p class="classref-comment">Integer to ASCII
 Places integer ‘num’ into string ‘string’ without checking for overflow,
 and returns the number of characters used</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-xtoa"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>xtoa</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> num, bool upper) <a class="reference internal" href="#libs-std-fun-xtoa"><span class="std std-ref">🔗</span></a></p>
-<p>Hexadecimal Integer to ASCII
+<p class="classref-comment">Hexadecimal Integer to ASCII
 Places integer ‘num’ into string ‘string’ in base 16 without checking for overflow,
 and returns the number of characters used</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-xtoa-2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>xtoa</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> num, bool upper) <a class="reference internal" href="#libs-std-fun-xtoa-2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-ftoa"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ftoa</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> num, bool printall) <a class="reference internal" href="#libs-std-fun-ftoa"><span class="std std-ref">🔗</span></a></p>
-<p>Float to ASCII
+<p class="classref-comment">Float to ASCII
 Places float ‘num’ into string ‘string’ without checking for overflow,
 and returns the number of characters used. If ‘printall’ is true, it will add 4 decimal places
 regardless of the most significant digit</p>
@@ -914,21 +918,21 @@ regardless of the most significant digit</p>
 <p class="classref-method" id="libs-std-fun-ftoa-4"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ftoa</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> num) <a class="reference internal" href="#libs-std-fun-ftoa-4"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-ntoa"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ntoa</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> num) <a class="reference internal" href="#libs-std-fun-ntoa"><span class="std std-ref">🔗</span></a></p>
-<p>Number to ASCII
+<p class="classref-comment">Number to ASCII
 Checks whether ‘num’ is an integer or not, and calls the appropriate function</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-ntoa-2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ntoa</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> num) <a class="reference internal" href="#libs-std-fun-ntoa-2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-strcatf"><abbr title="No return value.">void</abbr> <strong>strcatf</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest, <abbr title="Could be any type.">untyped</abbr> arg, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> format) <a class="reference internal" href="#libs-std-fun-strcatf"><span class="std std-ref">🔗</span></a></p>
-<p>String Formating
+<p class="classref-method" id="libs-std-fun-strcatf"><abbr title="No return value.">void</abbr> <strong>strcatf</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] dest, <abbr title="Could be any type.">untyped</abbr> arg, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> format) <a class="reference internal" href="#libs-std-fun-strcatf"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">String Formating
 String Concatenate Format
 Appends ‘arg’ onto ‘dest’ as the MF_ constant passed into ‘format’</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-strncatf"><abbr title="No return value.">void</abbr> <strong>strncatf</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest, <abbr title="Could be any type.">untyped</abbr> arg, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> format, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-strncatf"><span class="std std-ref">🔗</span></a></p>
-<p>As strcatf, using only ‘n’ characters of ‘arg’</p>
+<p class="classref-method" id="libs-std-fun-strncatf"><abbr title="No return value.">void</abbr> <strong>strncatf</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] dest, <abbr title="Could be any type.">untyped</abbr> arg, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> format, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-strncatf"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">As strcatf, using only ‘n’ characters of ‘arg’</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-sprintf-ismfcode">bool <strong>sprintf_isMFCode</strong>(char32 chr) <a class="reference internal" href="#libs-std-fun-sprintf-ismfcode"><span class="std std-ref">🔗</span></a></p>
-<p>Used by sprintf</p>
+<p class="classref-comment">Used by sprintf</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-sprintf-mfcodetoint"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>sprintf_MFCodeToInt</strong>(char32 chr) <a class="reference internal" href="#libs-std-fun-sprintf-mfcodetoint"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -944,21 +948,21 @@ Appends ‘arg’ onto ‘dest’ as the MF_ constant passed into ‘format’</
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-ischar-2">bool <strong>IsChar</strong>(char32 chr, char32 comp) <a class="reference internal" href="#libs-std-fun-ischar-2"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-screenprint"><abbr title="No return value.">void</abbr> <strong>ScreenPrint</strong>(char32[] s, <abbr title="Could be any type.">untyped</abbr> v, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> args) <a class="reference internal" href="#libs-std-fun-screenprint"><span class="std std-ref">🔗</span></a></p>
-<p>Prints a formatted string to the screen.
-<cite>int v</cite> can be a string, a float, or an int and is inserted to
-the string using the tokens <cite>%s</cite>, <cite>%f</cite>, and <cite>%d</cite> respectively.
-<cite>int args</cite> is an array literal with the following format required:
+<p class="classref-method" id="libs-std-fun-screenprint"><abbr title="No return value.">void</abbr> <strong>ScreenPrint</strong>(char32[] s, <abbr title="Could be any type.">untyped</abbr> v, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] args) <a class="reference internal" href="#libs-std-fun-screenprint"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Prints a formatted string to the screen.
+<code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">v</span></code> can be a string, a float, or an int and is inserted to
+the string using the tokens <code class="docutils literal notranslate"><span class="pre">%s</span></code>, <code class="docutils literal notranslate"><span class="pre">%f</span></code>, and <code class="docutils literal notranslate"><span class="pre">%d</span></code> respectively.
+<code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">args</span></code> is an array literal with the following format required:
 { LAYER, X, Y, FONT, TEXT_COLOUR, TEXT_BG_COLOUR, FORMAT, OPCITY }</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-strcmp-2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>strcmp</strong>(char32[] ptr1, char32[] ptr2) <a class="reference internal" href="#libs-std-fun-strcmp-2"><span class="std std-ref">🔗</span></a></p>
-<p>Now an internal function. -Z ( 15th May, 2019 )</p>
+<p class="classref-comment">Now an internal function. -Z ( 15th May, 2019 )</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-strncmp-2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>strncmp</strong>(char32[] ptr1, char32[] ptr2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> n) <a class="reference internal" href="#libs-std-fun-strncmp-2"><span class="std std-ref">🔗</span></a></p>
-<p>Now an internal function. -Z ( 15th May, 2019 )</p>
+<p class="classref-comment">Now an internal function. -Z ( 15th May, 2019 )</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-strlen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>strlen</strong>(char32[] ptr) <a class="reference internal" href="#libs-std-fun-strlen"><span class="std std-ref">🔗</span></a></p>
-<p>Internal as of 2.55 Alpha 23, 15th may, 2019
+<p class="classref-comment">Internal as of 2.55 Alpha 23, 15th may, 2019
 String Length
 Returns the length of string ‘string’</p>
 <hr class="classref-item-separator docutils" />
@@ -987,18 +991,18 @@ Returns the length of string ‘string’</p>
 <p class="classref-method" id="libs-std-fun-xtoa-3"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>xtoa</strong>(char32[] ptr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> num) <a class="reference internal" href="#libs-std-fun-xtoa-3"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-sprintf"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>sprintf</strong>(char32[] ret, char32[] formatstr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a0 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a1 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a2 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a3 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a4 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a5 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a6 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a7 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a8 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a9 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> aa = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ab = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ac = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ad = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ae = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> af = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#libs-std-fun-sprintf"><span class="std std-ref">🔗</span></a></p>
-<p>Prints string ‘formatstr’ into ‘ret’ according to the arguments inputted (see C function for reference)
+<p class="classref-comment">Prints string ‘formatstr’ into ‘ret’ according to the arguments inputted (see C function for reference)
 Maximum 16 arguments</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Deprecated!</strong> Use the internal sprintf instead.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Deprecated!</strong> Use the internal <a class="reference internal" href="../../global_functions.html#globals-fun-sprintf"><span class="std std-ref">sprintf()</span></a> instead.</p>
 </div>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-printf"><abbr title="No return value.">void</abbr> <strong>printf</strong>(char32[] formatstr, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a0 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a1 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a2 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a3 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a4 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a5 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a6 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a7 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a8 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> a9 = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> aa = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ab = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ac = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ad = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> ae = <code class="docutils literal notranslate"><span class="pre">0</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> af = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#libs-std-fun-printf"><span class="std std-ref">🔗</span></a></p>
-<p>Uses a buffer to print the results of sprintf(formatstr,…) straight to allegro.log</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Deprecated!</strong> Use the internal printf instead.</p>
+<p class="classref-comment">Uses a buffer to print the results of sprintf(formatstr,…) straight to allegro.log</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Deprecated!</strong> Use the internal <a class="reference internal" href="../../global_functions.html#globals-fun-printf"><span class="std std-ref">printf()</span></a> instead.</p>
 </div>
 </section>
 </section>

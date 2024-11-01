@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">std</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="cfg.html">std.cfg</a></li>
@@ -1023,7 +1027,7 @@
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
 <p id="libs-std-var-keyboard-type"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>KEYBOARD_TYPE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-keyboard-type"><span class="std std-ref">🔗</span></a></p>
-<p>0 == US, 1 == UK, 2 == EU/GR</p>
+<p class="classref-comment">0 == US, 1 == UK, 2 == EU/GR</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-keyboard-layout-us"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>KEYBOARD_LAYOUT_US</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-keyboard-layout-us"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -1031,43 +1035,43 @@
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-keyboard-layout-eu"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>KEYBOARD_LAYOUT_EU</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-std-var-keyboard-layout-eu"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-char-error"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_ERROR</strong> = <code class="docutils literal notranslate"><span class="pre">-10000</span></code> <a class="reference internal" href="#libs-std-var-char-error"><span class="std std-ref">🔗</span></a></p>
-<p>Special Circumstance Characters to store in strings if needed.</p>
+<p id="libs-std-var-char-error"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_ERROR</strong> = <code class="docutils literal notranslate"><span class="pre">-1</span></code> <a class="reference internal" href="#libs-std-var-char-error"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Special Circumstance Characters to store in strings if needed.</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-char-backspc"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_BACKSPC</strong> = <code class="docutils literal notranslate"><span class="pre">-20000</span></code> <a class="reference internal" href="#libs-std-var-char-backspc"><span class="std std-ref">🔗</span></a></p>
+<p id="libs-std-var-char-backspc"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_BACKSPC</strong> = <code class="docutils literal notranslate"><span class="pre">-2</span></code> <a class="reference internal" href="#libs-std-var-char-backspc"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-char-delete"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_DELETE</strong> = <code class="docutils literal notranslate"><span class="pre">-40000</span></code> <a class="reference internal" href="#libs-std-var-char-delete"><span class="std std-ref">🔗</span></a></p>
+<p id="libs-std-var-char-delete"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_DELETE</strong> = <code class="docutils literal notranslate"><span class="pre">-4</span></code> <a class="reference internal" href="#libs-std-var-char-delete"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-char-homekey"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_HOMEKEY</strong> = <code class="docutils literal notranslate"><span class="pre">-80000</span></code> <a class="reference internal" href="#libs-std-var-char-homekey"><span class="std std-ref">🔗</span></a></p>
+<p id="libs-std-var-char-homekey"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_HOMEKEY</strong> = <code class="docutils literal notranslate"><span class="pre">-8</span></code> <a class="reference internal" href="#libs-std-var-char-homekey"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-char-endkey"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_ENDKEY</strong> = <code class="docutils literal notranslate"><span class="pre">-160000</span></code> <a class="reference internal" href="#libs-std-var-char-endkey"><span class="std std-ref">🔗</span></a></p>
+<p id="libs-std-var-char-endkey"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_ENDKEY</strong> = <code class="docutils literal notranslate"><span class="pre">-16</span></code> <a class="reference internal" href="#libs-std-var-char-endkey"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-char-pageup"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_PAGEUP</strong> = <code class="docutils literal notranslate"><span class="pre">-320000</span></code> <a class="reference internal" href="#libs-std-var-char-pageup"><span class="std std-ref">🔗</span></a></p>
+<p id="libs-std-var-char-pageup"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_PAGEUP</strong> = <code class="docutils literal notranslate"><span class="pre">-32</span></code> <a class="reference internal" href="#libs-std-var-char-pageup"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-char-pagedown"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_PAGEDOWN</strong> = <code class="docutils literal notranslate"><span class="pre">-640000</span></code> <a class="reference internal" href="#libs-std-var-char-pagedown"><span class="std std-ref">🔗</span></a></p>
+<p id="libs-std-var-char-pagedown"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_PAGEDOWN</strong> = <code class="docutils literal notranslate"><span class="pre">-64</span></code> <a class="reference internal" href="#libs-std-var-char-pagedown"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-char-arrow-u"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_ARROW_U</strong> = <code class="docutils literal notranslate"><span class="pre">-1280000</span></code> <a class="reference internal" href="#libs-std-var-char-arrow-u"><span class="std std-ref">🔗</span></a></p>
+<p id="libs-std-var-char-arrow-u"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_ARROW_U</strong> = <code class="docutils literal notranslate"><span class="pre">-128</span></code> <a class="reference internal" href="#libs-std-var-char-arrow-u"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-char-arrow-l"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_ARROW_L</strong> = <code class="docutils literal notranslate"><span class="pre">-2560000</span></code> <a class="reference internal" href="#libs-std-var-char-arrow-l"><span class="std std-ref">🔗</span></a></p>
+<p id="libs-std-var-char-arrow-l"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_ARROW_L</strong> = <code class="docutils literal notranslate"><span class="pre">-256</span></code> <a class="reference internal" href="#libs-std-var-char-arrow-l"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-char-arrow-d"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_ARROW_D</strong> = <code class="docutils literal notranslate"><span class="pre">-5120000</span></code> <a class="reference internal" href="#libs-std-var-char-arrow-d"><span class="std std-ref">🔗</span></a></p>
+<p id="libs-std-var-char-arrow-d"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_ARROW_D</strong> = <code class="docutils literal notranslate"><span class="pre">-512</span></code> <a class="reference internal" href="#libs-std-var-char-arrow-d"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-char-arrow-r"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_ARROW_R</strong> = <code class="docutils literal notranslate"><span class="pre">-10240000</span></code> <a class="reference internal" href="#libs-std-var-char-arrow-r"><span class="std std-ref">🔗</span></a></p>
+<p id="libs-std-var-char-arrow-r"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_ARROW_R</strong> = <code class="docutils literal notranslate"><span class="pre">-1024</span></code> <a class="reference internal" href="#libs-std-var-char-arrow-r"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-char-printscreen"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_PRINTSCREEN</strong> = <code class="docutils literal notranslate"><span class="pre">-20480000</span></code> <a class="reference internal" href="#libs-std-var-char-printscreen"><span class="std std-ref">🔗</span></a></p>
+<p id="libs-std-var-char-printscreen"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_PRINTSCREEN</strong> = <code class="docutils literal notranslate"><span class="pre">-2048</span></code> <a class="reference internal" href="#libs-std-var-char-printscreen"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-char-pause"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_PAUSE</strong> = <code class="docutils literal notranslate"><span class="pre">-40960000</span></code> <a class="reference internal" href="#libs-std-var-char-pause"><span class="std std-ref">🔗</span></a></p>
+<p id="libs-std-var-char-pause"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_PAUSE</strong> = <code class="docutils literal notranslate"><span class="pre">-4096</span></code> <a class="reference internal" href="#libs-std-var-char-pause"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-char-none"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> char32 <strong>CHAR_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-char-none"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-key-timer"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>___KEY_TIMER</strong> = <code class="docutils literal notranslate"><span class="pre">255</span></code> <a class="reference internal" href="#libs-std-var-key-timer"><span class="std std-ref">🔗</span></a></p>
-<p>Index of ____STD_GRAM[]</p>
+<p class="classref-comment">Index of ____STD_GRAM[]</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-keyboard-repeat-rate"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>KEYBOARD_REPEAT_RATE</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code> <a class="reference internal" href="#libs-std-var-keyboard-repeat-rate"><span class="std std-ref">🔗</span></a></p>
-<p>frames per keypress. 3 == 1/20 second</p>
+<p class="classref-comment">frames per keypress. 3 == 1/20 second</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-key-a"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>KEY_A</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-std-var-key-a"><span class="std std-ref">🔗</span></a></p>
-<p>Key Constants – !DO NOT MODIFY</p>
+<p class="classref-comment">Key Constants – !DO NOT MODIFY</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-key-b"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>KEY_B</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-std-var-key-b"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -1324,7 +1328,7 @@
 <p id="libs-std-var-key-max"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>KEY_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">127</span></code> <a class="reference internal" href="#libs-std-var-key-max"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-kb-shift-flag"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>KB_SHIFT_FLAG</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-std-var-kb-shift-flag"><span class="std std-ref">🔗</span></a></p>
-<p>Key Modifier Constants – DO NOT MODIFY!</p>
+<p class="classref-comment">Key Modifier Constants – DO NOT MODIFY!</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-std-var-kb-ctrl-flag"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>KB_CTRL_FLAG</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-std-var-kb-ctrl-flag"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -1358,12 +1362,12 @@
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
 <p class="classref-method" id="libs-std-fun-checkkeytochar">char32 <strong>CheckKeyToChar</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> key) <a class="reference internal" href="#libs-std-fun-checkkeytochar"><span class="std std-ref">🔗</span></a></p>
-<p>const int SFX_KEYPRESS = 58; //Do we want this in the header?
+<p class="classref-comment">const int SFX_KEYPRESS = 58; //Do we want this in the header?
 Checks if a key was pressed. If it was, it returns its char value.
 Returns CHAR_NONE / false if key was not pressed.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-readkey">bool <strong>ReadKey</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> key) <a class="reference internal" href="#libs-std-fun-readkey"><span class="std std-ref">🔗</span></a></p>
-<p>These functions are meant to return ReadKey and Keypress, while setting the appropriate
+<p class="classref-comment">These functions are meant to return ReadKey and Keypress, while setting the appropriate
 input blockers. I would like to add bool Input-&gt;ReadingKeyboard, which while true, stops
 key presses from being read as joystick inputs.</p>
 <p>This should be a ZScript function, as Input-&gt;ReadKey() -Z</p>
@@ -1373,7 +1377,7 @@ key presses from being read as joystick inputs.</p>
 <p class="classref-method" id="libs-std-fun-getkeypress">char32 <strong>GetKeyPress</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> key) <a class="reference internal" href="#libs-std-fun-getkeypress"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-pressshift">bool <strong>PressShift</strong>() <a class="reference internal" href="#libs-std-fun-pressshift"><span class="std std-ref">🔗</span></a></p>
-<p>Is this safe? Should we return 0, which is null?
+<p class="classref-comment">Is this safe? Should we return 0, which is null?
 Returns modifier keys</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-presscontrol">bool <strong>PressControl</strong>() <a class="reference internal" href="#libs-std-fun-presscontrol"><span class="std std-ref">🔗</span></a></p>
@@ -1403,20 +1407,20 @@ Returns modifier keys</p>
 <p class="classref-method" id="libs-std-fun-pressaltgr">bool <strong>PressAltGR</strong>() <a class="reference internal" href="#libs-std-fun-pressaltgr"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-presslinuxmenu">bool <strong>PressLinuxMenu</strong>() <a class="reference internal" href="#libs-std-fun-presslinuxmenu"><span class="std std-ref">🔗</span></a></p>
-<p>Is this Linux only?</p>
+<p class="classref-comment">Is this Linux only?</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-fkey">bool <strong>FKey</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> f) <a class="reference internal" href="#libs-std-fun-fkey"><span class="std std-ref">🔗</span></a></p>
-<p>Note that these keys are used by the ZC Ui. You can read them this way, but you should not expect
+<p class="classref-comment">Note that these keys are used by the ZC Ui. You can read them this way, but you should not expect
 a user to utilise them, for input, without some kind of interupt system.
 Input-&gt;DisableKey[] can be used to disable F keys, aside from F7,F8,F9. -V</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-esckey">bool <strong>EscKey</strong>() <a class="reference internal" href="#libs-std-fun-esckey"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-keytochar">char32 <strong>KeyToChar</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> key) <a class="reference internal" href="#libs-std-fun-keytochar"><span class="std std-ref">🔗</span></a></p>
-<p>converts a key to its proper char (int, in ZScript).</p>
+<p class="classref-comment">converts a key to its proper char (int, in ZScript).</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-keytochar-2">char32 <strong>KeyToChar</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> key, bool shifted) <a class="reference internal" href="#libs-std-fun-keytochar-2"><span class="std std-ref">🔗</span></a></p>
-<p>bool caps ==true : caps acts as shift, == false, standard</p>
+<p class="classref-comment">bool caps ==true : caps acts as shift, == false, standard</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="libs-std-fun-keytochar-3">char32 <strong>KeyToChar</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> key, bool shifted, bool caps) <a class="reference internal" href="#libs-std-fun-keytochar-3"><span class="std std-ref">🔗</span></a></p>
 </section>

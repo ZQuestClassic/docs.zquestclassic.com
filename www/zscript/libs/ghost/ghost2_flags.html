@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../std/cfg.html">std.cfg</a></li>
@@ -564,7 +568,7 @@
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
 <p id="libs-ghost-var-ghf-knockback"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GHF_KNOCKBACK</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-ghf-knockback"><span class="std std-ref">🔗</span></a></p>
-<p>ghost.zh
+<p class="classref-comment">ghost.zh
 Version 2.8.15
 Old flags - 16 bits, can be ORed together</p>
 <hr class="classref-item-separator docutils" />
@@ -599,12 +603,12 @@ Old flags - 16 bits, can be ORed together</p>
 <p id="libs-ghost-var-ghf-full-tile-movement"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GHF_FULL_TILE_MOVEMENT</strong> = <code class="docutils literal notranslate"><span class="pre">32768</span></code> <a class="reference internal" href="#libs-ghost-var-ghf-full-tile-movement"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ghf-normal"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GHF_NORMAL</strong> = <code class="docutils literal notranslate"><span class="pre">89</span></code> <a class="reference internal" href="#libs-ghost-var-ghf-normal"><span class="std std-ref">🔗</span></a></p>
-<p>Combined old flags</p>
+<p class="classref-comment">Combined old flags</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ghf-ignore-all-terrain"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GHF_IGNORE_ALL_TERRAIN</strong> = <code class="docutils literal notranslate"><span class="pre">7168</span></code> <a class="reference internal" href="#libs-ghost-var-ghf-ignore-all-terrain"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ghf-flying-enemy"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GHF_FLYING_ENEMY</strong> = <code class="docutils literal notranslate"><span class="pre">65536</span></code> <a class="reference internal" href="#libs-ghost-var-ghf-flying-enemy"><span class="std std-ref">🔗</span></a></p>
-<p>New flags - Set individually, identified as new by 17th bit</p>
+<p class="classref-comment">New flags - Set individually, identified as new by 17th bit</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ghf-ignore-no-enemy"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GHF_IGNORE_NO_ENEMY</strong> = <code class="docutils literal notranslate"><span class="pre">65537</span></code> <a class="reference internal" href="#libs-ghost-var-ghf-ignore-no-enemy"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -615,7 +619,7 @@ Old flags - 16 bits, can be ORed together</p>
 <p id="libs-ghost-var-ghf-static-shadow"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GHF_STATIC_SHADOW</strong> = <code class="docutils literal notranslate"><span class="pre">65540</span></code> <a class="reference internal" href="#libs-ghost-var-ghf-static-shadow"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ghfi-got-hit"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHFI_GOT_HIT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-ghfi-got-hit"><span class="std std-ref">🔗</span></a></p>
-<p>Internal enemy flags</p>
+<p class="classref-comment">Internal enemy flags</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-ghfi-was-frozen"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHFI_WAS_FROZEN</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-ghost-var-ghfi-was-frozen"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -628,7 +632,7 @@ Old flags - 16 bits, can be ORed together</p>
 <p id="libs-ghost-var-ghfi-hit-link"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHFI_HIT_LINK</strong> = <code class="docutils literal notranslate"><span class="pre">32</span></code> <a class="reference internal" href="#libs-ghost-var-ghfi-hit-link"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-ghost-var-gh-unset-flags"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_UNSET_FLAGS</strong> = <code class="docutils literal notranslate"><span class="pre">32</span></code> <a class="reference internal" href="#libs-ghost-var-gh-unset-flags"><span class="std std-ref">🔗</span></a></p>
-<p>AND to unset flags that last one frame</p>
+<p class="classref-comment">AND to unset flags that last one frame</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">

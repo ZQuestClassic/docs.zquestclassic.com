@@ -44,7 +44,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/classes/paldata';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="player" href="player.html" />
+    <link rel="next" title="portal" href="portal.html" />
     <link rel="prev" title="npcdata" href="npcdata.html" />
     <link href="../../_static/main.css" rel="stylesheet" type="text/css">
 
@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="npcdata.html">npcdata</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
@@ -447,13 +451,13 @@
 <tr class="row-odd"><td><p>rgb[]</p></td>
 <td><p><a class="reference internal" href="#classes-paldata-var-color"><span class="std std-ref">Color</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-paldata-var-r"><span class="std std-ref">R</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-paldata-var-g"><span class="std std-ref">G</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-paldata-var-b"><span class="std std-ref">B</span></a></p></td>
 </tr>
 </tbody>
@@ -537,22 +541,22 @@
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
 <p id="classes-paldata-var-color">rgb[] <strong>Color</strong>  <a class="reference internal" href="#classes-paldata-var-color"><span class="std std-ref">🔗</span></a></p>
-<p>Access colors of the paldata as PalData::rgb. Reading an invalid color
+<p class="classref-comment">Access colors of the paldata as <code class="docutils literal notranslate"><span class="pre">PalData::rgb</span></code>. Reading an invalid color
 will return INVALID_COLOR (-1). To write a color as invalid, use
 ClearColor() instead.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-paldata-var-r"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>R</strong>  <a class="reference internal" href="#classes-paldata-var-r"><span class="std std-ref">🔗</span></a></p>
-<p>Access the Red values of the paldata, ranging from 0-255. Reading an
+<p id="classes-paldata-var-r"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>R</strong>  <a class="reference internal" href="#classes-paldata-var-r"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Access the Red values of the paldata, ranging from 0-255. Reading an
 invalid color will return -1. To write a color as invalid, use
 ClearColor() instead.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-paldata-var-g"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>G</strong>  <a class="reference internal" href="#classes-paldata-var-g"><span class="std std-ref">🔗</span></a></p>
-<p>Access the Green values of the paldata, ranging from 0-255. Reading an
+<p id="classes-paldata-var-g"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>G</strong>  <a class="reference internal" href="#classes-paldata-var-g"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Access the Green values of the paldata, ranging from 0-255. Reading an
 invalid color will return -1. To write a color as invalid, use
 ClearColor() instead.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-paldata-var-b"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>B</strong>  <a class="reference internal" href="#classes-paldata-var-b"><span class="std std-ref">🔗</span></a></p>
-<p>Access the Blue values of the paldata, ranging from 0-255. Reading an
+<p id="classes-paldata-var-b"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>B</strong>  <a class="reference internal" href="#classes-paldata-var-b"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">Access the Blue values of the paldata, ranging from 0-255. Reading an
 invalid color will return -1. To write a color as invalid, use
 ClearColor() instead.</p>
 </section>
@@ -560,92 +564,92 @@ ClearColor() instead.</p>
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
 <p class="classref-method" id="classes-paldata-fun-loadlevelpalette"><abbr title="No return value.">void</abbr> <strong>LoadLevelPalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-loadlevelpalette"><span class="std std-ref">🔗</span></a></p>
-<p>Loads a level’s palette to the paldata.</p>
+<p class="classref-comment">Loads a level’s palette to the paldata.</p>
 <p>CSets will be arranged as they appear on the main palette, so CSet 2
 starts at index 0x20, ect.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-loadspritepalette"><abbr title="No return value.">void</abbr> <strong>LoadSpritePalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-loadspritepalette"><span class="std std-ref">🔗</span></a></p>
-<p>Loads a page of sprite palettes to the paldata.</p>
+<p class="classref-comment">Loads a page of sprite palettes to the paldata.</p>
 <p>Currently only values of 0 and 1 are valid.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-loadmainpalette"><abbr title="No return value.">void</abbr> <strong>LoadMainPalette</strong>() <a class="reference internal" href="#classes-paldata-fun-loadmainpalette"><span class="std std-ref">🔗</span></a></p>
-<p>Loads the main palette to the paldata.</p>
+<p class="classref-comment">Loads the main palette to the paldata.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-loadcyclepalette"><abbr title="No return value.">void</abbr> <strong>LoadCyclePalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-loadcyclepalette"><span class="std std-ref">🔗</span></a></p>
-<p>Loads the cycle/dark room csets from a level palette to the paldata.</p>
+<p class="classref-comment">Loads the cycle/dark room csets from a level palette to the paldata.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-loadbitmappalette"><abbr title="No return value.">void</abbr> <strong>LoadBitmapPalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-loadbitmappalette"><span class="std std-ref">🔗</span></a></p>
-<p>Loads the palette from an image. Currently only BMP, PCX, and TGA are
+<p class="classref-comment">Loads the palette from an image. Currently only BMP, PCX, and TGA are
 supported.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-writelevelpalette"><abbr title="No return value.">void</abbr> <strong>WriteLevelPalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-writelevelpalette"><span class="std std-ref">🔗</span></a></p>
-<p>Writes the paldata to a level palette. Empty color indices will be
+<p class="classref-comment">Writes the paldata to a level palette. Empty color indices will be
 skipped.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-writelevelcset"><abbr title="No return value.">void</abbr> <strong>WriteLevelCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#classes-paldata-fun-writelevelcset"><span class="std std-ref">🔗</span></a></p>
-<p>Writes a cset of the paldata to a level palette. Empty color indices will
+<p class="classref-comment">Writes a cset of the paldata to a level palette. Empty color indices will
 be skipped.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-writespritepalette"><abbr title="No return value.">void</abbr> <strong>WriteSpritePalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-writespritepalette"><span class="std std-ref">🔗</span></a></p>
-<p>Writes the paldata to a sprite palette page. Empty color indices will be
+<p class="classref-comment">Writes the paldata to a sprite palette page. Empty color indices will be
 skipped.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-writespritecset"><abbr title="No return value.">void</abbr> <strong>WriteSpriteCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#classes-paldata-fun-writespritecset"><span class="std std-ref">🔗</span></a></p>
-<p>Writes a cset of the paldata to a sprite palette page. Empty color
+<p class="classref-comment">Writes a cset of the paldata to a sprite palette page. Empty color
 indices will be skipped.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-writemainpalette"><abbr title="No return value.">void</abbr> <strong>WriteMainPalette</strong>() <a class="reference internal" href="#classes-paldata-fun-writemainpalette"><span class="std std-ref">🔗</span></a></p>
-<p>Writes the paldata to the main palette. Empty color indices will be
+<p class="classref-comment">Writes the paldata to the main palette. Empty color indices will be
 skipped.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-writemaincset"><abbr title="No return value.">void</abbr> <strong>WriteMainCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#classes-paldata-fun-writemaincset"><span class="std std-ref">🔗</span></a></p>
-<p>Writes a cset of the paldata to the main palette. Empty color indices
+<p class="classref-comment">Writes a cset of the paldata to the main palette. Empty color indices
 will be skipped.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-writecyclepalette"><abbr title="No return value.">void</abbr> <strong>WriteCyclePalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-writecyclepalette"><span class="std std-ref">🔗</span></a></p>
-<p>Writes the paldata to a level palette’s cycle/dark room csets. Empty
+<p class="classref-comment">Writes the paldata to a level palette’s cycle/dark room csets. Empty
 color indices will be skipped.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-writecyclecset"><abbr title="No return value.">void</abbr> <strong>WriteCycleCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#classes-paldata-fun-writecyclecset"><span class="std std-ref">🔗</span></a></p>
-<p>Writes a cset of the paldata to a level’s cycle/dark room palette.</p>
+<p class="classref-comment">Writes a cset of the paldata to a level’s cycle/dark room palette.</p>
 <p>Empty color indices will be skipped.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-colorvalid">bool <strong>ColorValid</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index) <a class="reference internal" href="#classes-paldata-fun-colorvalid"><span class="std std-ref">🔗</span></a></p>
-<p>Returns true if the color at index is valid.</p>
+<p class="classref-comment">Returns true if the color at index is valid.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-clearcolor"><abbr title="No return value.">void</abbr> <strong>ClearColor</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index) <a class="reference internal" href="#classes-paldata-fun-clearcolor"><span class="std std-ref">🔗</span></a></p>
-<p>Clears the color at index on the paldata. Cleared colors will be skipped
+<p class="classref-comment">Clears the color at index on the paldata. Cleared colors will be skipped
 when writing to a palette.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-clearcset"><abbr title="No return value.">void</abbr> <strong>ClearCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#classes-paldata-fun-clearcset"><span class="std std-ref">🔗</span></a></p>
-<p>Clears an cset on the paldata. Cleared colors will be skipped when
+<p class="classref-comment">Clears an cset on the paldata. Cleared colors will be skipped when
 writing to a palette.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-mix"><abbr title="No return value.">void</abbr> <strong>Mix</strong>(<a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> start, <a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> end, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> percent = <code class="docutils literal notranslate"><span class="pre">0.5</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#classes-paldata-fun-mix"><span class="std std-ref">🔗</span></a></p>
-<p>Interpolates all the colors on a paldata between start and end.</p>
+<p class="classref-comment">Interpolates all the colors on a paldata between start and end.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-mixcset"><abbr title="No return value.">void</abbr> <strong>MixCSet</strong>(<a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> start, <a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> end, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> percent = <code class="docutils literal notranslate"><span class="pre">0.5</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#classes-paldata-fun-mixcset"><span class="std std-ref">🔗</span></a></p>
-<p>Interpolates all the colors on a cset of a paldata between start and end.</p>
+<p class="classref-comment">Interpolates all the colors on a cset of a paldata between start and end.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-copy"><abbr title="No return value.">void</abbr> <strong>Copy</strong>(<a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> target) <a class="reference internal" href="#classes-paldata-fun-copy"><span class="std std-ref">🔗</span></a></p>
-<p>Copies all the colors from this paldata to the target.</p>
+<p class="classref-comment">Copies all the colors from this paldata to the target.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-copycset"><abbr title="No return value.">void</abbr> <strong>CopyCSet</strong>(<a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> target, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> src_cset, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest_cset) <a class="reference internal" href="#classes-paldata-fun-copycset"><span class="std std-ref">🔗</span></a></p>
-<p>Copies all the colors from one cset on this paldata to another on the
+<p class="classref-comment">Copies all the colors from one cset on this paldata to another on the
 target.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-free"><abbr title="No return value.">void</abbr> <strong>Free</strong>() <a class="reference internal" href="#classes-paldata-fun-free"><span class="std std-ref">🔗</span></a></p>
-<p>De-allocates this <cite>paldata</cite> pointer, so that its’ pointer ID may be
+<p class="classref-comment">De-allocates this <code class="docutils literal notranslate"><span class="pre">paldata</span></code> pointer, so that its’ pointer ID may be
 re-used. You may only have a limited number of paldata pointers active at
 a time; freeing them when you are done with them helps not reach the
 limit.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p><strong>Deprecated!</strong> Free() no longer does anything as of ZC 3.0. Objects are now freed automatically.</p>
 </div>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-own"><abbr title="No return value.">void</abbr> <strong>Own</strong>() <a class="reference internal" href="#classes-paldata-fun-own"><span class="std std-ref">🔗</span></a></p>
-<p>Grants ‘Ownership’ of the paldata pointer to the script that calls this
+<p class="classref-comment">Grants ‘Ownership’ of the paldata pointer to the script that calls this
 function. When the script with ‘Ownership’ terminates (at the same time
 its’ local arrays are deallocated), this paldata pointer will
 automatically be ‘Free()’d.</p>
@@ -672,11 +676,11 @@ automatically be ‘Free()’d.</p>
       </div>
     </a>
     <a class="right-next"
-       href="player.html"
+       href="portal.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">player</p>
+        <p class="prev-next-title">portal</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

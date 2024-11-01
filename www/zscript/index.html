@@ -185,10 +185,6 @@
   
 
   
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
-  
 </div>
 
     </header>
@@ -255,10 +251,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="namespaces/Debug.html">Debug</a></li>
@@ -266,10 +264,13 @@
 <li class="toctree-l1"><a class="reference internal" href="namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/bottledata.html">bottledata</a></li>
@@ -290,11 +291,9 @@
 <li class="toctree-l1"><a class="reference internal" href="classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/spritedata.html">spritedata</a></li>
@@ -304,6 +303,7 @@
 <li class="toctree-l1"><a class="reference internal" href="classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="libs/std/cfg.html">std.cfg</a></li>
@@ -437,18 +437,15 @@
                   
   <section id="zscript">
 <h1>ZScript<a class="headerlink" href="#zscript" title="Link to this heading">#</a></h1>
-<section id="globals">
-<h2>Globals<a class="headerlink" href="#globals" title="Link to this heading">#</a></h2>
 <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="global_functions.html">Global functions</a></li>
 </ul>
 </div>
-</section>
-<section id="namespaces">
-<h2>Namespaces<a class="headerlink" href="#namespaces" title="Link to this heading">#</a></h2>
 <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="namespaces/Debug.html">Debug</a></li>
@@ -456,15 +453,15 @@
 <li class="toctree-l1"><a class="reference internal" href="namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
 </div>
-</section>
-<section id="classes">
-<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h2>
 <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/bottledata.html">bottledata</a></li>
@@ -485,11 +482,9 @@
 <li class="toctree-l1"><a class="reference internal" href="classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes/spritedata.html">spritedata</a></li>
@@ -500,10 +495,8 @@
 <li class="toctree-l1"><a class="reference internal" href="classes/websocket.html">websocket</a></li>
 </ul>
 </div>
-</section>
-<section id="libraries">
-<h2>Libraries<a class="headerlink" href="#libraries" title="Link to this heading">#</a></h2>
 <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="libs/std/index.html">std</a></li>
 <li class="toctree-l1"><a class="reference internal" href="libs/ghost/index.html">ghost</a></li>
@@ -513,7 +506,6 @@
 <li class="toctree-l1"><a class="reference internal" href="libs/EmilyMisc/index.html">EmilyMisc</a></li>
 </ul>
 </div>
-</section>
 </section>
 
 
@@ -550,27 +542,6 @@
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-<div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#globals">Globals</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#namespaces">Namespaces</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#libraries">Libraries</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

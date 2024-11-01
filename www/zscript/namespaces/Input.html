@@ -44,7 +44,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/namespaces/Input';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Region" href="Region.html" />
+    <link rel="next" title="Hero" href="Hero.html" />
     <link rel="prev" title="Graphics" href="Graphics.html" />
     <link href="../../_static/main.css" rel="stylesheet" type="text/css">
 
@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Graphics.html">Graphics</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
@@ -456,10 +460,10 @@
 <tr class="row-even"><td><p>bool[]</p></td>
 <td><p><a class="reference internal" href="#namespaces-input-var-key"><span class="std std-ref">Key</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="Could be any type.">untyped</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#namespaces-input-var-mouse"><span class="std std-ref">Mouse</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#namespaces-input-var-keybindings"><span class="std std-ref">KeyBindings</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
@@ -490,56 +494,56 @@
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
 <p id="namespaces-input-var-press">bool[] <strong>Press</strong>  <a class="reference internal" href="#namespaces-input-var-press"><span class="std std-ref">🔗</span></a></p>
-<p>Whether the given button (<cite>CB_</cite> constants) is down (or ‘pressed’).</p>
+<p class="classref-comment">Whether the given button (<code class="docutils literal notranslate"><span class="pre">CB_</span></code> constants) is down (or ‘pressed’).</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-input-var-button">bool[] <strong>Button</strong>  <a class="reference internal" href="#namespaces-input-var-button"><span class="std std-ref">🔗</span></a></p>
-<p>Whether the given button (<cite>CB_</cite> constants) is down (or ‘pressed’).</p>
+<p class="classref-comment">Whether the given button (<code class="docutils literal notranslate"><span class="pre">CB_</span></code> constants) is down (or ‘pressed’).</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-input-var-keypress">bool[] <strong>KeyPress</strong>  <a class="reference internal" href="#namespaces-input-var-keypress"><span class="std std-ref">🔗</span></a></p>
-<p>Returns true if the respective key was just pressed this frame (similar
-to Press, but for keys instead of buttons).</p>
+<p class="classref-comment">Returns true if the respective key was just pressed this frame (similar
+to <a class="reference internal" href="#namespaces-input-var-press"><span class="std std-ref">Press[]</span></a>, but for keys instead of buttons).</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-input-var-key">bool[] <strong>Key</strong>  <a class="reference internal" href="#namespaces-input-var-key"><span class="std std-ref">🔗</span></a></p>
-<p>Returns true if the respective key is down this frame (similar to
-Button, but for keys instead of buttons).</p>
+<p class="classref-comment">Returns true if the respective key is down this frame (similar to
+<a class="reference internal" href="#namespaces-input-var-button"><span class="std std-ref">Button[]</span></a>, but for keys instead of buttons).</p>
 <hr class="classref-item-separator docutils" />
-<p id="namespaces-input-var-mouse"><abbr title="Could be any type.">untyped</abbr> <strong>Mouse</strong>  <a class="reference internal" href="#namespaces-input-var-mouse"><span class="std std-ref">🔗</span></a></p>
+<p id="namespaces-input-var-mouse"><abbr title="Could be any type.">untyped</abbr>[] <strong>Mouse</strong>  <a class="reference internal" href="#namespaces-input-var-mouse"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p id="namespaces-input-var-keybindings"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>KeyBindings</strong>  <a class="reference internal" href="#namespaces-input-var-keybindings"><span class="std std-ref">🔗</span></a></p>
-<p>For each index (using <cite>CB_</cite> constants to access), the keyboard key
-(<cite>KEY_</cite> constants) that is bound to that button.</p>
+<p id="namespaces-input-var-keybindings"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>KeyBindings</strong>  <a class="reference internal" href="#namespaces-input-var-keybindings"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">For each index (using <code class="docutils literal notranslate"><span class="pre">CB_</span></code> constants to access), the keyboard key
+(<code class="docutils literal notranslate"><span class="pre">KEY_</span></code> constants) that is bound to that button.</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-input-var-modifierkeys"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ModifierKeys</strong>  <a class="reference internal" href="#namespaces-input-var-modifierkeys"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the modifier keys as a bitwise flagset.</p>
+<p class="classref-comment">Returns the modifier keys as a bitwise flagset.</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-input-var-disablekey">bool[] <strong>DisableKey</strong>  <a class="reference internal" href="#namespaces-input-var-disablekey"><span class="std std-ref">🔗</span></a></p>
-<p>Whether a given keyboard key (<cite>KEY_</cite> constants) is disabled from having
+<p class="classref-comment">Whether a given keyboard key (<code class="docutils literal notranslate"><span class="pre">KEY_</span></code> constants) is disabled from having
 any in-engine effect.</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-input-var-disablebutton">bool[] <strong>DisableButton</strong>  <a class="reference internal" href="#namespaces-input-var-disablebutton"><span class="std std-ref">🔗</span></a></p>
-<p>Whether a given button (<cite>CB_</cite> constants) is disabled from having any
+<p class="classref-comment">Whether a given button (<code class="docutils literal notranslate"><span class="pre">CB_</span></code> constants) is disabled from having any
 in-engine effect.</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-input-var-joypad"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> bool[] <strong>Joypad</strong>  <a class="reference internal" href="#namespaces-input-var-joypad"><span class="std std-ref">🔗</span></a></p>
-<p>Similar to Press, except that it only returns presses from a joystick
+<p class="classref-comment">Similar to Press, except that it only returns presses from a joystick
 device, not a keyboard.</p>
-<p>Use the <cite>CB_</cite> constants to access this array.</p>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">CB_</span></code> constants to access this array.</p>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-input-var-readkey"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> bool[] <strong>ReadKey</strong>  <a class="reference internal" href="#namespaces-input-var-readkey"><span class="std std-ref">🔗</span></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Deprecated!</strong> Use KeyPress instead!</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Deprecated!</strong> Use <a class="reference internal" href="#namespaces-input-var-keypress"><span class="std std-ref">KeyPress[]</span></a> instead!</p>
 </div>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-input-var-hold">bool[] <strong>Hold</strong>  <a class="reference internal" href="#namespaces-input-var-hold"><span class="std std-ref">🔗</span></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Deprecated!</strong> Use Button instead!</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Deprecated!</strong> Use <a class="reference internal" href="#namespaces-input-var-button"><span class="std std-ref">Button[]</span></a> instead!</p>
 </div>
 <hr class="classref-item-separator docutils" />
 <p id="namespaces-input-var-keyraw">bool[] <strong>KeyRaw</strong>  <a class="reference internal" href="#namespaces-input-var-keyraw"><span class="std std-ref">🔗</span></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p><strong>Deprecated!</strong> Unsafe!</p>
 </div>
 </section>
@@ -565,11 +569,11 @@ device, not a keyboard.</p>
       </div>
     </a>
     <a class="right-next"
-       href="Region.html"
+       href="Hero.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Region</p>
+        <p class="prev-next-title">Hero</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
@@ -476,7 +480,7 @@
 <tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-websocket-fun-send"><span class="std std-ref">Send</span></a>(char32[] buf, <abbr title="ZScript's real integer type.">long</abbr> type = <code class="docutils literal notranslate"><span class="pre">1L</span></code>)</p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="Could be any type.">untyped</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-websocket-fun-receive"><span class="std std-ref">Receive</span></a>()</p></td>
 </tr>
 </tbody>
@@ -499,10 +503,10 @@
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
 <p id="classes-websocket-var-state"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <a class="reference internal" href="#globals-enum-websocketstate"><span class="std std-ref">WebsocketState</span></a> <strong>State</strong>  <a class="reference internal" href="#classes-websocket-var-state"><span class="std std-ref">🔗</span></a></p>
-<p>Returns the current state of the socket.</p>
+<p class="classref-comment">Returns the current state of the socket.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-websocket-var-hasmessage"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> bool <strong>HasMessage</strong>  <a class="reference internal" href="#classes-websocket-var-hasmessage"><span class="std std-ref">🔗</span></a></p>
-<p>True if the socket has a message waiting to be received.</p>
+<p class="classref-comment">True if the socket has a message waiting to be received.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-websocket-var-messagetype"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <a class="reference internal" href="#globals-enum-websockettype"><span class="std std-ref">WebsocketType</span></a> <strong>MessageType</strong>  <a class="reference internal" href="#classes-websocket-var-messagetype"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -512,37 +516,37 @@
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
 <p class="classref-method" id="classes-websocket-fun-free"><abbr title="No return value.">void</abbr> <strong>Free</strong>() <a class="reference internal" href="#classes-websocket-fun-free"><span class="std std-ref">🔗</span></a></p>
-<p>DEPRECATED: This no longer does anything - objects are freed
+<p class="classref-comment">DEPRECATED: This no longer does anything - objects are freed
 automatically now.</p>
 <p>See “Object Memory Management” section</p>
 <p>This will deallocate the websocket pointer, so that the pointer ID may be
 re-used.</p>
 <p>There is a limit to how many websocket pointers may be allocated at once,
 so be sure to free them when you are no longer using them.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p><strong>Deprecated!</strong> Free() no longer does anything as of ZC 3.0. Objects are now freed automatically.</p>
 </div>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-websocket-fun-own"><abbr title="No return value.">void</abbr> <strong>Own</strong>() <a class="reference internal" href="#classes-websocket-fun-own"><span class="std std-ref">🔗</span></a></p>
-<p>Grants ‘Ownership’ of the pointer to the currently running script.</p>
-<p>pre-3.0 When the script terminates (at the same time any Local Arrays
+<p class="classref-comment">Grants ‘Ownership’ of the pointer to the currently running script.</p>
+<p>[pre-3.0] When the script terminates (at the same time any Local Arrays
 in the script are cleared), the pointer will be automatically freed.</p>
 <p>See “Object Memory Management” section</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-websocket-fun-geterror"><abbr title="No return value.">void</abbr> <strong>GetError</strong>(char32[] buf) <a class="reference internal" href="#classes-websocket-fun-geterror"><span class="std std-ref">🔗</span></a></p>
-<p>Gets the current socket error message (if any)</p>
+<p class="classref-comment">Gets the current socket error message (if any)</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-websocket-fun-send"><abbr title="No return value.">void</abbr> <strong>Send</strong>(char32[] buf, <abbr title="ZScript's real integer type.">long</abbr> type = <code class="docutils literal notranslate"><span class="pre">1L</span></code>) <a class="reference internal" href="#classes-websocket-fun-send"><span class="std std-ref">🔗</span></a></p>
-<p>Sends a message over the socket.</p>
-<p>‘type’ is a <cite>WEBSOCKET_MESSAGE_TYPE_</cite> constant.</p>
+<p class="classref-comment">Sends a message over the socket.</p>
+<p>‘type’ is a <code class="docutils literal notranslate"><span class="pre">WEBSOCKET_MESSAGE_TYPE_</span></code> constant.</p>
 <ul class="simple">
 <li><p>WEBSOCKET_MESSAGE_TYPE_TEXT: send a string</p></li>
 <li><p>WEBSOCKET_MESSAGE_TYPE_BINARY: send an array</p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-websocket-fun-receive"><abbr title="Could be any type.">untyped</abbr> <strong>Receive</strong>() <a class="reference internal" href="#classes-websocket-fun-receive"><span class="std std-ref">🔗</span></a></p>
-<p>If there’s a message waiting to be received (see HasMessage), returns a
+<p class="classref-method" id="classes-websocket-fun-receive"><abbr title="Could be any type.">untyped</abbr>[] <strong>Receive</strong>() <a class="reference internal" href="#classes-websocket-fun-receive"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">If there’s a message waiting to be received (see <a class="reference internal" href="#classes-websocket-var-hasmessage"><span class="std std-ref">HasMessage</span></a>), returns a
 pointer to the websocket’s internal data array.</p>
 <p>If no message is waiting, returns NULL.</p>
 <p>Calling ‘Receive()’ again will overwrite the contents of this array.</p>

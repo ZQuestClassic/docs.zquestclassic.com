@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../std/cfg.html">std.cfg</a></li>
@@ -786,29 +790,29 @@
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
 <p id="libs-tango-var-tango-style-backdrop-type"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_STYLE_BACKDROP_TYPE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-backdrop-type"><span class="std std-ref">🔗</span></a></p>
-<p>Style-related constants and functions.
+<p class="classref-comment">Style-related constants and functions.
 Style attributes</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-style-backdrop-data"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_STYLE_BACKDROP_DATA</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-backdrop-data"><span class="std std-ref">🔗</span></a></p>
-<p>Complex only</p>
+<p class="classref-comment">Complex only</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-style-backdrop-color"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_STYLE_BACKDROP_COLOR</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-backdrop-color"><span class="std std-ref">🔗</span></a></p>
-<p>Color only</p>
+<p class="classref-comment">Color only</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-style-backdrop-tile"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_STYLE_BACKDROP_TILE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-backdrop-tile"><span class="std std-ref">🔗</span></a></p>
-<p>Frame and tile only</p>
+<p class="classref-comment">Frame and tile only</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-style-backdrop-combo"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_STYLE_BACKDROP_COMBO</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-backdrop-combo"><span class="std std-ref">🔗</span></a></p>
-<p>Frame and combo only</p>
+<p class="classref-comment">Frame and combo only</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-style-backdrop-cset"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_STYLE_BACKDROP_CSET</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-backdrop-cset"><span class="std std-ref">🔗</span></a></p>
-<p>Frame, tile, and combo only</p>
+<p class="classref-comment">Frame, tile, and combo only</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-style-backdrop-width"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_STYLE_BACKDROP_WIDTH</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-backdrop-width"><span class="std std-ref">🔗</span></a></p>
-<p>Image and color only</p>
+<p class="classref-comment">Image and color only</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-style-backdrop-height"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_STYLE_BACKDROP_HEIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-backdrop-height"><span class="std std-ref">🔗</span></a></p>
-<p>Image and color only</p>
+<p class="classref-comment">Image and color only</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-style-text-font"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_STYLE_TEXT_FONT</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-text-font"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -821,16 +825,16 @@ Style attributes</p>
 <p id="libs-tango-var-tango-style-text-height"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_STYLE_TEXT_HEIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-text-height"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-style-text-cset"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_STYLE_TEXT_CSET</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-text-cset"><span class="std std-ref">🔗</span></a></p>
-<p>Default</p>
+<p class="classref-comment">Default</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-style-text-color"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_STYLE_TEXT_COLOR</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-text-color"><span class="std std-ref">🔗</span></a></p>
-<p>Default (built-in fonts)</p>
+<p class="classref-comment">Default (built-in fonts)</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-style-text-speed"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_STYLE_TEXT_SPEED</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-text-speed"><span class="std std-ref">🔗</span></a></p>
-<p>Default</p>
+<p class="classref-comment">Default</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-style-text-sfx"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_STYLE_TEXT_SFX</strong> = <code class="docutils literal notranslate"><span class="pre">13</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-text-sfx"><span class="std std-ref">🔗</span></a></p>
-<p>Default</p>
+<p class="classref-comment">Default</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-style-text-end-sfx"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_STYLE_TEXT_END_SFX</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-text-end-sfx"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -903,14 +907,14 @@ Style attributes</p>
 <p id="libs-tango-var-tango-sizeof-style"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__TANGO_SIZEOF_STYLE</strong> = <code class="docutils literal notranslate"><span class="pre">48</span></code> <a class="reference internal" href="#libs-tango-var-tango-sizeof-style"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-style-alt-cset"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__TANGO_STYLE_ALT_CSET</strong> = <code class="docutils literal notranslate"><span class="pre">35</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-alt-cset"><span class="std std-ref">🔗</span></a></p>
-<p>Add 1-4 to get the corresponding value</p>
+<p class="classref-comment">Add 1-4 to get the corresponding value</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-style-alt-color"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__TANGO_STYLE_ALT_COLOR</strong> = <code class="docutils literal notranslate"><span class="pre">39</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-alt-color"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-style-alt-offset"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__TANGO_STYLE_ALT_OFFSET</strong> = <code class="docutils literal notranslate"><span class="pre">43</span></code> <a class="reference internal" href="#libs-tango-var-tango-style-alt-offset"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-flag-enable-speedup"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_FLAG_ENABLE_SPEEDUP</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-tango-var-tango-flag-enable-speedup"><span class="std std-ref">🔗</span></a></p>
-<p>Style flags</p>
+<p class="classref-comment">Style flags</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-flag-enable-super-speed"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_FLAG_ENABLE_SUPER_SPEED</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-tango-var-tango-flag-enable-super-speed"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -931,7 +935,7 @@ Style attributes</p>
 <p id="libs-tango-var-tango-flag-freeze-screen"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_FLAG_FREEZE_SCREEN</strong> = <code class="docutils literal notranslate"><span class="pre">512</span></code> <a class="reference internal" href="#libs-tango-var-tango-flag-freeze-screen"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-backdrop-clear"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_BACKDROP_CLEAR</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-tango-var-tango-backdrop-clear"><span class="std std-ref">🔗</span></a></p>
-<p>Backdrop types</p>
+<p class="classref-comment">Backdrop types</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-backdrop-color"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_BACKDROP_COLOR</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-tango-var-tango-backdrop-color"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -948,7 +952,7 @@ Style attributes</p>
 <p id="libs-tango-var-tango-backdrop-complex"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_BACKDROP_COMPLEX</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code> <a class="reference internal" href="#libs-tango-var-tango-backdrop-complex"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-draw-tile"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_DRAW_TILE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-tango-var-tango-draw-tile"><span class="std std-ref">🔗</span></a></p>
-<p>Complex frame drawing constants</p>
+<p class="classref-comment">Complex frame drawing constants</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-draw-tile-trans"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_DRAW_TILE_TRANS</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-tango-var-tango-draw-tile-trans"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -969,7 +973,7 @@ Style attributes</p>
 <p id="libs-tango-var-tango-draw-end"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_DRAW_END</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-tango-var-tango-draw-end"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-tile-id"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_TILE_ID</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-tango-var-tango-tile-id"><span class="std std-ref">🔗</span></a></p>
-<p>Used for both tiles and combos</p>
+<p class="classref-comment">Used for both tiles and combos</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-tango-var-tango-tile-cset"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TANGO_TILE_CSET</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-tango-var-tango-tile-cset"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />

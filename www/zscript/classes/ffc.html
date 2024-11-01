@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
@@ -478,7 +482,7 @@
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-ffc-var-link"><span class="std std-ref">Link</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="Could be any type.">untyped</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-ffc-var-initd"><span class="std std-ref">InitD</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
@@ -529,46 +533,46 @@
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
 <p id="classes-ffc-var-data"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Data</strong>  <a class="reference internal" href="#classes-ffc-var-data"><span class="std std-ref">🔗</span></a></p>
-<p>The combo used by the FFC for its visuals and type.</p>
+<p class="classref-comment">The combo used by the FFC for its visuals and type.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-ffc-var-script"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Script</strong>  <a class="reference internal" href="#classes-ffc-var-script"><span class="std std-ref">🔗</span></a></p>
-<p>The FFC script ID running on this FFC.</p>
+<p class="classref-comment">The FFC script ID running on this FFC.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-ffc-var-delay"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Delay</strong>  <a class="reference internal" href="#classes-ffc-var-delay"><span class="std std-ref">🔗</span></a></p>
-<p>The time in frames before the FFC will begin moving.</p>
+<p class="classref-comment">The time in frames before the FFC will begin moving.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-ffc-var-vx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Vx</strong>  <a class="reference internal" href="#classes-ffc-var-vx"><span class="std std-ref">🔗</span></a></p>
-<p>X velocity.</p>
+<p class="classref-comment">X velocity.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-ffc-var-vy"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Vy</strong>  <a class="reference internal" href="#classes-ffc-var-vy"><span class="std std-ref">🔗</span></a></p>
-<p>Y velocity.</p>
+<p class="classref-comment">Y velocity.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-ffc-var-ax"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Ax</strong>  <a class="reference internal" href="#classes-ffc-var-ax"><span class="std std-ref">🔗</span></a></p>
-<p>X acceleration.</p>
+<p class="classref-comment">X acceleration.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-ffc-var-ay"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Ay</strong>  <a class="reference internal" href="#classes-ffc-var-ay"><span class="std std-ref">🔗</span></a></p>
-<p>Y acceleration.</p>
+<p class="classref-comment">Y acceleration.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-ffc-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-ffc-var-flags"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-ffc-var-effectwidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EffectWidth</strong>  <a class="reference internal" href="#classes-ffc-var-effectwidth"><span class="std std-ref">🔗</span></a></p>
-<p>The hitbox width, in pixels (1 to 64), of the FFC. Unless the FFC is
-ffc::Flags, the type of its combo will affect this area. NOTE: Not all
+<p class="classref-comment">The hitbox width, in pixels (1 to 64), of the FFC. Unless the FFC is
+<a class="reference internal" href="#classes-ffc-var-flags"><span class="std std-ref">ffc::Flags[]</span></a>, the type of its combo will affect this area. NOTE: Not all
 combo types function when placed on FFCs.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-ffc-var-effectheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EffectHeight</strong>  <a class="reference internal" href="#classes-ffc-var-effectheight"><span class="std std-ref">🔗</span></a></p>
-<p>The hitbox height, in pixels (1 to 64), of the FFC. Unless the FFC is
-ffc::Flags, the type of its combo will affect this area. NOTE: Not all
+<p class="classref-comment">The hitbox height, in pixels (1 to 64), of the FFC. Unless the FFC is
+<a class="reference internal" href="#classes-ffc-var-flags"><span class="std std-ref">ffc::Flags[]</span></a>, the type of its combo will affect this area. NOTE: Not all
 combo types function when placed on FFCs.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-ffc-var-link"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Link</strong>  <a class="reference internal" href="#classes-ffc-var-link"><span class="std std-ref">🔗</span></a></p>
-<p>Represents the ID of another FFC this one is ‘linked’ to.</p>
+<p class="classref-comment">Represents the ID of another FFC this one is ‘linked’ to.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-ffc-var-initd"><abbr title="Could be any type.">untyped</abbr> <strong>InitD</strong>  <a class="reference internal" href="#classes-ffc-var-initd"><span class="std std-ref">🔗</span></a></p>
-<p>The 8 InitD[] parameters for the FFC’s script.</p>
+<p id="classes-ffc-var-initd"><abbr title="Could be any type.">untyped</abbr>[] <strong>InitD</strong>  <a class="reference internal" href="#classes-ffc-var-initd"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">The 8 InitD[] parameters for the FFC’s script.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-ffc-var-id"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ID</strong>  <a class="reference internal" href="#classes-ffc-var-id"><span class="std std-ref">🔗</span></a></p>
-<p>the screen index of the FFC.</p>
+<p class="classref-comment">the screen index of the FFC.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-ffc-var-lastchangerx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LastChangerX</strong>  <a class="reference internal" href="#classes-ffc-var-lastchangerx"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -578,28 +582,28 @@ combo types function when placed on FFCs.</p>
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
 <p class="classref-method" id="classes-ffc-fun-own"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="bitmap.html#classes-bitmap"><span class="std std-ref">bitmap</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own"><span class="std std-ref">🔗</span></a></p>
-<p>Grants ‘Ownership’ of the parameter object to the ffc.</p>
+<p class="classref-comment">Grants ‘Ownership’ of the parameter object to the ffc.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-ffc-fun-own-2"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="paldata.html#classes-paldata"><span class="std std-ref">paldata</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own-2"><span class="std std-ref">🔗</span></a></p>
-<p>Grants ‘Ownership’ of the parameter object to the ffc.</p>
+<p class="classref-comment">Grants ‘Ownership’ of the parameter object to the ffc.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-ffc-fun-own-3"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="file.html#classes-file"><span class="std std-ref">file</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own-3"><span class="std std-ref">🔗</span></a></p>
-<p>Grants ‘Ownership’ of the parameter object to the ffc.</p>
+<p class="classref-comment">Grants ‘Ownership’ of the parameter object to the ffc.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-ffc-fun-own-4"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="directory.html#classes-directory"><span class="std std-ref">directory</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own-4"><span class="std std-ref">🔗</span></a></p>
-<p>Grants ‘Ownership’ of the parameter object to the ffc.</p>
+<p class="classref-comment">Grants ‘Ownership’ of the parameter object to the ffc.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-ffc-fun-own-5"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="stack.html#classes-stack"><span class="std std-ref">stack</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own-5"><span class="std std-ref">🔗</span></a></p>
-<p>Grants ‘Ownership’ of the parameter object to the ffc.</p>
+<p class="classref-comment">Grants ‘Ownership’ of the parameter object to the ffc.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-ffc-fun-own-6"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="randgen.html#classes-randgen"><span class="std std-ref">randgen</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own-6"><span class="std std-ref">🔗</span></a></p>
-<p>Grants ‘Ownership’ of the parameter object to the ffc.</p>
+<p class="classref-comment">Grants ‘Ownership’ of the parameter object to the ffc.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-ffc-fun-ownarray"><abbr title="No return value.">void</abbr> <strong>OwnArray</strong>(<abbr title="Could be any type.">untyped</abbr> array) <a class="reference internal" href="#classes-ffc-fun-ownarray"><span class="std std-ref">🔗</span></a></p>
-<p>Grants ‘Ownership’ of the parameter object to the ffc.</p>
+<p class="classref-comment">Grants ‘Ownership’ of the parameter object to the ffc.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-ffc-fun-ownobject"><abbr title="No return value.">void</abbr> <strong>OwnObject</strong>(<abbr title="Could be any type.">untyped</abbr> object) <a class="reference internal" href="#classes-ffc-fun-ownobject"><span class="std std-ref">🔗</span></a></p>
-<p>Grants ‘Ownership’ of the parameter object to the ffc.</p>
+<p class="classref-comment">Grants ‘Ownership’ of the parameter object to the ffc.</p>
 </section>
 </section>
 

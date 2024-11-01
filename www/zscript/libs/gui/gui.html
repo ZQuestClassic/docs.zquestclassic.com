@@ -255,10 +255,12 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../global_constants.html">Global constants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../global_functions.html">Global functions</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Audio.html">Audio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Debug.html">Debug</a></li>
@@ -266,10 +268,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Graphics.html">Graphics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Hero.html">Hero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../namespaces/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/Text.html">Text</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../namespaces/ZInfo.html">ZInfo</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bitmap.html">bitmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/bottledata.html">bottledata</a></li>
@@ -290,11 +295,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/player.html">player</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/portal.html">portal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/randgen.html">randgen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/savedportal.html">savedportal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../classes/screendata.html">screendata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/shopdata.html">shopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/sprite.html">sprite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/spritedata.html">spritedata</a></li>
@@ -304,6 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenwidget.html">subscreenwidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/websocket.html">websocket</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../std/cfg.html">std.cfg</a></li>
@@ -495,7 +499,7 @@
 <tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-gui-var-gui-data-size"><span class="std std-ref">GUI_DATA_SIZE</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="Could be any type.">untyped</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="Could be any type.">untyped</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#libs-gui-var-gui-data"><span class="std std-ref">GUI_Data</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
@@ -520,17 +524,17 @@
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
 <p id="libs-gui-var-gui-draw-layer"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GUI_DRAW_LAYER</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code> <a class="reference internal" href="#libs-gui-var-gui-draw-layer"><span class="std std-ref">🔗</span></a></p>
-<p>Various GUI stuff.</p>
+<p class="classref-comment">Various GUI stuff.</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-gui-var-gui-cursor-tile"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GUI_CURSOR_TILE</strong> = <code class="docutils literal notranslate"><span class="pre">20500</span></code> <a class="reference internal" href="#libs-gui-var-gui-cursor-tile"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-gui-var-gui-cursor-cset"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GUI_CURSOR_CSET</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code> <a class="reference internal" href="#libs-gui-var-gui-cursor-cset"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-gui-var-widget-type"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WIDGET_TYPE</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code> <a class="reference internal" href="#libs-gui-var-widget-type"><span class="std std-ref">🔗</span></a></p>
-<p>0-7 are for widget use - increase everything down to GUI_Data[] to add more</p>
+<p class="classref-comment">0-7 are for widget use - increase everything down to GUI_Data[] to add more</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-gui-var-widget-x"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WIDGET_X</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code> <a class="reference internal" href="#libs-gui-var-widget-x"><span class="std std-ref">🔗</span></a></p>
-<p>X and Y are relative to parent if possible…</p>
+<p class="classref-comment">X and Y are relative to parent if possible…</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-gui-var-widget-y"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WIDGET_Y</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code> <a class="reference internal" href="#libs-gui-var-widget-y"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -539,16 +543,16 @@
 <p id="libs-gui-var-widget-height"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WIDGET_HEIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code> <a class="reference internal" href="#libs-gui-var-widget-height"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-gui-var-widget-parent"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WIDGET_PARENT</strong> = <code class="docutils literal notranslate"><span class="pre">13</span></code> <a class="reference internal" href="#libs-gui-var-widget-parent"><span class="std std-ref">🔗</span></a></p>
-<p>ID of the parent of this widget</p>
+<p class="classref-comment">ID of the parent of this widget</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-gui-var-widget-first-child"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WIDGET_FIRST_CHILD</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code> <a class="reference internal" href="#libs-gui-var-widget-first-child"><span class="std std-ref">🔗</span></a></p>
-<p>ID of the first child of this widget</p>
+<p class="classref-comment">ID of the first child of this widget</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-gui-var-widget-next-child"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WIDGET_NEXT_CHILD</strong> = <code class="docutils literal notranslate"><span class="pre">15</span></code> <a class="reference internal" href="#libs-gui-var-widget-next-child"><span class="std std-ref">🔗</span></a></p>
-<p>ID of the next child of this widget’s parent</p>
+<p class="classref-comment">ID of the next child of this widget’s parent</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-gui-var-widget-prev-child"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WIDGET_PREV_CHILD</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code> <a class="reference internal" href="#libs-gui-var-widget-prev-child"><span class="std std-ref">🔗</span></a></p>
-<p>ID of the previous child of this widget’s parent</p>
+<p class="classref-comment">ID of the previous child of this widget’s parent</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-gui-var-widget-flags"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WIDGET_FLAGS</strong> = <code class="docutils literal notranslate"><span class="pre">17</span></code> <a class="reference internal" href="#libs-gui-var-widget-flags"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -557,10 +561,10 @@
 <p id="libs-gui-var-max-widgets"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MAX_WIDGETS</strong> = <code class="docutils literal notranslate"><span class="pre">1000</span></code> <a class="reference internal" href="#libs-gui-var-max-widgets"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-gui-var-gui-data-size"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GUI_DATA_SIZE</strong> = <code class="docutils literal notranslate"><span class="pre">18000</span></code> <a class="reference internal" href="#libs-gui-var-gui-data-size"><span class="std std-ref">🔗</span></a></p>
-<p>SIZEOF_WIDGET * MAX_WIDGETS</p>
+<p class="classref-comment">SIZEOF_WIDGET * MAX_WIDGETS</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-gui-var-gui-data"><abbr title="Could be any type.">untyped</abbr> <strong>GUI_Data</strong>  <a class="reference internal" href="#libs-gui-var-gui-data"><span class="std std-ref">🔗</span></a></p>
-<p>GUI_DATA_SIZE</p>
+<p id="libs-gui-var-gui-data"><abbr title="Could be any type.">untyped</abbr>[] <strong>GUI_Data</strong>  <a class="reference internal" href="#libs-gui-var-gui-data"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-comment">GUI_DATA_SIZE</p>
 <hr class="classref-item-separator docutils" />
 <p id="libs-gui-var-window-default-bg-color"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WINDOW_DEFAULT_BG_COLOR</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code> <a class="reference internal" href="#libs-gui-var-window-default-bg-color"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
