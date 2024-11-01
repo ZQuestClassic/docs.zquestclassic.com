@@ -257,22 +257,21 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/functions.html">Global functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/constants.html">Global constants</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Audio.html">Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Debug.html">Debug</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/FileSystem.html">FileSystem</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Game.html">Game</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Graphics.html">Graphics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Input.html">Input</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Hero.html">Hero</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Region.html">Region</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Screen.html">Screen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Text.html">Text</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/ZInfo.html">ZInfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Audio.html">Audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Debug.html">Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/FileSystem.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Game.html">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Graphics.html">Graphics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Hero.html">Hero</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Screen.html">Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Text.html">Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/ZInfo.html">ZInfo</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="current nav bd-sidenav">
@@ -444,7 +443,7 @@
                   
   <section id="sprite">
 <span id="classes-sprite"></span><h1>sprite<a class="headerlink" href="#sprite" title="Link to this heading">#</a></h1>
-<p>Inherited by: <a class="reference internal" href="../namespaces/Hero.html#namespaces-hero"><span class="std std-ref">Hero</span></a>, <a class="reference internal" href="eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a>, <a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>, <a class="reference internal" href="itemsprite.html#classes-itemsprite"><span class="std std-ref">itemsprite</span></a>, <a class="reference internal" href="lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a>, <a class="reference internal" href="npc.html#classes-npc"><span class="std std-ref">npc</span></a></p>
+<p>Inherited by: <a class="reference internal" href="../globals/Hero.html#globals-hero"><span class="std std-ref">Hero</span></a>, <a class="reference internal" href="eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a>, <a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>, <a class="reference internal" href="itemsprite.html#classes-itemsprite"><span class="std std-ref">itemsprite</span></a>, <a class="reference internal" href="lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a>, <a class="reference internal" href="npc.html#classes-npc"><span class="std std-ref">npc</span></a></p>
 <p class="classref-comment">Base class for (most) script-exposed engine sprites.</p>
 <section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
@@ -585,80 +584,80 @@
 <p id="classes-sprite-var-fakez"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FakeZ</strong>  <a class="reference internal" href="#classes-sprite-var-fakez"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The position of the sprite on the fake Z axis. This value is treated as a second,
 separate Z axis.</p>
-<p>Sprites are offset upwards by this amount when drawn just like the Z
+<p class="classref-comment">Sprites are offset upwards by this amount when drawn just like the Z
 axis and shadows will draw if applicable.</p>
-<p>However, the sprite’s hitbox is not moved upwards in the Z Axis. Instead,
+<p class="classref-comment">However, the sprite’s hitbox is not moved upwards in the Z Axis. Instead,
 it is moved upwards on the Y axis, mimicking how Vires and Pols Voice
 worked in the original Zelda.</p>
-<p>This value is affected by <a class="reference internal" href="#classes-sprite-var-fakejump"><span class="std std-ref">FakeJump</span></a> instead of <a class="reference internal" href="#classes-sprite-var-jump"><span class="std std-ref">Jump</span></a>.</p>
+<p class="classref-comment">This value is affected by <a class="reference internal" href="#classes-sprite-var-fakejump"><span class="std std-ref">FakeJump</span></a> instead of <a class="reference internal" href="#classes-sprite-var-jump"><span class="std std-ref">Jump</span></a>.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-drawxoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawXOffset</strong>  <a class="reference internal" href="#classes-sprite-var-drawxoffset"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The visual offset, in pixels. Defaults to 0.</p>
-<p><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
+<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-drawyoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawYOffset</strong>  <a class="reference internal" href="#classes-sprite-var-drawyoffset"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The visual offset, in pixels. Defaults to 0.</p>
-<p><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
+<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-drawzoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawZOffset</strong>  <a class="reference internal" href="#classes-sprite-var-drawzoffset"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The Z offset, in pixels.</p>
-<p><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
+<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-rotation"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Rotation</strong>  <a class="reference internal" href="#classes-sprite-var-rotation"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">Rotation of the sprite draw, in degrees.</p>
-<p>Does nothing if the QR ‘Old (Faster) Sprite Drawing’ is enabled.</p>
-<p><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
+<p class="classref-comment">Does nothing if the QR ‘Old (Faster) Sprite Drawing’ is enabled.</p>
+<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-dir"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Dir</strong>  <a class="reference internal" href="#classes-sprite-var-dir"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The direction that the sprite is facing. Used by certain weapon types
 to determine movement, shield deflection and such.</p>
-<p>Valid values: <a class="reference internal" href="../global_constants.html#globals-enum-direction"><span class="std std-ref">Direction</span></a> (<code class="docutils literal notranslate"><span class="pre">DIR_</span></code>).</p>
+<p class="classref-comment">Valid values: <a class="reference internal" href="../globals/constants.html#globals-enum-direction"><span class="std std-ref">Direction</span></a> (<code class="docutils literal notranslate"><span class="pre">DIR_</span></code>).</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-tile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Tile</strong>  <a class="reference internal" href="#classes-sprite-var-tile"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The currently displaying tile of the sprite’s animation. Set by the
 engine each frame if <a class="reference internal" href="#classes-sprite-var-animation"><span class="std std-ref">Animation</span></a> is enabled.</p>
-<p><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: Not used - set <code class="docutils literal notranslate"><span class="pre">ffc-&gt;Data</span></code> to the desired combo instead.</p>
+<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: Not used - set <a class="reference internal" href="ffc.html#classes-ffc-var-data"><span class="std std-ref">ffc::Data</span></a> to the desired combo instead.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-scripttile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ScriptTile</strong>  <a class="reference internal" href="#classes-sprite-var-scripttile"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">If &gt;-1, this tile is displayed by the engine, regardless of the normal engine animation.
 Set back to -1 to restore engine animation.
 Defaults to -1.</p>
-<p><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
+<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-extend"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Extend</strong>  <a class="reference internal" href="#classes-sprite-var-extend"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">If the sprite should be extended (large). Set to 3 to extend, 0
 otherwise.</p>
-<p><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>, <a class="reference internal" href="../namespaces/Hero.html#namespaces-hero"><span class="std std-ref">player</span></a>: Not used.</p>
+<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>, <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>: Not used.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-tilewidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TileWidth</strong>  <a class="reference internal" href="#classes-sprite-var-tilewidth"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The width of the sprite’s graphic, in tiles. Visual only. The upper-left corner is the first tile.</p>
-<p>Must set <a class="reference internal" href="#classes-sprite-var-extend"><span class="std std-ref">Extend</span></a> to 3 to use (except for <code class="docutils literal notranslate"><span class="pre">fcc</span></code>).</p>
-<p>Max value is 20.</p>
-<p><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: max value is 4.
-<a class="reference internal" href="../namespaces/Hero.html#namespaces-hero"><span class="std std-ref">player</span></a>: Not used.</p>
+<p class="classref-comment">Must set <a class="reference internal" href="#classes-sprite-var-extend"><span class="std std-ref">Extend</span></a> to 3 to use (except for <code class="docutils literal notranslate"><span class="pre">fcc</span></code>).</p>
+<p class="classref-comment">Max value is 20.</p>
+<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: max value is 4.
+<a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>: Not used.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-tileheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TileHeight</strong>  <a class="reference internal" href="#classes-sprite-var-tileheight"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The height of the sprite’s graphic, in tiles. Visual only. The upper-left corner is the first tile.</p>
-<p>Must set <a class="reference internal" href="#classes-sprite-var-extend"><span class="std std-ref">Extend</span></a> to 3 to use (except for <code class="docutils literal notranslate"><span class="pre">fcc</span></code>).</p>
-<p>Max value is 20.</p>
-<p><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: max value is 4.
-<a class="reference internal" href="../namespaces/Hero.html#namespaces-hero"><span class="std std-ref">player</span></a>: Not used.</p>
+<p class="classref-comment">Must set <a class="reference internal" href="#classes-sprite-var-extend"><span class="std std-ref">Extend</span></a> to 3 to use (except for <code class="docutils literal notranslate"><span class="pre">fcc</span></code>).</p>
+<p class="classref-comment">Max value is 20.</p>
+<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: max value is 4.
+<a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>: Not used.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-cset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CSet</strong>  <a class="reference internal" href="#classes-sprite-var-cset"><span class="std std-ref">🔗</span></a></p>
-<p class="classref-comment"><a class="reference internal" href="../namespaces/Hero.html#namespaces-hero"><span class="std std-ref">player</span></a>: This changes when the player is hurt and flashing. Writing to this does nothing,
-as the player cset is updated by the engine every frame - use <code class="docutils literal notranslate"><span class="pre">player-&gt;ScriptCSet</span></code> instead.</p>
+<p class="classref-comment"><a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>: This changes when the player is hurt and flashing. Writing to this does nothing,
+as the player cset is updated by the engine every frame - use <a class="reference internal" href="../globals/Hero.html#globals-hero-var-scriptcset"><span class="std std-ref">Hero-&gt;ScriptCSet</span></a> instead.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-scale"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Scale</strong>  <a class="reference internal" href="#classes-sprite-var-scale"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The multiplier for scaling the sprite draw.</p>
-<p>Scale values are a multiplier: 1.5 == 50% larger (150%).
+<p class="classref-comment">Scale values are a multiplier: 1.5 == 50% larger (150%).
 A scale of 0 and a scale of 1 are identical.
 Negative values are undefined.</p>
-<p>Does nothing if the QR ‘Old (Faster) Sprite Drawing’ is enabled.</p>
-<p><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
+<p class="classref-comment">Does nothing if the QR ‘Old (Faster) Sprite Drawing’ is enabled.</p>
+<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-drawstyle"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawStyle</strong>  <a class="reference internal" href="#classes-sprite-var-drawstyle"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The drawing mode to use.</p>
-<p>Valid values: <a class="reference internal" href="#classes-sprite-var-drawstyle"><span class="std std-ref">DrawStyle</span></a> (<code class="docutils literal notranslate"><span class="pre">DS_</span></code>).</p>
+<p class="classref-comment">Valid values: <a class="reference internal" href="#classes-sprite-var-drawstyle"><span class="std std-ref">DrawStyle</span></a> (<code class="docutils literal notranslate"><span class="pre">DS_</span></code>).</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-jump"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Jump</strong>  <a class="reference internal" href="#classes-sprite-var-jump"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">Upward velocity, in pixels per frame. Affected by gravity each frame, if
@@ -674,18 +673,18 @@ lower than the terminal velocity value.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-flip"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Flip</strong>  <a class="reference internal" href="#classes-sprite-var-flip"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">How to flip (or rotate) the sprite.</p>
-<p>Valid values: <a class="reference internal" href="../global_constants.html#globals-enum-transformationtype"><span class="std std-ref">TransformationType</span></a> (<code class="docutils literal notranslate"><span class="pre">FLIP_</span></code> or <code class="docutils literal notranslate"><span class="pre">ROT_</span></code>).</p>
+<p class="classref-comment">Valid values: <a class="reference internal" href="../globals/constants.html#globals-enum-transformationtype"><span class="std std-ref">TransformationType</span></a> (<code class="docutils literal notranslate"><span class="pre">FLIP_</span></code> or <code class="docutils literal notranslate"><span class="pre">ROT_</span></code>).</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-scriptflip"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ScriptFlip</strong>  <a class="reference internal" href="#classes-sprite-var-scriptflip"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">If &gt;-1, this flip value will be used instead of <a class="reference internal" href="#classes-sprite-var-flip"><span class="std std-ref">Flip</span></a>.
 Set back to -1 to restore normal flip.</p>
-<p>Defaults to -1.</p>
+<p class="classref-comment">Defaults to -1.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-animation">bool <strong>Animation</strong>  <a class="reference internal" href="#classes-sprite-var-animation"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">If the engine should animate the sprite’s graphics. If set to false,
 scripts must set <a class="reference internal" href="#classes-sprite-var-tile"><span class="std std-ref">Tile</span></a> to update the sprite’s graphics manually.
 Defaults to true.</p>
-<p><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: Not used.</p>
+<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: Not used.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-hitwidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitWidth</strong>  <a class="reference internal" href="#classes-sprite-var-hitwidth"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The width of the hitbox, in pixels.</p>
@@ -706,17 +705,17 @@ Defaults to true.</p>
 <p class="classref-comment">The timer indicating how many more frames the sprite will fall. If 0, the
 sprite is not falling. Max value of 70, which is the value at the start
 of falling.</p>
-<p><a class="reference internal" href="../namespaces/Hero.html#namespaces-hero"><span class="std std-ref">player</span></a>: Setting <code class="docutils literal notranslate"><span class="pre">Action</span></code> to <a class="reference internal" href="../libs/std/std_constants.html#libs-std-enum-member-la-falling"><span class="std std-ref">LA_FALLING</span></a> also sets this to 70.</p>
+<p class="classref-comment"><a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>: Setting <a class="reference internal" href="../globals/Hero.html#globals-hero-var-action"><span class="std std-ref">Hero-&gt;Action</span></a> to <a class="reference internal" href="../libs/std/std_constants.html#libs-std-enum-member-la-falling"><span class="std std-ref">LA_FALLING</span></a> also sets this to 70.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-fallcombo"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FallCombo</strong>  <a class="reference internal" href="#classes-sprite-var-fallcombo"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The pitfall combo the sprite is falling into, if it is falling.</p>
-<p><a class="reference internal" href="../namespaces/Hero.html#namespaces-hero"><span class="std std-ref">player</span></a>:</p>
-<p>If non-zero, this combo’s attributes will affect things such as if the
+<p class="classref-comment"><a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>:</p>
+<p class="classref-comment">If non-zero, this combo’s attributes will affect things such as if the
 Hero will warp, and how much damage they will take upon finishing
 falling.</p>
-<p>If 0, the Hero will take 1/4 heart of damage, and not warp.</p>
-<p>Setting <code class="docutils literal notranslate"><span class="pre">Action</span></code> to <code class="docutils literal notranslate"><span class="pre">LA_FALLING</span></code> will overwrite this value.</p>
-<p>Setting <a class="reference internal" href="#classes-sprite-var-falling"><span class="std std-ref">Falling</span></a> will overwrite this value.</p>
+<p class="classref-comment">If 0, the Hero will take 1/4 heart of damage, and not warp.</p>
+<p class="classref-comment">Setting <a class="reference internal" href="../globals/Hero.html#globals-hero-var-action"><span class="std std-ref">Hero-&gt;Action</span></a> to <code class="docutils literal notranslate"><span class="pre">LA_FALLING</span></code> will overwrite this value.</p>
+<p class="classref-comment">Setting <a class="reference internal" href="#classes-sprite-var-falling"><span class="std std-ref">Falling</span></a> will overwrite this value.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-moveflags">bool[] <strong>MoveFlags</strong>  <a class="reference internal" href="#classes-sprite-var-moveflags"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The movement flags of the sprite. See <a class="reference internal" href="../libs/std/std_constants.html#libs-std-enum-moveflag"><span class="std std-ref">MoveFlag</span></a> (<code class="docutils literal notranslate"><span class="pre">MV_</span></code>) constants.</p>
@@ -729,7 +728,7 @@ falling.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-switchhooked"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> bool <strong>SwitchHooked</strong>  <a class="reference internal" href="#classes-sprite-var-switchhooked"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">If the sprite is currently being switch-hooked.</p>
-<p>Note: currently not supported for <a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>, <a class="reference internal" href="../namespaces/Hero.html#namespaces-hero"><span class="std std-ref">player</span></a>.</p>
+<p class="classref-comment">Note: currently not supported for <a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>, <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-shadowsprite"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ShadowSprite</strong>  <a class="reference internal" href="#classes-sprite-var-shadowsprite"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The <a class="reference internal" href="spritedata.html#classes-spritedata"><span class="std std-ref">spritedata</span></a> ID to use for the sprite’s shadow.</p>
@@ -750,7 +749,7 @@ of drowning.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-sprite-var-misc"><abbr title="Could be any type.">untyped</abbr>[] <strong>Misc</strong>  <a class="reference internal" href="#classes-sprite-var-misc"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">An array of 32 misc values for scripts to use.</p>
-<p><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: only 16 values.</p>
+<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: only 16 values.</p>
 </section>
 </section>
 

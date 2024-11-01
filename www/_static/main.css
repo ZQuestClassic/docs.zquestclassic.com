@@ -18,7 +18,7 @@ html {
   max-width: 100%; /* default is 88rem */
 }
 
-.classref-enumeration-constant {
+.classref-enumeration-constant, .classref-comment {
     margin-left: 30px;
     margin-bottom: 5px;
 }

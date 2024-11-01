@@ -257,22 +257,21 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/functions.html">Global functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/constants.html">Global constants</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Audio.html">Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Debug.html">Debug</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/FileSystem.html">FileSystem</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Game.html">Game</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Graphics.html">Graphics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Input.html">Input</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Hero.html">Hero</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Region.html">Region</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Screen.html">Screen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Text.html">Text</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/ZInfo.html">ZInfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Audio.html">Audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Debug.html">Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/FileSystem.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Game.html">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Graphics.html">Graphics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Hero.html">Hero</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Screen.html">Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Text.html">Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/ZInfo.html">ZInfo</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="current nav bd-sidenav">
@@ -772,7 +771,7 @@
 <section id="enumerations">
 <h2>Enumerations<a class="headerlink" href="#enumerations" title="Link to this heading">#</a></h2>
 <p id="globals-enum-itemclass">enum <strong>ItemClass</strong>: <a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">🔗</span></a></p>
-<p class="classref-comment">Item class ids, used by [itemdata::Family].</p>
+<p class="classref-comment">Item class ids, used by <a class="reference internal" href="#classes-itemdata-var-family"><span class="std std-ref">itemdata::Family</span></a>.</p>
 <p class="classref-enumeration-constant" id="globals-enum-member-ic-sword"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_SWORD</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
 <p class="classref-enumeration-constant" id="globals-enum-member-ic-brang"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_BRANG</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
 <p class="classref-enumeration-constant" id="globals-enum-member-ic-arrow"><a class="reference internal" href="#globals-enum-itemclass"><span class="std std-ref">ItemClass</span></a> <strong>IC_ARROW</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
@@ -934,7 +933,7 @@ items cannot be “owned” by the player or put on buttons.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-itemdata-var-counter"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Counter</strong>  <a class="reference internal" href="#classes-itemdata-var-counter"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The counter to increase when this item is picked up.</p>
-<p>Valid values: <a class="reference internal" href="../global_constants.html#globals-enum-counterindex"><span class="std std-ref">CounterIndex</span></a> (<code class="docutils literal notranslate"><span class="pre">CR_</span></code>).</p>
+<p class="classref-comment">Valid values: <a class="reference internal" href="../globals/constants.html#globals-enum-counterindex"><span class="std std-ref">CounterIndex</span></a> (<code class="docutils literal notranslate"><span class="pre">CR_</span></code>).</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-itemdata-var-pickupsound"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PickupSound</strong>  <a class="reference internal" href="#classes-itemdata-var-pickupsound"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The sound to play when the item is picked up.</p>
@@ -1037,7 +1036,7 @@ constants to access.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-itemdata-var-lattributes"><abbr title="ZScript's real integer type.">long</abbr>[] <strong>LAttributes</strong>  <a class="reference internal" href="#classes-itemdata-var-lattributes"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The item’s Attributes, accesses as ‘long’ values</p>
-<p>An editor value of ‘1’ will read as ‘1L’, or ‘0.0001’. This allows all
+<p class="classref-comment">An editor value of ‘1’ will read as ‘1L’, or ‘0.0001’. This allows all
 values to “fit”.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-itemdata-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-itemdata-var-flags"><span class="std std-ref">🔗</span></a></p>
@@ -1175,7 +1174,7 @@ fire.</p>
 <p id="classes-itemdata-var-magiccost"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MagicCost</strong>  <a class="reference internal" href="#classes-itemdata-var-magiccost"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The cost of the item, in units. Whenever the item is used, this value is
 decremented from the counter supplied to <a class="reference internal" href="#classes-itemdata-var-costcounter"><span class="std std-ref">CostCounter</span></a>.</p>
-<p>If the item runs for more than one frame, this amount will be decremented
+<p class="classref-comment">If the item runs for more than one frame, this amount will be decremented
 every <a class="reference internal" href="#classes-itemdata-var-costtimer"><span class="std std-ref">CostTimer</span></a> frames.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-itemdata-var-magiccosttimer"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MagicCostTimer</strong>  <a class="reference internal" href="#classes-itemdata-var-magiccosttimer"><span class="std std-ref">🔗</span></a></p>
@@ -1199,26 +1198,25 @@ defaults.</p>
 <p id="classes-itemdata-var-defence"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Defence</strong>  <a class="reference internal" href="#classes-itemdata-var-defence"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The default defence resolution (e.g. OHKO) that the weapon uses
 when it strikes an enemy.</p>
-<p>If &gt; -1, and the enemy had a defence resolution of ‘None’, the default
+<p class="classref-comment">If &gt; -1, and the enemy had a defence resolution of ‘None’, the default
 defense resolution is used in place of ‘None’.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-itemdata-var-range"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Range</strong>  <a class="reference internal" href="#classes-itemdata-var-range"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The distance that the weapon is allowed to travel.</p>
-<p>See <code class="docutils literal notranslate"><span class="pre">lweapon::Distance</span></code></p>
-<p>Not implemented at this time.</p>
+<p class="classref-comment">Not implemented at this time.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-itemdata-var-duration"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Duration</strong>  <a class="reference internal" href="#classes-itemdata-var-duration"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The duration of the weapon.</p>
-<p>See weapon-&gt;Duration.</p>
-<p>Not implemented at this time.</p>
+<p class="classref-comment">See weapon-&gt;Duration.</p>
+<p class="classref-comment">Not implemented at this time.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-itemdata-var-duplicates"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Duplicates</strong>  <a class="reference internal" href="#classes-itemdata-var-duplicates"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The number of extra weapons that this weapon creates.</p>
-<p>Not implemented at this time.</p>
+<p class="classref-comment">Not implemented at this time.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-itemdata-var-drawlayer"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawLayer</strong>  <a class="reference internal" href="#classes-itemdata-var-drawlayer"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The layer used to draw the weapon to the screen.</p>
-<p>Not implemented at this time.</p>
+<p class="classref-comment">Not implemented at this time.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-itemdata-var-rupeecost">bool <strong>RupeeCost</strong>  <a class="reference internal" href="#classes-itemdata-var-rupeecost"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
@@ -1227,11 +1225,11 @@ defense resolution is used in place of ‘None’.</p>
 <p id="classes-itemdata-var-collectflags"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CollectFlags</strong>  <a class="reference internal" href="#classes-itemdata-var-collectflags"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The items (in CSV format, using a SCV list ID) that the weapon created by
 this item, collects on contact.</p>
-<p>Not implemented at this time.</p>
+<p class="classref-comment">Not implemented at this time.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-itemdata-var-weaponmisc"><abbr title="Could be any type.">untyped</abbr>[] <strong>WeaponMisc</strong>  <a class="reference internal" href="#classes-itemdata-var-weaponmisc"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">An array the 32 Misc[] values used by the weapon.</p>
-<p>This may be only partially implemented.</p>
+<p class="classref-comment">This may be only partially implemented.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">

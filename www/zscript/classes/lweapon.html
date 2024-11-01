@@ -257,22 +257,21 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/functions.html">Global functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/constants.html">Global constants</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Audio.html">Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Debug.html">Debug</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/FileSystem.html">FileSystem</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Game.html">Game</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Graphics.html">Graphics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Input.html">Input</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Hero.html">Hero</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Region.html">Region</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Screen.html">Screen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Text.html">Text</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/ZInfo.html">ZInfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Audio.html">Audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Debug.html">Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/FileSystem.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Game.html">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Graphics.html">Graphics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Hero.html">Hero</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Screen.html">Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Text.html">Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/ZInfo.html">ZInfo</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="current nav bd-sidenav">
@@ -660,7 +659,7 @@
 <hr class="classref-item-separator docutils" />
 <p id="classes-lweapon-var-special"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Special</strong>  <a class="reference internal" href="#classes-lweapon-var-special"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The special info for the lweapon.</p>
-<p>Used by wind lweapons, instead of Level, to determine their effects.</p>
+<p class="classref-comment">Used by wind lweapons, instead of Level, to determine their effects.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-lweapon-var-max"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Max</strong>  <a class="reference internal" href="#classes-lweapon-var-max"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">Returns the max number of weapons currently allowed.</p>
@@ -697,7 +696,7 @@ Has no real effect if the weapon is not <code class="docutils literal notranslat
 <p class="classref-comment">The secondary CSet used for flashing.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-lweapon-var-deadstate"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DeadState</strong>  <a class="reference internal" href="#classes-lweapon-var-deadstate"><span class="std std-ref">🔗</span></a></p>
-<p class="classref-comment">The deadstate of the weapon, denoted by the <code class="docutils literal notranslate"><span class="pre">WDS_</span></code> constants.</p>
+<p class="classref-comment">The deadstate of the weapon, denoted by the <a class="reference internal" href="../libs/std/std_constants.html#libs-std-enum-weapondeadstate"><span class="std std-ref">WeaponDeadState</span></a> (<code class="docutils literal notranslate"><span class="pre">WDS_</span></code>) constants.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-lweapon-var-flash">bool <strong>Flash</strong>  <a class="reference internal" href="#classes-lweapon-var-flash"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">If the weapon is flashing or not. When flashing, it changes between its
@@ -718,11 +717,11 @@ entirely.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-lweapon-var-parent"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Parent</strong>  <a class="reference internal" href="#classes-lweapon-var-parent"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The ID of the item that created this weapon.</p>
-<p>Weapons created by script have a default Parent of -1 (lweapon) and
+<p class="classref-comment">Weapons created by script have a default Parent of -1 (lweapon) and
 &lt;npc&gt;-0.0001 (eweapon).</p>
-<p>For lweapons, this value determines what item editor index to read item
+<p class="classref-comment">For lweapons, this value determines what item editor index to read item
 flags from.</p>
-<p>Setting it to an item of a class that does not normally generate the
+<p class="classref-comment">Setting it to an item of a class that does not normally generate the
 given weapon type may have unexpected effects.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-lweapon-var-level"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Level</strong>  <a class="reference internal" href="#classes-lweapon-var-level"><span class="std std-ref">🔗</span></a></p>
@@ -733,19 +732,19 @@ given weapon type may have unexpected effects.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-lweapon-var-weapon"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Weapon</strong>  <a class="reference internal" href="#classes-lweapon-var-weapon"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The UseWeapon property for this weapon.</p>
-<p>If set to a value greater than 0, all collisions with npcs will use this
+<p class="classref-comment">If set to a value greater than 0, all collisions with npcs will use this
 as if it was the weapon’s ID for calculating the defense value for it.</p>
-<p>e.g., if a LW_MAGIC weapon is set to a Weapon of LW_BRANG, when it
+<p class="classref-comment">e.g., if a LW_MAGIC weapon is set to a Weapon of LW_BRANG, when it
 collides with an npc, the npc will use Defense:ref:<cite>LW_BRANG&lt;libs_std_var_lw_brang&gt;</cite> to resolve its
 effects.</p>
-<p>Some weapons will also trigger map flags, and screen combos as if the
+<p class="classref-comment">Some weapons will also trigger map flags, and screen combos as if the
 natural weapon was the value set as -&gt;Weapon.,</p>
-<p>e.g. If you set a LW_BRANG weapon to a -&gt;Weapon of LW_SWORD, it will cut
+<p class="classref-comment">e.g. If you set a LW_BRANG weapon to a -&gt;Weapon of LW_SWORD, it will cut
 bushes.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-lweapon-var-defense"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Defense</strong>  <a class="reference internal" href="#classes-lweapon-var-defense"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The default defense value for this weapon.</p>
-<p>If set greater than 0, then when this weapon collides with an npc, if
+<p class="classref-comment">If set greater than 0, then when this weapon collides with an npc, if
 that npc has its Defense``n`` value set to NONE for this weapon’s type, it
 will resolve using this Defense value (e.g. Stun).</p>
 <hr class="classref-item-separator docutils" />
@@ -778,7 +777,7 @@ Angle.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-lweapon-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-lweapon-var-flags"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">A set of weapon flags.</p>
-<p>Valid indices: <a class="reference internal" href="../global_constants.html#globals-enum-weaponflagindex"><span class="std std-ref">WeaponFlagIndex</span></a> (<code class="docutils literal notranslate"><span class="pre">WFLAG_</span></code>).</p>
+<p class="classref-comment">Valid indices: <a class="reference internal" href="../globals/constants.html#globals-enum-weaponflagindex"><span class="std std-ref">WeaponFlagIndex</span></a> (<code class="docutils literal notranslate"><span class="pre">WFLAG_</span></code>).</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-lweapon-var-deathitem"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DeathItem</strong>  <a class="reference internal" href="#classes-lweapon-var-deathitem"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">If <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">-1</span></code>, this item will be spawned when the weapon dies.</p>
@@ -810,7 +809,7 @@ dies.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-lweapon-var-burnlightradius"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>BurnLightRadius</strong>  <a class="reference internal" href="#classes-lweapon-var-burnlightradius"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">The burning light radii associated with sprites of the weapon.</p>
-<p>Valid indices: <a class="reference internal" href="../global_constants.html#globals-enum-weaponspriteindex"><span class="std std-ref">WeaponSpriteIndex</span></a> (<code class="docutils literal notranslate"><span class="pre">WPN_SPRITE_</span></code>).</p>
+<p class="classref-comment">Valid indices: <a class="reference internal" href="../globals/constants.html#globals-enum-weaponspriteindex"><span class="std std-ref">WeaponSpriteIndex</span></a> (<code class="docutils literal notranslate"><span class="pre">WPN_SPRITE_</span></code>).</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-lweapon-var-uid"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>UID</strong>  <a class="reference internal" href="#classes-lweapon-var-uid"><span class="std std-ref">🔗</span></a></p>
 <div class="admonition warning">
@@ -851,7 +850,7 @@ false, using any other value of this pointer will error.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-lweapon-fun-switch">bool <strong>Switch</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> effect) <a class="reference internal" href="#classes-lweapon-fun-switch"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">Switch the player with this sprite.</p>
-<p>Valid values for <code class="docutils literal notranslate"><span class="pre">effect</span></code>: <a class="reference internal" href="../global_constants.html#globals-enum-switcheffect"><span class="std std-ref">SwitchEffect</span></a> (<code class="docutils literal notranslate"><span class="pre">SW_EFF_</span></code>).</p>
+<p class="classref-comment">Valid values for <code class="docutils literal notranslate"><span class="pre">effect</span></code>: <a class="reference internal" href="../globals/constants.html#globals-enum-switcheffect"><span class="std std-ref">SwitchEffect</span></a> (<code class="docutils literal notranslate"><span class="pre">SW_EFF_</span></code>).</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-lweapon-fun-makeangular">bool <strong>MakeAngular</strong>() <a class="reference internal" href="#classes-lweapon-fun-makeangular"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">If the weapon is not Angular, makes it Angular, and sets its Angle based

@@ -257,22 +257,21 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../global_constants.html">Global constants</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../global_functions.html">Global functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/functions.html">Global functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/constants.html">Global constants</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Namespaces</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Audio.html">Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Debug.html">Debug</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/FileSystem.html">FileSystem</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Game.html">Game</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Graphics.html">Graphics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Input.html">Input</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Hero.html">Hero</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Region.html">Region</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Screen.html">Screen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/Text.html">Text</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../namespaces/ZInfo.html">ZInfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Audio.html">Audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Debug.html">Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/FileSystem.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Game.html">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Graphics.html">Graphics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Hero.html">Hero</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Screen.html">Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Text.html">Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/ZInfo.html">ZInfo</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
 <ul class="current nav bd-sidenav">
@@ -541,7 +540,7 @@
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
 <p id="classes-paldata-var-color">rgb[] <strong>Color</strong>  <a class="reference internal" href="#classes-paldata-var-color"><span class="std std-ref">🔗</span></a></p>
-<p class="classref-comment">Access colors of the paldata as <code class="docutils literal notranslate"><span class="pre">PalData::rgb</span></code>. Reading an invalid color
+<p class="classref-comment">Access colors of the paldata as <code class="docutils literal notranslate"><span class="pre">rgb</span></code>. Reading an invalid color
 will return INVALID_COLOR (-1). To write a color as invalid, use
 ClearColor() instead.</p>
 <hr class="classref-item-separator docutils" />
@@ -565,12 +564,12 @@ ClearColor() instead.</p>
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
 <p class="classref-method" id="classes-paldata-fun-loadlevelpalette"><abbr title="No return value.">void</abbr> <strong>LoadLevelPalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-loadlevelpalette"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">Loads a level’s palette to the paldata.</p>
-<p>CSets will be arranged as they appear on the main palette, so CSet 2
+<p class="classref-comment">CSets will be arranged as they appear on the main palette, so CSet 2
 starts at index 0x20, ect.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-loadspritepalette"><abbr title="No return value.">void</abbr> <strong>LoadSpritePalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-loadspritepalette"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">Loads a page of sprite palettes to the paldata.</p>
-<p>Currently only values of 0 and 1 are valid.</p>
+<p class="classref-comment">Currently only values of 0 and 1 are valid.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-loadmainpalette"><abbr title="No return value.">void</abbr> <strong>LoadMainPalette</strong>() <a class="reference internal" href="#classes-paldata-fun-loadmainpalette"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">Loads the main palette to the paldata.</p>
@@ -612,7 +611,7 @@ color indices will be skipped.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-writecyclecset"><abbr title="No return value.">void</abbr> <strong>WriteCycleCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#classes-paldata-fun-writecyclecset"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">Writes a cset of the paldata to a level’s cycle/dark room palette.</p>
-<p>Empty color indices will be skipped.</p>
+<p class="classref-comment">Empty color indices will be skipped.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="classes-paldata-fun-colorvalid">bool <strong>ColorValid</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index) <a class="reference internal" href="#classes-paldata-fun-colorvalid"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">Returns true if the color at index is valid.</p>
