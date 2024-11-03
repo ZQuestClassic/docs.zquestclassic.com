@@ -42,6 +42,7 @@
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/globals/Debug';</script>
+    <link rel="icon" href="https://zquestclassic.com/img/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="FileSystem" href="FileSystem.html" />
@@ -130,8 +131,15 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../about/introduction.html">
-    Introduction
+  <a class="nav-link nav-internal" href="../../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../tutorials/index.html">
+    Tutorials
   </a>
 </li>
 
@@ -216,8 +224,15 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../about/introduction.html">
-    Introduction
+  <a class="nav-link nav-internal" href="../../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../tutorials/index.html">
+    Tutorials
   </a>
 </li>
 
@@ -443,6 +458,8 @@
                   
   <section id="debug">
 <span id="globals-debug"></span><h1>Debug<a class="headerlink" href="#debug" title="Link to this heading">#</a></h1>
+<p class="classref-comment">Contains various debug-only functionality.</p>
+<p class="classref-comment">Access with <code class="docutils literal notranslate"><span class="pre">Debug-&gt;</span></code>.</p>
 <section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -540,7 +557,7 @@
 <td><p><a class="reference internal" href="#globals-debug-fun-triggersecret"><span class="std std-ref">TriggerSecret</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg1)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#globals-debug-fun-breakpoint"><span class="std std-ref">Breakpoint</span></a>(char32[] string = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <strong>deprecated</strong></p></td>
+<td><p><a class="reference internal" href="#globals-debug-fun-breakpoint"><span class="std std-ref">Breakpoint</span></a>(char32[] string = <code class="docutils literal notranslate"><span class="pre">null</span></code>) <strong>deprecated</strong></p></td>
 </tr>
 </tbody>
 </table>
@@ -619,7 +636,7 @@ option in ZQ.</p>
 <hr class="classref-item-separator docutils" />
 <p class="classref-method" id="globals-debug-fun-triggersecret"><abbr title="No return value.">void</abbr> <strong>TriggerSecret</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg1) <a class="reference internal" href="#globals-debug-fun-triggersecret"><span class="std std-ref">🔗</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-debug-fun-breakpoint"><abbr title="No return value.">void</abbr> <strong>Breakpoint</strong>(char32[] string = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#globals-debug-fun-breakpoint"><span class="std std-ref">🔗</span></a></p>
+<p class="classref-method" id="globals-debug-fun-breakpoint"><abbr title="No return value.">void</abbr> <strong>Breakpoint</strong>(char32[] string = <code class="docutils literal notranslate"><span class="pre">null</span></code>) <a class="reference internal" href="#globals-debug-fun-breakpoint"><span class="std std-ref">🔗</span></a></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>Deprecated!</strong> ZASM debugger no longer exists.</p>

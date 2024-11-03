@@ -42,6 +42,7 @@
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/classes/paldata';</script>
+    <link rel="icon" href="https://zquestclassic.com/img/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="portal" href="portal.html" />
@@ -130,8 +131,15 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../about/introduction.html">
-    Introduction
+  <a class="nav-link nav-internal" href="../../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../tutorials/index.html">
+    Tutorials
   </a>
 </li>
 
@@ -216,8 +224,15 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../about/introduction.html">
-    Introduction
+  <a class="nav-link nav-internal" href="../../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../tutorials/index.html">
+    Tutorials
   </a>
 </li>
 
@@ -443,6 +458,7 @@
                   
   <section id="paldata">
 <span id="classes-paldata"></span><h1>paldata<a class="headerlink" href="#paldata" title="Link to this heading">#</a></h1>
+<p class="classref-comment">Represents a set of palette colors. 256 <code class="docutils literal notranslate"><span class="pre">rgb</span></code> colors divided into 16 csets.</p>
 <section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -541,23 +557,23 @@
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
 <p id="classes-paldata-var-color">rgb[] <strong>Color</strong>  <a class="reference internal" href="#classes-paldata-var-color"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">Access colors of the paldata as <code class="docutils literal notranslate"><span class="pre">rgb</span></code>. Reading an invalid color
-will return INVALID_COLOR (-1). To write a color as invalid, use
-ClearColor() instead.</p>
+will return <a class="reference internal" href="../globals/constants.html#globals-var-invalid-color"><span class="std std-ref">INVALID_COLOR</span></a> (<code class="docutils literal notranslate"><span class="pre">-1</span></code>). To write a color as invalid, use
+<a class="reference internal" href="#classes-paldata-fun-clearcolor"><span class="std std-ref">ClearColor()</span></a> instead.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-paldata-var-r"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>R</strong>  <a class="reference internal" href="#classes-paldata-var-r"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">Access the Red values of the paldata, ranging from 0-255. Reading an
 invalid color will return -1. To write a color as invalid, use
-ClearColor() instead.</p>
+<a class="reference internal" href="#classes-paldata-fun-clearcolor"><span class="std std-ref">ClearColor()</span></a> instead.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-paldata-var-g"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>G</strong>  <a class="reference internal" href="#classes-paldata-var-g"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">Access the Green values of the paldata, ranging from 0-255. Reading an
 invalid color will return -1. To write a color as invalid, use
-ClearColor() instead.</p>
+<a class="reference internal" href="#classes-paldata-fun-clearcolor"><span class="std std-ref">ClearColor()</span></a> instead.</p>
 <hr class="classref-item-separator docutils" />
 <p id="classes-paldata-var-b"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>B</strong>  <a class="reference internal" href="#classes-paldata-var-b"><span class="std std-ref">🔗</span></a></p>
 <p class="classref-comment">Access the Blue values of the paldata, ranging from 0-255. Reading an
 invalid color will return -1. To write a color as invalid, use
-ClearColor() instead.</p>
+<a class="reference internal" href="#classes-paldata-fun-clearcolor"><span class="std std-ref">ClearColor()</span></a> instead.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">

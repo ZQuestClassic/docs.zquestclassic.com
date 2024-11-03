@@ -27,7 +27,7 @@ html {
     margin-left: 60px;
 }
 
-.toctree-wrapper ul {
+.toctree-grid ul {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
