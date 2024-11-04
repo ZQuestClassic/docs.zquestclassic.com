@@ -37,3 +37,7 @@ html {
 .del {
     text-decoration: line-through;
 }
+
+a.reference[href^="https://github.com"]:not(.github) {
+    font-size: 11px;
+}
