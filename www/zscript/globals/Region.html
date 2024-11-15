@@ -47,7 +47,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Screen" href="Screen.html" />
-    <link rel="prev" title="Hero" href="Hero.html" />
+    <link rel="prev" title="Input" href="Input.html" />
     <link href="../../_static/main.css" rel="stylesheet" type="text/css">
 
   </head>
@@ -282,8 +282,8 @@
 <li class="toctree-l1"><a class="reference internal" href="FileSystem.html">FileSystem</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Game.html">Game</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Graphics.html">Graphics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Input.html">Input</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Hero.html">Hero</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Input.html">Input</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Region</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Text.html">Text</a></li>
@@ -497,10 +497,10 @@
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="Screen.html#globals-screen"><span class="std std-ref">Screen</span></a></p></td>
-<td><p><a class="reference internal" href="#globals-region-fun-getscreenforcomobopos"><span class="std std-ref">GetScreenForComoboPos</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos)</p></td>
+<td><p><a class="reference internal" href="#globals-region-fun-getscreenforcombopos"><span class="std std-ref">GetScreenForComboPos</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
-<td><p><a class="reference internal" href="#globals-region-fun-getscreenindexforcomobopos"><span class="std std-ref">GetScreenIndexForComoboPos</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos)</p></td>
+<td><p><a class="reference internal" href="#globals-region-fun-getscreenindexforcombopos"><span class="std std-ref">GetScreenIndexForComboPos</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
 <td><p><a class="reference internal" href="#globals-region-fun-triggersecrets"><span class="std std-ref">TriggerSecrets</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg1)</p></td>
@@ -511,39 +511,39 @@
 </section>
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="globals-region-var-id"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>ID</strong>  <a class="reference internal" href="#globals-region-var-id"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/7112944fbdca1739b8e1c43d4b3e534dd2afc0ca/resources/include/bindings/region.zh#L7">Source</a></p>
+<p id="globals-region-var-id"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>ID</strong>  <a class="reference internal" href="#globals-region-var-id"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/region.zh#L7">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-region-var-width"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>Width</strong>  <a class="reference internal" href="#globals-region-var-width"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/7112944fbdca1739b8e1c43d4b3e534dd2afc0ca/resources/include/bindings/region.zh#L12">Source</a></p>
+<p id="globals-region-var-width"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>Width</strong>  <a class="reference internal" href="#globals-region-var-width"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/region.zh#L12">Source</a></p>
 <p class="classref-comment">The number of pixels horizontally. 256 per screen.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-region-var-height"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>Height</strong>  <a class="reference internal" href="#globals-region-var-height"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/7112944fbdca1739b8e1c43d4b3e534dd2afc0ca/resources/include/bindings/region.zh#L17">Source</a></p>
+<p id="globals-region-var-height"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>Height</strong>  <a class="reference internal" href="#globals-region-var-height"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/region.zh#L17">Source</a></p>
 <p class="classref-comment">The number of pixels vertically. 176 per screen.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-region-var-screenwidth"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>ScreenWidth</strong>  <a class="reference internal" href="#globals-region-var-screenwidth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/7112944fbdca1739b8e1c43d4b3e534dd2afc0ca/resources/include/bindings/region.zh#L22">Source</a></p>
+<p id="globals-region-var-screenwidth"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>ScreenWidth</strong>  <a class="reference internal" href="#globals-region-var-screenwidth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/region.zh#L22">Source</a></p>
 <p class="classref-comment">The number of screens horizontally.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-region-var-screenheight"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>ScreenHeight</strong>  <a class="reference internal" href="#globals-region-var-screenheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/7112944fbdca1739b8e1c43d4b3e534dd2afc0ca/resources/include/bindings/region.zh#L27">Source</a></p>
+<p id="globals-region-var-screenheight"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>ScreenHeight</strong>  <a class="reference internal" href="#globals-region-var-screenheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/region.zh#L27">Source</a></p>
 <p class="classref-comment">The number of screens vertically.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-region-var-numcombos"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>NumCombos</strong>  <a class="reference internal" href="#globals-region-var-numcombos"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/7112944fbdca1739b8e1c43d4b3e534dd2afc0ca/resources/include/bindings/region.zh#L32">Source</a></p>
+<p id="globals-region-var-numcombos"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>NumCombos</strong>  <a class="reference internal" href="#globals-region-var-numcombos"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/region.zh#L32">Source</a></p>
 <p class="classref-comment">The number of combo positions. 176 per screen.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-region-var-originscreen"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <a class="reference internal" href="Screen.html#globals-screen"><span class="std std-ref">Screen</span></a> <strong>OriginScreen</strong>  <a class="reference internal" href="#globals-region-var-originscreen"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/7112944fbdca1739b8e1c43d4b3e534dd2afc0ca/resources/include/bindings/region.zh#L38">Source</a></p>
+<p id="globals-region-var-originscreen"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <a class="reference internal" href="Screen.html#globals-screen"><span class="std std-ref">Screen</span></a> <strong>OriginScreen</strong>  <a class="reference internal" href="#globals-region-var-originscreen"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/region.zh#L38">Source</a></p>
 <p class="classref-comment">The top-left screen in the current region.
 If not in a large region, this is the same as <a class="reference internal" href="constants.html#globals-var-screen"><span class="std std-ref">Screen</span></a>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-region-var-originscreenindex"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>OriginScreenIndex</strong>  <a class="reference internal" href="#globals-region-var-originscreenindex"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/7112944fbdca1739b8e1c43d4b3e534dd2afc0ca/resources/include/bindings/region.zh#L44">Source</a></p>
+<p id="globals-region-var-originscreenindex"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>OriginScreenIndex</strong>  <a class="reference internal" href="#globals-region-var-originscreenindex"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/region.zh#L44">Source</a></p>
 <p class="classref-comment">The index of the top-left screen in the current region.
 If not in a large region, this is the same as <a class="reference internal" href="Game.html#globals-game-var-curscreen"><span class="std std-ref">Game-&gt;CurScreen</span></a>.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="globals-region-fun-getscreenforcomobopos"><a class="reference internal" href="Screen.html#globals-screen"><span class="std std-ref">Screen</span></a> <strong>GetScreenForComoboPos</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos) <a class="reference internal" href="#globals-region-fun-getscreenforcomobopos"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/7112944fbdca1739b8e1c43d4b3e534dd2afc0ca/resources/include/bindings/region.zh#L49">Source</a></p>
+<p class="classref-method" id="globals-region-fun-getscreenforcombopos"><a class="reference internal" href="Screen.html#globals-screen"><span class="std std-ref">Screen</span></a> <strong>GetScreenForComboPos</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos) <a class="reference internal" href="#globals-region-fun-getscreenforcombopos"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/region.zh#L49">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-region-fun-getscreenindexforcomobopos"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetScreenIndexForComoboPos</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos) <a class="reference internal" href="#globals-region-fun-getscreenindexforcomobopos"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/7112944fbdca1739b8e1c43d4b3e534dd2afc0ca/resources/include/bindings/region.zh#L54">Source</a></p>
+<p class="classref-method" id="globals-region-fun-getscreenindexforcombopos"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetScreenIndexForComboPos</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pos) <a class="reference internal" href="#globals-region-fun-getscreenindexforcombopos"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/region.zh#L54">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-region-fun-triggersecrets"><abbr title="No return value.">void</abbr> <strong>TriggerSecrets</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg1) <a class="reference internal" href="#globals-region-fun-triggersecrets"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/7112944fbdca1739b8e1c43d4b3e534dd2afc0ca/resources/include/bindings/region.zh#L59">Source</a></p>
+<p class="classref-method" id="globals-region-fun-triggersecrets"><abbr title="No return value.">void</abbr> <strong>TriggerSecrets</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg1) <a class="reference internal" href="#globals-region-fun-triggersecrets"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/region.zh#L59">Source</a></p>
 </section>
 </section>
 
@@ -558,12 +558,12 @@ If not in a large region, this is the same as <a class="reference internal" href
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Hero.html"
+       href="Input.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Hero</p>
+        <p class="prev-next-title">Input</p>
       </div>
     </a>
     <a class="right-next"
