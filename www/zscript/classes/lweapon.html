@@ -31,6 +31,9 @@
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../_static/zscript.css?v=3afc8195" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -41,15 +44,19 @@
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/classes/lweapon';</script>
     <script src="../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../_static/zscript.js?v=0bdd3061"></script>
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="mapdata" href="mapdata.html" />
     <link rel="prev" title="itemsprite" href="itemsprite.html" />
-    <link href="../../_static/main.css" rel="stylesheet" type="text/css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -271,7 +278,55 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../lang/types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lang/explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../globals/functions.html">Global functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../globals/constants.html">Global constants</a></li>
@@ -394,10 +449,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../libs/ffcscript/ffcscript.html">ffcscript.zh</a></li>
-</ul>
-</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
 </ul>
@@ -466,10 +517,10 @@
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
-<td><p><a class="reference internal" href="#classes-lweapon-var-id"><span class="std std-ref">ID</span></a></p></td>
+<td><p><a class="reference internal" href="#classes-lweapon-var-type"><span class="std std-ref">Type</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
-<td><p><a class="reference internal" href="#classes-lweapon-var-type"><span class="std std-ref">Type</span></a></p></td>
+<td><p><a class="reference internal" href="#classes-lweapon-var-id"><span class="std std-ref">ID</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-lweapon-var-family"><span class="std std-ref">Family</span></a></p></td>
@@ -522,7 +573,7 @@
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-lweapon-var-originalcset"><span class="std std-ref">OriginalCSet</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-lweapon-var-totaldyoffset"><span class="std std-ref">TotalDYOffset</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>bool</p></td>
@@ -597,7 +648,7 @@
 <tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-lweapon-var-burnlightradius"><span class="std std-ref">BurnLightRadius</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-lweapon-var-uid"><span class="std std-ref">UID</span></a> <strong>deprecated</strong></p></td>
 </tr>
 </tbody>
@@ -618,7 +669,7 @@
 <td><p><a class="reference internal" href="#classes-lweapon-fun-isvalid"><span class="std std-ref">isValid</span></a>()</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#classes-lweapon-fun-usesprite"><span class="std std-ref">UseSprite</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spriteid)</p></td>
+<td><p><a class="reference internal" href="#classes-lweapon-fun-usesprite"><span class="std std-ref">UseSprite</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sprite_id)</p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-lweapon-fun-explode"><span class="std std-ref">Explode</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> mode)</p></td>
@@ -663,76 +714,142 @@
 </table>
 </div>
 </section>
+<section id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Link to this heading">#</a></h2>
+<p id="globals-enum-lweapontype">enum <strong>LWeaponType</strong>: <a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">🔗</span></a>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L4">Source</a></p>
+<p class="classref-comment">Player weapon types. Used with <a class="reference internal" href="../globals/Screen.html#globals-screen-fun-createlweapon"><span class="std std-ref">Screen-&gt;CreateLWeapon()</span></a>.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-sword"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_SWORD</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-comment">This cannot be created.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-wand"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_WAND</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+<p class="classref-comment">This cannot be created.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-candle"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_CANDLE</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+<p class="classref-comment">This cannot be created.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-hammer"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_HAMMER</strong> = <code class="docutils literal notranslate"><span class="pre">19</span></code></p>
+<p class="classref-comment">This cannot be created.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-hookshot"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_HOOKSHOT</strong> = <code class="docutils literal notranslate"><span class="pre">20</span></code></p>
+<p class="classref-comment">This cannot be created.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-caneofbyrna"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_CANEOFBYRNA</strong> = <code class="docutils literal notranslate"><span class="pre">27</span></code></p>
+<p class="classref-comment">This cannot be created.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-bugnet"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_BUGNET</strong> = <code class="docutils literal notranslate"><span class="pre">52</span></code></p>
+<p class="classref-comment">This cannot be created.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-arrow"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_ARROW</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-beam"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_BEAM</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-comment">Sword beam.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-brang"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_BRANG</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-bomb"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_BOMB</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-bombblast"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_BOMBBLAST</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-comment">Bomb explosion.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-sbomb"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_SBOMB</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-sbombblast"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_SBOMBBLAST</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p class="classref-comment">Super Bomb explosion.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-fire"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_FIRE</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-whistle"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_WHISTLE</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p class="classref-comment">Whistle music - kills Digdogger.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-bait"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_BAIT</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-magic"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_MAGIC</strong> = <code class="docutils literal notranslate"><span class="pre">13</span></code></p>
+<p class="classref-comment">Wand magic.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-wind"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_WIND</strong> = <code class="docutils literal notranslate"><span class="pre">15</span></code></p>
+<p class="classref-comment">Whistle whirlwind.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-refmagic"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_REFMAGIC</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code></p>
+<p class="classref-comment">Reflected wand magic.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-reffireball"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_REFFIREBALL</strong> = <code class="docutils literal notranslate"><span class="pre">17</span></code></p>
+<p class="classref-comment">Reflected fireball.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-refrock"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_REFROCK</strong> = <code class="docutils literal notranslate"><span class="pre">18</span></code></p>
+<p class="classref-comment">Reflected rock.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-refbeam"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_REFBEAM</strong> = <code class="docutils literal notranslate"><span class="pre">28</span></code></p>
+<p class="classref-comment">Reflected sword beam.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-sparkle"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_SPARKLE</strong> = <code class="docutils literal notranslate"><span class="pre">23</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-firesparkle"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_FIRESPARKLE</strong> = <code class="docutils literal notranslate"><span class="pre">24</span></code></p>
+<p class="classref-comment">Damages enemies.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-script1"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_SCRIPT1</strong> = <code class="docutils literal notranslate"><span class="pre">31</span></code></p>
+<p class="classref-comment">Dummy weapon, for use with scripts.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-script2"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_SCRIPT2</strong> = <code class="docutils literal notranslate"><span class="pre">32</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-script3"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_SCRIPT3</strong> = <code class="docutils literal notranslate"><span class="pre">33</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-script4"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_SCRIPT4</strong> = <code class="docutils literal notranslate"><span class="pre">34</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-script5"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_SCRIPT5</strong> = <code class="docutils literal notranslate"><span class="pre">35</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-script6"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_SCRIPT6</strong> = <code class="docutils literal notranslate"><span class="pre">36</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-script7"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_SCRIPT7</strong> = <code class="docutils literal notranslate"><span class="pre">37</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-script8"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_SCRIPT8</strong> = <code class="docutils literal notranslate"><span class="pre">38</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-script9"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_SCRIPT9</strong> = <code class="docutils literal notranslate"><span class="pre">39</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-script10"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_SCRIPT10</strong> = <code class="docutils literal notranslate"><span class="pre">40</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-ice"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_ICE</strong> = <code class="docutils literal notranslate"><span class="pre">41</span></code></p>
+<p class="classref-comment">Unimplemented.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-thrown"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_THROWN</strong> = <code class="docutils literal notranslate"><span class="pre">44</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-refarrow"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_REFARROW</strong> = <code class="docutils literal notranslate"><span class="pre">53</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-reffire"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_REFFIRE</strong> = <code class="docutils literal notranslate"><span class="pre">54</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-lw-reffire2"><a class="reference internal" href="#globals-enum-lweapontype"><span class="std std-ref">LWeaponType</span></a> <strong>LW_REFFIRE2</strong> = <code class="docutils literal notranslate"><span class="pre">55</span></code></p>
+</section>
+<hr class="classref-item-separator docutils" />
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="classes-lweapon-var-id"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ID</strong>  <a class="reference internal" href="#classes-lweapon-var-id"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L14">Source</a></p>
-<p class="classref-comment">The weapon type of the weapon. Some types have hardcoded behaviors.</p>
+<p id="classes-lweapon-var-type"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Type</strong>  <a class="reference internal" href="#classes-lweapon-var-type"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L59">Source</a></p>
+<p class="classref-comment">The weapon type. Some types have hardcoded behaviors.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-type"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Type</strong>  <a class="reference internal" href="#classes-lweapon-var-type"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L19">Source</a></p>
-<p class="classref-comment">The weapon type of the weapon. Some types have hardcoded behaviors. Same as <a class="reference internal" href="#classes-lweapon-var-id"><span class="std std-ref">ID</span></a>.</p>
+<p id="classes-lweapon-var-id"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ID</strong>  <a class="reference internal" href="#classes-lweapon-var-id"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L64">Source</a></p>
+<p class="classref-comment">Exactly the same as <a class="reference internal" href="#classes-lweapon-var-type"><span class="std std-ref">Type</span></a>, use that instead.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-family"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Family</strong>  <a class="reference internal" href="#classes-lweapon-var-family"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L24">Source</a></p>
-<p class="classref-comment">The weapon type of the weapon. Some types have hardcoded behaviors. Same as <a class="reference internal" href="#classes-lweapon-var-id"><span class="std std-ref">ID</span></a>.</p>
+<p id="classes-lweapon-var-family"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Family</strong>  <a class="reference internal" href="#classes-lweapon-var-family"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L69">Source</a></p>
+<p class="classref-comment">Exactly the same as <a class="reference internal" href="#classes-lweapon-var-type"><span class="std std-ref">Type</span></a>, use that instead.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-special"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Special</strong>  <a class="reference internal" href="#classes-lweapon-var-special"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L31">Source</a></p>
+<p id="classes-lweapon-var-special"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Special</strong>  <a class="reference internal" href="#classes-lweapon-var-special"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L76">Source</a></p>
 <p class="classref-comment">The special info for the lweapon.</p>
 <p class="classref-comment">Used by wind lweapons, instead of Level, to determine their effects.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-max"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Max</strong>  <a class="reference internal" href="#classes-lweapon-var-max"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L36">Source</a></p>
+<p id="classes-lweapon-var-max"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Max</strong>  <a class="reference internal" href="#classes-lweapon-var-max"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L81">Source</a></p>
 <p class="classref-comment">Returns the max number of weapons currently allowed.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-angle"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Angle</strong>  <a class="reference internal" href="#classes-lweapon-var-angle"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L42">Source</a></p>
+<p id="classes-lweapon-var-angle"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Angle</strong>  <a class="reference internal" href="#classes-lweapon-var-angle"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L87">Source</a></p>
 <p class="classref-comment">The angle of the weapon, in radians for Angle or degrees for DegAngle.
 Has no real effect if the weapon is not <code class="docutils literal notranslate"><span class="pre">Angular</span></code>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-step"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Step</strong>  <a class="reference internal" href="#classes-lweapon-var-step"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L47">Source</a></p>
+<p id="classes-lweapon-var-step"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Step</strong>  <a class="reference internal" href="#classes-lweapon-var-step"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L92">Source</a></p>
 <p class="classref-comment">The movement speed of the weapon, in 100th’s/pixel per frame.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-numframes"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NumFrames</strong>  <a class="reference internal" href="#classes-lweapon-var-numframes"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L52">Source</a></p>
+<p id="classes-lweapon-var-numframes"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NumFrames</strong>  <a class="reference internal" href="#classes-lweapon-var-numframes"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L97">Source</a></p>
 <p class="classref-comment">The number of frames in the weapon’s animation.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-frame"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Frame</strong>  <a class="reference internal" href="#classes-lweapon-var-frame"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L57">Source</a></p>
+<p id="classes-lweapon-var-frame"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Frame</strong>  <a class="reference internal" href="#classes-lweapon-var-frame"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L102">Source</a></p>
 <p class="classref-comment">The current frame number that the animation is on.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-power"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Power</strong>  <a class="reference internal" href="#classes-lweapon-var-power"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L62">Source</a></p>
+<p id="classes-lweapon-var-power"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Power</strong>  <a class="reference internal" href="#classes-lweapon-var-power"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L107">Source</a></p>
 <p class="classref-comment">The amount of damage the weapon deals.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-damage"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Damage</strong>  <a class="reference internal" href="#classes-lweapon-var-damage"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L67">Source</a></p>
+<p id="classes-lweapon-var-damage"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Damage</strong>  <a class="reference internal" href="#classes-lweapon-var-damage"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L112">Source</a></p>
 <p class="classref-comment">The amount of damage the weapon deals.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-angular">bool <strong>Angular</strong>  <a class="reference internal" href="#classes-lweapon-var-angular"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L72">Source</a></p>
+<p id="classes-lweapon-var-angular">bool <strong>Angular</strong>  <a class="reference internal" href="#classes-lweapon-var-angular"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L117">Source</a></p>
 <p class="classref-comment">If the weapon is angular (instead of directional)</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-behind">bool <strong>Behind</strong>  <a class="reference internal" href="#classes-lweapon-var-behind"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L77">Source</a></p>
+<p id="classes-lweapon-var-behind">bool <strong>Behind</strong>  <a class="reference internal" href="#classes-lweapon-var-behind"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L122">Source</a></p>
 <p class="classref-comment">If true, the weapon’s sprite will draw behind the <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a> and enemies.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-aspeed"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ASpeed</strong>  <a class="reference internal" href="#classes-lweapon-var-aspeed"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L82">Source</a></p>
+<p id="classes-lweapon-var-aspeed"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ASpeed</strong>  <a class="reference internal" href="#classes-lweapon-var-aspeed"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L127">Source</a></p>
 <p class="classref-comment">The speed of the animation, in frames per frame.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-flashcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FlashCSet</strong>  <a class="reference internal" href="#classes-lweapon-var-flashcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L87">Source</a></p>
+<p id="classes-lweapon-var-flashcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FlashCSet</strong>  <a class="reference internal" href="#classes-lweapon-var-flashcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L132">Source</a></p>
 <p class="classref-comment">The secondary CSet used for flashing.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-deadstate"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DeadState</strong>  <a class="reference internal" href="#classes-lweapon-var-deadstate"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L92">Source</a></p>
-<p class="classref-comment">The deadstate of the weapon, denoted by the <a class="reference internal" href="../libs/std/std_constants.html#libs-std-enum-weapondeadstate"><span class="std std-ref">WeaponDeadState</span></a> (<code class="docutils literal notranslate"><span class="pre">WDS_</span></code>) constants.</p>
+<p id="classes-lweapon-var-deadstate"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DeadState</strong>  <a class="reference internal" href="#classes-lweapon-var-deadstate"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L136">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-flash">bool <strong>Flash</strong>  <a class="reference internal" href="#classes-lweapon-var-flash"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L98">Source</a></p>
+<p id="classes-lweapon-var-flash">bool <strong>Flash</strong>  <a class="reference internal" href="#classes-lweapon-var-flash"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L142">Source</a></p>
 <p class="classref-comment">If the weapon is flashing or not. When flashing, it changes between its
 CSet and FlashCSet.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-originaltile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>OriginalTile</strong>  <a class="reference internal" href="#classes-lweapon-var-originaltile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L103">Source</a></p>
+<p id="classes-lweapon-var-originaltile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>OriginalTile</strong>  <a class="reference internal" href="#classes-lweapon-var-originaltile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L147">Source</a></p>
 <p class="classref-comment">The starting tile of the weapon’s animation.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-originalcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>OriginalCSet</strong>  <a class="reference internal" href="#classes-lweapon-var-originalcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L108">Source</a></p>
+<p id="classes-lweapon-var-originalcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>OriginalCSet</strong>  <a class="reference internal" href="#classes-lweapon-var-originalcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L152">Source</a></p>
 <p class="classref-comment">The starting cset of the weapon.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-totaldyoffset"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TotalDYOffset</strong>  <a class="reference internal" href="#classes-lweapon-var-totaldyoffset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L113">Source</a></p>
+<p id="classes-lweapon-var-totaldyoffset"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TotalDYOffset</strong>  <a class="reference internal" href="#classes-lweapon-var-totaldyoffset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L157">Source</a></p>
 <p class="classref-comment">the weapon’s total visual Y-offset.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-colldetection">bool <strong>CollDetection</strong>  <a class="reference internal" href="#classes-lweapon-var-colldetection"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L119">Source</a></p>
+<p id="classes-lweapon-var-colldetection">bool <strong>CollDetection</strong>  <a class="reference internal" href="#classes-lweapon-var-colldetection"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L163">Source</a></p>
 <p class="classref-comment">If the weapon’s collision is enabled. Set to false to disable collision
 entirely.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-parent"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Parent</strong>  <a class="reference internal" href="#classes-lweapon-var-parent"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L133">Source</a></p>
+<p id="classes-lweapon-var-parent"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Parent</strong>  <a class="reference internal" href="#classes-lweapon-var-parent"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L177">Source</a></p>
 <p class="classref-comment">The ID of the item that created this weapon.</p>
 <p class="classref-comment">Weapons created by script have a default Parent of -1 (lweapon) and
 &lt;npc&gt;-0.0001 (eweapon).</p>
@@ -741,164 +858,162 @@ flags from.</p>
 <p class="classref-comment">Setting it to an item of a class that does not normally generate the
 given weapon type may have unexpected effects.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-level"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Level</strong>  <a class="reference internal" href="#classes-lweapon-var-level"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L138">Source</a></p>
+<p id="classes-lweapon-var-level"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Level</strong>  <a class="reference internal" href="#classes-lweapon-var-level"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L182">Source</a></p>
 <p class="classref-comment">For lweapons, the level of the weapon.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-script"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Script</strong>  <a class="reference internal" href="#classes-lweapon-var-script"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L143">Source</a></p>
+<p id="classes-lweapon-var-script"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Script</strong>  <a class="reference internal" href="#classes-lweapon-var-script"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L187">Source</a></p>
 <p class="classref-comment">The weapon script running on this weapon.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-weapon"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Weapon</strong>  <a class="reference internal" href="#classes-lweapon-var-weapon"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L161">Source</a></p>
+<p id="classes-lweapon-var-weapon"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Weapon</strong>  <a class="reference internal" href="#classes-lweapon-var-weapon"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L205">Source</a></p>
 <p class="classref-comment">The UseWeapon property for this weapon.</p>
 <p class="classref-comment">If set to a value greater than 0, all collisions with npcs will use this
 as if it was the weapon’s ID for calculating the defense value for it.</p>
 <p class="classref-comment">e.g., if a LW_MAGIC weapon is set to a Weapon of LW_BRANG, when it
-collides with an npc, the npc will use Defense:ref:<cite>LW_BRANG&lt;libs_std_var_lw_brang&gt;</cite> to resolve its
+collides with an npc, the npc will use Defense:ref:<code class="inlinezs pre docutils literal notranslate"><span class="pre">LW_BRANG&lt;globals_enum_member_lw_brang&gt;</span></code> to resolve its
 effects.</p>
 <p class="classref-comment">Some weapons will also trigger map flags, and screen combos as if the
 natural weapon was the value set as -&gt;Weapon.,</p>
 <p class="classref-comment">e.g. If you set a LW_BRANG weapon to a -&gt;Weapon of LW_SWORD, it will cut
 bushes.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-defense"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Defense</strong>  <a class="reference internal" href="#classes-lweapon-var-defense"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L170">Source</a></p>
+<p id="classes-lweapon-var-defense"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Defense</strong>  <a class="reference internal" href="#classes-lweapon-var-defense"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L214">Source</a></p>
 <p class="classref-comment">The default defense value for this weapon.</p>
 <p class="classref-comment">If set greater than 0, then when this weapon collides with an npc, if
 that npc has its Defense``n`` value set to NONE for this weapon’s type, it
 will resolve using this Defense value (e.g. Stun).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-initd"><abbr title="Could be any type.">untyped</abbr>[] <strong>InitD</strong>  <a class="reference internal" href="#classes-lweapon-var-initd"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L175">Source</a></p>
+<p id="classes-lweapon-var-initd"><abbr title="Could be any type.">untyped</abbr>[] <strong>InitD</strong>  <a class="reference internal" href="#classes-lweapon-var-initd"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L219">Source</a></p>
 <p class="classref-comment">The 8 InitD[] arguments for the weapon script.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-unblockable"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Unblockable</strong>  <a class="reference internal" href="#classes-lweapon-var-unblockable"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L180">Source</a></p>
-<p class="classref-comment">A bitwise flagset of unblockable flags, using the <code class="docutils literal notranslate"><span class="pre">UNBLOCK_</span></code> constants.</p>
+<p id="classes-lweapon-var-unblockable"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Unblockable</strong>  <a class="reference internal" href="#classes-lweapon-var-unblockable"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L225">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="../globals/constants.html#globals-enum-unblockablebitflags"><span class="std std-ref">UnblockableBitflags (UNBLOCK_)</span></a></p>
+<p class="classref-comment">Unblockable bitflags.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-timeout"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Timeout</strong>  <a class="reference internal" href="#classes-lweapon-var-timeout"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L185">Source</a></p>
+<p id="classes-lweapon-var-timeout"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Timeout</strong>  <a class="reference internal" href="#classes-lweapon-var-timeout"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L230">Source</a></p>
 <p class="classref-comment">If &gt; 0, ticks down each frame. When ticking down to 0, kills the weapon.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-degangle"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DegAngle</strong>  <a class="reference internal" href="#classes-lweapon-var-degangle"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L191">Source</a></p>
+<p id="classes-lweapon-var-degangle"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DegAngle</strong>  <a class="reference internal" href="#classes-lweapon-var-degangle"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L236">Source</a></p>
 <p class="classref-comment">The angle of the weapon, in radians for Angle or degrees for DegAngle.
 Has no real effect if the weapon is not <code class="docutils literal notranslate"><span class="pre">Angular</span></code>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-vx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Vx</strong>  <a class="reference internal" href="#classes-lweapon-var-vx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L198">Source</a></p>
+<p id="classes-lweapon-var-vx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Vx</strong>  <a class="reference internal" href="#classes-lweapon-var-vx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L243">Source</a></p>
 <p class="classref-comment">The velocity on the X or Y axis. Setting these will make the weapon
 Angular if it isn’t already, and will adjust the weapon’s Angle and Step
 speed.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-vy"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Vy</strong>  <a class="reference internal" href="#classes-lweapon-var-vy"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L205">Source</a></p>
+<p id="classes-lweapon-var-vy"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Vy</strong>  <a class="reference internal" href="#classes-lweapon-var-vy"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L250">Source</a></p>
 <p class="classref-comment">The velocity on the X or Y axis. Setting these will make the weapon
 Angular if it isn’t already, and will adjust the weapon’s Angle and Step
 speed.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-autorotate">bool <strong>AutoRotate</strong>  <a class="reference internal" href="#classes-lweapon-var-autorotate"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L211">Source</a></p>
+<p id="classes-lweapon-var-autorotate">bool <strong>AutoRotate</strong>  <a class="reference internal" href="#classes-lweapon-var-autorotate"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L256">Source</a></p>
 <p class="classref-comment">If true, the weapon’s ‘Rotation’ will be automatically set based on its
 Angle.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-lweapon-var-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L218">Source</a></p>
+<p id="classes-lweapon-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-lweapon-var-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L262">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="../globals/constants.html#globals-enum-weaponflag"><span class="std std-ref">WeaponFlag (WFLAG_)</span></a></p>
 <p class="classref-comment">A set of weapon flags.</p>
-<p class="classref-comment">Valid indices: <a class="reference internal" href="../globals/constants.html#globals-enum-weaponflagindex"><span class="std std-ref">WeaponFlagIndex</span></a> (<code class="docutils literal notranslate"><span class="pre">WFLAG_</span></code>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-deathitem"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DeathItem</strong>  <a class="reference internal" href="#classes-lweapon-var-deathitem"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L223">Source</a></p>
+<p id="classes-lweapon-var-deathitem"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DeathItem</strong>  <a class="reference internal" href="#classes-lweapon-var-deathitem"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L267">Source</a></p>
 <p class="classref-comment">If <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">-1</span></code>, this item will be spawned when the weapon dies.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-deathdropset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DeathDropset</strong>  <a class="reference internal" href="#classes-lweapon-var-deathdropset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L229">Source</a></p>
+<p id="classes-lweapon-var-deathdropset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DeathDropset</strong>  <a class="reference internal" href="#classes-lweapon-var-deathdropset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L273">Source</a></p>
 <p class="classref-comment">If <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">-1</span></code>, this item dropset will be rolled for a drop when the weapon
 dies.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-deathitempflags"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DeathItemPFlags</strong>  <a class="reference internal" href="#classes-lweapon-var-deathitempflags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L235">Source</a></p>
+<p id="classes-lweapon-var-deathitempflags"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DeathItemPFlags</strong>  <a class="reference internal" href="#classes-lweapon-var-deathitempflags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L279">Source</a></p>
 <p class="classref-comment">The <a class="reference internal" href="itemsprite.html#classes-itemsprite-var-pickup"><span class="std std-ref">itemsprite::Pickup</span></a> to use for the item dropped via <code class="docutils literal notranslate"><span class="pre">DeathItem</span></code> or
 <code class="docutils literal notranslate"><span class="pre">DeathDropset</span></code>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-deathsprite"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DeathSprite</strong>  <a class="reference internal" href="#classes-lweapon-var-deathsprite"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L240">Source</a></p>
+<p id="classes-lweapon-var-deathsprite"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DeathSprite</strong>  <a class="reference internal" href="#classes-lweapon-var-deathsprite"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L284">Source</a></p>
 <p class="classref-comment">If <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">-1</span></code>, display this Sprite Data sprite when the weapon dies.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-deathsfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DeathSFX</strong>  <a class="reference internal" href="#classes-lweapon-var-deathsfx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L245">Source</a></p>
+<p id="classes-lweapon-var-deathsfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DeathSFX</strong>  <a class="reference internal" href="#classes-lweapon-var-deathsfx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L289">Source</a></p>
 <p class="classref-comment">If <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">0</span></code>, this SFX will be played when the weapon dies.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-liftlevel"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LiftLevel</strong>  <a class="reference internal" href="#classes-lweapon-var-liftlevel"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L248">Source</a></p>
+<p id="classes-lweapon-var-liftlevel"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LiftLevel</strong>  <a class="reference internal" href="#classes-lweapon-var-liftlevel"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L292">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-lifttime"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LiftTime</strong>  <a class="reference internal" href="#classes-lweapon-var-lifttime"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L253">Source</a></p>
+<p id="classes-lweapon-var-lifttime"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LiftTime</strong>  <a class="reference internal" href="#classes-lweapon-var-lifttime"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L297">Source</a></p>
 <p class="classref-comment">The time it takes to lift this weapon via engine lifting.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-liftheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LiftHeight</strong>  <a class="reference internal" href="#classes-lweapon-var-liftheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L258">Source</a></p>
+<p id="classes-lweapon-var-liftheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LiftHeight</strong>  <a class="reference internal" href="#classes-lweapon-var-liftheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L302">Source</a></p>
 <p class="classref-comment">The height to lift this weapon to via engine lifting.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-sprites"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Sprites</strong>  <a class="reference internal" href="#classes-lweapon-var-sprites"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L263">Source</a></p>
+<p id="classes-lweapon-var-sprites"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Sprites</strong>  <a class="reference internal" href="#classes-lweapon-var-sprites"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L307">Source</a></p>
 <p class="classref-comment">Various sprites used by the weapon.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-burnlightradius"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>BurnLightRadius</strong>  <a class="reference internal" href="#classes-lweapon-var-burnlightradius"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L270">Source</a></p>
+<p id="classes-lweapon-var-burnlightradius"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>BurnLightRadius</strong>  <a class="reference internal" href="#classes-lweapon-var-burnlightradius"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L313">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="../globals/constants.html#globals-enum-weaponspriteindex"><span class="std std-ref">WeaponSpriteIndex (WPN_)</span></a></p>
 <p class="classref-comment">The burning light radii associated with sprites of the weapon.</p>
-<p class="classref-comment">Valid indices: <a class="reference internal" href="../globals/constants.html#globals-enum-weaponspriteindex"><span class="std std-ref">WeaponSpriteIndex</span></a> (<code class="docutils literal notranslate"><span class="pre">WPN_SPRITE_</span></code>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-lweapon-var-uid"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>UID</strong>  <a class="reference internal" href="#classes-lweapon-var-uid"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L274">Source</a></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Deprecated!</strong></p>
+<p id="classes-lweapon-var-uid"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>UID</strong>  <a class="reference internal" href="#classes-lweapon-var-uid"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L317">Source</a></p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated.</span></p>
 </div>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-lweapon-fun-max"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Max</strong>() <a class="reference internal" href="#classes-lweapon-fun-max"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L282">Source</a></p>
+<p class="classref-method" id="classes-lweapon-fun-max"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Max</strong>() <a class="reference internal" href="#classes-lweapon-fun-max"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L325">Source</a></p>
 <p class="classref-comment">Returns the max number of weapons currently allowed.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Deprecated!</strong> Use <a class="reference internal" href="#classes-lweapon-var-max"><span class="std std-ref">Max</span></a>’ instead!</p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated: </span>Use <a class="reference internal" href="#classes-lweapon-var-max"><span class="std std-ref">Max</span></a>’ instead!</p>
 </div>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-lweapon-fun-max-2"><abbr title="No return value.">void</abbr> <strong>Max</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> value) <a class="reference internal" href="#classes-lweapon-fun-max-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L291">Source</a></p>
+<p class="classref-method" id="classes-lweapon-fun-max-2"><abbr title="No return value.">void</abbr> <strong>Max</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> value) <a class="reference internal" href="#classes-lweapon-fun-max-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L334">Source</a></p>
 <p class="classref-comment">Sets the max number of weapons allowed to a new value. Range <code class="docutils literal notranslate"><span class="pre">1-1024</span></code>.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Deprecated!</strong> Use <a class="reference internal" href="#classes-lweapon-var-max"><span class="std std-ref">Max</span></a>’ instead!</p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated: </span>Use <a class="reference internal" href="#classes-lweapon-var-max"><span class="std std-ref">Max</span></a>’ instead!</p>
 </div>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-lweapon-fun-isvalid">bool <strong>isValid</strong>() <a class="reference internal" href="#classes-lweapon-fun-isvalid"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L299">Source</a></p>
+<p class="classref-method" id="classes-lweapon-fun-isvalid">bool <strong>isValid</strong>() <a class="reference internal" href="#classes-lweapon-fun-isvalid"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L342">Source</a></p>
 <p class="classref-comment">Returns true if this pointer points to a valid weapon. If this returns
 false, using any other value of this pointer will error.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-lweapon-fun-usesprite"><abbr title="No return value.">void</abbr> <strong>UseSprite</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> spriteid) <a class="reference internal" href="#classes-lweapon-fun-usesprite"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L309">Source</a></p>
+<p class="classref-method" id="classes-lweapon-fun-usesprite"><abbr title="No return value.">void</abbr> <strong>UseSprite</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> sprite_id) <a class="reference internal" href="#classes-lweapon-fun-usesprite"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L352">Source</a></p>
 <p class="classref-comment">Loads the graphical information from the <a class="reference internal" href="spritedata.html#classes-spritedata"><span class="std std-ref">spritedata</span></a> indicated by
-<code class="docutils literal notranslate"><span class="pre">spriteid</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">sprite_id</span></code>.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-lweapon-fun-explode"><abbr title="No return value.">void</abbr> <strong>Explode</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> mode) <a class="reference internal" href="#classes-lweapon-fun-explode"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L317">Source</a></p>
+<p class="classref-method" id="classes-lweapon-fun-explode"><abbr title="No return value.">void</abbr> <strong>Explode</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> mode) <a class="reference internal" href="#classes-lweapon-fun-explode"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L360">Source</a></p>
 <p class="classref-comment">Creates an explosion particle effect in mode 0, 1, or 2 of the sprite.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-lweapon-fun-remove"><abbr title="No return value.">void</abbr> <strong>Remove</strong>() <a class="reference internal" href="#classes-lweapon-fun-remove"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L324">Source</a></p>
+<p class="classref-method" id="classes-lweapon-fun-remove"><abbr title="No return value.">void</abbr> <strong>Remove</strong>() <a class="reference internal" href="#classes-lweapon-fun-remove"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L367">Source</a></p>
 <p class="classref-comment">Instantly deletes the weapon.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-lweapon-fun-switch">bool <strong>Switch</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> effect) <a class="reference internal" href="#classes-lweapon-fun-switch"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L334">Source</a></p>
+<p class="classref-method" id="classes-lweapon-fun-switch">bool <strong>Switch</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> effect) <a class="reference internal" href="#classes-lweapon-fun-switch"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L377">Source</a></p>
 <p class="classref-comment">Switch the <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a> with this sprite.</p>
-<p class="classref-comment">Valid values for <code class="docutils literal notranslate"><span class="pre">effect</span></code>: <a class="reference internal" href="../globals/constants.html#globals-enum-switcheffect"><span class="std std-ref">SwitchEffect</span></a> (<code class="docutils literal notranslate"><span class="pre">SW_EFF_</span></code>).</p>
+<p class="classref-comment">Valid values for <code class="docutils literal notranslate"><span class="pre">effect</span></code>: <a class="reference internal" href="../globals/constants.html#globals-enum-switcheffect"><span class="std std-ref">SwitchEffect (SW_)</span></a> (<code class="docutils literal notranslate"><span class="pre">SW_EFF_</span></code>).</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-lweapon-fun-makeangular">bool <strong>MakeAngular</strong>() <a class="reference internal" href="#classes-lweapon-fun-makeangular"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L342">Source</a></p>
+<p class="classref-method" id="classes-lweapon-fun-makeangular">bool <strong>MakeAngular</strong>() <a class="reference internal" href="#classes-lweapon-fun-makeangular"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L385">Source</a></p>
 <p class="classref-comment">If the weapon is not Angular, makes it Angular, and sets its Angle based
 on its Dir.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-lweapon-fun-makedirectional">bool <strong>MakeDirectional</strong>() <a class="reference internal" href="#classes-lweapon-fun-makedirectional"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L350">Source</a></p>
+<p class="classref-method" id="classes-lweapon-fun-makedirectional">bool <strong>MakeDirectional</strong>() <a class="reference internal" href="#classes-lweapon-fun-makedirectional"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L393">Source</a></p>
 <p class="classref-comment">If the weapon is Angular, makes it not Angular, and sets its Dir based
 on its Angle.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-lweapon-fun-own"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="bitmap.html#classes-bitmap"><span class="std std-ref">bitmap</span></a> b) <a class="reference internal" href="#classes-lweapon-fun-own"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L358">Source</a></p>
+<p class="classref-method" id="classes-lweapon-fun-own"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="bitmap.html#classes-bitmap"><span class="std std-ref">bitmap</span></a> b) <a class="reference internal" href="#classes-lweapon-fun-own"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L401">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the parameter object to the weapon.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-lweapon-fun-own-2"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="paldata.html#classes-paldata"><span class="std std-ref">paldata</span></a> b) <a class="reference internal" href="#classes-lweapon-fun-own-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L366">Source</a></p>
+<p class="classref-method" id="classes-lweapon-fun-own-2"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="paldata.html#classes-paldata"><span class="std std-ref">paldata</span></a> b) <a class="reference internal" href="#classes-lweapon-fun-own-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L409">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the parameter object to the weapon.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-lweapon-fun-own-3"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="file.html#classes-file"><span class="std std-ref">file</span></a> b) <a class="reference internal" href="#classes-lweapon-fun-own-3"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L374">Source</a></p>
+<p class="classref-method" id="classes-lweapon-fun-own-3"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="file.html#classes-file"><span class="std std-ref">file</span></a> b) <a class="reference internal" href="#classes-lweapon-fun-own-3"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L417">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the parameter object to the weapon.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-lweapon-fun-own-4"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="directory.html#classes-directory"><span class="std std-ref">directory</span></a> b) <a class="reference internal" href="#classes-lweapon-fun-own-4"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L382">Source</a></p>
+<p class="classref-method" id="classes-lweapon-fun-own-4"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="directory.html#classes-directory"><span class="std std-ref">directory</span></a> b) <a class="reference internal" href="#classes-lweapon-fun-own-4"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L425">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the parameter object to the weapon.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-lweapon-fun-own-5"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="stack.html#classes-stack"><span class="std std-ref">stack</span></a> b) <a class="reference internal" href="#classes-lweapon-fun-own-5"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L390">Source</a></p>
+<p class="classref-method" id="classes-lweapon-fun-own-5"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="stack.html#classes-stack"><span class="std std-ref">stack</span></a> b) <a class="reference internal" href="#classes-lweapon-fun-own-5"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L433">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the parameter object to the weapon.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-lweapon-fun-own-6"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="randgen.html#classes-randgen"><span class="std std-ref">randgen</span></a> b) <a class="reference internal" href="#classes-lweapon-fun-own-6"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L398">Source</a></p>
+<p class="classref-method" id="classes-lweapon-fun-own-6"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="randgen.html#classes-randgen"><span class="std std-ref">randgen</span></a> b) <a class="reference internal" href="#classes-lweapon-fun-own-6"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L441">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the parameter object to the weapon.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-lweapon-fun-ownarray"><abbr title="No return value.">void</abbr> <strong>OwnArray</strong>(<abbr title="Could be any type.">untyped</abbr> array) <a class="reference internal" href="#classes-lweapon-fun-ownarray"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L406">Source</a></p>
+<p class="classref-method" id="classes-lweapon-fun-ownarray"><abbr title="No return value.">void</abbr> <strong>OwnArray</strong>(<abbr title="Could be any type.">untyped</abbr> array) <a class="reference internal" href="#classes-lweapon-fun-ownarray"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L449">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the parameter object to the weapon.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-lweapon-fun-ownobject"><abbr title="No return value.">void</abbr> <strong>OwnObject</strong>(<abbr title="Could be any type.">untyped</abbr> object) <a class="reference internal" href="#classes-lweapon-fun-ownobject"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/lweapon.zh#L414">Source</a></p>
+<p class="classref-method" id="classes-lweapon-fun-ownobject"><abbr title="No return value.">void</abbr> <strong>OwnObject</strong>(<abbr title="Could be any type.">untyped</abbr> object) <a class="reference internal" href="#classes-lweapon-fun-ownobject"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/lweapon.zh#L457">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the parameter object to the weapon.</p>
 </section>
 </section>
@@ -952,6 +1067,7 @@ on its Angle.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerations">Enumerations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-descriptions">Function descriptions</a></li>
 </ul>
@@ -982,7 +1098,7 @@ on its Angle.</p>
 
   <p class="copyright">
     
-      © Copyright 2024, ZQuest Classic Foundation.
+      © Copyright 2025, ZQuest Classic Foundation.
       <br/>
     
   </p>

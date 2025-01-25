@@ -31,6 +31,9 @@
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../_static/zscript.css?v=3afc8195" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -41,15 +44,19 @@
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/globals/Graphics';</script>
     <script src="../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../_static/zscript.js?v=0bdd3061"></script>
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Hero" href="Hero.html" />
     <link rel="prev" title="Game" href="Game.html" />
-    <link href="../../_static/main.css" rel="stylesheet" type="text/css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -271,7 +278,55 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../lang/types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lang/explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="functions.html">Global functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="constants.html">Global constants</a></li>
@@ -394,10 +449,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../libs/ffcscript/ffcscript.html">ffcscript.zh</a></li>
-</ul>
-</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
 </ul>
@@ -465,16 +516,16 @@
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#globals-graphics-var-isblanktile"><span class="std std-ref">IsBlankTile</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#globals-graphics-var-numdraws"><span class="std std-ref">NumDraws</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#globals-graphics-var-maxdraws"><span class="std std-ref">MaxDraws</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> bool[]</p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> bool[]</p></td>
 <td><p><a class="reference internal" href="#globals-graphics-var-is8bittile"><span class="std std-ref">Is8BitTile</span></a></p></td>
 </tr>
 </tbody>
@@ -516,7 +567,7 @@
 <td><p><a class="reference internal" href="#globals-graphics-fun-createpaldata-2"><span class="std std-ref">CreatePalData</span></a>(rgb color) <strong>deprecated</strong></p></td>
 </tr>
 <tr class="row-odd"><td><p>rgb</p></td>
-<td><p><a class="reference internal" href="#globals-graphics-fun-mixcolor"><span class="std std-ref">MixColor</span></a>(rgb start, rgb end, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> percent, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space = <code class="docutils literal notranslate"><span class="pre">0</span></code>)</p></td>
+<td><p><a class="reference internal" href="#globals-graphics-fun-mixcolor"><span class="std std-ref">MixColor</span></a>(rgb start, rgb end, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> percent, <a class="reference internal" href="#globals-enum-colorspace"><span class="std std-ref">ColorSpace</span></a> color_space = <code class="docutils literal notranslate"><span class="pre">CSPACE_RGB</span></code>)</p></td>
 </tr>
 <tr class="row-even"><td><p>rgb</p></td>
 <td><p><a class="reference internal" href="#globals-graphics-fun-creatergb"><span class="std std-ref">CreateRGB</span></a>(<abbr title="ZScript's real integer type.">long</abbr> hexcode)</p></td>
@@ -525,7 +576,7 @@
 <td><p><a class="reference internal" href="#globals-graphics-fun-creatergb-2"><span class="std std-ref">CreateRGB</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> r, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> g, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b)</p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#globals-graphics-fun-convertfromrgb"><span class="std std-ref">ConvertFromRGB</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg1, rgb arg2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg3)</p></td>
+<td><p><a class="reference internal" href="#globals-graphics-fun-convertfromrgb"><span class="std std-ref">ConvertFromRGB</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] buf, rgb color, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space)</p></td>
 </tr>
 <tr class="row-odd"><td><p>rgb</p></td>
 <td><p><a class="reference internal" href="#globals-graphics-fun-converttorgb"><span class="std std-ref">ConvertToRGB</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] arr)</p></td>
@@ -540,96 +591,111 @@
 </table>
 </div>
 </section>
+<section id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Link to this heading">#</a></h2>
+<p id="globals-enum-colorspace">enum <strong>ColorSpace</strong>: <a class="reference internal" href="#globals-enum-colorspace"><span class="std std-ref">🔗</span></a>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L3">Source</a></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cspace-rgb"><a class="reference internal" href="#globals-enum-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong>CSPACE_RGB</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cspace-cmyk"><a class="reference internal" href="#globals-enum-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong>CSPACE_CMYK</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cspace-hsv"><a class="reference internal" href="#globals-enum-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong>CSPACE_HSV</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cspace-hsv-cw"><a class="reference internal" href="#globals-enum-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong>CSPACE_HSV_CW</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cspace-hsv-ccw"><a class="reference internal" href="#globals-enum-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong>CSPACE_HSV_CCW</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cspace-hsl"><a class="reference internal" href="#globals-enum-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong>CSPACE_HSL</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cspace-hsl-cw"><a class="reference internal" href="#globals-enum-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong>CSPACE_HSL_CW</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cspace-hsl-ccw"><a class="reference internal" href="#globals-enum-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong>CSPACE_HSL_CCW</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cspace-lab"><a class="reference internal" href="#globals-enum-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong>CSPACE_LAB</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cspace-lch"><a class="reference internal" href="#globals-enum-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong>CSPACE_LCH</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cspace-lch-cw"><a class="reference internal" href="#globals-enum-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong>CSPACE_LCH_CW</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cspace-lch-ccw"><a class="reference internal" href="#globals-enum-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong>CSPACE_LCH_CCW</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cspace-numcspace"><a class="reference internal" href="#globals-enum-colorspace"><span class="std std-ref">ColorSpace</span></a> <strong>CSPACE_NUMCSPACE</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+</section>
+<hr class="classref-item-separator docutils" />
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="globals-graphics-var-isblanktile"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>IsBlankTile</strong>  <a class="reference internal" href="#globals-graphics-var-isblanktile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L11">Source</a></p>
+<p id="globals-graphics-var-isblanktile"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>IsBlankTile</strong>  <a class="reference internal" href="#globals-graphics-var-isblanktile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L24">Source</a></p>
 <p class="classref-comment">True if the given tile is entirely blank (all color 0).</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-graphics-var-numdraws"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NumDraws</strong>  <a class="reference internal" href="#globals-graphics-var-numdraws"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L17">Source</a></p>
+<p id="globals-graphics-var-numdraws"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NumDraws</strong>  <a class="reference internal" href="#globals-graphics-var-numdraws"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L30">Source</a></p>
 <p class="classref-comment">Returns the number of script drawing commands that are currently waiting
 in the draw queue.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-graphics-var-maxdraws"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MaxDraws</strong>  <a class="reference internal" href="#globals-graphics-var-maxdraws"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L24">Source</a></p>
+<p id="globals-graphics-var-maxdraws"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MaxDraws</strong>  <a class="reference internal" href="#globals-graphics-var-maxdraws"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L37">Source</a></p>
 <p class="classref-comment">Returns the limit of the drawing queue. If <a class="reference internal" href="#globals-graphics-var-numdraws"><span class="std std-ref">NumDraws</span></a> returns the same as
 this, no further drawing commands will work until the queue has been
 cleared (i.e. the next frame)</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-graphics-var-is8bittile"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> bool[] <strong>Is8BitTile</strong>  <a class="reference internal" href="#globals-graphics-var-is8bittile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L29">Source</a></p>
+<p id="globals-graphics-var-is8bittile"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> bool[] <strong>Is8BitTile</strong>  <a class="reference internal" href="#globals-graphics-var-is8bittile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L42">Source</a></p>
 <p class="classref-comment">True if the given tile uses 8-bit color.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="globals-graphics-fun-wavy"><abbr title="No return value.">void</abbr> <strong>Wavy</strong>(bool style_in) <a class="reference internal" href="#globals-graphics-fun-wavy"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L36">Source</a></p>
+<p class="classref-method" id="globals-graphics-fun-wavy"><abbr title="No return value.">void</abbr> <strong>Wavy</strong>(bool style_in) <a class="reference internal" href="#globals-graphics-fun-wavy"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L49">Source</a></p>
 <p class="classref-comment">Creates a ‘wave’ effect, as a ‘Wavy’ warp type uses.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-graphics-fun-zap"><abbr title="No return value.">void</abbr> <strong>Zap</strong>(bool style_in) <a class="reference internal" href="#globals-graphics-fun-zap"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L43">Source</a></p>
+<p class="classref-method" id="globals-graphics-fun-zap"><abbr title="No return value.">void</abbr> <strong>Zap</strong>(bool style_in) <a class="reference internal" href="#globals-graphics-fun-zap"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L56">Source</a></p>
 <p class="classref-comment">Creates a ‘zap’ effect, as a ‘Zap’ warp type uses.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-graphics-fun-tint"><abbr title="No return value.">void</abbr> <strong>Tint</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> red, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> green, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> blue) <a class="reference internal" href="#globals-graphics-fun-tint"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L52">Source</a></p>
+<p class="classref-method" id="globals-graphics-fun-tint"><abbr title="No return value.">void</abbr> <strong>Tint</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> red, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> green, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> blue) <a class="reference internal" href="#globals-graphics-fun-tint"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L65">Source</a></p>
 <p class="classref-comment">Tints the palette by adding <code class="docutils literal notranslate"><span class="pre">red</span></code>, <code class="docutils literal notranslate"><span class="pre">green</span></code>, and <code class="docutils literal notranslate"><span class="pre">blue</span></code> to the respective
 values of every palette swatch. Subsequent calls to these functions will
 SUM the tint with all previous tints.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-graphics-fun-monochromehue"><abbr title="No return value.">void</abbr> <strong>MonochromeHue</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> red, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> green, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> blue, bool distributed = <code class="docutils literal notranslate"><span class="pre">true</span></code>) <a class="reference internal" href="#globals-graphics-fun-monochromehue"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L61">Source</a></p>
+<p class="classref-method" id="globals-graphics-fun-monochromehue"><abbr title="No return value.">void</abbr> <strong>MonochromeHue</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> red, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> green, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> blue, bool distributed = <code class="docutils literal notranslate"><span class="pre">true</span></code>) <a class="reference internal" href="#globals-graphics-fun-monochromehue"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L74">Source</a></p>
 <p class="classref-comment">Tints the palette by adding <code class="docutils literal notranslate"><span class="pre">red</span></code>, <code class="docutils literal notranslate"><span class="pre">green</span></code>, and <code class="docutils literal notranslate"><span class="pre">blue</span></code> to the respective
 values of every palette swatch. Subsequent calls to these functions will
 SUM the tint with all previous tints.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-graphics-fun-cleartint"><abbr title="No return value.">void</abbr> <strong>ClearTint</strong>() <a class="reference internal" href="#globals-graphics-fun-cleartint"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L68">Source</a></p>
+<p class="classref-method" id="globals-graphics-fun-cleartint"><abbr title="No return value.">void</abbr> <strong>ClearTint</strong>() <a class="reference internal" href="#globals-graphics-fun-cleartint"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L81">Source</a></p>
 <p class="classref-comment">Clears all tint effects.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-graphics-fun-numdraws"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NumDraws</strong>() <a class="reference internal" href="#globals-graphics-fun-numdraws"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L76">Source</a></p>
+<p class="classref-method" id="globals-graphics-fun-numdraws"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NumDraws</strong>() <a class="reference internal" href="#globals-graphics-fun-numdraws"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L89">Source</a></p>
 <p class="classref-comment">Returns the number of script drawing commands that are currently waiting
 in the draw queue.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Deprecated!</strong> Use <a class="reference internal" href="#globals-graphics-var-numdraws"><span class="std std-ref">NumDraws</span></a> instead!</p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated: </span>Use <a class="reference internal" href="#globals-graphics-var-numdraws"><span class="std std-ref">NumDraws</span></a> instead!</p>
 </div>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-graphics-fun-maxdraws"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MaxDraws</strong>() <a class="reference internal" href="#globals-graphics-fun-maxdraws"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L85">Source</a></p>
+<p class="classref-method" id="globals-graphics-fun-maxdraws"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MaxDraws</strong>() <a class="reference internal" href="#globals-graphics-fun-maxdraws"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L98">Source</a></p>
 <p class="classref-comment">Returns the limit of the drawing queue. If <a class="reference internal" href="#globals-graphics-var-numdraws"><span class="std std-ref">NumDraws</span></a> returns the same as
 this, no further drawing commands will work until the queue has been
 cleared (i.e. the next frame)</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Deprecated!</strong> Use <a class="reference internal" href="#globals-graphics-var-maxdraws"><span class="std std-ref">MaxDraws</span></a> instead!</p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated: </span>Use <a class="reference internal" href="#globals-graphics-var-maxdraws"><span class="std std-ref">MaxDraws</span></a> instead!</p>
 </div>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-graphics-fun-getpixel"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetPixel</strong>(<abbr title="Could be any type.">untyped</abbr> b, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y) <a class="reference internal" href="#globals-graphics-fun-getpixel"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L94">Source</a></p>
+<p class="classref-method" id="globals-graphics-fun-getpixel"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetPixel</strong>(<abbr title="Could be any type.">untyped</abbr> b, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y) <a class="reference internal" href="#globals-graphics-fun-getpixel"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L107">Source</a></p>
 <p class="classref-comment">Same as <a class="reference internal" href="../classes/bitmap.html#classes-bitmap-fun-getpixel"><span class="std std-ref">bitmap::GetPixel()</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-graphics-fun-createpaldata"><a class="reference internal" href="../classes/paldata.html#classes-paldata"><span class="std std-ref">paldata</span></a> <strong>CreatePalData</strong>() <a class="reference internal" href="#globals-graphics-fun-createpaldata"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L99">Source</a></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Deprecated!</strong> Use <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">paldata()</span></code> instead!</p>
+<p class="classref-method" id="globals-graphics-fun-createpaldata"><a class="reference internal" href="../classes/paldata.html#classes-paldata"><span class="std std-ref">paldata</span></a> <strong>CreatePalData</strong>() <a class="reference internal" href="#globals-graphics-fun-createpaldata"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L112">Source</a></p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated: </span>Use <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">paldata()</span></code> instead!</p>
 </div>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-graphics-fun-createpaldata-2"><a class="reference internal" href="../classes/paldata.html#classes-paldata"><span class="std std-ref">paldata</span></a> <strong>CreatePalData</strong>(rgb color) <a class="reference internal" href="#globals-graphics-fun-createpaldata-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L105">Source</a></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Deprecated!</strong> Use <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">paldata(color)</span></code> instead!</p>
+<p class="classref-method" id="globals-graphics-fun-createpaldata-2"><a class="reference internal" href="../classes/paldata.html#classes-paldata"><span class="std std-ref">paldata</span></a> <strong>CreatePalData</strong>(rgb color) <a class="reference internal" href="#globals-graphics-fun-createpaldata-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L118">Source</a></p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated: </span>Use <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">paldata(color)</span></code> instead!</p>
 </div>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-graphics-fun-mixcolor">rgb <strong>MixColor</strong>(rgb start, rgb end, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> percent, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#globals-graphics-fun-mixcolor"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L113">Source</a></p>
+<p class="classref-method" id="globals-graphics-fun-mixcolor">rgb <strong>MixColor</strong>(rgb start, rgb end, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> percent, <a class="reference internal" href="#globals-enum-colorspace"><span class="std std-ref">ColorSpace</span></a> color_space = <code class="docutils literal notranslate"><span class="pre">CSPACE_RGB</span></code>) <a class="reference internal" href="#globals-graphics-fun-mixcolor"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L126">Source</a></p>
 <p class="classref-comment">Interpolates a color between start and end and then returns the resulting
 rgb.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-graphics-fun-creatergb">rgb <strong>CreateRGB</strong>(<abbr title="ZScript's real integer type.">long</abbr> hexcode) <a class="reference internal" href="#globals-graphics-fun-creatergb"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L120">Source</a></p>
+<p class="classref-method" id="globals-graphics-fun-creatergb">rgb <strong>CreateRGB</strong>(<abbr title="ZScript's real integer type.">long</abbr> hexcode) <a class="reference internal" href="#globals-graphics-fun-creatergb"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L133">Source</a></p>
 <p class="classref-comment">Takes a long hexcode (0xRRGGBBL), with each rgb section 0 &lt;= n &lt;= 255.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-graphics-fun-creatergb-2">rgb <strong>CreateRGB</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> r, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> g, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b) <a class="reference internal" href="#globals-graphics-fun-creatergb-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L129">Source</a></p>
+<p class="classref-method" id="globals-graphics-fun-creatergb-2">rgb <strong>CreateRGB</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> r, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> g, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> b) <a class="reference internal" href="#globals-graphics-fun-creatergb-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L142">Source</a></p>
 <p class="classref-comment">Takes an (r,g,b) ranging 0 &lt;= n &lt;= 255.</p>
 <p class="classref-comment">0 &lt;= n &lt;= 63 if compat QR “Scripts use 6-bit color (0-63) instead of 8-bit (0-255)” is enabled.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-graphics-fun-convertfromrgb"><abbr title="No return value.">void</abbr> <strong>ConvertFromRGB</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg1, rgb arg2, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> arg3) <a class="reference internal" href="#globals-graphics-fun-convertfromrgb"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L134">Source</a></p>
+<p class="classref-method" id="globals-graphics-fun-convertfromrgb"><abbr title="No return value.">void</abbr> <strong>ConvertFromRGB</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] buf, rgb color, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space) <a class="reference internal" href="#globals-graphics-fun-convertfromrgb"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L147">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-graphics-fun-converttorgb">rgb <strong>ConvertToRGB</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] arr) <a class="reference internal" href="#globals-graphics-fun-converttorgb"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L139">Source</a></p>
+<p class="classref-method" id="globals-graphics-fun-converttorgb">rgb <strong>ConvertToRGB</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] arr) <a class="reference internal" href="#globals-graphics-fun-converttorgb"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L152">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-graphics-fun-gettilepixel"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetTilePixel</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> tile, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#globals-graphics-fun-gettilepixel"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L146">Source</a></p>
+<p class="classref-method" id="globals-graphics-fun-gettilepixel"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GetTilePixel</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> tile, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#globals-graphics-fun-gettilepixel"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L159">Source</a></p>
 <p class="classref-comment">Returns the color index at an x,y coordinate of a tile.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-graphics-fun-settilepixel"><abbr title="No return value.">void</abbr> <strong>SetTilePixel</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> tile, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color) <a class="reference internal" href="#globals-graphics-fun-settilepixel"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/graphics.zh#L153">Source</a></p>
+<p class="classref-method" id="globals-graphics-fun-settilepixel"><abbr title="No return value.">void</abbr> <strong>SetTilePixel</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> tile, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color) <a class="reference internal" href="#globals-graphics-fun-settilepixel"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/graphics.zh#L166">Source</a></p>
 <p class="classref-comment">Sets the color index an an x,y coordinate of a tile.</p>
 </section>
 </section>
@@ -683,6 +749,7 @@ rgb.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerations">Enumerations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-descriptions">Function descriptions</a></li>
 </ul>
@@ -713,7 +780,7 @@ rgb.</p>
 
   <p class="copyright">
     
-      © Copyright 2024, ZQuest Classic Foundation.
+      © Copyright 2025, ZQuest Classic Foundation.
       <br/>
     
   </p>

@@ -31,6 +31,9 @@
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../_static/zscript.css?v=3afc8195" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -41,15 +44,19 @@
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/classes/sprite';</script>
     <script src="../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../_static/zscript.js?v=0bdd3061"></script>
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="spritedata" href="spritedata.html" />
     <link rel="prev" title="shopdata" href="shopdata.html" />
-    <link href="../../_static/main.css" rel="stylesheet" type="text/css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -271,7 +278,55 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../lang/types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lang/explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../globals/functions.html">Global functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../globals/constants.html">Global constants</a></li>
@@ -392,10 +447,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_types.html">guizh_types.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_widget.html">guizh_widget.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../libs/ffcscript/ffcscript.html">ffcscript.zh</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -564,7 +615,7 @@
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-sprite-var-lightshape"><span class="std std-ref">LightShape</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> bool</p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> bool</p></td>
 <td><p><a class="reference internal" href="#classes-sprite-var-switchhooked"><span class="std std-ref">SwitchHooked</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
@@ -589,15 +640,41 @@
 </table>
 </div>
 </section>
+<section id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Link to this heading">#</a></h2>
+<p id="globals-enum-extendmode">enum <strong>ExtendMode</strong>: <a class="reference internal" href="#globals-enum-extendmode"><span class="std std-ref">🔗</span></a>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L2">Source</a></p>
+<p class="classref-comment">Sprite rendering extend modes. Used with <a class="reference internal" href="#classes-sprite-var-extend"><span class="std std-ref">sprite::Extend</span></a>.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ext-none"><a class="reference internal" href="#globals-enum-extendmode"><span class="std std-ref">ExtendMode</span></a> <strong>EXT_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-comment">Not extended.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ext-16x32"><a class="reference internal" href="#globals-enum-extendmode"><span class="std std-ref">ExtendMode</span></a> <strong>EXT_16X32</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-comment">Sprite is extended as 16x32, or Link is extended in Sprites-&gt;Link to 16x32.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ext-32x32"><a class="reference internal" href="#globals-enum-extendmode"><span class="std std-ref">ExtendMode</span></a> <strong>EXT_32X32</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-comment">Sprite is extended as 32x32, or Link is extended in Sprites-&gt;Link to 32x32.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ext-normal"><a class="reference internal" href="#globals-enum-extendmode"><span class="std std-ref">ExtendMode</span></a> <strong>EXT_NORMAL</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-comment">Extended.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ext-extended"><a class="reference internal" href="#globals-enum-extendmode"><span class="std std-ref">ExtendMode</span></a> <strong>EXT_EXTENDED</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-comment">Extended.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ext-noshadow"><a class="reference internal" href="#globals-enum-extendmode"><span class="std std-ref">ExtendMode</span></a> <strong>EXT_NOSHADOW</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-comment">Extended. NPC has no shadow.</p>
+<hr class="classref-item-separator docutils" />
+<p id="globals-enum-moveflag">enum <strong>MoveFlag</strong>: <a class="reference internal" href="#globals-enum-moveflag"><span class="std std-ref">🔗</span></a>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L12">Source</a></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-mv-obeys-gravity"><a class="reference internal" href="#globals-enum-moveflag"><span class="std std-ref">MoveFlag</span></a> <strong>MV_OBEYS_GRAVITY</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-mv-can-pitfall"><a class="reference internal" href="#globals-enum-moveflag"><span class="std std-ref">MoveFlag</span></a> <strong>MV_CAN_PITFALL</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-mv-no-fake-z"><a class="reference internal" href="#globals-enum-moveflag"><span class="std std-ref">MoveFlag</span></a> <strong>MV_NO_FAKE_Z</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-mv-no-real-z"><a class="reference internal" href="#globals-enum-moveflag"><span class="std std-ref">MoveFlag</span></a> <strong>MV_NO_REAL_Z</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+</section>
+<hr class="classref-item-separator docutils" />
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="classes-sprite-var-x"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>X</strong>  <a class="reference internal" href="#classes-sprite-var-x"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L8">Source</a></p>
+<p id="classes-sprite-var-x"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>X</strong>  <a class="reference internal" href="#classes-sprite-var-x"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L27">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-y"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Y</strong>  <a class="reference internal" href="#classes-sprite-var-y"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L11">Source</a></p>
+<p id="classes-sprite-var-y"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Y</strong>  <a class="reference internal" href="#classes-sprite-var-y"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L30">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-z"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Z</strong>  <a class="reference internal" href="#classes-sprite-var-z"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L14">Source</a></p>
+<p id="classes-sprite-var-z"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Z</strong>  <a class="reference internal" href="#classes-sprite-var-z"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L33">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-fakez"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FakeZ</strong>  <a class="reference internal" href="#classes-sprite-var-fakez"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L29">Source</a></p>
+<p id="classes-sprite-var-fakez"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FakeZ</strong>  <a class="reference internal" href="#classes-sprite-var-fakez"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L48">Source</a></p>
 <p class="classref-comment">The position of the sprite on the fake Z axis. This value is treated as a second,
 separate Z axis.</p>
 <p class="classref-comment">Sprites are offset upwards by this amount when drawn just like the Z
@@ -607,63 +684,61 @@ it is moved upwards on the Y axis, mimicking how Vires and Pols Voice
 worked in the original Zelda.</p>
 <p class="classref-comment">This value is affected by <a class="reference internal" href="#classes-sprite-var-fakejump"><span class="std std-ref">FakeJump</span></a> instead of <a class="reference internal" href="#classes-sprite-var-jump"><span class="std std-ref">Jump</span></a>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-drawxoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawXOffset</strong>  <a class="reference internal" href="#classes-sprite-var-drawxoffset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L36">Source</a></p>
+<p id="classes-sprite-var-drawxoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawXOffset</strong>  <a class="reference internal" href="#classes-sprite-var-drawxoffset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L55">Source</a></p>
 <p class="classref-comment">The visual offset, in pixels. Defaults to 0.</p>
 <p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-drawyoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawYOffset</strong>  <a class="reference internal" href="#classes-sprite-var-drawyoffset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L43">Source</a></p>
+<p id="classes-sprite-var-drawyoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawYOffset</strong>  <a class="reference internal" href="#classes-sprite-var-drawyoffset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L62">Source</a></p>
 <p class="classref-comment">The visual offset, in pixels. Defaults to 0.</p>
 <p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-drawzoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawZOffset</strong>  <a class="reference internal" href="#classes-sprite-var-drawzoffset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L50">Source</a></p>
+<p id="classes-sprite-var-drawzoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawZOffset</strong>  <a class="reference internal" href="#classes-sprite-var-drawzoffset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L69">Source</a></p>
 <p class="classref-comment">The Z offset, in pixels.</p>
 <p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-rotation"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Rotation</strong>  <a class="reference internal" href="#classes-sprite-var-rotation"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L59">Source</a></p>
+<p id="classes-sprite-var-rotation"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Rotation</strong>  <a class="reference internal" href="#classes-sprite-var-rotation"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L78">Source</a></p>
 <p class="classref-comment">Rotation of the sprite draw, in degrees.</p>
 <p class="classref-comment">Does nothing if the QR ‘Old (Faster) Sprite Drawing’ is enabled.</p>
 <p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-dir"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Dir</strong>  <a class="reference internal" href="#classes-sprite-var-dir"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L67">Source</a></p>
+<p id="classes-sprite-var-dir"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Dir</strong>  <a class="reference internal" href="#classes-sprite-var-dir"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L85">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="../globals/constants.html#globals-enum-direction"><span class="std std-ref">Direction (DIR_)</span></a></p>
 <p class="classref-comment">The direction that the sprite is facing. Used by certain weapon types
 to determine movement, shield deflection and such.</p>
-<p class="classref-comment">Valid values: <a class="reference internal" href="../globals/constants.html#globals-enum-direction"><span class="std std-ref">Direction</span></a> (<code class="docutils literal notranslate"><span class="pre">DIR_</span></code>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-tile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Tile</strong>  <a class="reference internal" href="#classes-sprite-var-tile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L75">Source</a></p>
+<p id="classes-sprite-var-tile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Tile</strong>  <a class="reference internal" href="#classes-sprite-var-tile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L93">Source</a></p>
 <p class="classref-comment">The currently displaying tile of the sprite’s animation. Set by the
 engine each frame if <a class="reference internal" href="#classes-sprite-var-animation"><span class="std std-ref">Animation</span></a> is enabled.</p>
 <p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: Not used - set <a class="reference internal" href="ffc.html#classes-ffc-var-data"><span class="std std-ref">ffc::Data</span></a> to the desired combo instead.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-scripttile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ScriptTile</strong>  <a class="reference internal" href="#classes-sprite-var-scripttile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L84">Source</a></p>
+<p id="classes-sprite-var-scripttile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ScriptTile</strong>  <a class="reference internal" href="#classes-sprite-var-scripttile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L102">Source</a></p>
 <p class="classref-comment">If &gt;-1, this tile is displayed by the engine, regardless of the normal engine animation.
 Set back to -1 to restore engine animation.
 Defaults to -1.</p>
 <p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-extend"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Extend</strong>  <a class="reference internal" href="#classes-sprite-var-extend"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L92">Source</a></p>
-<p class="classref-comment">If the sprite should be extended (large). Set to 3 to extend, 0
-otherwise.</p>
-<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>, <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>: Not used.</p>
+<p id="classes-sprite-var-extend"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Extend</strong>  <a class="reference internal" href="#classes-sprite-var-extend"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L110">Source</a></p>
+<p class="classref-comment">If the sprite should be extended (large). Set to 3 to extend, 0 otherwise.</p>
+<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: Not used.
+<a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>: Reset every frame based on current action, unless <a class="reference internal" href="#classes-sprite-var-scripttile"><span class="std std-ref">ScriptTile</span></a> is &gt; 0.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-tilewidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TileWidth</strong>  <a class="reference internal" href="#classes-sprite-var-tilewidth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L104">Source</a></p>
+<p id="classes-sprite-var-tilewidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TileWidth</strong>  <a class="reference internal" href="#classes-sprite-var-tilewidth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L121">Source</a></p>
 <p class="classref-comment">The width of the sprite’s graphic, in tiles. Visual only. The upper-left corner is the first tile.</p>
 <p class="classref-comment">Must set <a class="reference internal" href="#classes-sprite-var-extend"><span class="std std-ref">Extend</span></a> to 3 to use (except for <code class="docutils literal notranslate"><span class="pre">fcc</span></code>).</p>
 <p class="classref-comment">Max value is 20.</p>
-<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: max value is 4.
-<a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>: Not used.</p>
+<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: max value is 4.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-tileheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TileHeight</strong>  <a class="reference internal" href="#classes-sprite-var-tileheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L116">Source</a></p>
+<p id="classes-sprite-var-tileheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TileHeight</strong>  <a class="reference internal" href="#classes-sprite-var-tileheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L132">Source</a></p>
 <p class="classref-comment">The height of the sprite’s graphic, in tiles. Visual only. The upper-left corner is the first tile.</p>
 <p class="classref-comment">Must set <a class="reference internal" href="#classes-sprite-var-extend"><span class="std std-ref">Extend</span></a> to 3 to use (except for <code class="docutils literal notranslate"><span class="pre">fcc</span></code>).</p>
 <p class="classref-comment">Max value is 20.</p>
-<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: max value is 4.
-<a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>: Not used.</p>
+<p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: max value is 4.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-cset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CSet</strong>  <a class="reference internal" href="#classes-sprite-var-cset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L122">Source</a></p>
+<p id="classes-sprite-var-cset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CSet</strong>  <a class="reference internal" href="#classes-sprite-var-cset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L138">Source</a></p>
 <p class="classref-comment"><a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>: This changes when the Hero is hurt and flashing. Writing to this does nothing,
 as the Hero cset is updated by the engine every frame - use <a class="reference internal" href="../globals/Hero.html#globals-hero-var-scriptcset"><span class="std std-ref">Hero-&gt;ScriptCSet</span></a> instead.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-scale"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Scale</strong>  <a class="reference internal" href="#classes-sprite-var-scale"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L135">Source</a></p>
+<p id="classes-sprite-var-scale"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Scale</strong>  <a class="reference internal" href="#classes-sprite-var-scale"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L151">Source</a></p>
 <p class="classref-comment">The multiplier for scaling the sprite draw.</p>
 <p class="classref-comment">Scale values are a multiplier: 1.5 == 50% larger (150%).
 A scale of 0 and a scale of 1 are identical.
@@ -671,59 +746,59 @@ Negative values are undefined.</p>
 <p class="classref-comment">Does nothing if the QR ‘Old (Faster) Sprite Drawing’ is enabled.</p>
 <p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: currently not supported.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-drawstyle"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawStyle</strong>  <a class="reference internal" href="#classes-sprite-var-drawstyle"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L142">Source</a></p>
+<p id="classes-sprite-var-drawstyle"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrawStyle</strong>  <a class="reference internal" href="#classes-sprite-var-drawstyle"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L157">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="#classes-sprite-var-drawstyle"><span class="std std-ref">DrawStyle</span></a></p>
 <p class="classref-comment">The drawing mode to use.</p>
-<p class="classref-comment">Valid values: <a class="reference internal" href="#classes-sprite-var-drawstyle"><span class="std std-ref">DrawStyle</span></a> (<code class="docutils literal notranslate"><span class="pre">DS_</span></code>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-jump"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Jump</strong>  <a class="reference internal" href="#classes-sprite-var-jump"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L148">Source</a></p>
+<p id="classes-sprite-var-jump"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Jump</strong>  <a class="reference internal" href="#classes-sprite-var-jump"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L163">Source</a></p>
 <p class="classref-comment">Upward velocity, in pixels per frame. Affected by gravity each frame, if
 <a class="reference internal" href="#classes-sprite-var-gravity"><span class="std std-ref">Gravity</span></a> is true.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-fakejump"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FakeJump</strong>  <a class="reference internal" href="#classes-sprite-var-fakejump"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L155">Source</a></p>
+<p id="classes-sprite-var-fakejump"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FakeJump</strong>  <a class="reference internal" href="#classes-sprite-var-fakejump"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L170">Source</a></p>
 <p class="classref-comment">The current velocity on the FakeZ axis. This value is added to FakeZ
 every frame; and this value is decreased by the gravity value until it is
 lower than the terminal velocity value.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-gravity">bool <strong>Gravity</strong>  <a class="reference internal" href="#classes-sprite-var-gravity"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L160">Source</a></p>
+<p id="classes-sprite-var-gravity">bool <strong>Gravity</strong>  <a class="reference internal" href="#classes-sprite-var-gravity"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L175">Source</a></p>
 <p class="classref-comment">If gravity affects this sprite in sideview mode. True by default.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-flip"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Flip</strong>  <a class="reference internal" href="#classes-sprite-var-flip"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L167">Source</a></p>
+<p id="classes-sprite-var-flip"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Flip</strong>  <a class="reference internal" href="#classes-sprite-var-flip"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L181">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="../globals/constants.html#globals-enum-transformationtype"><span class="std std-ref">TransformationType (FLIP_ or ROT_)</span></a></p>
 <p class="classref-comment">How to flip (or rotate) the sprite.</p>
-<p class="classref-comment">Valid values: <a class="reference internal" href="../globals/constants.html#globals-enum-transformationtype"><span class="std std-ref">TransformationType</span></a> (<code class="docutils literal notranslate"><span class="pre">FLIP_</span></code> or <code class="docutils literal notranslate"><span class="pre">ROT_</span></code>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-scriptflip"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ScriptFlip</strong>  <a class="reference internal" href="#classes-sprite-var-scriptflip"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L175">Source</a></p>
+<p id="classes-sprite-var-scriptflip"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ScriptFlip</strong>  <a class="reference internal" href="#classes-sprite-var-scriptflip"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L189">Source</a></p>
 <p class="classref-comment">If &gt;-1, this flip value will be used instead of <a class="reference internal" href="#classes-sprite-var-flip"><span class="std std-ref">Flip</span></a>.
 Set back to -1 to restore normal flip.</p>
 <p class="classref-comment">Defaults to -1.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-animation">bool <strong>Animation</strong>  <a class="reference internal" href="#classes-sprite-var-animation"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L184">Source</a></p>
+<p id="classes-sprite-var-animation">bool <strong>Animation</strong>  <a class="reference internal" href="#classes-sprite-var-animation"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L198">Source</a></p>
 <p class="classref-comment">If the engine should animate the sprite’s graphics. If set to false,
 scripts must set <a class="reference internal" href="#classes-sprite-var-tile"><span class="std std-ref">Tile</span></a> to update the sprite’s graphics manually.
 Defaults to true.</p>
 <p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: Not used.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-hitwidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitWidth</strong>  <a class="reference internal" href="#classes-sprite-var-hitwidth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L189">Source</a></p>
+<p id="classes-sprite-var-hitwidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitWidth</strong>  <a class="reference internal" href="#classes-sprite-var-hitwidth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L203">Source</a></p>
 <p class="classref-comment">The width of the hitbox, in pixels.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-hitheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitHeight</strong>  <a class="reference internal" href="#classes-sprite-var-hitheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L194">Source</a></p>
+<p id="classes-sprite-var-hitheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitHeight</strong>  <a class="reference internal" href="#classes-sprite-var-hitheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L208">Source</a></p>
 <p class="classref-comment">The height of the hitbox, in pixels.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-hitzheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitZHeight</strong>  <a class="reference internal" href="#classes-sprite-var-hitzheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L199">Source</a></p>
+<p id="classes-sprite-var-hitzheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitZHeight</strong>  <a class="reference internal" href="#classes-sprite-var-hitzheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L213">Source</a></p>
 <p class="classref-comment">The height of the hitbox in the Z-axis, in pixels.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-hitxoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitXOffset</strong>  <a class="reference internal" href="#classes-sprite-var-hitxoffset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L204">Source</a></p>
+<p id="classes-sprite-var-hitxoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitXOffset</strong>  <a class="reference internal" href="#classes-sprite-var-hitxoffset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L218">Source</a></p>
 <p class="classref-comment">The hitbox offset, in pixels.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-hityoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitYOffset</strong>  <a class="reference internal" href="#classes-sprite-var-hityoffset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L209">Source</a></p>
+<p id="classes-sprite-var-hityoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HitYOffset</strong>  <a class="reference internal" href="#classes-sprite-var-hityoffset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L223">Source</a></p>
 <p class="classref-comment">The hitbox offset, in pixels.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-falling"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Falling</strong>  <a class="reference internal" href="#classes-sprite-var-falling"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L218">Source</a></p>
+<p id="classes-sprite-var-falling"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Falling</strong>  <a class="reference internal" href="#classes-sprite-var-falling"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L232">Source</a></p>
 <p class="classref-comment">The timer indicating how many more frames the sprite will fall. If 0, the
 sprite is not falling. Max value of 70, which is the value at the start
 of falling.</p>
-<p class="classref-comment"><a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>: Setting <a class="reference internal" href="../globals/Hero.html#globals-hero-var-action"><span class="std std-ref">Hero-&gt;Action</span></a> to <a class="reference internal" href="../libs/std/std_constants.html#libs-std-enum-member-la-falling"><span class="std std-ref">LA_FALLING</span></a> also sets this to 70.</p>
+<p class="classref-comment"><a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>: Setting <a class="reference internal" href="../globals/Hero.html#globals-hero-var-action"><span class="std std-ref">Hero-&gt;Action</span></a> to <a class="reference internal" href="../globals/Hero.html#globals-enum-member-la-falling"><span class="std std-ref">LA_FALLING</span></a> also sets this to 70.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-fallcombo"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FallCombo</strong>  <a class="reference internal" href="#classes-sprite-var-fallcombo"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L235">Source</a></p>
+<p id="classes-sprite-var-fallcombo"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FallCombo</strong>  <a class="reference internal" href="#classes-sprite-var-fallcombo"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L249">Source</a></p>
 <p class="classref-comment">The pitfall combo the sprite is falling into, if it is falling.</p>
 <p class="classref-comment"><a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>:</p>
 <p class="classref-comment">If non-zero, this combo’s attributes will affect things such as if the
@@ -733,37 +808,40 @@ falling.</p>
 <p class="classref-comment">Setting <a class="reference internal" href="../globals/Hero.html#globals-hero-var-action"><span class="std std-ref">Hero-&gt;Action</span></a> to <code class="docutils literal notranslate"><span class="pre">LA_FALLING</span></code> will overwrite this value.</p>
 <p class="classref-comment">Setting <a class="reference internal" href="#classes-sprite-var-falling"><span class="std std-ref">Falling</span></a> will overwrite this value.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-moveflags">bool[] <strong>MoveFlags</strong>  <a class="reference internal" href="#classes-sprite-var-moveflags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L240">Source</a></p>
-<p class="classref-comment">The movement flags of the sprite. See <a class="reference internal" href="../libs/std/std_constants.html#libs-std-enum-moveflag"><span class="std std-ref">MoveFlag</span></a> (<code class="docutils literal notranslate"><span class="pre">MV_</span></code>) constants.</p>
+<p id="classes-sprite-var-moveflags">bool[] <strong>MoveFlags</strong>  <a class="reference internal" href="#classes-sprite-var-moveflags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L255">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="#globals-enum-moveflag"><span class="std std-ref">MoveFlag (MV_)</span></a></p>
+<p class="classref-comment">The sprite’s movement flags.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-lightradius"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LightRadius</strong>  <a class="reference internal" href="#classes-sprite-var-lightradius"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L245">Source</a></p>
+<p id="classes-sprite-var-lightradius"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LightRadius</strong>  <a class="reference internal" href="#classes-sprite-var-lightradius"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L260">Source</a></p>
 <p class="classref-comment">The size of the light emitted by this sprite, in pixels.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-lightshape"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LightShape</strong>  <a class="reference internal" href="#classes-sprite-var-lightshape"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L250">Source</a></p>
-<p class="classref-comment">The shape of light emitted by this sprite. Uses the <code class="docutils literal notranslate"><span class="pre">LIGHT_</span></code> constants.</p>
+<p id="classes-sprite-var-lightshape"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LightShape</strong>  <a class="reference internal" href="#classes-sprite-var-lightshape"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L266">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="#classes-sprite-var-lightshape"><span class="std std-ref">LightShape</span></a></p>
+<p class="classref-comment">The shape of light emitted by this sprite.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-switchhooked"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> bool <strong>SwitchHooked</strong>  <a class="reference internal" href="#classes-sprite-var-switchhooked"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L257">Source</a></p>
+<p id="classes-sprite-var-switchhooked"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> bool <strong>SwitchHooked</strong>  <a class="reference internal" href="#classes-sprite-var-switchhooked"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L273">Source</a></p>
 <p class="classref-comment">If the sprite is currently being switch-hooked.</p>
 <p class="classref-comment">Note: currently not supported for <a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>, <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-shadowsprite"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ShadowSprite</strong>  <a class="reference internal" href="#classes-sprite-var-shadowsprite"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L262">Source</a></p>
+<p id="classes-sprite-var-shadowsprite"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ShadowSprite</strong>  <a class="reference internal" href="#classes-sprite-var-shadowsprite"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L279">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="../globals/constants.html#globals-enum-spriteid"><span class="std std-ref">SpriteID (SP_)</span></a></p>
 <p class="classref-comment">The <a class="reference internal" href="spritedata.html#classes-spritedata"><span class="std std-ref">spritedata</span></a> ID to use for the sprite’s shadow.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-drowning"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Drowning</strong>  <a class="reference internal" href="#classes-sprite-var-drowning"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L269">Source</a></p>
+<p id="classes-sprite-var-drowning"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Drowning</strong>  <a class="reference internal" href="#classes-sprite-var-drowning"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L286">Source</a></p>
 <p class="classref-comment">The timer indicating how long left the sprite will be drowning. If 0, the
 sprite is not drowning. Max value of 64, which is the value at the start
 of drowning.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-drowncombo"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrownCombo</strong>  <a class="reference internal" href="#classes-sprite-var-drowncombo"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L274">Source</a></p>
+<p id="classes-sprite-var-drowncombo"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DrownCombo</strong>  <a class="reference internal" href="#classes-sprite-var-drowncombo"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L291">Source</a></p>
 <p class="classref-comment">The liquid combo the sprite is drowning in, if it is drowning.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-shadowxoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ShadowXOffset</strong>  <a class="reference internal" href="#classes-sprite-var-shadowxoffset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L279">Source</a></p>
+<p id="classes-sprite-var-shadowxoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ShadowXOffset</strong>  <a class="reference internal" href="#classes-sprite-var-shadowxoffset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L296">Source</a></p>
 <p class="classref-comment">Offset for the sprite’s shadow.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-shadowyoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ShadowYOffset</strong>  <a class="reference internal" href="#classes-sprite-var-shadowyoffset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L284">Source</a></p>
+<p id="classes-sprite-var-shadowyoffset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ShadowYOffset</strong>  <a class="reference internal" href="#classes-sprite-var-shadowyoffset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L301">Source</a></p>
 <p class="classref-comment">Offset for the sprite’s shadow.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-sprite-var-misc"><abbr title="Could be any type.">untyped</abbr>[] <strong>Misc</strong>  <a class="reference internal" href="#classes-sprite-var-misc"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/sprite.zh#L291">Source</a></p>
+<p id="classes-sprite-var-misc"><abbr title="Could be any type.">untyped</abbr>[] <strong>Misc</strong>  <a class="reference internal" href="#classes-sprite-var-misc"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/sprite.zh#L308">Source</a></p>
 <p class="classref-comment">An array of 32 misc values for scripts to use.</p>
 <p class="classref-comment"><a class="reference internal" href="ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a>: only 16 values.</p>
 </section>
@@ -817,6 +895,7 @@ of drowning.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerations">Enumerations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
 </ul>
   </nav></div>
@@ -846,7 +925,7 @@ of drowning.</p>
 
   <p class="copyright">
     
-      © Copyright 2024, ZQuest Classic Foundation.
+      © Copyright 2025, ZQuest Classic Foundation.
       <br/>
     
   </p>

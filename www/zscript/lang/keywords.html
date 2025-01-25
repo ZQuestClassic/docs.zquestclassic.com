@@ -1,0 +1,1342 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Keywords and Operators &#8212; ZQuest Classic  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../_static/zscript.css?v=3afc8195" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/lang/keywords';</script>
+    <script src="../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../_static/zscript.js?v=0bdd3061"></script>
+    <link rel="icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Pre- vs Post- increment/decrement" href="explainers/prepost_incdec.html" />
+    <link rel="prev" title="Literals" href="literals.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/ZC_Logo.png" class="logo__image only-light" alt="ZQuest Classic  documentation - Home"/>
+    <img src="../../_static/ZC_Logo.png" class="logo__image only-dark pst-js-only" alt="ZQuest Classic  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../tutorials/index.html">
+    Tutorials
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../tutorials/index.html">
+    Tutorials
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="literals.html">Literals</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Keywords and Operators</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../globals/functions.html">Global functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/constants.html">Global constants</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../globals/Audio.html">Audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Debug.html">Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/FileSystem.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Game.html">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Graphics.html">Graphics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Hero.html">Hero</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Screen.html">Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Text.html">Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/ZInfo.html">ZInfo</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../classes/bitmap.html">bitmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/bottledata.html">bottledata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/bottleshopdata.html">bottleshopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/combodata.html">combodata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/directory.html">directory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/dmapdata.html">dmapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/dropsetdata.html">dropsetdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/eweapon.html">eweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/ffc.html">ffc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/file.html">file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/genericdata.html">genericdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/itemdata.html">itemdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/itemsprite.html">itemsprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/lweapon.html">lweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/mapdata.html">mapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/messagedata.html">messagedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/npc.html">npc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/npcdata.html">npcdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/paldata.html">paldata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/portal.html">portal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/randgen.html">randgen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/savedportal.html">savedportal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/shopdata.html">shopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/sprite.html">sprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/spritedata.html">spritedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/stack.html">stack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/subscreendata.html">subscreendata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/subscreenpage.html">subscreenpage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/subscreenwidget.html">subscreenwidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/websocket.html">websocket</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/limits.html">limits.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/script_runners.html">script_runners.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_constants.html">std_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_extension.html">std_extension.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_functions.html">std_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_keyboard.html">std_keyboard.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/string_constants.html">string_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/string_functions.html">string_functions.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ghost/index.html">ghost</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost.html">ghost.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_common.html">ghost2_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_deprecated.html">ghost2_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_drawing.html">ghost2_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweapon.html">ghost2_eweapon.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweaponDeath.html">ghost2_eweaponDeath.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweaponMovement.html">ghost2_eweaponMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_flags.html">ghost2_flags.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_global.html">ghost2_global.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_init.html">ghost2_init.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_modification.html">ghost2_modification.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_movement.html">ghost2_movement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_other.html">ghost2_other.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_scripts.html">ghost2_scripts.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_update.html">ghost2_update.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/tango/index.html">tango</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango.html">tango.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_access.html">tango_access.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_common.html">tango_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_deprecated.html">tango_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_drawing.html">tango_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_font.html">tango_font.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_functions.html">tango_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_loading.html">tango_loading.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_loggingMinimal.html">tango_loggingMinimal.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_menu.html">tango_menu.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_messages.html">tango_messages.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_metrics.html">tango_metrics.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_processing.html">tango_processing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_script.html">tango_script.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_stringControlCode.html">tango_stringControlCode.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_style.html">tango_style.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_user.html">tango_user.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_validation.html">tango_validation.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/gui/index.html">gui</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/gui.html">gui.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_button.html">guizh_button.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_checkbox.html">guizh_checkbox.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_common.html">guizh_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_event.html">guizh_event.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_label.html">guizh_label.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_main.html">guizh_main.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_radioButton.html">guizh_radioButton.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_root.html">guizh_root.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_spinner.html">guizh_spinner.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_types.html">guizh_types.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_widget.html">guizh_widget.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">ZScript</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Keywords and Operators</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="keywords-and-operators">
+<span id="zslang-keywords"></span><h1>Keywords and Operators<a class="headerlink" href="#keywords-and-operators" title="Link to this heading">#</a></h1>
+<p>ZScript has a number of keywords, reserved for various purposes. Any keywords listed here that would otherwise be valid <a class="reference internal" href="declarations/identifiers.html#zslang-identifiers"><span class="std std-ref">identifiers</span></a>, are <strong>not</strong> usable as identifiers, due to being reserved.</p>
+<section id="misc">
+<h2>Misc<a class="headerlink" href="#misc" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>misc keyword</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">true</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">false</span></code></div>
+</div>
+</td>
+<td><p>boolean <a class="reference internal" href="literals.html#zslang-literals"><span class="std std-ref">literal</span></a> values</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">script</span></code></p></td>
+<td><p>used to declare <a class="reference internal" href="scripts.html#zslang-scripts"><span class="std std-ref">scripts</span></a></p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">if</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">unless</span></code></div>
+</div>
+</td>
+<td><p><a class="reference internal" href="control_flow/ifunless.html#stmt-if"><span class="std std-ref">Conditional statement</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">while</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">until</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">do</span></code></div>
+</div>
+</td>
+<td><p><a class="reference internal" href="control_flow/whileuntil.html#stmt-while"><span class="std std-ref">Conditional loop</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">for</span></code></p></td>
+<td><p><a class="reference internal" href="control_flow/for.html#stmt-for"><span class="std std-ref">Iterative loop</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">in</span></code></p></td>
+<td><p>Inclusion, used in <a class="reference internal" href="control_flow/for.html#stmt-for-each"><span class="std std-ref">for-each loops</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">loop</span></code></p></td>
+<td><p><a class="reference internal" href="control_flow/loop.html#stmt-loop"><span class="std std-ref">Smart loop</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">else</span></code></p></td>
+<td><p>Alt path for a <a class="reference internal" href="control_flow/ifunless.html#stmt-if-else"><span class="std std-ref">condition</span></a> or
+<a class="reference internal" href="control_flow/loopelse.html#stmt-loop-else"><span class="std std-ref">loop</span></a></p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">break</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">continue</span></code></div>
+</div>
+</td>
+<td><p><a class="reference internal" href="control_flow/break.html#stmt-break"><span class="std std-ref">Loop flow control</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">switch</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">case</span></code></div>
+</div>
+</td>
+<td><p><a class="reference internal" href="control_flow/switchcase.html#stmt-switch"><span class="std std-ref">Switch statements</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">default</span></code></p></td>
+<td><p>Used for defaults, both in <a class="reference internal" href="control_flow/switchcase.html#stmt-switch"><span class="std std-ref">switch statements</span></a>
+and in <a class="reference internal" href="declarations/functions.html#func-proto"><span class="std std-ref">function prototypes</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">return</span></code></p></td>
+<td><p>Used to return values from <a class="reference internal" href="declarations/functions.html#zslang-functions"><span class="std std-ref">functions</span></a>.
+Also used to return early, even in <code class="inlinezs pre docutils literal notranslate"><span class="pre">void</span></code> functions which return
+no value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">typedef</span></code></p></td>
+<td><p>Used to define <a class="reference internal" href="types/typedef.html#zslang-typedef"><span class="std std-ref">custom type aliases</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">enum</span></code></p></td>
+<td><p>used to declare <a class="reference internal" href="types/enums.html#id1"><span class="std std-ref">enumerations</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">class</span></code></p></td>
+<td><p>used to declare <a class="reference internal" href="types/classes.html#zslang-classes"><span class="std std-ref">classes</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">static</span></code></p></td>
+<td><p>Class member modifier for <a class="reference internal" href="types/classes.html#class-static"><span class="std std-ref">static uses</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">namespace</span></code></p></td>
+<td><p>used when declaring <a class="reference internal" href="declarations/namespace.html#namespaces"><span class="std std-ref">namespaces</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">using</span></code></p></td>
+<td><p>used to bring remote symbols into scope via
+<a class="reference internal" href="declarations/namespace.html#id3"><span class="std std-ref">using statements</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">always</span></code></p></td>
+<td><p>modifier for <a class="reference internal" href="declarations/namespace.html#using-always"><span class="std std-ref">using statements</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">import</span></code></p></td>
+<td><p>Variant of the <code class="inlinezs pre docutils literal notranslate"><span class="pre">#include</span></code> <a class="reference internal" href="compiler_directives.html#directive-import"><span class="std std-ref">file import directive</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">repeat</span></code></p></td>
+<td><p>Code repetition <a class="reference internal" href="compiler_directives.html#directive-repeat"><span class="std std-ref">compiler directive</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">CONST_ASSERT</span></code></p></td>
+<td><p>Constant compile <a class="reference internal" href="compiler_directives.html#directive-assert"><span class="std std-ref">assertion directive</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">OPTION_VALUE</span></code></p></td>
+<td><p>Option reading <a class="reference internal" href="compiler_directives.html#directive-optionval"><span class="std std-ref">compiler directive</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">IS_INCLUDED</span></code></p></td>
+<td><p>Include checking <a class="reference internal" href="compiler_directives.html#directive-isincluded"><span class="std std-ref">compiler directive</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">internal</span></code></p></td>
+<td><p>Modifier used for internal engine bindings</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">inline</span></code></p></td>
+<td><p>Modifier that indicates a function is optimized to be lightweight.
+Only usable by <code class="inlinezs pre docutils literal notranslate"><span class="pre">internal</span></code> functions.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">constexpr</span></code></p></td>
+<td><p>Modifier used for functions that can return a <a class="reference internal" href="declarations/vars_consts.html#compiletime-const"><span class="std std-ref">compile-time constant</span></a> value,
+if all parameters used to call it are also <a class="reference internal" href="declarations/vars_consts.html#compiletime-const"><span class="std std-ref">compile-time constant</span></a>.
+Only usable by <code class="inlinezs pre docutils literal notranslate"><span class="pre">internal</span></code> functions.</p></td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">asm</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">zasm</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">try</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">catch</span></code></div>
+</div>
+</td>
+<td><p>reserved, no present use</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The names of <a class="reference internal" href="types/index.html#types-prim"><span class="std std-ref">primitive types</span></a> are also reserved keywords.</p>
+</div>
+</section>
+<section id="operators">
+<h2>Operators<a class="headerlink" href="#operators" title="Link to this heading">#</a></h2>
+<p>Operators come in both keyword and syntactical varieties, listed here alongside any alternate forms.</p>
+<p>Most operators are left-associative, except assignment operators and the Ternary operator.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Example key:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">expr</span></code> means ‘any expression’</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">type</span></code> means ‘an identifier which resolves to the name of a type’</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">var</span></code> means ‘an identifier which resolves to the name of a variable’</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">func</span></code> means ‘an identifier which resolves to the name of a function’</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">boolean</span></code> means ‘an expression evaluating to true or false’</p></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 7.4%" />
+<col style="width: 13.2%" />
+<col style="width: 21.3%" />
+<col style="width: 58.1%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>priority</p></th>
+<th class="head"><p>operator</p></th>
+<th class="head"><p>example</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p><code class="customzs pre hljs hljs-operator docutils literal notranslate"><span class="pre">(</span> <span class="pre">)</span></code></p></td>
+<td><p>( <em>expr</em> )</p></td>
+<td><p>Grouping - allows specifying precedence of an expression.</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">&gt;</span></code></p></td>
+<td><p>&lt; <em>type</em> &gt; <em>expr</em></p></td>
+<td><p><a class="reference internal" href="#typecasting"><span class="std std-ref">Casting</span></a> - allows changing the type of an expression</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">++</span></code></p></td>
+<td><p><em>var</em>++</p></td>
+<td><div class="line-block">
+<div class="line">Post-increment. Returns the variable’s value, then adds 1 to the variable.</div>
+<div class="line">Related: <a class="reference internal" href="explainers/prepost_incdec.html#prepost-incdec"><span class="std std-ref">Pre- vs Post- increment/decrement</span></a></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">--</span></code></p></td>
+<td><p><em>var</em>--</p></td>
+<td><div class="line-block">
+<div class="line">Post-decrement. Returns the variable’s value, then subtracts 1 from the
+variable.</div>
+<div class="line">Related: <a class="reference internal" href="explainers/prepost_incdec.html#prepost-incdec"><span class="std std-ref">Pre- vs Post- increment/decrement</span></a></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p><code class="customzs pre hljs hljs-operator docutils literal notranslate"><span class="pre">(</span> <span class="pre">)</span></code></p></td>
+<td><p><em>func</em>()</p></td>
+<td><p>Function call</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">new</span></code></p></td>
+<td><p>new <em>class</em>()</p></td>
+<td><p>Constructor Function Call</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">delete</span></code></p></td>
+<td><p>delete <em>expr</em></p></td>
+<td><p>Deprecated; used to be used to delete objects. Deletion now handled
+<a class="reference internal" href="explainers/object_memory_management.html#gc"><span class="std std-ref">automatically</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p><code class="customzs pre hljs hljs-operator docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code></p></td>
+<td><p><em>array</em>[<em>expr</em>]</p></td>
+<td><p>Indexing- used to access indexes of an array</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">-&gt;</span></code></p></td>
+<td><p><em>expr</em>-&gt;<em>identifier</em></p></td>
+<td><p>Arrow - used to access members of objects</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">++</span></code></p></td>
+<td><p>++<em>var</em></p></td>
+<td><div class="line-block">
+<div class="line">Pre-increment. Adds 1 to the variable, then returns that value.</div>
+<div class="line">Related: <a class="reference internal" href="explainers/prepost_incdec.html#prepost-incdec"><span class="std std-ref">Pre- vs Post- increment/decrement</span></a></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">--</span></code></p></td>
+<td><p>--<em>var</em></p></td>
+<td><div class="line-block">
+<div class="line">Pre-decrement. Subtracts 1 from the variable, then returns that value.</div>
+<div class="line">Related: <a class="reference internal" href="explainers/prepost_incdec.html#prepost-incdec"><span class="std std-ref">Pre- vs Post- increment/decrement</span></a></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">-</span></code></p></td>
+<td><p>-<em>expr</em></p></td>
+<td><p>Negation. Inverts the sign of the expression.</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">!</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">not</span></code></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line">!<em>expr</em></div>
+<div class="line">not <em>expr</em></div>
+</div>
+</td>
+<td><p>Boolean Not. Returns ‘<strong>true</strong>’ if the expression was ‘<strong>false</strong>’ or
+‘<strong>0</strong>’/’<strong>NULL</strong>’, otherwise returns ‘<strong>false</strong>’</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">~</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">bitnot</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">compl</span></code></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line">~<em>expr</em></div>
+<div class="line">bitnot <em>expr</em></div>
+<div class="line">compl <em>expr</em></div>
+</div>
+</td>
+<td><p>Bitwise Not. Returns the bitwise inverse of the expression (flipping
+every ‘0’ bit to ‘1’, and vice-versa)</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">^^^</span></code></p></td>
+<td><p><em>expr</em> ^^^ <em>expr</em></p></td>
+<td><p>Exponentiation. Raises the first expression to the power of the second
+expression.</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">*</span></code></p></td>
+<td><p><em>expr</em> * <em>expr</em></p></td>
+<td><p>Multiplication. Multiplies the two expressions together.</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">/</span></code></p></td>
+<td><p><em>expr</em> / <em>expr</em></p></td>
+<td><p>Division. Divides the first expression by the second expression.</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">%</span></code></p></td>
+<td><p><em>expr</em> % <em>expr</em></p></td>
+<td><p>Modulo. Divides the first expression by the second expression, returning
+only the remainder of the division.</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">+</span></code></p></td>
+<td><p><em>expr</em> + <em>expr</em></p></td>
+<td><p>Addition. Adds the two expressions together.</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">-</span></code></p></td>
+<td><p><em>expr</em> - <em>expr</em></p></td>
+<td><p>Subtraction. Subtracts the second expression from the first.</p></td>
+</tr>
+<tr class="row-even"><td><p>8</p></td>
+<td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">&lt;&lt;</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">&gt;&gt;</span></code></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><em>expr</em> &lt;&lt; <em>expr</em></div>
+<div class="line"><em>expr</em> &gt;&gt; <em>expr</em></div>
+</div>
+</td>
+<td><p>Bitwise shift (left and right). Shifts the bits of the left expression,
+by the number of places in the right expression (left or right
+respectively). Right expr is always an <strong>int</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>9</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">&lt;</span></code></p></td>
+<td><p><em>expr</em> &lt; <em>expr</em></p></td>
+<td><p>Returns <strong>true</strong> if the left expr is less than the right expr.</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">&gt;</span></code></p></td>
+<td><p><em>expr</em> &gt; <em>expr</em></p></td>
+<td><p>Returns <strong>true</strong> if the left expr is greater than the right expr.</p></td>
+</tr>
+<tr class="row-odd"><td><p>9</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">&lt;=</span></code></p></td>
+<td><p><em>expr</em> &lt;= <em>expr</em></p></td>
+<td><p>Returns <strong>true</strong> if the left expr is less than or equal the right expr.</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">&gt;=</span></code></p></td>
+<td><p><em>expr</em> &gt;= <em>expr</em></p></td>
+<td><p>Returns <strong>true</strong> if the left expr is greater than or equal the right expr.</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">==</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">equals</span></code></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><em>expr</em> == <em>expr</em></div>
+<div class="line"><em>expr</em> equals <em>expr</em></div>
+</div>
+</td>
+<td><p>Returns <strong>true</strong> if the two expressions are exactly equal to each other.</p></td>
+</tr>
+<tr class="row-even"><td><p>10</p></td>
+<td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">!=</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">&lt;&gt;</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">not_eq</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">not_equal</span></code></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><em>expr</em> != <em>expr</em></div>
+<div class="line"><em>expr</em> &lt;&gt; <em>expr</em></div>
+<div class="line"><em>expr</em> not_eq <em>expr</em></div>
+<div class="line"><em>expr</em> not_equal <em>expr</em></div>
+</div>
+</td>
+<td><p>Returns <strong>false</strong> if the two expressions are exactly equal to each other.</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">~~</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">appx_eq</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">appx_equal</span></code></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><em>expr</em> ~~ <em>expr</em></div>
+<div class="line"><em>expr</em> appx_eq <em>expr</em></div>
+<div class="line"><em>expr</em> appx_equal <em>expr</em></div>
+</div>
+</td>
+<td><p>Returns <strong>true</strong> if the two expressions are <em>close</em> to equal. How close
+numbers need to be to be considered “close to equal” is determined by the
+<abbr title="default 0.0100">APPROX_EQUAL_MARGIN</abbr> <a class="reference internal" href="options.html#zslang-options"><span class="std std-ref">option</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>10</p></td>
+<td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">^^</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">xor</span></code></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><em>expr</em> ^^ <em>expr</em></div>
+<div class="line"><em>expr</em> xor <em>expr</em></div>
+</div>
+</td>
+<td><p>Converts both expressions to boolean values (via ‘!= 0’). Then returns
+<strong>true</strong> if EXACTLY one value is <strong>true</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">&amp;</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">bitand</span></code></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><em>expr</em> &amp; <em>expr</em></div>
+<div class="line"><em>expr</em> bitand <em>expr</em></div>
+</div>
+</td>
+<td><p>Performs a boolean ‘and’ operation, on each binary bit of the expressions.</p></td>
+</tr>
+<tr class="row-even"><td><p>12</p></td>
+<td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">^</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">bitxor</span></code></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><em>expr</em> ^ <em>expr</em></div>
+<div class="line"><em>expr</em> bitxor <em>expr</em></div>
+</div>
+</td>
+<td><p>Performs a boolean ‘xor’ operation, on each binary bit of the expressions.</p></td>
+</tr>
+<tr class="row-odd"><td><p>13</p></td>
+<td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">|</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">bitor</span></code></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><em>expr</em> | <em>expr</em></div>
+<div class="line"><em>expr</em> bitor <em>expr</em></div>
+</div>
+</td>
+<td><p>Performs a boolean ‘or’ operation, on each binary bit of the expressions.</p></td>
+</tr>
+<tr class="row-even"><td><p>14</p></td>
+<td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">&amp;&amp;</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">and</span></code></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><em>expr</em> &amp;&amp; <em>expr</em></div>
+<div class="line"><em>expr</em> and <em>expr</em></div>
+</div>
+</td>
+<td><p>Boolean And. Returns <strong>true</strong> if both expressions are <strong>true</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>15</p></td>
+<td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">||</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">or</span></code></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><em>expr</em> || <em>expr</em></div>
+<div class="line"><em>expr</em> or <em>expr</em></div>
+</div>
+</td>
+<td><p>Boolean Or. Returns <strong>true</strong> if at least one expression is <strong>true</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p>16</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">?</span></code> <code class="customzs pre hljs hljs-operator docutils literal notranslate"><span class="pre">:</span></code></p></td>
+<td><p><em>boolean</em> ? <em>expr</em> : <em>expr</em></p></td>
+<td><p>Ternary Expression. If the boolean is <strong>true</strong>, return the first
+expression. Otherwise return the second expression.</p></td>
+</tr>
+<tr class="row-odd"><td><p>17</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">delete</span></code></p></td>
+<td><p>delete <em>expr</em></p></td>
+<td><p>Deprecated as of 3.0. See: <a class="reference internal" href="types/classes.html#classobj-alloc"><span class="std std-ref">class/object allocation</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>18</p></td>
+<td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">=</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">:=</span></code></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><em>var</em> = <em>expr</em></div>
+<div class="line"><em>var</em> := <em>expr</em></div>
+</div>
+</td>
+<td><p>Sets the variable to the value of the expression.</p></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">+=</span></code></p></td>
+<td><p><em>var</em> += <em>expr</em></p></td>
+<td><p>Same as ‘<em>var</em> = <em>var</em> + <em>expr</em>’</p></td>
+</tr>
+<tr class="row-even"><td><p>18</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">-=</span></code></p></td>
+<td><p><em>var</em> -= <em>expr</em></p></td>
+<td><p>Same as ‘<em>var</em> = <em>var</em> - <em>expr</em>’</p></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">*=</span></code></p></td>
+<td><p><em>var</em> *= <em>expr</em></p></td>
+<td><p>Same as ‘<em>var</em> = <em>var</em> * <em>expr</em>’</p></td>
+</tr>
+<tr class="row-even"><td><p>18</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">/=</span></code></p></td>
+<td><p><em>var</em> /= <em>expr</em></p></td>
+<td><p>Same as ‘<em>var</em> = <em>var</em> / <em>expr</em>’</p></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">%=</span></code></p></td>
+<td><p><em>var</em> %= <em>expr</em></p></td>
+<td><p>Same as ‘<em>var</em> = <em>var</em> % <em>expr</em>’</p></td>
+</tr>
+<tr class="row-even"><td><p>18</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">&lt;&lt;=</span></code></p></td>
+<td><p><em>var</em> &lt;&lt;= <em>expr</em></p></td>
+<td><p>Same as ‘<em>var</em> = <em>var</em> &lt;&lt; <em>expr</em>’</p></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">&gt;&gt;=</span></code></p></td>
+<td><p><em>var</em> &gt;&gt;= <em>expr</em></p></td>
+<td><p>Same as ‘<em>var</em> = <em>var</em> &gt;&gt; <em>expr</em>’</p></td>
+</tr>
+<tr class="row-even"><td><p>18</p></td>
+<td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">&amp;=</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">and_eq</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">and_equal</span></code></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><em>var</em> &amp;= <em>expr</em></div>
+<div class="line"><em>var</em> and_eq <em>expr</em></div>
+<div class="line"><em>var</em> and_equal <em>expr</em></div>
+</div>
+</td>
+<td><p>Same as ‘<em>var</em> = <em>var</em> &amp; <em>expr</em>’</p></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">|=</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">or_eq</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">or_equal</span></code></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><em>var</em> |= <em>expr</em></div>
+<div class="line"><em>var</em> or_eq <em>expr</em></div>
+<div class="line"><em>var</em> or_equal <em>expr</em></div>
+</div>
+</td>
+<td><p>Same as ‘<em>var</em> = <em>var</em> | <em>expr</em>’</p></td>
+</tr>
+<tr class="row-even"><td><p>18</p></td>
+<td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">^=</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">xor_eq</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">xor_equal</span></code></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><em>var</em> ^= <em>expr</em></div>
+<div class="line"><em>var</em> xor_eq <em>expr</em></div>
+<div class="line"><em>var</em> xor_equal <em>expr</em></div>
+</div>
+</td>
+<td><p>Same as ‘<em>var</em> = <em>var</em> ^ <em>expr</em>’</p></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">~=</span></code></p></td>
+<td><p><em>var</em> ~= <em>expr</em></p></td>
+<td><p>Same as ‘<em>var</em> = <em>var</em> &amp; (~<em>expr</em>)’</p></td>
+</tr>
+<tr class="row-even"><td><p>18</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">&amp;&amp;=</span></code></p></td>
+<td><p><em>var</em> &amp;&amp;= <em>expr</em></p></td>
+<td><p>Same as ‘<em>var</em> = <em>var</em> &amp;&amp; <em>expr</em>’</p></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">||=</span></code></p></td>
+<td><p><em>var</em> ||= <em>expr</em></p></td>
+<td><p>Same as ‘<em>var</em> = <em>var</em> || <em>expr</em>’</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition caution" id="operator-blurb">
+<p class="admonition-title">Caution</p>
+<p>Some operators behavior may not be intuitive. Notable behaviors:</p>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>Exponentiation <code class="inlinezs pre docutils literal notranslate"><span class="pre">^^^</span></code></dt><dd><ol class="arabic simple">
+<li><p>If either parameter is type <code class="inlinezs pre docutils literal notranslate"><span class="pre">long</span></code>, a long exponentiation will be performed. Ex. <code class="inlinezs pre docutils literal notranslate"><span class="pre">2L</span> <span class="pre">^^^</span> <span class="pre">2L</span> <span class="pre">==</span> <span class="pre">4L</span></code>.</p></li>
+<li><p>Per our definition, <code class="inlinezs pre docutils literal notranslate"><span class="pre">0^^^0</span> <span class="pre">==</span> <span class="pre">1</span></code>. With long type, <code class="inlinezs pre docutils literal notranslate"><span class="pre">0L</span> <span class="pre">^^^</span> <span class="pre">0L</span> <span class="pre">==</span> <span class="pre">1L</span></code>.</p></li>
+<li><p>If exponentiation overflows, the minimum representable value (<code class="inlinezs pre docutils literal notranslate"><span class="pre">-214748.3648</span></code> or <code class="inlinezs pre docutils literal notranslate"><span class="pre">-2147483648L</span></code>) will be returned.</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p>Bitwise operators <code class="inlinezs pre docutils literal notranslate"><span class="pre">~</span> <span class="pre">&lt;&lt;</span> <span class="pre">&gt;&gt;</span> <span class="pre">&amp;</span> <span class="pre">^</span> <span class="pre">|</span></code> where either parameter is type <code class="inlinezs pre docutils literal notranslate"><span class="pre">long</span></code> will act on the full 32-bits. Otherwise, they will first truncate the value, and access the remaining ~~18 bits only.</p></li>
+<li><dl class="simple">
+<dt><code class="inlinezs pre docutils literal notranslate"><span class="pre">%</span> <span class="pre">0</span></code> and <code class="inlinezs pre docutils literal notranslate"><span class="pre">/</span> <span class="pre">0</span></code> will produce a script error.</dt><dd><ol class="arabic simple">
+<li><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">%</span> <span class="pre">0</span></code>, after producing the error, will return the value of <code class="inlinezs pre docutils literal notranslate"><span class="pre">%</span> <span class="pre">1</span></code>.</p></li>
+<li><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">/</span> <span class="pre">0</span></code>, after producing the error, will return either <code class="inlinezs pre docutils literal notranslate"><span class="pre">214748.3647</span></code> or <code class="inlinezs pre docutils literal notranslate"><span class="pre">-214748.3647</span></code>, matching the sign of the dividend.</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p>As the <code class="inlinezs pre docutils literal notranslate"><span class="pre">int</span></code> type is not a real integer, ‘Integer Division’ does not exist- i.e. <code class="inlinezs pre docutils literal notranslate"><span class="pre">5</span> <span class="pre">/</span> <span class="pre">2</span> <span class="pre">==</span> <span class="pre">2.5</span></code>, instead of <code class="inlinezs pre docutils literal notranslate"><span class="pre">5</span> <span class="pre">/</span> <span class="pre">2</span> <span class="pre">==</span> <span class="pre">2</span></code>.</p></li>
+<li><p>Short-circuit for boolean operations is the default, though can be disabled with a <a class="reference internal" href="options.html#zslang-options"><span class="std std-ref">compiler option</span></a>.</p></li>
+</ol>
+</div>
+<section id="type-casting">
+<span id="typecasting"></span><h3>Type Casting<a class="headerlink" href="#type-casting" title="Link to this heading">#</a></h3>
+<p>The casting operator can be used to forcibly change the type of a value. This can
+be used to pass it to a function it otherwise would not be compatible with,
+to access a member function of it as a pointer to a particular class,
+or cause a function to treat it differently via function overloads.</p>
+<pre class="hljs language-zs-body"><code>int x = 5;
+Trace(x); // prints &#x27;5.0000&#x27;
+Trace(&lt;long&gt;x); // prints &#x27;50000&#x27;, due to long type overload</code></pre>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </section>
+</section>
+<section id="syntax">
+<h2>Syntax<a class="headerlink" href="#syntax" title="Link to this heading">#</a></h2>
+<p>While not technically ‘keywords’, this table shows reserved syntactical symbols/notations.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>syntax</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">,</span></code></p></td>
+<td><p>delimiter</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">.</span></code></p></td>
+<td><p>delimiter, decimal point</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">;</span></code></p></td>
+<td><p>line-ender</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">::</span></code></p></td>
+<td><p>scope resolution</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">:</span></code></p></td>
+<td><p>delimiter, misc</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">(</span> <span class="pre">)</span></code></p></td>
+<td><p>Parentheses</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code></p></td>
+<td><p>Brackets</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">{</span> <span class="pre">}</span></code></p></td>
+<td><p>Braces</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="customzs pre hljs hljs-meta docutils literal notranslate"><span class="pre">#</span></code></p></td>
+<td><p>Start of many
+<a class="reference internal" href="compiler_directives.html#zslang-directives"><span class="std std-ref">compiler directive</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">-&gt;</span></code></p></td>
+<td><p>Arrow, for member access</p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">=..=</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">=..</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">..=</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">..</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">...</span></code></div>
+</div>
+</td>
+<td><p><a class="reference internal" href="ranges.html#zslang-ranges"><span class="std std-ref">Range indicators</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">//</span></code></p></td>
+<td><p><a class="reference internal" href="comments.html#comments"><span class="std std-ref">Line Comment</span></a></p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">/*</span></code></div>
+<div class="line"><code class="customzs pre hljs hljs-comment docutils literal notranslate"><span class="pre">*/</span></code></div>
+</div>
+</td>
+<td><p><a class="reference internal" href="comments.html#comments"><span class="std std-ref">Block Comment</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="customzs pre hljs hljs-meta docutils literal notranslate"><span class="pre">&#64;</span></code></p></td>
+<td><p>Handle for <a class="reference internal" href="annotations.html#id1"><span class="std std-ref">annotations</span></a></p></td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">!!</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">%%</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">!%</span></code></div>
+<div class="line"><code class="customzs pre hljs hljs-operator docutils literal notranslate"><span class="pre">$$</span></code></div>
+<div class="line"><code class="inlinezs pre docutils literal notranslate"><span class="pre">**</span></code></div>
+<div class="line"><code class="customzs pre hljs hljs-operator docutils literal notranslate"><span class="pre">&#64;&#64;</span></code></div>
+<div class="line"><code class="customzs pre hljs hljs-operator docutils literal notranslate"><span class="pre">$</span></code></div>
+</div>
+</td>
+<td><p>Reserved, no current use</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="literals.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Literals</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="explainers/prepost_incdec.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Pre- vs Post- increment/decrement</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#misc">Misc</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operators">Operators</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#type-casting">Type Casting</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax">Syntax</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, ZQuest Classic Foundation.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

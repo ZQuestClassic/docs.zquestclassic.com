@@ -31,6 +31,9 @@
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../_static/zscript.css?v=3afc8195" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -41,15 +44,19 @@
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/classes/bottledata';</script>
     <script src="../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../_static/zscript.js?v=0bdd3061"></script>
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="bottleshopdata" href="bottleshopdata.html" />
     <link rel="prev" title="bitmap" href="bitmap.html" />
-    <link href="../../_static/main.css" rel="stylesheet" type="text/css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -271,7 +278,55 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../lang/types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lang/explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../globals/functions.html">Global functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../globals/constants.html">Global constants</a></li>
@@ -394,10 +449,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../libs/ffcscript/ffcscript.html">ffcscript.zh</a></li>
-</ul>
-</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
 </ul>
@@ -496,32 +547,43 @@
 </table>
 </div>
 </section>
+<section id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Link to this heading">#</a></h2>
+<p id="globals-enum-bottleflag">enum <strong>BottleFlag</strong>: <a class="reference internal" href="#globals-enum-bottleflag"><span class="std std-ref">🔗</span></a>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/bottledata.zh#L1">Source</a></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-btf-revive"><a class="reference internal" href="#globals-enum-bottleflag"><span class="std std-ref">BottleFlag</span></a> <strong>BTF_REVIVE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-btf-usewhenfull"><a class="reference internal" href="#globals-enum-bottleflag"><span class="std std-ref">BottleFlag</span></a> <strong>BTF_USEWHENFULL</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-btf-cureswordjinx"><a class="reference internal" href="#globals-enum-bottleflag"><span class="std std-ref">BottleFlag</span></a> <strong>BTF_CURESWORDJINX</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-btf-cureitemjinx"><a class="reference internal" href="#globals-enum-bottleflag"><span class="std std-ref">BottleFlag</span></a> <strong>BTF_CUREITEMJINX</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-btf-cureshieldjinx"><a class="reference internal" href="#globals-enum-bottleflag"><span class="std std-ref">BottleFlag</span></a> <strong>BTF_CURESHIELDJINX</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-btf-max"><a class="reference internal" href="#globals-enum-bottleflag"><span class="std std-ref">BottleFlag</span></a> <strong>BTF_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+</section>
+<hr class="classref-item-separator docutils" />
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="classes-bottledata-var-counter"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Counter</strong>  <a class="reference internal" href="#classes-bottledata-var-counter"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/bottledata.zh#L9">Source</a></p>
+<p id="classes-bottledata-var-counter"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Counter</strong>  <a class="reference internal" href="#classes-bottledata-var-counter"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/bottledata.zh#L19">Source</a></p>
 <p class="classref-comment">The refill counters of this bottle type.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-bottledata-var-amount"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Amount</strong>  <a class="reference internal" href="#classes-bottledata-var-amount"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/bottledata.zh#L14">Source</a></p>
+<p id="classes-bottledata-var-amount"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Amount</strong>  <a class="reference internal" href="#classes-bottledata-var-amount"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/bottledata.zh#L24">Source</a></p>
 <p class="classref-comment">The amount to refill each counter (0-65535)</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-bottledata-var-ispercent">bool[] <strong>IsPercent</strong>  <a class="reference internal" href="#classes-bottledata-var-ispercent"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/bottledata.zh#L20">Source</a></p>
+<p id="classes-bottledata-var-ispercent">bool[] <strong>IsPercent</strong>  <a class="reference internal" href="#classes-bottledata-var-ispercent"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/bottledata.zh#L30">Source</a></p>
 <p class="classref-comment">Whether the given counter refill is a percentage of max, instead of a
 direct value.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-bottledata-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-bottledata-var-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/bottledata.zh#L25">Source</a></p>
-<p class="classref-comment">Valid indices: <a class="reference internal" href="../libs/std/std_constants.html#libs-std-enum-bottleflag"><span class="std std-ref">BottleFlag</span></a> (<code class="docutils literal notranslate"><span class="pre">BTF_</span></code>).</p>
+<p id="classes-bottledata-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-bottledata-var-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/bottledata.zh#L34">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-bottledata-var-nexttype"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NextType</strong>  <a class="reference internal" href="#classes-bottledata-var-nexttype"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/bottledata.zh#L31">Source</a></p>
+<p id="classes-bottledata-var-nexttype"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NextType</strong>  <a class="reference internal" href="#classes-bottledata-var-nexttype"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/bottledata.zh#L40">Source</a></p>
 <p class="classref-comment">What bottle type will remain in the bottle after drinking the current
 type.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-bottledata-fun-getname"><abbr title="No return value.">void</abbr> <strong>GetName</strong>(char32[] str) <a class="reference internal" href="#classes-bottledata-fun-getname"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/bottledata.zh#L39">Source</a></p>
+<p class="classref-method" id="classes-bottledata-fun-getname"><abbr title="No return value.">void</abbr> <strong>GetName</strong>(char32[] str) <a class="reference internal" href="#classes-bottledata-fun-getname"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/bottledata.zh#L48">Source</a></p>
 <p class="classref-comment">Loads the name of the bottledata into the provided string buffer.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-bottledata-fun-setname"><abbr title="No return value.">void</abbr> <strong>SetName</strong>(char32[] str) <a class="reference internal" href="#classes-bottledata-fun-setname"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/bottledata.zh#L47">Source</a></p>
+<p class="classref-method" id="classes-bottledata-fun-setname"><abbr title="No return value.">void</abbr> <strong>SetName</strong>(char32[] str) <a class="reference internal" href="#classes-bottledata-fun-setname"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/bottledata.zh#L56">Source</a></p>
 <p class="classref-comment">Sets the name of the bottledata to the provided string.</p>
 </section>
 </section>
@@ -575,6 +637,7 @@ type.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerations">Enumerations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-descriptions">Function descriptions</a></li>
 </ul>
@@ -605,7 +668,7 @@ type.</p>
 
   <p class="copyright">
     
-      © Copyright 2024, ZQuest Classic Foundation.
+      © Copyright 2025, ZQuest Classic Foundation.
       <br/>
     
   </p>

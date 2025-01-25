@@ -31,6 +31,9 @@
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../_static/zscript.css?v=3afc8195" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -41,15 +44,19 @@
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/classes/spritedata';</script>
     <script src="../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../_static/zscript.js?v=0bdd3061"></script>
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="stack" href="stack.html" />
     <link rel="prev" title="sprite" href="sprite.html" />
-    <link href="../../_static/main.css" rel="stylesheet" type="text/css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -271,7 +278,55 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../lang/types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lang/explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../globals/functions.html">Global functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../globals/constants.html">Global constants</a></li>
@@ -394,10 +449,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../libs/ffcscript/ffcscript.html">ffcscript.zh</a></li>
-</ul>
-</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
 </ul>
@@ -459,13 +510,13 @@
                   
   <section id="spritedata">
 <span id="classes-spritedata"></span><h1>spritedata<a class="headerlink" href="#spritedata" title="Link to this heading">#</a></h1>
-<p class="classref-comment">Represents animation sprite data found in the editor at <code class="docutils literal notranslate"><span class="pre">Quest-&gt;Graphics-&gt;Sprites-&gt;Sprite</span> <span class="pre">Data</span></code>.
+<p class="classref-comment">Represents animation <code class="docutils literal notranslate"><span class="pre">spritedata</span></code> found in the editor at <code class="docutils literal notranslate"><span class="pre">Quest-&gt;Graphics-&gt;Sprites-&gt;Sprite</span> <span class="pre">Data</span></code>.
 Load with <a class="reference internal" href="../globals/Game.html#globals-game-fun-loadspritedata"><span class="std std-ref">Game-&gt;LoadSpriteData()</span></a>.</p>
 <section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-spritedata-var-id"><span class="std std-ref">ID</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
@@ -496,33 +547,43 @@ Load with <a class="reference internal" href="../globals/Game.html#globals-game-
 </table>
 </div>
 </section>
+<section id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Link to this heading">#</a></h2>
+<p id="globals-enum-spritedataflag">enum <strong>SpriteDataFlag</strong>: <a class="reference internal" href="#globals-enum-spritedataflag"><span class="std std-ref">🔗</span></a>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/spritedata.zh#L1">Source</a></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-sprfl-autoflash"><a class="reference internal" href="#globals-enum-spritedataflag"><span class="std std-ref">SpriteDataFlag</span></a> <strong>SPRFL_AUTOFLASH</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-sprfl-2pflash"><a class="reference internal" href="#globals-enum-spritedataflag"><span class="std std-ref">SpriteDataFlag</span></a> <strong>SPRFL_2PFLASH</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-sprfl-hflip"><a class="reference internal" href="#globals-enum-spritedataflag"><span class="std std-ref">SpriteDataFlag</span></a> <strong>SPRFL_HFLIP</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-sprfl-vflip"><a class="reference internal" href="#globals-enum-spritedataflag"><span class="std std-ref">SpriteDataFlag</span></a> <strong>SPRFL_VFLIP</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-sprfl-behind"><a class="reference internal" href="#globals-enum-spritedataflag"><span class="std std-ref">SpriteDataFlag</span></a> <strong>SPRFL_BEHIND</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-num-sprfl"><a class="reference internal" href="#globals-enum-spritedataflag"><span class="std std-ref">SpriteDataFlag</span></a> <strong>NUM_SPRFL</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+</section>
+<hr class="classref-item-separator docutils" />
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="classes-spritedata-var-id"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ID</strong>  <a class="reference internal" href="#classes-spritedata-var-id"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/spritedata.zh#L12">Source</a></p>
-<p class="classref-comment">The sprite ID this spritedata is associated with.</p>
+<p id="classes-spritedata-var-id"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ID</strong>  <a class="reference internal" href="#classes-spritedata-var-id"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/spritedata.zh#L20">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-spritedata-var-tile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Tile</strong>  <a class="reference internal" href="#classes-spritedata-var-tile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/spritedata.zh#L17">Source</a></p>
-<p class="classref-comment">The tile of the sprite.</p>
+<p id="classes-spritedata-var-tile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Tile</strong>  <a class="reference internal" href="#classes-spritedata-var-tile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/spritedata.zh#L25">Source</a></p>
+<p class="classref-comment">The tile of the <code class="docutils literal notranslate"><span class="pre">spritedata</span></code>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-spritedata-var-cset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CSet</strong>  <a class="reference internal" href="#classes-spritedata-var-cset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/spritedata.zh#L22">Source</a></p>
-<p class="classref-comment">The cset of the sprite.</p>
+<p id="classes-spritedata-var-cset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CSet</strong>  <a class="reference internal" href="#classes-spritedata-var-cset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/spritedata.zh#L30">Source</a></p>
+<p class="classref-comment">The cset of the <code class="docutils literal notranslate"><span class="pre">spritedata</span></code>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-spritedata-var-flashcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FlashCSet</strong>  <a class="reference internal" href="#classes-spritedata-var-flashcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/spritedata.zh#L27">Source</a></p>
-<p class="classref-comment">The flash cset of the sprite.</p>
+<p id="classes-spritedata-var-flashcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FlashCSet</strong>  <a class="reference internal" href="#classes-spritedata-var-flashcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/spritedata.zh#L35">Source</a></p>
+<p class="classref-comment">The flash cset of the <code class="docutils literal notranslate"><span class="pre">spritedata</span></code>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-spritedata-var-frames"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Frames</strong>  <a class="reference internal" href="#classes-spritedata-var-frames"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/spritedata.zh#L32">Source</a></p>
-<p class="classref-comment">The frame count of the sprite.</p>
+<p id="classes-spritedata-var-frames"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Frames</strong>  <a class="reference internal" href="#classes-spritedata-var-frames"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/spritedata.zh#L40">Source</a></p>
+<p class="classref-comment">The frame count of the <code class="docutils literal notranslate"><span class="pre">spritedata</span></code>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-spritedata-var-speed"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Speed</strong>  <a class="reference internal" href="#classes-spritedata-var-speed"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/spritedata.zh#L37">Source</a></p>
-<p class="classref-comment">The speed of the sprite, in frames per frame</p>
+<p id="classes-spritedata-var-speed"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Speed</strong>  <a class="reference internal" href="#classes-spritedata-var-speed"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/spritedata.zh#L45">Source</a></p>
+<p class="classref-comment">The speed of the <code class="docutils literal notranslate"><span class="pre">spritedata</span></code>, in frames per frame</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-spritedata-var-type"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Type</strong>  <a class="reference internal" href="#classes-spritedata-var-type"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/spritedata.zh#L42">Source</a></p>
-<p class="classref-comment">The ‘Type’ field of the sprite.</p>
+<p id="classes-spritedata-var-type"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Type</strong>  <a class="reference internal" href="#classes-spritedata-var-type"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/spritedata.zh#L50">Source</a></p>
+<p class="classref-comment">The ‘Type’ field of the <code class="docutils literal notranslate"><span class="pre">spritedata</span></code>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-spritedata-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-spritedata-var-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/spritedata.zh#L47">Source</a></p>
-<p class="classref-comment">The sprite’s flags. Use the <code class="docutils literal notranslate"><span class="pre">SPRFL_</span></code> constants as indexes.</p>
+<p id="classes-spritedata-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-spritedata-var-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/spritedata.zh#L54">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-spritedata-var-misc"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Misc</strong>  <a class="reference internal" href="#classes-spritedata-var-misc"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/spritedata.zh#L50">Source</a></p>
+<p id="classes-spritedata-var-misc"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Misc</strong>  <a class="reference internal" href="#classes-spritedata-var-misc"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/spritedata.zh#L57">Source</a></p>
 </section>
 </section>
 
@@ -574,6 +635,7 @@ Load with <a class="reference internal" href="../globals/Game.html#globals-game-
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerations">Enumerations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
 </ul>
   </nav></div>
@@ -603,7 +665,7 @@ Load with <a class="reference internal" href="../globals/Game.html#globals-game-
 
   <p class="copyright">
     
-      © Copyright 2024, ZQuest Classic Foundation.
+      © Copyright 2025, ZQuest Classic Foundation.
       <br/>
     
   </p>

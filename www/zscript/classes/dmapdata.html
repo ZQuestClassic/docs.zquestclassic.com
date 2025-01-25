@@ -31,6 +31,9 @@
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../_static/zscript.css?v=3afc8195" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -41,15 +44,19 @@
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/classes/dmapdata';</script>
     <script src="../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../_static/zscript.js?v=0bdd3061"></script>
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="dropsetdata" href="dropsetdata.html" />
     <link rel="prev" title="directory" href="directory.html" />
-    <link href="../../_static/main.css" rel="stylesheet" type="text/css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -271,7 +278,55 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../lang/types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lang/explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../globals/functions.html">Global functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../globals/constants.html">Global constants</a></li>
@@ -394,10 +449,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../libs/ffcscript/ffcscript.html">ffcscript.zh</a></li>
-</ul>
-</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
 </ul>
@@ -464,7 +515,7 @@
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-dmapdata-var-id"><span class="std std-ref">ID</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
@@ -608,172 +659,260 @@
 </table>
 </div>
 </section>
+<section id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Link to this heading">#</a></h2>
+<p id="globals-enum-dmaptype">enum <strong>DMapType</strong>: <a class="reference internal" href="#globals-enum-dmaptype"><span class="std std-ref">🔗</span></a>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L2">Source</a></p>
+<p class="classref-comment">DMap Types for used with <a class="reference internal" href="#classes-dmapdata-var-type"><span class="std std-ref">dmapdata::Type</span></a></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmap-dungeon"><a class="reference internal" href="#globals-enum-dmaptype"><span class="std std-ref">DMapType</span></a> <strong>DMAP_DUNGEON</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmap-overworld"><a class="reference internal" href="#globals-enum-dmaptype"><span class="std std-ref">DMapType</span></a> <strong>DMAP_OVERWORLD</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmap-cave"><a class="reference internal" href="#globals-enum-dmaptype"><span class="std std-ref">DMapType</span></a> <strong>DMAP_CAVE</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmap-bsoverworld"><a class="reference internal" href="#globals-enum-dmaptype"><span class="std std-ref">DMapType</span></a> <strong>DMAP_BSOVERWORLD</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<hr class="classref-item-separator docutils" />
+<p id="globals-enum-dmapflag">enum <strong>DMapFlag</strong>: <a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">🔗</span></a>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L11">Source</a></p>
+<p class="classref-comment">Used with <a class="reference internal" href="#classes-dmapdata-var-flagset"><span class="std std-ref">dmapdata::Flagset[]</span></a>.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-cavesnotcellars"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_CAVESNOTCELLARS</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-comment">Use caves instead of item cellars</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-3stairwarps"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_3STAIRWARPS</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-comment">Allow 3-stair warps</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-wwind"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_WWIND</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-comment">Allow whistle whirlwinds</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-guycaves"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_GUYCAVES</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-comment">Special rooms and guys are in caves only</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-nocompass"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_NOCOMPASS</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-comment">Don’t display compass marker in minimap</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-wavy"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_WAVY</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p class="classref-comment">Underwater wave effect</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-wwindret"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_WWINDRET</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p class="classref-comment">Whistle whirlwind returns Link to beginning</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-alwaysintromsg"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_ALWAYSINTROMSG</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p class="classref-comment">Always display intro string</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-viewmap"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_VIEWMAP</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p class="classref-comment">View overworld map by pressing ‘Map’</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-dmapmap"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_DMAPMAP</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p class="classref-comment">…But only show screens marked in minimap</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-minimapcolorfix"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_MINIMAPCOLORFIX</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p class="classref-comment">Use minimap foreground color 2</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-minimapcolourfix"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_MINIMAPCOLOURFIX</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p class="classref-comment">Use minimap foreground color 2</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-script1"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_SCRIPT1</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code></p>
+<p class="classref-comment">DMap Script Flag 1</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-script2"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_SCRIPT2</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+<p class="classref-comment">DMap Script Flag 2</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-script3"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_SCRIPT3</strong> = <code class="docutils literal notranslate"><span class="pre">13</span></code></p>
+<p class="classref-comment">DMap Script Flag 3</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-script4"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_SCRIPT4</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code></p>
+<p class="classref-comment">DMap Script Flag 4</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-script5"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_SCRIPT5</strong> = <code class="docutils literal notranslate"><span class="pre">15</span></code></p>
+<p class="classref-comment">DMap Script Flag 5</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-reserved"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_RESERVED</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code></p>
+<p class="classref-comment">RESERVED DO NOT USE</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-layer3isbackground"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_LAYER3ISBACKGROUND</strong> = <code class="docutils literal notranslate"><span class="pre">17</span></code></p>
+<p class="classref-comment">Layer 3 is Background</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-layer2isbackground"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_LAYER2ISBACKGROUND</strong> = <code class="docutils literal notranslate"><span class="pre">18</span></code></p>
+<p class="classref-comment">Layer 2 is Background</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-truecellarenemies"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_TRUECELLARENEMIES</strong> = <code class="docutils literal notranslate"><span class="pre">19</span></code></p>
+<p class="classref-comment">True Cellar Enemies</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-bunny"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_BUNNY</strong> = <code class="docutils literal notranslate"><span class="pre">20</span></code></p>
+<p class="classref-comment">Become Bunny with no Pearl</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-mirrorcontinue"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_MIRRORCONTINUE</strong> = <code class="docutils literal notranslate"><span class="pre">21</span></code></p>
+<p class="classref-comment">Mirror Continues instead of Warping</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmfs-max"><a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag</span></a> <strong>DMFS_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">22</span></code></p>
+<hr class="classref-item-separator docutils" />
+<p id="globals-enum-dmapbitflags">enum <strong>DMapBitflags</strong>: <a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">🔗</span></a>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L42">Source</a></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-cavesnotcellars"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_CAVESNOTCELLARS</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-comment">Use caves instead of item cellars.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-3stairwarps"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_3STAIRWARPS</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-comment">Allow 3-stair warps.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-wwind"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_WWIND</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-comment">Allow whistle whirlwinds.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-guycaves"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_GUYCAVES</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p class="classref-comment">Special rooms and guys are in caves only.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-nocompass"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_NOCOMPASS</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code></p>
+<p class="classref-comment">Don’t display compass marker in minimap.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-wavy"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_WAVY</strong> = <code class="docutils literal notranslate"><span class="pre">32</span></code></p>
+<p class="classref-comment">Underwater wave effect.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-wwindret"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_WWINDRET</strong> = <code class="docutils literal notranslate"><span class="pre">64</span></code></p>
+<p class="classref-comment">Whistle whirlwind returns Link to beginning.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-alwaysintromsg"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_ALWAYSINTROMSG</strong> = <code class="docutils literal notranslate"><span class="pre">128</span></code></p>
+<p class="classref-comment">Always display intro string.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-viewmap"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_VIEWMAP</strong> = <code class="docutils literal notranslate"><span class="pre">256</span></code></p>
+<p class="classref-comment">View overworld map by pressing ‘Map’.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-dmapmap"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_DMAPMAP</strong> = <code class="docutils literal notranslate"><span class="pre">512</span></code></p>
+<p class="classref-comment">…But only show screens marked in minimap.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-minimapcolorfix"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_MINIMAPCOLORFIX</strong> = <code class="docutils literal notranslate"><span class="pre">1024</span></code></p>
+<p class="classref-comment">Use minimap foreground color 2.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-minimapcolourfix"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_MINIMAPCOLOURFIX</strong> = <code class="docutils literal notranslate"><span class="pre">1024</span></code></p>
+<p class="classref-comment">Use minimap foreground color 2.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-script1"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_SCRIPT1</strong> = <code class="docutils literal notranslate"><span class="pre">2048</span></code></p>
+<p class="classref-comment">DMap Script Flags.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-script2"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_SCRIPT2</strong> = <code class="docutils literal notranslate"><span class="pre">4096</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-script3"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_SCRIPT3</strong> = <code class="docutils literal notranslate"><span class="pre">8192</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-script4"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_SCRIPT4</strong> = <code class="docutils literal notranslate"><span class="pre">16384</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-script5"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_SCRIPT5</strong> = <code class="docutils literal notranslate"><span class="pre">32768</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-sideview"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_SIDEVIEW</strong> = <code class="docutils literal notranslate"><span class="pre">65536</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-dmf-layer3isbackground"><a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags</span></a> <strong>DMF_LAYER3ISBACKGROUND</strong> = <code class="docutils literal notranslate"><span class="pre">131072</span></code></p>
+<hr class="classref-item-separator docutils" />
+<p id="globals-enum-dmapchartedbitflags">enum <strong>DMapChartedBitflags</strong>: <a class="reference internal" href="#globals-enum-dmapchartedbitflags"><span class="std std-ref">🔗</span></a>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L66">Source</a></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-chrt-visited"><a class="reference internal" href="#globals-enum-dmapchartedbitflags"><span class="std std-ref">DMapChartedBitflags</span></a> <strong>CHRT_VISITED</strong> = <code class="docutils literal notranslate"><span class="pre">128</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-chrt-up"><a class="reference internal" href="#globals-enum-dmapchartedbitflags"><span class="std std-ref">DMapChartedBitflags</span></a> <strong>CHRT_UP</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-chrt-down"><a class="reference internal" href="#globals-enum-dmapchartedbitflags"><span class="std std-ref">DMapChartedBitflags</span></a> <strong>CHRT_DOWN</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-chrt-left"><a class="reference internal" href="#globals-enum-dmapchartedbitflags"><span class="std std-ref">DMapChartedBitflags</span></a> <strong>CHRT_LEFT</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-chrt-right"><a class="reference internal" href="#globals-enum-dmapchartedbitflags"><span class="std std-ref">DMapChartedBitflags</span></a> <strong>CHRT_RIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+</section>
+<hr class="classref-item-separator docutils" />
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="classes-dmapdata-var-id"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ID</strong>  <a class="reference internal" href="#classes-dmapdata-var-id"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L11">Source</a></p>
+<p id="classes-dmapdata-var-id"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ID</strong>  <a class="reference internal" href="#classes-dmapdata-var-id"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L85">Source</a></p>
 <p class="classref-comment">The DMap’s ID number.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-map"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Map</strong>  <a class="reference internal" href="#classes-dmapdata-var-map"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L16">Source</a></p>
+<p id="classes-dmapdata-var-map"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Map</strong>  <a class="reference internal" href="#classes-dmapdata-var-map"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L90">Source</a></p>
 <p class="classref-comment">Which map this DMap is associated with.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-level"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Level</strong>  <a class="reference internal" href="#classes-dmapdata-var-level"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L21">Source</a></p>
+<p id="classes-dmapdata-var-level"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Level</strong>  <a class="reference internal" href="#classes-dmapdata-var-level"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L95">Source</a></p>
 <p class="classref-comment">The Level Number of this dmap.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-offset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Offset</strong>  <a class="reference internal" href="#classes-dmapdata-var-offset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L26">Source</a></p>
+<p id="classes-dmapdata-var-offset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Offset</strong>  <a class="reference internal" href="#classes-dmapdata-var-offset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L100">Source</a></p>
 <p class="classref-comment">The DMap offset.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-compass"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Compass</strong>  <a class="reference internal" href="#classes-dmapdata-var-compass"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L31">Source</a></p>
+<p id="classes-dmapdata-var-compass"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Compass</strong>  <a class="reference internal" href="#classes-dmapdata-var-compass"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L105">Source</a></p>
 <p class="classref-comment">The compass marker and continue screen numbers.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-palette"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Palette</strong>  <a class="reference internal" href="#classes-dmapdata-var-palette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L36">Source</a></p>
+<p id="classes-dmapdata-var-palette"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Palette</strong>  <a class="reference internal" href="#classes-dmapdata-var-palette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L110">Source</a></p>
 <p class="classref-comment">The level palette to use for this DMap</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-midi"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MIDI</strong>  <a class="reference internal" href="#classes-dmapdata-var-midi"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L41">Source</a></p>
+<p id="classes-dmapdata-var-midi"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MIDI</strong>  <a class="reference internal" href="#classes-dmapdata-var-midi"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L115">Source</a></p>
 <p class="classref-comment">The MIDI set to play on this dmap.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-continue"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Continue</strong>  <a class="reference internal" href="#classes-dmapdata-var-continue"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L46">Source</a></p>
+<p id="classes-dmapdata-var-continue"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Continue</strong>  <a class="reference internal" href="#classes-dmapdata-var-continue"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L120">Source</a></p>
 <p class="classref-comment">The compass marker and continue screen numbers.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-type"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Type</strong>  <a class="reference internal" href="#classes-dmapdata-var-type"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L51">Source</a></p>
-<p class="classref-comment">The type of the dmap, using the <a class="reference internal" href="../libs/std/std_constants.html#libs-std-enum-dmaptype"><span class="std std-ref">DmapType</span></a> (<code class="docutils literal notranslate"><span class="pre">DMAP_</span></code>) constants.</p>
+<p id="classes-dmapdata-var-type"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Type</strong>  <a class="reference internal" href="#classes-dmapdata-var-type"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L124">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-script"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Script</strong>  <a class="reference internal" href="#classes-dmapdata-var-script"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L56">Source</a></p>
+<p id="classes-dmapdata-var-script"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Script</strong>  <a class="reference internal" href="#classes-dmapdata-var-script"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L129">Source</a></p>
 <p class="classref-comment">The dmapdata script to run on this dmap.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-musictrack"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MusicTrack</strong>  <a class="reference internal" href="#classes-dmapdata-var-musictrack"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L61">Source</a></p>
+<p id="classes-dmapdata-var-musictrack"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MusicTrack</strong>  <a class="reference internal" href="#classes-dmapdata-var-musictrack"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L134">Source</a></p>
 <p class="classref-comment">The track number to use for enhanced music. See <a class="reference internal" href="#classes-dmapdata-fun-getmusic"><span class="std std-ref">GetMusic()</span></a>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-activesubscreen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ActiveSubscreen</strong>  <a class="reference internal" href="#classes-dmapdata-var-activesubscreen"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L66">Source</a></p>
+<p id="classes-dmapdata-var-activesubscreen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ActiveSubscreen</strong>  <a class="reference internal" href="#classes-dmapdata-var-activesubscreen"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L139">Source</a></p>
 <p class="classref-comment">Which engine active subscreen to use on this dmap.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-passivesubscreen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PassiveSubscreen</strong>  <a class="reference internal" href="#classes-dmapdata-var-passivesubscreen"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L71">Source</a></p>
+<p id="classes-dmapdata-var-passivesubscreen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PassiveSubscreen</strong>  <a class="reference internal" href="#classes-dmapdata-var-passivesubscreen"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L144">Source</a></p>
 <p class="classref-comment">Which engine passive subscreen to use on this dmap.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-overlaysubscreen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>OverlaySubscreen</strong>  <a class="reference internal" href="#classes-dmapdata-var-overlaysubscreen"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L76">Source</a></p>
+<p id="classes-dmapdata-var-overlaysubscreen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>OverlaySubscreen</strong>  <a class="reference internal" href="#classes-dmapdata-var-overlaysubscreen"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L149">Source</a></p>
 <p class="classref-comment">Which engine overlay subscreen to use on this dmap.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-grid"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Grid</strong>  <a class="reference internal" href="#classes-dmapdata-var-grid"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L82">Source</a></p>
-<p class="classref-comment">Bitwise values representing the state of the map grid. Make use of the
-functions in <code class="docutils literal notranslate"><span class="pre">std_zh/dmapgrid.zh</span></code> to access these values.</p>
+<p id="classes-dmapdata-var-grid"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Grid</strong>  <a class="reference internal" href="#classes-dmapdata-var-grid"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L156">Source</a></p>
+<p class="classref-comment">Bitwise values representing the state of the map grid.</p>
+<p class="classref-comment">See <a class="reference internal" href="../libs/std/std_functions.html#libs-std-fun-setvisibleondungeonmap"><span class="std std-ref">SetVisibleOnDungeonMap()</span></a>, <a class="reference internal" href="../libs/std/std_functions.html#libs-std-fun-visibleondungeonmap"><span class="std std-ref">VisibleOnDungeonMap()</span></a>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-minimaptile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>MiniMapTile</strong>  <a class="reference internal" href="#classes-dmapdata-var-minimaptile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L88">Source</a></p>
+<p id="classes-dmapdata-var-minimaptile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>MiniMapTile</strong>  <a class="reference internal" href="#classes-dmapdata-var-minimaptile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L162">Source</a></p>
 <p class="classref-comment">The tile used for the engine subscreen Small Map. The [0] index tile is
 used without the dungeon map, and the [1] index with the dungeon map.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-minimapcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>MiniMapCSet</strong>  <a class="reference internal" href="#classes-dmapdata-var-minimapcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L94">Source</a></p>
+<p id="classes-dmapdata-var-minimapcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>MiniMapCSet</strong>  <a class="reference internal" href="#classes-dmapdata-var-minimapcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L168">Source</a></p>
 <p class="classref-comment">The csets used for the engine subscreen Small Map, to go along with the
 MiniMapTile[].</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-initd"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>InitD</strong>  <a class="reference internal" href="#classes-dmapdata-var-initd"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L99">Source</a></p>
+<p id="classes-dmapdata-var-initd"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>InitD</strong>  <a class="reference internal" href="#classes-dmapdata-var-initd"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L173">Source</a></p>
 <p class="classref-comment">The 8 InitD values for the active dmap script.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-maptile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>MapTile</strong>  <a class="reference internal" href="#classes-dmapdata-var-maptile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L105">Source</a></p>
+<p id="classes-dmapdata-var-maptile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>MapTile</strong>  <a class="reference internal" href="#classes-dmapdata-var-maptile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L179">Source</a></p>
 <p class="classref-comment">The tile used for the engine subscreen Large Map. The [0] index tile is
 used without the dungeon map, and the [1] index with the dungeon map.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-mapcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>MapCSet</strong>  <a class="reference internal" href="#classes-dmapdata-var-mapcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L111">Source</a></p>
+<p id="classes-dmapdata-var-mapcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>MapCSet</strong>  <a class="reference internal" href="#classes-dmapdata-var-mapcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L185">Source</a></p>
 <p class="classref-comment">The csets used for the engine subscreen Large Map, to go along with the
 MapTile[].</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-disableditems">bool[] <strong>DisabledItems</strong>  <a class="reference internal" href="#classes-dmapdata-var-disableditems"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L116">Source</a></p>
+<p id="classes-dmapdata-var-disableditems">bool[] <strong>DisabledItems</strong>  <a class="reference internal" href="#classes-dmapdata-var-disableditems"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L190">Source</a></p>
 <p class="classref-comment">If each item on the dmap is disabled.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-flagset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Flagset</strong>  <a class="reference internal" href="#classes-dmapdata-var-flagset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L121">Source</a></p>
-<p class="classref-comment">The flags for the dmap. Uses the <code class="docutils literal notranslate"><span class="pre">DMFS_</span></code> constants.</p>
+<p id="classes-dmapdata-var-flagset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Flagset</strong>  <a class="reference internal" href="#classes-dmapdata-var-flagset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L196">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="#globals-enum-dmapflag"><span class="std std-ref">DMapFlag (DMFS_)</span></a></p>
+<p class="classref-comment">All of the dmap’s flags.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-sideview">bool <strong>Sideview</strong>  <a class="reference internal" href="#classes-dmapdata-var-sideview"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L127">Source</a></p>
+<p id="classes-dmapdata-var-sideview">bool <strong>Sideview</strong>  <a class="reference internal" href="#classes-dmapdata-var-sideview"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L202">Source</a></p>
 <p class="classref-comment">If true, the dmap is treated as sideview by default; screens with the
 sideview flag enabled will toggle sideview back *off*.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-asubscript"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ASubScript</strong>  <a class="reference internal" href="#classes-dmapdata-var-asubscript"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L133">Source</a></p>
+<p id="classes-dmapdata-var-asubscript"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ASubScript</strong>  <a class="reference internal" href="#classes-dmapdata-var-asubscript"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L208">Source</a></p>
 <p class="classref-comment">Which dmapdata script to use as a replacement for the engine active
 subscreen (0 for none).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-psubscript"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PSubScript</strong>  <a class="reference internal" href="#classes-dmapdata-var-psubscript"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L138">Source</a></p>
+<p id="classes-dmapdata-var-psubscript"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PSubScript</strong>  <a class="reference internal" href="#classes-dmapdata-var-psubscript"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L213">Source</a></p>
 <p class="classref-comment">Which dmapdata script to run for passive subscreen draws.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-subinitd"><abbr title="Could be any type.">untyped</abbr>[] <strong>SubInitD</strong>  <a class="reference internal" href="#classes-dmapdata-var-subinitd"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L143">Source</a></p>
+<p id="classes-dmapdata-var-subinitd"><abbr title="Could be any type.">untyped</abbr>[] <strong>SubInitD</strong>  <a class="reference internal" href="#classes-dmapdata-var-subinitd"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L218">Source</a></p>
 <p class="classref-comment">The 8 InitD values shared by the Active and Passive Subscreen Scripts.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-mapscript"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MapScript</strong>  <a class="reference internal" href="#classes-dmapdata-var-mapscript"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L149">Source</a></p>
+<p id="classes-dmapdata-var-mapscript"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MapScript</strong>  <a class="reference internal" href="#classes-dmapdata-var-mapscript"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L224">Source</a></p>
 <p class="classref-comment">Which dmapdata script to use as a replacement for the engine fullscreen
 map (0 for none).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-mapinitd"><abbr title="Could be any type.">untyped</abbr>[] <strong>MapInitD</strong>  <a class="reference internal" href="#classes-dmapdata-var-mapinitd"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L154">Source</a></p>
+<p id="classes-dmapdata-var-mapinitd"><abbr title="Could be any type.">untyped</abbr>[] <strong>MapInitD</strong>  <a class="reference internal" href="#classes-dmapdata-var-mapinitd"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L229">Source</a></p>
 <p class="classref-comment">The 8 InitD values used by the Map Script.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-charted"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Charted</strong>  <a class="reference internal" href="#classes-dmapdata-var-charted"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L160">Source</a></p>
-<p class="classref-comment">Stores the large map exploration data for each screen on the dmap.
-&lt;todo&gt;Test if works on overworld dmaps.&lt;/todo&gt;</p>
+<p id="classes-dmapdata-var-charted"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Charted</strong>  <a class="reference internal" href="#classes-dmapdata-var-charted"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L236">Source</a></p>
+<p class="classref-comment">Stores the large map exploration data for each screen on the dmap.</p>
+<p class="classref-comment">&lt;todo&gt;Test if works on overworld dmaps.&lt;/todo&gt;</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-mirrordmap"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MirrorDMap</strong>  <a class="reference internal" href="#classes-dmapdata-var-mirrordmap"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L168">Source</a></p>
+<p id="classes-dmapdata-var-mirrordmap"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MirrorDMap</strong>  <a class="reference internal" href="#classes-dmapdata-var-mirrordmap"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L244">Source</a></p>
 <p class="classref-comment">The DMap ID that using a Mirror will take you to. If this is <code class="docutils literal notranslate"><span class="pre">-1</span></code>,
 Mirrors will not be able to warp you to another dmap. If the <a class="reference internal" href="#classes-dmapdata-var-flagset"><span class="std std-ref">Flagset[]</span></a>
 ‘Mirror Continues instead of Warping’ is set, the mirror dmap setting is
 not used.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-flags"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Flags</strong>  <a class="reference internal" href="#classes-dmapdata-var-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L190">Source</a></p>
-<p class="classref-comment">The flags used by the DMap. These are OR’d together.</p>
-<ul class="classref-comment simple">
-<li><p>CAVES               0x0001</p></li>
-<li><p>3STAIR              0x0002</p></li>
-<li><p>WHIRLWIND           0x0004</p></li>
-<li><p>GUYCAVES            0x0008</p></li>
-<li><p>NOCOMPASS           0x0010</p></li>
-<li><p>WAVY                0x0020</p></li>
-<li><p>WHIRLWINDRET        0x0040</p></li>
-<li><p>ALWAYSMSG           0x0080</p></li>
-<li><p>VIEWMAP             0x0100</p></li>
-<li><p>DMAPMAP             0x0200</p></li>
-<li><p>MINIMAPCOLORFIX     0x0400</p></li>
-<li><p>SCRIPT1             0x0800</p></li>
-<li><p>SCRIPT2             0x1000</p></li>
-<li><p>SCRIPT3             0x2000</p></li>
-<li><p>SCRIPT4             0x4000</p></li>
-<li><p>SCRIPT5             0x8000</p></li>
-</ul>
+<p id="classes-dmapdata-var-flags"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Flags</strong>  <a class="reference internal" href="#classes-dmapdata-var-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L251">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags (DMF_)</span></a></p>
+<p class="classref-comment">The flags used by the DMap. These are OR’d together. See <a class="reference internal" href="#globals-enum-dmapbitflags"><span class="std std-ref">DMapBitflags (DMF_)</span></a>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-musicloopstart"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MusicLoopStart</strong>  <a class="reference internal" href="#classes-dmapdata-var-musicloopstart"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L195">Source</a></p>
+<p id="classes-dmapdata-var-musicloopstart"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MusicLoopStart</strong>  <a class="reference internal" href="#classes-dmapdata-var-musicloopstart"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L256">Source</a></p>
 <p class="classref-comment">The starting loop point for enhanced music in seconds.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-musicloopend"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MusicLoopEnd</strong>  <a class="reference internal" href="#classes-dmapdata-var-musicloopend"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L200">Source</a></p>
+<p id="classes-dmapdata-var-musicloopend"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MusicLoopEnd</strong>  <a class="reference internal" href="#classes-dmapdata-var-musicloopend"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L261">Source</a></p>
 <p class="classref-comment">The ending loop point for enhanced music in seconds.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-musiccrossfadein"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MusicCrossfadeIn</strong>  <a class="reference internal" href="#classes-dmapdata-var-musiccrossfadein"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L205">Source</a></p>
+<p id="classes-dmapdata-var-musiccrossfadein"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MusicCrossfadeIn</strong>  <a class="reference internal" href="#classes-dmapdata-var-musiccrossfadein"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L266">Source</a></p>
 <p class="classref-comment">The number of frames enhanced music fades in for.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-musiccrossfadeout"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MusicCrossfadeOut</strong>  <a class="reference internal" href="#classes-dmapdata-var-musiccrossfadeout"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L210">Source</a></p>
+<p id="classes-dmapdata-var-musiccrossfadeout"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MusicCrossfadeOut</strong>  <a class="reference internal" href="#classes-dmapdata-var-musiccrossfadeout"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L271">Source</a></p>
 <p class="classref-comment">The number of frames enhanced music fades out for.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-dmapdata-var-introstringid"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>IntroStringID</strong>  <a class="reference internal" href="#classes-dmapdata-var-introstringid"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L215">Source</a></p>
+<p id="classes-dmapdata-var-introstringid"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>IntroStringID</strong>  <a class="reference internal" href="#classes-dmapdata-var-introstringid"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L276">Source</a></p>
 <p class="classref-comment">The ID in the string editor for the dmap’s intro string.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-dmapdata-fun-getname"><abbr title="No return value.">void</abbr> <strong>GetName</strong>(char32[] buffer) <a class="reference internal" href="#classes-dmapdata-fun-getname"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L223">Source</a></p>
+<p class="classref-method" id="classes-dmapdata-fun-getname"><abbr title="No return value.">void</abbr> <strong>GetName</strong>(char32[] buffer) <a class="reference internal" href="#classes-dmapdata-fun-getname"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L284">Source</a></p>
 <p class="classref-comment">Fills the buffer with the dmap’s name.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-dmapdata-fun-setname"><abbr title="No return value.">void</abbr> <strong>SetName</strong>(char32[] buffer) <a class="reference internal" href="#classes-dmapdata-fun-setname"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L231">Source</a></p>
+<p class="classref-method" id="classes-dmapdata-fun-setname"><abbr title="No return value.">void</abbr> <strong>SetName</strong>(char32[] buffer) <a class="reference internal" href="#classes-dmapdata-fun-setname"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L292">Source</a></p>
 <p class="classref-comment">Sets the DMap’s name to the buffer contents.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-dmapdata-fun-gettitle"><abbr title="No return value.">void</abbr> <strong>GetTitle</strong>(char32[] buf) <a class="reference internal" href="#classes-dmapdata-fun-gettitle"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L239">Source</a></p>
+<p class="classref-method" id="classes-dmapdata-fun-gettitle"><abbr title="No return value.">void</abbr> <strong>GetTitle</strong>(char32[] buf) <a class="reference internal" href="#classes-dmapdata-fun-gettitle"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L300">Source</a></p>
 <p class="classref-comment">Fills the buffer with the dmap’s title.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-dmapdata-fun-settitle"><abbr title="No return value.">void</abbr> <strong>SetTitle</strong>(char32[] buf) <a class="reference internal" href="#classes-dmapdata-fun-settitle"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L247">Source</a></p>
+<p class="classref-method" id="classes-dmapdata-fun-settitle"><abbr title="No return value.">void</abbr> <strong>SetTitle</strong>(char32[] buf) <a class="reference internal" href="#classes-dmapdata-fun-settitle"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L308">Source</a></p>
 <p class="classref-comment">Sets the DMap’s title to the buffer contents.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-dmapdata-fun-getintro"><abbr title="No return value.">void</abbr> <strong>GetIntro</strong>(char32[] buffer) <a class="reference internal" href="#classes-dmapdata-fun-getintro"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L255">Source</a></p>
+<p class="classref-method" id="classes-dmapdata-fun-getintro"><abbr title="No return value.">void</abbr> <strong>GetIntro</strong>(char32[] buffer) <a class="reference internal" href="#classes-dmapdata-fun-getintro"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L316">Source</a></p>
 <p class="classref-comment">Fills the buffer with the dmap’s intro.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-dmapdata-fun-setintro"><abbr title="No return value.">void</abbr> <strong>SetIntro</strong>(char32[] buffer) <a class="reference internal" href="#classes-dmapdata-fun-setintro"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L263">Source</a></p>
+<p class="classref-method" id="classes-dmapdata-fun-setintro"><abbr title="No return value.">void</abbr> <strong>SetIntro</strong>(char32[] buffer) <a class="reference internal" href="#classes-dmapdata-fun-setintro"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L324">Source</a></p>
 <p class="classref-comment">Sets the DMap’s intro to the buffer contents.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-dmapdata-fun-getmusic"><abbr title="No return value.">void</abbr> <strong>GetMusic</strong>(char32[] buffer) <a class="reference internal" href="#classes-dmapdata-fun-getmusic"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L272">Source</a></p>
+<p class="classref-method" id="classes-dmapdata-fun-getmusic"><abbr title="No return value.">void</abbr> <strong>GetMusic</strong>(char32[] buffer) <a class="reference internal" href="#classes-dmapdata-fun-getmusic"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L333">Source</a></p>
 <p class="classref-comment">Fills the buffer with the dmap’s enhanced music filename. See
 <a class="reference internal" href="#classes-dmapdata-var-musictrack"><span class="std std-ref">MusicTrack</span></a>.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-dmapdata-fun-setmusic"><abbr title="No return value.">void</abbr> <strong>SetMusic</strong>(char32[] filename) <a class="reference internal" href="#classes-dmapdata-fun-setmusic"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/dmapdata.zh#L281">Source</a></p>
+<p class="classref-method" id="classes-dmapdata-fun-setmusic"><abbr title="No return value.">void</abbr> <strong>SetMusic</strong>(char32[] filename) <a class="reference internal" href="#classes-dmapdata-fun-setmusic"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/dmapdata.zh#L342">Source</a></p>
 <p class="classref-comment">Sets the DMap’s enhanced music filename to the buffer contents. See
 <a class="reference internal" href="#classes-dmapdata-var-musictrack"><span class="std std-ref">MusicTrack</span></a>.</p>
 </section>
@@ -828,6 +967,7 @@ not used.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerations">Enumerations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-descriptions">Function descriptions</a></li>
 </ul>
@@ -858,7 +998,7 @@ not used.</p>
 
   <p class="copyright">
     
-      © Copyright 2024, ZQuest Classic Foundation.
+      © Copyright 2025, ZQuest Classic Foundation.
       <br/>
     
   </p>

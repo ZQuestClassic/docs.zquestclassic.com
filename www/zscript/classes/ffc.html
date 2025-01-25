@@ -31,6 +31,9 @@
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../_static/zscript.css?v=3afc8195" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -41,15 +44,19 @@
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/classes/ffc';</script>
     <script src="../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../_static/zscript.js?v=0bdd3061"></script>
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="file" href="file.html" />
     <link rel="prev" title="eweapon" href="eweapon.html" />
-    <link href="../../_static/main.css" rel="stylesheet" type="text/css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -271,7 +278,55 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../lang/types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lang/explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../globals/functions.html">Global functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../globals/constants.html">Global constants</a></li>
@@ -394,10 +449,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../libs/ffcscript/ffcscript.html">ffcscript.zh</a></li>
-</ul>
-</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
 </ul>
@@ -503,7 +554,7 @@ screen, not tied to the grid.</p>
 <tr class="row-even"><td><p><abbr title="Could be any type.">untyped</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#classes-ffc-var-initd"><span class="std std-ref">InitD</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-ffc-var-id"><span class="std std-ref">ID</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
@@ -548,79 +599,114 @@ screen, not tied to the grid.</p>
 </table>
 </div>
 </section>
+<section id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Link to this heading">#</a></h2>
+<p id="globals-enum-ffcflag">enum <strong>FFCFlag</strong>: <a class="reference internal" href="#globals-enum-ffcflag"><span class="std std-ref">🔗</span></a>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L4">Source</a></p>
+<p class="classref-comment">Used with <a class="reference internal" href="#classes-ffc-var-flags"><span class="std std-ref">ffc::Flags[]</span></a>.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ffcf-overlay"><a class="reference internal" href="#globals-enum-ffcflag"><span class="std std-ref">FFCFlag</span></a> <strong>FFCF_OVERLAY</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-comment">Draw Over (draw between layers 4 and 5).</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ffcf-trans"><a class="reference internal" href="#globals-enum-ffcflag"><span class="std std-ref">FFCFlag</span></a> <strong>FFCF_TRANS</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-comment">Translucent.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ffcf-solid"><a class="reference internal" href="#globals-enum-ffcflag"><span class="std std-ref">FFCFlag</span></a> <strong>FFCF_SOLID</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-comment">Solidity (Partially Implemented).</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ffcf-carryover"><a class="reference internal" href="#globals-enum-ffcflag"><span class="std std-ref">FFCFlag</span></a> <strong>FFCF_CARRYOVER</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-comment">Carry Over.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ffcf-stationary"><a class="reference internal" href="#globals-enum-ffcflag"><span class="std std-ref">FFCFlag</span></a> <strong>FFCF_STATIONARY</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-comment">Stationary.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ffcf-changer"><a class="reference internal" href="#globals-enum-ffcflag"><span class="std std-ref">FFCFlag</span></a> <strong>FFCF_CHANGER</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p class="classref-comment">Is A Changer.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ffcf-preload"><a class="reference internal" href="#globals-enum-ffcflag"><span class="std std-ref">FFCFlag</span></a> <strong>FFCF_PRELOAD</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p class="classref-comment">Run Script On Screen Init.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ffcf-lensvis"><a class="reference internal" href="#globals-enum-ffcflag"><span class="std std-ref">FFCFlag</span></a> <strong>FFCF_LENSVIS</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p class="classref-comment">Only Visible to Lens of Truth.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ffcf-reset"><a class="reference internal" href="#globals-enum-ffcflag"><span class="std std-ref">FFCFlag</span></a> <strong>FFCF_RESET</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p class="classref-comment">Script Resets When Carried Over.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ffcf-ethereal"><a class="reference internal" href="#globals-enum-ffcflag"><span class="std std-ref">FFCFlag</span></a> <strong>FFCF_ETHEREAL</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p class="classref-comment">The FFC’s Combo Type is ignored.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ffcf-ignoreholdup"><a class="reference internal" href="#globals-enum-ffcflag"><span class="std std-ref">FFCFlag</span></a> <strong>FFCF_IGNOREHOLDUP</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p class="classref-comment">The FFC is updated while Link is holding up an item.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ffcf-ignorechanger"><a class="reference internal" href="#globals-enum-ffcflag"><span class="std std-ref">FFCFlag</span></a> <strong>FFCF_IGNORECHANGER</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code></p>
+<p class="classref-comment">The FFC ignores changers.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ffcf-imprecisionchanger"><a class="reference internal" href="#globals-enum-ffcflag"><span class="std std-ref">FFCFlag</span></a> <strong>FFCF_IMPRECISIONCHANGER</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+<p class="classref-comment">The FFC is affected by changers if it is within 1px on both axis, not subpixel alignment.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-ffcf-lensinvis"><a class="reference internal" href="#globals-enum-ffcflag"><span class="std std-ref">FFCFlag</span></a> <strong>FFCF_LENSINVIS</strong> = <code class="docutils literal notranslate"><span class="pre">13</span></code></p>
+<p class="classref-comment">Not visible to the lens of truth.</p>
+</section>
+<hr class="classref-item-separator docutils" />
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="classes-ffc-var-data"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Data</strong>  <a class="reference internal" href="#classes-ffc-var-data"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L17">Source</a></p>
+<p id="classes-ffc-var-data"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Data</strong>  <a class="reference internal" href="#classes-ffc-var-data"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L36">Source</a></p>
 <p class="classref-comment">The combo used by the FFC for its visuals and type.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-ffc-var-script"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Script</strong>  <a class="reference internal" href="#classes-ffc-var-script"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L22">Source</a></p>
+<p id="classes-ffc-var-script"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Script</strong>  <a class="reference internal" href="#classes-ffc-var-script"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L41">Source</a></p>
 <p class="classref-comment">The FFC script ID running on this FFC.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-ffc-var-delay"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Delay</strong>  <a class="reference internal" href="#classes-ffc-var-delay"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L27">Source</a></p>
+<p id="classes-ffc-var-delay"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Delay</strong>  <a class="reference internal" href="#classes-ffc-var-delay"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L46">Source</a></p>
 <p class="classref-comment">The time in frames before the FFC will begin moving.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-ffc-var-vx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Vx</strong>  <a class="reference internal" href="#classes-ffc-var-vx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L32">Source</a></p>
+<p id="classes-ffc-var-vx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Vx</strong>  <a class="reference internal" href="#classes-ffc-var-vx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L51">Source</a></p>
 <p class="classref-comment">X velocity.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-ffc-var-vy"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Vy</strong>  <a class="reference internal" href="#classes-ffc-var-vy"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L37">Source</a></p>
+<p id="classes-ffc-var-vy"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Vy</strong>  <a class="reference internal" href="#classes-ffc-var-vy"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L56">Source</a></p>
 <p class="classref-comment">Y velocity.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-ffc-var-ax"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Ax</strong>  <a class="reference internal" href="#classes-ffc-var-ax"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L42">Source</a></p>
+<p id="classes-ffc-var-ax"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Ax</strong>  <a class="reference internal" href="#classes-ffc-var-ax"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L61">Source</a></p>
 <p class="classref-comment">X acceleration.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-ffc-var-ay"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Ay</strong>  <a class="reference internal" href="#classes-ffc-var-ay"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L47">Source</a></p>
+<p id="classes-ffc-var-ay"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Ay</strong>  <a class="reference internal" href="#classes-ffc-var-ay"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L66">Source</a></p>
 <p class="classref-comment">Y acceleration.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-ffc-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-ffc-var-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L50">Source</a></p>
+<p id="classes-ffc-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-ffc-var-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L69">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-ffc-var-effectwidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EffectWidth</strong>  <a class="reference internal" href="#classes-ffc-var-effectwidth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L57">Source</a></p>
+<p id="classes-ffc-var-effectwidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EffectWidth</strong>  <a class="reference internal" href="#classes-ffc-var-effectwidth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L76">Source</a></p>
 <p class="classref-comment">The hitbox width, in pixels (1 to 64), of the FFC. Unless the FFC is
 <a class="reference internal" href="#classes-ffc-var-flags"><span class="std std-ref">ffc::Flags[]</span></a>, the type of its combo will affect this area. NOTE: Not all
 combo types function when placed on FFCs.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-ffc-var-effectheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EffectHeight</strong>  <a class="reference internal" href="#classes-ffc-var-effectheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L64">Source</a></p>
+<p id="classes-ffc-var-effectheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EffectHeight</strong>  <a class="reference internal" href="#classes-ffc-var-effectheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L83">Source</a></p>
 <p class="classref-comment">The hitbox height, in pixels (1 to 64), of the FFC. Unless the FFC is
 <a class="reference internal" href="#classes-ffc-var-flags"><span class="std std-ref">ffc::Flags[]</span></a>, the type of its combo will affect this area. NOTE: Not all
 combo types function when placed on FFCs.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-ffc-var-link"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Link</strong>  <a class="reference internal" href="#classes-ffc-var-link"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L69">Source</a></p>
+<p id="classes-ffc-var-link"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Link</strong>  <a class="reference internal" href="#classes-ffc-var-link"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L88">Source</a></p>
 <p class="classref-comment">Represents the ID of another FFC this one is ‘linked’ to.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-ffc-var-initd"><abbr title="Could be any type.">untyped</abbr>[] <strong>InitD</strong>  <a class="reference internal" href="#classes-ffc-var-initd"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L74">Source</a></p>
+<p id="classes-ffc-var-initd"><abbr title="Could be any type.">untyped</abbr>[] <strong>InitD</strong>  <a class="reference internal" href="#classes-ffc-var-initd"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L93">Source</a></p>
 <p class="classref-comment">The 8 InitD[] parameters for the FFC’s script.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-ffc-var-id"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ID</strong>  <a class="reference internal" href="#classes-ffc-var-id"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L79">Source</a></p>
+<p id="classes-ffc-var-id"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ID</strong>  <a class="reference internal" href="#classes-ffc-var-id"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L98">Source</a></p>
 <p class="classref-comment">the screen index of the FFC.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-ffc-var-lastchangerx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LastChangerX</strong>  <a class="reference internal" href="#classes-ffc-var-lastchangerx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L82">Source</a></p>
+<p id="classes-ffc-var-lastchangerx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LastChangerX</strong>  <a class="reference internal" href="#classes-ffc-var-lastchangerx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L101">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-ffc-var-lastchangery"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LastChangerY</strong>  <a class="reference internal" href="#classes-ffc-var-lastchangery"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L85">Source</a></p>
+<p id="classes-ffc-var-lastchangery"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LastChangerY</strong>  <a class="reference internal" href="#classes-ffc-var-lastchangery"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L104">Source</a></p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-ffc-fun-own"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="bitmap.html#classes-bitmap"><span class="std std-ref">bitmap</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L93">Source</a></p>
+<p class="classref-method" id="classes-ffc-fun-own"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="bitmap.html#classes-bitmap"><span class="std std-ref">bitmap</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L112">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the parameter object to the ffc.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-ffc-fun-own-2"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="paldata.html#classes-paldata"><span class="std std-ref">paldata</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L101">Source</a></p>
+<p class="classref-method" id="classes-ffc-fun-own-2"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="paldata.html#classes-paldata"><span class="std std-ref">paldata</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L120">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the parameter object to the ffc.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-ffc-fun-own-3"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="file.html#classes-file"><span class="std std-ref">file</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own-3"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L109">Source</a></p>
+<p class="classref-method" id="classes-ffc-fun-own-3"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="file.html#classes-file"><span class="std std-ref">file</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own-3"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L128">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the parameter object to the ffc.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-ffc-fun-own-4"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="directory.html#classes-directory"><span class="std std-ref">directory</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own-4"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L117">Source</a></p>
+<p class="classref-method" id="classes-ffc-fun-own-4"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="directory.html#classes-directory"><span class="std std-ref">directory</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own-4"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L136">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the parameter object to the ffc.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-ffc-fun-own-5"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="stack.html#classes-stack"><span class="std std-ref">stack</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own-5"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L125">Source</a></p>
+<p class="classref-method" id="classes-ffc-fun-own-5"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="stack.html#classes-stack"><span class="std std-ref">stack</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own-5"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L144">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the parameter object to the ffc.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-ffc-fun-own-6"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="randgen.html#classes-randgen"><span class="std std-ref">randgen</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own-6"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L133">Source</a></p>
+<p class="classref-method" id="classes-ffc-fun-own-6"><abbr title="No return value.">void</abbr> <strong>Own</strong>(<a class="reference internal" href="randgen.html#classes-randgen"><span class="std std-ref">randgen</span></a> b) <a class="reference internal" href="#classes-ffc-fun-own-6"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L152">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the parameter object to the ffc.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-ffc-fun-ownarray"><abbr title="No return value.">void</abbr> <strong>OwnArray</strong>(<abbr title="Could be any type.">untyped</abbr> array) <a class="reference internal" href="#classes-ffc-fun-ownarray"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L141">Source</a></p>
+<p class="classref-method" id="classes-ffc-fun-ownarray"><abbr title="No return value.">void</abbr> <strong>OwnArray</strong>(<abbr title="Could be any type.">untyped</abbr> array) <a class="reference internal" href="#classes-ffc-fun-ownarray"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L160">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the parameter object to the ffc.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-ffc-fun-ownobject"><abbr title="No return value.">void</abbr> <strong>OwnObject</strong>(<abbr title="Could be any type.">untyped</abbr> object) <a class="reference internal" href="#classes-ffc-fun-ownobject"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/ffc.zh#L149">Source</a></p>
+<p class="classref-method" id="classes-ffc-fun-ownobject"><abbr title="No return value.">void</abbr> <strong>OwnObject</strong>(<abbr title="Could be any type.">untyped</abbr> object) <a class="reference internal" href="#classes-ffc-fun-ownobject"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/ffc.zh#L168">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the parameter object to the ffc.</p>
 </section>
 </section>
@@ -674,6 +760,7 @@ combo types function when placed on FFCs.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerations">Enumerations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-descriptions">Function descriptions</a></li>
 </ul>
@@ -704,7 +791,7 @@ combo types function when placed on FFCs.</p>
 
   <p class="copyright">
     
-      © Copyright 2024, ZQuest Classic Foundation.
+      © Copyright 2025, ZQuest Classic Foundation.
       <br/>
     
   </p>

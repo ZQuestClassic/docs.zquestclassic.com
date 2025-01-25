@@ -31,6 +31,9 @@
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../_static/zscript.css?v=3afc8195" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -41,15 +44,19 @@
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/classes/paldata';</script>
     <script src="../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../_static/zscript.js?v=0bdd3061"></script>
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="portal" href="portal.html" />
     <link rel="prev" title="npcdata" href="npcdata.html" />
-    <link href="../../_static/main.css" rel="stylesheet" type="text/css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -271,7 +278,55 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../lang/types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lang/explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../globals/functions.html">Global functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../globals/constants.html">Global constants</a></li>
@@ -392,10 +447,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_types.html">guizh_types.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_widget.html">guizh_widget.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../libs/ffcscript/ffcscript.html">ffcscript.zh</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -570,22 +621,22 @@
 </section>
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="classes-paldata-var-color">rgb[] <strong>Color</strong>  <a class="reference internal" href="#classes-paldata-var-color"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L21">Source</a></p>
+<p id="classes-paldata-var-color">rgb[] <strong>Color</strong>  <a class="reference internal" href="#classes-paldata-var-color"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L21">Source</a></p>
 <p class="classref-comment">Access colors of the paldata as <code class="docutils literal notranslate"><span class="pre">rgb</span></code>. Reading an invalid color
 will return <a class="reference internal" href="../globals/constants.html#globals-var-invalid-color"><span class="std std-ref">INVALID_COLOR</span></a> (<code class="docutils literal notranslate"><span class="pre">-1</span></code>). To write a color as invalid, use
 <a class="reference internal" href="#classes-paldata-fun-clearcolor"><span class="std std-ref">ClearColor()</span></a> instead.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-paldata-var-r"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>R</strong>  <a class="reference internal" href="#classes-paldata-var-r"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L28">Source</a></p>
+<p id="classes-paldata-var-r"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>R</strong>  <a class="reference internal" href="#classes-paldata-var-r"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L28">Source</a></p>
 <p class="classref-comment">Access the Red values of the paldata, ranging from 0-255. Reading an
 invalid color will return -1. To write a color as invalid, use
 <a class="reference internal" href="#classes-paldata-fun-clearcolor"><span class="std std-ref">ClearColor()</span></a> instead.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-paldata-var-g"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>G</strong>  <a class="reference internal" href="#classes-paldata-var-g"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L35">Source</a></p>
+<p id="classes-paldata-var-g"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>G</strong>  <a class="reference internal" href="#classes-paldata-var-g"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L35">Source</a></p>
 <p class="classref-comment">Access the Green values of the paldata, ranging from 0-255. Reading an
 invalid color will return -1. To write a color as invalid, use
 <a class="reference internal" href="#classes-paldata-fun-clearcolor"><span class="std std-ref">ClearColor()</span></a> instead.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-paldata-var-b"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>B</strong>  <a class="reference internal" href="#classes-paldata-var-b"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L42">Source</a></p>
+<p id="classes-paldata-var-b"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>B</strong>  <a class="reference internal" href="#classes-paldata-var-b"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L42">Source</a></p>
 <p class="classref-comment">Access the Blue values of the paldata, ranging from 0-255. Reading an
 invalid color will return -1. To write a color as invalid, use
 <a class="reference internal" href="#classes-paldata-fun-clearcolor"><span class="std std-ref">ClearColor()</span></a> instead.</p>
@@ -593,99 +644,98 @@ invalid color will return -1. To write a color as invalid, use
 <hr class="classref-item-separator docutils" />
 <section id="constructor-descriptions">
 <h2>Constructor descriptions<a class="headerlink" href="#constructor-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-paldata-ctor-paldata"><a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> <strong>paldata</strong>() <a class="reference internal" href="#classes-paldata-ctor-paldata"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L9">Source</a></p>
+<p class="classref-method" id="classes-paldata-ctor-paldata"><a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> <strong>paldata</strong>() <a class="reference internal" href="#classes-paldata-ctor-paldata"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L9">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-ctor-paldata-2"><a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> <strong>paldata</strong>(rgb color) <a class="reference internal" href="#classes-paldata-ctor-paldata-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L14">Source</a></p>
+<p class="classref-method" id="classes-paldata-ctor-paldata-2"><a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> <strong>paldata</strong>(rgb color) <a class="reference internal" href="#classes-paldata-ctor-paldata-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L14">Source</a></p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-paldata-fun-loadlevelpalette"><abbr title="No return value.">void</abbr> <strong>LoadLevelPalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-loadlevelpalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L53">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-loadlevelpalette"><abbr title="No return value.">void</abbr> <strong>LoadLevelPalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-loadlevelpalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L53">Source</a></p>
 <p class="classref-comment">Loads a level’s palette to the paldata.</p>
 <p class="classref-comment">CSets will be arranged as they appear on the main palette, so CSet 2
 starts at index 0x20, ect.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-loadspritepalette"><abbr title="No return value.">void</abbr> <strong>LoadSpritePalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-loadspritepalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L63">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-loadspritepalette"><abbr title="No return value.">void</abbr> <strong>LoadSpritePalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-loadspritepalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L63">Source</a></p>
 <p class="classref-comment">Loads a page of sprite palettes to the paldata.</p>
 <p class="classref-comment">Currently only values of 0 and 1 are valid.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-loadmainpalette"><abbr title="No return value.">void</abbr> <strong>LoadMainPalette</strong>() <a class="reference internal" href="#classes-paldata-fun-loadmainpalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L70">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-loadmainpalette"><abbr title="No return value.">void</abbr> <strong>LoadMainPalette</strong>() <a class="reference internal" href="#classes-paldata-fun-loadmainpalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L70">Source</a></p>
 <p class="classref-comment">Loads the main palette to the paldata.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-loadcyclepalette"><abbr title="No return value.">void</abbr> <strong>LoadCyclePalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-loadcyclepalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L78">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-loadcyclepalette"><abbr title="No return value.">void</abbr> <strong>LoadCyclePalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-loadcyclepalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L78">Source</a></p>
 <p class="classref-comment">Loads the cycle/dark room csets from a level palette to the paldata.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-loadbitmappalette"><abbr title="No return value.">void</abbr> <strong>LoadBitmapPalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-loadbitmappalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L87">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-loadbitmappalette"><abbr title="No return value.">void</abbr> <strong>LoadBitmapPalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-loadbitmappalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L87">Source</a></p>
 <p class="classref-comment">Loads the palette from an image. Currently only BMP, PCX, and TGA are
 supported.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-writelevelpalette"><abbr title="No return value.">void</abbr> <strong>WriteLevelPalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-writelevelpalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L96">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-writelevelpalette"><abbr title="No return value.">void</abbr> <strong>WriteLevelPalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-writelevelpalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L96">Source</a></p>
 <p class="classref-comment">Writes the paldata to a level palette. Empty color indices will be
 skipped.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-writelevelcset"><abbr title="No return value.">void</abbr> <strong>WriteLevelCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#classes-paldata-fun-writelevelcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L106">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-writelevelcset"><abbr title="No return value.">void</abbr> <strong>WriteLevelCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#classes-paldata-fun-writelevelcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L106">Source</a></p>
 <p class="classref-comment">Writes a cset of the paldata to a level palette. Empty color indices will
 be skipped.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-writespritepalette"><abbr title="No return value.">void</abbr> <strong>WriteSpritePalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-writespritepalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L115">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-writespritepalette"><abbr title="No return value.">void</abbr> <strong>WriteSpritePalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-writespritepalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L115">Source</a></p>
 <p class="classref-comment">Writes the paldata to a sprite palette page. Empty color indices will be
 skipped.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-writespritecset"><abbr title="No return value.">void</abbr> <strong>WriteSpriteCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#classes-paldata-fun-writespritecset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L125">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-writespritecset"><abbr title="No return value.">void</abbr> <strong>WriteSpriteCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#classes-paldata-fun-writespritecset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L125">Source</a></p>
 <p class="classref-comment">Writes a cset of the paldata to a sprite palette page. Empty color
 indices will be skipped.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-writemainpalette"><abbr title="No return value.">void</abbr> <strong>WriteMainPalette</strong>() <a class="reference internal" href="#classes-paldata-fun-writemainpalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L133">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-writemainpalette"><abbr title="No return value.">void</abbr> <strong>WriteMainPalette</strong>() <a class="reference internal" href="#classes-paldata-fun-writemainpalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L133">Source</a></p>
 <p class="classref-comment">Writes the paldata to the main palette. Empty color indices will be
 skipped.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-writemaincset"><abbr title="No return value.">void</abbr> <strong>WriteMainCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#classes-paldata-fun-writemaincset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L142">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-writemaincset"><abbr title="No return value.">void</abbr> <strong>WriteMainCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#classes-paldata-fun-writemaincset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L142">Source</a></p>
 <p class="classref-comment">Writes a cset of the paldata to the main palette. Empty color indices
 will be skipped.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-writecyclepalette"><abbr title="No return value.">void</abbr> <strong>WriteCyclePalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-writecyclepalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L151">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-writecyclepalette"><abbr title="No return value.">void</abbr> <strong>WriteCyclePalette</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal) <a class="reference internal" href="#classes-paldata-fun-writecyclepalette"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L151">Source</a></p>
 <p class="classref-comment">Writes the paldata to a level palette’s cycle/dark room csets. Empty
 color indices will be skipped.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-writecyclecset"><abbr title="No return value.">void</abbr> <strong>WriteCycleCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#classes-paldata-fun-writecyclecset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L162">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-writecyclecset"><abbr title="No return value.">void</abbr> <strong>WriteCycleCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> pal, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#classes-paldata-fun-writecyclecset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L162">Source</a></p>
 <p class="classref-comment">Writes a cset of the paldata to a level’s cycle/dark room palette.</p>
 <p class="classref-comment">Empty color indices will be skipped.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-colorvalid">bool <strong>ColorValid</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index) <a class="reference internal" href="#classes-paldata-fun-colorvalid"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L170">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-colorvalid">bool <strong>ColorValid</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index) <a class="reference internal" href="#classes-paldata-fun-colorvalid"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L170">Source</a></p>
 <p class="classref-comment">Returns true if the color at index is valid.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-clearcolor"><abbr title="No return value.">void</abbr> <strong>ClearColor</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index) <a class="reference internal" href="#classes-paldata-fun-clearcolor"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L179">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-clearcolor"><abbr title="No return value.">void</abbr> <strong>ClearColor</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index) <a class="reference internal" href="#classes-paldata-fun-clearcolor"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L179">Source</a></p>
 <p class="classref-comment">Clears the color at index on the paldata. Cleared colors will be skipped
 when writing to a palette.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-clearcset"><abbr title="No return value.">void</abbr> <strong>ClearCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#classes-paldata-fun-clearcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L188">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-clearcset"><abbr title="No return value.">void</abbr> <strong>ClearCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#classes-paldata-fun-clearcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L188">Source</a></p>
 <p class="classref-comment">Clears an cset on the paldata. Cleared colors will be skipped when
 writing to a palette.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-mix"><abbr title="No return value.">void</abbr> <strong>Mix</strong>(<a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> start, <a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> end, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> percent = <code class="docutils literal notranslate"><span class="pre">5000L</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#classes-paldata-fun-mix"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L196">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-mix"><abbr title="No return value.">void</abbr> <strong>Mix</strong>(<a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> start, <a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> end, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> percent = <code class="docutils literal notranslate"><span class="pre">5000L</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#classes-paldata-fun-mix"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L196">Source</a></p>
 <p class="classref-comment">Interpolates all the colors on a paldata between start and end.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-mixcset"><abbr title="No return value.">void</abbr> <strong>MixCSet</strong>(<a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> start, <a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> end, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> percent = <code class="docutils literal notranslate"><span class="pre">5000L</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#classes-paldata-fun-mixcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L205">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-mixcset"><abbr title="No return value.">void</abbr> <strong>MixCSet</strong>(<a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> start, <a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> end, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> percent = <code class="docutils literal notranslate"><span class="pre">5000L</span></code>, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> color_space = <code class="docutils literal notranslate"><span class="pre">0</span></code>) <a class="reference internal" href="#classes-paldata-fun-mixcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L205">Source</a></p>
 <p class="classref-comment">Interpolates all the colors on a cset of a paldata between start and end.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-copy"><abbr title="No return value.">void</abbr> <strong>Copy</strong>(<a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> target) <a class="reference internal" href="#classes-paldata-fun-copy"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L214">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-copy"><abbr title="No return value.">void</abbr> <strong>Copy</strong>(<a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> target) <a class="reference internal" href="#classes-paldata-fun-copy"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L214">Source</a></p>
 <p class="classref-comment">Copies all the colors from this paldata to the target.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-copycset"><abbr title="No return value.">void</abbr> <strong>CopyCSet</strong>(<a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> target, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> src_cset, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest_cset) <a class="reference internal" href="#classes-paldata-fun-copycset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L222">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-copycset"><abbr title="No return value.">void</abbr> <strong>CopyCSet</strong>(<a class="reference internal" href="#classes-paldata"><span class="std std-ref">paldata</span></a> target, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> src_cset, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dest_cset) <a class="reference internal" href="#classes-paldata-fun-copycset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L222">Source</a></p>
 <p class="classref-comment">Copies all the colors from one cset on this paldata to another on the
 target.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-free"><abbr title="No return value.">void</abbr> <strong>Free</strong>() <a class="reference internal" href="#classes-paldata-fun-free"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L234">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-free"><abbr title="No return value.">void</abbr> <strong>Free</strong>() <a class="reference internal" href="#classes-paldata-fun-free"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L234">Source</a></p>
 <p class="classref-comment">De-allocates this <code class="docutils literal notranslate"><span class="pre">paldata</span></code> pointer, so that its’ pointer ID may be
 re-used. You may only have a limited number of paldata pointers active at
 a time; freeing them when you are done with them helps not reach the
 limit.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Deprecated!</strong> Free() no longer does anything as of ZC 3.0. Objects are now freed automatically.</p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated: </span>Free() no longer does anything as of ZC 3.0. Objects are now freed automatically.</p>
 </div>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-paldata-fun-own"><abbr title="No return value.">void</abbr> <strong>Own</strong>() <a class="reference internal" href="#classes-paldata-fun-own"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/paldata.zh#L244">Source</a></p>
+<p class="classref-method" id="classes-paldata-fun-own"><abbr title="No return value.">void</abbr> <strong>Own</strong>() <a class="reference internal" href="#classes-paldata-fun-own"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/paldata.zh#L244">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the paldata pointer to the script that calls this
 function. When the script with ‘Ownership’ terminates (at the same time
 its’ local arrays are deallocated), this paldata pointer will
@@ -774,7 +824,7 @@ automatically be ‘Free()’d.</p>
 
   <p class="copyright">
     
-      © Copyright 2024, ZQuest Classic Foundation.
+      © Copyright 2025, ZQuest Classic Foundation.
       <br/>
     
   </p>

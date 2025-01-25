@@ -31,6 +31,9 @@
 <link href="../../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/zscript.css?v=3afc8195" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -41,15 +44,19 @@
     <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/libs/ghost/ghost2_drawing';</script>
     <script src="../../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../../_static/zscript.js?v=0bdd3061"></script>
     <link rel="icon" href="../../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="ghost2_eweapon.zh" href="ghost2_eweapon.html" />
     <link rel="prev" title="ghost2_deprecated.zh" href="ghost2_deprecated.html" />
-    <link href="../../../_static/main.css" rel="stylesheet" type="text/css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -271,7 +278,55 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../lang/types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../lang/explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../globals/functions.html">Global functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../globals/constants.html">Global constants</a></li>
@@ -394,10 +449,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../gui/guizh_window.html">guizh_window.zh</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../ffcscript/ffcscript.html">ffcscript.zh</a></li>
-</ul>
-</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
 </ul>
@@ -469,46 +520,46 @@
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
 <td><p><a class="reference internal" href="#libs-ghost-var-ghzhdrawdata"><span class="std std-ref">__ghzhDrawData</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-ghost-var-ghi-cd-count"><span class="std std-ref">__GHI_CD_COUNT</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-ghost-var-ghi-cd-cset"><span class="std std-ref">__GHI_CD_CSET</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-ghost-var-ghi-cd-flags"><span class="std std-ref">__GHI_CD_FLAGS</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-ghost-var-ghi-cd-data"><span class="std std-ref">__GHI_CD_DATA</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-ghost-var-gh-cd-combo"><span class="std std-ref">__GH_CD_COMBO</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-ghost-var-gh-cd-x"><span class="std std-ref">__GH_CD_X</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-ghost-var-gh-cd-y"><span class="std std-ref">__GH_CD_Y</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-ghost-var-gh-cd-width"><span class="std std-ref">__GH_CD_WIDTH</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-ghost-var-gh-cd-height"><span class="std std-ref">__GH_CD_HEIGHT</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-ghost-var-gh-cd-rotation"><span class="std std-ref">__GH_CD_ROTATION</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-ghost-var-gh-cd-data-size"><span class="std std-ref">__GH_CD_DATA_SIZE</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-ghost-var-ghdf-trans"><span class="std std-ref">__GHDF_TRANS</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-ghost-var-ghdf-flicker"><span class="std std-ref">__GHDF_FLICKER</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-ghost-var-ghdf-overlay"><span class="std std-ref">__GHDF_OVERLAY</span></a></p></td>
 </tr>
 </tbody>
@@ -537,51 +588,51 @@
 </section>
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="libs-ghost-var-ghzhdrawdata"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>__ghzhDrawData</strong>  <a class="reference internal" href="#libs-ghost-var-ghzhdrawdata"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L4">Source</a></p>
+<p id="libs-ghost-var-ghzhdrawdata"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>__ghzhDrawData</strong>  <a class="reference internal" href="#libs-ghost-var-ghzhdrawdata"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L4">Source</a></p>
 <p class="classref-comment">ghost.zh
 Version 2.8.15</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-ghost-var-ghi-cd-count"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHI_CD_COUNT</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-ghost-var-ghi-cd-count"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L7">Source</a></p>
+<p id="libs-ghost-var-ghi-cd-count"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHI_CD_COUNT</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-ghost-var-ghi-cd-count"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L7">Source</a></p>
 <p class="classref-comment">Combo drawing aptr indices</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-ghost-var-ghi-cd-cset"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHI_CD_CSET</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-ghi-cd-cset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L8">Source</a></p>
+<p id="libs-ghost-var-ghi-cd-cset"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHI_CD_CSET</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-ghi-cd-cset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L8">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-ghost-var-ghi-cd-flags"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHI_CD_FLAGS</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-ghost-var-ghi-cd-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L9">Source</a></p>
+<p id="libs-ghost-var-ghi-cd-flags"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHI_CD_FLAGS</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-ghost-var-ghi-cd-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L9">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-ghost-var-ghi-cd-data"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHI_CD_DATA</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code> <a class="reference internal" href="#libs-ghost-var-ghi-cd-data"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L10">Source</a></p>
+<p id="libs-ghost-var-ghi-cd-data"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHI_CD_DATA</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code> <a class="reference internal" href="#libs-ghost-var-ghi-cd-data"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L10">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-ghost-var-gh-cd-combo"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_CD_COMBO</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-ghost-var-gh-cd-combo"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L13">Source</a></p>
+<p id="libs-ghost-var-gh-cd-combo"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_CD_COMBO</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-ghost-var-gh-cd-combo"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L13">Source</a></p>
 <p class="classref-comment">Data offsets</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-ghost-var-gh-cd-x"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_CD_X</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-gh-cd-x"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L14">Source</a></p>
+<p id="libs-ghost-var-gh-cd-x"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_CD_X</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-gh-cd-x"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L14">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-ghost-var-gh-cd-y"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_CD_Y</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-ghost-var-gh-cd-y"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L15">Source</a></p>
+<p id="libs-ghost-var-gh-cd-y"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_CD_Y</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-ghost-var-gh-cd-y"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L15">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-ghost-var-gh-cd-width"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_CD_WIDTH</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code> <a class="reference internal" href="#libs-ghost-var-gh-cd-width"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L16">Source</a></p>
+<p id="libs-ghost-var-gh-cd-width"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_CD_WIDTH</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code> <a class="reference internal" href="#libs-ghost-var-gh-cd-width"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L16">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-ghost-var-gh-cd-height"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_CD_HEIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code> <a class="reference internal" href="#libs-ghost-var-gh-cd-height"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L17">Source</a></p>
+<p id="libs-ghost-var-gh-cd-height"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_CD_HEIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code> <a class="reference internal" href="#libs-ghost-var-gh-cd-height"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L17">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-ghost-var-gh-cd-rotation"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_CD_ROTATION</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code> <a class="reference internal" href="#libs-ghost-var-gh-cd-rotation"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L18">Source</a></p>
+<p id="libs-ghost-var-gh-cd-rotation"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_CD_ROTATION</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code> <a class="reference internal" href="#libs-ghost-var-gh-cd-rotation"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L18">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-ghost-var-gh-cd-data-size"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_CD_DATA_SIZE</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code> <a class="reference internal" href="#libs-ghost-var-gh-cd-data-size"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L20">Source</a></p>
+<p id="libs-ghost-var-gh-cd-data-size"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GH_CD_DATA_SIZE</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code> <a class="reference internal" href="#libs-ghost-var-gh-cd-data-size"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L20">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-ghost-var-ghdf-trans"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHDF_TRANS</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-ghdf-trans"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L23">Source</a></p>
+<p id="libs-ghost-var-ghdf-trans"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHDF_TRANS</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-ghost-var-ghdf-trans"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L23">Source</a></p>
 <p class="classref-comment">Drawing flags</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-ghost-var-ghdf-flicker"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHDF_FLICKER</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-ghost-var-ghdf-flicker"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L24">Source</a></p>
+<p id="libs-ghost-var-ghdf-flicker"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHDF_FLICKER</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code> <a class="reference internal" href="#libs-ghost-var-ghdf-flicker"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L24">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-ghost-var-ghdf-overlay"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHDF_OVERLAY</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code> <a class="reference internal" href="#libs-ghost-var-ghdf-overlay"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L25">Source</a></p>
+<p id="libs-ghost-var-ghdf-overlay"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__GHDF_OVERLAY</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code> <a class="reference internal" href="#libs-ghost-var-ghdf-overlay"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L25">Source</a></p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="libs-ghost-fun-getdrawingarray"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>__GetDrawingArray</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost) <a class="reference internal" href="#libs-ghost-fun-getdrawingarray"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L28">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-getdrawingarray"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>__GetDrawingArray</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost) <a class="reference internal" href="#libs-ghost-fun-getdrawingarray"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L28">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-drawghostffcs"><abbr title="No return value.">void</abbr> <strong>DrawGhostFFCs</strong>() <a class="reference internal" href="#libs-ghost-fun-drawghostffcs"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L44">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-drawghostffcs"><abbr title="No return value.">void</abbr> <strong>DrawGhostFFCs</strong>() <a class="reference internal" href="#libs-ghost-fun-drawghostffcs"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L44">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-setupdrawingarray"><abbr title="No return value.">void</abbr> <strong>__SetUpDrawingArray</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> this, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] aptr) <a class="reference internal" href="#libs-ghost-fun-setupdrawingarray"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L124">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-setupdrawingarray"><abbr title="No return value.">void</abbr> <strong>__SetUpDrawingArray</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> this, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] aptr) <a class="reference internal" href="#libs-ghost-fun-setupdrawingarray"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L124">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-ghost-drawshadow"><abbr title="No return value.">void</abbr> <strong>__Ghost_DrawShadow</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost) <a class="reference internal" href="#libs-ghost-fun-ghost-drawshadow"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L176">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-ghost-drawshadow"><abbr title="No return value.">void</abbr> <strong>__Ghost_DrawShadow</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost) <a class="reference internal" href="#libs-ghost-fun-ghost-drawshadow"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_drawing.zh#L176">Source</a></p>
 </section>
 </section>
 
@@ -664,7 +715,7 @@ Version 2.8.15</p>
 
   <p class="copyright">
     
-      © Copyright 2024, ZQuest Classic Foundation.
+      © Copyright 2025, ZQuest Classic Foundation.
       <br/>
     
   </p>

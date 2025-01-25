@@ -31,6 +31,9 @@
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../_static/zscript.css?v=3afc8195" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -41,15 +44,19 @@
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/classes/messagedata';</script>
     <script src="../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../_static/zscript.js?v=0bdd3061"></script>
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="npc" href="npc.html" />
     <link rel="prev" title="mapdata" href="mapdata.html" />
-    <link href="../../_static/main.css" rel="stylesheet" type="text/css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -271,7 +278,55 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../lang/types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lang/explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../globals/functions.html">Global functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../globals/constants.html">Global constants</a></li>
@@ -394,10 +449,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../libs/ffcscript/ffcscript.html">ffcscript.zh</a></li>
-</ul>
-</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
 </ul>
@@ -459,7 +510,13 @@
                   
   <section id="messagedata">
 <span id="classes-messagedata"></span><h1>messagedata<a class="headerlink" href="#messagedata" title="Link to this heading">#</a></h1>
-<p class="classref-comment">For accessing and editing message strings. Load with <a class="reference internal" href="../globals/Game.html#globals-game-fun-loadmessagedata"><span class="std std-ref">Game-&gt;LoadMessageData()</span></a>.</p>
+<p class="classref-comment">For accessing and editing message strings (<code class="docutils literal notranslate"><span class="pre">Quests</span> <span class="pre">&gt;</span> <span class="pre">Strings</span></code>). Load with <a class="reference internal" href="../globals/Game.html#globals-game-fun-loadmessagedata"><span class="std std-ref">Game-&gt;LoadMessageData()</span></a>.</p>
+<section id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../../tutorials/scc.html"><span class="doc">String Control Codes</span></a></p></li>
+</ul>
+</section>
 <section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -524,13 +581,13 @@
 <tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-messagedata-var-portraittileheight"><span class="std std-ref">PortraitTileHeight</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-messagedata-var-textheight"><span class="std std-ref">TextHeight</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-messagedata-var-textwidth"><span class="std std-ref">TextWidth</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-messagedata-var-length"><span class="std std-ref">Length</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>bool</p></td>
@@ -563,120 +620,136 @@
 </table>
 </div>
 </section>
+<section id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Link to this heading">#</a></h2>
+<p id="globals-enum-messageflag">enum <strong>MessageFlag</strong>: <a class="reference internal" href="#globals-enum-messageflag"><span class="std std-ref">🔗</span></a>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L2">Source</a></p>
+<p class="classref-comment">Used with <a class="reference internal" href="#classes-messagedata-var-flags"><span class="std std-ref">messagedata::Flags[]</span></a>.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-msgflag-wrap"><a class="reference internal" href="#globals-enum-messageflag"><span class="std std-ref">MessageFlag</span></a> <strong>MSGFLAG_WRAP</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-comment">If the text wraps around the bounding box</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-msgflag-cont"><a class="reference internal" href="#globals-enum-messageflag"><span class="std std-ref">MessageFlag</span></a> <strong>MSGFLAG_CONT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-comment">If the message is the continuation of a previous one</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-msgflag-center"><a class="reference internal" href="#globals-enum-messageflag"><span class="std std-ref">MessageFlag</span></a> <strong>MSGFLAG_CENTER</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-comment">Reserved</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-msgflag-right"><a class="reference internal" href="#globals-enum-messageflag"><span class="std std-ref">MessageFlag</span></a> <strong>MSGFLAG_RIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-comment">Reserved</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-msgflag-fulltile"><a class="reference internal" href="#globals-enum-messageflag"><span class="std std-ref">MessageFlag</span></a> <strong>MSGFLAG_FULLTILE</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-comment">If the background tile should be treated as the UL of a tile block,</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-msgflag-trans-bg"><a class="reference internal" href="#globals-enum-messageflag"><span class="std std-ref">MessageFlag</span></a> <strong>MSGFLAG_TRANS_BG</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p class="classref-comment">If the background should be translucent</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-msgflag-trans-fg"><a class="reference internal" href="#globals-enum-messageflag"><span class="std std-ref">MessageFlag</span></a> <strong>MSGFLAG_TRANS_FG</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p class="classref-comment">If the text should be translucent</p>
+</section>
+<hr class="classref-item-separator docutils" />
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="classes-messagedata-var-next"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Next</strong>  <a class="reference internal" href="#classes-messagedata-var-next"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L12">Source</a></p>
+<p id="classes-messagedata-var-next"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Next</strong>  <a class="reference internal" href="#classes-messagedata-var-next"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L26">Source</a></p>
 <p class="classref-comment">The ‘next’ message, which will be automatically displayed when this
 message finishes.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-tile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Tile</strong>  <a class="reference internal" href="#classes-messagedata-var-tile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L17">Source</a></p>
+<p id="classes-messagedata-var-tile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Tile</strong>  <a class="reference internal" href="#classes-messagedata-var-tile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L31">Source</a></p>
 <p class="classref-comment">The tile used for the background.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-cset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CSet</strong>  <a class="reference internal" href="#classes-messagedata-var-cset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L22">Source</a></p>
+<p id="classes-messagedata-var-cset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CSet</strong>  <a class="reference internal" href="#classes-messagedata-var-cset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L36">Source</a></p>
 <p class="classref-comment">The CSet to draw the background in.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-font"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Font</strong>  <a class="reference internal" href="#classes-messagedata-var-font"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L28">Source</a></p>
-<p class="classref-comment">The font to display the message in. Use the <code class="docutils literal notranslate"><span class="pre">FONT_</span></code> constants for this
-value.</p>
+<p id="classes-messagedata-var-font"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Font</strong>  <a class="reference internal" href="#classes-messagedata-var-font"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L42">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="#classes-messagedata-var-font"><span class="std std-ref">Font</span></a></p>
+<p class="classref-comment">The font to display the message in.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-x"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>X</strong>  <a class="reference internal" href="#classes-messagedata-var-x"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L33">Source</a></p>
+<p id="classes-messagedata-var-x"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>X</strong>  <a class="reference internal" href="#classes-messagedata-var-x"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L47">Source</a></p>
 <p class="classref-comment">The X position of the message box.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-y"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Y</strong>  <a class="reference internal" href="#classes-messagedata-var-y"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L38">Source</a></p>
+<p id="classes-messagedata-var-y"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Y</strong>  <a class="reference internal" href="#classes-messagedata-var-y"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L52">Source</a></p>
 <p class="classref-comment">The Y position of the message box.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-width"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Width</strong>  <a class="reference internal" href="#classes-messagedata-var-width"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L43">Source</a></p>
+<p id="classes-messagedata-var-width"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Width</strong>  <a class="reference internal" href="#classes-messagedata-var-width"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L57">Source</a></p>
 <p class="classref-comment">The width of the message box, in pixels.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-height"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Height</strong>  <a class="reference internal" href="#classes-messagedata-var-height"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L48">Source</a></p>
+<p id="classes-messagedata-var-height"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Height</strong>  <a class="reference internal" href="#classes-messagedata-var-height"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L62">Source</a></p>
 <p class="classref-comment">The height of the message box, in pixels.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-sound"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Sound</strong>  <a class="reference internal" href="#classes-messagedata-var-sound"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L53">Source</a></p>
+<p id="classes-messagedata-var-sound"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Sound</strong>  <a class="reference internal" href="#classes-messagedata-var-sound"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L67">Source</a></p>
 <p class="classref-comment">The SFX to play when a new character is drawn (including spaces).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-listposition"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ListPosition</strong>  <a class="reference internal" href="#classes-messagedata-var-listposition"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L58">Source</a></p>
+<p id="classes-messagedata-var-listposition"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ListPosition</strong>  <a class="reference internal" href="#classes-messagedata-var-listposition"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L72">Source</a></p>
 <p class="classref-comment">The list position of the messagedata as it is displayed in ZQ.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-vspace"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>VSpace</strong>  <a class="reference internal" href="#classes-messagedata-var-vspace"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L63">Source</a></p>
+<p id="classes-messagedata-var-vspace"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>VSpace</strong>  <a class="reference internal" href="#classes-messagedata-var-vspace"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L77">Source</a></p>
 <p class="classref-comment">The spacing between lines/characters, in pixels.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-hspace"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HSpace</strong>  <a class="reference internal" href="#classes-messagedata-var-hspace"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L68">Source</a></p>
+<p id="classes-messagedata-var-hspace"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HSpace</strong>  <a class="reference internal" href="#classes-messagedata-var-hspace"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L82">Source</a></p>
 <p class="classref-comment">The spacing between lines/characters, in pixels.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-messagedata-var-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L73">Source</a></p>
-<p class="classref-comment">A set of flags for the messagedata.</p>
+<p id="classes-messagedata-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-messagedata-var-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L86">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-margins"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Margins</strong>  <a class="reference internal" href="#classes-messagedata-var-margins"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L80">Source</a></p>
+<p id="classes-messagedata-var-margins"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Margins</strong>  <a class="reference internal" href="#classes-messagedata-var-margins"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L93">Source</a></p>
 <p class="classref-comment">The margins, in pixels, from each edge of the text box.</p>
 <p class="classref-comment">Valid indices: <a class="reference internal" href="../globals/constants.html#globals-enum-member-dir-up"><span class="std std-ref">DIR_UP</span></a>, <a class="reference internal" href="../globals/constants.html#globals-enum-member-dir-down"><span class="std std-ref">DIR_DOWN</span></a>, <a class="reference internal" href="../globals/constants.html#globals-enum-member-dir-left"><span class="std std-ref">DIR_LEFT</span></a>, <a class="reference internal" href="../globals/constants.html#globals-enum-member-dir-right"><span class="std std-ref">DIR_RIGHT</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-portraittile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitTile</strong>  <a class="reference internal" href="#classes-messagedata-var-portraittile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L86">Source</a></p>
+<p id="classes-messagedata-var-portraittile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitTile</strong>  <a class="reference internal" href="#classes-messagedata-var-portraittile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L99">Source</a></p>
 <p class="classref-comment">The upper-left corner tile of the portrait. If set to 0, no portrait will
 be displayed.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-portraitcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitCSet</strong>  <a class="reference internal" href="#classes-messagedata-var-portraitcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L91">Source</a></p>
+<p id="classes-messagedata-var-portraitcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitCSet</strong>  <a class="reference internal" href="#classes-messagedata-var-portraitcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L104">Source</a></p>
 <p class="classref-comment">The CSet to draw the portrait in</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-portraitx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitX</strong>  <a class="reference internal" href="#classes-messagedata-var-portraitx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L96">Source</a></p>
+<p id="classes-messagedata-var-portraitx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitX</strong>  <a class="reference internal" href="#classes-messagedata-var-portraitx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L109">Source</a></p>
 <p class="classref-comment">The X/Y position of the portrait.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-portraity"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitY</strong>  <a class="reference internal" href="#classes-messagedata-var-portraity"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L101">Source</a></p>
+<p id="classes-messagedata-var-portraity"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitY</strong>  <a class="reference internal" href="#classes-messagedata-var-portraity"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L114">Source</a></p>
 <p class="classref-comment">The X/Y position of the portrait.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-portraittilewidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitTileWidth</strong>  <a class="reference internal" href="#classes-messagedata-var-portraittilewidth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L107">Source</a></p>
+<p id="classes-messagedata-var-portraittilewidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitTileWidth</strong>  <a class="reference internal" href="#classes-messagedata-var-portraittilewidth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L120">Source</a></p>
 <p class="classref-comment">The tile width/height of the portrait. Max 16 and 14 respectively. If
 either is <code class="docutils literal notranslate"><span class="pre">0</span></code>, no portrait will be displayed.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-portraittileheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitTileHeight</strong>  <a class="reference internal" href="#classes-messagedata-var-portraittileheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L113">Source</a></p>
+<p id="classes-messagedata-var-portraittileheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PortraitTileHeight</strong>  <a class="reference internal" href="#classes-messagedata-var-portraittileheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L126">Source</a></p>
 <p class="classref-comment">The tile width/height of the portrait. Max 16 and 14 respectively. If
 either is <code class="docutils literal notranslate"><span class="pre">0</span></code>, no portrait will be displayed.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-textheight"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TextHeight</strong>  <a class="reference internal" href="#classes-messagedata-var-textheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L119">Source</a></p>
+<p id="classes-messagedata-var-textheight"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TextHeight</strong>  <a class="reference internal" href="#classes-messagedata-var-textheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L132">Source</a></p>
 <p class="classref-comment">Returns the height, in pixels, of the message text - not including line
 wrap / breaks.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-textwidth"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TextWidth</strong>  <a class="reference internal" href="#classes-messagedata-var-textwidth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L125">Source</a></p>
+<p id="classes-messagedata-var-textwidth"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TextWidth</strong>  <a class="reference internal" href="#classes-messagedata-var-textwidth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L138">Source</a></p>
 <p class="classref-comment">Returns the width, in pixels, of the message text - not including line
 wrap / breaks.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-length"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Length</strong>  <a class="reference internal" href="#classes-messagedata-var-length"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L130">Source</a></p>
+<p id="classes-messagedata-var-length"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Length</strong>  <a class="reference internal" href="#classes-messagedata-var-length"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L143">Source</a></p>
 <p class="classref-comment">The length, in characters, of the message.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-transparent">bool <strong>Transparent</strong>  <a class="reference internal" href="#classes-messagedata-var-transparent"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L134">Source</a></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Deprecated!</strong> Unused! Does nothing!</p>
+<p id="classes-messagedata-var-transparent">bool <strong>Transparent</strong>  <a class="reference internal" href="#classes-messagedata-var-transparent"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L147">Source</a></p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated: </span>Unused! Does nothing!</p>
 </div>
 <hr class="classref-item-separator docutils" />
-<p id="classes-messagedata-var-flag"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Flag</strong>  <a class="reference internal" href="#classes-messagedata-var-flag"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L138">Source</a></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Deprecated!</strong> Use <a class="reference internal" href="#classes-messagedata-var-flags"><span class="std std-ref">Flags[]</span></a> instead!</p>
+<p id="classes-messagedata-var-flag"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Flag</strong>  <a class="reference internal" href="#classes-messagedata-var-flag"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L151">Source</a></p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated: </span>Use <a class="reference internal" href="#classes-messagedata-var-flags"><span class="std std-ref">Flags[]</span></a> instead!</p>
 </div>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-messagedata-fun-get"><abbr title="No return value.">void</abbr> <strong>Get</strong>(char32[] str) <a class="reference internal" href="#classes-messagedata-fun-get"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L146">Source</a></p>
+<p class="classref-method" id="classes-messagedata-fun-get"><abbr title="No return value.">void</abbr> <strong>Get</strong>(char32[] str) <a class="reference internal" href="#classes-messagedata-fun-get"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L159">Source</a></p>
 <p class="classref-comment">Loads the message into the provided string buffer.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-messagedata-fun-set"><abbr title="No return value.">void</abbr> <strong>Set</strong>(char32[] str) <a class="reference internal" href="#classes-messagedata-fun-set"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L154">Source</a></p>
+<p class="classref-method" id="classes-messagedata-fun-set"><abbr title="No return value.">void</abbr> <strong>Set</strong>(char32[] str) <a class="reference internal" href="#classes-messagedata-fun-set"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L167">Source</a></p>
 <p class="classref-comment">Sets the message to the provided string.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-messagedata-fun-textheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TextHeight</strong>() <a class="reference internal" href="#classes-messagedata-fun-textheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L163">Source</a></p>
+<p class="classref-method" id="classes-messagedata-fun-textheight"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TextHeight</strong>() <a class="reference internal" href="#classes-messagedata-fun-textheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L176">Source</a></p>
 <p class="classref-comment">Returns the width/height, in pixels, of the message text - not including
 line wrap / breaks.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Deprecated!</strong> Use <a class="reference internal" href="#classes-messagedata-var-textheight"><span class="std std-ref">TextHeight</span></a> instead!</p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated: </span>Use <a class="reference internal" href="#classes-messagedata-var-textheight"><span class="std std-ref">TextHeight</span></a> instead!</p>
 </div>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-messagedata-fun-textwidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TextWidth</strong>() <a class="reference internal" href="#classes-messagedata-fun-textwidth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/messagedata.zh#L172">Source</a></p>
+<p class="classref-method" id="classes-messagedata-fun-textwidth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TextWidth</strong>() <a class="reference internal" href="#classes-messagedata-fun-textwidth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/messagedata.zh#L185">Source</a></p>
 <p class="classref-comment">Returns the width/height, in pixels, of the message text - not including
 line wrap / breaks.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Deprecated!</strong> Use <a class="reference internal" href="#classes-messagedata-var-textwidth"><span class="std std-ref">TextWidth</span></a> instead!</p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated: </span>Use <a class="reference internal" href="#classes-messagedata-var-textwidth"><span class="std std-ref">TextWidth</span></a> instead!</p>
 </div>
 </section>
 </section>
@@ -728,8 +801,10 @@ line wrap / breaks.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tutorials">Tutorials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerations">Enumerations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-descriptions">Function descriptions</a></li>
 </ul>
@@ -760,7 +835,7 @@ line wrap / breaks.</p>
 
   <p class="copyright">
     
-      © Copyright 2024, ZQuest Classic Foundation.
+      © Copyright 2025, ZQuest Classic Foundation.
       <br/>
     
   </p>

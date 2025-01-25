@@ -1,0 +1,1607 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Script Types &#8212; ZQuest Classic  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../_static/zscript.css?v=3afc8195" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/lang/script_types';</script>
+    <script src="../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../_static/zscript.js?v=0bdd3061"></script>
+    <link rel="icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Annotations" href="annotations.html" />
+    <link rel="prev" title="Scripts" href="scripts.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/ZC_Logo.png" class="logo__image only-light" alt="ZQuest Classic  documentation - Home"/>
+    <img src="../../_static/ZC_Logo.png" class="logo__image only-dark pst-js-only" alt="ZQuest Classic  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../tutorials/index.html">
+    Tutorials
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../tutorials/index.html">
+    Tutorials
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="ranges.html">Ranges</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="scripts.html">Scripts</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../globals/functions.html">Global functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/constants.html">Global constants</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../globals/Audio.html">Audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Debug.html">Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/FileSystem.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Game.html">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Graphics.html">Graphics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Hero.html">Hero</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Screen.html">Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Text.html">Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/ZInfo.html">ZInfo</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../classes/bitmap.html">bitmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/bottledata.html">bottledata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/bottleshopdata.html">bottleshopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/combodata.html">combodata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/directory.html">directory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/dmapdata.html">dmapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/dropsetdata.html">dropsetdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/eweapon.html">eweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/ffc.html">ffc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/file.html">file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/genericdata.html">genericdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/itemdata.html">itemdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/itemsprite.html">itemsprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/lweapon.html">lweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/mapdata.html">mapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/messagedata.html">messagedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/npc.html">npc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/npcdata.html">npcdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/paldata.html">paldata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/portal.html">portal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/randgen.html">randgen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/savedportal.html">savedportal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/shopdata.html">shopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/sprite.html">sprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/spritedata.html">spritedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/stack.html">stack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/subscreendata.html">subscreendata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/subscreenpage.html">subscreenpage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/subscreenwidget.html">subscreenwidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/websocket.html">websocket</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/limits.html">limits.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/script_runners.html">script_runners.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_constants.html">std_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_extension.html">std_extension.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_functions.html">std_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_keyboard.html">std_keyboard.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/string_constants.html">string_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/string_functions.html">string_functions.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ghost/index.html">ghost</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost.html">ghost.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_common.html">ghost2_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_deprecated.html">ghost2_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_drawing.html">ghost2_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweapon.html">ghost2_eweapon.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweaponDeath.html">ghost2_eweaponDeath.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweaponMovement.html">ghost2_eweaponMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_flags.html">ghost2_flags.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_global.html">ghost2_global.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_init.html">ghost2_init.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_modification.html">ghost2_modification.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_movement.html">ghost2_movement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_other.html">ghost2_other.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_scripts.html">ghost2_scripts.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_update.html">ghost2_update.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/tango/index.html">tango</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango.html">tango.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_access.html">tango_access.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_common.html">tango_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_deprecated.html">tango_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_drawing.html">tango_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_font.html">tango_font.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_functions.html">tango_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_loading.html">tango_loading.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_loggingMinimal.html">tango_loggingMinimal.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_menu.html">tango_menu.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_messages.html">tango_messages.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_metrics.html">tango_metrics.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_processing.html">tango_processing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_script.html">tango_script.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_stringControlCode.html">tango_stringControlCode.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_style.html">tango_style.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_user.html">tango_user.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_validation.html">tango_validation.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/gui/index.html">gui</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/gui.html">gui.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_button.html">guizh_button.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_checkbox.html">guizh_checkbox.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_common.html">guizh_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_event.html">guizh_event.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_label.html">guizh_label.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_main.html">guizh_main.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_radioButton.html">guizh_radioButton.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_root.html">guizh_root.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_spinner.html">guizh_spinner.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_types.html">guizh_types.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_widget.html">guizh_widget.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">ZScript</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="scripts.html" class="nav-link">Scripts</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Script Types</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="script-types">
+<h1>Script Types<a class="headerlink" href="#script-types" title="Link to this heading">#</a></h1>
+<p>This section describes the various different types of scripts,
+and how they differ from one another.</p>
+<section id="global-scripts">
+<h2>Global Scripts<a class="headerlink" href="#global-scripts" title="Link to this heading">#</a></h2>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Global Script ~Init</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">global script Init</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        <br /><code class="inlinezs pre literal hljs language-zs">@InitScript()</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">no this-&gt; pointer</p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">No InitD[] available</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>Runs when a new save file is first created, <abbr title="Using 'Waitframe' or similar will exit the script">for a single frame only</abbr>.
+All scripts with the <code class="inlinezs pre docutils literal notranslate"><span class="pre">&#64;InitScript()</span></code> <a class="reference internal" href="annotations.html#id1"><span class="std std-ref">annotation</span></a>
+as well as a script named <code class="inlinezs pre docutils literal notranslate"><span class="pre">global</span> <span class="pre">script</span> <span class="pre">Init</span></code> will be “merged”,
+all being run at this time.</p>
+</div>
+</div>
+</div>
+<div class="scrinfo_card docutils container" id="global-script-active">
+<span id="game-exit-conds"></span><p class="scrinfo_title">Global Script Active</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">global script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">no this-&gt; pointer</p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">No InitD[] available</p>
+</div>
+<div class="scrinfo_bodybox kill_bottom_border docutils container">
+<p>Starts running when the quest is launched, and continues until the
+script exits. Generally paired with an infinite loop to run forever
+during the entire quest, to run main global logic.</p>
+</div>
+</div>
+<div class="scrinfo_bodybox kill_top_border docutils container">
+<p>The script will stop (and restart thereafter) whenever the game ‘exits’, which includes:</p>
+<ul class="simple">
+<li><p>The Hero dies (script will see the Hero’s HP as <code class="inlinezs pre docutils literal notranslate"><span class="pre">0</span></code> for a single frame first, and can revive them)</p></li>
+<li><p>The player opens the engine ‘F6 Menu’</p></li>
+<li><p>Any script calls <a class="reference internal" href="../globals/Game.html#globals-game-fun-continue"><span class="std std-ref">Game-&gt;Continue()</span></a>, <a class="reference internal" href="../globals/Game.html#globals-game-fun-end"><span class="std std-ref">Game-&gt;End()</span></a>, or other similar functions that ‘continue’ or ‘exit’ the game.</p></li>
+</ul>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Global Script onExit</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">global script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">no this-&gt; pointer</p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">No InitD[] available</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>Runs when the game is <a class="reference internal" href="#game-exit-conds"><span class="std std-ref">exited</span></a>, <abbr title="Using 'Waitframe' or similar will exit the script">for a single frame only</abbr>.</p>
+</div>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Global Script onSaveLoad</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">global script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">no this-&gt; pointer</p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">No InitD[] available</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>Runs when an existing save file is loaded (not for new files), <abbr title="Using 'Waitframe' or similar will exit the script">for a single frame only</abbr>.</p>
+</div>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Global Script onLaunch</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">global script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">no this-&gt; pointer</p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">No InitD[] available</p>
+</div>
+<div class="scrinfo_bodybox kill_bottom_border docutils container">
+<p>Runs when the game is launched- this will run just after the
+<code class="docutils literal notranslate"><span class="pre">Global</span> <span class="pre">Script</span> <span class="pre">~Init</span></code> or <code class="docutils literal notranslate"><span class="pre">Global</span> <span class="pre">Script</span> <span class="pre">onSaveLoad</span></code>.
+Runs for multiple frames, in <a class="reference internal" href="#frozen-scripts"><span class="std std-ref">frozen script mode</span></a>, before the opening wipe.</p>
+</div>
+</div>
+<div class="scrinfo_bodybox kill_top_border docutils container">
+<p>Perfect for use cases such as a title screen. (you can keep track of
+if the player has already seen it using a global variable, and either
+skip it or behave differently as a result)</p>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Global Script onContGame</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">global script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">no this-&gt; pointer</p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">No InitD[] available</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>Runs <abbr title="Using 'Waitframe' or similar will exit the script">for a single frame only</abbr> when the game is ‘continued’ (ex. <a class="reference internal" href="../globals/Game.html#globals-game-fun-continue"><span class="std std-ref">Game-&gt;Continue()</span></a>, F6-&gt;Continue,
+or Continue from the game over screen), prior to the opening wipe.</p>
+</div>
+</div>
+</div>
+<div class="scrinfo_card docutils container" id="global-script-f6menu">
+<p class="scrinfo_title">Global Script onF6Menu</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">global script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">no this-&gt; pointer</p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">No InitD[] available</p>
+</div>
+<div class="scrinfo_bodybox kill_bottom_border docutils container">
+<p>Runs whenever the player presses <code class="docutils literal notranslate"><span class="pre">F6</span></code>, selects the equivalent
+<code class="docutils literal notranslate"><span class="pre">End</span> <span class="pre">Game</span></code> system menu option, or when a script runs <a class="reference internal" href="../globals/Game.html#globals-game-fun-showcontinuescreen"><span class="std std-ref">Game-&gt;ShowContinueScreen()</span></a>.
+Runs in <a class="reference internal" href="#frozen-scripts"><span class="std std-ref">frozen script mode</span></a>.</p>
+</div>
+</div>
+<div class="scrinfo_bodybox kill_top_border docutils container">
+<p>This menu runs before the normal continue menu,
+but can run a ‘game-exiting’ command, such as <a class="reference internal" href="../globals/Game.html#globals-game-fun-continue"><span class="std std-ref">Game-&gt;Continue()</span></a>, to skip
+this (allowing it to be used to create fully custom scripted
+continue menus).</p>
+<p>If the <a class="reference internal" href="../globals/constants.html#globals-enum-qr"><span class="std std-ref">Quest Rule</span></a> ‘Return to File Select On Death/F6’ is enabled, the
+normal F6 menu will not appear, allowing you to give the player a
+‘Cancel’ menu option to go back to gameplay where they left off.</p>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Global Script onSave</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">global script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">no this-&gt; pointer</p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">No InitD[] available</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>Runs <abbr title="Using 'Waitframe' or similar will exit the script">for a single frame only</abbr> whenever the game is saved. If the <code class="docutils literal notranslate"><span class="pre">onExit</span></code> script would
+also run from the same condition (ex. <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">and</span> <span class="pre">Quit</span></code>), <code class="docutils literal notranslate"><span class="pre">onExit</span></code> will
+run first.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="hero-scripts">
+<h2>Hero Scripts<a class="headerlink" href="#hero-scripts" title="Link to this heading">#</a></h2>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Hero Script Init</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">hero script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">Hero</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">No InitD[] available</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>Runs <abbr title="Using 'Waitframe' or similar will exit the script">for a single frame only</abbr> when the <code class="inlinezs pre docutils literal notranslate"><span class="pre">Hero</span></code> is ‘created’- usually at the start of the game,
+and upon respawning after death.</p>
+</div>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Hero Script Active</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">hero script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">Hero</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">No InitD[] available</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>Effectively identical to the <a class="reference internal" href="#global-script-active"><span class="std std-ref">Global Script Active</span></a>.</p>
+</div>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Hero Script onDeath</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">hero script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">Hero</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">No InitD[] available</p>
+</div>
+<div class="scrinfo_bodybox kill_bottom_border docutils container">
+<p>Runs when the Hero <strong>is dead</strong>, in <a class="reference internal" href="#frozen-scripts"><span class="std std-ref">frozen script mode</span></a>. At this point they can already
+no longer be revived- however, this script may display a custom Game Over
+screen / continue menu (similar to the
+<a class="reference internal" href="#global-script-f6menu"><span class="std std-ref">Global Script onF6Menu</span></a>, but for death instead
+of manually triggering the menu).</p>
+</div>
+</div>
+<div class="scrinfo_bodybox kill_top_border docutils container">
+<p>The <a class="reference internal" href="../globals/constants.html#globals-enum-qr"><span class="std std-ref">Quest Rule</span></a> <code class="docutils literal notranslate"><span class="pre">Hero</span> <span class="pre">OnDeath</span> <span class="pre">script</span> <span class="pre">runs</span> <span class="pre">AFTER</span> <span class="pre">engine</span> <span class="pre">death</span> <span class="pre">animation</span></code> determines
+if this script runs before or after the engine death animation, which can be
+used to either allow your script to do a custom menu after the engine animation,
+or to do your own custom death animation before your custom menu!</p>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Hero Script onWin</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">hero script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">Hero</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">No InitD[] available</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>Runs when the Hero wins the game, in <a class="reference internal" href="#frozen-scripts"><span class="std std-ref">frozen script mode</span></a>. Intended for custom scripted
+credits scenes and similar; the engine credits can be disabled via
+<a class="reference internal" href="../globals/Game.html#globals-game-var-skipcredits"><span class="std std-ref">Game-&gt;SkipCredits</span></a>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="itemdata-scripts">
+<h2>Itemdata Scripts<a class="headerlink" href="#itemdata-scripts" title="Link to this heading">#</a></h2>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Itemdata Action Scripts</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">itemdata script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">itemdata</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8 (Shared with the item’s Pickup and Sprite scripts)</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>Runs when the item its attached to via the Item Editor is used by the
+Hero. It continues to run until it exits, and the item cannot be used
+again while its script still runs.</p>
+<p>Incompatible with Itemdata Passive Scripts.</p>
+</div>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Itemdata Pickup Scripts</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">itemdata script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">itemdata</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8 (Shared with the item’s Action/Passive and Itemsprite scripts)</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>Runs when the item it’s attached to via the Item Editor is picked up
+by the Hero, <abbr title="Using 'Waitframe' or similar will exit the script">for a single frame only</abbr>.</p>
+</div>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Itemdata Passive Scripts</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">itemdata script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">itemdata</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8 (Shared with the item’s Pickup and Sprite scripts)</p>
+</div>
+<div class="scrinfo_bodybox kill_bottom_border docutils container">
+<p>Runs when the item it’s attached to via the Item Editor is owned by the
+Hero. It continues to run until it exits, and starts again automatically
+when the Hero respawns.</p>
+</div>
+</div>
+<div class="scrinfo_bodybox kill_top_border docutils container">
+<p>Replaces the Itemdata Action Script, if the <code class="inlinezs pre docutils literal notranslate"><span class="pre">Constant</span> <span class="pre">Script</span></code> flag is
+checked in the Item Editor. Due to this, these are incompatible with
+Itemdata Action Scripts.</p>
+</div>
+</div>
+</section>
+<section id="screen-based-scripts">
+<h2>Screen-Based Scripts<a class="headerlink" href="#screen-based-scripts" title="Link to this heading">#</a></h2>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Screen Scripts</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">screendata script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">Screen</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8</p>
+</div>
+<div class="scrinfo_bodybox kill_bottom_border docutils container">
+<p>Runs starting when the screen it’s at is entered (after scrolling
+onto the screen)</p>
+</div>
+</div>
+<div class="scrinfo_bodybox kill_top_border docutils container">
+<p>Additionally runs for a single frame during the loading of the screen
+(before scrolling onto it) if the flag <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">On</span> <span class="pre">Screen</span> <span class="pre">Init</span></code> is checked.</p>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">FFC Scripts</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">ffc script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">ffc</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8</p>
+</div>
+<div class="scrinfo_bodybox kill_bottom_border docutils container">
+<p>Runs when the FFC it’s attached to via the FFC Editor exists
+with a combo set other than ‘0’ (after scrolling onto the screen)</p>
+</div>
+</div>
+<div class="scrinfo_bodybox kill_top_border docutils container">
+<p>Additionally runs for a single frame during the loading of the screen
+(before scrolling onto it) if the FFC flag <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Script</span> <span class="pre">at</span> <span class="pre">Screen</span> <span class="pre">Init</span></code>
+is checked.</p>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Combo Scripts</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">combodata script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">combodata</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8</p>
+</div>
+<div class="scrinfo_bodybox kill_bottom_border docutils container">
+<p>Runs when the combo it’s attached to via the Combo Editor exists,
+on any <em>enabled</em> layer (after scrolling onto the screen). The layers
+can be set by enabling the <a class="reference internal" href="../globals/constants.html#globals-enum-qr"><span class="std std-ref">Quest Rules</span></a> <code class="docutils literal notranslate"><span class="pre">Combos</span> <span class="pre">Run</span> <span class="pre">Scripts</span> <span class="pre">on</span> <span class="pre">Layer</span> <span class="pre">#</span></code>
+for each layer number.</p>
+</div>
+</div>
+<div class="scrinfo_bodybox kill_top_border docutils container">
+<p>Combo Scripts are the only scripts capable of accessing several combodata
+variables, accessible by <a class="reference internal" href="../classes/combodata.html#classes-combodata-var-x"><span class="std std-ref">this-&gt;X</span></a>,
+<a class="reference internal" href="../classes/combodata.html#classes-combodata-var-y"><span class="std std-ref">this-&gt;Y</span></a>,
+<a class="reference internal" href="../classes/combodata.html#classes-combodata-var-pos"><span class="std std-ref">this-&gt;Pos</span></a>,
+<a class="reference internal" href="../classes/combodata.html#classes-combodata-var-layer"><span class="std std-ref">this-&gt;Layer</span></a>. These values all
+are specific to the <em>combo position on screen</em> of the currently running
+script, rather than the <em>combo ID</em>.</p>
+</div>
+</div>
+</section>
+<section id="sprite-scripts">
+<h2>‘Sprite’ Scripts<a class="headerlink" href="#sprite-scripts" title="Link to this heading">#</a></h2>
+<p>‘Sprite’ scripts are any script types that refer to a <code class="inlinezs pre docutils literal notranslate"><span class="pre">sprite</span></code>-typed object,
+i.e. <code class="inlinezs pre docutils literal notranslate"><span class="pre">npc</span></code>, <code class="inlinezs pre docutils literal notranslate"><span class="pre">itemsprite</span></code>, <code class="inlinezs pre docutils literal notranslate"><span class="pre">lweapon</span></code>, <code class="inlinezs pre docutils literal notranslate"><span class="pre">eweapon</span></code> (<code class="inlinezs pre docutils literal notranslate"><span class="pre">hero</span></code> excluded from this section)</p>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Enemy Scripts</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">npc script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">npc</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>Runs when the npc it’s attached to via the Enemy Editor is alive on-screen.</p>
+</div>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Itemsprite Scripts</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">itemsprite script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">itemsprite</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8 (Shared with the item’s Action/Passive and Pickup scripts)</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>Runs when the item it’s attached to via the Item Editor exists on-screen
+as a collectable object.</p>
+</div>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">LWeapon Scripts</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">lweapon script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">lweapon</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>Runs when the weapon it’s attached to via the Item Editor exists.</p>
+</div>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">EWeapon Scripts</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">eweapon script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">eweapon</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>Runs when the weapon it’s attached to via the Enemy Editor exists.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="subscreen-dmap-scripts">
+<h2>Subscreen &amp; DMap Scripts<a class="headerlink" href="#subscreen-dmap-scripts" title="Link to this heading">#</a></h2>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Subscreen Scripts</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">subscreendata script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">subscreendata</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>Runs when the Active Subscreen it’s attached to via the Subscreen Editor
+is open.</p>
+</div>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">DMapData Active Scripts</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">dmapdata script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">dmapdata</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>Runs starting when the DMap it’s attached to is entered. Continues
+running during screen scrolling.</p>
+</div>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">DMapData Scripted Active Subscreen</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">dmapdata script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">dmapdata</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8 (Shared with Scripted Passive Subscreen)</p>
+</div>
+<div class="scrinfo_bodybox kill_bottom_border docutils container">
+<p>If a script of this slot is assigned for the current dmap, then pressing
+the <code class="docutils literal notranslate"><span class="pre">START</span></code> button will no longer open the engine Active Subscreen, but
+will <strong>instead</strong> launch this script, in <a class="reference internal" href="#frozen-scripts"><span class="std std-ref">frozen script mode</span></a>.</p>
+</div>
+</div>
+<div class="scrinfo_bodybox kill_top_border docutils container">
+<p><a class="reference internal" href="../globals/constants.html#globals-enum-qr"><span class="std std-ref">Quest Rules</span></a> are available to allow the ‘DMapData Active Script’ and ‘DMapData
+Passive Subscreen Script’ to run during this script.</p>
+<p>If you trigger a warp during this script to a dmap with a different script,
+that dmap’s script will be immediately loaded instead.</p>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">DMapData Scripted Passive Subscreen</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">dmapdata script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">dmapdata</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8 (Shared with Scripted Active Subscreen)</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>Runs starting when the DMap it’s attached to is entered. Continues
+running during screen scrolling. Has a <a class="reference internal" href="../globals/constants.html#globals-enum-qr"><span class="std std-ref">Quest Rule</span></a> to allow it to run during
+special timings (wipes/refills) when other scripts normally do not run.</p>
+</div>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">DMapData Scripted Map</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">dmapdata script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">dmapdata</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8</p>
+</div>
+<div class="scrinfo_bodybox kill_bottom_border docutils container">
+<p>If a script of this slot is assigned for the current dmap, then pressing
+the <code class="docutils literal notranslate"><span class="pre">MAP</span></code> button will no longer open the engine Map, but will
+<strong>instead</strong> launch this script, in <a class="reference internal" href="#frozen-scripts"><span class="std std-ref">frozen script mode</span></a>.</p>
+</div>
+</div>
+<div class="scrinfo_bodybox kill_top_border docutils container">
+<p>If you trigger a warp during this script to a dmap with a different script,
+that dmap’s script will be immediately loaded instead.</p>
+</div>
+</div>
+</section>
+<section id="generic-scripts">
+<h2>Generic Scripts<a class="headerlink" href="#generic-scripts" title="Link to this heading">#</a></h2>
+<p>Generic scripts don’t really have separate slots, but there are 3 different ways
+to ‘design’ a generic script, which splits them up similarly.</p>
+<p>All generic scripts settings in editor are set up in the <code class="docutils literal notranslate"><span class="pre">Init</span> <span class="pre">Data</span></code> menu.</p>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Generic Script (Standard)</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">generic script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">genericdata</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8</p>
+</div>
+<div class="scrinfo_bodybox kill_bottom_border docutils container">
+<p>A standard generic script will run as long as the related
+<a class="reference internal" href="../classes/genericdata.html#classes-genericdata-var-running"><span class="std std-ref">genericdata-&gt;Running</span></a> is <code class="inlinezs pre docutils literal notranslate"><span class="pre">true</span></code>.
+This can be set in <code class="docutils literal notranslate"><span class="pre">Init</span> <span class="pre">Data</span></code> to start as <code class="inlinezs pre docutils literal notranslate"><span class="pre">true</span></code> at the start of a new
+save, and becomes <code class="inlinezs pre docutils literal notranslate"><span class="pre">false</span></code> if the script exits.</p>
+</div>
+</div>
+<div class="scrinfo_bodybox kill_top_border docutils container">
+<p>In addition to the standard <a class="reference internal" href="../globals/functions.html#globals-fun-waitframe"><span class="std std-ref">Waitframe()</span></a>,
+these scripts can use <a class="reference internal" href="../globals/functions.html#globals-fun-waitto"><span class="std std-ref">WaitTo()</span></a> for additional
+precise timing control (ex. ‘right after the keyboard/controller input is
+read’)</p>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Generic Script (Frozen)</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">generic script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">genericdata</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8</p>
+</div>
+<div class="scrinfo_bodybox docutils container">
+<p>A generic script run in <a class="reference internal" href="#frozen-scripts"><span class="std std-ref">frozen script mode</span></a>, either via
+<a class="reference internal" href="../classes/genericdata.html#classes-genericdata-fun-runfrozen"><span class="std std-ref">genericdata-&gt;RunFrozen()</span></a>,
+or other in-engine means such as SCCs or combo triggers.</p>
+</div>
+</div>
+</div>
+<div class="scrinfo_card docutils container">
+<p class="scrinfo_title">Generic Script (Event Handler)</p>
+<div class="scrinfo_row docutils container">
+<div class="scrinfo_databox docutils container">
+<p class="scrinfo_dataline"><code class="inlinezs pre literal hljs language-zs">generic script ScriptName</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">this-&gt; pointer type: <code class="inlinezs pre literal hljs language-zs hljs-type">genericdata</code>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </p>
+<p class="scrinfo_data_separator"></p>
+<p class="scrinfo_dataline">Available InitD[]: 8</p>
+</div>
+<div class="scrinfo_bodybox kill_bottom_border docutils container">
+<p>A generic script can use <a class="reference internal" href="../globals/functions.html#globals-fun-waitevent"><span class="std std-ref">WaitEvent()</span></a>
+to listen for one or more special ‘event timings’. Which timings it
+listens for are set either in <code class="docutils literal notranslate"><span class="pre">Init</span> <span class="pre">Data</span></code>, or via
+<a class="reference internal" href="../classes/genericdata.html#classes-genericdata-var-eventlisten"><span class="std std-ref">genericdata-&gt;EventListen</span></a>.</p>
+</div>
+</div>
+<div class="scrinfo_bodybox kill_top_border docutils container">
+<p><a class="reference internal" href="../globals/Game.html#globals-game-var-eventdata"><span class="std std-ref">Game-&gt;EventData[]</span></a> can be used during
+an event timing to read many, and write some, data related specifically
+to that event- for example the damage the player is about to take from
+an enemy contact damage hit.</p>
+</div>
+</div>
+</section>
+<section id="frozen-mode-scripts">
+<span id="frozen-scripts"></span><h2>‘Frozen Mode’ scripts<a class="headerlink" href="#frozen-mode-scripts" title="Link to this heading">#</a></h2>
+<p>When a script runs in a ‘Frozen Mode’, everything (or, nearly everything) in the
+entire engine will be paused. Other scripts will not run either, unless specifically
+stated as an exception.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="scripts.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Scripts</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="annotations.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Annotations</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#global-scripts">Global Scripts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hero-scripts">Hero Scripts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#itemdata-scripts">Itemdata Scripts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#screen-based-scripts">Screen-Based Scripts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sprite-scripts">‘Sprite’ Scripts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subscreen-dmap-scripts">Subscreen &amp; DMap Scripts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generic-scripts">Generic Scripts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frozen-mode-scripts">‘Frozen Mode’ scripts</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, ZQuest Classic Foundation.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

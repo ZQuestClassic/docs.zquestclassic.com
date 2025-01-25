@@ -31,6 +31,9 @@
 <link href="../../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/zscript.css?v=3afc8195" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -41,15 +44,19 @@
     <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/libs/std/cfg';</script>
     <script src="../../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../../_static/zscript.js?v=0bdd3061"></script>
     <link rel="icon" href="../../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="ghostBasedMovement.zh" href="ghostBasedMovement.html" />
     <link rel="prev" title="std" href="index.html" />
-    <link href="../../../_static/main.css" rel="stylesheet" type="text/css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -271,7 +278,55 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../lang/types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../lang/explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../globals/functions.html">Global functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../globals/constants.html">Global constants</a></li>
@@ -394,10 +449,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../gui/guizh_window.html">guizh_window.zh</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../ffcscript/ffcscript.html">ffcscript.zh</a></li>
-</ul>
-</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
 </ul>
@@ -466,43 +517,43 @@
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-var-std-force-old-distance"><span class="std std-ref">STD_FORCE_OLD_DISTANCE</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-var-std-distance-use-safesqrt"><span class="std std-ref">STD_DISTANCE_USE_SAFESQRT</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-var-std-emulate-engine-collision"><span class="std std-ref">STD_EMULATE_ENGINE_COLLISION</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-var-std-centerxy-uses-hitboxes"><span class="std std-ref">STD_CENTERXY_USES_HITBOXES</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-var-std-never-use-safesqrt"><span class="std std-ref">STD_NEVER_USE_SAFESQRT</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-var-max-highest-level-item-check"><span class="std std-ref">MAX_HIGHEST_LEVEL_ITEM_CHECK</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-var-revised-rotatepoint-x-function"><span class="std std-ref">REVISED_ROTATEPOINT_X_FUNCTION</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-var-revised-rotatepoint-y-function"><span class="std std-ref">REVISED_ROTATEPOINT_Y_FUNCTION</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-var-max-noaction-input"><span class="std std-ref">MAX_NOACTION_INPUT</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-var-noaction-skip-map"><span class="std std-ref">NOACTION_SKIP_MAP</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-var-noaction-skip-start"><span class="std std-ref">NOACTION_SKIP_START</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-var-old-onsideplatform"><span class="std std-ref">OLD_ONSIDEPLATFORM</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#libs-std-var-old-rand-funcs"><span class="std std-ref">OLD_RAND_FUNCS</span></a></p></td>
 </tr>
 </tbody>
@@ -511,43 +562,43 @@
 </section>
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="libs-std-var-std-force-old-distance"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>STD_FORCE_OLD_DISTANCE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-std-var-std-force-old-distance"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/std_zh/std.cfg#L3">Source</a></p>
+<p id="libs-std-var-std-force-old-distance"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>STD_FORCE_OLD_DISTANCE</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-std-var-std-force-old-distance"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/std_zh/std.cfg#L3">Source</a></p>
 <p class="classref-comment">If enabled, Distance() will use Sqrt() instead of SafeSqrt().</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-std-distance-use-safesqrt"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>STD_DISTANCE_USE_SAFESQRT</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-std-distance-use-safesqrt"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/std_zh/std.cfg#L7">Source</a></p>
+<p id="libs-std-var-std-distance-use-safesqrt"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>STD_DISTANCE_USE_SAFESQRT</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-std-distance-use-safesqrt"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/std_zh/std.cfg#L7">Source</a></p>
 <p class="classref-comment">If enabled, Distance will use SafeSqrt(). Otherwise, it will return a factor,</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-std-emulate-engine-collision"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>STD_EMULATE_ENGINE_COLLISION</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-std-emulate-engine-collision"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/std_zh/std.cfg#L9">Source</a></p>
+<p id="libs-std-var-std-emulate-engine-collision"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>STD_EMULATE_ENGINE_COLLISION</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-std-emulate-engine-collision"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/std_zh/std.cfg#L9">Source</a></p>
 <p class="classref-comment">If enabled, Collision hitboxs will more precisely emulate the</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-std-centerxy-uses-hitboxes"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>STD_CENTERXY_USES_HITBOXES</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-std-centerxy-uses-hitboxes"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/std_zh/std.cfg#L14">Source</a></p>
+<p id="libs-std-var-std-centerxy-uses-hitboxes"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>STD_CENTERXY_USES_HITBOXES</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-std-centerxy-uses-hitboxes"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/std_zh/std.cfg#L14">Source</a></p>
 <p class="classref-comment">If enabled, CenterX() and CenterY() will use object hitboxes</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-std-never-use-safesqrt"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>STD_NEVER_USE_SAFESQRT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-std-var-std-never-use-safesqrt"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/std_zh/std.cfg#L19">Source</a></p>
+<p id="libs-std-var-std-never-use-safesqrt"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>STD_NEVER_USE_SAFESQRT</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-std-var-std-never-use-safesqrt"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/std_zh/std.cfg#L19">Source</a></p>
 <p class="classref-comment">Enable to force any calls to SafeSqrt() to use Sqrt() instead.</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-max-highest-level-item-check"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MAX_HIGHEST_LEVEL_ITEM_CHECK</strong> = <code class="docutils literal notranslate"><span class="pre">255</span></code> <a class="reference internal" href="#libs-std-var-max-highest-level-item-check"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/std_zh/std.cfg#L21">Source</a></p>
+<p id="libs-std-var-max-highest-level-item-check"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MAX_HIGHEST_LEVEL_ITEM_CHECK</strong> = <code class="docutils literal notranslate"><span class="pre">255</span></code> <a class="reference internal" href="#libs-std-var-max-highest-level-item-check"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/std_zh/std.cfg#L21">Source</a></p>
 <p class="classref-comment">The highest item ID checked by GetHighestLevelItem().</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-revised-rotatepoint-x-function"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>REVISED_ROTATEPOINT_X_FUNCTION</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-std-var-revised-rotatepoint-x-function"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/std_zh/std.cfg#L23">Source</a></p>
+<p id="libs-std-var-revised-rotatepoint-x-function"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>REVISED_ROTATEPOINT_X_FUNCTION</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-std-var-revised-rotatepoint-x-function"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/std_zh/std.cfg#L23">Source</a></p>
 <p class="classref-comment">Set to 0 to use 2.50.x RotatePointX()</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-revised-rotatepoint-y-function"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>REVISED_ROTATEPOINT_Y_FUNCTION</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-std-var-revised-rotatepoint-y-function"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/std_zh/std.cfg#L24">Source</a></p>
+<p id="libs-std-var-revised-rotatepoint-y-function"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>REVISED_ROTATEPOINT_Y_FUNCTION</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code> <a class="reference internal" href="#libs-std-var-revised-rotatepoint-y-function"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/std_zh/std.cfg#L24">Source</a></p>
 <p class="classref-comment">Set to 0 to use 2.50.x RotatePointY()</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-max-noaction-input"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MAX_NOACTION_INPUT</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code> <a class="reference internal" href="#libs-std-var-max-noaction-input"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/std_zh/std.cfg#L27">Source</a></p>
+<p id="libs-std-var-max-noaction-input"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MAX_NOACTION_INPUT</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code> <a class="reference internal" href="#libs-std-var-max-noaction-input"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/std_zh/std.cfg#L27">Source</a></p>
 <p class="classref-comment">Checks A, B, L, R, U/D/L/R, Ex1, Ex2, Ex3, Ex4</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-noaction-skip-map"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NOACTION_SKIP_MAP</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-noaction-skip-map"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/std_zh/std.cfg#L29">Source</a></p>
+<p id="libs-std-var-noaction-skip-map"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NOACTION_SKIP_MAP</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-noaction-skip-map"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/std_zh/std.cfg#L29">Source</a></p>
 <p class="classref-comment">If enabled, NoAction will not disable pressing the Map button</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-noaction-skip-start"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NOACTION_SKIP_START</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-noaction-skip-start"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/std_zh/std.cfg#L30">Source</a></p>
+<p id="libs-std-var-noaction-skip-start"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NOACTION_SKIP_START</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-noaction-skip-start"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/std_zh/std.cfg#L30">Source</a></p>
 <p class="classref-comment">If enabled, NoAction will not disable pressing the Start button</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-old-onsideplatform"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>OLD_ONSIDEPLATFORM</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-old-onsideplatform"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/std_zh/std.cfg#L32">Source</a></p>
+<p id="libs-std-var-old-onsideplatform"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>OLD_ONSIDEPLATFORM</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-old-onsideplatform"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/std_zh/std.cfg#L32">Source</a></p>
 <p class="classref-comment">Change to 1 to use old OnSidePlatform calls.</p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-old-rand-funcs"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>OLD_RAND_FUNCS</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-old-rand-funcs"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/std_zh/std.cfg#L34">Source</a></p>
+<p id="libs-std-var-old-rand-funcs"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>OLD_RAND_FUNCS</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-std-var-old-rand-funcs"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/std_zh/std.cfg#L34">Source</a></p>
 <p class="classref-comment">Change to 1 to use old Rand() logic</p>
 </section>
 </section>
@@ -629,7 +680,7 @@
 
   <p class="copyright">
     
-      © Copyright 2024, ZQuest Classic Foundation.
+      © Copyright 2025, ZQuest Classic Foundation.
       <br/>
     
   </p>

@@ -31,6 +31,9 @@
 <link href="../../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/zscript.css?v=3afc8195" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -41,15 +44,19 @@
     <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/libs/ghost/ghost2_modification';</script>
     <script src="../../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../../_static/zscript.js?v=0bdd3061"></script>
     <link rel="icon" href="../../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="ghost2_movement.zh" href="ghost2_movement.html" />
     <link rel="prev" title="ghost2_init.zh" href="ghost2_init.html" />
-    <link href="../../../_static/main.css" rel="stylesheet" type="text/css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -271,7 +278,55 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../lang/types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../lang/explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lang/script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../globals/functions.html">Global functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../globals/constants.html">Global constants</a></li>
@@ -394,10 +449,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../gui/guizh_window.html">guizh_window.zh</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../ffcscript/ffcscript.html">ffcscript.zh</a></li>
-</ul>
-</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
 </ul>
@@ -514,33 +565,33 @@
 </section>
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="libs-ghost-fun-ghost-transform"><abbr title="No return value.">void</abbr> <strong>Ghost_Transform</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> this, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> combo, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> tileWidth, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> tileHeight) <a class="reference internal" href="#libs-ghost-fun-ghost-transform"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L1">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-ghost-transform"><abbr title="No return value.">void</abbr> <strong>Ghost_Transform</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> this, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> combo, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> tileWidth, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> tileHeight) <a class="reference internal" href="#libs-ghost-fun-ghost-transform"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L1">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-ghost-setsize"><abbr title="No return value.">void</abbr> <strong>Ghost_SetSize</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> this, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> tileWidth, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> tileHeight) <a class="reference internal" href="#libs-ghost-fun-ghost-setsize"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L47">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-ghost-setsize"><abbr title="No return value.">void</abbr> <strong>Ghost_SetSize</strong>(<a class="reference internal" href="../../classes/ffc.html#classes-ffc"><span class="std std-ref">ffc</span></a> this, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> tileWidth, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> tileHeight) <a class="reference internal" href="#libs-ghost-fun-ghost-setsize"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L47">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-ghost-sethitoffsets"><abbr title="No return value.">void</abbr> <strong>Ghost_SetHitOffsets</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> top, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> bottom, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> left, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> right) <a class="reference internal" href="#libs-ghost-fun-ghost-sethitoffsets"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L67">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-ghost-sethitoffsets"><abbr title="No return value.">void</abbr> <strong>Ghost_SetHitOffsets</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> top, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> bottom, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> left, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> right) <a class="reference internal" href="#libs-ghost-fun-ghost-sethitoffsets"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L67">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-ghost-swapnpc"><abbr title="No return value.">void</abbr> <strong>Ghost_SwapNPC</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> oldGhost, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> newGhost, bool copyHP) <a class="reference internal" href="#libs-ghost-fun-ghost-swapnpc"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L96">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-ghost-swapnpc"><abbr title="No return value.">void</abbr> <strong>Ghost_SwapNPC</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> oldGhost, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> newGhost, bool copyHP) <a class="reference internal" href="#libs-ghost-fun-ghost-swapnpc"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L96">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-ghost-replacenpc"><abbr title="No return value.">void</abbr> <strong>Ghost_ReplaceNPC</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> oldGhost, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> newGhost, bool copyHP) <a class="reference internal" href="#libs-ghost-fun-ghost-replacenpc"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L126">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-ghost-replacenpc"><abbr title="No return value.">void</abbr> <strong>Ghost_ReplaceNPC</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> oldGhost, <a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> newGhost, bool copyHP) <a class="reference internal" href="#libs-ghost-fun-ghost-replacenpc"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L126">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-ghost-storedefenses"><abbr title="No return value.">void</abbr> <strong>Ghost_StoreDefenses</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] storedDefense) <a class="reference internal" href="#libs-ghost-fun-ghost-storedefenses"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L135">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-ghost-storedefenses"><abbr title="No return value.">void</abbr> <strong>Ghost_StoreDefenses</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] storedDefense) <a class="reference internal" href="#libs-ghost-fun-ghost-storedefenses"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L135">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-ghost-setdefenses"><abbr title="No return value.">void</abbr> <strong>Ghost_SetDefenses</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] defense) <a class="reference internal" href="#libs-ghost-fun-ghost-setdefenses"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L142">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-ghost-setdefenses"><abbr title="No return value.">void</abbr> <strong>Ghost_SetDefenses</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] defense) <a class="reference internal" href="#libs-ghost-fun-ghost-setdefenses"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L142">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-ghost-setalldefenses"><abbr title="No return value.">void</abbr> <strong>Ghost_SetAllDefenses</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> defType) <a class="reference internal" href="#libs-ghost-fun-ghost-setalldefenses"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L149">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-ghost-setalldefenses"><abbr title="No return value.">void</abbr> <strong>Ghost_SetAllDefenses</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> ghost, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> defType) <a class="reference internal" href="#libs-ghost-fun-ghost-setalldefenses"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L149">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-ghost-forcedir"><abbr title="No return value.">void</abbr> <strong>Ghost_ForceDir</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir) <a class="reference internal" href="#libs-ghost-fun-ghost-forcedir"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L156">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-ghost-forcedir"><abbr title="No return value.">void</abbr> <strong>Ghost_ForceDir</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir) <a class="reference internal" href="#libs-ghost-fun-ghost-forcedir"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L156">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-ghost-forcecset"><abbr title="No return value.">void</abbr> <strong>Ghost_ForceCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#libs-ghost-fun-ghost-forcecset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L163">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-ghost-forcecset"><abbr title="No return value.">void</abbr> <strong>Ghost_ForceCSet</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cset) <a class="reference internal" href="#libs-ghost-fun-ghost-forcecset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L163">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-ghost-startflashing"><abbr title="No return value.">void</abbr> <strong>Ghost_StartFlashing</strong>() <a class="reference internal" href="#libs-ghost-fun-ghost-startflashing"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L170">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-ghost-startflashing"><abbr title="No return value.">void</abbr> <strong>Ghost_StartFlashing</strong>() <a class="reference internal" href="#libs-ghost-fun-ghost-startflashing"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L170">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-ghost-startflashing-2"><abbr title="No return value.">void</abbr> <strong>Ghost_StartFlashing</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> time) <a class="reference internal" href="#libs-ghost-fun-ghost-startflashing-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L176">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-ghost-startflashing-2"><abbr title="No return value.">void</abbr> <strong>Ghost_StartFlashing</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> time) <a class="reference internal" href="#libs-ghost-fun-ghost-startflashing-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L176">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-ghost-stopflashing"><abbr title="No return value.">void</abbr> <strong>Ghost_StopFlashing</strong>() <a class="reference internal" href="#libs-ghost-fun-ghost-stopflashing"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L182">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-ghost-stopflashing"><abbr title="No return value.">void</abbr> <strong>Ghost_StopFlashing</strong>() <a class="reference internal" href="#libs-ghost-fun-ghost-stopflashing"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L182">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-ghost-fun-ghost-stopknockback"><abbr title="No return value.">void</abbr> <strong>Ghost_StopKnockback</strong>() <a class="reference internal" href="#libs-ghost-fun-ghost-stopknockback"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L188">Source</a></p>
+<p class="classref-method" id="libs-ghost-fun-ghost-stopknockback"><abbr title="No return value.">void</abbr> <strong>Ghost_StopKnockback</strong>() <a class="reference internal" href="#libs-ghost-fun-ghost-stopknockback"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/headers/ghost_zh/2.8/ghost2_modification.zh#L188">Source</a></p>
 </section>
 </section>
 
@@ -621,7 +672,7 @@
 
   <p class="copyright">
     
-      © Copyright 2024, ZQuest Classic Foundation.
+      © Copyright 2025, ZQuest Classic Foundation.
       <br/>
     
   </p>

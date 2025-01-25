@@ -1,0 +1,891 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Classes &#8212; ZQuest Classic  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/zscript.css?v=3afc8195" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/lang/types/classes';</script>
+    <script src="../../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../../_static/zscript.js?v=0bdd3061"></script>
+    <link rel="icon" href="../../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Object Memory Management" href="../explainers/object_memory_management.html" />
+    <link rel="prev" title="Typedef Statements" href="typedef.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/ZC_Logo.png" class="logo__image only-light" alt="ZQuest Classic  documentation - Home"/>
+    <img src="../../../_static/ZC_Logo.png" class="logo__image only-dark pst-js-only" alt="ZQuest Classic  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../tutorials/index.html">
+    Tutorials
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../tutorials/index.html">
+    Tutorials
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Types</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Classes</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../globals/functions.html">Global functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../globals/constants.html">Global constants</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../globals/Audio.html">Audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../globals/Debug.html">Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../globals/FileSystem.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../globals/Game.html">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../globals/Graphics.html">Graphics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../globals/Hero.html">Hero</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../globals/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../globals/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../globals/Screen.html">Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../globals/Text.html">Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../globals/ZInfo.html">ZInfo</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../classes/bitmap.html">bitmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/bottledata.html">bottledata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/bottleshopdata.html">bottleshopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/combodata.html">combodata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/directory.html">directory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/dmapdata.html">dmapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/dropsetdata.html">dropsetdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/eweapon.html">eweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/ffc.html">ffc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/file.html">file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/genericdata.html">genericdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/itemdata.html">itemdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/itemsprite.html">itemsprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/lweapon.html">lweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/mapdata.html">mapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/messagedata.html">messagedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/portal.html">portal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/randgen.html">randgen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/savedportal.html">savedportal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/shopdata.html">shopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/sprite.html">sprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/spritedata.html">spritedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/stack.html">stack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/subscreendata.html">subscreendata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenpage.html">subscreenpage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/subscreenwidget.html">subscreenwidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/websocket.html">websocket</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/cfg.html">std.cfg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/limits.html">limits.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/script_runners.html">script_runners.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/std_constants.html">std_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/std_extension.html">std_extension.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/std_functions.html">std_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/std_keyboard.html">std_keyboard.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/string_constants.html">string_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/string_functions.html">string_functions.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../libs/ghost/index.html">ghost</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost.html">ghost.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_common.html">ghost2_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_deprecated.html">ghost2_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_drawing.html">ghost2_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_eweapon.html">ghost2_eweapon.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_eweaponDeath.html">ghost2_eweaponDeath.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_eweaponMovement.html">ghost2_eweaponMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_flags.html">ghost2_flags.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_global.html">ghost2_global.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_init.html">ghost2_init.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_modification.html">ghost2_modification.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_movement.html">ghost2_movement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_other.html">ghost2_other.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_scripts.html">ghost2_scripts.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_update.html">ghost2_update.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../libs/tango/index.html">tango</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango.html">tango.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_access.html">tango_access.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_common.html">tango_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_deprecated.html">tango_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_drawing.html">tango_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_font.html">tango_font.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_functions.html">tango_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_loading.html">tango_loading.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_loggingMinimal.html">tango_loggingMinimal.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_menu.html">tango_menu.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_messages.html">tango_messages.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_metrics.html">tango_metrics.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_processing.html">tango_processing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_script.html">tango_script.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_stringControlCode.html">tango_stringControlCode.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_style.html">tango_style.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_user.html">tango_user.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_validation.html">tango_validation.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../libs/gui/index.html">gui</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/gui.html">gui.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_button.html">guizh_button.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_checkbox.html">guizh_checkbox.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_common.html">guizh_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_event.html">guizh_event.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_label.html">guizh_label.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_main.html">guizh_main.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_radioButton.html">guizh_radioButton.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_root.html">guizh_root.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_spinner.html">guizh_spinner.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_types.html">guizh_types.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_widget.html">guizh_widget.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_window.html">guizh_window.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">ZScript</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Types</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Classes</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="classes">
+<h1>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h1>
+<section id="what-is-a-class">
+<span id="id1"></span><span id="zslang-classes"></span><h2>What is a Class<a class="headerlink" href="#what-is-a-class" title="Link to this heading">#</a></h2>
+<p>The concept of a <code class="inlinezs pre docutils literal notranslate"><span class="pre">class</span></code> is taken mostly from C++ here, although notably simplified down.
+By declaring a <code class="inlinezs pre docutils literal notranslate"><span class="pre">class</span></code>, you declare a template of data to be used repeatedly in creating
+<code class="inlinezs pre docutils literal notranslate"><span class="pre">objects</span></code>, along with some functions associated with that data.</p>
+<p>While the order of the parts within a class mostly doesn’t matter to the compiler, you will
+generally see classes organized in the same general order:<a class="footnote-reference brackets" href="#decl" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<ol class="arabic">
+<li><dl class="simple">
+<dt>Data: The variables that make up the class. Can contain arrays, too.</dt><dd><ul class="simple">
+<li><p>While technically not ‘required’, a class without data has little purpose.</p></li>
+<li><p>Declared via normal variable declarations. Cannot have initializers.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Constructor(s): A function or functions to create the class.</dt><dd><ul class="simple">
+<li><p>Not required- leaving it out is the same as declaring an empty constructor function.</p></li>
+<li><p>The constructor is declared as a function with the exact same name as the class and no return type.</p></li>
+<li><p>The parameters may be whatever you like.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Destructor: A function to destroy the class.</dt><dd><ul>
+<li><p>Not required- leaving it out is <em>better for the compiler</em> than declaring an empty destructor function.</p></li>
+<li><p>A destructor is declared as a function named <code class="inlinezs pre docutils literal notranslate"><span class="pre">~</span></code> followed by the exact same name as the class and no return type.</p></li>
+<li><p>The destructor takes no parameters.</p></li>
+<li><dl>
+<dt>The destructor is automatically called when the object is destroyed by the engine.</dt><dd><div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 3.0: </span>The destructor can no longer manually be triggered with <code class="inlinezs pre docutils literal notranslate"><span class="pre">delete</span></code>.
+This is no longer necessary due to the <a class="reference internal" href="../explainers/object_memory_management.html#gc"><span class="std std-ref">refcounting + garbage collector</span></a>.</p>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Member Functions: Any other functions you like.</dt><dd><ul class="simple">
+<li><p>All class functions (without the <code class="inlinezs pre docutils literal notranslate"><span class="pre">static</span></code> modifier) have a local variable named <code class="inlinezs pre docutils literal notranslate"><span class="pre">this</span></code>, which is a pointer to the object itself.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The order the data is declared in is relevant to existing save files, for any objects saved to
+the save file. As such, changing the order can break existing save files
+(in the same way that declaring <em>any</em> new global variable can)</p>
+</div>
+</section>
+<section id="allocating-objects">
+<h2>Allocating Objects<a class="headerlink" href="#allocating-objects" title="Link to this heading">#</a></h2>
+<p id="classobj-alloc">To create an instance of an object, you call its constructor function using the <code class="inlinezs pre docutils literal notranslate"><span class="pre">new</span></code> keyword<a class="footnote-reference brackets" href="#new" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>.
+A pointer to the object, whose type is <em>the class itself</em>, will be returned.</p>
+<div class="note admonition">
+<p class="admonition-title">Limits</p>
+<p>A maximum of <code class="inlinezs pre docutils literal notranslate"><span class="pre">214747</span></code> objects can exist at a time, from all (non-internal) classes combined.
+If this many objects exist at once, the <code class="inlinezs pre docutils literal notranslate"><span class="pre">new</span></code> call will fail, returning <code class="inlinezs pre docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
+</div>
+</section>
+<section id="object-cleanup">
+<h2>Object Cleanup<a class="headerlink" href="#object-cleanup" title="Link to this heading">#</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<p><a class="reference internal" href="../explainers/object_memory_management.html#gc"><span class="std std-ref">Full Explainer</span></a></p>
+<p>The program keeps track of all the references to each object, and automatically deletes any object
+when the last reference to it is lost (calling the destructor, if defined).</p>
+<p>There is additionally a garbage collector, which is capable of cleaning up cyclical references
+(the situation in which the only reference left to two different objects, is inside the other,
+thus they ‘keep each other alive’ for the reference counting)</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><a class="reference internal" href="../../globals/functions.html#globals-fun-ownobject"><span class="std std-ref">OwnObject</span></a> grants a single “reference” to the object to
+whichever entity the function is giving ownership to. If that entity dies, it causes the
+ownership reference to be ‘lost’.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><a class="reference internal" href="../../globals/functions.html#globals-fun-globalobject"><span class="std std-ref">GlobalObject</span></a> marks an object as “global”. Objects that
+are “global” will be saved to the save file, and cannot be destroyed.</p>
+<p>Calling <a class="reference internal" href="../../globals/functions.html#globals-fun-ownobject"><span class="std std-ref">OwnObject</span></a> marks the object as no longer “global”.</p>
+</div>
+</section>
+<section id="static-functions">
+<span id="class-static"></span><h2>Static Functions<a class="headerlink" href="#static-functions" title="Link to this heading">#</a></h2>
+<p>Declaring a function inside a class with the <code class="inlinezs pre docutils literal notranslate"><span class="pre">static</span></code> modifier makes the function a static part of
+the class, rather than a part of each object. Static functions have a few differences from normal
+member functions:</p>
+<ul class="simple">
+<li><p>No <code class="inlinezs pre docutils literal notranslate"><span class="pre">this</span></code> pointer (meaning no access to any data members from the class)</p></li>
+<li><p>Called similarly to <a class="reference internal" href="../declarations/namespace.html#namespaces"><span class="std std-ref">functions inside namespaces</span></a>, except that a <code class="inlinezs pre docutils literal notranslate"><span class="pre">.</span></code> is used after the class name, rather than the scope-resolution operator <code class="inlinezs pre docutils literal notranslate"><span class="pre">::</span></code></p></li>
+</ul>
+<p>Effectively, they are functions whose only thing to do with the class, is that they are called using the class’s name.
+One possible use of such functions would be to create ‘named constructors’ for different purposes<a class="footnote-reference brackets" href="#static" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a>.</p>
+</section>
+<section id="array-data-members">
+<h2>Array Data Members<a class="headerlink" href="#array-data-members" title="Link to this heading">#</a></h2>
+<p>Declaring an array as a data member of an object creates a special type of array. Notably, you cannot
+re-assign a different pointer to such an array, and <a class="reference internal" href="../../globals/functions.html#globals-fun-ownarray"><span class="std std-ref">OwnArray</span></a>/<a class="reference internal" href="../../globals/functions.html#globals-fun-destroyarray"><span class="std std-ref">DestroyArray</span></a> have no effect on these
+arrays.</p>
+<p>These arrays are effectively ‘owned’ by the object, and are destroyed when the object is destroyed.
+They are also saved to the save file with the object, if the object is <a class="reference internal" href="../../globals/functions.html#globals-fun-globalobject"><span class="std std-ref">global</span></a>.</p>
+<p>Note that this only applies to actual array declarations- declarations of variables with <em>array types</em>
+that are not <em>array declarations</em> still act as normal.</p>
+<div class="admonition-plans admonition" id="id5">
+<p class="admonition-title">Not Yet Implemented</p>
+<p>Currently, attempting to re-assign a pointer to such an array does not give a compiler
+error- it simply has no effect. This will likely become a compiler error in the future.</p>
+</div>
+</section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h2>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="decl" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
+<p><em>Declaration of a class</em></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal no-title" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a2 2 0 1 1-.001-3.999A2 2 0 0 1 20 14ZM6 12a2 2 0 1 1-3.999.001A2 2 0 0 1 6 12Zm8 0a2 2 0 1 1-3.999.001A2 2 0 0 1 14 12Z"></path></svg></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<pre class="hljs language-zs"><code>class Rectangle
+{
+        int x, y; // The position of the rectangle
+        int w, h; // The width/height of the rectangle
+        int color; // The color of the rectangle
+        int opacity; // OP_OPAQUE or OP_TRANS
+        bool fill;
+
+        // The &#x27;Constructor&#x27; of the class - used to create new instances
+        Rectangle(int X, int Y, int W, int H, int COLOR = 0x01,
+                bool FILL = true, int OPACITY = OP_OPAQUE)
+        {
+                x = X;
+                y = Y;
+                w = W;
+                h = H;
+                color = COLOR;
+                fill = FILL;
+                opacity = OPACITY;
+        }
+        // The &#x27;Destructor&#x27; of the class. You can usually leave this out.
+        ~Rectangle()
+        {
+                printf(&quot;Deleting rectangle %d,%d %d,%d\n&quot;, x, y, w, h);
+        }
+        // A member function of the class, used alongside the data
+        void draw(int layer)
+        {
+                Screen-&gt;Rectangle(layer, x, y, x+w-1, y+h-1,
+                        color, 1, 0, 0, 0, fill, opacity);
+        }
+};</code></pre>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </div>
+</details></aside>
+<aside class="footnote brackets" id="new" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
+<p><em>Example script making use of the class from above</em></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal no-title" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a2 2 0 1 1-.001-3.999A2 2 0 0 1 20 14ZM6 12a2 2 0 1 1-3.999.001A2 2 0 0 1 6 12Zm8 0a2 2 0 1 1-3.999.001A2 2 0 0 1 14 12Z"></path></svg></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<pre class="hljs language-zs"><code>ffc script screenBorder
+{
+        void run(int color, int thickness)
+        {
+                // Declare 4 &#x27;Rectangle&#x27; objects that form a border around the screen
+                Rectangle rects[4] = {
+                        new Rectangle(0, 0,
+                                256, thickness, color),
+                        new Rectangle(0, 168-thickness,
+                                256, thickness, color),
+                        new Rectangle(0, thickness,
+                                thickness, 168-thickness*2, color),
+                        new Rectangle(256-thickness, thickness,
+                                thickness, 168-thickness*2, color)
+                };
+                loop()
+                {
+                        for(r : rects) // loop through each object
+                                r-&gt;draw(7); // and call its&#x27; draw function
+                        Waitframe();
+                }
+        }
+}</code></pre>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </div>
+</details></aside>
+<aside class="footnote brackets" id="static" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">3</a><span class="fn-bracket">]</span></span>
+<p><em>Example of static functions, being used for ‘named constructors’</em></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal no-title" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a2 2 0 1 1-.001-3.999A2 2 0 0 1 20 14ZM6 12a2 2 0 1 1-3.999.001A2 2 0 0 1 6 12Zm8 0a2 2 0 1 1-3.999.001A2 2 0 0 1 14 12Z"></path></svg></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<pre class="hljs language-zs"><code>class Rectangle
+{
+        int x, y; // The position of the rectangle
+        int w, h; // The width/height of the rectangle
+        int color; // The color of the rectangle
+        int opacity; // OP_OPAQUE or OP_TRANS
+        bool fill;
+
+        // Constructors
+        Rectangle()
+        {
+                color = 0x01;
+                opacity = OP_OPAQUE;
+                fill = true;
+                w = 16; h = 16;
+        }
+        Rectangle(int X, int Y)
+        {
+                // calling a constructor at the top of another constructor
+                // allows you to save on duplicated code
+                Rectangle();
+                x = X;
+                y = Y;
+        }
+        // static &#x27;named constructors&#x27;
+        static Rectangle square(int x, int y, int sz)
+        {
+                Rectangle r = new Rectangle(x, y);
+                r-&gt;w = sz;
+                r-&gt;h = sz;
+                return r;
+        }
+        static Rectangle whole_screen(bool subscreen_area)
+        {
+                Rectangle r = new Rectangle();
+                r-&gt;w = 256;
+                r-&gt;h = subscreen_area ? 232 : 176;
+                // r-&gt;x will already be 0
+                r-&gt;y = subscreen_area ? -56 : 0;
+                return r;
+        }
+};</code></pre>
+        <script>
+            {
+                const el = document.currentScript.previousElementSibling;
+                requestAnimationFrame(() => hljs.highlightElement(el));
+            }
+        </script>
+        </div>
+</details></aside>
+</aside>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="typedef.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Typedef Statements</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../explainers/object_memory_management.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Object Memory Management</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-class">What is a Class</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#allocating-objects">Allocating Objects</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#object-cleanup">Object Cleanup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#static-functions">Static Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#array-data-members">Array Data Members</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, ZQuest Classic Foundation.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

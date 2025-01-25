@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>ffcscript &#8212; ZQuest Classic  documentation</title>
+    <title>Control Flow &#8212; ZQuest Classic  documentation</title>
   
   
   
@@ -31,6 +31,9 @@
 <link href="../../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/zscript.css?v=3afc8195" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -41,15 +44,19 @@
     <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/libs/ffcscript/index';</script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/lang/control_flow/index';</script>
     <script src="../../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../../_static/zscript.js?v=0bdd3061"></script>
     <link rel="icon" href="../../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="ffcscript.zh" href="ffcscript.html" />
-    <link rel="prev" title="guizh_window.zh" href="../gui/guizh_window.html" />
-    <link href="../../../_static/main.css" rel="stylesheet" type="text/css">
-
+    <link rel="next" title="If / Unless / Else" href="ifunless.html" />
+    <link rel="prev" title="Enums" href="../types/enums.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -267,7 +274,55 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Control Flow</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../globals/functions.html">Global functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../globals/constants.html">Global constants</a></li>
@@ -319,83 +374,79 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/websocket.html">websocket</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../std/cfg.html">std.cfg</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../std/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../std/limits.html">limits.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../std/script_runners.html">script_runners.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../std/std_constants.html">std_constants.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../std/std_extension.html">std_extension.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../std/std_functions.html">std_functions.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../std/std_keyboard.html">std_keyboard.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../std/std_sideview.html">std_sideview.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../std/string_constants.html">string_constants.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../std/string_functions.html">string_functions.zh</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/cfg.html">std.cfg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/limits.html">limits.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/script_runners.html">script_runners.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/std_constants.html">std_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/std_extension.html">std_extension.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/std_functions.html">std_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/std_keyboard.html">std_keyboard.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/string_constants.html">string_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/string_functions.html">string_functions.zh</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ghost/index.html">ghost</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost.html">ghost.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_common.html">ghost2_common.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_deprecated.html">ghost2_deprecated.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_drawing.html">ghost2_drawing.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_eweapon.html">ghost2_eweapon.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_eweaponDeath.html">ghost2_eweaponDeath.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_eweaponMovement.html">ghost2_eweaponMovement.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_flags.html">ghost2_flags.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_global.html">ghost2_global.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_init.html">ghost2_init.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_modification.html">ghost2_modification.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_movement.html">ghost2_movement.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_other.html">ghost2_other.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_scripts.html">ghost2_scripts.zs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ghost/ghost2_update.html">ghost2_update.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ghost/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../libs/ghost/index.html">ghost</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost.html">ghost.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_common.html">ghost2_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_deprecated.html">ghost2_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_drawing.html">ghost2_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_eweapon.html">ghost2_eweapon.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_eweaponDeath.html">ghost2_eweaponDeath.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_eweaponMovement.html">ghost2_eweaponMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_flags.html">ghost2_flags.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_global.html">ghost2_global.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_init.html">ghost2_init.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_modification.html">ghost2_modification.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_movement.html">ghost2_movement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_other.html">ghost2_other.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_scripts.html">ghost2_scripts.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghost2_update.html">ghost2_update.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/ghost/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../tango/index.html">tango</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango.html">tango.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango_access.html">tango_access.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango_common.html">tango_common.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango_deprecated.html">tango_deprecated.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango_drawing.html">tango_drawing.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango_font.html">tango_font.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango_functions.html">tango_functions.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango_loading.html">tango_loading.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango_loggingMinimal.html">tango_loggingMinimal.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango_menu.html">tango_menu.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango_messages.html">tango_messages.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango_metrics.html">tango_metrics.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango_processing.html">tango_processing.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango_script.html">tango_script.zs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango_stringControlCode.html">tango_stringControlCode.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango_style.html">tango_style.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango_user.html">tango_user.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tango/tango_validation.html">tango_validation.zh</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../libs/tango/index.html">tango</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango.html">tango.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_access.html">tango_access.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_common.html">tango_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_deprecated.html">tango_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_drawing.html">tango_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_font.html">tango_font.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_functions.html">tango_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_loading.html">tango_loading.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_loggingMinimal.html">tango_loggingMinimal.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_menu.html">tango_menu.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_messages.html">tango_messages.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_metrics.html">tango_metrics.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_processing.html">tango_processing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_script.html">tango_script.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_stringControlCode.html">tango_stringControlCode.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_style.html">tango_style.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_user.html">tango_user.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/tango/tango_validation.html">tango_validation.zh</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../gui/index.html">gui</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../gui/gui.html">gui.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_button.html">guizh_button.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_checkbox.html">guizh_checkbox.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_common.html">guizh_common.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_event.html">guizh_event.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_label.html">guizh_label.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_main.html">guizh_main.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_radioButton.html">guizh_radioButton.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_root.html">guizh_root.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_spinner.html">guizh_spinner.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_types.html">guizh_types.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_widget.html">guizh_widget.zh</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../gui/guizh_window.html">guizh_window.zh</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../libs/gui/index.html">gui</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/gui.html">gui.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_button.html">guizh_button.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_checkbox.html">guizh_checkbox.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_common.html">guizh_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_event.html">guizh_event.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_label.html">guizh_label.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_main.html">guizh_main.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_radioButton.html">guizh_radioButton.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_root.html">guizh_root.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_spinner.html">guizh_spinner.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_types.html">guizh_types.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_widget.html">guizh_widget.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/gui/guizh_window.html">guizh_window.zh</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">ffcscript</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="ffcscript.html">ffcscript.zh</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
 </ul>
 </details></li>
 </ul>
@@ -436,7 +487,7 @@
     
     <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">ZScript</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">ffcscript</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Control Flow</span></li>
   </ul>
 </nav>
 </div>
@@ -453,11 +504,20 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="ffcscript">
-<h1>ffcscript<a class="headerlink" href="#ffcscript" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper toctree-grid compound">
+  <section id="control-flow">
+<h1>Control Flow<a class="headerlink" href="#control-flow" title="Link to this heading">#</a></h1>
+<p>This section covers various statement types that can be used to control the execution flow of scripts.
+These are the foundational building blocks of scripting in ZScript, used to build whatever scripts you can imagine.</p>
+<div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="ffcscript.html">ffcscript.zh</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l1"><a class="reference internal" href="whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l1"><a class="reference internal" href="for.html">For Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="for.html#for-each-loops">For-Each Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loopelse.html">Loop Else</a></li>
+<li class="toctree-l1"><a class="reference internal" href="break.html">Break / Continue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="switchcase.html">Switch / Case</a></li>
 </ul>
 </div>
 </section>
@@ -473,20 +533,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../gui/guizh_window.html"
+       href="../types/enums.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">guizh_window.zh</p>
+        <p class="prev-next-title">Enums</p>
       </div>
     </a>
     <a class="right-next"
-       href="ffcscript.html"
+       href="ifunless.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">ffcscript.zh</p>
+        <p class="prev-next-title">If / Unless / Else</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -520,7 +580,7 @@
 
   <p class="copyright">
     
-      © Copyright 2024, ZQuest Classic Foundation.
+      © Copyright 2025, ZQuest Classic Foundation.
       <br/>
     
   </p>

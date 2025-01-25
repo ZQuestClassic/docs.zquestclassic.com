@@ -31,6 +31,9 @@
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../_static/zscript.css?v=3afc8195" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -41,15 +44,19 @@
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/classes/randgen';</script>
     <script src="../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../_static/zscript.js?v=0bdd3061"></script>
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="savedportal" href="savedportal.html" />
     <link rel="prev" title="portal" href="portal.html" />
-    <link href="../../_static/main.css" rel="stylesheet" type="text/css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -271,7 +278,55 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../lang/types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lang/explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../globals/functions.html">Global functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../globals/constants.html">Global constants</a></li>
@@ -394,10 +449,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../libs/ffcscript/ffcscript.html">ffcscript.zh</a></li>
-</ul>
-</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
 </ul>
@@ -510,47 +561,46 @@
 </section>
 <section id="constructor-descriptions">
 <h2>Constructor descriptions<a class="headerlink" href="#constructor-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-randgen-ctor-randgen"><a class="reference internal" href="#classes-randgen"><span class="std std-ref">randgen</span></a> <strong>randgen</strong>() <a class="reference internal" href="#classes-randgen-ctor-randgen"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/randgen.zh#L5">Source</a></p>
+<p class="classref-method" id="classes-randgen-ctor-randgen"><a class="reference internal" href="#classes-randgen"><span class="std std-ref">randgen</span></a> <strong>randgen</strong>() <a class="reference internal" href="#classes-randgen-ctor-randgen"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/randgen.zh#L5">Source</a></p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-randgen-fun-rand"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Rand</strong>() <a class="reference internal" href="#classes-randgen-fun-rand"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/randgen.zh#L12">Source</a></p>
+<p class="classref-method" id="classes-randgen-fun-rand"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Rand</strong>() <a class="reference internal" href="#classes-randgen-fun-rand"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/randgen.zh#L12">Source</a></p>
 <p class="classref-comment">Returns a random number <code class="docutils literal notranslate"><span class="pre">-214748</span> <span class="pre">to</span> <span class="pre">214748</span></code>, inclusive.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-randgen-fun-rand-2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Rand</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> bound) <a class="reference internal" href="#classes-randgen-fun-rand-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/randgen.zh#L20">Source</a></p>
+<p class="classref-method" id="classes-randgen-fun-rand-2"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Rand</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> bound) <a class="reference internal" href="#classes-randgen-fun-rand-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/randgen.zh#L20">Source</a></p>
 <p class="classref-comment">Returns a random number <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">to</span> <span class="pre">bound</span></code>, inclusive.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-randgen-fun-rand-3"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Rand</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> bound1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> bound2) <a class="reference internal" href="#classes-randgen-fun-rand-3"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/randgen.zh#L29">Source</a></p>
+<p class="classref-method" id="classes-randgen-fun-rand-3"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Rand</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> bound1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> bound2) <a class="reference internal" href="#classes-randgen-fun-rand-3"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/randgen.zh#L29">Source</a></p>
 <p class="classref-comment">Returns a random number <code class="docutils literal notranslate"><span class="pre">bound1</span> <span class="pre">to</span> <span class="pre">bound2</span></code>, inclusive.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-randgen-fun-lrand"><abbr title="ZScript's real integer type.">long</abbr> <strong>LRand</strong>() <a class="reference internal" href="#classes-randgen-fun-lrand"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/randgen.zh#L36">Source</a></p>
+<p class="classref-method" id="classes-randgen-fun-lrand"><abbr title="ZScript's real integer type.">long</abbr> <strong>LRand</strong>() <a class="reference internal" href="#classes-randgen-fun-lrand"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/randgen.zh#L36">Source</a></p>
 <p class="classref-comment">Returns a random long number <code class="docutils literal notranslate"><span class="pre">-2147483648L</span> <span class="pre">to</span> <span class="pre">2147483647L</span></code>, inclusive.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-randgen-fun-lrand-2"><abbr title="ZScript's real integer type.">long</abbr> <strong>LRand</strong>(<abbr title="ZScript's real integer type.">long</abbr> bound) <a class="reference internal" href="#classes-randgen-fun-lrand-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/randgen.zh#L44">Source</a></p>
+<p class="classref-method" id="classes-randgen-fun-lrand-2"><abbr title="ZScript's real integer type.">long</abbr> <strong>LRand</strong>(<abbr title="ZScript's real integer type.">long</abbr> bound) <a class="reference internal" href="#classes-randgen-fun-lrand-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/randgen.zh#L44">Source</a></p>
 <p class="classref-comment">Returns a random long number <code class="docutils literal notranslate"><span class="pre">0L</span> <span class="pre">to</span> <span class="pre">bound</span></code>, inclusive.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-randgen-fun-lrand-3"><abbr title="ZScript's real integer type.">long</abbr> <strong>LRand</strong>(<abbr title="ZScript's real integer type.">long</abbr> bound1, <abbr title="ZScript's real integer type.">long</abbr> bound2) <a class="reference internal" href="#classes-randgen-fun-lrand-3"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/randgen.zh#L53">Source</a></p>
+<p class="classref-method" id="classes-randgen-fun-lrand-3"><abbr title="ZScript's real integer type.">long</abbr> <strong>LRand</strong>(<abbr title="ZScript's real integer type.">long</abbr> bound1, <abbr title="ZScript's real integer type.">long</abbr> bound2) <a class="reference internal" href="#classes-randgen-fun-lrand-3"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/randgen.zh#L53">Source</a></p>
 <p class="classref-comment">Returns a random long number <code class="docutils literal notranslate"><span class="pre">bound1</span> <span class="pre">to</span> <span class="pre">bound2</span></code>, inclusive.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-randgen-fun-srand"><abbr title="No return value.">void</abbr> <strong>SRand</strong>(<abbr title="ZScript's real integer type.">long</abbr> seed) <a class="reference internal" href="#classes-randgen-fun-srand"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/randgen.zh#L61">Source</a></p>
+<p class="classref-method" id="classes-randgen-fun-srand"><abbr title="No return value.">void</abbr> <strong>SRand</strong>(<abbr title="ZScript's real integer type.">long</abbr> seed) <a class="reference internal" href="#classes-randgen-fun-srand"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/randgen.zh#L61">Source</a></p>
 <p class="classref-comment">Seeds the RNG with the given seed.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-randgen-fun-srand-2"><abbr title="ZScript's real integer type.">long</abbr> <strong>SRand</strong>() <a class="reference internal" href="#classes-randgen-fun-srand-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/randgen.zh#L69">Source</a></p>
+<p class="classref-method" id="classes-randgen-fun-srand-2"><abbr title="ZScript's real integer type.">long</abbr> <strong>SRand</strong>() <a class="reference internal" href="#classes-randgen-fun-srand-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/randgen.zh#L69">Source</a></p>
 <p class="classref-comment">Seeds the RNG with a randomly-determined seed, based off of the system
 clock and the previous RNG.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-randgen-fun-free"><abbr title="No return value.">void</abbr> <strong>Free</strong>() <a class="reference internal" href="#classes-randgen-fun-free"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/randgen.zh#L81">Source</a></p>
+<p class="classref-method" id="classes-randgen-fun-free"><abbr title="No return value.">void</abbr> <strong>Free</strong>() <a class="reference internal" href="#classes-randgen-fun-free"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/randgen.zh#L81">Source</a></p>
 <p class="classref-comment">De-allocates this <code class="docutils literal notranslate"><span class="pre">randgen</span></code> pointer, so that its’ pointer ID may be
 re-used. You may only have a limited number of randgen pointers active at
 a time; freeing them when you are done with them helps not reach the
 limit.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Deprecated!</strong> Free() no longer does anything as of ZC 3.0. Objects are now freed automatically.</p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated: </span>Free() no longer does anything as of ZC 3.0. Objects are now freed automatically.</p>
 </div>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-randgen-fun-own"><abbr title="No return value.">void</abbr> <strong>Own</strong>() <a class="reference internal" href="#classes-randgen-fun-own"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/randgen.zh#L91">Source</a></p>
+<p class="classref-method" id="classes-randgen-fun-own"><abbr title="No return value.">void</abbr> <strong>Own</strong>() <a class="reference internal" href="#classes-randgen-fun-own"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/randgen.zh#L91">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the randgen pointer to the script that calls this
 function. When the script with ‘Ownership’ terminates (at the same time
 its’ local arrays are deallocated), this randgen pointer will
@@ -637,7 +687,7 @@ automatically be ‘Free()’d.</p>
 
   <p class="copyright">
     
-      © Copyright 2024, ZQuest Classic Foundation.
+      © Copyright 2025, ZQuest Classic Foundation.
       <br/>
     
   </p>

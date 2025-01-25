@@ -31,6 +31,9 @@
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../_static/zscript.css?v=3afc8195" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -41,15 +44,19 @@
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/classes/subscreenpage';</script>
     <script src="../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../_static/zscript.js?v=0bdd3061"></script>
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="subscreenwidget" href="subscreenwidget.html" />
     <link rel="prev" title="subscreendata" href="subscreendata.html" />
-    <link href="../../_static/main.css" rel="stylesheet" type="text/css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -271,7 +278,55 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../lang/types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lang/explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../globals/functions.html">Global functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../globals/constants.html">Global constants</a></li>
@@ -394,10 +449,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../libs/ffcscript/ffcscript.html">ffcscript.zh</a></li>
-</ul>
-</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
 </ul>
@@ -463,16 +514,16 @@
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-subscreenpage-var-index"><span class="std std-ref">Index</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
 <td><p><a class="reference internal" href="#classes-subscreenpage-var-numwidgets"><span class="std std-ref">NumWidgets</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <a class="reference internal" href="subscreenwidget.html#classes-subscreenwidget"><span class="std std-ref">subscreenwidget[]</span></a></p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <a class="reference internal" href="subscreenwidget.html#classes-subscreenwidget"><span class="std std-ref">subscreenwidget[]</span></a></p></td>
 <td><p><a class="reference internal" href="#classes-subscreenpage-var-widgets"><span class="std std-ref">Widgets</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <a class="reference internal" href="subscreendata.html#classes-subscreendata"><span class="std std-ref">subscreendata</span></a></p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <a class="reference internal" href="subscreendata.html#classes-subscreendata"><span class="std std-ref">subscreendata</span></a></p></td>
 <td><p><a class="reference internal" href="#classes-subscreenpage-var-subdata"><span class="std std-ref">SubData</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
@@ -508,50 +559,56 @@
 </table>
 </div>
 </section>
+<section id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Link to this heading">#</a></h2>
+<p id="globals-enum-movesubscreenselectorbitflags">enum <strong>MoveSubscreenSelectorBitflags</strong>: <a class="reference internal" href="#globals-enum-movesubscreenselectorbitflags"><span class="std std-ref">🔗</span></a>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/subscreenpage.zh#L3">Source</a></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-subsel-flag-no-nonequip"><a class="reference internal" href="#globals-enum-movesubscreenselectorbitflags"><span class="std std-ref">MoveSubscreenSelectorBitflags</span></a> <strong>SUBSEL_FLAG_NO_NONEQUIP</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-comment">Skip widgets that are “Non-equippable”.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-subsel-flag-need-item"><a class="reference internal" href="#globals-enum-movesubscreenselectorbitflags"><span class="std std-ref">MoveSubscreenSelectorBitflags</span></a> <strong>SUBSEL_FLAG_NEED_ITEM</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-comment">Skip widgets that currently have no equippable item.</p>
+</section>
+<hr class="classref-item-separator docutils" />
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="classes-subscreenpage-var-index"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Index</strong>  <a class="reference internal" href="#classes-subscreenpage-var-index"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/subscreenpage.zh#L9">Source</a></p>
+<p id="classes-subscreenpage-var-index"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Index</strong>  <a class="reference internal" href="#classes-subscreenpage-var-index"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/subscreenpage.zh#L17">Source</a></p>
 <p class="classref-comment">The index of this page within the subscreen.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenpage-var-numwidgets"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NumWidgets</strong>  <a class="reference internal" href="#classes-subscreenpage-var-numwidgets"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/subscreenpage.zh#L14">Source</a></p>
+<p id="classes-subscreenpage-var-numwidgets"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NumWidgets</strong>  <a class="reference internal" href="#classes-subscreenpage-var-numwidgets"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/subscreenpage.zh#L22">Source</a></p>
 <p class="classref-comment">The number of widgets on the page.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenpage-var-widgets"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <a class="reference internal" href="subscreenwidget.html#classes-subscreenwidget"><span class="std std-ref">subscreenwidget[]</span></a> <strong>Widgets</strong>  <a class="reference internal" href="#classes-subscreenpage-var-widgets"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/subscreenpage.zh#L19">Source</a></p>
+<p id="classes-subscreenpage-var-widgets"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <a class="reference internal" href="subscreenwidget.html#classes-subscreenwidget"><span class="std std-ref">subscreenwidget[]</span></a> <strong>Widgets</strong>  <a class="reference internal" href="#classes-subscreenpage-var-widgets"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/subscreenpage.zh#L27">Source</a></p>
 <p class="classref-comment">The widgets on the page, ordered by their index.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenpage-var-subdata"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> <a class="reference internal" href="subscreendata.html#classes-subscreendata"><span class="std std-ref">subscreendata</span></a> <strong>SubData</strong>  <a class="reference internal" href="#classes-subscreenpage-var-subdata"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/subscreenpage.zh#L24">Source</a></p>
+<p id="classes-subscreenpage-var-subdata"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <a class="reference internal" href="subscreendata.html#classes-subscreendata"><span class="std std-ref">subscreendata</span></a> <strong>SubData</strong>  <a class="reference internal" href="#classes-subscreenpage-var-subdata"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/subscreenpage.zh#L32">Source</a></p>
 <p class="classref-comment">The subscreendata that owns this page.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenpage-var-cursorpos"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CursorPos</strong>  <a class="reference internal" href="#classes-subscreenpage-var-cursorpos"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/subscreenpage.zh#L29">Source</a></p>
+<p id="classes-subscreenpage-var-cursorpos"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CursorPos</strong>  <a class="reference internal" href="#classes-subscreenpage-var-cursorpos"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/subscreenpage.zh#L37">Source</a></p>
 <p class="classref-comment">The position value of the selector.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-subscreenpage-fun-getwidget"><a class="reference internal" href="subscreenwidget.html#classes-subscreenwidget"><span class="std std-ref">subscreenwidget</span></a> <strong>GetWidget</strong>(char32[] label) <a class="reference internal" href="#classes-subscreenpage-fun-getwidget"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/subscreenpage.zh#L36">Source</a></p>
+<p class="classref-method" id="classes-subscreenpage-fun-getwidget"><a class="reference internal" href="subscreenwidget.html#classes-subscreenwidget"><span class="std std-ref">subscreenwidget</span></a> <strong>GetWidget</strong>(char32[] label) <a class="reference internal" href="#classes-subscreenpage-fun-getwidget"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/subscreenpage.zh#L44">Source</a></p>
 <p class="classref-comment">Returns the first widget with a matching label, or NULL if none exists.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-subscreenpage-fun-createwidget"><a class="reference internal" href="subscreenwidget.html#classes-subscreenwidget"><span class="std std-ref">subscreenwidget</span></a> <strong>CreateWidget</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> type) <a class="reference internal" href="#classes-subscreenpage-fun-createwidget"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/subscreenpage.zh#L45">Source</a></p>
+<p class="classref-method" id="classes-subscreenpage-fun-createwidget"><a class="reference internal" href="subscreenwidget.html#classes-subscreenwidget"><span class="std std-ref">subscreenwidget</span></a> <strong>CreateWidget</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> type) <a class="reference internal" href="#classes-subscreenpage-fun-createwidget"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/subscreenpage.zh#L53">Source</a></p>
 <p class="classref-comment">Adds a new widget of the specified type to the end of the page.</p>
 <p class="classref-comment">Returns that widget, or NULL if fails.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-subscreenpage-fun-swapwidgets"><abbr title="No return value.">void</abbr> <strong>SwapWidgets</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index2) <a class="reference internal" href="#classes-subscreenpage-fun-swapwidgets"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/subscreenpage.zh#L52">Source</a></p>
+<p class="classref-method" id="classes-subscreenpage-fun-swapwidgets"><abbr title="No return value.">void</abbr> <strong>SwapWidgets</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index1, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index2) <a class="reference internal" href="#classes-subscreenpage-fun-swapwidgets"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/subscreenpage.zh#L60">Source</a></p>
 <p class="classref-comment">Swaps the widgets at the two indexes.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-subscreenpage-fun-findwidget"><a class="reference internal" href="subscreenwidget.html#classes-subscreenwidget"><span class="std std-ref">subscreenwidget</span></a> <strong>FindWidget</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cursor_pos) <a class="reference internal" href="#classes-subscreenpage-fun-findwidget"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/subscreenpage.zh#L60">Source</a></p>
+<p class="classref-method" id="classes-subscreenpage-fun-findwidget"><a class="reference internal" href="subscreenwidget.html#classes-subscreenwidget"><span class="std std-ref">subscreenwidget</span></a> <strong>FindWidget</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cursor_pos) <a class="reference internal" href="#classes-subscreenpage-fun-findwidget"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/subscreenpage.zh#L68">Source</a></p>
 <p class="classref-comment">Returns the widget designated by the specified cursor position, or NULL
 if it fails.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-subscreenpage-fun-selectormove"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorMove</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cursor_pos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> flags) <a class="reference internal" href="#classes-subscreenpage-fun-selectormove"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/subscreenpage.zh#L73">Source</a></p>
+<p class="classref-method" id="classes-subscreenpage-fun-selectormove"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorMove</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> cursor_pos, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> dir, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> flags) <a class="reference internal" href="#classes-subscreenpage-fun-selectormove"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/subscreenpage.zh#L78">Source</a></p>
 <p class="classref-comment">Returns the new cursor position found by moving in ‘dir’ from
 ‘cursor_pos’.</p>
-<p class="classref-comment">‘flags’ determines:</p>
-<ul class="classref-comment simple">
-<li><p>SUBSEL_FLAG_NO_NONEQUIP: Skip widgets that are “Non-equippable”</p></li>
-<li><p>SUBSEL_FLAG_NEED_ITEM: Skip widgets that currently have no equippable item</p></li>
-</ul>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">flags</span></code> are of type <a class="reference internal" href="#globals-enum-movesubscreenselectorbitflags"><span class="std std-ref">MoveSubscreenSelectorBitflags (SUBSEL_)</span></a>.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-subscreenpage-fun-delete"><abbr title="No return value.">void</abbr> <strong>Delete</strong>() <a class="reference internal" href="#classes-subscreenpage-fun-delete"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/subscreenpage.zh#L82">Source</a></p>
+<p class="classref-method" id="classes-subscreenpage-fun-delete"><abbr title="No return value.">void</abbr> <strong>Delete</strong>() <a class="reference internal" href="#classes-subscreenpage-fun-delete"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/subscreenpage.zh#L87">Source</a></p>
 <p class="classref-comment">Deletes the page.</p>
 <p class="classref-comment">If it is the last page, an empty page will be created in its’ place.</p>
 </section>
@@ -606,6 +663,7 @@ if it fails.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerations">Enumerations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-descriptions">Function descriptions</a></li>
 </ul>
@@ -636,7 +694,7 @@ if it fails.</p>
 
   <p class="copyright">
     
-      © Copyright 2024, ZQuest Classic Foundation.
+      © Copyright 2025, ZQuest Classic Foundation.
       <br/>
     
   </p>

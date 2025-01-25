@@ -31,6 +31,9 @@
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/main.css?v=b77fac97" />
+    <link rel="stylesheet" type="text/css" href="../../_static/zscript.css?v=3afc8195" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
@@ -41,15 +44,19 @@
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/globals/Input';</script>
     <script src="../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../_static/zscript.js?v=0bdd3061"></script>
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Region" href="Region.html" />
     <link rel="prev" title="Hero" href="Hero.html" />
-    <link href="../../_static/main.css" rel="stylesheet" type="text/css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -271,7 +278,55 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../lang/types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lang/explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="functions.html">Global functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="constants.html">Global constants</a></li>
@@ -394,10 +449,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ffcscript/index.html">ffcscript</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../libs/ffcscript/ffcscript.html">ffcscript.zh</a></li>
-</ul>
-</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
 </ul>
@@ -492,10 +543,10 @@
 <tr class="row-odd"><td><p>bool[]</p></td>
 <td><p><a class="reference internal" href="#globals-input-var-disablebutton"><span class="std std-ref">DisableButton</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> bool[]</p></td>
+<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> bool[]</p></td>
 <td><p><a class="reference internal" href="#globals-input-var-joypad"><span class="std std-ref">Joypad</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> bool[]</p></td>
+<tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> bool[]</p></td>
 <td><p><a class="reference internal" href="#globals-input-var-readkey"><span class="std std-ref">ReadKey</span></a> <strong>deprecated</strong></p></td>
 </tr>
 <tr class="row-even"><td><p>bool[]</p></td>
@@ -508,60 +559,110 @@
 </table>
 </div>
 </section>
+<section id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Link to this heading">#</a></h2>
+<p id="globals-enum-button">enum <strong>Button</strong>: <a class="reference internal" href="#globals-enum-button"><span class="std std-ref">🔗</span></a>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/input.zh#L2">Source</a></p>
+<p class="classref-comment">Controller buttons.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-up"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_UP</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-down"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_DOWN</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-left"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_LEFT</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-right"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_RIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-a"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_A</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-b"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_B</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-start"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_START</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-l"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_L</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-r"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_R</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-map"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_MAP</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-ex1"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_EX1</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-x"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_X</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-ex2"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_EX2</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-y"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_Y</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-ex3"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_EX3</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-ex4"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_EX4</strong> = <code class="docutils literal notranslate"><span class="pre">13</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-stickup"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_STICKUP</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-stickdown"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_STICKDOWN</strong> = <code class="docutils literal notranslate"><span class="pre">15</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-stickleft"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_STICKLEFT</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-stickright"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_STICKRIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">17</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-axis-up"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_AXIS_UP</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-axis-down"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_AXIS_DOWN</strong> = <code class="docutils literal notranslate"><span class="pre">15</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-axis-left"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_AXIS_LEFT</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-axis-right"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_AXIS_RIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">17</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-cb-max"><a class="reference internal" href="#globals-enum-button"><span class="std std-ref">Button</span></a> <strong>CB_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">18</span></code></p>
+<hr class="classref-item-separator docutils" />
+<p id="globals-enum-mousebuttonbitflags">enum <strong>MouseButtonBitflags</strong>: <a class="reference internal" href="#globals-enum-mousebuttonbitflags"><span class="std std-ref">🔗</span></a>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/input.zh#L34">Source</a></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-mb-leftclick"><a class="reference internal" href="#globals-enum-mousebuttonbitflags"><span class="std std-ref">MouseButtonBitflags</span></a> <strong>MB_LEFTCLICK</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-mb-rightclick"><a class="reference internal" href="#globals-enum-mousebuttonbitflags"><span class="std std-ref">MouseButtonBitflags</span></a> <strong>MB_RIGHTCLICK</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-mb-middleclick"><a class="reference internal" href="#globals-enum-mousebuttonbitflags"><span class="std std-ref">MouseButtonBitflags</span></a> <strong>MB_MIDDLECLICK</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<hr class="classref-item-separator docutils" />
+<p id="globals-enum-mouseindex">enum <strong>MouseIndex</strong>: <a class="reference internal" href="#globals-enum-mouseindex"><span class="std std-ref">🔗</span></a>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/input.zh#L42">Source</a></p>
+<p class="classref-comment">Used with <a class="reference internal" href="#globals-input-var-mouse"><span class="std std-ref">Input-&gt;Mouse[]</span></a>.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-mouse-x"><a class="reference internal" href="#globals-enum-mouseindex"><span class="std std-ref">MouseIndex</span></a> <strong>MOUSE_X</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-mouse-y"><a class="reference internal" href="#globals-enum-mouseindex"><span class="std std-ref">MouseIndex</span></a> <strong>MOUSE_Y</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-mouse-z"><a class="reference internal" href="#globals-enum-mouseindex"><span class="std std-ref">MouseIndex</span></a> <strong>MOUSE_Z</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-mouse-left"><a class="reference internal" href="#globals-enum-mouseindex"><span class="std std-ref">MouseIndex</span></a> <strong>MOUSE_LEFT</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-mouse-right"><a class="reference internal" href="#globals-enum-mouseindex"><span class="std std-ref">MouseIndex</span></a> <strong>MOUSE_RIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-mouse-middle"><a class="reference internal" href="#globals-enum-mouseindex"><span class="std std-ref">MouseIndex</span></a> <strong>MOUSE_MIDDLE</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+</section>
+<hr class="classref-item-separator docutils" />
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="globals-input-var-press">bool[] <strong>Press</strong>  <a class="reference internal" href="#globals-input-var-press"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/input.zh#L11">Source</a></p>
-<p class="classref-comment">Whether the given button (<code class="docutils literal notranslate"><span class="pre">CB_</span></code> constants) is down (or ‘pressed’).</p>
+<p id="globals-input-var-press">bool[] <strong>Press</strong>  <a class="reference internal" href="#globals-input-var-press"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/input.zh#L63">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="#globals-input-var-button"><span class="std std-ref">Button[]</span></a></p>
+<p class="classref-comment">Whether the given button is down (or ‘pressed’).</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-input-var-button">bool[] <strong>Button</strong>  <a class="reference internal" href="#globals-input-var-button"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/input.zh#L16">Source</a></p>
-<p class="classref-comment">Whether the given button (<code class="docutils literal notranslate"><span class="pre">CB_</span></code> constants) is down (or ‘pressed’).</p>
+<p id="globals-input-var-button">bool[] <strong>Button</strong>  <a class="reference internal" href="#globals-input-var-button"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/input.zh#L69">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="#globals-input-var-button"><span class="std std-ref">Button[]</span></a></p>
+<p class="classref-comment">Whether the given button is down (or ‘pressed’).</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-input-var-keypress">bool[] <strong>KeyPress</strong>  <a class="reference internal" href="#globals-input-var-keypress"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/input.zh#L22">Source</a></p>
-<p class="classref-comment">Returns true if the respective key was just pressed this frame (similar
-to <a class="reference internal" href="#globals-input-var-press"><span class="std std-ref">Press[]</span></a>, but for keys instead of buttons).</p>
+<p id="globals-input-var-keypress">bool[] <strong>KeyPress</strong>  <a class="reference internal" href="#globals-input-var-keypress"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/input.zh#L75">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="../libs/std/std_keyboard.html#libs-std-enum-keycode"><span class="std std-ref">KeyCode (KEY_)</span></a></p>
+<p class="classref-comment">Returns true if the respective key was just pressed this frame.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-input-var-key">bool[] <strong>Key</strong>  <a class="reference internal" href="#globals-input-var-key"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/input.zh#L28">Source</a></p>
-<p class="classref-comment">Returns true if the respective key is down this frame (similar to
-<a class="reference internal" href="#globals-input-var-button"><span class="std std-ref">Button[]</span></a>, but for keys instead of buttons).</p>
+<p id="globals-input-var-key">bool[] <strong>Key</strong>  <a class="reference internal" href="#globals-input-var-key"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/input.zh#L81">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="../libs/std/std_keyboard.html#libs-std-enum-keycode"><span class="std std-ref">KeyCode (KEY_)</span></a></p>
+<p class="classref-comment">Returns true if the respective key is down this frame.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-input-var-mouse"><abbr title="Could be any type.">untyped</abbr>[] <strong>Mouse</strong>  <a class="reference internal" href="#globals-input-var-mouse"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/input.zh#L31">Source</a></p>
+<p id="globals-input-var-mouse"><abbr title="Could be any type.">untyped</abbr>[] <strong>Mouse</strong>  <a class="reference internal" href="#globals-input-var-mouse"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/input.zh#L84">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-input-var-keybindings"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>KeyBindings</strong>  <a class="reference internal" href="#globals-input-var-keybindings"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/input.zh#L37">Source</a></p>
-<p class="classref-comment">For each index (using <code class="docutils literal notranslate"><span class="pre">CB_</span></code> constants to access), the keyboard key
-(<code class="docutils literal notranslate"><span class="pre">KEY_</span></code> constants) that is bound to that button.</p>
+<p id="globals-input-var-keybindings"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>KeyBindings</strong>  <a class="reference internal" href="#globals-input-var-keybindings"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/input.zh#L91">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="#globals-input-var-button"><span class="std std-ref">Button[]</span></a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="../libs/std/std_keyboard.html#libs-std-enum-keycode"><span class="std std-ref">KeyCode (KEY_)</span></a></p>
+<p class="classref-comment">For each button, the keyboard key that is bound to that button.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-input-var-modifierkeys"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ModifierKeys</strong>  <a class="reference internal" href="#globals-input-var-modifierkeys"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/input.zh#L42">Source</a></p>
-<p class="classref-comment">Returns the modifier keys as a bitwise flagset.</p>
+<p id="globals-input-var-modifierkeys"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ModifierKeys</strong>  <a class="reference internal" href="#globals-input-var-modifierkeys"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/input.zh#L97">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="../libs/std/std_keyboard.html#libs-std-enum-keymodifierbitflags"><span class="std std-ref">KeyModifierBitflags (KB_)</span></a></p>
+<p class="classref-comment">The state of the modifier keys.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-input-var-disablekey">bool[] <strong>DisableKey</strong>  <a class="reference internal" href="#globals-input-var-disablekey"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/input.zh#L48">Source</a></p>
-<p class="classref-comment">Whether a given keyboard key (<code class="docutils literal notranslate"><span class="pre">KEY_</span></code> constants) is disabled from having
+<p id="globals-input-var-disablekey">bool[] <strong>DisableKey</strong>  <a class="reference internal" href="#globals-input-var-disablekey"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/input.zh#L104">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="../libs/std/std_keyboard.html#libs-std-enum-keycode"><span class="std std-ref">KeyCode (KEY_)</span></a></p>
+<p class="classref-comment">Whether a given keyboard key is disabled from having
 any in-engine effect.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-input-var-disablebutton">bool[] <strong>DisableButton</strong>  <a class="reference internal" href="#globals-input-var-disablebutton"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/input.zh#L54">Source</a></p>
-<p class="classref-comment">Whether a given button (<code class="docutils literal notranslate"><span class="pre">CB_</span></code> constants) is disabled from having any
-in-engine effect.</p>
+<p id="globals-input-var-disablebutton">bool[] <strong>DisableButton</strong>  <a class="reference internal" href="#globals-input-var-disablebutton"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/input.zh#L110">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="#globals-input-var-button"><span class="std std-ref">Button[]</span></a></p>
+<p class="classref-comment">Whether a given button is disabled from having any in-engine effect.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-input-var-joypad"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> bool[] <strong>Joypad</strong>  <a class="reference internal" href="#globals-input-var-joypad"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/input.zh#L62">Source</a></p>
-<p class="classref-comment">Similar to Press, except that it only returns presses from a joystick
+<p id="globals-input-var-joypad"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> bool[] <strong>Joypad</strong>  <a class="reference internal" href="#globals-input-var-joypad"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/input.zh#L117">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="#globals-input-var-button"><span class="std std-ref">Button[]</span></a></p>
+<p class="classref-comment">Similar to <a class="reference internal" href="#globals-input-var-press"><span class="std std-ref">Press[]</span></a>, except that it only returns presses from a joystick
 device, not a keyboard.</p>
-<p class="classref-comment">Use the <code class="docutils literal notranslate"><span class="pre">CB_</span></code> constants to access this array.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-input-var-readkey"><abbr title="This method has no side effects. It doesn't modify any of the instance's member variables.">const</abbr> bool[] <strong>ReadKey</strong>  <a class="reference internal" href="#globals-input-var-readkey"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/input.zh#L66">Source</a></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Deprecated!</strong> Use <a class="reference internal" href="#globals-input-var-keypress"><span class="std std-ref">KeyPress[]</span></a> instead!</p>
+<p id="globals-input-var-readkey"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> bool[] <strong>ReadKey</strong>  <a class="reference internal" href="#globals-input-var-readkey"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/input.zh#L121">Source</a></p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated: </span>Use <a class="reference internal" href="#globals-input-var-keypress"><span class="std std-ref">KeyPress[]</span></a> instead!</p>
 </div>
 <hr class="classref-item-separator docutils" />
-<p id="globals-input-var-hold">bool[] <strong>Hold</strong>  <a class="reference internal" href="#globals-input-var-hold"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/input.zh#L70">Source</a></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Deprecated!</strong> Use <a class="reference internal" href="#globals-input-var-button"><span class="std std-ref">Button[]</span></a> instead!</p>
+<p id="globals-input-var-hold">bool[] <strong>Hold</strong>  <a class="reference internal" href="#globals-input-var-hold"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/input.zh#L125">Source</a></p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated: </span>Use <a class="reference internal" href="#globals-input-var-button"><span class="std std-ref">Button[]</span></a> instead!</p>
 </div>
 <hr class="classref-item-separator docutils" />
-<p id="globals-input-var-keyraw">bool[] <strong>KeyRaw</strong>  <a class="reference internal" href="#globals-input-var-keyraw"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4d944b2f4735d3af0d11b1cc1eb5191efe652d72/resources/include/bindings/input.zh#L74">Source</a></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Deprecated!</strong> Unsafe!</p>
+<p id="globals-input-var-keyraw">bool[] <strong>KeyRaw</strong>  <a class="reference internal" href="#globals-input-var-keyraw"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/45b9f17949bd5ee1c7434036e0f176796a8cc15b/resources/include/bindings/input.zh#L129">Source</a></p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated: </span>Unsafe!</p>
 </div>
 </section>
 </section>
@@ -614,6 +715,7 @@ device, not a keyboard.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerations">Enumerations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
 </ul>
   </nav></div>
@@ -643,7 +745,7 @@ device, not a keyboard.</p>
 
   <p class="copyright">
     
-      © Copyright 2024, ZQuest Classic Foundation.
+      © Copyright 2025, ZQuest Classic Foundation.
       <br/>
     
   </p>
