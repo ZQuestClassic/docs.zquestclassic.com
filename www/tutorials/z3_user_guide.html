@@ -343,7 +343,7 @@
                   
   <section id="z3-user-guide">
 <h1>Z3 User Guide<a class="headerlink" href="#z3-user-guide" title="Link to this heading">#</a></h1>
-<p>This is written for experienced users of ZC, and describes the major changes related to the new <code class="inlinezs pre docutils literal notranslate"><span class="pre">z3</span></code> region scrolling feature.</p>
+<p>This is written for experienced users of ZC, and describes the major changes related to the new “z3” scrolling regions feature.</p>
 <p>“z3” refers to the third Zelda, A Link To The Past, which unlike the original Zelda features playing areas larger than a single screen. To accomplish the same in ZQuest Classic, one had to rewrite the entire game engine and every feature you wanted to use in ZScript, an incredibly daunting task. Now, ZQuest Classic supports z3-style screens via a new features: regions.</p>
 <section id="regions">
 <h2>Regions<a class="headerlink" href="#regions" title="Link to this heading">#</a></h2>
@@ -368,6 +368,15 @@ region is loaded.</p>
 <p>When in a scrolling region, enemies and their weapons are paused if they are outside the current viewport, with some buffer (48px). However, weapon/npc scripts still run.</p>
 <p>Player weapons are considered “out of bounds” when they leave the viewport. Most player weapons are deleted when they go out of bounds (unless <code class="inlinezs pre docutils literal notranslate"><span class="pre">CollDetection</span></code> is false), such as arrows. But some weapon types have special behavior: for example, boomerangs just begin returning to the hero.</p>
 </section>
+<section id="mazes">
+<h2>Mazes<a class="headerlink" href="#mazes" title="Link to this heading">#</a></h2>
+<p>A minor addition, but mazes have some new configuration options to provide more flexibility, especially useful within regions.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Can</span> <span class="pre">Get</span> <span class="pre">Lost</span> <span class="pre">In</span> <span class="pre">Maze</span></code> - Going any direction other than the exit gets the hero “lost” - in this state, leaving in the direction of the exit does not leave the maze, but does get the hero “unlost” (so using the exit direction once more will actually leave the maze)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Loopy</span> <span class="pre">Maze</span></code> - Instead of scrolling, taking any non-exit direction in a maze will insta-warp the player to the opposite side (not reloading the screen at all), with an optional wipe effect (see Maze Path dialog)</p></li>
+</ul>
+<p>Mazes work on any screen of a region.</p>
+</section>
 <section id="zscript">
 <h2>ZScript<a class="headerlink" href="#zscript" title="Link to this heading">#</a></h2>
 <section id="tl-dr">
@@ -390,7 +399,11 @@ region is loaded.</p>
 </section>
 <section id="id1">
 <h3>Viewport<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
-<p>The <a class="reference internal" href="../zscript/globals/Viewport.html#globals-viewport"><span class="std std-ref">Viewport</span></a> global defines the visible portion of the current region - what the player currently sees. Via scripting, the viewport can be modified to show any part of the region. See the documentation more details.</p>
+<p>The <a class="reference internal" href="../zscript/globals/Viewport.html#globals-viewport"><span class="std std-ref">Viewport</span></a> global defines the visible portion of the current region - what the player currently sees. Via scripting, the viewport can be modified to show any part of the region. See the documentation for more details.</p>
+</section>
+<section id="region">
+<h3>Region<a class="headerlink" href="#region" title="Link to this heading">#</a></h3>
+<p>The <a class="reference internal" href="../zscript/globals/Region.html#globals-region"><span class="std std-ref">Region</span></a> global defines the currently active region. See the documentation for more details.</p>
 </section>
 <section id="sprite-spawnscreen">
 <h3>sprite SpawnScreen<a class="headerlink" href="#sprite-spawnscreen" title="Link to this heading">#</a></h3>
@@ -515,10 +528,12 @@ region is loaded.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#regions">Regions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#viewport">Viewport</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mazes">Mazes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zscript">ZScript</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tl-dr">TL;DR</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#drawing">Drawing</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Viewport</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#region">Region</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sprite-spawnscreen">sprite SpawnScreen</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#game-heroscreen">Game-&gt;HeroScreen</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapdata-and-screen"><code class="inlinezs pre docutils literal notranslate"><span class="pre">mapdata</span></code> and <code class="inlinezs pre docutils literal notranslate"><span class="pre">Screen</span></code></a></li>
