@@ -362,7 +362,7 @@ region is loaded.</p>
 <h2>Viewport<a class="headerlink" href="#viewport" title="Link to this heading">#</a></h2>
 <p>The traditional viewport for ZC has been 256 pixels wide by 176 pixels tall - or 16x11 combos. This continues to be the viewport when in a non-scrolling region.</p>
 <p>In a scrolling region, the viewport pans as the player moves across the region. By default the viewport is centered to draw the player in the middle of the screen, but this is bounded by the edges of the region to prevent showing beyond the current region. This behavior can be customized via scripting.</p>
-<p>There is a new option to have an extended height viewport (applicable only when a region is taller than 1 screen). This makes the viewport 232 pixels (or 3.5 combos taller) - the same height as the passive subscreen. This effectively centers the player as if the passive subscreen did not exist. This is controlled by a DMap flag. When using an extended height viewport, the passive subscreen should be configured to have no background color. Without a transparent passive subscreen, it will look very odd. Similarly, if not using an extended height viewport, the passive subscreen should be opaque.</p>
+<p>There is a new option to have an extended height viewport (applicable only when a region is taller than 1 screen). This makes the viewport 232 pixels (or 3.5 combos taller - the height of the passive subscreen). This effectively centers the player as if the passive subscreen did not exist. This is controlled by a DMap flag. When using an extended height viewport, the passive subscreen should be configured to have no background color. Without a transparent passive subscreen, it will look very odd. Similarly, if not using an extended height viewport, the passive subscreen should be opaque.</p>
 <p>The viewport height is only extended if the DMap flag is on, and if the current region is taller than one screen.</p>
 <p>Note: all this is ignoring the fact that the bottom 8 pixels has always and continues to be not shown (so minus 8 pixels in the height for the true visual viewport height).</p>
 <p>When in a scrolling region, enemies and their weapons are paused if they are outside the current viewport, with some buffer (48px). However, weapon/npc scripts still run.</p>
@@ -403,7 +403,12 @@ region is loaded.</p>
 </section>
 <section id="region">
 <h3>Region<a class="headerlink" href="#region" title="Link to this heading">#</a></h3>
-<p>The <a class="reference internal" href="../zscript/globals/Region.html#globals-region"><span class="std std-ref">Region</span></a> global defines the currently active region. See the documentation for more details.</p>
+<p>The <a class="reference internal" href="../zscript/globals/Region.html#globals-region"><span class="std std-ref">Region</span></a> global defines the currently active region and some helper functions. See the documentation for more details.</p>
+<p>There’s also some functions for configuring region ids:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../zscript/globals/functions.html#globals-fun-clearregion"><span class="std std-ref">void ClearRegion(int map)</span></a></p></li>
+<li><p><a class="reference internal" href="../zscript/globals/functions.html#globals-fun-setregion"><span class="std std-ref">void SetRegion(int map, int origin_screen, int width, int height, int region_id)</span></a></p></li>
+</ul>
 </section>
 <section id="sprite-spawnscreen">
 <h3>sprite SpawnScreen<a class="headerlink" href="#sprite-spawnscreen" title="Link to this heading">#</a></h3>
@@ -464,17 +469,6 @@ region is loaded.</p>
 <p>Each individual screen within a region may have up to 128 FFCs. The number used to uniquely identify an FFC in the current region is <a class="reference internal" href="../zscript/classes/ffc.html#classes-ffc-var-id"><span class="std std-ref">ffc::ID</span></a>. The maximum FFC ID for the currently loaded region is <code class="inlinezs pre docutils literal notranslate"><span class="pre">MAX_FFC</span></code>.</p>
 <p>To load the FFC with the specified ID, use <code class="inlinezs pre docutils literal notranslate"><span class="pre">Screen-&gt;LoadFFC(int</span> <span class="pre">ffc_id)</span></code>.</p>
 <p>To load the FFC at a specific index for a given screen, use <code class="inlinezs pre docutils literal notranslate"><span class="pre">Screen-&gt;LoadFFC(int</span> <span class="pre">screen,</span> <span class="pre">int</span> <span class="pre">index)</span></code>.</p>
-</section>
-<section id="region-related-functions">
-<h3>Region-related functions<a class="headerlink" href="#region-related-functions" title="Link to this heading">#</a></h3>
-<p>New functions in <code class="inlinezs pre docutils literal notranslate"><span class="pre">std</span></code> (see <a class="reference internal" href="../zscript/libs/std/std_functions.html"><span class="doc">std_functions.zh</span></a> for details):</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="../zscript/libs/std/std_functions.html#libs-std-fun-regionrelativescreenx"><span class="std std-ref">int RegionRelativeScreenX(int scr)</span></a></p></li>
-<li><p><a class="reference internal" href="../zscript/libs/std/std_functions.html#libs-std-fun-regionrelativescreeny"><span class="std std-ref">int RegionRelativeScreenY(int scr)</span></a></p></li>
-<li><p><a class="reference internal" href="../zscript/libs/std/std_functions.html#libs-std-fun-regionworldoffsetx"><span class="std std-ref">int RegionWorldOffsetX(int scr)</span></a></p></li>
-<li><p><a class="reference internal" href="../zscript/libs/std/std_functions.html#libs-std-fun-regionworldoffsety"><span class="std std-ref">int RegionWorldOffsetY(int scr)</span></a></p></li>
-<li><p><a class="reference internal" href="../zscript/libs/std/std_functions.html#libs-std-fun-regionincludesscreen"><span class="std std-ref">bool RegionIncludesScreen(int scr)</span></a></p></li>
-</ul>
 </section>
 </section>
 </section>
@@ -538,7 +532,6 @@ region is loaded.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#game-heroscreen">Game-&gt;HeroScreen</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapdata-and-screen"><code class="inlinezs pre docutils literal notranslate"><span class="pre">mapdata</span></code> and <code class="inlinezs pre docutils literal notranslate"><span class="pre">Screen</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ffcs">FFCs</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#region-related-functions">Region-related functions</a></li>
 </ul>
 </li>
 </ul>
