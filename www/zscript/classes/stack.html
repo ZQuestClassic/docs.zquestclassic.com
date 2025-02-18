@@ -342,6 +342,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../globals/Region.html">Region</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../globals/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../globals/Text.html">Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Viewport.html">Viewport</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../globals/ZInfo.html">ZInfo</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
@@ -578,22 +579,22 @@
 </section>
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="classes-stack-var-size"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>Size</strong>  <a class="reference internal" href="#classes-stack-var-size"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/stack.zh#L11">Source</a></p>
+<p id="classes-stack-var-size"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>Size</strong>  <a class="reference internal" href="#classes-stack-var-size"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/stack.zh#L11">Source</a></p>
 <p class="classref-comment">The size of the stack, given as a LONG. This means that a stack with 5
 items will have a size of <code class="docutils literal notranslate"><span class="pre">5L</span></code>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-stack-var-full"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> bool <strong>Full</strong>  <a class="reference internal" href="#classes-stack-var-full"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/stack.zh#L16">Source</a></p>
+<p id="classes-stack-var-full"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> bool <strong>Full</strong>  <a class="reference internal" href="#classes-stack-var-full"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/stack.zh#L16">Source</a></p>
 <p class="classref-comment">Returns true if the stack cannot hold any more elements.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="constructor-descriptions">
 <h2>Constructor descriptions<a class="headerlink" href="#constructor-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-stack-ctor-stack"><a class="reference internal" href="#classes-stack"><span class="std std-ref">stack</span></a> <strong>stack</strong>() <a class="reference internal" href="#classes-stack-ctor-stack"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/stack.zh#L5">Source</a></p>
+<p class="classref-method" id="classes-stack-ctor-stack"><a class="reference internal" href="#classes-stack"><span class="std std-ref">stack</span></a> <strong>stack</strong>() <a class="reference internal" href="#classes-stack-ctor-stack"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/stack.zh#L5">Source</a></p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-stack-fun-free"><abbr title="No return value.">void</abbr> <strong>Free</strong>() <a class="reference internal" href="#classes-stack-fun-free"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/stack.zh#L27">Source</a></p>
+<p class="classref-method" id="classes-stack-fun-free"><abbr title="No return value.">void</abbr> <strong>Free</strong>() <a class="reference internal" href="#classes-stack-fun-free"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/stack.zh#L27">Source</a></p>
 <p class="classref-comment">De-allocates this <code class="docutils literal notranslate"><span class="pre">stack</span></code> pointer, so that its’ pointer ID may be
 re-used. You may only have a limited number of stack pointers active at a
 time; freeing them when you are done with them helps not reach the limit.</p>
@@ -601,44 +602,44 @@ time; freeing them when you are done with them helps not reach the limit.</p>
 <p><span class="versionmodified deprecated">Deprecated: </span>Free() no longer does anything as of ZC 3.0. Objects are now freed automatically.</p>
 </div>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-stack-fun-own"><abbr title="No return value.">void</abbr> <strong>Own</strong>() <a class="reference internal" href="#classes-stack-fun-own"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/stack.zh#L37">Source</a></p>
+<p class="classref-method" id="classes-stack-fun-own"><abbr title="No return value.">void</abbr> <strong>Own</strong>() <a class="reference internal" href="#classes-stack-fun-own"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/stack.zh#L37">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the stack pointer to the script that calls this
 function. When the script with ‘Ownership’ terminates (at the same time
 its’ local arrays are deallocated), this stack pointer will automatically
 be ‘Free()’d.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-stack-fun-clear"><abbr title="No return value.">void</abbr> <strong>Clear</strong>() <a class="reference internal" href="#classes-stack-fun-clear"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/stack.zh#L44">Source</a></p>
+<p class="classref-method" id="classes-stack-fun-clear"><abbr title="No return value.">void</abbr> <strong>Clear</strong>() <a class="reference internal" href="#classes-stack-fun-clear"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/stack.zh#L44">Source</a></p>
 <p class="classref-comment">Removes every element from the stack.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-stack-fun-pushback"><abbr title="No return value.">void</abbr> <strong>PushBack</strong>(<abbr title="Could be any type.">untyped</abbr> val) <a class="reference internal" href="#classes-stack-fun-pushback"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/stack.zh#L54">Source</a></p>
+<p class="classref-method" id="classes-stack-fun-pushback"><abbr title="No return value.">void</abbr> <strong>PushBack</strong>(<abbr title="Could be any type.">untyped</abbr> val) <a class="reference internal" href="#classes-stack-fun-pushback"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/stack.zh#L54">Source</a></p>
 <p class="classref-comment">Pushes the given value to the back or front of the stack.</p>
 <p class="classref-comment">If the stack is at max capacity, does nothing.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-stack-fun-pushfront"><abbr title="No return value.">void</abbr> <strong>PushFront</strong>(<abbr title="Could be any type.">untyped</abbr> val) <a class="reference internal" href="#classes-stack-fun-pushfront"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/stack.zh#L64">Source</a></p>
+<p class="classref-method" id="classes-stack-fun-pushfront"><abbr title="No return value.">void</abbr> <strong>PushFront</strong>(<abbr title="Could be any type.">untyped</abbr> val) <a class="reference internal" href="#classes-stack-fun-pushfront"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/stack.zh#L64">Source</a></p>
 <p class="classref-comment">Pushes the given value to the back or front of the stack.</p>
 <p class="classref-comment">If the stack is at max capacity, does nothing.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-stack-fun-popback"><abbr title="Could be any type.">untyped</abbr> <strong>PopBack</strong>() <a class="reference internal" href="#classes-stack-fun-popback"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/stack.zh#L73">Source</a></p>
+<p class="classref-method" id="classes-stack-fun-popback"><abbr title="Could be any type.">untyped</abbr> <strong>PopBack</strong>() <a class="reference internal" href="#classes-stack-fun-popback"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/stack.zh#L73">Source</a></p>
 <p class="classref-comment">Removes the back or front element of the stack, and returns it.</p>
 <p class="classref-comment">If the stack is empty, <code class="docutils literal notranslate"><span class="pre">0</span></code> is returned.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-stack-fun-popfront"><abbr title="Could be any type.">untyped</abbr> <strong>PopFront</strong>() <a class="reference internal" href="#classes-stack-fun-popfront"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/stack.zh#L82">Source</a></p>
+<p class="classref-method" id="classes-stack-fun-popfront"><abbr title="Could be any type.">untyped</abbr> <strong>PopFront</strong>() <a class="reference internal" href="#classes-stack-fun-popfront"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/stack.zh#L82">Source</a></p>
 <p class="classref-comment">Removes the back or front element of the stack, and returns it.</p>
 <p class="classref-comment">If the stack is empty, <code class="docutils literal notranslate"><span class="pre">0</span></code> is returned.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-stack-fun-peekback"><abbr title="Could be any type.">untyped</abbr> <strong>PeekBack</strong>() <a class="reference internal" href="#classes-stack-fun-peekback"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/stack.zh#L91">Source</a></p>
+<p class="classref-method" id="classes-stack-fun-peekback"><abbr title="Could be any type.">untyped</abbr> <strong>PeekBack</strong>() <a class="reference internal" href="#classes-stack-fun-peekback"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/stack.zh#L91">Source</a></p>
 <p class="classref-comment">Returns the back or front element of the stack, without removing it.</p>
 <p class="classref-comment">If the stack is empty, <code class="docutils literal notranslate"><span class="pre">0</span></code> is returned.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-stack-fun-peekfront"><abbr title="Could be any type.">untyped</abbr> <strong>PeekFront</strong>() <a class="reference internal" href="#classes-stack-fun-peekfront"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/stack.zh#L100">Source</a></p>
+<p class="classref-method" id="classes-stack-fun-peekfront"><abbr title="Could be any type.">untyped</abbr> <strong>PeekFront</strong>() <a class="reference internal" href="#classes-stack-fun-peekfront"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/stack.zh#L100">Source</a></p>
 <p class="classref-comment">Returns the back or front element of the stack, without removing it.</p>
 <p class="classref-comment">If the stack is empty, <code class="docutils literal notranslate"><span class="pre">0</span></code> is returned.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-stack-fun-get"><abbr title="Could be any type.">untyped</abbr> <strong>Get</strong>(<abbr title="ZScript's real integer type.">long</abbr> ind) <a class="reference internal" href="#classes-stack-fun-get"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/stack.zh#L109">Source</a></p>
+<p class="classref-method" id="classes-stack-fun-get"><abbr title="Could be any type.">untyped</abbr> <strong>Get</strong>(<abbr title="ZScript's real integer type.">long</abbr> ind) <a class="reference internal" href="#classes-stack-fun-get"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/stack.zh#L109">Source</a></p>
 <p class="classref-comment">Returns the element at the index ‘ind’, which is a LONG value. This means
 that <code class="docutils literal notranslate"><span class="pre">0L</span></code> is the first element, <code class="docutils literal notranslate"><span class="pre">1L</span></code> is the second, etc.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-stack-fun-set"><abbr title="No return value.">void</abbr> <strong>Set</strong>(<abbr title="ZScript's real integer type.">long</abbr> ind, <abbr title="Could be any type.">untyped</abbr> val) <a class="reference internal" href="#classes-stack-fun-set"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/stack.zh#L120">Source</a></p>
+<p class="classref-method" id="classes-stack-fun-set"><abbr title="No return value.">void</abbr> <strong>Set</strong>(<abbr title="ZScript's real integer type.">long</abbr> ind, <abbr title="Could be any type.">untyped</abbr> val) <a class="reference internal" href="#classes-stack-fun-set"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/stack.zh#L120">Source</a></p>
 <p class="classref-comment">Overwrites the element at the index ‘ind’ (which is a LONG value) with
 ‘val’. This means that <code class="docutils literal notranslate"><span class="pre">0L</span></code> is the first element, <code class="docutils literal notranslate"><span class="pre">1L</span></code> is the second,
 etc.</p>

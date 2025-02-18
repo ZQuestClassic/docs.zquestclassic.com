@@ -32,7 +32,7 @@
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/main.css?v=d278b2a9" />
+    <link rel="stylesheet" type="text/css" href="../../_static/main.css?v=496e39a3" />
     <link rel="stylesheet" type="text/css" href="../../_static/zscript.css?v=3afc8195" />
   
   <!-- So that users can add custom icons -->
@@ -342,6 +342,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../globals/Region.html">Region</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../globals/Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../globals/Text.html">Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Viewport.html">Viewport</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../globals/ZInfo.html">ZInfo</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
@@ -570,34 +571,26 @@ in the editor, ignoring all the scopes above.</p>
 <td><p>All functions that would log to the console are compiled away,
 producing no code or output.</p></td>
 </tr>
-<tr class="row-odd"><td><p>HEADER_GUARD</p></td>
-<td><p><code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">on</span></code></p></td>
-<td><p><code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">on</span></code> <code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">off</span></code> <code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">error</span></code> <code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">warn</span></code></p></td>
-<td><p>Determines what happens when <a class="reference internal" href="compiler_directives.html#directive-import"><span class="std std-ref">importing</span></a>
-a file that was already imported. If <code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">on</span></code>, prevents the
-duplicate import with no error. Can be set to instead prevent it
-and issue an <code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">error</span></code> or <code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">warn</span></code>ing.</p></td>
-</tr>
-<tr class="row-even"><td><p>NO_ERROR_HALT</p></td>
+<tr class="row-odd"><td><p>NO_ERROR_HALT</p></td>
 <td><p><code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">off</span></code></p></td>
 <td><p><code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">on</span></code> <code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">off</span></code></p></td>
 <td><p>If on, the compiler will keep trying as long as it can, even
 after it encounters an error. If off, it stops after one error.</p></td>
 </tr>
-<tr class="row-odd"><td><p>APPROX_EQUAL_MARGIN</p></td>
+<tr class="row-even"><td><p>APPROX_EQUAL_MARGIN</p></td>
 <td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">0.0100</span></code></p></td>
 <td><p>numbers in <code class="inlinezs pre docutils literal notranslate"><span class="pre">float</span></code>
 range</p></td>
 <td><p>The <code class="inlinezs pre docutils literal notranslate"><span class="pre">~~</span></code> (approximately equal) operator will return <code class="inlinezs pre docutils literal notranslate"><span class="pre">true</span></code> if
 the difference between its operands is <code class="inlinezs pre docutils literal notranslate"><span class="pre">&lt;=</span></code> this value.</p></td>
 </tr>
-<tr class="row-even"><td><p>STRING_SWITCH_CASE_INSENSITIVE</p></td>
+<tr class="row-odd"><td><p>STRING_SWITCH_CASE_INSENSITIVE</p></td>
 <td><p><code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">off</span></code></p></td>
 <td><p><code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">on</span></code> <code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">off</span></code></p></td>
 <td><p>If enabled, <a class="reference internal" href="control_flow/switchcase.html#switch-strs"><span class="std std-ref">switch statements using strings</span></a>
 will match the strings case-insensitively.</p></td>
 </tr>
-<tr class="row-odd"><td><p>WARN_DEPRECATED</p></td>
+<tr class="row-even"><td><p>WARN_DEPRECATED</p></td>
 <td><p><code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">off</span></code></p></td>
 <td><p><code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">on</span></code> <code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">off</span></code> <code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">error</span></code> <code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">warn</span></code></p></td>
 <td><p>If <code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">on</span></code> or <code class="customzs pre hljs hljs-keyword docutils literal notranslate"><span class="pre">warn</span></code>, issues a warning when using

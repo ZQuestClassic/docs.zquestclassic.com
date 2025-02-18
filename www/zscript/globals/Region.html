@@ -342,6 +342,7 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Region</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Screen.html">Screen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Text.html">Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Viewport.html">Viewport</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ZInfo.html">ZInfo</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
@@ -510,14 +511,22 @@
                   
   <section id="region">
 <span id="globals-region"></span><h1>Region<a class="headerlink" href="#region" title="Link to this heading">#</a></h1>
-<p class="classref-comment">Note: this feature is not yet released. See the #z3 channel: <a class="reference external" href="https://discord.com/channels/876899628556091432/1120883971950125147">https://discord.com/channels/876899628556091432/1120883971950125147</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">version</span></code> 2.55.9 - Added for compatability. Variables never vary (besides <a class="reference internal" href="#globals-region-var-originscreenindex"><span class="std std-ref">Region-&gt;OriginScreenIndex</span></a>)</p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">version</span></code> 3.0 - Fully implemented</p>
 <p class="classref-comment">A region is a set of map screens that the player can freely move within.</p>
 <p class="classref-comment">The top-left screen of a region is called the “origin screen”. <a class="reference internal" href="Game.html#globals-game-var-curscreen"><span class="std std-ref">Game-&gt;CurScreen</span></a> is
 always equal to the current region’s origin screen.</p>
 <p class="classref-comment">A region with just a single screen is technically still a region, but is referred to
-as a “non-scrolling region”. Regions larger than one screen are “scrolling regions”.</p>
-<p class="classref-comment">The visible porition of the region currently visible is defined by the <code class="docutils literal notranslate"><span class="pre">Viewport</span></code>.</p>
+as a “non-scrolling region”. A region larger than one screen is a “scrolling region”.</p>
+<p class="classref-comment">The visible porition of the region currently visible is defined by the <a class="reference internal" href="constants.html#globals-var-viewport"><span class="std std-ref">Viewport</span></a>.</p>
+<p class="classref-comment">To configure the actual region layout, see <a class="reference internal" href="functions.html#globals-fun-clearregion"><span class="std std-ref">ClearRegion()</span></a> and <a class="reference internal" href="functions.html#globals-fun-setregion"><span class="std std-ref">SetRegion()</span></a>.</p>
 <p class="classref-comment">Access with <code class="docutils literal notranslate"><span class="pre">Region-&gt;</span></code>.</p>
+<section id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../../tutorials/z3_user_guide.html"><span class="doc">Z3 User Guide</span></a></p></li>
+</ul>
+</section>
 <section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -547,29 +556,75 @@ as a “non-scrolling region”. Regions larger than one screen are “scrolling
 </table>
 </div>
 </section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>bool</p></td>
+<td><p><a class="reference internal" href="#globals-region-fun-includesscreen"><span class="std std-ref">IncludesScreen</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> screen)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#globals-region-fun-relativescreenx"><span class="std std-ref">RelativeScreenX</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> screen)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#globals-region-fun-relativescreeny"><span class="std std-ref">RelativeScreenY</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> screen)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#globals-region-fun-worldoffsetx"><span class="std std-ref">WorldOffsetX</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> screen)</p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#globals-region-fun-worldoffsety"><span class="std std-ref">WorldOffsetY</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> screen)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="globals-region-var-id"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ID</strong>  <a class="reference internal" href="#globals-region-var-id"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/region.zh#L19">Source</a></p>
+<p id="globals-region-var-id"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ID</strong>  <a class="reference internal" href="#globals-region-var-id"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/region.zh#L45">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-region-var-width"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Width</strong>  <a class="reference internal" href="#globals-region-var-width"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/region.zh#L24">Source</a></p>
+<p id="globals-region-var-width"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Width</strong>  <a class="reference internal" href="#globals-region-var-width"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/region.zh#L50">Source</a></p>
 <p class="classref-comment">The number of pixels horizontally. 256 per screen.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-region-var-height"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Height</strong>  <a class="reference internal" href="#globals-region-var-height"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/region.zh#L29">Source</a></p>
+<p id="globals-region-var-height"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Height</strong>  <a class="reference internal" href="#globals-region-var-height"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/region.zh#L55">Source</a></p>
 <p class="classref-comment">The number of pixels vertically. 176 per screen.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-region-var-screenwidth"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ScreenWidth</strong>  <a class="reference internal" href="#globals-region-var-screenwidth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/region.zh#L34">Source</a></p>
+<p id="globals-region-var-screenwidth"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ScreenWidth</strong>  <a class="reference internal" href="#globals-region-var-screenwidth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/region.zh#L60">Source</a></p>
 <p class="classref-comment">The number of screens horizontally.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-region-var-screenheight"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ScreenHeight</strong>  <a class="reference internal" href="#globals-region-var-screenheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/region.zh#L39">Source</a></p>
+<p id="globals-region-var-screenheight"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ScreenHeight</strong>  <a class="reference internal" href="#globals-region-var-screenheight"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/region.zh#L65">Source</a></p>
 <p class="classref-comment">The number of screens vertically.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-region-var-numcombos"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NumCombos</strong>  <a class="reference internal" href="#globals-region-var-numcombos"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/region.zh#L45">Source</a></p>
+<p id="globals-region-var-numcombos"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NumCombos</strong>  <a class="reference internal" href="#globals-region-var-numcombos"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/region.zh#L71">Source</a></p>
 <p class="classref-comment">The number of combo positions. 176 per screen.
-This is the same as <a class="reference internal" href="../libs/std/std_constants.html#libs-std-var-num-combo-pos"><span class="std std-ref">NUM_COMBO_POS</span></a>.</p>
+This is the same as <a class="reference internal" href="constants.html#globals-var-num-combo-pos"><span class="std std-ref">NUM_COMBO_POS</span></a>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="globals-region-var-originscreenindex"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>OriginScreenIndex</strong>  <a class="reference internal" href="#globals-region-var-originscreenindex"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/69fd7e21f342c5cbac07565a97f75e709f15d43d/resources/include/bindings/region.zh#L51">Source</a></p>
+<p id="globals-region-var-originscreenindex"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="ZScript's real integer type.">long</abbr> <strong>OriginScreenIndex</strong>  <a class="reference internal" href="#globals-region-var-originscreenindex"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/region.zh#L77">Source</a></p>
 <p class="classref-comment">The index of the top-left screen in the current region.
 This is the same as <a class="reference internal" href="Game.html#globals-game-var-curscreen"><span class="std std-ref">Game-&gt;CurScreen</span></a>.</p>
+</section>
+<hr class="classref-item-separator docutils" />
+<section id="function-descriptions">
+<h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
+<p class="classref-method" id="globals-region-fun-includesscreen">bool <strong>IncludesScreen</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> screen) <a class="reference internal" href="#globals-region-fun-includesscreen"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/region.zh#L81">Source</a></p>
+<p class="classref-comment">Returns true if the given screen index is inside the current region.
+When not in a region, only returns true if screen is equal to <a class="reference internal" href="Game.html#globals-game-var-curscreen"><span class="std std-ref">Game-&gt;CurScreen</span></a>.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="globals-region-fun-relativescreenx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RelativeScreenX</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> screen) <a class="reference internal" href="#globals-region-fun-relativescreenx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/region.zh#L101">Source</a></p>
+<p class="classref-comment">Given a screen index, returns the screen offset in the X direction in the current region.
+Returns 0 if a screen is not in the current region.</p>
+<p class="classref-comment">Example: If the current region is 4x4 and the origin is screen 5, <code class="docutils literal notranslate"><span class="pre">RelativeScreenX(8)</span> <span class="pre">==</span> <span class="pre">3</span></code>.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="globals-region-fun-relativescreeny"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RelativeScreenY</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> screen) <a class="reference internal" href="#globals-region-fun-relativescreeny"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/region.zh#L116">Source</a></p>
+<p class="classref-comment">Given a screen index, returns the screen offset in the Y direction in the current region.
+Returns 0 if a screen is not in the current region.</p>
+<p class="classref-comment">Example: If the current region is 4x4 and the origin is screen 5, <code class="docutils literal notranslate"><span class="pre">RelativeScreenY(8)</span> <span class="pre">==</span> <span class="pre">3</span></code>.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="globals-region-fun-worldoffsetx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WorldOffsetX</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> screen) <a class="reference internal" href="#globals-region-fun-worldoffsetx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/region.zh#L128">Source</a></p>
+<p class="classref-comment">Given a screen index, returns the world offset in the x direction for the current region.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="globals-region-fun-worldoffsety"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WorldOffsetY</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> screen) <a class="reference internal" href="#globals-region-fun-worldoffsety"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/6b5e98dd706812c478504f6984b06f6111da5dcd/resources/include/bindings/region.zh#L137">Source</a></p>
+<p class="classref-comment">Given a screen index, returns the world offset in the y direction for the current region.</p>
 </section>
 </section>
 
@@ -620,8 +675,11 @@ This is the same as <a class="reference internal" href="Game.html#globals-game-v
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tutorials">Tutorials</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-descriptions">Function descriptions</a></li>
 </ul>
   </nav></div>
 
