@@ -600,7 +600,9 @@ ownership reference to be ‘lost’.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><a class="reference internal" href="../../globals/functions.html#globals-fun-globalobject"><span class="std std-ref">GlobalObject</span></a> marks an object as “global”. Objects that
-are “global” will be saved to the save file, and cannot be destroyed.</p>
+are “global” will be saved to the save file, and cannot be destroyed. Since 3.0, this
+is not explictly needed, since all objects reachable from a global variable or array are
+saved to the save file.</p>
 <p>Calling <a class="reference internal" href="../../globals/functions.html#globals-fun-ownobject"><span class="std std-ref">OwnObject</span></a> marks the object as no longer “global”.</p>
 </div>
 </section>
