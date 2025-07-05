@@ -351,6 +351,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../classes/bottledata.html">bottledata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/bottleshopdata.html">bottleshopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/combodata.html">combodata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/combotrigger.html">combotrigger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/directory.html">directory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/dmapdata.html">dmapdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/dropsetdata.html">dropsetdata</a></li>
@@ -513,62 +514,15 @@
 <span id="globals-debug"></span><h1>Debug<a class="headerlink" href="#debug" title="Link to this heading">#</a></h1>
 <p class="classref-comment">Contains various debug-only functionality.</p>
 <p class="classref-comment">Access with <code class="docutils literal notranslate"><span class="pre">Debug-&gt;</span></code>.</p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated.</span></p>
+</div>
 <section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
-<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
-<td><p><a class="reference internal" href="#globals-debug-var-refffc"><span class="std std-ref">RefFFC</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
-<td><p><a class="reference internal" href="#globals-debug-var-refitem"><span class="std std-ref">RefItem</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
-<td><p><a class="reference internal" href="#globals-debug-var-refitemdata"><span class="std std-ref">RefItemdata</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
-<td><p><a class="reference internal" href="#globals-debug-var-refnpc"><span class="std std-ref">RefNPC</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
-<td><p><a class="reference internal" href="#globals-debug-var-reflweapon"><span class="std std-ref">RefLWeapon</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
-<td><p><a class="reference internal" href="#globals-debug-var-refeweapon"><span class="std std-ref">RefEWeapon</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
-<td><p><a class="reference internal" href="#globals-debug-var-sp"><span class="std std-ref">SP</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
-<td><p><a class="reference internal" href="#globals-debug-var-pc"><span class="std std-ref">PC</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
-<td><p><a class="reference internal" href="#globals-debug-var-gdr"><span class="std std-ref">GDR</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
-<td><p><a class="reference internal" href="#globals-debug-var-playfieldoffset"><span class="std std-ref">PlayfieldOffset</span></a></p></td>
-</tr>
-<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[]</p></td>
-<td><p><a class="reference internal" href="#globals-debug-var-d"><span class="std std-ref">D</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Could be any type.">untyped</abbr></p></td>
-<td><p><a class="reference internal" href="#globals-debug-var-null"><span class="std std-ref">NULL</span></a></p></td>
-</tr>
 <tr class="row-odd"><td><p><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> bool</p></td>
-<td><p><a class="reference internal" href="#globals-debug-var-testing"><span class="std std-ref">Testing</span></a></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="functions">
-<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">#</a></h2>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#globals-debug-fun-triggersecret"><span class="std std-ref">TriggerSecret</span></a>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> secret_flag)</p></td>
-</tr>
-<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
-<td><p><a class="reference internal" href="#globals-debug-fun-breakpoint"><span class="std std-ref">Breakpoint</span></a>(char32[] string = <code class="docutils literal notranslate"><span class="pre">NULL</span></code>) <strong>deprecated</strong></p></td>
+<td><p><a class="reference internal" href="#globals-debug-var-testing"><span class="std std-ref">Testing</span></a> <strong>deprecated</strong></p></td>
 </tr>
 </tbody>
 </table>
@@ -576,52 +530,11 @@
 </section>
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="globals-debug-var-refffc"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RefFFC</strong>  <a class="reference internal" href="#globals-debug-var-refffc"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/debug.zh#L9">Source</a></p>
-<hr class="classref-item-separator docutils" />
-<p id="globals-debug-var-refitem"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RefItem</strong>  <a class="reference internal" href="#globals-debug-var-refitem"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/debug.zh#L12">Source</a></p>
-<hr class="classref-item-separator docutils" />
-<p id="globals-debug-var-refitemdata"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RefItemdata</strong>  <a class="reference internal" href="#globals-debug-var-refitemdata"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/debug.zh#L15">Source</a></p>
-<hr class="classref-item-separator docutils" />
-<p id="globals-debug-var-refnpc"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RefNPC</strong>  <a class="reference internal" href="#globals-debug-var-refnpc"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/debug.zh#L18">Source</a></p>
-<hr class="classref-item-separator docutils" />
-<p id="globals-debug-var-reflweapon"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RefLWeapon</strong>  <a class="reference internal" href="#globals-debug-var-reflweapon"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/debug.zh#L21">Source</a></p>
-<hr class="classref-item-separator docutils" />
-<p id="globals-debug-var-refeweapon"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RefEWeapon</strong>  <a class="reference internal" href="#globals-debug-var-refeweapon"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/debug.zh#L24">Source</a></p>
-<hr class="classref-item-separator docutils" />
-<p id="globals-debug-var-sp"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SP</strong>  <a class="reference internal" href="#globals-debug-var-sp"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/debug.zh#L27">Source</a></p>
-<hr class="classref-item-separator docutils" />
-<p id="globals-debug-var-pc"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PC</strong>  <a class="reference internal" href="#globals-debug-var-pc"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/debug.zh#L30">Source</a></p>
-<hr class="classref-item-separator docutils" />
-<p id="globals-debug-var-gdr"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>GDR</strong>  <a class="reference internal" href="#globals-debug-var-gdr"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/debug.zh#L33">Source</a></p>
-<hr class="classref-item-separator docutils" />
-<p id="globals-debug-var-playfieldoffset"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PlayfieldOffset</strong>  <a class="reference internal" href="#globals-debug-var-playfieldoffset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/debug.zh#L36">Source</a></p>
-<hr class="classref-item-separator docutils" />
-<p id="globals-debug-var-d"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>D</strong>  <a class="reference internal" href="#globals-debug-var-d"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/debug.zh#L55">Source</a></p>
-<p class="classref-comment">This is the value of the ri-&gt;d[] registers.</p>
-<p class="classref-comment">These vary depending on the function, or the instruction.</p>
-<p class="classref-comment">For variable access, SETTER: ri-&gt;d[0] is the value being passed to the
-variable.</p>
-<p class="classref-comment">For variable access, GETTER: ri-&gt;d[0] *MIGHT BE* the value read from ther
-variable. (Need to verify.)</p>
-<p class="classref-comment">For array access, SETTER: ri-&gt;d[0] is the array index, and ri-&gt;d[1] is
-the value.</p>
-<p class="classref-comment">For array access, GETTER: ri-&gt;d[0] is the array index. Not sure on the
-RVal at this time.</p>
-<hr class="classref-item-separator docutils" />
-<p id="globals-debug-var-null"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Could be any type.">untyped</abbr> <strong>NULL</strong>  <a class="reference internal" href="#globals-debug-var-null"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/debug.zh#L58">Source</a></p>
-<hr class="classref-item-separator docutils" />
-<p id="globals-debug-var-testing"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> bool <strong>Testing</strong>  <a class="reference internal" href="#globals-debug-var-testing"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/debug.zh#L64">Source</a></p>
+<p id="globals-debug-var-testing"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> bool <strong>Testing</strong>  <a class="reference internal" href="#globals-debug-var-testing"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/debug.zh#L15">Source</a></p>
 <p class="classref-comment">Returns true if this instance of ZC was launched from the ‘Quest-&gt;Test’
 option in ZQ.</p>
-</section>
-<hr class="classref-item-separator docutils" />
-<section id="function-descriptions">
-<h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="globals-debug-fun-triggersecret"><abbr title="No return value.">void</abbr> <strong>TriggerSecret</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> secret_flag) <a class="reference internal" href="#globals-debug-fun-triggersecret"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/debug.zh#L69">Source</a></p>
-<hr class="classref-item-separator docutils" />
-<p class="classref-method" id="globals-debug-fun-breakpoint"><abbr title="No return value.">void</abbr> <strong>Breakpoint</strong>(char32[] string = <code class="docutils literal notranslate"><span class="pre">NULL</span></code>) <a class="reference internal" href="#globals-debug-fun-breakpoint"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/debug.zh#L76">Source</a></p>
 <div class="deprecated">
-<p><span class="versionmodified deprecated">Deprecated: </span>ZASM debugger no longer exists.</p>
+<p><span class="versionmodified deprecated">Deprecated: </span>Use <a class="reference internal" href="Game.html#globals-game-var-testing"><span class="std std-ref">Game-&gt;Testing</span></a> instead.</p>
 </div>
 </section>
 </section>
@@ -674,9 +587,7 @@ option in ZQ.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-descriptions">Function descriptions</a></li>
 </ul>
   </nav></div>
 

@@ -351,6 +351,7 @@
 <li class="toctree-l1"><a class="reference internal" href="bottledata.html">bottledata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bottleshopdata.html">bottleshopdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="combodata.html">combodata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="combotrigger.html">combotrigger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="directory.html">directory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dmapdata.html">dmapdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dropsetdata.html">dropsetdata</a></li>
@@ -845,7 +846,7 @@
 <section id="enumerations">
 <h2>Enumerations<a class="headerlink" href="#enumerations" title="Link to this heading">#</a></h2>
 <p id="globals-enum-subscreenitembutton">enum <strong>SubscreenItemButton</strong>: <a class="reference internal" href="#globals-enum-subscreenitembutton"><span class="std std-ref">🔗</span></a>
-<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L1">Source</a></p>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L1">Source</a></p>
 <p class="classref-enumeration-constant" id="globals-enum-member-itmbtn-a"><a class="reference internal" href="#globals-enum-subscreenitembutton"><span class="std std-ref">SubscreenItemButton</span></a> <strong>ITMBTN_A</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
 <p class="classref-enumeration-constant" id="globals-enum-member-itmbtn-b"><a class="reference internal" href="#globals-enum-subscreenitembutton"><span class="std std-ref">SubscreenItemButton</span></a> <strong>ITMBTN_B</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
 <p class="classref-enumeration-constant" id="globals-enum-member-itmbtn-x"><a class="reference internal" href="#globals-enum-subscreenitembutton"><span class="std std-ref">SubscreenItemButton</span></a> <strong>ITMBTN_X</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
@@ -853,7 +854,7 @@
 <p class="classref-enumeration-constant" id="globals-enum-member-num-itmbtn"><a class="reference internal" href="#globals-enum-subscreenitembutton"><span class="std std-ref">SubscreenItemButton</span></a> <strong>NUM_ITMBTN</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
 <hr class="classref-item-separator docutils" />
 <p id="globals-enum-conditiontype">enum <strong>ConditionType</strong>: <a class="reference internal" href="#globals-enum-conditiontype"><span class="std std-ref">🔗</span></a>
-<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L10">Source</a></p>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L10">Source</a></p>
 <p class="classref-enumeration-constant" id="globals-enum-member-condty-none"><a class="reference internal" href="#globals-enum-conditiontype"><span class="std std-ref">ConditionType</span></a> <strong>CONDTY_NONE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
 <p class="classref-enumeration-constant" id="globals-enum-member-condty-eq"><a class="reference internal" href="#globals-enum-conditiontype"><span class="std std-ref">ConditionType</span></a> <strong>CONDTY_EQ</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
 <p class="classref-comment">==</p>
@@ -872,679 +873,679 @@
 <hr class="classref-item-separator docutils" />
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="classes-subscreenwidget-var-type"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Type</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-type"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L32">Source</a></p>
+<p id="classes-subscreenwidget-var-type"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Type</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-type"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L32">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="subscreendata.html#globals-enum-subscreenwidgettype"><span class="std std-ref">SubscreenWidgetType (SUBWIDG_)</span></a></p>
 <p class="classref-comment">The widget’s type.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-index"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Index</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-index"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L37">Source</a></p>
+<p id="classes-subscreenwidget-var-index"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Index</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-index"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L37">Source</a></p>
 <p class="classref-comment">The index of this widget within the page.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-page"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <a class="reference internal" href="subscreenpage.html#classes-subscreenpage"><span class="std std-ref">subscreenpage</span></a> <strong>Page</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-page"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L42">Source</a></p>
+<p id="classes-subscreenwidget-var-page"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <a class="reference internal" href="subscreenpage.html#classes-subscreenpage"><span class="std std-ref">subscreenpage</span></a> <strong>Page</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-page"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L42">Source</a></p>
 <p class="classref-comment">The page this widget is within.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-displayitem"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DisplayItem</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-displayitem"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L50">Source</a></p>
+<p id="classes-subscreenwidget-var-displayitem"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DisplayItem</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-displayitem"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L50">Source</a></p>
 <p class="classref-comment">The display/equip item ID for the widget.</p>
 <p class="classref-comment">Reads as -1 if no item exists, the widget is of a type that has no item,
 etc</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-equipitem"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EquipItem</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-equipitem"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L58">Source</a></p>
+<p id="classes-subscreenwidget-var-equipitem"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>EquipItem</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-equipitem"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L58">Source</a></p>
 <p class="classref-comment">The display/equip item ID for the widget.</p>
 <p class="classref-comment">Reads as -1 if no item exists, the widget is of a type that has no item,
 etc</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-pos"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Pos</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-pos"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L65">Source</a></p>
+<p id="classes-subscreenwidget-var-pos"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Pos</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-pos"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L65">Source</a></p>
 <p class="classref-comment">The selector position of this flag.</p>
-<p class="classref-comment">Only used if the widget is selectable (see <code class="docutils literal notranslate"><span class="pre">GenFlags</span></code>).</p>
+<p class="classref-comment">Only used if the widget is selectable (see <a class="reference internal" href="#classes-subscreenwidget-var-genflags"><span class="std std-ref">GenFlags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-posdirs"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>PosDirs</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-posdirs"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L73">Source</a></p>
+<p id="classes-subscreenwidget-var-posdirs"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>PosDirs</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-posdirs"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L73">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="../globals/constants.html#globals-enum-direction"><span class="std std-ref">Direction (DIR_)</span></a></p>
 <p class="classref-comment">The 4 directional positions for the selector.</p>
-<p class="classref-comment">Only used if the widget is selectable (see <code class="docutils literal notranslate"><span class="pre">GenFlags</span></code>).</p>
+<p class="classref-comment">Only used if the widget is selectable (see <a class="reference internal" href="#classes-subscreenwidget-var-genflags"><span class="std std-ref">GenFlags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-visibleflags">bool[] <strong>VisibleFlags</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-visibleflags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L80">Source</a></p>
+<p id="classes-subscreenwidget-var-visibleflags">bool[] <strong>VisibleFlags</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-visibleflags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L80">Source</a></p>
 <p class="classref-comment">Flags related to the visibility of the widget.</p>
 <p class="classref-comment">Use the ‘SUBVISIB_’ constants to access.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-x"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>X</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-x"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L87">Source</a></p>
+<p id="classes-subscreenwidget-var-x"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>X</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-x"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L87">Source</a></p>
 <p class="classref-comment">The X position of the widget within the subscreen.</p>
 <p class="classref-comment">Some widget types do not use this.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-y"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Y</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-y"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L94">Source</a></p>
+<p id="classes-subscreenwidget-var-y"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Y</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-y"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L94">Source</a></p>
 <p class="classref-comment">The Y position of the widget within the subscreen.</p>
 <p class="classref-comment">Some widget types do not use this.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-w"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>W</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-w"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L104">Source</a></p>
+<p id="classes-subscreenwidget-var-w"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>W</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-w"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L104">Source</a></p>
 <p class="classref-comment">The width/height of the widget within the subscreen.</p>
 <p class="classref-comment">This is USUALLY in pixels, but some types use different values! ex. for
 2x2 frame, this is in minitiles, so 8 times less than pixels.</p>
 <p class="classref-comment">Some widget types do not use this.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-h"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>H</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-h"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L114">Source</a></p>
+<p id="classes-subscreenwidget-var-h"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>H</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-h"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L114">Source</a></p>
 <p class="classref-comment">The width/height of the widget within the subscreen.</p>
 <p class="classref-comment">This is USUALLY in pixels, but some types use different values! ex. for
 2x2 frame, this is in minitiles, so 8 times less than pixels.</p>
 <p class="classref-comment">Some widget types do not use this.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-dispx"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DispX</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-dispx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L122">Source</a></p>
+<p id="classes-subscreenwidget-var-dispx"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DispX</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-dispx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L122">Source</a></p>
 <p class="classref-comment">Gets the display x, in pixels.</p>
 <p class="classref-comment">The rectangle represented by this is the same as the bounding box shown
 in the subscreen editor in ZQ.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-dispy"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DispY</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-dispy"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L130">Source</a></p>
+<p id="classes-subscreenwidget-var-dispy"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DispY</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-dispy"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L130">Source</a></p>
 <p class="classref-comment">Gets the display y, in pixels.</p>
 <p class="classref-comment">The rectangle represented by this is the same as the bounding box shown
 in the subscreen editor in ZQ.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-dispw"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DispW</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-dispw"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L138">Source</a></p>
+<p id="classes-subscreenwidget-var-dispw"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DispW</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-dispw"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L138">Source</a></p>
 <p class="classref-comment">Gets the display width, in pixels.</p>
 <p class="classref-comment">The rectangle represented by this is the same as the bounding box shown
 in the subscreen editor in ZQ.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-disph"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DispH</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-disph"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L146">Source</a></p>
+<p id="classes-subscreenwidget-var-disph"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DispH</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-disph"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L146">Source</a></p>
 <p class="classref-comment">Gets the display height, in pixels.</p>
 <p class="classref-comment">The rectangle represented by this is the same as the bounding box shown
 in the subscreen editor in ZQ.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-genflags">bool[] <strong>GenFlags</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-genflags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L154">Source</a></p>
+<p id="classes-subscreenwidget-var-genflags">bool[] <strong>GenFlags</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-genflags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L154">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="subscreendata.html#globals-enum-subscreenwidgetgenflag"><span class="std std-ref">SubscreenWidgetGenFlag (SUBW_GENFL_)</span></a></p>
 <p class="classref-comment">The general flags for subscreen widgets.
 These are usually applicable regardless of widget type.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L161">Source</a></p>
+<p id="classes-subscreenwidget-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L161">Source</a></p>
 <p class="classref-comment">The type-specific flags for subscreen widgets.</p>
 <p class="classref-comment">There is a different set of constants for this for each widget type.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-requiredowneditems">bool[] <strong>RequiredOwnedItems</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-requiredowneditems"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L168">Source</a></p>
+<p id="classes-subscreenwidget-var-requiredowneditems">bool[] <strong>RequiredOwnedItems</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-requiredowneditems"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L168">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="itemdata.html#globals-enum-itemid"><span class="std std-ref">ItemID (I_)</span></a></p>
 <p class="classref-comment">Any items set true here must be owned for the widget to be active/visible.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-requiredunowneditems">bool[] <strong>RequiredUnownedItems</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-requiredunowneditems"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L175">Source</a></p>
+<p id="classes-subscreenwidget-var-requiredunowneditems">bool[] <strong>RequiredUnownedItems</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-requiredunowneditems"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L175">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="itemdata.html#globals-enum-itemid"><span class="std std-ref">ItemID (I_)</span></a></p>
 <p class="classref-comment">Any items set true here must NOT be owned for the widget to be active/visible.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-requiredcounter"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RequiredCounter</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-requiredcounter"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L187">Source</a></p>
+<p id="classes-subscreenwidget-var-requiredcounter"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RequiredCounter</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-requiredcounter"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L187">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="../globals/constants.html#globals-enum-counterindex"><span class="std std-ref">CounterIndex (CR_)</span></a></p>
 <p class="classref-comment">The counter this widget requires to be active/visible.
-Must relate to the <code class="docutils literal notranslate"><span class="pre">RequiredCounterValue</span></code> based on the <code class="docutils literal notranslate"><span class="pre">RequiredCounterCond</span></code>.</p>
+Must relate to the <a class="reference internal" href="#classes-subscreenwidget-var-requiredcountervalue"><span class="std std-ref">RequiredCounterValue</span></a> based on the <a class="reference internal" href="#classes-subscreenwidget-var-requiredcountercond"><span class="std std-ref">RequiredCounterCond</span></a>.</p>
 <ul class="classref-comment simple">
-<li><p>If <code class="docutils literal notranslate"><span class="pre">CR_NONE</span></code>, no requirement will be checked.</p></li>
-<li><p>If <code class="docutils literal notranslate"><span class="pre">SUBW_GENFL_REQ_COUNTER_PERC</span></code> is set, then the percentage this counter is full will be compared</p></li>
-<li><p>Otherwise, if <code class="docutils literal notranslate"><span class="pre">SUBW_GENFL_REQ_COUNTER_MAX</span></code> is set, then the max value of this counter will be compared</p></li>
+<li><p>If <a class="reference internal" href="../globals/constants.html#globals-enum-member-cr-none"><span class="std std-ref">CR_NONE</span></a>, no requirement will be checked.</p></li>
+<li><p>If <a class="reference internal" href="subscreendata.html#globals-enum-member-subw-genfl-req-counter-perc"><span class="std std-ref">SUBW_GENFL_REQ_COUNTER_PERC</span></a> is set, then the percentage this counter is full will be compared</p></li>
+<li><p>Otherwise, if <a class="reference internal" href="subscreendata.html#globals-enum-member-subw-genfl-req-counter-max"><span class="std std-ref">SUBW_GENFL_REQ_COUNTER_MAX</span></a> is set, then the max value of this counter will be compared</p></li>
 <li><p>Otherwise, this counter’s value will be compared</p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-requiredcountercond"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RequiredCounterCond</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-requiredcountercond"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L196">Source</a></p>
+<p id="classes-subscreenwidget-var-requiredcountercond"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RequiredCounterCond</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-requiredcountercond"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L196">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="#globals-enum-conditiontype"><span class="std std-ref">ConditionType (CONDTY_)</span></a></p>
 <p class="classref-comment">The counter operation this widget requires to be active/visible.
-The <code class="docutils literal notranslate"><span class="pre">RequiredCounter</span></code> must relate to the <code class="docutils literal notranslate"><span class="pre">RequiredCounterValue</span></code> by this operation.
-If <code class="docutils literal notranslate"><span class="pre">CONDTY_NONE</span></code>, no requirement will be checked.</p>
+The <a class="reference internal" href="#classes-subscreenwidget-var-requiredcounter"><span class="std std-ref">RequiredCounter</span></a> must relate to the <a class="reference internal" href="#classes-subscreenwidget-var-requiredcountervalue"><span class="std std-ref">RequiredCounterValue</span></a> by this operation.
+If <a class="reference internal" href="#globals-enum-member-condty-none"><span class="std std-ref">CONDTY_NONE</span></a>, no requirement will be checked.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-requiredcountervalue"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RequiredCounterValue</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-requiredcountervalue"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L202">Source</a></p>
+<p id="classes-subscreenwidget-var-requiredcountervalue"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RequiredCounterValue</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-requiredcountervalue"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L202">Source</a></p>
 <p class="classref-comment">The counter value this widget requires to be active/visible.
-The <code class="docutils literal notranslate"><span class="pre">RequiredCounter</span></code> must relate to this value based on the <code class="docutils literal notranslate"><span class="pre">RequiredCounterCond</span></code>.</p>
+The <a class="reference internal" href="#classes-subscreenwidget-var-requiredcounter"><span class="std std-ref">RequiredCounter</span></a> must relate to this value based on the <a class="reference internal" href="#classes-subscreenwidget-var-requiredcountercond"><span class="std std-ref">RequiredCounterCond</span></a>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-requiredlitems"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RequiredLItems</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-requiredlitems"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L209">Source</a></p>
+<p id="classes-subscreenwidget-var-requiredlitems"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RequiredLItems</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-requiredlitems"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L209">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="../globals/Game.html#globals-enum-levelitembitflags"><span class="std std-ref">LevelItemBitflags (LI_)</span></a></p>
-<p class="classref-comment">The Level Items that are required to be owned (or unowned, if <code class="docutils literal notranslate"><span class="pre">SUBW_GENFL_REQ_INVERT_LITEM</span></code> is set)</p>
+<p class="classref-comment">The Level Items that are required to be owned (or unowned, if <a class="reference internal" href="subscreendata.html#globals-enum-member-subw-genfl-req-invert-litem"><span class="std std-ref">SUBW_GENFL_REQ_INVERT_LITEM</span></a> is set)</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-requiredlitemlevel"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RequiredLItemLevel</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-requiredlitemlevel"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L215">Source</a></p>
-<p class="classref-comment">The Level that <code class="docutils literal notranslate"><span class="pre">RequiredLItems</span></code> are checked for. If set to ‘-1’, uses the
+<p id="classes-subscreenwidget-var-requiredlitemlevel"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>RequiredLItemLevel</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-requiredlitemlevel"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L215">Source</a></p>
+<p class="classref-comment">The Level that <a class="reference internal" href="#classes-subscreenwidget-var-requiredlitems"><span class="std std-ref">RequiredLItems</span></a> are checked for. If set to ‘-1’, uses the
 current level.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-scriptdisabled">bool <strong>ScriptDisabled</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-scriptdisabled"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L220">Source</a></p>
+<p id="classes-subscreenwidget-var-scriptdisabled">bool <strong>ScriptDisabled</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-scriptdisabled"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L220">Source</a></p>
 <p class="classref-comment">If set to ‘true’, the widget will not be active/visible.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-selectordestx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorDestX</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectordestx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L229">Source</a></p>
+<p id="classes-subscreenwidget-var-selectordestx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorDestX</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectordestx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L229">Source</a></p>
 <p class="classref-comment">The X/Y/W/H offsets for the selector on this widget, if the selector is
-overridden (see <code class="docutils literal notranslate"><span class="pre">GenFlags</span></code>).</p>
+overridden (see <a class="reference internal" href="#classes-subscreenwidget-var-genflags"><span class="std std-ref">GenFlags[]</span></a>).</p>
 <p class="classref-comment">These values will REPLACE the x/y/w/h that the selector would normally
 draw to.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-selectordesty"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorDestY</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectordesty"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L238">Source</a></p>
+<p id="classes-subscreenwidget-var-selectordesty"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorDestY</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectordesty"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L238">Source</a></p>
 <p class="classref-comment">The X/Y/W/H offsets for the selector on this widget, if the selector is
-overridden (see <code class="docutils literal notranslate"><span class="pre">GenFlags</span></code>).</p>
+overridden (see <a class="reference internal" href="#classes-subscreenwidget-var-genflags"><span class="std std-ref">GenFlags[]</span></a>).</p>
 <p class="classref-comment">These values will REPLACE the x/y/w/h that the selector would normally
 draw to.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-selectordestw"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorDestW</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectordestw"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L247">Source</a></p>
+<p id="classes-subscreenwidget-var-selectordestw"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorDestW</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectordestw"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L247">Source</a></p>
 <p class="classref-comment">The X/Y/W/H offsets for the selector on this widget, if the selector is
-overridden (see <code class="docutils literal notranslate"><span class="pre">GenFlags</span></code>).</p>
+overridden (see <a class="reference internal" href="#classes-subscreenwidget-var-genflags"><span class="std std-ref">GenFlags[]</span></a>).</p>
 <p class="classref-comment">These values will REPLACE the x/y/w/h that the selector would normally
 draw to.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-selectordesth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorDestH</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectordesth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L256">Source</a></p>
+<p id="classes-subscreenwidget-var-selectordesth"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SelectorDestH</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectordesth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L256">Source</a></p>
 <p class="classref-comment">The X/Y/W/H offsets for the selector on this widget, if the selector is
-overridden (see <code class="docutils literal notranslate"><span class="pre">GenFlags</span></code>).</p>
+overridden (see <a class="reference internal" href="#classes-subscreenwidget-var-genflags"><span class="std std-ref">GenFlags[]</span></a>).</p>
 <p class="classref-comment">These values will REPLACE the x/y/w/h that the selector would normally
 draw to.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-selectorwid"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorWid</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectorwid"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L264">Source</a></p>
+<p id="classes-subscreenwidget-var-selectorwid"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorWid</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectorwid"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L264">Source</a></p>
 <p class="classref-comment">The width (in pixels) for the two selector overrides.</p>
 <p class="classref-comment">Will be used by the selector on this widget, if the selector is
-overridden (see <code class="docutils literal notranslate"><span class="pre">GenFlags</span></code>).</p>
+overridden (see <a class="reference internal" href="#classes-subscreenwidget-var-genflags"><span class="std std-ref">GenFlags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-selectorhei"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorHei</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectorhei"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L272">Source</a></p>
+<p id="classes-subscreenwidget-var-selectorhei"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorHei</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectorhei"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L272">Source</a></p>
 <p class="classref-comment">The height (in pixels) for the two selector overrides.</p>
 <p class="classref-comment">Will be used by the selector on this widget, if the selector is
-overridden (see <code class="docutils literal notranslate"><span class="pre">GenFlags</span></code>).</p>
+overridden (see <a class="reference internal" href="#classes-subscreenwidget-var-genflags"><span class="std std-ref">GenFlags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-selectortile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorTile</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectortile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L280">Source</a></p>
+<p id="classes-subscreenwidget-var-selectortile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorTile</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectortile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L280">Source</a></p>
 <p class="classref-comment">The tile for the two selector overrides.</p>
 <p class="classref-comment">Will be used by the selector on this widget, if the selector is
-overridden (see <code class="docutils literal notranslate"><span class="pre">GenFlags</span></code>).</p>
+overridden (see <a class="reference internal" href="#classes-subscreenwidget-var-genflags"><span class="std std-ref">GenFlags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-selectorcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorCSet</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectorcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L288">Source</a></p>
+<p id="classes-subscreenwidget-var-selectorcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorCSet</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectorcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L288">Source</a></p>
 <p class="classref-comment">The cset for the two selector overrides.</p>
 <p class="classref-comment">Will be used by the selector on this widget, if the selector is
-overridden (see <code class="docutils literal notranslate"><span class="pre">GenFlags</span></code>).</p>
+overridden (see <a class="reference internal" href="#classes-subscreenwidget-var-genflags"><span class="std std-ref">GenFlags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-selectorflashcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorFlashCSet</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectorflashcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L296">Source</a></p>
+<p id="classes-subscreenwidget-var-selectorflashcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorFlashCSet</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectorflashcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L296">Source</a></p>
 <p class="classref-comment">The flashcset for the two selector overrides.</p>
 <p class="classref-comment">Will be used by the selector on this widget, if the selector is
-overridden (see <code class="docutils literal notranslate"><span class="pre">GenFlags</span></code>).</p>
+overridden (see <a class="reference internal" href="#classes-subscreenwidget-var-genflags"><span class="std std-ref">GenFlags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-selectorframes"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorFrames</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectorframes"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L304">Source</a></p>
+<p id="classes-subscreenwidget-var-selectorframes"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorFrames</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectorframes"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L304">Source</a></p>
 <p class="classref-comment">The animation frames for the two selector overrides.</p>
 <p class="classref-comment">Will be used by the selector on this widget, if the selector is
-overridden (see <code class="docutils literal notranslate"><span class="pre">GenFlags</span></code>).</p>
+overridden (see <a class="reference internal" href="#classes-subscreenwidget-var-genflags"><span class="std std-ref">GenFlags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-selectoraspeed"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorASpeed</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectoraspeed"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L312">Source</a></p>
+<p id="classes-subscreenwidget-var-selectoraspeed"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorASpeed</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectoraspeed"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L312">Source</a></p>
 <p class="classref-comment">The animation speed for the two selector overrides.</p>
 <p class="classref-comment">Will be used by the selector on this widget, if the selector is
-overridden (see <code class="docutils literal notranslate"><span class="pre">GenFlags</span></code>).</p>
+overridden (see <a class="reference internal" href="#classes-subscreenwidget-var-genflags"><span class="std std-ref">GenFlags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-selectordelay"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorDelay</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectordelay"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L320">Source</a></p>
+<p id="classes-subscreenwidget-var-selectordelay"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>SelectorDelay</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-selectordelay"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L320">Source</a></p>
 <p class="classref-comment">The animation delay for the two selector overrides.</p>
 <p class="classref-comment">Will be used by the selector on this widget, if the selector is
-overridden (see <code class="docutils literal notranslate"><span class="pre">GenFlags</span></code>).</p>
+overridden (see <a class="reference internal" href="#classes-subscreenwidget-var-genflags"><span class="std std-ref">GenFlags[]</span></a>).</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-pressscript"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PressScript</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-pressscript"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L326">Source</a></p>
+<p id="classes-subscreenwidget-var-pressscript"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PressScript</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-pressscript"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L326">Source</a></p>
 <p class="classref-comment">The generic script that will run when a specified button is pressed while
 this widget is selected.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-pressinitd"><abbr title="Could be any type.">untyped</abbr>[] <strong>PressInitD</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-pressinitd"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L331">Source</a></p>
+<p id="classes-subscreenwidget-var-pressinitd"><abbr title="Could be any type.">untyped</abbr>[] <strong>PressInitD</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-pressinitd"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L331">Source</a></p>
 <p class="classref-comment">The 8 InitD[] args for the PressScript</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-btnpressscript">bool[] <strong>BtnPressScript</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-btnpressscript"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L339">Source</a></p>
+<p id="classes-subscreenwidget-var-btnpressscript">bool[] <strong>BtnPressScript</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-btnpressscript"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L339">Source</a></p>
 <p class="classref-comment">Use <a class="reference internal" href="../globals/constants.html#globals-enum-interactbutton"><span class="std std-ref">InteractButton (INTBTN_)</span></a> to index this array.</p>
 <p class="classref-comment">The ‘true’ buttons here, when pressed while this widget is selected, run
 the press script.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-btnpagechange">bool[] <strong>BtnPageChange</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-btnpagechange"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L347">Source</a></p>
+<p id="classes-subscreenwidget-var-btnpagechange">bool[] <strong>BtnPageChange</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-btnpagechange"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L347">Source</a></p>
 <p class="classref-comment">Use <a class="reference internal" href="../globals/constants.html#globals-enum-interactbutton"><span class="std std-ref">InteractButton (INTBTN_)</span></a> to index this array.</p>
 <p class="classref-comment">The ‘true’ buttons here, when pressed while this widget is selected,
-change the current page based on <code class="docutils literal notranslate"><span class="pre">PageMode</span></code>.</p>
+change the current page based on <a class="reference internal" href="#classes-subscreenwidget-var-pagemode"><span class="std std-ref">PageMode</span></a>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-pagemode"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PageMode</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-pagemode"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L355">Source</a></p>
+<p id="classes-subscreenwidget-var-pagemode"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PageMode</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-pagemode"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L355">Source</a></p>
 <p class="classref-comment">The type of page change that will occur when a specified button is
 pressed while this widget is selected.</p>
 <p class="classref-comment">Use the <a class="reference internal" href="subscreendata.html#globals-enum-subscreenpagemode"><span class="std std-ref">SubscreenPageMode (SUB_PGMODE_)</span></a> (<code class="docutils literal notranslate"><span class="pre">SUB_PGMODE_</span></code>) constants for this value.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-targetpage"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TargetPage</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-targetpage"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L360">Source</a></p>
+<p id="classes-subscreenwidget-var-targetpage"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TargetPage</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-targetpage"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L360">Source</a></p>
 <p class="classref-comment">The page to change to when using PageMode of ‘SUB_PGMODE_TARG’</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-pagetranstype"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PageTransType</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-pagetranstype"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L367">Source</a></p>
-<p class="classref-comment">The transition type for <code class="docutils literal notranslate"><span class="pre">PageMode</span></code> transition.</p>
+<p id="classes-subscreenwidget-var-pagetranstype"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PageTransType</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-pagetranstype"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L367">Source</a></p>
+<p class="classref-comment">The transition type for <a class="reference internal" href="#classes-subscreenwidget-var-pagemode"><span class="std std-ref">PageMode</span></a> transition.</p>
 <p class="classref-comment">Compare with the ‘TRANS_TY_’ constants.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-pagetranssfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PageTransSFX</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-pagetranssfx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L372">Source</a></p>
-<p class="classref-comment">The transition sfx for <code class="docutils literal notranslate"><span class="pre">PageMode</span></code> transition.</p>
+<p id="classes-subscreenwidget-var-pagetranssfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PageTransSFX</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-pagetranssfx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L372">Source</a></p>
+<p class="classref-comment">The transition sfx for <a class="reference internal" href="#classes-subscreenwidget-var-pagemode"><span class="std std-ref">PageMode</span></a> transition.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-pagetransflags">bool[] <strong>PageTransFlags</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-pagetransflags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L379">Source</a></p>
-<p class="classref-comment">The flags for <code class="docutils literal notranslate"><span class="pre">PageMode</span></code> transition.</p>
+<p id="classes-subscreenwidget-var-pagetransflags">bool[] <strong>PageTransFlags</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-pagetransflags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L379">Source</a></p>
+<p class="classref-comment">The flags for <a class="reference internal" href="#classes-subscreenwidget-var-pagemode"><span class="std std-ref">PageMode</span></a> transition.</p>
 <p class="classref-comment">Use the ‘TRANSFLAG_’ constants to access these.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-pagetransargs"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>PageTransArgs</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-pagetransargs"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L386">Source</a></p>
-<p class="classref-comment">The arguments used for <code class="docutils literal notranslate"><span class="pre">PageMode</span></code> transition.</p>
+<p id="classes-subscreenwidget-var-pagetransargs"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>PageTransArgs</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-pagetransargs"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L386">Source</a></p>
+<p class="classref-comment">The arguments used for <a class="reference internal" href="#classes-subscreenwidget-var-pagemode"><span class="std std-ref">PageMode</span></a> transition.</p>
 <p class="classref-comment">Use the ‘TRANS_*_ARG_’ constants to access these</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-cset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>CSet</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-cset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L402">Source</a></p>
+<p id="classes-subscreenwidget-var-cset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>CSet</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-cset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L402">Source</a></p>
 <p class="classref-comment">The widget’s cset(s).</p>
 <p class="classref-comment">For SUBWIDG_FRAME,SUBWIDG_MCGUFF,SUBWIDG_TILEBLOCK,SUBWIDG_MINITILE: can
 use the ‘SUB_CS_’ constants.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_FRAME</span></code> - 1 values</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MCGUFF</span></code> - 1 values</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TILEBLOCK</span></code> - 1 values</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MINITILE</span></code> - 1 values</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code> - 4 values</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LGAUGE</span></code> - 4 values</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MGAUGE</span></code> - 4 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-frame"><span class="std std-ref">SUBWIDG_FRAME</span></a> - 1 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mcguff"><span class="std std-ref">SUBWIDG_MCGUFF</span></a> - 1 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-tileblock"><span class="std std-ref">SUBWIDG_TILEBLOCK</span></a> - 1 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-minitile"><span class="std std-ref">SUBWIDG_MINITILE</span></a> - 1 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a> - 4 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lgauge"><span class="std std-ref">SUBWIDG_LGAUGE</span></a> - 4 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mgauge"><span class="std std-ref">SUBWIDG_MGAUGE</span></a> - 4 values</p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-tile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Tile</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-tile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L417">Source</a></p>
+<p id="classes-subscreenwidget-var-tile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Tile</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-tile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L417">Source</a></p>
 <p class="classref-comment">The widget’s tile(s).</p>
 <p class="classref-comment">For SUBWIDG_MINITILE, can use the ‘SUB_SPTILE_’ constant values.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_FRAME</span></code> - 1 values</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MCGUFF</span></code> - 1 values</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TILEBLOCK</span></code> - 1 values</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MINITILE</span></code> - 1 values</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code> - 4 values</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LGAUGE</span></code> - 4 values</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MGAUGE</span></code> - 4 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-frame"><span class="std std-ref">SUBWIDG_FRAME</span></a> - 1 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mcguff"><span class="std std-ref">SUBWIDG_MCGUFF</span></a> - 1 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-tileblock"><span class="std std-ref">SUBWIDG_TILEBLOCK</span></a> - 1 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-minitile"><span class="std std-ref">SUBWIDG_MINITILE</span></a> - 1 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a> - 4 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lgauge"><span class="std std-ref">SUBWIDG_LGAUGE</span></a> - 4 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mgauge"><span class="std std-ref">SUBWIDG_MGAUGE</span></a> - 4 values</p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-font"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Font</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-font"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L433">Source</a></p>
+<p id="classes-subscreenwidget-var-font"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Font</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-font"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L433">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <code class="docutils literal notranslate"><span class="pre">Font</span></code></p>
 <p class="classref-comment">The widget’s font.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXT</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXTBOX</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TIME</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_COUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_OLDCTR</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_BTNCOUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MMAPTITLE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_SELECTEDTEXT</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-text"><span class="std std-ref">SUBWIDG_TEXT</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-textbox"><span class="std std-ref">SUBWIDG_TEXTBOX</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-time"><span class="std std-ref">SUBWIDG_TIME</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-counter"><span class="std std-ref">SUBWIDG_COUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-oldctr"><span class="std std-ref">SUBWIDG_OLDCTR</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-btncounter"><span class="std std-ref">SUBWIDG_BTNCOUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mmaptitle"><span class="std std-ref">SUBWIDG_MMAPTITLE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-selectedtext"><span class="std std-ref">SUBWIDG_SELECTEDTEXT</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-align"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Align</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-align"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L448">Source</a></p>
+<p id="classes-subscreenwidget-var-align"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Align</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-align"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L448">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="../globals/constants.html#globals-enum-textalignment"><span class="std std-ref">TextAlignment (TF_)</span></a></p>
 <p class="classref-comment">The widget’s text alignment.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXT</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXTBOX</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TIME</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_COUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_BTNCOUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MMAPTITLE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_SELECTEDTEXT</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-text"><span class="std std-ref">SUBWIDG_TEXT</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-textbox"><span class="std std-ref">SUBWIDG_TEXTBOX</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-time"><span class="std std-ref">SUBWIDG_TIME</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-counter"><span class="std std-ref">SUBWIDG_COUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-btncounter"><span class="std std-ref">SUBWIDG_BTNCOUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mmaptitle"><span class="std std-ref">SUBWIDG_MMAPTITLE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-selectedtext"><span class="std std-ref">SUBWIDG_SELECTEDTEXT</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-shadowtype"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ShadowType</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-shadowtype"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L464">Source</a></p>
+<p id="classes-subscreenwidget-var-shadowtype"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ShadowType</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-shadowtype"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L464">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="../globals/constants.html#globals-enum-shadowtype"><span class="std std-ref">ShadowType (SHD_)</span></a></p>
 <p class="classref-comment">The widget’s Shadow Type.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXT</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXTBOX</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TIME</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_COUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_OLDCTR</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_BTNCOUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MMAPTITLE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_SELECTEDTEXT</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-text"><span class="std std-ref">SUBWIDG_TEXT</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-textbox"><span class="std std-ref">SUBWIDG_TEXTBOX</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-time"><span class="std std-ref">SUBWIDG_TIME</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-counter"><span class="std std-ref">SUBWIDG_COUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-oldctr"><span class="std std-ref">SUBWIDG_OLDCTR</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-btncounter"><span class="std std-ref">SUBWIDG_BTNCOUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mmaptitle"><span class="std std-ref">SUBWIDG_MMAPTITLE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-selectedtext"><span class="std std-ref">SUBWIDG_SELECTEDTEXT</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-colortext"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorText</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colortext"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L479">Source</a></p>
+<p id="classes-subscreenwidget-var-colortext"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorText</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colortext"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L479">Source</a></p>
 <p class="classref-comment">The widget’s color index used for Text</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXT</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXTBOX</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TIME</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_COUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_OLDCTR</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_BTNCOUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MMAPTITLE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_SELECTEDTEXT</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MCGUFF_FRAME</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-text"><span class="std std-ref">SUBWIDG_TEXT</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-textbox"><span class="std std-ref">SUBWIDG_TEXTBOX</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-time"><span class="std std-ref">SUBWIDG_TIME</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-counter"><span class="std std-ref">SUBWIDG_COUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-oldctr"><span class="std std-ref">SUBWIDG_OLDCTR</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-btncounter"><span class="std std-ref">SUBWIDG_BTNCOUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mmaptitle"><span class="std std-ref">SUBWIDG_MMAPTITLE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-selectedtext"><span class="std std-ref">SUBWIDG_SELECTEDTEXT</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mcguff-frame"><span class="std std-ref">SUBWIDG_MCGUFF_FRAME</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-colorfulltext"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorFullText</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorfulltext"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L487">Source</a></p>
+<p id="classes-subscreenwidget-var-colorfulltext"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorFullText</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorfulltext"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L487">Source</a></p>
 <p class="classref-comment">The widget’s color index used for Text when the counter is full</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_COUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_BTNCOUNTER</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-counter"><span class="std std-ref">SUBWIDG_COUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-btncounter"><span class="std std-ref">SUBWIDG_BTNCOUNTER</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-colorshadow"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorShadow</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorshadow"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L501">Source</a></p>
+<p id="classes-subscreenwidget-var-colorshadow"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorShadow</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorshadow"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L501">Source</a></p>
 <p class="classref-comment">The widget’s color index used for Shadows</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXT</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXTBOX</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TIME</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_COUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_OLDCTR</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_BTNCOUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MMAPTITLE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_SELECTEDTEXT</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-text"><span class="std std-ref">SUBWIDG_TEXT</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-textbox"><span class="std std-ref">SUBWIDG_TEXTBOX</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-time"><span class="std std-ref">SUBWIDG_TIME</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-counter"><span class="std std-ref">SUBWIDG_COUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-oldctr"><span class="std std-ref">SUBWIDG_OLDCTR</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-btncounter"><span class="std std-ref">SUBWIDG_BTNCOUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mmaptitle"><span class="std std-ref">SUBWIDG_MMAPTITLE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-selectedtext"><span class="std std-ref">SUBWIDG_SELECTEDTEXT</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-colorfullshadow"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorFullShadow</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorfullshadow"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L509">Source</a></p>
+<p id="classes-subscreenwidget-var-colorfullshadow"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorFullShadow</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorfullshadow"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L509">Source</a></p>
 <p class="classref-comment">The widget’s color index used for Shadows when the counter is full</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_COUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_BTNCOUNTER</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-counter"><span class="std std-ref">SUBWIDG_COUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-btncounter"><span class="std std-ref">SUBWIDG_BTNCOUNTER</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-colorbg"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorBG</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorbg"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L525">Source</a></p>
+<p id="classes-subscreenwidget-var-colorbg"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorBG</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorbg"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L525">Source</a></p>
 <p class="classref-comment">The widget’s color index used for background</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXT</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXTBOX</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TIME</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_COUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_OLDCTR</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_BTNCOUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MMAPTITLE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_SELECTEDTEXT</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_BGCOLOR</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_COUNTERPERCBAR</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-text"><span class="std std-ref">SUBWIDG_TEXT</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-textbox"><span class="std std-ref">SUBWIDG_TEXTBOX</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-time"><span class="std std-ref">SUBWIDG_TIME</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-counter"><span class="std std-ref">SUBWIDG_COUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-oldctr"><span class="std std-ref">SUBWIDG_OLDCTR</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-btncounter"><span class="std std-ref">SUBWIDG_BTNCOUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mmaptitle"><span class="std std-ref">SUBWIDG_MMAPTITLE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-selectedtext"><span class="std std-ref">SUBWIDG_SELECTEDTEXT</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-bgcolor"><span class="std std-ref">SUBWIDG_BGCOLOR</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-counterpercbar"><span class="std std-ref">SUBWIDG_COUNTERPERCBAR</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-colorfullbg"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorFullBG</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorfullbg"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L533">Source</a></p>
+<p id="classes-subscreenwidget-var-colorfullbg"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorFullBG</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorfullbg"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L533">Source</a></p>
 <p class="classref-comment">The widget’s color index used for background when the counter is full</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_COUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_BTNCOUNTER</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-counter"><span class="std std-ref">SUBWIDG_COUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-btncounter"><span class="std std-ref">SUBWIDG_BTNCOUNTER</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-coloroutline"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorOutline</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-coloroutline"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L542">Source</a></p>
+<p id="classes-subscreenwidget-var-coloroutline"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorOutline</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-coloroutline"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L542">Source</a></p>
 <p class="classref-comment">The widget’s color index used for outline</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LINE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_RECT</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MCGUFF_FRAME</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-line"><span class="std std-ref">SUBWIDG_LINE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-rect"><span class="std std-ref">SUBWIDG_RECT</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mcguff-frame"><span class="std std-ref">SUBWIDG_MCGUFF_FRAME</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-colorfill"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorFill</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorfill"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L550">Source</a></p>
+<p id="classes-subscreenwidget-var-colorfill"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorFill</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorfill"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L550">Source</a></p>
 <p class="classref-comment">The widget’s color index used for fill</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_RECT</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_COUNTERPERCBAR</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-rect"><span class="std std-ref">SUBWIDG_RECT</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-counterpercbar"><span class="std std-ref">SUBWIDG_COUNTERPERCBAR</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-button"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Button</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-button"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L560">Source</a></p>
+<p id="classes-subscreenwidget-var-button"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Button</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-button"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L560">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="#globals-enum-subscreenitembutton"><span class="std std-ref">SubscreenItemButton (ITMBTN_)</span></a></p>
 <p class="classref-comment">The item button associated with the widget.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_BTNITM</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_BTNCOUNTER</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-btnitm"><span class="std std-ref">SUBWIDG_BTNITM</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-btncounter"><span class="std std-ref">SUBWIDG_BTNCOUNTER</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-counter"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Counter</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-counter"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L568">Source</a></p>
-<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">length</span></code> <code class="docutils literal notranslate"><span class="pre">SUBWIDG_COUNTER</span></code> - 3 values, <code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code> - 1 value, <code class="docutils literal notranslate"><span class="pre">SUBWIDG_COUNTERPERCBAR</span></code> - 1 value</p>
+<p id="classes-subscreenwidget-var-counter"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Counter</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-counter"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L568">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">length</span></code> <a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-counter"><span class="std std-ref">SUBWIDG_COUNTER</span></a> - 3 values, <a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a> - 1 value, <a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-counterpercbar"><span class="std std-ref">SUBWIDG_COUNTERPERCBAR</span></a> - 1 value</p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="../globals/constants.html#globals-enum-counterindex"><span class="std std-ref">CounterIndex (CR_)</span></a></p>
 <p class="classref-comment">The counter(s) associated with the widget.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-mindigits"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MinDigits</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-mindigits"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L577">Source</a></p>
+<p id="classes-subscreenwidget-var-mindigits"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MinDigits</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-mindigits"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L577">Source</a></p>
 <p class="classref-comment">The minimum digits of the widget.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_COUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_OLDCTR</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_BTNCOUNTER</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-counter"><span class="std std-ref">SUBWIDG_COUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-oldctr"><span class="std std-ref">SUBWIDG_OLDCTR</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-btncounter"><span class="std std-ref">SUBWIDG_BTNCOUNTER</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-maxdigits"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MaxDigits</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-maxdigits"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L585">Source</a></p>
+<p id="classes-subscreenwidget-var-maxdigits"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>MaxDigits</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-maxdigits"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L585">Source</a></p>
 <p class="classref-comment">The maximum digits of the widget.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_COUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_BTNCOUNTER</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-counter"><span class="std std-ref">SUBWIDG_COUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-btncounter"><span class="std std-ref">SUBWIDG_BTNCOUNTER</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-infiniteitem"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>InfiniteItem</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-infiniteitem"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L596">Source</a></p>
+<p id="classes-subscreenwidget-var-infiniteitem"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>InfiniteItem</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-infiniteitem"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L596">Source</a></p>
 <p class="classref-comment">The infinite item of the widget.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_COUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_OLDCTR</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-counter"><span class="std std-ref">SUBWIDG_COUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-oldctr"><span class="std std-ref">SUBWIDG_OLDCTR</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lgauge"><span class="std std-ref">SUBWIDG_LGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mgauge"><span class="std std-ref">SUBWIDG_MGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-infinitechar">char32 <strong>InfiniteChar</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-infinitechar"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L605">Source</a></p>
+<p id="classes-subscreenwidget-var-infinitechar">char32 <strong>InfiniteChar</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-infinitechar"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L605">Source</a></p>
 <p class="classref-comment">The infinite character of the widget.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_COUNTER</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_OLDCTR</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_BTNCOUNTER</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-counter"><span class="std std-ref">SUBWIDG_COUNTER</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-oldctr"><span class="std std-ref">SUBWIDG_OLDCTR</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-btncounter"><span class="std std-ref">SUBWIDG_BTNCOUNTER</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-costindex"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CostIndex</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-costindex"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L612">Source</a></p>
+<p id="classes-subscreenwidget-var-costindex"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CostIndex</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-costindex"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L612">Source</a></p>
 <p class="classref-comment">The index of cost to use for this widget</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_BTNCOUNTER</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-btncounter"><span class="std std-ref">SUBWIDG_BTNCOUNTER</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-colorplayer"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorPlayer</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorplayer"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L620">Source</a></p>
-<p class="classref-comment">The widget’s color index used to indicate the <code class="docutils literal notranslate"><span class="pre">Hero</span></code></p>
+<p id="classes-subscreenwidget-var-colorplayer"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorPlayer</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorplayer"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L620">Source</a></p>
+<p class="classref-comment">The widget’s color index used to indicate the <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a></p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MMAP</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LMAP</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mmap"><span class="std std-ref">SUBWIDG_MMAP</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lmap"><span class="std std-ref">SUBWIDG_LMAP</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-colorcompassblink"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorCompassBlink</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorcompassblink"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L627">Source</a></p>
+<p id="classes-subscreenwidget-var-colorcompassblink"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorCompassBlink</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorcompassblink"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L627">Source</a></p>
 <p class="classref-comment">The widget’s color index used to indicate the blinking compass</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MMAP</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mmap"><span class="std std-ref">SUBWIDG_MMAP</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-colorcompassoff"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorCompassOff</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorcompassoff"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L634">Source</a></p>
+<p id="classes-subscreenwidget-var-colorcompassoff"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorCompassOff</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorcompassoff"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L634">Source</a></p>
 <p class="classref-comment">The widget’s color index used to indicate the off compass</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MMAP</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mmap"><span class="std std-ref">SUBWIDG_MMAP</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-colorroom"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorRoom</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorroom"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L641">Source</a></p>
+<p id="classes-subscreenwidget-var-colorroom"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ColorRoom</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-colorroom"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L641">Source</a></p>
 <p class="classref-comment">The widget’s color index used to indicate rooms</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LMAP</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lmap"><span class="std std-ref">SUBWIDG_LMAP</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-itemtype"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ItemType</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-itemtype"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L648">Source</a></p>
+<p id="classes-subscreenwidget-var-itemtype"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ItemType</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-itemtype"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L648">Source</a></p>
 <p class="classref-comment">The itemclass used by the widget (0 &lt;= ItemType &lt; IC_MAXUSABLE)</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_ITEMSLOT</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-itemslot"><span class="std std-ref">SUBWIDG_ITEMSLOT</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-itemid"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ItemID</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-itemid"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L655">Source</a></p>
+<p id="classes-subscreenwidget-var-itemid"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ItemID</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-itemid"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L655">Source</a></p>
 <p class="classref-comment">The item ID used by the widget (-1 &lt;= ItemID &lt; NUM_ITEMDATA)</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_ITEMSLOT</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-itemslot"><span class="std std-ref">SUBWIDG_ITEMSLOT</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-frametile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FrameTile</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-frametile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L662">Source</a></p>
+<p id="classes-subscreenwidget-var-frametile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FrameTile</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-frametile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L662">Source</a></p>
 <p class="classref-comment">The frame/piece tile/cset used by the widget.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MCGUFF_FRAME</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mcguff-frame"><span class="std std-ref">SUBWIDG_MCGUFF_FRAME</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-framecset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FrameCSet</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-framecset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L669">Source</a></p>
+<p id="classes-subscreenwidget-var-framecset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FrameCSet</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-framecset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L669">Source</a></p>
 <p class="classref-comment">The frame/piece tile/cset used by the widget.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MCGUFF_FRAME</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mcguff-frame"><span class="std std-ref">SUBWIDG_MCGUFF_FRAME</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-piecetile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PieceTile</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-piecetile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L676">Source</a></p>
+<p id="classes-subscreenwidget-var-piecetile"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PieceTile</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-piecetile"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L676">Source</a></p>
 <p class="classref-comment">The frame/piece tile/cset used by the widget.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MCGUFF_FRAME</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mcguff-frame"><span class="std std-ref">SUBWIDG_MCGUFF_FRAME</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-piececset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PieceCSet</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-piececset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L683">Source</a></p>
+<p id="classes-subscreenwidget-var-piececset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PieceCSet</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-piececset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L683">Source</a></p>
 <p class="classref-comment">The frame/piece tile/cset used by the widget.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MCGUFF_FRAME</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mcguff-frame"><span class="std std-ref">SUBWIDG_MCGUFF_FRAME</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-flip"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Flip</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-flip"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L692">Source</a></p>
+<p id="classes-subscreenwidget-var-flip"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Flip</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-flip"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L692">Source</a></p>
 <p class="classref-comment">The widget’s flip value.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MCGUFF</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TILEBLOCK</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MINITILE</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mcguff"><span class="std std-ref">SUBWIDG_MCGUFF</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-tileblock"><span class="std std-ref">SUBWIDG_TILEBLOCK</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-minitile"><span class="std std-ref">SUBWIDG_MINITILE</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-number"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Number</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-number"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L699">Source</a></p>
+<p id="classes-subscreenwidget-var-number"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Number</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-number"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L699">Source</a></p>
 <p class="classref-comment">The number associated with the widget.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MCGUFF</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mcguff"><span class="std std-ref">SUBWIDG_MCGUFF</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-corner"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Corner</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-corner"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L709">Source</a></p>
+<p id="classes-subscreenwidget-var-corner"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Corner</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-corner"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L709">Source</a></p>
 <p class="classref-comment">The corner(s) associated with the widget.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MINITILE</span></code> - 1 values</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LGAUGE</span></code> - 4 values</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MGAUGE</span></code> - 4 values</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code> - 4 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-minitile"><span class="std std-ref">SUBWIDG_MINITILE</span></a> - 1 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lgauge"><span class="std std-ref">SUBWIDG_LGAUGE</span></a> - 4 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mgauge"><span class="std std-ref">SUBWIDG_MGAUGE</span></a> - 4 values</p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a> - 4 values</p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-frames"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Frames</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-frames"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L718">Source</a></p>
+<p id="classes-subscreenwidget-var-frames"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Frames</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-frames"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L718">Source</a></p>
 <p class="classref-comment">The widget’s frames</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lgauge"><span class="std std-ref">SUBWIDG_LGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mgauge"><span class="std std-ref">SUBWIDG_MGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-speed"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Speed</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-speed"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L727">Source</a></p>
+<p id="classes-subscreenwidget-var-speed"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Speed</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-speed"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L727">Source</a></p>
 <p class="classref-comment">The widget’s speed</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lgauge"><span class="std std-ref">SUBWIDG_LGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mgauge"><span class="std std-ref">SUBWIDG_MGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-delay"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Delay</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-delay"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L736">Source</a></p>
+<p id="classes-subscreenwidget-var-delay"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Delay</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-delay"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L736">Source</a></p>
 <p class="classref-comment">The widget’s delay</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lgauge"><span class="std std-ref">SUBWIDG_LGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mgauge"><span class="std std-ref">SUBWIDG_MGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-container"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Container</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-container"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L745">Source</a></p>
+<p id="classes-subscreenwidget-var-container"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Container</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-container"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L745">Source</a></p>
 <p class="classref-comment">The widget’s container number</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lgauge"><span class="std std-ref">SUBWIDG_LGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mgauge"><span class="std std-ref">SUBWIDG_MGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-gaugewid"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GaugeWid</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-gaugewid"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L754">Source</a></p>
+<p id="classes-subscreenwidget-var-gaugewid"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GaugeWid</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-gaugewid"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L754">Source</a></p>
 <p class="classref-comment">The widget’s gauge width</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lgauge"><span class="std std-ref">SUBWIDG_LGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mgauge"><span class="std std-ref">SUBWIDG_MGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-gaugehei"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GaugeHei</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-gaugehei"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L763">Source</a></p>
+<p id="classes-subscreenwidget-var-gaugehei"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GaugeHei</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-gaugehei"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L763">Source</a></p>
 <p class="classref-comment">The widget’s gauge height</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lgauge"><span class="std std-ref">SUBWIDG_LGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mgauge"><span class="std std-ref">SUBWIDG_MGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-units"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Units</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-units"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L772">Source</a></p>
+<p id="classes-subscreenwidget-var-units"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Units</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-units"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L772">Source</a></p>
 <p class="classref-comment">The widgets unit value</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lgauge"><span class="std std-ref">SUBWIDG_LGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mgauge"><span class="std std-ref">SUBWIDG_MGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-hspace"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HSpace</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-hspace"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L781">Source</a></p>
+<p id="classes-subscreenwidget-var-hspace"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HSpace</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-hspace"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L781">Source</a></p>
 <p class="classref-comment">The widget’s horizontal spacing</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lgauge"><span class="std std-ref">SUBWIDG_LGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mgauge"><span class="std std-ref">SUBWIDG_MGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-vspace"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>VSpace</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-vspace"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L790">Source</a></p>
+<p id="classes-subscreenwidget-var-vspace"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>VSpace</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-vspace"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L790">Source</a></p>
 <p class="classref-comment">The widget’s vertical spacing</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lgauge"><span class="std std-ref">SUBWIDG_LGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mgauge"><span class="std std-ref">SUBWIDG_MGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-gridx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GridX</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-gridx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L799">Source</a></p>
+<p id="classes-subscreenwidget-var-gridx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GridX</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-gridx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L799">Source</a></p>
 <p class="classref-comment">The widget’s grid x</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lgauge"><span class="std std-ref">SUBWIDG_LGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mgauge"><span class="std std-ref">SUBWIDG_MGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-gridy"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GridY</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-gridy"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L808">Source</a></p>
+<p id="classes-subscreenwidget-var-gridy"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GridY</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-gridy"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L808">Source</a></p>
 <p class="classref-comment">The widget’s grid y</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lgauge"><span class="std std-ref">SUBWIDG_LGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mgauge"><span class="std std-ref">SUBWIDG_MGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-animval"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>AnimVal</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-animval"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L817">Source</a></p>
+<p id="classes-subscreenwidget-var-animval"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>AnimVal</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-animval"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L817">Source</a></p>
 <p class="classref-comment">The widget’s animation value</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_LGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MGAUGE</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-lgauge"><span class="std std-ref">SUBWIDG_LGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mgauge"><span class="std std-ref">SUBWIDG_MGAUGE</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-showdrain"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ShowDrain</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-showdrain"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L824">Source</a></p>
+<p id="classes-subscreenwidget-var-showdrain"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ShowDrain</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-showdrain"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L824">Source</a></p>
 <p class="classref-comment">The magic drain rate this widget will be visible at (-1 for any)</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MGAUGE</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mgauge"><span class="std std-ref">SUBWIDG_MGAUGE</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-percontainer"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PerContainer</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-percontainer"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L831">Source</a></p>
+<p id="classes-subscreenwidget-var-percontainer"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PerContainer</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-percontainer"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L831">Source</a></p>
 <p class="classref-comment">The counter amount per “container” for the widget</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MISCGAUGE</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-miscgauge"><span class="std std-ref">SUBWIDG_MISCGAUGE</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-tabsize"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TabSize</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-tabsize"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L839">Source</a></p>
+<p id="classes-subscreenwidget-var-tabsize"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TabSize</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-tabsize"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L839">Source</a></p>
 <p class="classref-comment">The widget’s tabsize value</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXT</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXTBOX</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-text"><span class="std std-ref">SUBWIDG_TEXT</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-textbox"><span class="std std-ref">SUBWIDG_TEXTBOX</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p id="classes-subscreenwidget-var-litems"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LItems</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-litems"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L846">Source</a></p>
+<p id="classes-subscreenwidget-var-litems"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LItems</strong>  <a class="reference internal" href="#classes-subscreenwidget-var-litems"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L846">Source</a></p>
 <p class="classref-comment">The level items that cause the compass marker to stop blinking</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_MMAP</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-mmap"><span class="std std-ref">SUBWIDG_MMAP</span></a></p></li>
 </ul>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-subscreenwidget-fun-getseltextoverride"><abbr title="No return value.">void</abbr> <strong>GetSelTextOverride</strong>(char32[] buf) <a class="reference internal" href="#classes-subscreenwidget-fun-getseltextoverride"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L857">Source</a></p>
+<p class="classref-method" id="classes-subscreenwidget-fun-getseltextoverride"><abbr title="No return value.">void</abbr> <strong>GetSelTextOverride</strong>(char32[] buf) <a class="reference internal" href="#classes-subscreenwidget-fun-getseltextoverride"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L857">Source</a></p>
 <p class="classref-comment">Gets the selected text override for this widget.</p>
 <p class="classref-comment">If the buffer provided is too small, it will *automatically be resized to
 fit*.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-subscreenwidget-fun-setseltextoverride"><abbr title="No return value.">void</abbr> <strong>SetSelTextOverride</strong>(char32[] str) <a class="reference internal" href="#classes-subscreenwidget-fun-setseltextoverride"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L867">Source</a></p>
+<p class="classref-method" id="classes-subscreenwidget-fun-setseltextoverride"><abbr title="No return value.">void</abbr> <strong>SetSelTextOverride</strong>(char32[] str) <a class="reference internal" href="#classes-subscreenwidget-fun-setseltextoverride"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L867">Source</a></p>
 <p class="classref-comment">Sets the selected text override for this widget.</p>
 <p class="classref-comment">A blank string represents no override.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-subscreenwidget-fun-getlabel"><abbr title="No return value.">void</abbr> <strong>GetLabel</strong>(char32[] buf) <a class="reference internal" href="#classes-subscreenwidget-fun-getlabel"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L878">Source</a></p>
+<p class="classref-method" id="classes-subscreenwidget-fun-getlabel"><abbr title="No return value.">void</abbr> <strong>GetLabel</strong>(char32[] buf) <a class="reference internal" href="#classes-subscreenwidget-fun-getlabel"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L878">Source</a></p>
 <p class="classref-comment">Gets the label for this widget.</p>
 <p class="classref-comment">If the buffer provided is too small, it will *automatically be resized to
 fit*.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-subscreenwidget-fun-setlabel"><abbr title="No return value.">void</abbr> <strong>SetLabel</strong>(char32[] str) <a class="reference internal" href="#classes-subscreenwidget-fun-setlabel"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L886">Source</a></p>
+<p class="classref-method" id="classes-subscreenwidget-fun-setlabel"><abbr title="No return value.">void</abbr> <strong>SetLabel</strong>(char32[] str) <a class="reference internal" href="#classes-subscreenwidget-fun-setlabel"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L886">Source</a></p>
 <p class="classref-comment">Sets the label for this widget.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-subscreenwidget-fun-gettext"><abbr title="No return value.">void</abbr> <strong>GetText</strong>(char32[] buf) <a class="reference internal" href="#classes-subscreenwidget-fun-gettext"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L900">Source</a></p>
+<p class="classref-method" id="classes-subscreenwidget-fun-gettext"><abbr title="No return value.">void</abbr> <strong>GetText</strong>(char32[] buf) <a class="reference internal" href="#classes-subscreenwidget-fun-gettext"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L900">Source</a></p>
 <p class="classref-comment">Gets/Sets the text for this widget.</p>
 <p class="classref-comment">If the buffer provided for GetText() is too small, it will *automatically
 be resized to fit*.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXT</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXTBOX</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-text"><span class="std std-ref">SUBWIDG_TEXT</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-textbox"><span class="std std-ref">SUBWIDG_TEXTBOX</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-subscreenwidget-fun-settext"><abbr title="No return value.">void</abbr> <strong>SetText</strong>(char32[] str) <a class="reference internal" href="#classes-subscreenwidget-fun-settext"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L914">Source</a></p>
+<p class="classref-method" id="classes-subscreenwidget-fun-settext"><abbr title="No return value.">void</abbr> <strong>SetText</strong>(char32[] str) <a class="reference internal" href="#classes-subscreenwidget-fun-settext"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L914">Source</a></p>
 <p class="classref-comment">Gets/Sets the text for this widget.</p>
 <p class="classref-comment">If the buffer provided for <a class="reference internal" href="#classes-subscreenwidget-fun-gettext"><span class="std std-ref">GetText()</span></a> is too small, it will *automatically
 be resized to fit*.</p>
 <ul class="classref-comment simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXT</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SUBWIDG_TEXTBOX</span></code></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-text"><span class="std std-ref">SUBWIDG_TEXT</span></a></p></li>
+<li><p><a class="reference internal" href="subscreendata.html#globals-enum-member-subwidg-textbox"><span class="std std-ref">SUBWIDG_TEXTBOX</span></a></p></li>
 </ul>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-subscreenwidget-fun-checkconditions">bool <strong>CheckConditions</strong>() <a class="reference internal" href="#classes-subscreenwidget-fun-checkconditions"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L922">Source</a></p>
+<p class="classref-method" id="classes-subscreenwidget-fun-checkconditions">bool <strong>CheckConditions</strong>() <a class="reference internal" href="#classes-subscreenwidget-fun-checkconditions"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L922">Source</a></p>
 <p class="classref-comment">Checks the requirements / conditions of this widget.
-See <code class="docutils literal notranslate"><span class="pre">RequiredOwnedItems</span></code>, <code class="docutils literal notranslate"><span class="pre">RequiredUnownedItems</span></code>, <code class="docutils literal notranslate"><span class="pre">RequiredCounter</span></code>, <code class="docutils literal notranslate"><span class="pre">RequiredLItems</span></code>, <code class="docutils literal notranslate"><span class="pre">ScriptDisabled</span></code></p>
+See <a class="reference internal" href="#classes-subscreenwidget-var-requiredowneditems"><span class="std std-ref">RequiredOwnedItems[]</span></a>, <a class="reference internal" href="#classes-subscreenwidget-var-requiredunowneditems"><span class="std std-ref">RequiredUnownedItems[]</span></a>, <a class="reference internal" href="#classes-subscreenwidget-var-requiredcounter"><span class="std std-ref">RequiredCounter</span></a>, <a class="reference internal" href="#classes-subscreenwidget-var-requiredlitems"><span class="std std-ref">RequiredLItems</span></a>, <a class="reference internal" href="#classes-subscreenwidget-var-scriptdisabled"><span class="std std-ref">ScriptDisabled</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-subscreenwidget-fun-checkvisible">bool <strong>CheckVisible</strong>() <a class="reference internal" href="#classes-subscreenwidget-fun-checkvisible"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/ac69c0cda322528c37027201cede2865f03284c1/resources/include/bindings/subscreenwidget.zh#L929">Source</a></p>
-<p class="classref-comment">Checks that the widget is visible- meaning, it both passes <a class="reference internal" href="#classes-subscreenwidget-fun-checkconditions"><span class="std std-ref">CheckConditions()</span></a> and <code class="docutils literal notranslate"><span class="pre">VisibleFlags</span></code>.</p>
+<p class="classref-method" id="classes-subscreenwidget-fun-checkvisible">bool <strong>CheckVisible</strong>() <a class="reference internal" href="#classes-subscreenwidget-fun-checkvisible"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/subscreenwidget.zh#L929">Source</a></p>
+<p class="classref-comment">Checks that the widget is visible- meaning, it both passes <a class="reference internal" href="#classes-subscreenwidget-fun-checkconditions"><span class="std std-ref">CheckConditions()</span></a> and <a class="reference internal" href="#classes-subscreenwidget-var-visibleflags"><span class="std std-ref">VisibleFlags[]</span></a>.</p>
 </section>
 </section>
 
