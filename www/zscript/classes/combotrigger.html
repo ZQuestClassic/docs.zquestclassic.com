@@ -1,0 +1,1335 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>combotrigger &#8212; ZQuest Classic  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/main.css?v=496e39a3" />
+    <link rel="stylesheet" type="text/css" href="../../_static/zscript.css?v=3afc8195" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'zscript/classes/combotrigger';</script>
+    <script src="../../_static/main.js?v=32ddbf82"></script>
+    <script src="../../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../../_static/zscript.js?v=0bdd3061"></script>
+    <link rel="icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="directory" href="directory.html" />
+    <link rel="prev" title="combodata" href="combodata.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/ZC_Logo.png" class="logo__image only-light" alt="ZQuest Classic  documentation - Home"/>
+    <img src="../../_static/ZC_Logo.png" class="logo__image only-dark pst-js-only" alt="ZQuest Classic  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../tutorials/index.html">
+    Tutorials
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../tutorials/index.html">
+    Tutorials
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/comments.html">Comments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/literals.html">Literals</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/explainers/prepost_incdec.html">Pre- vs Post- increment/decrement</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/declarations/index.html">Declarations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/identifiers.html">Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/vars_consts.html">Variables / Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/arrays_strings.html">Arrays / Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/declarations/namespace.html">Namespaces</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/types/index.html">Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/typedef.html">Typedef Statements</a></li>
+
+<li class="toctree-l2 has-children"><a class="reference internal" href="../lang/types/classes.html">Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lang/explainers/object_memory_management.html">Object Memory Management</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/types/enums.html">Enums</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/control_flow/index.html">Control Flow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/ifunless.html">If / Unless / Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/whileuntil.html">While / Until / Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/for.html">For Loops</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loop.html">Smart Loops (‘loop’)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/loopelse.html">Loop Else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/break.html">Break / Continue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lang/control_flow/switchcase.html">Switch / Case</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/ranges.html">Ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/scripts.html">Scripts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/script_types.html">Script Types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/annotations.html">Annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/options.html">Compiler Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/compiler_directives.html">Compiler Directives</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Globals</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../globals/functions.html">Global functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/constants.html">Global constants</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../globals/Audio.html">Audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Debug.html">Debug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/FileSystem.html">FileSystem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Game.html">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Graphics.html">Graphics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Hero.html">Hero</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Input.html">Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Region.html">Region</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Screen.html">Screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Text.html">Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/Viewport.html">Viewport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../globals/ZInfo.html">ZInfo</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="bitmap.html">bitmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bottledata.html">bottledata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bottleshopdata.html">bottleshopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="combodata.html">combodata</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">combotrigger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="directory.html">directory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dmapdata.html">dmapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dropsetdata.html">dropsetdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eweapon.html">eweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ffc.html">ffc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file.html">file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genericdata.html">genericdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="itemdata.html">itemdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="itemsprite.html">itemsprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lweapon.html">lweapon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapdata.html">mapdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="messagedata.html">messagedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="npc.html">npc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="npcdata.html">npcdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paldata.html">paldata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="portal.html">portal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="randgen.html">randgen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="savedportal.html">savedportal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shopdata.html">shopdata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sprite.html">sprite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spritedata.html">spritedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stack.html">stack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subscreendata.html">subscreendata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subscreenpage.html">subscreenpage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subscreenwidget.html">subscreenwidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="websocket.html">websocket</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Libraries</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/std/index.html">std</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/cfg.html">std.cfg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/limits.html">limits.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/script_runners.html">script_runners.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_constants.html">std_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_extension.html">std_extension.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_functions.html">std_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_keyboard.html">std_keyboard.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/string_constants.html">string_constants.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/string_functions.html">string_functions.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/ghost/index.html">ghost</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost.html">ghost.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_common.html">ghost2_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_deprecated.html">ghost2_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_drawing.html">ghost2_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweapon.html">ghost2_eweapon.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweaponDeath.html">ghost2_eweaponDeath.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_eweaponMovement.html">ghost2_eweaponMovement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_flags.html">ghost2_flags.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_global.html">ghost2_global.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_init.html">ghost2_init.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_modification.html">ghost2_modification.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_movement.html">ghost2_movement.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_other.html">ghost2_other.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_scripts.html">ghost2_scripts.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghost2_update.html">ghost2_update.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/ghost/ghostBasedMovement.html">ghostBasedMovement.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/tango/index.html">tango</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango.html">tango.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_access.html">tango_access.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_common.html">tango_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_deprecated.html">tango_deprecated.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_drawing.html">tango_drawing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_font.html">tango_font.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_functions.html">tango_functions.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_loading.html">tango_loading.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_loggingMinimal.html">tango_loggingMinimal.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_menu.html">tango_menu.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_messages.html">tango_messages.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_metrics.html">tango_metrics.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_processing.html">tango_processing.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_script.html">tango_script.zs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_stringControlCode.html">tango_stringControlCode.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_style.html">tango_style.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_user.html">tango_user.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/tango/tango_validation.html">tango_validation.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/gui/index.html">gui</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/gui.html">gui.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_button.html">guizh_button.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_checkbox.html">guizh_checkbox.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_common.html">guizh_common.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_event.html">guizh_event.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_label.html">guizh_label.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_main.html">guizh_main.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_radioButton.html">guizh_radioButton.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_root.html">guizh_root.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_spinner.html">guizh_spinner.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_types.html">guizh_types.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_widget.html">guizh_widget.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/gui/guizh_window.html">guizh_window.zh</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../libs/EmilyMisc/index.html">EmilyMisc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../libs/EmilyMisc/EmilyMisc.html">EmilyMisc.zh</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">ZScript</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">combotrigger</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="combotrigger">
+<span id="classes-combotrigger"></span><h1>combotrigger<a class="headerlink" href="#combotrigger" title="Link to this heading">#</a></h1>
+<section id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-flags"><span class="std std-ref">Flags</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-button"><span class="std std-ref">Button</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-weaponlevel"><span class="std std-ref">WeaponLevel</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-reqitem"><span class="std std-ref">ReqItem</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-timer"><span class="std std-ref">Timer</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-sfx"><span class="std std-ref">SFX</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-combochange"><span class="std std-ref">ComboChange</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-csetchange"><span class="std std-ref">CSetChange</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-proximity"><span class="std std-ref">Proximity</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-lightbeam"><span class="std std-ref">LightBeam</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-counter"><span class="std std-ref">Counter</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-counteramount"><span class="std std-ref">CounterAmount</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-cooldown"><span class="std std-ref">Cooldown</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-copycat"><span class="std std-ref">Copycat</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-spawnitempickup"><span class="std std-ref">SpawnItemPickup</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-exstate"><span class="std std-ref">ExState</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-exdoordir"><span class="std std-ref">ExDoorDir</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-exdoorindex"><span class="std std-ref">ExDoorIndex</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-spawnenemy"><span class="std std-ref">SpawnEnemy</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-spawnitem"><span class="std std-ref">SpawnItem</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-levelstate"><span class="std std-ref">LevelState</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-globalstate"><span class="std std-ref">GlobalState</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-gstatetimer"><span class="std std-ref">GStateTimer</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-genscript"><span class="std std-ref">GenScript</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-triggroup"><span class="std std-ref">TrigGroup</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-triggroupval"><span class="std std-ref">TrigGroupVal</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-litems"><span class="std std-ref">LItems</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-dmaplvl"><span class="std std-ref">DMapLvl</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-reqlevelstate"><span class="std std-ref">ReqLevelState</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-unreqlevelstate"><span class="std std-ref">UnreqLevelState</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-reqglobalstate"><span class="std std-ref">ReqGlobalState</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>bool[]</p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-unreqglobalstate"><span class="std std-ref">UnreqGlobalState</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-tintr"><span class="std std-ref">TintR</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-tintg"><span class="std std-ref">TintG</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-tintb"><span class="std std-ref">TintB</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-lvlpal"><span class="std std-ref">LvlPal</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-bosspal"><span class="std std-ref">BossPal</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-quaketimer"><span class="std std-ref">QuakeTimer</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-wavytimer"><span class="std std-ref">WavyTimer</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-swordjinx"><span class="std std-ref">SwordJinx</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-itemjinx"><span class="std std-ref">ItemJinx</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-shieldjinx"><span class="std std-ref">ShieldJinx</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-stun"><span class="std std-ref">Stun</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-bunny"><span class="std std-ref">Bunny</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-pushtime"><span class="std std-ref">PushTime</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-promptcombo"><span class="std std-ref">PromptCombo</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-promptcset"><span class="std std-ref">PromptCSet</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-failpromptcombo"><span class="std std-ref">FailPromptCombo</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-failpromptcset"><span class="std std-ref">FailPromptCSet</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-promptx"><span class="std std-ref">PromptX</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-prompty"><span class="std std-ref">PromptY</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-triggerstring"><span class="std std-ref">TriggerString</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-failstring"><span class="std std-ref">FailString</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-herobounce"><span class="std std-ref">HeroBounce</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-var-reqheroz"><span class="std std-ref">ReqHeroZ</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-fun-getlabel"><span class="std std-ref">GetLabel</span></a>(char32[] buf)</p></td>
+</tr>
+<tr class="row-even"><td><p><abbr title="No return value.">void</abbr></p></td>
+<td><p><a class="reference internal" href="#classes-combotrigger-fun-setlabel"><span class="std std-ref">SetLabel</span></a>(char32[] str)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="enumerations">
+<h2>Enumerations<a class="headerlink" href="#enumerations" title="Link to this heading">#</a></h2>
+<p id="globals-enum-combotriggerflag">enum <strong>ComboTriggerFlag</strong>: <a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">🔗</span></a>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L2">Source</a></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-sword"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SWORD</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Sword - Triggered by Sword LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-swordbeam"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SWORDBEAM</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Sword Beam - Triggered by Sword Beam LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-brang"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_BRANG</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Boomerang - Triggered by Boomerang LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-bomb"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_BOMB</strong> = <code class="docutils literal notranslate"><span class="pre">3</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Bomb Boom - Triggered by Bomb (explosion) LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-sbomb"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SBOMB</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Super Bomb Boom - Triggered by Super Bomb (explosion) LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-litbomb"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_LITBOMB</strong> = <code class="docutils literal notranslate"><span class="pre">5</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Placed Bomb - Triggered by Bomb (placed) LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-litsbomb"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_LITSBOMB</strong> = <code class="docutils literal notranslate"><span class="pre">6</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Placed Super Bomb - Triggered by Super Bomb (placed) LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-arrow"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_ARROW</strong> = <code class="docutils literal notranslate"><span class="pre">7</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Arrow - Triggered by Arrow LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-fire"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_FIRE</strong> = <code class="docutils literal notranslate"><span class="pre">8</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Fire - Triggered by Fire LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-whistle"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_WHISTLE</strong> = <code class="docutils literal notranslate"><span class="pre">9</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Whistle - Triggered by Whistle LWeapons (whistle played)</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-bait"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_BAIT</strong> = <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Bait - Triggered by Bait LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-wand"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_WAND</strong> = <code class="docutils literal notranslate"><span class="pre">11</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Wand - Triggered by Wand Handle LWeapon</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-magic"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_MAGIC</strong> = <code class="docutils literal notranslate"><span class="pre">12</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Magic - Triggered by Magic LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-wind"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_WIND</strong> = <code class="docutils literal notranslate"><span class="pre">13</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Wind - Triggered by Wind LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-refmagic"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_REFMAGIC</strong> = <code class="docutils literal notranslate"><span class="pre">14</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Refl. Magic - Triggered by Reflected Magic LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-reffireball"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_REFFIREBALL</strong> = <code class="docutils literal notranslate"><span class="pre">15</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Refl. Fireball - Triggered by Reflected Fireball LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-refrock"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_REFROCK</strong> = <code class="docutils literal notranslate"><span class="pre">16</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Refl. Rock - Triggered by Reflected Rock LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-hammer"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_HAMMER</strong> = <code class="docutils literal notranslate"><span class="pre">17</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Hammer - Triggered by Hammer LWeapon</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-reset-anim"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_RESET_ANIM</strong> = <code class="docutils literal notranslate"><span class="pre">18</span></code></p>
+<p class="classref-comment">Effects-&gt;Reset Anim - On trigger, reset the animation of the combo.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-invert-proximity"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_INVERT_PROXIMITY</strong> = <code class="docutils literal notranslate"><span class="pre">19</span></code></p>
+<p class="classref-comment">Other-&gt;Invert Proximity Req. - Proximity requirement is reversed</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-btn-top"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_BTN_TOP</strong> = <code class="docutils literal notranslate"><span class="pre">20</span></code></p>
+<p class="classref-comment">Other-&gt;Btn: Top - Triggered by button press from above</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-btn-bottom"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_BTN_BOTTOM</strong> = <code class="docutils literal notranslate"><span class="pre">21</span></code></p>
+<p class="classref-comment">Other-&gt;Btn: Bottom - Trigger by button press from below</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-btn-left"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_BTN_LEFT</strong> = <code class="docutils literal notranslate"><span class="pre">22</span></code></p>
+<p class="classref-comment">Other-&gt;Btn: Left - Trigger by button press from left</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-btn-right"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_BTN_RIGHT</strong> = <code class="docutils literal notranslate"><span class="pre">23</span></code></p>
+<p class="classref-comment">Other-&gt;Btn: Right - Trigger by button press from right</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-invert-min-max"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_INVERT_MIN_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">24</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Max Level Instead - Treat the ‘TriggerLevel’ as a max instead of a min</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-step"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_STEP</strong> = <code class="docutils literal notranslate"><span class="pre">25</span></code></p>
+<p class="classref-comment">Other-&gt;’Step-&gt;’ - Triggered by ‘Step-&gt;’</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-step-sens"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_STEP_SENS</strong> = <code class="docutils literal notranslate"><span class="pre">26</span></code></p>
+<p class="classref-comment">Other-&gt;’Step-&gt; (Sensitive)’ - Triggered by ‘Step-&gt;Sensitive’</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-shutter"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SHUTTER</strong> = <code class="docutils literal notranslate"><span class="pre">27</span></code></p>
+<p class="classref-comment">Other-&gt;’Shutter-&gt;’ - Triggered by ‘Shutter-&gt;’</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ctype-effects"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_CTYPE_EFFECTS</strong> = <code class="docutils literal notranslate"><span class="pre">28</span></code></p>
+<p class="classref-comment">Effects-&gt;’-&gt;ComboType Effects’ - On trigger, cause the combo’s type-related effects to occur. (ex: opening a chest)</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-only-gentrig"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_ONLY_GENTRIG</strong> = <code class="docutils literal notranslate"><span class="pre">29</span></code></p>
+<p class="classref-comment">Don’t allow the combo to trigger via it’s normal trigger methods (ex: bush via slashing)
+Changing this for any trigger changes it for the whole combo</p>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated: </span>Use <a class="reference internal" href="combodata.html#classes-combodata-var-onlygentriggers"><span class="std std-ref">combodata::OnlyGenTriggers</span></a> instead!</p>
+</div>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-kill-weapon"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_KILL_WEAPON</strong> = <code class="docutils literal notranslate"><span class="pre">30</span></code></p>
+<p class="classref-comment">Weapons-&gt;Effects-&gt;’Kill Triggering Weapon’ - If triggered by a weapon, kill the weapon.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-fireball"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_FIREBALL</strong> = <code class="docutils literal notranslate"><span class="pre">31</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Fireball - Triggered by Fireball EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-hookshot"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_HOOKSHOT</strong> = <code class="docutils literal notranslate"><span class="pre">32</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Hookshot - Triggered by Hookshot LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-sparkle"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SPARKLE</strong> = <code class="docutils literal notranslate"><span class="pre">33</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Sparkle - Triggered by Sparkle LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-byrna"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_BYRNA</strong> = <code class="docutils literal notranslate"><span class="pre">34</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Byrna - Triggered by Byrna LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-refbeam"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_REFBEAM</strong> = <code class="docutils literal notranslate"><span class="pre">35</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Refl. Beam - Triggered by Reflected Beam LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-stomp"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_STOMP</strong> = <code class="docutils literal notranslate"><span class="pre">36</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Stomp - Triggered by Stomp Boot LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-script1"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SCRIPT1</strong> = <code class="docutils literal notranslate"><span class="pre">37</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Custom Weapon 1 - Triggered by ‘Custom Weapon 01’ LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-script2"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SCRIPT2</strong> = <code class="docutils literal notranslate"><span class="pre">38</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Custom Weapon 2 - Triggered by ‘Custom Weapon 02’ LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-script3"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SCRIPT3</strong> = <code class="docutils literal notranslate"><span class="pre">39</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Custom Weapon 3 - Triggered by ‘Custom Weapon 03’ LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-script4"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SCRIPT4</strong> = <code class="docutils literal notranslate"><span class="pre">40</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Custom Weapon 4 - Triggered by ‘Custom Weapon 04’ LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-script5"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SCRIPT5</strong> = <code class="docutils literal notranslate"><span class="pre">41</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Custom Weapon 5 - Triggered by ‘Custom Weapon 05’ LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-script6"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SCRIPT6</strong> = <code class="docutils literal notranslate"><span class="pre">42</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Custom Weapon 6 - Triggered by ‘Custom Weapon 06’ LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-script7"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SCRIPT7</strong> = <code class="docutils literal notranslate"><span class="pre">43</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Custom Weapon 7 - Triggered by ‘Custom Weapon 07’ LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-script8"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SCRIPT8</strong> = <code class="docutils literal notranslate"><span class="pre">44</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Custom Weapon 8 - Triggered by ‘Custom Weapon 08’ LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-script9"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SCRIPT9</strong> = <code class="docutils literal notranslate"><span class="pre">45</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Custom Weapon 9 - Triggered by ‘Custom Weapon 09’ LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-script10"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SCRIPT10</strong> = <code class="docutils literal notranslate"><span class="pre">46</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Custom Weapon 10 - Triggered by ‘Custom Weapon 10’ LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-auto"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_AUTO</strong> = <code class="docutils literal notranslate"><span class="pre">47</span></code></p>
+<p class="classref-comment">Other-&gt;Always Triggered - Triggered automatically, every frame.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-trig-secrets"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_TRIG_SECRETS</strong> = <code class="docutils literal notranslate"><span class="pre">48</span></code></p>
+<p class="classref-comment">Effects-&gt;Triggers Secrets - Triggered by ‘Secrets-&gt;’</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-invert-itemreq"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_INVERT_ITEMREQ</strong> = <code class="docutils literal notranslate"><span class="pre">49</span></code></p>
+<p class="classref-comment">Counters/Items-&gt;Invert Item Req - Invert the item requirement (require NOT having the item)</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-consume-itemreq"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_CONSUME_ITEMREQ</strong> = <code class="docutils literal notranslate"><span class="pre">50</span></code></p>
+<p class="classref-comment">Counters/Items-&gt;Consume Item Req - On trigger, consume the required item.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-counter-ge"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_COUNTER_GE</strong> = <code class="docutils literal notranslate"><span class="pre">51</span></code></p>
+<p class="classref-comment">Counters/Items-&gt;’Require &gt;=’ - Only trigger if the counter has &gt;= the specified amount</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-counter-lt"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_COUNTER_LT</strong> = <code class="docutils literal notranslate"><span class="pre">52</span></code></p>
+<p class="classref-comment">Counters/Items-&gt;’Require &lt;’ - Only trigger if the counter has &lt; the specified amount</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-counter-eat"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_COUNTER_EAT</strong> = <code class="docutils literal notranslate"><span class="pre">53</span></code></p>
+<p class="classref-comment">Counters/Items-&gt;Consume Amount - Consume the specified amount from the counter. Negative amounts add.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-counter-not-only-trig-eat"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_COUNTER_NOT_ONLY_TRIG_EAT</strong> = <code class="docutils literal notranslate"><span class="pre">54</span></code></p>
+<p class="classref-comment">Counters/Items-&gt;Consume w/o trig - Consume the specified amount from the counter even if the combo failed to trigger.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-lighton"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_LIGHTON</strong> = <code class="docutils literal notranslate"><span class="pre">55</span></code></p>
+<p class="classref-comment">Other-&gt;’Light On-&gt;’ - Triggered by a lightbeam.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-lightoff"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_LIGHTOFF</strong> = <code class="docutils literal notranslate"><span class="pre">56</span></code></p>
+<p class="classref-comment">Other-&gt;’Light Off-&gt;’ - Triggered by lack of a lightbeam.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-push"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_PUSH</strong> = <code class="docutils literal notranslate"><span class="pre">57</span></code></p>
+<p class="classref-comment">Other-&gt;’Push-&gt;’ - Triggered when the <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a> pushes into the combo.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-lens-on"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_LENS_ON</strong> = <code class="docutils literal notranslate"><span class="pre">58</span></code></p>
+<p class="classref-comment">Other-&gt;’Lens On-&gt;’ - Triggered when the lens is revealing.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-lens-off"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_LENS_OFF</strong> = <code class="docutils literal notranslate"><span class="pre">59</span></code></p>
+<p class="classref-comment">Other-&gt;’Lens Off-&gt;’ - Triggered when the lens is not revealing.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-arrow"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_ARROW</strong> = <code class="docutils literal notranslate"><span class="pre">60</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Arrow - Triggered by Arrow EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-brang"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_BRANG</strong> = <code class="docutils literal notranslate"><span class="pre">61</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Boomerang - Triggered by Boomerang EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-sword"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_SWORD</strong> = <code class="docutils literal notranslate"><span class="pre">62</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Sword - Triggered by Sword EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-rock"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_ROCK</strong> = <code class="docutils literal notranslate"><span class="pre">63</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Rock - Triggered by Rock EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-script1"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_SCRIPT1</strong> = <code class="docutils literal notranslate"><span class="pre">64</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Custom Weapon 1 - Triggered by ‘Custom Weapon 01’ EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-script2"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_SCRIPT2</strong> = <code class="docutils literal notranslate"><span class="pre">65</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Custom Weapon 2 - Triggered by ‘Custom Weapon 02’ EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-script3"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_SCRIPT3</strong> = <code class="docutils literal notranslate"><span class="pre">66</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Custom Weapon 3 - Triggered by ‘Custom Weapon 03’ EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-script4"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_SCRIPT4</strong> = <code class="docutils literal notranslate"><span class="pre">67</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Custom Weapon 4 - Triggered by ‘Custom Weapon 04’ EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-script5"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_SCRIPT5</strong> = <code class="docutils literal notranslate"><span class="pre">68</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Custom Weapon 5 - Triggered by ‘Custom Weapon 05’ EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-script6"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_SCRIPT6</strong> = <code class="docutils literal notranslate"><span class="pre">69</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Custom Weapon 6 - Triggered by ‘Custom Weapon 06’ EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-script7"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_SCRIPT7</strong> = <code class="docutils literal notranslate"><span class="pre">70</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Custom Weapon 7 - Triggered by ‘Custom Weapon 07’ EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-script8"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_SCRIPT8</strong> = <code class="docutils literal notranslate"><span class="pre">71</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Custom Weapon 8 - Triggered by ‘Custom Weapon 08’ EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-script9"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_SCRIPT9</strong> = <code class="docutils literal notranslate"><span class="pre">72</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Custom Weapon 9 - Triggered by ‘Custom Weapon 09’ EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-script10"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_SCRIPT10</strong> = <code class="docutils literal notranslate"><span class="pre">73</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Custom Weapon 10 - Triggered by ‘Custom Weapon 10’ EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-magic"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_MAGIC</strong> = <code class="docutils literal notranslate"><span class="pre">74</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Magic - Triggered by Magic EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-bblast"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_BBLAST</strong> = <code class="docutils literal notranslate"><span class="pre">75</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Bomb Blast - Triggered by Bomb (explosion) EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-sbblast"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_SBBLAST</strong> = <code class="docutils literal notranslate"><span class="pre">76</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;SBomb Blast - Triggered by Super Bomb (explosion) EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-litbomb"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_LITBOMB</strong> = <code class="docutils literal notranslate"><span class="pre">77</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Lit Bomb - Triggered by Bomb (unexploded) EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-litsbomb"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_LITSBOMB</strong> = <code class="docutils literal notranslate"><span class="pre">78</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Lit SBomb - Triggered by Super Bomb (unexploded) EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-firetrail"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_FIRETRAIL</strong> = <code class="docutils literal notranslate"><span class="pre">79</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Fire Trail - Triggered by Fire Trail EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-flame"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_FLAME</strong> = <code class="docutils literal notranslate"><span class="pre">80</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Flame - Triggered by Flame EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-wind"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_WIND</strong> = <code class="docutils literal notranslate"><span class="pre">81</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Wind - Triggered by Wind EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ew-flame2"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EW_FLAME2</strong> = <code class="docutils literal notranslate"><span class="pre">82</span></code></p>
+<p class="classref-comment">Weapons-&gt;EWeapons-&gt;Flame 2 - Triggered by Flame 2 EWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-special-item"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SPECIAL_ITEM</strong> = <code class="docutils literal notranslate"><span class="pre">83</span></code></p>
+<p class="classref-comment">States/Spawning-&gt;Spawns Special Item - The spawned item will be the special item</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-exst-item"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EXST_ITEM</strong> = <code class="docutils literal notranslate"><span class="pre">84</span></code></p>
+<p class="classref-comment">States/Spawning-&gt;Trigger ExState after item pickup - Trigger ExState after picking up the spawned item</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-exst-enemy"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_EXST_ENEMY</strong> = <code class="docutils literal notranslate"><span class="pre">85</span></code></p>
+<p class="classref-comment">States/Spawning-&gt;Trigger ExState after enemy kill - Trigger ExState after killing the spawned enemy</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-autograb-item"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_AUTOGRAB_ITEM</strong> = <code class="docutils literal notranslate"><span class="pre">86</span></code></p>
+<p class="classref-comment">States/Spawning-&gt;Spawned Item auto-collects - Spawned item auto-collects</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-kill-enemies"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_KILL_ENEMIES</strong> = <code class="docutils literal notranslate"><span class="pre">87</span></code></p>
+<p class="classref-comment">Other-&gt;’Enemies-&gt;’ - Triggered when all enemies are killed</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-secretstr"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SECRETSTR</strong> = <code class="docutils literal notranslate"><span class="pre">88</span></code></p>
+<p class="classref-comment">Other-&gt;’Secrets-&gt;’ - Triggered when screen secrets are triggered</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-thrown"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_THROWN</strong> = <code class="docutils literal notranslate"><span class="pre">89</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Thrown - Triggered by Thrown Object weapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-quakestun"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_QUAKESTUN</strong> = <code class="docutils literal notranslate"><span class="pre">90</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Quake Hammer - Triggered by a Quake Stun</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-squakestun"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SQUAKESTUN</strong> = <code class="docutils literal notranslate"><span class="pre">91</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;S. Quake Hammer - Triggered by a Super Quake Stun</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-anyfire"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_ANYFIRE</strong> = <code class="docutils literal notranslate"><span class="pre">92</span></code></p>
+<p class="classref-comment">Weapons-&gt;Other-&gt;Any Fire - Triggered by Any Fire</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-strongfire"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_STRONGFIRE</strong> = <code class="docutils literal notranslate"><span class="pre">93</span></code></p>
+<p class="classref-comment">Weapons-&gt;Other-&gt;Strong Fire - Triggered by Strong Fire</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-magicfire"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_MAGICFIRE</strong> = <code class="docutils literal notranslate"><span class="pre">94</span></code></p>
+<p class="classref-comment">Weapons-&gt;Other-&gt;Magic Fire - Triggered by Magic Fire</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-divinefire"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_DIVINEFIRE</strong> = <code class="docutils literal notranslate"><span class="pre">95</span></code></p>
+<p class="classref-comment">Weapons-&gt;Other-&gt;Divine Fire - Triggered by Divine Fire</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-triglevelstate"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_TRIGLEVELSTATE</strong> = <code class="docutils literal notranslate"><span class="pre">96</span></code></p>
+<p class="classref-comment">States/Spawning-&gt;’LevelState-&gt;’ - Triggered by Level State</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-levelstate"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_LEVELSTATE</strong> = <code class="docutils literal notranslate"><span class="pre">97</span></code></p>
+<p class="classref-comment">States/Spawning-&gt;’-&gt;LevelState’ - Triggers Level State</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-trigglobalstate"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_TRIGGLOBALSTATE</strong> = <code class="docutils literal notranslate"><span class="pre">98</span></code></p>
+<p class="classref-comment">States/Spawning-&gt;’GlobalState-&gt;’ - Triggered by Global State</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-globalstate"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_GLOBALSTATE</strong> = <code class="docutils literal notranslate"><span class="pre">99</span></code></p>
+<p class="classref-comment">States/Spawning-&gt;’-&gt;GlobalState’ - Triggers Global State</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-do-kill-enemies"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_DO_KILL_ENEMIES</strong> = <code class="docutils literal notranslate"><span class="pre">100</span></code></p>
+<p class="classref-comment">Effects-&gt;Kill Enemies - Kill all enemies</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-do-clear-enemies"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_DO_CLEAR_ENEMIES</strong> = <code class="docutils literal notranslate"><span class="pre">101</span></code></p>
+<p class="classref-comment">Effects-&gt;Clear Enemies - Delete all enemies</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-do-clear-lweapons"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_DO_CLEAR_LWEAPONS</strong> = <code class="docutils literal notranslate"><span class="pre">102</span></code></p>
+<p class="classref-comment">Effects-&gt;Clear LWeapons - Delete all lweapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-do-clear-eweapons"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_DO_CLEAR_EWEAPONS</strong> = <code class="docutils literal notranslate"><span class="pre">103</span></code></p>
+<p class="classref-comment">Effects-&gt;Clear EWeapons - Delete all eweapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ignite-weapons-any"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_IGNITE_WEAPONS_ANY</strong> = <code class="docutils literal notranslate"><span class="pre">104</span></code></p>
+<p class="classref-comment">Weapons-&gt;Effects-&gt;Ignite Weapon (Any) - Light the triggering weapon on normal fire.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ignite-weapons-strong"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_IGNITE_WEAPONS_STRONG</strong> = <code class="docutils literal notranslate"><span class="pre">105</span></code></p>
+<p class="classref-comment">Weapons-&gt;Effects-&gt;Ignite Weapon (Strong) - Light the triggering weapon on strong fire.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ignite-weapons-magic"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_IGNITE_WEAPONS_MAGIC</strong> = <code class="docutils literal notranslate"><span class="pre">106</span></code></p>
+<p class="classref-comment">Weapons-&gt;Effects-&gt;Ignite Weapon (Magic) - Light the triggering weapon on magic fire.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-ignite-weapons-divine"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_IGNITE_WEAPONS_DIVINE</strong> = <code class="docutils literal notranslate"><span class="pre">107</span></code></p>
+<p class="classref-comment">Weapons-&gt;Effects-&gt;Ignite Weapon (Divine) - Light the triggering weapon on divine fire.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-separate-weapon-triggers"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SEPARATE_WEAPON_TRIGGERS</strong> = <code class="docutils literal notranslate"><span class="pre">108</span></code></p>
+<p class="classref-comment">Weapons-&gt;Effects-&gt;Weapon Separate Triggers - Triggering weapons only trigger weapon-related effects</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-tgroup-contrib"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_TGROUP_CONTRIB</strong> = <code class="docutils literal notranslate"><span class="pre">109</span></code></p>
+<p class="classref-comment">States/Spawning-&gt;Contributes To TrigGroup - This combo contributes to its’ TrigGroup</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-tgroup-less"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_TGROUP_LESS</strong> = <code class="docutils literal notranslate"><span class="pre">110</span></code></p>
+<p class="classref-comment">States/Spawning-&gt;’TrigGroup Less-&gt;’ - When the number of combos that contribute to this combo’s Trigger Group is LESS than the Trigger Group Val, trigger this combo.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-tgroup-greater"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_TGROUP_GREATER</strong> = <code class="docutils literal notranslate"><span class="pre">111</span></code></p>
+<p class="classref-comment">States/Spawning-&gt;’TrigGroup Greater-&gt;’ - When the number of combos that contribute to this combo’s Trigger Group is GREATER than the Trigger Group Val, trigger this combo.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-trig-pushed"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_TRIG_PUSHED</strong> = <code class="docutils literal notranslate"><span class="pre">112</span></code></p>
+<p class="classref-comment">Other-&gt;’Pushed-&gt;’ - Triggers when this combo, as a pushblock, settles into a new positon.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-trig-dive"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_TRIG_DIVE</strong> = <code class="docutils literal notranslate"><span class="pre">113</span></code></p>
+<p class="classref-comment">Other-&gt;’Dive-&gt;’ - Triggers when the <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a> dives on this combo.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-trig-dive-sens"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_TRIG_DIVE_SENS</strong> = <code class="docutils literal notranslate"><span class="pre">114</span></code></p>
+<p class="classref-comment">Other-&gt;’Dive-&gt; (Sensitive)’ - Triggers when the <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a> dives on this combo. More sensitive hitbox than <a class="reference internal" href="#globals-enum-member-trigflag-trig-dive"><span class="std std-ref">TRIGFLAG_TRIG_DIVE</span></a></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-refarrow"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_REFARROW</strong> = <code class="docutils literal notranslate"><span class="pre">115</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Refl. Arrow - Triggered by Reflected Arrow LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-reffire"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_REFFIRE</strong> = <code class="docutils literal notranslate"><span class="pre">116</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Refl. Fire - Triggered by Reflected Fire LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-reffire2"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_REFFIRE2</strong> = <code class="docutils literal notranslate"><span class="pre">117</span></code></p>
+<p class="classref-comment">Weapons-&gt;LWeapons-&gt;Refl. Fire 2 - Triggered by Reflected Fire 2 LWeapons</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-toggle-darkness"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_TOGGLE_DARKNESS</strong> = <code class="docutils literal notranslate"><span class="pre">118</span></code></p>
+<p class="classref-comment">Effects-&gt;Toggle Darkness - Toggle the screen being a dark room</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-req-darkness"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_REQ_DARKNESS</strong> = <code class="docutils literal notranslate"><span class="pre">119</span></code></p>
+<p class="classref-comment">Other-&gt;Req. Darkness - Can only trigger if the screen is a dark room</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-req-no-darkness"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_REQ_NO_DARKNESS</strong> = <code class="docutils literal notranslate"><span class="pre">120</span></code></p>
+<p class="classref-comment">Other-&gt;Req. Darkness - Can only trigger if the screen is lit (not a dark room)</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-litem-require"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_LITEM_REQUIRE</strong> = <code class="docutils literal notranslate"><span class="pre">121</span></code></p>
+<p class="classref-comment">Counters/Items-&gt;Require All - Require all the specified LItems to trigger the combo</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-litem-inv-require"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_LITEM_INV_REQUIRE</strong> = <code class="docutils literal notranslate"><span class="pre">122</span></code></p>
+<p class="classref-comment">Counters/Items-&gt;Require Not All - Require not all (some is ok) of the specified LItems to trigger the combo</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-litem-set"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_LITEM_SET</strong> = <code class="docutils literal notranslate"><span class="pre">123</span></code></p>
+<p class="classref-comment">Counters/Items-&gt;’-&gt;Set’ - Grants the specified LItems. If <a class="reference internal" href="#globals-enum-member-trigflag-litem-unset"><span class="std std-ref">TRIGFLAG_LITEM_UNSET</span></a> is also on, toggles them instead.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-litem-unset"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_LITEM_UNSET</strong> = <code class="docutils literal notranslate"><span class="pre">124</span></code></p>
+<p class="classref-comment">Counters/Items-&gt;’-&gt;Unset’ - Removes the specified LItems. If <a class="reference internal" href="#globals-enum-member-trigflag-litem-set"><span class="std std-ref">TRIGFLAG_LITEM_SET</span></a> is also on, toggles them instead.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-tint-clear"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_TINT_CLEAR</strong> = <code class="docutils literal notranslate"><span class="pre">125</span></code></p>
+<p class="classref-comment">Graphics-&gt;’-&gt;Clear Tint’ - Clears the palette tint.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-only-grounded-weapons"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_ONLY_GROUNDED_WEAPONS</strong> = <code class="docutils literal notranslate"><span class="pre">126</span></code></p>
+<p class="classref-comment">Weapons-&gt;Other-&gt;’Only Grounded Weapons’ - weapons with Z &gt; 0 won’t trigger the combo</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-counter-wealth-medal"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_COUNTER_WEALTH_MEDAL</strong> = <code class="docutils literal notranslate"><span class="pre">127</span></code></p>
+<p class="classref-comment">Counter/Items-&gt;’Apply Discount’ - Wealth Medal items discount the counter cost</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-screen-load"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_SCREEN_LOAD</strong> = <code class="docutils literal notranslate"><span class="pre">128</span></code></p>
+<p class="classref-comment">Triggers when screen/region loads, after levelstates and exstates are applied</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-unset-exstate"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_UNSET_EXSTATE</strong> = <code class="docutils literal notranslate"><span class="pre">129</span></code></p>
+<p class="classref-comment">Unsets the <code class="docutils literal notranslate"><span class="pre">ExState</span></code> when triggered.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-unset-exdoor"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_UNSET_EXDOOR</strong> = <code class="docutils literal notranslate"><span class="pre">130</span></code></p>
+<p class="classref-comment">Unsets the <code class="docutils literal notranslate"><span class="pre">ExDoorDir</span></code> when triggered.</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-req-hero-standing"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_REQ_HERO_STANDING</strong> = <code class="docutils literal notranslate"><span class="pre">131</span></code></p>
+<p class="classref-comment">Can only trigger if the <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a> is standing on ground. (Counts standing in sideview as well)</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-req-hero-not-standing"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_REQ_HERO_NOT_STANDING</strong> = <code class="docutils literal notranslate"><span class="pre">132</span></code></p>
+<p class="classref-comment">Can only trigger if the <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a> is NOT standing on ground. (Counts standing in sideview as well)</p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-invert-hero-z"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_INVERT_HERO_Z</strong> = <code class="docutils literal notranslate"><span class="pre">133</span></code></p>
+<p class="classref-comment">Inverts the condition of <code class="docutils literal notranslate"><span class="pre">ReqPlayerZ</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-max-in-use"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_MAX_IN_USE</strong> = <code class="docutils literal notranslate"><span class="pre">134</span></code></p>
+<p class="classref-enumeration-constant" id="globals-enum-member-trigflag-max"><a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag</span></a> <strong>TRIGFLAG_MAX</strong> = <code class="docutils literal notranslate"><span class="pre">192</span></code></p>
+</section>
+<hr class="classref-item-separator docutils" />
+<section id="variable-descriptions">
+<h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
+<p id="classes-combotrigger-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-combotrigger-var-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L155">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="#globals-enum-combotriggerflag"><span class="std std-ref">ComboTriggerFlag (TRIGFLAG_)</span></a></p>
+<p class="classref-comment">The flags of this trigger.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-button">bool[] <strong>Button</strong>  <a class="reference internal" href="#classes-combotrigger-var-button"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L162">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="../globals/constants.html#globals-enum-interactbutton"><span class="std std-ref">InteractButton (INTBTN_)</span></a></p>
+<p class="classref-comment">Array of 8 buttons that can trigger the combo when pressed
+(while the player is standing close to and facing the combo)</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-weaponlevel"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WeaponLevel</strong>  <a class="reference internal" href="#classes-combotrigger-var-weaponlevel"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L168">Source</a></p>
+<p class="classref-comment">Used as a minimum (or maximum, if <a class="reference internal" href="#globals-enum-member-trigflag-invert-min-max"><span class="std std-ref">TRIGFLAG_INVERT_MIN_MAX</span></a> is set) level
+for any weapon-based triggers.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-reqitem"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ReqItem</strong>  <a class="reference internal" href="#classes-combotrigger-var-reqitem"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L177">Source</a></p>
+<p class="classref-comment">If set to non-0, represents an item that must be owned (or must NOT
+be owned, if <a class="reference internal" href="#globals-enum-member-trigflag-invert-itemreq"><span class="std std-ref">TRIGFLAG_INVERT_ITEMREQ</span></a> is set).</p>
+<p class="classref-comment">If <a class="reference internal" href="#globals-enum-member-trigflag-consume-itemreq"><span class="std std-ref">TRIGFLAG_CONSUME_ITEMREQ</span></a> is set, triggering the combo will consume this item,
+removing it from the player’s inventory.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-timer"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Timer</strong>  <a class="reference internal" href="#classes-combotrigger-var-timer"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L181">Source</a></p>
+<p class="classref-comment">Timer. The combo triggers every this many frames if &gt;0.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-sfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SFX</strong>  <a class="reference internal" href="#classes-combotrigger-var-sfx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L186">Source</a></p>
+<p class="classref-comment">The SFX to play when the combo is triggered. If 0, no SFX will be played.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-combochange"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ComboChange</strong>  <a class="reference internal" href="#classes-combotrigger-var-combochange"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L195">Source</a></p>
+<p class="classref-comment">The amount the combo will change by when triggered.</p>
+<p class="classref-comment">Ex. <code class="docutils literal notranslate"><span class="pre">1</span></code> acts as ‘-&gt;Next’, <code class="docutils literal notranslate"><span class="pre">-1</span></code> acts as ‘-&gt;Prev’.</p>
+<p class="classref-comment">If <code class="docutils literal notranslate"><span class="pre">0</span></code>, no change occurs.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-csetchange"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CSetChange</strong>  <a class="reference internal" href="#classes-combotrigger-var-csetchange"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L200">Source</a></p>
+<p class="classref-comment">The amount the cset will change by when triggered.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-proximity"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Proximity</strong>  <a class="reference internal" href="#classes-combotrigger-var-proximity"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L209">Source</a></p>
+<p class="classref-comment">The player proximity requirement. If &gt;0, when the combo is triggered,
+the trigger will be canceled if the player is not within this distance in pixels.</p>
+<p class="classref-comment">If <a class="reference internal" href="#globals-enum-member-trigflag-invert-proximity"><span class="std std-ref">TRIGFLAG_INVERT_PROXIMITY</span></a> is set, the trigger will instead be canceled if the player IS
+within this distance in pixels.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-lightbeam"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LightBeam</strong>  <a class="reference internal" href="#classes-combotrigger-var-lightbeam"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L221">Source</a></p>
+<p class="classref-comment">The light beam trigger set that (may) trigger this combo.</p>
+<p class="classref-comment">0 means any beams, 1-32 mean only matching beams.</p>
+<p class="classref-comment">Related:</p>
+<ul class="classref-comment simple">
+<li><p><a class="reference internal" href="#globals-enum-member-trigflag-lighton"><span class="std std-ref">TRIGFLAG_LIGHTON</span></a> (trigger when hit by matching light)</p></li>
+<li><p><a class="reference internal" href="#globals-enum-member-trigflag-lightoff"><span class="std std-ref">TRIGFLAG_LIGHTOFF</span></a> (trigger when NOT hit by matching
+light)</p></li>
+</ul>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-counter"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Counter</strong>  <a class="reference internal" href="#classes-combotrigger-var-counter"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L232">Source</a></p>
+<p class="classref-comment">The counter used by this trigger.</p>
+<p class="classref-comment">With <a class="reference internal" href="#globals-enum-member-trigflag-counter-ge"><span class="std std-ref">TRIGFLAG_COUNTER_GE</span></a>, cancels the trigger if the counter is &lt; the <a class="reference internal" href="#classes-combotrigger-var-counteramount"><span class="std std-ref">CounterAmount</span></a>.
+With <a class="reference internal" href="#globals-enum-member-trigflag-counter-lt"><span class="std std-ref">TRIGFLAG_COUNTER_LT</span></a>, cancels the trigger if the counter is &gt;= the <a class="reference internal" href="#classes-combotrigger-var-counteramount"><span class="std std-ref">CounterAmount</span></a>.
+With <a class="reference internal" href="#globals-enum-member-trigflag-counter-eat"><span class="std std-ref">TRIGFLAG_COUNTER_EAT</span></a>, consumes the <a class="reference internal" href="#classes-combotrigger-var-counteramount"><span class="std std-ref">CounterAmount</span></a> from the counter when triggered.
+…and with <a class="reference internal" href="#globals-enum-member-trigflag-counter-not-only-trig-eat"><span class="std std-ref">TRIGFLAG_COUNTER_NOT_ONLY_TRIG_EAT</span></a>, the consumed amount consumes even if the combo
+fails to trigger (ex. via failing a conditional)</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-counteramount"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>CounterAmount</strong>  <a class="reference internal" href="#classes-combotrigger-var-counteramount"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L236">Source</a></p>
+<p class="classref-comment">The counter amount used by this trigger. See <a class="reference internal" href="#classes-combotrigger-var-counter"><span class="std std-ref">Counter</span></a>.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-cooldown"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Cooldown</strong>  <a class="reference internal" href="#classes-combotrigger-var-cooldown"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L241">Source</a></p>
+<p class="classref-comment">The combo’s cooldown between triggers</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-copycat"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Copycat</strong>  <a class="reference internal" href="#classes-combotrigger-var-copycat"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L247">Source</a></p>
+<p class="classref-comment">If &gt; 0, triggering this combo triggers all other triggers with matching
+Copycat.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-spawnitempickup"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SpawnItemPickup</strong>  <a class="reference internal" href="#classes-combotrigger-var-spawnitempickup"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L256">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">value</span></code> <a class="reference internal" href="itemdata.html#globals-enum-itempickupbitflags"><span class="std std-ref">ItemPickupBitflags (IP_)</span></a></p>
+<p class="classref-comment">The item pickup bitflags for the spawned item.</p>
+<p class="classref-comment">Only these bitflags are used: <a class="reference internal" href="itemdata.html#globals-enum-member-ip-holdup"><span class="std std-ref">IP_HOLDUP</span></a>, <a class="reference internal" href="itemdata.html#globals-enum-member-ip-timeout"><span class="std std-ref">IP_TIMEOUT</span></a>, <a class="reference internal" href="itemdata.html#globals-enum-member-ip-triggersecrets"><span class="std std-ref">IP_TRIGGERSECRETS</span></a>, and <a class="reference internal" href="itemdata.html#globals-enum-member-ip-alwaysgrab"><span class="std std-ref">IP_ALWAYSGRAB</span></a>.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-exstate"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ExState</strong>  <a class="reference internal" href="#classes-combotrigger-var-exstate"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L261">Source</a></p>
+<p class="classref-comment">If &gt; -1, the ExState that the combo is linked to.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-exdoordir"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ExDoorDir</strong>  <a class="reference internal" href="#classes-combotrigger-var-exdoordir"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L266">Source</a></p>
+<p class="classref-comment">If &gt; -1, the direction of ExDoor that the combo is linked to</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-exdoorindex"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ExDoorIndex</strong>  <a class="reference internal" href="#classes-combotrigger-var-exdoorindex"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L272">Source</a></p>
+<p class="classref-comment">If <code class="docutils literal notranslate"><span class="pre">TrigExDoorDir</span></code> is &gt; -1, the index of that direction of ExDoor that
+the combo is linked to.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-spawnenemy"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SpawnEnemy</strong>  <a class="reference internal" href="#classes-combotrigger-var-spawnenemy"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L277">Source</a></p>
+<p class="classref-comment">If &gt; 0, the enemy ID spawned when the combo is triggered.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-spawnitem"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SpawnItem</strong>  <a class="reference internal" href="#classes-combotrigger-var-spawnitem"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L282">Source</a></p>
+<p class="classref-comment">If &gt; 0, the item ID (or dropset ID) spawned when the combo is triggered.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-levelstate"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LevelState</strong>  <a class="reference internal" href="#classes-combotrigger-var-levelstate"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L290">Source</a></p>
+<p class="classref-comment">The LevelState used for the <a class="reference internal" href="#globals-enum-member-trigflag-triglevelstate"><span class="std std-ref">TRIGFLAG_TRIGLEVELSTATE</span></a> and
+<a class="reference internal" href="#globals-enum-member-trigflag-levelstate"><span class="std std-ref">TRIGFLAG_LEVELSTATE</span></a></p>
+<p class="classref-comment">flags. 0-31, inclusive.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-globalstate"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GlobalState</strong>  <a class="reference internal" href="#classes-combotrigger-var-globalstate"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L298">Source</a></p>
+<p class="classref-comment">The GlobalState used for the <a class="reference internal" href="#globals-enum-member-trigflag-trigglobalstate"><span class="std std-ref">TRIGFLAG_TRIGGLOBALSTATE</span></a> and
+<a class="reference internal" href="#globals-enum-member-trigflag-globalstate"><span class="std std-ref">TRIGFLAG_GLOBALSTATE</span></a></p>
+<p class="classref-comment">flags. 0-255, inclusive.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-gstatetimer"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GStateTimer</strong>  <a class="reference internal" href="#classes-combotrigger-var-gstatetimer"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L306">Source</a></p>
+<p class="classref-comment">If <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">0</span></code>,  the global trigger caused by <a class="reference internal" href="#globals-enum-member-trigflag-globalstate"><span class="std std-ref">TRIGFLAG_GLOBALSTATE</span></a> will set
+to the ‘on’ state with this value as a timer in frames.</p>
+<p class="classref-comment">If this value is 0, it instead toggles the state as normal.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-genscript"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>GenScript</strong>  <a class="reference internal" href="#classes-combotrigger-var-genscript"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L311">Source</a></p>
+<p class="classref-comment">When triggered, this generic script will be run in the ‘RunFrozen’ mode.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-triggroup"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TrigGroup</strong>  <a class="reference internal" href="#classes-combotrigger-var-triggroup"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L319">Source</a></p>
+<p class="classref-comment">The Trigger Group used for the <a class="reference internal" href="#globals-enum-member-trigflag-tgroup-contrib"><span class="std std-ref">TRIGFLAG_TGROUP_CONTRIB</span></a>,
+<code class="docutils literal notranslate"><span class="pre">TRIGFLAG_TGROUP_LESS</span></code>, and <a class="reference internal" href="#globals-enum-member-trigflag-tgroup-greater"><span class="std std-ref">TRIGFLAG_TGROUP_GREATER</span></a> flags.</p>
+<p class="classref-comment">0-255, inclusive.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-triggroupval"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TrigGroupVal</strong>  <a class="reference internal" href="#classes-combotrigger-var-triggroupval"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L327">Source</a></p>
+<p class="classref-comment">The value used for the <a class="reference internal" href="#globals-enum-member-trigflag-tgroup-less"><span class="std std-ref">TRIGFLAG_TGROUP_LESS</span></a> and
+<a class="reference internal" href="#globals-enum-member-trigflag-tgroup-greater"><span class="std std-ref">TRIGFLAG_TGROUP_GREATER</span></a> flags.</p>
+<p class="classref-comment">0-65535, inclusive.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-litems"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LItems</strong>  <a class="reference internal" href="#classes-combotrigger-var-litems"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L337">Source</a></p>
+<p class="classref-comment">‘LI_’ flags used by the
+<a class="reference internal" href="#globals-enum-member-trigflag-litem-require"><span class="std std-ref">TRIGFLAG_LITEM_REQUIRE</span></a>,
+<a class="reference internal" href="#globals-enum-member-trigflag-litem-inv-require"><span class="std std-ref">TRIGFLAG_LITEM_INV_REQUIRE</span></a>,
+<a class="reference internal" href="#globals-enum-member-trigflag-litem-set"><span class="std std-ref">TRIGFLAG_LITEM_SET</span></a>,
+<a class="reference internal" href="#globals-enum-member-trigflag-litem-unset"><span class="std std-ref">TRIGFLAG_LITEM_UNSET</span></a>
+flags.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-dmaplvl"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DMapLvl</strong>  <a class="reference internal" href="#classes-combotrigger-var-dmaplvl"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L345">Source</a></p>
+<p class="classref-comment">The ‘Level’ used by ‘TrigLItems’.</p>
+<dl class="simple classref-comment">
+<dt>-1 represents the ‘current level’, otherwise a valid dmap level indicates</dt><dd><p>that level.</p>
+</dd>
+</dl>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-reqlevelstate">bool[] <strong>ReqLevelState</strong>  <a class="reference internal" href="#classes-combotrigger-var-reqlevelstate"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L351">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">length</span></code> 32</p>
+<p class="classref-comment">Which of the 32 level states for the <a class="reference internal" href="#classes-combotrigger-var-dmaplvl"><span class="std std-ref">DMapLvl</span></a> are required to be ON for this trigger to activate</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-unreqlevelstate">bool[] <strong>UnreqLevelState</strong>  <a class="reference internal" href="#classes-combotrigger-var-unreqlevelstate"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L357">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">length</span></code> 32</p>
+<p class="classref-comment">Which of the 32 level states for the <a class="reference internal" href="#classes-combotrigger-var-dmaplvl"><span class="std std-ref">DMapLvl</span></a> are required to be OFF for this trigger to activate</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-reqglobalstate">bool[] <strong>ReqGlobalState</strong>  <a class="reference internal" href="#classes-combotrigger-var-reqglobalstate"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L363">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">length</span></code> 256</p>
+<p class="classref-comment">Which of the 256 global states are required to be ON for this trigger to activate</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-unreqglobalstate">bool[] <strong>UnreqGlobalState</strong>  <a class="reference internal" href="#classes-combotrigger-var-unreqglobalstate"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L369">Source</a></p>
+<p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">length</span></code> 256</p>
+<p class="classref-comment">Which of the 256 global states are required to be OFF for this trigger to activate</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-tintr"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TintR</strong>  <a class="reference internal" href="#classes-combotrigger-var-tintr"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L376">Source</a></p>
+<p class="classref-comment">When triggered, the palette is tinted on the red channel by this amount. -255 to 255.</p>
+<p class="classref-comment">-63 to 63 if compat QR “Scripts use 6-bit color (0-63) instead of 8-bit (0-255)” is enabled.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-tintg"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TintG</strong>  <a class="reference internal" href="#classes-combotrigger-var-tintg"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L383">Source</a></p>
+<p class="classref-comment">When triggered, the palette is tinted on the green channel by this amount. -255 to 255.</p>
+<p class="classref-comment">-63 to 63 if compat QR “Scripts use 6-bit color (0-63) instead of 8-bit (0-255)” is enabled.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-tintb"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TintB</strong>  <a class="reference internal" href="#classes-combotrigger-var-tintb"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L390">Source</a></p>
+<p class="classref-comment">When triggered, the palette is tinted on the blue channel by this amount. -255 to 255.</p>
+<p class="classref-comment">-63 to 63 if compat QR “Scripts use 6-bit color (0-63) instead of 8-bit (0-255)” is enabled.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-lvlpal"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>LvlPal</strong>  <a class="reference internal" href="#classes-combotrigger-var-lvlpal"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L395">Source</a></p>
+<p class="classref-comment">The level palette to change to when triggered. -1 for none.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-bosspal"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>BossPal</strong>  <a class="reference internal" href="#classes-combotrigger-var-bosspal"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L400">Source</a></p>
+<p class="classref-comment">The boss palette to change to when triggered. -1 for none.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-quaketimer"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>QuakeTimer</strong>  <a class="reference internal" href="#classes-combotrigger-var-quaketimer"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L405">Source</a></p>
+<p class="classref-comment">The quake timer to set when triggered. -1 for none.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-wavytimer"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WavyTimer</strong>  <a class="reference internal" href="#classes-combotrigger-var-wavytimer"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L410">Source</a></p>
+<p class="classref-comment">The wavy timer to set when triggered. -1 for none.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-swordjinx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SwordJinx</strong>  <a class="reference internal" href="#classes-combotrigger-var-swordjinx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L416">Source</a></p>
+<p class="classref-comment">The duration to Sword Jinx the <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a> for. -2 for none, -1 for ‘until
+cured’, 0 to cure.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-itemjinx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ItemJinx</strong>  <a class="reference internal" href="#classes-combotrigger-var-itemjinx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L422">Source</a></p>
+<p class="classref-comment">The duration to Item Jinx the <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a> for. -2 for none, -1 for ‘until
+cured’, 0 to cure.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-shieldjinx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ShieldJinx</strong>  <a class="reference internal" href="#classes-combotrigger-var-shieldjinx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L428">Source</a></p>
+<p class="classref-comment">The duration to Shield Jinx the <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a> for. -2 for none, -1 for ‘until
+cured’, 0 to cure.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-stun"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Stun</strong>  <a class="reference internal" href="#classes-combotrigger-var-stun"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L434">Source</a></p>
+<p class="classref-comment">The duration to Stun the <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a> for. -2 for none, -1 for ‘until cured’, 0
+to cure.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-bunny"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Bunny</strong>  <a class="reference internal" href="#classes-combotrigger-var-bunny"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L440">Source</a></p>
+<p class="classref-comment">The duration to Bunny the <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a> for. -2 for none, -1 for ‘until cured’,
+0 to cure.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-pushtime"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PushTime</strong>  <a class="reference internal" href="#classes-combotrigger-var-pushtime"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L446">Source</a></p>
+<p class="classref-comment">The duration that the combo must be pushed against for the ‘Push-&gt;’
+trigger flag to take effect.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-promptcombo"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PromptCombo</strong>  <a class="reference internal" href="#classes-combotrigger-var-promptcombo"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L451">Source</a></p>
+<p class="classref-comment">The combo ID to be displayed when in range to trigger a <a class="reference internal" href="#classes-combotrigger-var-button"><span class="std std-ref">Button[]</span></a>.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-promptcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PromptCSet</strong>  <a class="reference internal" href="#classes-combotrigger-var-promptcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L456">Source</a></p>
+<p class="classref-comment">The CSet for the <a class="reference internal" href="#classes-combotrigger-var-promptcombo"><span class="std std-ref">PromptCombo</span></a>.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-failpromptcombo"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FailPromptCombo</strong>  <a class="reference internal" href="#classes-combotrigger-var-failpromptcombo"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L462">Source</a></p>
+<p class="classref-comment">The combo ID to be displayed when in range to trigger a <a class="reference internal" href="#classes-combotrigger-var-button"><span class="std std-ref">Button[]</span></a>,
+but the trigger conditions fail.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-failpromptcset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FailPromptCSet</strong>  <a class="reference internal" href="#classes-combotrigger-var-failpromptcset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L467">Source</a></p>
+<p class="classref-comment">The CSet for the <a class="reference internal" href="#classes-combotrigger-var-failpromptcombo"><span class="std std-ref">FailPromptCombo</span></a>.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-promptx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PromptX</strong>  <a class="reference internal" href="#classes-combotrigger-var-promptx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L472">Source</a></p>
+<p class="classref-comment">The X position for the <a class="reference internal" href="#classes-combotrigger-var-promptcombo"><span class="std std-ref">PromptCombo</span></a>/<a class="reference internal" href="#classes-combotrigger-var-failpromptcombo"><span class="std std-ref">FailPromptCombo</span></a>.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-prompty"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>PromptY</strong>  <a class="reference internal" href="#classes-combotrigger-var-prompty"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L477">Source</a></p>
+<p class="classref-comment">The Y position for the <a class="reference internal" href="#classes-combotrigger-var-promptcombo"><span class="std std-ref">PromptCombo</span></a>/<a class="reference internal" href="#classes-combotrigger-var-failpromptcombo"><span class="std std-ref">FailPromptCombo</span></a>.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-triggerstring"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>TriggerString</strong>  <a class="reference internal" href="#classes-combotrigger-var-triggerstring"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L482">Source</a></p>
+<p class="classref-comment">The message string to play when the combo is triggered.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-failstring"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>FailString</strong>  <a class="reference internal" href="#classes-combotrigger-var-failstring"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L487">Source</a></p>
+<p class="classref-comment">The message string to play when the combo is triggered, but the trigger conditions fail.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-herobounce"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>HeroBounce</strong>  <a class="reference internal" href="#classes-combotrigger-var-herobounce"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L492">Source</a></p>
+<p class="classref-comment">The <a class="reference internal" href="sprite.html#classes-sprite-var-jump"><span class="std std-ref">Hero-&gt;Jump</span></a> value is set to this value (if non-zero) when triggered.</p>
+<hr class="classref-item-separator docutils" />
+<p id="classes-combotrigger-var-reqheroz"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ReqHeroZ</strong>  <a class="reference internal" href="#classes-combotrigger-var-reqheroz"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L499">Source</a></p>
+<p class="classref-comment">Requires that the <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>’s Z value is &gt;= this value to trigger.</p>
+<p class="classref-comment">If <a class="reference internal" href="#globals-enum-member-trigflag-invert-hero-z"><span class="std std-ref">TRIGFLAG_INVERT_HERO_Z</span></a> is set, requires that the <a class="reference internal" href="../globals/constants.html#globals-var-hero"><span class="std std-ref">Hero</span></a>’s Z value is &lt; this instead.</p>
+</section>
+<hr class="classref-item-separator docutils" />
+<section id="function-descriptions">
+<h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
+<p class="classref-method" id="classes-combotrigger-fun-getlabel"><abbr title="No return value.">void</abbr> <strong>GetLabel</strong>(char32[] buf) <a class="reference internal" href="#classes-combotrigger-fun-getlabel"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L510">Source</a></p>
+<p class="classref-comment">Gets the label for this trigger.</p>
+<p class="classref-comment">If the buffer provided is too small, it will *automatically be resized to
+fit*.</p>
+<hr class="classref-item-separator docutils" />
+<p class="classref-method" id="classes-combotrigger-fun-setlabel"><abbr title="No return value.">void</abbr> <strong>SetLabel</strong>(char32[] str) <a class="reference internal" href="#classes-combotrigger-fun-setlabel"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/715a4fdceb16c54615796c5b10a32f138698f58d/resources/include/bindings/combotrigger.zh#L518">Source</a></p>
+<p class="classref-comment">Sets the label for this widget.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="combodata.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">combodata</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="directory.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">directory</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerations">Enumerations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#function-descriptions">Function descriptions</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, ZQuest Classic Foundation.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
