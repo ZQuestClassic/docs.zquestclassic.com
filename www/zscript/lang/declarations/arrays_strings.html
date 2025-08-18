@@ -514,7 +514,7 @@
                 <article class="bd-article">
                   
   <section id="arrays-strings">
-<h1>Arrays / Strings<a class="headerlink" href="#arrays-strings" title="Link to this heading">#</a></h1>
+<span id="arrays"></span><h1>Arrays / Strings<a class="headerlink" href="#arrays-strings" title="Link to this heading">#</a></h1>
 <p>Arrays store multiple values in one variable.</p>
 <section id="declaring-arrays">
 <h2>Declaring Arrays<a class="headerlink" href="#declaring-arrays" title="Link to this heading">#</a></h2>
@@ -597,9 +597,8 @@ int[] y = arr; // no warning, variable is declared as an array type</code></pre>
             requestAnimationFrame(() => scr.nextElementSibling.classList.add('zs_caption'));
         }
     </script>
-    <p>While ‘2D’ arrays can be declared by type, you cannot put an array
-initializer inside an array initializer to initialize multiple levels
-of array.</p>
+    <p>Prior to 3.0, you cannot put an array initializer inside an array initializer to initialize multiple levels of array.</p>
+<p>Since 3.0 this has been allowed.</p>
 <pre class="hljs language-zs-body"><code>// Wrong
 int[] arr[] = { &lt;error&gt;{1, 2}&lt;/error&gt;, &lt;error&gt;{3, 4}&lt;/error&gt; }; // Error T100: Temporary literals cannot be stored
 
@@ -624,7 +623,7 @@ the index operator <code class="inlinezs pre docutils literal notranslate"><span
 an array using a <a class="reference internal" href="../control_flow/for.html#stmt-for-each"><span class="std std-ref">for-each</span></a> loop.</p>
 <p>Additionally, you may access an array using <em>negative</em> indexes. These
 will access the array <em>backwards</em>, ex. <code class="inlinezs pre docutils literal notranslate"><span class="pre">arr[-1]</span></code> will access the
-<em>last</em> element in the array <code class="inlinezs pre docutils literal notranslate"><span class="pre">arr</span></code>.</p>
+<em>last</em> element in the array <code class="inlinezs pre docutils literal notranslate"><span class="pre">arr</span></code>. This currently does not work for internal arrays (such as <a class="reference internal" href="../../globals/Screen.html#globals-screen-var-d"><span class="std std-ref">Screen-&gt;D[]</span></a>).</p>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-3">
@@ -687,7 +686,15 @@ special characters, including <code class="inlinezs pre docutils literal notrans
                 requestAnimationFrame(() => hljs.highlightElement(el));
             }
         </script>
-        <p>A string literal creates what is known as a <code class="docutils literal notranslate"><span class="pre">temporary</span> <span class="pre">value</span></code>, which cannot be
+        </section>
+</section>
+<section id="temporary-array-values">
+<h2>Temporary array values<a class="headerlink" href="#temporary-array-values" title="Link to this heading">#</a></h2>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 3.0: </span>Since 3.0, arrays are managed by <a class="reference internal" href="../explainers/object_memory_management.html#gc"><span class="std std-ref">the garbage collector</span></a>, and so do
+not have these restrictions for array literals.</p>
+</div>
+<p>Prior to 3.0, array/string literals create what is known as a <code class="docutils literal notranslate"><span class="pre">temporary</span> <span class="pre">value</span></code>, which cannot be
 stored in a variable- its primary purpose is to pass directly into functions.
 However, a string literal can also be used as the initializer for a <code class="inlinezs pre docutils literal notranslate"><span class="pre">char32</span></code> array,
 which does store it for longer-term use.</p>
@@ -707,7 +714,6 @@ char32[] strs[] = { &lt;error&gt;&quot;Test 1&quot;&lt;/error&gt;, &lt;error&gt;
 string literal with slightly different rules (notably, not using escape
 characters)</p>
 </div>
-</section>
 </section>
 </section>
 
@@ -767,6 +773,7 @@ characters)</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#string-literals">String Literals</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#temporary-array-values">Temporary array values</a></li>
 </ul>
   </nav></div>
 

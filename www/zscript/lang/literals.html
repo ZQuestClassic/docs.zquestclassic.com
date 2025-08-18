@@ -630,6 +630,10 @@ all circumstances.</p>
 </section>
 <section id="difference-between-string-array-literals-and-initializers">
 <h3>Difference between String/Array ‘Literals’ and ‘Initializers’<a class="headerlink" href="#difference-between-string-array-literals-and-initializers" title="Link to this heading">#</a></h3>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 3.0: </span>Since 3.0, arrays/strings are managed by <a class="reference internal" href="explainers/object_memory_management.html#gc"><span class="std std-ref">the garbage collector</span></a>, and so do
+not have these restrictions for array literals - if an array literal is stored somewhere, it won’t be deleted.</p>
+</div>
 <p>There is a distinction between an array with an <em>initializer</em> (which looks and acts effectively
 identical to a string literal), and a loose string/array literal that is not an initializer.
 Notably, a loose literal creates a <strong>temporary</strong> array, which will stop existing almost
