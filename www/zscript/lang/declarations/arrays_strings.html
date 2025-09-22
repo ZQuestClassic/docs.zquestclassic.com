@@ -623,7 +623,12 @@ the index operator <code class="inlinezs pre docutils literal notranslate"><span
 an array using a <a class="reference internal" href="../control_flow/for.html#stmt-for-each"><span class="std std-ref">for-each</span></a> loop.</p>
 <p>Additionally, you may access an array using <em>negative</em> indexes. These
 will access the array <em>backwards</em>, ex. <code class="inlinezs pre docutils literal notranslate"><span class="pre">arr[-1]</span></code> will access the
-<em>last</em> element in the array <code class="inlinezs pre docutils literal notranslate"><span class="pre">arr</span></code>. This currently does not work for internal arrays (such as <a class="reference internal" href="../../globals/Screen.html#globals-screen-var-d"><span class="std std-ref">Screen-&gt;D[]</span></a>).</p>
+<em>last</em> element in the array <code class="inlinezs pre docutils literal notranslate"><span class="pre">arr</span></code>.</p>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 3.0: </span>Since 3.0, negative indices also work for internal arrays (such as <a class="reference internal" href="../../globals/Screen.html#globals-screen-var-d"><span class="std std-ref">Screen-&gt;D[]</span></a>), but only
+when the QR <a class="reference internal" href="../../globals/constants.html#globals-enum-qr"><span class="std std-ref">qr_OLD_SCRIPTS_INTERNAL_ARRAYS_BOUND_INDEX[]</span></a> is off.</p>
+<p>Otherwise, some internal arrays may bound (aka “clamp”) the index to a valid value.</p>
+</div>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-3">
