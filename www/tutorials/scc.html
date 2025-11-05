@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>String Control Codes &#8212; ZQuest Classic  documentation</title>
+    <title>String control codes &#8212; ZQuest Classic  documentation</title>
   
   
   
@@ -52,8 +52,6 @@
     <link rel="icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Websockets" href="websockets.html" />
-    <link rel="prev" title="Z3 User Guide" href="z3_user_guide.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -145,7 +143,7 @@
 </li>
 
 
-<li class="nav-item current active">
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="index.html">
     Tutorials
   </a>
@@ -201,10 +199,6 @@
   
 
   
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
-  
 </div>
 
     </header>
@@ -215,8 +209,10 @@
       
       
       
+        
+      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
 
   
@@ -238,7 +234,7 @@
 </li>
 
 
-<li class="nav-item current active">
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="index.html">
     Tutorials
   </a>
@@ -273,24 +269,6 @@
     
   </div>
   
-    <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
-<nav class="bd-docs-nav bd-links"
-     aria-label="Section Navigation">
-  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="z3_user_guide.html">Z3 User Guide</a></li>
-</ul>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">String Control Codes</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="websockets.html">Websockets</a></li>
-</ul>
-</div>
-</nav></div>
-    </div>
-  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
@@ -321,10 +299,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    
-    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Tutorials</a></li>
-    
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">String Control Codes</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">String control codes</span></li>
   </ul>
 </nav>
 </div>
@@ -342,115 +317,8 @@
                 <article class="bd-article">
                   
   <section id="string-control-codes">
-<h1>String Control Codes<a class="headerlink" href="#string-control-codes" title="Link to this heading">#</a></h1>
-<p>The strings defined in <code class="docutils literal notranslate"><span class="pre">Quests</span> <span class="pre">&gt;</span> <span class="pre">Strings</span></code> can contain string control codes (SCCs) that perform special effects. These codes can be inserted manually in the string editor as seen above, or via the SCC wizard inside the string editor.</p>
-<p>All valid codes are listed below.</p>
-<section id="formatting">
-<h2>Formatting<a class="headerlink" href="#formatting" title="Link to this heading">#</a></h2>
-<p>Formatting effects on the string being displayed, such as changing the font, text color, or inserting characters or tiles into the message.</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">\1\cset\color</span></code> : Changes the text color to the specified color</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\26\cset\color</span></code> : Changes the shadow color to the specified color</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\27\shadow_type</span></code> : Changes the shadow type to the specified style</p>
-<blockquote>
-<div><p>Shadow types:</p>
-<ol class="arabic simple" start="0">
-<li><p>No Shadow</p></li>
-<li><p>Basic shadow, no text</p></li>
-<li><p>‘U’ shadow, no text</p></li>
-<li><p>Full outline shadow, no text</p></li>
-<li><p>‘+’ outline shadow, no text</p></li>
-<li><p>‘X’ outline shadow, no text</p></li>
-<li><p>Basic shadow, behind text</p></li>
-<li><p>‘U’ shadow, behind text</p></li>
-<li><p>Full outline shadow, behind text</p></li>
-<li><p>‘+’ outline shadow, behind text</p></li>
-<li><p>‘X’ outline shadow, behind text</p></li>
-</ol>
-</div></blockquote>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\2\speed</span></code> : Changes the text speed. ‘speed’ is the number of frames between each character, where ‘0’ is instantaneous</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\135\font</span></code> : Changes the text font. ‘font’ is the ID number of the new font to use</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\25</span></code> : New Line - breaks to the next line</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\22</span></code> : Inserts the save file name as text</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\28\tile\cset\width\height\flip</span></code> : Draws a tile block inline with the text, as though it were a custom font character</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\32</span> <span class="pre">through</span> <span class="pre">\126</span></code> : Inserts the corresponding ASCII character. Ex: <code class="docutils literal notranslate"><span class="pre">\91</span></code> shows <code class="docutils literal notranslate"><span class="pre">\</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\24\???</span></code> : Unimplemented; reserved for changing portrait</p></li>
-</ul>
-</section>
-<section id="menu">
-<h2>Menu<a class="headerlink" href="#menu" title="Link to this heading">#</a></h2>
-<p>These codes relate to popping up a menu for the player to select a choice from.</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">\128\tile\cset\width\height\flip</span></code> : Sets the menu cursor, args same as <code class="docutils literal notranslate"><span class="pre">\28</span></code> above</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\129\pos\up_pos\down_pos\left_pos\right_pos</span></code> : Creates a menu cursor position. ‘pos’ is the index of this position, while the 4 directional values are the position that will be moved to when that direction is pressed. If a directional pos is the same as ‘pos’, that direction will be disabled</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\130</span></code> : Start running menu. If no <code class="docutils literal notranslate"><span class="pre">\129</span></code> codes have been run, the menu instantly exitswith the ‘0’ pos selected</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\131\pos\newstring</span></code> : Goto if menu selection. Switches to the new string if ‘pos’ is the selected menu position</p></li>
-</ul>
-</section>
-<section id="switch">
-<h2>Switch<a class="headerlink" href="#switch" title="Link to this heading">#</a></h2>
-<p>These codes conditionally change to a different string. If you attempt to switch to a string that does not exist, it an empty string is loaded.</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">\3\register\value\newstring</span></code> : if <code class="docutils literal notranslate"><span class="pre">Screen-&gt;D[register]</span> <span class="pre">&gt;=</span> <span class="pre">value</span></code>, switches to newstring</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\23\dmap\screen\register\value\newstring</span></code> : Same as <code class="docutils literal notranslate"><span class="pre">\3</span></code>, but for any screen</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\4\factor\newstring</span></code> : Randomly has a 1/factor chance to switch to newstring</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\5\itemid\newstring</span></code> : Goes to newstring if the specified item is owned</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\6\counter\value\newstring</span></code> : Goto newstring if the specified counter is &gt;= value</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\7\counter\percent\newstring</span></code> : Goto newstring if the specified counter is at least percent full</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\8\levelid\newstring</span></code> : Goto newstring if the triforce from the specified level is owned</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\9\numtriforce\newstring</span></code> : Goto newstring if at least numtriforce triforce pieces are owned</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\131\pos\newstring</span></code> : Goto if menu selection. Switches to the new string if ‘pos’ is the selected menu position</p></li>
-</ul>
-</section>
-<section id="control-mod">
-<h2>Control Mod<a class="headerlink" href="#control-mod" title="Link to this heading">#</a></h2>
-<p>Modifying counter values.</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">\10\ctr\val</span></code> : Adds ‘val’ to ‘ctr’</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\11\ctr\val</span></code> : Subtracts ‘val’ from ‘ctr’</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\12\ctr\val</span></code> : Sets ‘ctr’ to ‘val’</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\13\ctr\percent</span></code> : Adds ‘percent’ % to ‘ctr’</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\14\ctr\percent</span></code> : Subtracts ‘percent’ % from ‘ctr’</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\15\ctr\percent</span></code> : Sets ‘ctr’ to ‘percent’ % full</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\16\itemid</span></code> : Gives the player ‘itemid’, silently. The item is not held up, nor does its’ pickup script run; though its’ counter effects will</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\17\itemid</span></code> : Takes ‘itemid’ from the player, silently. Its’ pickup counter modifications will be reversed when removed</p></li>
-</ul>
-</section>
-<section id="misc">
-<h2>Misc<a class="headerlink" href="#misc" title="Link to this heading">#</a></h2>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">\18\dmap\screen\x\y\effect\sound</span></code> : Warps the player to ‘dmap,screen’</p>
-<blockquote>
-<div><p>If x &lt; 0, then y is treated as a return square(0-3 for return squares A-D, 5 for pit warp).</p>
-<p>If x &gt;= 0, then x and y act as destination coordinates.</p>
-<p>Warp effects:</p>
-<ol class="arabic simple" start="0">
-<li><p>WARPEFFECT_NONE</p></li>
-<li><p>WARPEFFECT_ZAP</p></li>
-<li><p>WARPEFFECT_WAVE</p></li>
-<li><p>WARPEFFECT_INSTANT</p></li>
-<li><p>WARPEFFECT_OPENWIPE</p></li>
-</ol>
-</div></blockquote>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\19\dmap\screen\register\value</span></code> : Sets <code class="docutils literal notranslate"><span class="pre">Screen-&gt;D[register]</span> <span class="pre">=</span> <span class="pre">value</span></code> for the specified screen</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\20\sfxid</span></code> : Plays a specified sfx</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\21\MIDIid</span></code> : Plays a specified quest midi (cannot play the built-in midis)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\29</span></code> : Immediately exits the current string. If there is a ‘next string’, it will begin immediately. The prompt to press ‘A’ to continue will be skipped</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\30</span></code> : Pauses the string and prompts the player to press A to continue (as normally occurs at the end of a string)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\132\perm</span></code> : Triggers secrets, which are permanent unless ‘perm’ is ‘0’</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\133\flag\state</span></code> : Sets a screen state on the current screen</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\134\map\screen\flag\state</span></code> : Same as <code class="docutils literal notranslate"><span class="pre">\133</span></code> above, for a remote map/screen</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">\136\generic_script_id\force_redraw</span></code> : Run the specified generic script, in the RunFrozen mode</p></li>
-</ul>
-</section>
-<section id="zscript">
-<h2>ZScript<a class="headerlink" href="#zscript" title="Link to this heading">#</a></h2>
-<p>SCCs can also be set via ZScript, but you must understand the way the control codes are encoded: where in the editor you’d write <code class="docutils literal notranslate"><span class="pre">\1</span></code>, that actually is converted to a byte of value <code class="docutils literal notranslate"><span class="pre">1</span></code>. The <code class="docutils literal notranslate"><span class="pre">%c</span></code> <a class="reference internal" href="../zscript/globals/functions.html#globals-fun-sprintf"><span class="std std-ref">sprintf</span></a> format code is useful for this.</p>
-<p>The following is an example script found in ZC’s tests folder, which gives some insight into how to programmatically use SSCs.</p>
-<iframe width=100%% height=800 src=https://web.zquestclassic.com/zscript/?url=https://raw.githubusercontent.com/ZQuestClassic/ZQuestClassic/refs/heads/main/tests/scripts/playground/auto/scc.zs></iframe>
-</section>
+<h1>String control codes<a class="headerlink" href="#string-control-codes" title="Link to this heading">#</a></h1>
+<p>This content has been moved to <a class="reference internal" href="message_strings.html"><span class="doc">Message strings</span></a>.</p>
 </section>
 
 
@@ -463,53 +331,12 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="z3_user_guide.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Z3 User Guide</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="websockets.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Websockets</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-<div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formatting">Formatting</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menu">Menu</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#switch">Switch</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#control-mod">Control Mod</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#misc">Misc</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zscript">ZScript</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

@@ -1,0 +1,983 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Message strings &#8212; ZQuest Classic  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/main.css?v=496e39a3" />
+    <link rel="stylesheet" type="text/css" href="../_static/zscript.css?v=3afc8195" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/message_strings';</script>
+    <script src="../_static/main.js?v=32ddbf82"></script>
+    <script src="../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
+    <script src="../_static/zscript.js?v=0bdd3061"></script>
+    <link rel="icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Websockets" href="websockets.html" />
+    <link rel="prev" title="Z3 User Guide" href="z3_user_guide.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/ZC_Logo.png" class="logo__image only-light" alt="ZQuest Classic  documentation - Home"/>
+    <img src="../_static/ZC_Logo.png" class="logo__image only-dark pst-js-only" alt="ZQuest Classic  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Tutorials
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../zscript/index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Tutorials
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../zscript/index.html">
+    ZScript
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="z3_user_guide.html">Z3 User Guide</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Message strings</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="websockets.html">Websockets</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Tutorials</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Message strings</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="message-strings">
+<h1>Message strings<a class="headerlink" href="#message-strings" title="Link to this heading">#</a></h1>
+<p>Message strings are defined in the string editor: <code class="docutils literal notranslate"><span class="pre">Quests</span> <span class="pre">&gt;</span> <span class="pre">Strings</span></code>. The text content of a message string is a mix of literals (ex: “It’s dangerous to go alone!”) and string control codes, which are abbreviated as SCC (ex: for changing the text color, or warping the player, etc). SCCs can be typed manually in the string editor, or inserted via the SCC wizard.</p>
+<p>When a message string is rendered, the literals and commands print and execute in order.</p>
+<p>This page describes the syntax for message strings, lists all SCCs, and describes how to work with message strings in ZScript.</p>
+<section id="syntax">
+<h2>Syntax<a class="headerlink" href="#syntax" title="Link to this heading">#</a></h2>
+<p>The syntax for a SCC is this: <code class="docutils literal notranslate"><span class="pre">\CommandName\arg1\arg2\</span></code>, where “arg1” and “arg2” are numbers.</p>
+<ul class="simple">
+<li><p>Unless the SCC is at the end of a string, the last slash must be followed by a space (the space will be ignored by the string parser)</p></li>
+<li><p>The command name is case insensitive</p></li>
+<li><p>Instead of the command name, the code can be used too. But when saved the editor will change it to the command name</p></li>
+<li><p>Certain characters must be escaped with a backward slash: <code class="docutils literal notranslate"><span class="pre">\\</span></code>, <code class="docutils literal notranslate"><span class="pre">\{</span></code>, <code class="docutils literal notranslate"><span class="pre">\}</span></code></p></li>
+</ul>
+<p>For example: <code class="docutils literal notranslate"><span class="pre">It's</span> <span class="pre">dangerous</span> <span class="pre">to</span> <span class="pre">go</span> <span class="pre">alone!</span> <span class="pre">\TextColor\2\3\</span> <span class="pre">Take</span> <span class="pre">this!</span></code> first prints “It’s dangerous to go alone! “, changes the text color, then prints “Take this!”. There will be exactly one space between the sentences (“It’s dangerous to go alone! Take this!”), but there would be no spaces if the message string were instead <code class="docutils literal notranslate"><span class="pre">It's</span> <span class="pre">dangerous</span> <span class="pre">to</span> <span class="pre">go</span> <span class="pre">alone!\TextColor\2\3\</span> <span class="pre">Take</span> <span class="pre">this!</span></code>.</p>
+<p>If the author makes an error when writing a SCC, the command will not execute and instead will display as a string literal.</p>
+<p>A valid command requires:</p>
+<ul class="simple">
+<li><p>A specific number of arguments</p></li>
+<li><p>Each argument to be valid</p></li>
+<li><p>A slash at the end of each command (including a space, except if the command is at the end of string)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">{</span></code> and <code class="docutils literal notranslate"><span class="pre">}</span></code> are reserved for future enhancements, which is why they must be escaped.</p>
+</div>
+<section id="syntax-2-55">
+<h3>Syntax (2.55)<a class="headerlink" href="#syntax-2-55" title="Link to this heading">#</a></h3>
+<p>2.55 has a slightly different syntax for SCCs in the string editor:</p>
+<ul class="simple">
+<li><p>Commands use codes, not names: <code class="docutils literal notranslate"><span class="pre">\1\arg1\arg2</span></code></p></li>
+<li><p>Commands do not end with a <code class="docutils literal notranslate"><span class="pre">\</span></code> and a space</p></li>
+<li><p>Commands arguments cannot be negative</p></li>
+<li><p>ASCII characters can be inserted using the “commands” <code class="docutils literal notranslate"><span class="pre">\31</span> <span class="pre">through</span> <span class="pre">\125</span></code>. The ASCII value printed is 1 more than the number in the string.</p></li>
+<li><p>To print a backwards slash, the only option is <code class="docutils literal notranslate"><span class="pre">\91</span></code></p></li>
+<li><p>The syntax expects authors to make no mistakes when typing out SCCs. For example, if you provide 3 arguments instead of 2, the last argument will be interpreted as the next command, potentially resulting in strange effects</p></li>
+</ul>
+<p>However, in 2.55 the string as shown in the editor is not how the string is encoded; it uses a special binary encoding, not ASCII. Scripts that access string data via <a class="reference internal" href="../zscript/classes/messagedata.html#classes-messagedata"><span class="std std-ref">messagedata</span></a> must be familiar with this binary encoding. See the “ZScript” section for more.</p>
+</section>
+</section>
+<section id="commands">
+<h2>Commands<a class="headerlink" href="#commands" title="Link to this heading">#</a></h2>
+<section id="formatting">
+<h3>Formatting<a class="headerlink" href="#formatting" title="Link to this heading">#</a></h3>
+<p>These commands affect how the string is rendered, such as changing the font, text color, or inserting characters or tiles into the message.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Format</p></th>
+<th class="head"><p>Format (2.55)</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\TextColor\cset\color\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\1\cset\color</span></code></p></td>
+<td><p>Changes the text color to the specified color</p></td>
+</tr>
+<tr class="row-odd"><td><p>26</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\ShadowColor\cset\color\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\26\cset\color</span></code></p></td>
+<td><p>Changes the shadow color to the specified color</p></td>
+</tr>
+<tr class="row-even"><td><p>27</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\ShadowType\type\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\27\type</span></code></p></td>
+<td><p>Changes the shadow type to the specified style. See “Shadow types” below table</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\Speed\speed\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\2\speed</span></code></p></td>
+<td><p>Changes the text speed. ‘speed’ is the number of frames between each character, where ‘0’ is instantaneous</p></td>
+</tr>
+<tr class="row-even"><td><p>155</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\Delay\frames\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Delays string processing by number of frames. Respects A/B button speed up (if appropriate QRs enabled).</p></td>
+</tr>
+<tr class="row-odd"><td><p>156</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\ForceDelay\frames\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Delays string processing by number of frames. Does not respect A/B button speed up</p></td>
+</tr>
+<tr class="row-even"><td><p>135</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\Font\font\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\135\font</span></code></p></td>
+<td><p>Changes the text font. ‘font’ is the ID number of the new font to use</p></td>
+</tr>
+<tr class="row-odd"><td><p>25</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\Newline\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\25</span></code></p></td>
+<td><p>New Line - breaks to the next line</p></td>
+</tr>
+<tr class="row-even"><td><p>22</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\Name\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\22</span></code></p></td>
+<td><p>Inserts the save file name as text</p></td>
+</tr>
+<tr class="row-odd"><td><p>151</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\Counter\counter\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Inserts the value of the given counter as text</p></td>
+</tr>
+<tr class="row-even"><td><p>152</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\MaxCounter\counter\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Inserts the max value of the given counter as text</p></td>
+</tr>
+<tr class="row-odd"><td><p>28</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\Tile\tile\cset\width\height\flip\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\28\tile\cset\width\height\flip</span></code></p></td>
+<td><p>Draws a tile block inline with the text, as though it were a custom font character</p></td>
+</tr>
+<tr class="row-even"><td><p>24</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\Portrait\portrait_id\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\24\portrait_id</span></code></p></td>
+<td><p>Unimplemented; reserved for changing portrait</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Shadow types:</p>
+<ol class="arabic simple" start="0">
+<li><p>No Shadow</p></li>
+<li><p>Basic shadow, no text</p></li>
+<li><p>‘U’ shadow, no text</p></li>
+<li><p>Full outline shadow, no text</p></li>
+<li><p>‘+’ outline shadow, no text</p></li>
+<li><p>‘X’ outline shadow, no text</p></li>
+<li><p>Basic shadow, behind text</p></li>
+<li><p>‘U’ shadow, behind text</p></li>
+<li><p>Full outline shadow, behind text</p></li>
+<li><p>‘+’ outline shadow, behind text</p></li>
+<li><p>‘X’ outline shadow, behind text</p></li>
+</ol>
+</section>
+<section id="menu">
+<h3>Menu<a class="headerlink" href="#menu" title="Link to this heading">#</a></h3>
+<p>These commands relate to popping up a menu for the player to select a choice from.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Format</p></th>
+<th class="head"><p>Format (2.55)</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>128</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\SetupMenu\tile\cset\width\height\flip\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\128\tile\cset\width\height\flip</span></code></p></td>
+<td><p>Starts a menu, and sets the menu cursor</p></td>
+</tr>
+<tr class="row-odd"><td><p>129</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\MenuChoice\pos\up_pos\down_pos\left_pos\right_pos\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\129\pos\up_pos\down_pos\left_pos\right_pos</span></code></p></td>
+<td><p>Creates a menu cursor position. ‘pos’ is the index of this position, while the 4 directional values are the position that will be moved to when that direction is pressed. If a directional pos is the same as ‘pos’, that direction is disabled</p></td>
+</tr>
+<tr class="row-even"><td><p>130</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\RunMenu\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\130</span></code></p></td>
+<td><p>Start running menu. If no <code class="docutils literal notranslate"><span class="pre">\129</span></code> codes have been run, the menu instantly exits with the ‘0’ pos selected</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="switch">
+<h3>Switch<a class="headerlink" href="#switch" title="Link to this heading">#</a></h3>
+<p>These commands conditionally change to a different string. If switched to a string that does not exist, an empty string will be loaded.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Format</p></th>
+<th class="head"><p>Format (2.55)</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>3</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfScreenD\register\value\newstring\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\3\register\value\newstring</span></code></p></td>
+<td><p>if <code class="docutils literal notranslate"><span class="pre">Screen-&gt;D[register]</span> <span class="pre">&gt;=</span> <span class="pre">value</span></code>, switches to newstring</p></td>
+</tr>
+<tr class="row-odd"><td><p>23</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfAnyScreenD\dmap\screen\register\value\newstring\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\23\dmap\screen\register\value\newstring</span></code></p></td>
+<td><p>Same as above, but for any screen (not just the current)</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfRand\factor\newstring\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\4\factor\newstring</span></code></p></td>
+<td><p>Randomly has a 1/factor chance to switch to newstring</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfItem\itemid\newstring\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\5\itemid\newstring</span></code></p></td>
+<td><p>Go to newstring if the specified item is owned</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfCounter\counter\value\newstring\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\6\counter\value\newstring</span></code></p></td>
+<td><p>Go to newstring if the specified counter is &gt;= value</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfCounter%\counter\percent\newstring\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\7\counter\percent\newstring</span></code></p></td>
+<td><p>Go to newstring if the specified counter is at least percent full</p></td>
+</tr>
+<tr class="row-even"><td><p>8</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfMcGuffin\levelid\newstring\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\8\levelid\newstring</span></code></p></td>
+<td><p>Go to newstring if the triforce from the specified level is owned</p></td>
+</tr>
+<tr class="row-odd"><td><p>9</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfMcGuffinCount\numtriforce\newstring\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\9\numtriforce\newstring</span></code></p></td>
+<td><p>Go to newstring if at least numtriforce triforce pieces are owned</p></td>
+</tr>
+<tr class="row-even"><td><p>131</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfMenuChoice\pos\newstring\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\131\pos\newstring</span></code></p></td>
+<td><p>Go to newstring if menu selection. Switches to the new string if ‘pos’ is the selected menu position</p></td>
+</tr>
+<tr class="row-odd"><td><p>138</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfGlobalState\state\value\newstring\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Go to newstring if global state is specified value. Valid “state” is 0-255. “value” of 0 checks for disabled, 1 checks for enabled.</p></td>
+</tr>
+<tr class="row-even"><td><p>139</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfScreenState\state\value\newstring\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Go to newstring if current screen state is of specified value. For values of “state”, see <a class="reference internal" href="../zscript/classes/mapdata.html#globals-enum-screenstate"><span class="std std-ref">ScreenState</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>140</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfAnyScreenState\map\screen\state\value\newstring\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Same as above, but for any map/screen.</p></td>
+</tr>
+<tr class="row-even"><td><p>141</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfScreenExState\state\value\newstring\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>142</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfAnyScreenExState\map\screen\state\value\newstring\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>143</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfLevelState\level\state\value\newstring\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Go to newstring if level state is specified value. -1 for “level” means current level. Valid “state” is 0-31. “value” of 0 for false, non-zero for true.</p></td>
+</tr>
+<tr class="row-odd"><td><p>144</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfLevelItem\level\item\value\newstring\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Go to newstring if level item is specified value. -1 for “level” means current level. Valid “item” is 0-15 (see order of <a class="reference internal" href="../zscript/globals/Game.html#globals-enum-levelitembitflags"><span class="std std-ref">LevelItemBitflags</span></a>). “value” of 0 for false, non-zero for true</p></td>
+</tr>
+<tr class="row-even"><td><p>145</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfSecrets\newstring\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Go to newstring if current screen secrets have triggered.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="control-mod">
+<h3>Control Mod<a class="headerlink" href="#control-mod" title="Link to this heading">#</a></h3>
+<p>These commands modify counters or items.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Format</p></th>
+<th class="head"><p>Format (2.55)</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>10</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\CounterAdd\ctr\val\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\10\ctr\val</span></code></p></td>
+<td><p>Adds ‘val’ to ‘ctr’</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\CounterSubtract\ctr\val\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\11\ctr\val</span></code></p></td>
+<td><p>Subtracts ‘val’ from ‘ctr’</p></td>
+</tr>
+<tr class="row-even"><td><p>12</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\CounterSet\ctr\val\</span></code></p></td>
+<td><p><code class="inlinezs pre docutils literal notranslate"><span class="pre">12ctrval</span></code></p></td>
+<td><p>Sets ‘ctr’ to ‘val’</p></td>
+</tr>
+<tr class="row-odd"><td><p>13</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\CounterAdd%\ctr\percent\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\13\ctr\percent</span></code></p></td>
+<td><p>Adds ‘percent’ % to ‘ctr’</p></td>
+</tr>
+<tr class="row-even"><td><p>14</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\CounterSubtract%\ctr\percent\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\14\ctr\percent</span></code></p></td>
+<td><p>Subtracts ‘percent’ % from ‘ctr’</p></td>
+</tr>
+<tr class="row-odd"><td><p>15</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\CounterSet%\ctr\percent\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\15\ctr\percent</span></code></p></td>
+<td><p>Sets ‘ctr’ to ‘percent’ % full</p></td>
+</tr>
+<tr class="row-even"><td><p>16</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GiveItem\itemid\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\16\itemid</span></code></p></td>
+<td><p>Gives the player ‘itemid’, silently. The item is not held up, nor does its’ pickup script run; though its’ counter effects will</p></td>
+</tr>
+<tr class="row-odd"><td><p>154</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\CollectItem\itemid\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Same as above, but not silent. The item will be collected and held up when the message box closes (after any linked messages).</p></td>
+</tr>
+<tr class="row-even"><td><p>17</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\TakeItem\itemid\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\17\itemid</span></code></p></td>
+<td><p>Takes ‘itemid’ from the player, silently. Its’ pickup counter modifications will be reversed when removed</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="misc">
+<h3>Misc<a class="headerlink" href="#misc" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Format</p></th>
+<th class="head"><p>Format (2.55)</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><div class="line-block">
+<div class="line"><br /></div>
+<div class="line">18</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">\Warp\dmap\screen\x\y\effect\sound\</span></code></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">\18\dmap\screen\x\y\effect\sound</span></code></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line">Warps the player to ‘dmap,screen’</div>
+<div class="line"><br /></div>
+<div class="line">If x &lt; 0, then y is treated as a return square(0-3 for return squares A-D, 5 for pit warp).</div>
+<div class="line"><br /></div>
+<div class="line">If x &gt;= 0, then x and y act as destination coordinates.</div>
+<div class="line"><br /></div>
+<div class="line">Effects:</div>
+<div class="line"><br /></div>
+<div class="line">0. WARPEFFECT_NONE</div>
+<div class="line">1. WARPEFFECT_ZAP</div>
+<div class="line">2. WARPEFFECT_WAVE</div>
+<div class="line">3. WARPEFFECT_INSTANT</div>
+<div class="line">4. WARPEFFECT_OPENWIPE</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>19</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\SetScreenD\dmap\screen\register\value\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\19\dmap\screen\register\value</span></code></p></td>
+<td><p>Sets <code class="docutils literal notranslate"><span class="pre">Screen-&gt;D[register]</span> <span class="pre">=</span> <span class="pre">value</span></code> for the specified screen</p></td>
+</tr>
+<tr class="row-even"><td><p>20</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\SFX\sfx_id\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\20\sfx_id</span></code></p></td>
+<td><p>Plays a specified sfx</p></td>
+</tr>
+<tr class="row-odd"><td><p>21</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\MIDI\midi_id\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\21\midi_id</span></code></p></td>
+<td><p>Plays a specified quest midi (cannot play the built-in midis)</p></td>
+</tr>
+<tr class="row-even"><td><p>29</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\EndString\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\29</span></code></p></td>
+<td><p>Immediately exits the current string. If there is a ‘next string’, it will begin immediately. The prompt to press ‘A’ to continue will be skipped</p></td>
+</tr>
+<tr class="row-odd"><td><p>30</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\WaitAdvance\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\30</span></code></p></td>
+<td><p>Pauses the string and prompts the player to press A to continue (as normally occurs at the end of a string)</p></td>
+</tr>
+<tr class="row-even"><td><p>132</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\TriggerSecrets\perm\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\132\perm</span></code></p></td>
+<td><p>Triggers secrets, which are permanent unless ‘perm’ is ‘0’</p></td>
+</tr>
+<tr class="row-odd"><td><p>133</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\SetScreenState\state\value\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\133\state\value</span></code></p></td>
+<td><p>Sets a screen state on the current screen. For values of “state”, see <a class="reference internal" href="../zscript/classes/mapdata.html#globals-enum-screenstate"><span class="std std-ref">ScreenState</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>134</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\SetAnyScreenState\map\screen\state\value\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\134\map\screen\state\value</span></code></p></td>
+<td><p>Same as above, but for any map/screen</p></td>
+</tr>
+<tr class="row-odd"><td><p>146</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\SetScreenExState\state\value\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>147</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\SetAnyScreenExState\map\screen\state\value\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>148</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\SetGlobalState\state\value\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Sets the global specified state. Values of -1 means “enabled”, 0 means “disabled”, and “&gt;0” means “enabled for x frames”</p></td>
+</tr>
+<tr class="row-even"><td><p>149</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\SetLevelState\level\state\value\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Sets the level state. -1 for “level” means current level. Valid “state” is 0-31. “value” of 0 for false, non-zero for true.</p></td>
+</tr>
+<tr class="row-odd"><td><p>150</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\SetLevelItem\level\item\value\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Sets the level item. -1 for “level” means current level. Valid “item” is 0-15 (see order of <a class="reference internal" href="../zscript/globals/Game.html#globals-enum-levelitembitflags"><span class="std std-ref">LevelItemBitflags</span></a>). “value” of 0 for false, non-zero for true.</p></td>
+</tr>
+<tr class="row-even"><td><p>136</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\RunFrozenGenericScript\generic_script_id\force_redraw\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\136\generic_script_id\force_redraw</span></code></p></td>
+<td><p>Run the specified generic script, in RunFrozen mode</p></td>
+</tr>
+<tr class="row-odd"><td><p>137</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\TriggerComboCopycat\copy_cat_id\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\137\copy_cat_id</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>153</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\KillHero\bypass_revive\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Kills the player instantly (plays the death animation). If bypass_revive is zero, fairies may prevent death.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="zscript">
+<h2>ZScript<a class="headerlink" href="#zscript" title="Link to this heading">#</a></h2>
+<p>Scripts can read or write to message strings via <a class="reference internal" href="../zscript/classes/messagedata.html#classes-messagedata"><span class="std std-ref">messagedata</span></a>, which includes SCCs.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">Added in version 3.0: </span>The individual string literals and commands can be read via <a class="reference internal" href="../zscript/classes/messagedata.html#classes-messagedata-var-segments"><span class="std std-ref">messagedata::Segments[]</span></a>.</p>
+</div>
+<p>In 2.55, the text stored in <a class="reference internal" href="../zscript/classes/messagedata.html#classes-messagedata"><span class="std std-ref">messagedata</span></a> uses a binary encoding: how the string is displayed in the editor is not how it appears in scripts; each command is not stored as <code class="docutils literal notranslate"><span class="pre">\1\2\3</span></code>, but instead the command code and each argument is encoded as that value plus 1. For example, <code class="docutils literal notranslate"><span class="pre">\1\2\3</span></code> encodes as three numbers: 2, 3, 4.</p>
+<p>Since 3.0, the text stored in <a class="reference internal" href="../zscript/classes/messagedata.html#classes-messagedata"><span class="std std-ref">messagedata</span></a> is exactly the text seen in the editor: it’s just ASCII. However, the older binary encoding can still be used if <a class="reference internal" href="../zscript/globals/constants.html#globals-enum-member-qr-old-scripts-message-data-binary-encoding"><span class="std std-ref">qr_OLD_SCRIPTS_MESSAGE_DATA_BINARY_ENCODING</span></a> is enabled. This is only necessary if the strings contain SCCs, and if the code processing them still expect the binary encoding.</p>
+<section id="example-writing-sccs">
+<h3>Example: Writing SCCs<a class="headerlink" href="#example-writing-sccs" title="Link to this heading">#</a></h3>
+<p>The following are a couple example scripts found in ZC’s tests folder, which gives some insight into how to programmatically write SSCs.</p>
+<p>The first test script shows examples for writing in both the ASCII and binary encodings:</p>
+<iframe width=100%% height=800 src=https://web.zquestclassic.com/zscript/?url=https://raw.githubusercontent.com/ZQuestClassic/ZQuestClassic/refs/heads/main/tests/scripts/playground/auto/tango.zs></iframe>
+<p>The second test script shows just writing SCCs in the binary encoding:</p>
+<iframe width=100%% height=800 src=https://web.zquestclassic.com/zscript/?url=https://raw.githubusercontent.com/ZQuestClassic/ZQuestClassic/refs/heads/main/tests/scripts/playground/auto/scc.zs></iframe>
+</section>
+<section id="example-reading-sccs">
+<h3>Example: Reading SCCs<a class="headerlink" href="#example-reading-sccs" title="Link to this heading">#</a></h3>
+<p>For reading SCCs, it’s highly recommended to use <a class="reference internal" href="../zscript/classes/messagedata.html#classes-messagedata-var-segments"><span class="std std-ref">messagedata::Segments[]</span></a>, which handles the parsing and works the same regardless of the encoding used.</p>
+<p>This example is from <a class="reference internal" href="../zscript/libs/tango/index.html#lib-tango"><span class="std std-ref">tango</span></a>, the text library. It shows reading SCCs from the binary encoding.</p>
+<iframe width=100%% height=800 src=https://web.zquestclassic.com/zscript/?url=https://raw.githubusercontent.com/ZQuestClassic/ZQuestClassic/refs/heads/main/resources/headers/tango/1.3/tango_stringControlCode.zh></iframe>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="z3_user_guide.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Z3 User Guide</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="websockets.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Websockets</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax">Syntax</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax-2-55">Syntax (2.55)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commands">Commands</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formatting">Formatting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menu">Menu</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#switch">Switch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#control-mod">Control Mod</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#misc">Misc</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zscript">ZScript</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-writing-sccs">Example: Writing SCCs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-reading-sccs">Example: Reading SCCs</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, ZQuest Classic Foundation.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
