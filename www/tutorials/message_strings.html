@@ -456,9 +456,9 @@
 <td><p>Draws a tile block inline with the text, as though it were a custom font character</p></td>
 </tr>
 <tr class="row-even"><td><p>24</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">\Portrait\portrait_id\</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">\24\portrait_id</span></code></p></td>
-<td><p>Unimplemented; reserved for changing portrait</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\Portrait\tile\cset\x\y\width\height\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Change the current portrait display. Width and height are in tiles.</p></td>
 </tr>
 </tbody>
 </table>
@@ -606,6 +606,11 @@
 <td><p><em>not supported</em></p></td>
 <td><p>Go to newstring if current screen secrets have triggered.</p></td>
 </tr>
+<tr class="row-odd"><td><p>145</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\GoIfBottle\quantity\type\newstring\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Go to newstring if the Hero owns enough of the specified bottle fill type.</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -666,6 +671,11 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">\TakeItem\itemid\</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\17\itemid</span></code></p></td>
 <td><p>Takes ‘itemid’ from the player, silently. Its’ pickup counter modifications will be reversed when removed</p></td>
+</tr>
+<tr class="row-odd"><td><p>17</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\ChangeBottle\quantity\old\new\</span></code></p></td>
+<td><p><em>not supported</em></p></td>
+<td><p>Changes ‘quantity’ bottles that contain ‘old’ to contain ‘new’. Changes as many as possible if not enough contain ‘old’.</p></td>
 </tr>
 </tbody>
 </table>
