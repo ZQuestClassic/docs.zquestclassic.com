@@ -281,6 +281,7 @@
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/debugger.html">Debugger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../lang/comments.html">Comments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../lang/literals.html">Literals</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -364,6 +365,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/lweapon.html">lweapon</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/mapdata.html">mapdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/messagedata.html">messagedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/musicdata.html">musicdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
@@ -392,6 +394,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../std/std_functions.html">std_functions.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../std/std_keyboard.html">std_keyboard.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/std_time.html">std_time.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../std/string_constants.html">string_constants.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../std/string_functions.html">string_functions.zh</a></li>
 </ul>
@@ -553,25 +556,25 @@
 </section>
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="libs-tango-fun-tango-validateconfiguration">bool <strong>Tango_ValidateConfiguration</strong>() <a class="reference internal" href="#libs-tango-fun-tango-validateconfiguration"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/headers/tango/1.3/tango_validation.zh#L4">Source</a></p>
+<p class="classref-method" id="libs-tango-fun-tango-validateconfiguration">bool <strong>Tango_ValidateConfiguration</strong>() <a class="reference internal" href="#libs-tango-fun-tango-validateconfiguration"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/headers/tango/1.3/tango_validation.zh#L4">Source</a></p>
 <p class="classref-comment">Various validation functions. Any that return bools return false
 if whatever they test is invalid. They may also log errors.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-tango-fun-tango-validatearraysize">bool <strong>__Tango_ValidateArraySize</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] arr, char32[] name, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> targetSize) <a class="reference internal" href="#libs-tango-fun-tango-validatearraysize"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/headers/tango/1.3/tango_validation.zh#L77">Source</a></p>
+<p class="classref-method" id="libs-tango-fun-tango-validatearraysize">bool <strong>__Tango_ValidateArraySize</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] arr, char32[] name, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> targetSize) <a class="reference internal" href="#libs-tango-fun-tango-validatearraysize"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/headers/tango/1.3/tango_validation.zh#L77">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-tango-fun-tango-validateslotdefs">bool <strong>__Tango_ValidateSlotDefs</strong>() <a class="reference internal" href="#libs-tango-fun-tango-validateslotdefs"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/headers/tango/1.3/tango_validation.zh#L95">Source</a></p>
+<p class="classref-method" id="libs-tango-fun-tango-validateslotdefs">bool <strong>__Tango_ValidateSlotDefs</strong>() <a class="reference internal" href="#libs-tango-fun-tango-validateslotdefs"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/headers/tango/1.3/tango_validation.zh#L95">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-tango-fun-tango-checkoverlappingslots"><abbr title="No return value.">void</abbr> <strong>__Tango_CheckOverlappingSlots</strong>() <a class="reference internal" href="#libs-tango-fun-tango-checkoverlappingslots"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/headers/tango/1.3/tango_validation.zh#L166">Source</a></p>
+<p class="classref-method" id="libs-tango-fun-tango-checkoverlappingslots"><abbr title="No return value.">void</abbr> <strong>__Tango_CheckOverlappingSlots</strong>() <a class="reference internal" href="#libs-tango-fun-tango-checkoverlappingslots"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/headers/tango/1.3/tango_validation.zh#L166">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-tango-fun-tango-validateslot">bool <strong>__Tango_ValidateSlot</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot) <a class="reference internal" href="#libs-tango-fun-tango-validateslot"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/headers/tango/1.3/tango_validation.zh#L200">Source</a></p>
+<p class="classref-method" id="libs-tango-fun-tango-validateslot">bool <strong>__Tango_ValidateSlot</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> slot) <a class="reference internal" href="#libs-tango-fun-tango-validateslot"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/headers/tango/1.3/tango_validation.zh#L200">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-tango-fun-tango-validatestyle">bool <strong>__Tango_ValidateStyle</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> style) <a class="reference internal" href="#libs-tango-fun-tango-validatestyle"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/headers/tango/1.3/tango_validation.zh#L215">Source</a></p>
+<p class="classref-method" id="libs-tango-fun-tango-validatestyle">bool <strong>__Tango_ValidateStyle</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> style) <a class="reference internal" href="#libs-tango-fun-tango-validatestyle"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/headers/tango/1.3/tango_validation.zh#L215">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-tango-fun-tango-validatestring">bool <strong>__Tango_ValidateString</strong>(char32[] str) <a class="reference internal" href="#libs-tango-fun-tango-validatestring"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/headers/tango/1.3/tango_validation.zh#L230">Source</a></p>
+<p class="classref-method" id="libs-tango-fun-tango-validatestring">bool <strong>__Tango_ValidateString</strong>(char32[] str) <a class="reference internal" href="#libs-tango-fun-tango-validatestring"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/headers/tango/1.3/tango_validation.zh#L230">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-tango-fun-tango-validatemessage">bool <strong>__Tango_ValidateMessage</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> msg) <a class="reference internal" href="#libs-tango-fun-tango-validatemessage"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/headers/tango/1.3/tango_validation.zh#L240">Source</a></p>
+<p class="classref-method" id="libs-tango-fun-tango-validatemessage">bool <strong>__Tango_ValidateMessage</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> msg) <a class="reference internal" href="#libs-tango-fun-tango-validatemessage"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/headers/tango/1.3/tango_validation.zh#L240">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-tango-fun-tango-validatesavedversion"><abbr title="No return value.">void</abbr> <strong>__Tango_ValidateSavedVersion</strong>() <a class="reference internal" href="#libs-tango-fun-tango-validatesavedversion"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/headers/tango/1.3/tango_validation.zh#L249">Source</a></p>
+<p class="classref-method" id="libs-tango-fun-tango-validatesavedversion"><abbr title="No return value.">void</abbr> <strong>__Tango_ValidateSavedVersion</strong>() <a class="reference internal" href="#libs-tango-fun-tango-validatesavedversion"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/headers/tango/1.3/tango_validation.zh#L249">Source</a></p>
 <p class="classref-comment">Tries to detect if a game saved with an older version was loaded.</p>
 </section>
 </section>
@@ -653,7 +656,7 @@ if whatever they test is invalid. They may also log errors.</p>
 
   <p class="copyright">
     
-      © Copyright 2025, ZQuest Classic Foundation.
+      © Copyright 2026, ZQuest Classic Foundation.
       <br/>
     
   </p>

@@ -357,6 +357,14 @@
 <h2>Alternative Method: play directly in the browser<a class="headerlink" href="#alternative-method-play-directly-in-the-browser" title="Link to this heading">#</a></h2>
 <p>You can also search for and begin playing a quest directly in the <a class="reference external" href="https://web.zquestclassic.com/play/">web version</a>. Open the <code class="docutils literal notranslate"><span class="pre">Quest</span> <span class="pre">List</span></code> at the top of the page, find a quest you like, then click the <code class="docutils literal notranslate"><span class="pre">Play!</span></code> link to start the game.</p>
 <p>Note, the web version is still experimental, and may not work ideally in all browser or on older computers. For the most verified experience, use Chrome.</p>
+<p>(For quest authors): Players can load your quest in the web version in a few different ways:</p>
+<ol class="arabic simple">
+<li><p>If your quest is uploaded to <a class="reference external" href="https://www.purezc.net/">https://www.purezc.net/</a> and you’ve granted permission for the web version to load it, players can find it in the Quest List. You can also share a URL that will directly load it, like this: <a class="reference external" href="https://web.zquestclassic.com/play?open=quests/purezc/373&amp;name=Links-Quest-for-the-Hookshot-2-Quest">https://web.zquestclassic.com/play?open=quests/purezc/373&amp;name=Links-Quest-for-the-Hookshot-2-Quest</a></p></li>
+<li><p>If you don’t want your quest uploaded to <a class="reference external" href="https://www.purezc.net/">https://www.purezc.net/</a> (for example, it is a demo), but still want a direct URL so players can easily load your quest: we can manually upload your quest on our servers</p></li>
+<li><p>If you want to host your qst file on your own server, you can have the web version load it like this: <a class="reference external" href="https://web.zquestclassic.com/play?open=https://www.example.com/game.qst">https://web.zquestclassic.com/play?open=https://www.example.com/game.qst</a> (where the <code class="docutils literal notranslate"><span class="pre">?open=</span></code> value is the URL to your quest file). Your webserver will need to set this response header for <code class="docutils literal notranslate"><span class="pre">Access-Control-Allow-Origin</span> <span class="pre">&quot;*&quot;</span></code>. Note: this currently does not support external music files</p></li>
+<li><p>If you just want to give players your qst file directly, they can load it into the web version themselves. They will need to either attach a folder from their computer to the web version (not all browsers support this), or upload the file in the Settings tab. Once done, they can create a new save slot and navigate to the <code class="docutils literal notranslate"><span class="pre">/local</span></code> folder to locate the qst</p></li>
+</ol>
+<p>For 1. and 2., contact Connor (discord connorclark#9300).</p>
 </section>
 </section>
 
@@ -436,7 +444,7 @@
 
   <p class="copyright">
     
-      © Copyright 2025, ZQuest Classic Foundation.
+      © Copyright 2026, ZQuest Classic Foundation.
       <br/>
     
   </p>

@@ -52,7 +52,7 @@
     <link rel="icon" href="../../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="string_constants.zh" href="string_constants.html" />
+    <link rel="next" title="std_time.zh" href="std_time.html" />
     <link rel="prev" title="std_keyboard.zh" href="std_keyboard.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -281,6 +281,7 @@
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/debugger.html">Debugger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../lang/comments.html">Comments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../lang/literals.html">Literals</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -364,6 +365,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/lweapon.html">lweapon</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/mapdata.html">mapdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/messagedata.html">messagedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/musicdata.html">musicdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
@@ -392,6 +394,7 @@
 <li class="toctree-l2"><a class="reference internal" href="std_functions.html">std_functions.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="std_keyboard.html">std_keyboard.zh</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="std_time.html">std_time.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="string_constants.html">string_constants.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="string_functions.html">string_functions.zh</a></li>
 </ul>
@@ -561,31 +564,31 @@
 </section>
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="libs-std-var-onsideviewplatform-check-obj-width"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> bool <strong>ONSIDEVIEWPLATFORM_CHECK_OBJ_WIDTH</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code> <a class="reference internal" href="#libs-std-var-onsideviewplatform-check-obj-width"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/std_zh/std_sideview.zh#L3">Source</a></p>
+<p id="libs-std-var-onsideviewplatform-check-obj-width"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> bool <strong>ONSIDEVIEWPLATFORM_CHECK_OBJ_WIDTH</strong> = <code class="docutils literal notranslate"><span class="pre">true</span></code> <a class="reference internal" href="#libs-std-var-onsideviewplatform-check-obj-width"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/std_zh/std_sideview.zh#L3">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="libs-std-var-onsideviewplatform-overhang-depth"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ONSIDEVIEWPLATFORM_OVERHANG_DEPTH</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code> <a class="reference internal" href="#libs-std-var-onsideviewplatform-overhang-depth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/std_zh/std_sideview.zh#L4">Source</a></p>
+<p id="libs-std-var-onsideviewplatform-overhang-depth"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>ONSIDEVIEWPLATFORM_OVERHANG_DEPTH</strong> = <code class="docutils literal notranslate"><span class="pre">4</span></code> <a class="reference internal" href="#libs-std-var-onsideviewplatform-overhang-depth"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/std_zh/std_sideview.zh#L4">Source</a></p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="libs-std-fun-onsideplatform">bool <strong>OnSidePlatform</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y) <a class="reference internal" href="#libs-std-fun-onsideplatform"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/std_zh/std_sideview.zh#L7">Source</a></p>
+<p class="classref-method" id="libs-std-fun-onsideplatform">bool <strong>OnSidePlatform</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y) <a class="reference internal" href="#libs-std-fun-onsideplatform"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/std_zh/std_sideview.zh#L7">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-onsideplatform-2">bool <strong>OnSidePlatform</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> xOff, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> yOff, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> h) <a class="reference internal" href="#libs-std-fun-onsideplatform-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/std_zh/std_sideview.zh#L20">Source</a></p>
+<p class="classref-method" id="libs-std-fun-onsideplatform-2">bool <strong>OnSidePlatform</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> xOff, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> yOff, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> h) <a class="reference internal" href="#libs-std-fun-onsideplatform-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/std_zh/std_sideview.zh#L20">Source</a></p>
 <p class="classref-comment">Returns true if a sprite of height ‘h’ at position (x,y) with an offset of (xOff,yOff) is standing
 on a sideview platform on a sideview screen.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-onsideplatform-3">bool <strong>OnSidePlatform</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> xOff, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> yOff, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> h, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> w) <a class="reference internal" href="#libs-std-fun-onsideplatform-3"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/std_zh/std_sideview.zh#L34">Source</a></p>
+<p class="classref-method" id="libs-std-fun-onsideplatform-3">bool <strong>OnSidePlatform</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> x, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> y, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> xOff, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> yOff, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> h, <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> w) <a class="reference internal" href="#libs-std-fun-onsideplatform-3"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/std_zh/std_sideview.zh#L34">Source</a></p>
 <p class="classref-comment">Returns true if a sprite of height ‘h’ and width <code class="docutils literal notranslate"><span class="pre">w</span></code>,
 at position (x,y) with an offset of (xOff,yOff) is standing
 on a sideview platform on a sideview screen.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-onsideplatform-4">bool <strong>OnSidePlatform</strong>(<a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> l) <a class="reference internal" href="#libs-std-fun-onsideplatform-4"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/std_zh/std_sideview.zh#L42">Source</a></p>
+<p class="classref-method" id="libs-std-fun-onsideplatform-4">bool <strong>OnSidePlatform</strong>(<a class="reference internal" href="../../classes/lweapon.html#classes-lweapon"><span class="std std-ref">lweapon</span></a> l) <a class="reference internal" href="#libs-std-fun-onsideplatform-4"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/std_zh/std_sideview.zh#L42">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-onsideplatform-5">bool <strong>OnSidePlatform</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> l) <a class="reference internal" href="#libs-std-fun-onsideplatform-5"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/std_zh/std_sideview.zh#L59">Source</a></p>
+<p class="classref-method" id="libs-std-fun-onsideplatform-5">bool <strong>OnSidePlatform</strong>(<a class="reference internal" href="../../classes/eweapon.html#classes-eweapon"><span class="std std-ref">eweapon</span></a> l) <a class="reference internal" href="#libs-std-fun-onsideplatform-5"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/std_zh/std_sideview.zh#L59">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-onsideplatform-6">bool <strong>OnSidePlatform</strong>(<a class="reference internal" href="../../classes/itemsprite.html#classes-itemsprite"><span class="std std-ref">itemsprite</span></a> l) <a class="reference internal" href="#libs-std-fun-onsideplatform-6"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/std_zh/std_sideview.zh#L76">Source</a></p>
+<p class="classref-method" id="libs-std-fun-onsideplatform-6">bool <strong>OnSidePlatform</strong>(<a class="reference internal" href="../../classes/itemsprite.html#classes-itemsprite"><span class="std std-ref">itemsprite</span></a> l) <a class="reference internal" href="#libs-std-fun-onsideplatform-6"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/std_zh/std_sideview.zh#L76">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-std-fun-onsideplatform-7">bool <strong>OnSidePlatform</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> l) <a class="reference internal" href="#libs-std-fun-onsideplatform-7"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/std_zh/std_sideview.zh#L93">Source</a></p>
+<p class="classref-method" id="libs-std-fun-onsideplatform-7">bool <strong>OnSidePlatform</strong>(<a class="reference internal" href="../../classes/npc.html#classes-npc"><span class="std std-ref">npc</span></a> l) <a class="reference internal" href="#libs-std-fun-onsideplatform-7"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/std_zh/std_sideview.zh#L93">Source</a></p>
 </section>
 </section>
 
@@ -609,11 +612,11 @@ on a sideview platform on a sideview screen.</p>
       </div>
     </a>
     <a class="right-next"
-       href="string_constants.html"
+       href="std_time.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">string_constants.zh</p>
+        <p class="prev-next-title">std_time.zh</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -668,7 +671,7 @@ on a sideview platform on a sideview screen.</p>
 
   <p class="copyright">
     
-      © Copyright 2025, ZQuest Classic Foundation.
+      © Copyright 2026, ZQuest Classic Foundation.
       <br/>
     
   </p>

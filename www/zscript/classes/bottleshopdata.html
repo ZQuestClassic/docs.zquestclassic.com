@@ -281,6 +281,7 @@
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/debugger.html">Debugger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lang/comments.html">Comments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lang/literals.html">Literals</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -364,6 +365,7 @@
 <li class="toctree-l1"><a class="reference internal" href="lweapon.html">lweapon</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mapdata.html">mapdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="messagedata.html">messagedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="musicdata.html">musicdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="paldata.html">paldata</a></li>
@@ -392,6 +394,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/std_functions.html">std_functions.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/std_keyboard.html">std_keyboard.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_time.html">std_time.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/string_constants.html">string_constants.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/string_functions.html">string_functions.zh</a></li>
 </ul>
@@ -513,6 +516,7 @@
                   
   <section id="bottleshopdata">
 <span id="classes-bottleshopdata"></span><h1>bottleshopdata<a class="headerlink" href="#bottleshopdata" title="Link to this heading">#</a></h1>
+<p class="classref-comment">Load with <a class="reference internal" href="../globals/Game.html#globals-game-fun-loadbottleshopdata"><span class="std std-ref">Game-&gt;LoadBottleShopData()</span></a></p>
 <section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -552,28 +556,28 @@
 </section>
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="classes-bottleshopdata-var-fill"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Fill</strong>  <a class="reference internal" href="#classes-bottleshopdata-var-fill"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/bottleshopdata.zh#L9">Source</a></p>
+<p id="classes-bottleshopdata-var-fill"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Fill</strong>  <a class="reference internal" href="#classes-bottleshopdata-var-fill"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/bottleshopdata.zh#L11">Source</a></p>
 <p class="classref-comment">Which bottle type each index fills a bottle with.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-bottleshopdata-var-combo"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Combo</strong>  <a class="reference internal" href="#classes-bottleshopdata-var-combo"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/bottleshopdata.zh#L14">Source</a></p>
+<p id="classes-bottleshopdata-var-combo"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Combo</strong>  <a class="reference internal" href="#classes-bottleshopdata-var-combo"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/bottleshopdata.zh#L16">Source</a></p>
 <p class="classref-comment">What combo to display as a visual for each index.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-bottleshopdata-var-cset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>CSet</strong>  <a class="reference internal" href="#classes-bottleshopdata-var-cset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/bottleshopdata.zh#L19">Source</a></p>
+<p id="classes-bottleshopdata-var-cset"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>CSet</strong>  <a class="reference internal" href="#classes-bottleshopdata-var-cset"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/bottleshopdata.zh#L21">Source</a></p>
 <p class="classref-comment">What CSet to use for the combo for each index.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-bottleshopdata-var-price"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Price</strong>  <a class="reference internal" href="#classes-bottleshopdata-var-price"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/bottleshopdata.zh#L24">Source</a></p>
+<p id="classes-bottleshopdata-var-price"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Price</strong>  <a class="reference internal" href="#classes-bottleshopdata-var-price"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/bottleshopdata.zh#L26">Source</a></p>
 <p class="classref-comment">The price, in rupees (0-65535) to purchase each index.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-bottleshopdata-var-infostring"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>InfoString</strong>  <a class="reference internal" href="#classes-bottleshopdata-var-infostring"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/bottleshopdata.zh#L29">Source</a></p>
+<p id="classes-bottleshopdata-var-infostring"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>InfoString</strong>  <a class="reference internal" href="#classes-bottleshopdata-var-infostring"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/bottleshopdata.zh#L31">Source</a></p>
 <p class="classref-comment">The message string to display upon purchasing each index.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-bottleshopdata-fun-getname"><abbr title="No return value.">void</abbr> <strong>GetName</strong>(char32[] str) <a class="reference internal" href="#classes-bottleshopdata-fun-getname"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/bottleshopdata.zh#L37">Source</a></p>
+<p class="classref-method" id="classes-bottleshopdata-fun-getname"><abbr title="No return value.">void</abbr> <strong>GetName</strong>(char32[] str) <a class="reference internal" href="#classes-bottleshopdata-fun-getname"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/bottleshopdata.zh#L39">Source</a></p>
 <p class="classref-comment">Loads the name of the bottleshopdata into the provided string buffer.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-bottleshopdata-fun-setname"><abbr title="No return value.">void</abbr> <strong>SetName</strong>(char32[] str) <a class="reference internal" href="#classes-bottleshopdata-fun-setname"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/bottleshopdata.zh#L45">Source</a></p>
+<p class="classref-method" id="classes-bottleshopdata-fun-setname"><abbr title="No return value.">void</abbr> <strong>SetName</strong>(char32[] str) <a class="reference internal" href="#classes-bottleshopdata-fun-setname"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/bottleshopdata.zh#L47">Source</a></p>
 <p class="classref-comment">Sets the name of the bottleshopdata to the provided string.</p>
 </section>
 </section>
@@ -657,7 +661,7 @@
 
   <p class="copyright">
     
-      © Copyright 2025, ZQuest Classic Foundation.
+      © Copyright 2026, ZQuest Classic Foundation.
       <br/>
     
   </p>

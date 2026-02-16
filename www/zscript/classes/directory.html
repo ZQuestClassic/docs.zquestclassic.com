@@ -281,6 +281,7 @@
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/debugger.html">Debugger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lang/comments.html">Comments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lang/literals.html">Literals</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -364,6 +365,7 @@
 <li class="toctree-l1"><a class="reference internal" href="lweapon.html">lweapon</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mapdata.html">mapdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="messagedata.html">messagedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="musicdata.html">musicdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="paldata.html">paldata</a></li>
@@ -392,6 +394,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/std_functions.html">std_functions.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/std_keyboard.html">std_keyboard.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_time.html">std_time.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/string_constants.html">string_constants.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/string_functions.html">string_functions.zh</a></li>
 </ul>
@@ -557,31 +560,31 @@
 </section>
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="classes-directory-var-size"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Size</strong>  <a class="reference internal" href="#classes-directory-var-size"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/directory.zh#L11">Source</a></p>
+<p id="classes-directory-var-size"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Size</strong>  <a class="reference internal" href="#classes-directory-var-size"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/directory.zh#L11">Source</a></p>
 <p class="classref-comment">The number of files/folders contained in the directory.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="constructor-descriptions">
 <h2>Constructor descriptions<a class="headerlink" href="#constructor-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-directory-ctor-directory"><a class="reference internal" href="#classes-directory"><span class="std std-ref">directory</span></a> <strong>directory</strong>(char32[] path) <a class="reference internal" href="#classes-directory-ctor-directory"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/directory.zh#L6">Source</a></p>
+<p class="classref-method" id="classes-directory-ctor-directory"><a class="reference internal" href="#classes-directory"><span class="std std-ref">directory</span></a> <strong>directory</strong>(char32[] path) <a class="reference internal" href="#classes-directory-ctor-directory"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/directory.zh#L6">Source</a></p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-directory-fun-getfilename">bool <strong>GetFilename</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index, char32[] buf) <a class="reference internal" href="#classes-directory-fun-getfilename"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/directory.zh#L20">Source</a></p>
+<p class="classref-method" id="classes-directory-fun-getfilename">bool <strong>GetFilename</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> index, char32[] buf) <a class="reference internal" href="#classes-directory-fun-getfilename"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/directory.zh#L20">Source</a></p>
 <p class="classref-comment">Loads the name of the <code class="docutils literal notranslate"><span class="pre">index</span></code> file (0 &lt;= <code class="docutils literal notranslate"><span class="pre">index</span></code> &lt; <a class="reference internal" href="#classes-directory-var-size"><span class="std std-ref">Size</span></a>)</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-directory-fun-reload"><abbr title="No return value.">void</abbr> <strong>Reload</strong>() <a class="reference internal" href="#classes-directory-fun-reload"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/directory.zh#L27">Source</a></p>
+<p class="classref-method" id="classes-directory-fun-reload"><abbr title="No return value.">void</abbr> <strong>Reload</strong>() <a class="reference internal" href="#classes-directory-fun-reload"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/directory.zh#L27">Source</a></p>
 <p class="classref-comment">Refreshes the directory, updating <a class="reference internal" href="#classes-directory-var-size"><span class="std std-ref">Size</span></a> and the results of <a class="reference internal" href="#classes-directory-fun-getfilename"><span class="std std-ref">GetFilename()</span></a>.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-directory-fun-free"><abbr title="No return value.">void</abbr> <strong>Free</strong>() <a class="reference internal" href="#classes-directory-fun-free"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/directory.zh#L37">Source</a></p>
+<p class="classref-method" id="classes-directory-fun-free"><abbr title="No return value.">void</abbr> <strong>Free</strong>() <a class="reference internal" href="#classes-directory-fun-free"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/directory.zh#L37">Source</a></p>
 <p class="classref-comment">Deallocate the directory pointer, so that the pointer ID may be
 re-used.</p>
 <div class="deprecated">
 <p><span class="versionmodified deprecated">Deprecated: </span>Free() no longer does anything as of ZC 3.0. Objects are now freed automatically.</p>
 </div>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-directory-fun-own"><abbr title="No return value.">void</abbr> <strong>Own</strong>() <a class="reference internal" href="#classes-directory-fun-own"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/directory.zh#L47">Source</a></p>
+<p class="classref-method" id="classes-directory-fun-own"><abbr title="No return value.">void</abbr> <strong>Own</strong>() <a class="reference internal" href="#classes-directory-fun-own"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/directory.zh#L47">Source</a></p>
 <p class="classref-comment">Grants ‘Ownership’ of the directory pointer to the script that calls this
 function. When the script with ‘Ownership’ terminates (at the same time
 its’ local arrays are deallocated), this directory pointer will
@@ -670,7 +673,7 @@ automatically be ‘Free()’d.</p>
 
   <p class="copyright">
     
-      © Copyright 2025, ZQuest Classic Foundation.
+      © Copyright 2026, ZQuest Classic Foundation.
       <br/>
     
   </p>

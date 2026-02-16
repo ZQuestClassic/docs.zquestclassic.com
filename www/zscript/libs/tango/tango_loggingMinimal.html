@@ -281,6 +281,7 @@
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lang/debugger.html">Debugger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../lang/comments.html">Comments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../lang/literals.html">Literals</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -364,6 +365,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/lweapon.html">lweapon</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/mapdata.html">mapdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/messagedata.html">messagedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/musicdata.html">musicdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
@@ -392,6 +394,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../std/std_functions.html">std_functions.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../std/std_keyboard.html">std_keyboard.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../std/std_time.html">std_time.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../std/string_constants.html">string_constants.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../std/string_functions.html">string_functions.zh</a></li>
 </ul>
@@ -546,18 +549,18 @@
 </section>
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="libs-tango-var-tango-full-logging"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__TANGO_FULL_LOGGING</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-tango-var-tango-full-logging"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/headers/tango/1.3/tango_loggingMinimal.zh#L3">Source</a></p>
+<p id="libs-tango-var-tango-full-logging"><abbr title="This value cannot be reassigned. If it is an array, it's elements also cannot be reassigned.">const</abbr> <abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>__TANGO_FULL_LOGGING</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code> <a class="reference internal" href="#libs-tango-var-tango-full-logging"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/headers/tango/1.3/tango_loggingMinimal.zh#L3">Source</a></p>
 <p class="classref-comment">Minimal message logging.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="libs-tango-fun-tango-logerror"><abbr title="No return value.">void</abbr> <strong>__Tango_LogError</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> error) <a class="reference internal" href="#libs-tango-fun-tango-logerror"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/headers/tango/1.3/tango_loggingMinimal.zh#L10">Source</a></p>
+<p class="classref-method" id="libs-tango-fun-tango-logerror"><abbr title="No return value.">void</abbr> <strong>__Tango_LogError</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> error) <a class="reference internal" href="#libs-tango-fun-tango-logerror"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/headers/tango/1.3/tango_loggingMinimal.zh#L10">Source</a></p>
 <p class="classref-comment">Ignore it</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-tango-fun-tango-logerror-2"><abbr title="No return value.">void</abbr> <strong>__Tango_LogError</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> error, <abbr title="Could be any type.">untyped</abbr> data) <a class="reference internal" href="#libs-tango-fun-tango-logerror-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/headers/tango/1.3/tango_loggingMinimal.zh#L21">Source</a></p>
+<p class="classref-method" id="libs-tango-fun-tango-logerror-2"><abbr title="No return value.">void</abbr> <strong>__Tango_LogError</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> error, <abbr title="Could be any type.">untyped</abbr> data) <a class="reference internal" href="#libs-tango-fun-tango-logerror-2"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/headers/tango/1.3/tango_loggingMinimal.zh#L21">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="libs-tango-fun-tango-logerror-3"><abbr title="No return value.">void</abbr> <strong>__Tango_LogError</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> error, <abbr title="Could be any type.">untyped</abbr> data1, <abbr title="Could be any type.">untyped</abbr> data2) <a class="reference internal" href="#libs-tango-fun-tango-logerror-3"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/headers/tango/1.3/tango_loggingMinimal.zh#L26">Source</a></p>
+<p class="classref-method" id="libs-tango-fun-tango-logerror-3"><abbr title="No return value.">void</abbr> <strong>__Tango_LogError</strong>(<abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> error, <abbr title="Could be any type.">untyped</abbr> data1, <abbr title="Could be any type.">untyped</abbr> data2) <a class="reference internal" href="#libs-tango-fun-tango-logerror-3"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/headers/tango/1.3/tango_loggingMinimal.zh#L26">Source</a></p>
 </section>
 </section>
 
@@ -640,7 +643,7 @@
 
   <p class="copyright">
     
-      © Copyright 2025, ZQuest Classic Foundation.
+      © Copyright 2026, ZQuest Classic Foundation.
       <br/>
     
   </p>

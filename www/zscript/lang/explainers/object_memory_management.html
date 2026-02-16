@@ -364,6 +364,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../classes/lweapon.html">lweapon</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/mapdata.html">mapdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/messagedata.html">messagedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../classes/musicdata.html">musicdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classes/paldata.html">paldata</a></li>
@@ -392,6 +393,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../libs/std/std_functions.html">std_functions.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../libs/std/std_keyboard.html">std_keyboard.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../libs/std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../libs/std/std_time.html">std_time.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../libs/std/string_constants.html">string_constants.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../libs/std/string_functions.html">string_functions.zh</a></li>
 </ul>
@@ -576,7 +578,8 @@ This associates a reference to the object with the current script, so when that 
 if there are no other references to the object it will be destroyed. Only one script may
 own a particular object - subsequent calls transfer which script holds the reference.
 You shouldn’t need this functionality for most usages. One example of it being necessary
-is if the only place you store an object is an untyped variable, which does not hold a reference.</p>
+is if the only place you store an object is an untyped variable, which does not hold a reference
+(note: objects within untyped arrays do retain references - just not plain untyped variables).</p>
 <p>For simple objects with no cyclical references, they are destroyed just after their last
 reference is removed (as local variable going out of scope, or being overwritten, etc).</p>
 <p>New objects have an implicit reference added to an “autorelease pool” (a construct borrowed
@@ -596,7 +599,7 @@ the garbage collector will eventually delete it.</p>
 destructors immediately if their reference count is now zero.</p>
 <p>On save, an object persists to the save file (including all its variables and arrays) if it has
 been globalized via <a class="reference internal" href="../../globals/functions.html#globals-fun-globalobject"><span class="std std-ref">GlobalObject</span></a>, or if it is reachable from a global variable or array (note:
-untyped or int arrays do not count).</p>
+int arrays do not retain objects, but untyped arrays do).</p>
 <div class="versionchanged">
 <p><span class="versionmodified changed">Changed in version 3.0: </span>Prior to this version, only globalized objects persist to the save file.</p>
 </div>
@@ -613,12 +616,6 @@ the garbage collector runs or an object destructor is called is an implementatio
 may change. Do NOT implement critical game functionality in destructors - doing so will result
 in unpredictable behavior, and may break your quest in future versions of ZC.</p>
 </div>
-</section>
-<section id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>To pass objects between scripts via <code class="inlinezs pre docutils literal notranslate"><span class="pre">InitD</span></code> (or similar int/untyped variables), you must ensure something else retains the object else it may be destroyed before the target script can load it. <a class="reference external" href="https://discord.com/channels/876899628556091432/1365314060543070329/1365502641236344923">Read this discussion for more information</a>.</p></li>
-</ul>
 </section>
 </section>
 
@@ -671,7 +668,6 @@ in unpredictable behavior, and may break your quest in future versions of ZC.</p
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-managed">What’s managed</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works">How it works</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a></li>
 </ul>
   </nav></div>
 
@@ -700,7 +696,7 @@ in unpredictable behavior, and may break your quest in future versions of ZC.</p
 
   <p class="copyright">
     
-      © Copyright 2025, ZQuest Classic Foundation.
+      © Copyright 2026, ZQuest Classic Foundation.
       <br/>
     
   </p>

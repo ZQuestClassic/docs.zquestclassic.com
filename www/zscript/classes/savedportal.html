@@ -281,6 +281,7 @@
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lang/debugger.html">Debugger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lang/comments.html">Comments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lang/literals.html">Literals</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../lang/keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -364,6 +365,7 @@
 <li class="toctree-l1"><a class="reference internal" href="lweapon.html">lweapon</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mapdata.html">mapdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="messagedata.html">messagedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="musicdata.html">musicdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="paldata.html">paldata</a></li>
@@ -392,6 +394,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/std_functions.html">std_functions.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/std_keyboard.html">std_keyboard.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_time.html">std_time.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/string_constants.html">string_constants.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/string_functions.html">string_functions.zh</a></li>
 </ul>
@@ -513,6 +516,8 @@
                   
   <section id="savedportal">
 <span id="classes-savedportal"></span><h1>savedportal<a class="headerlink" href="#savedportal" title="Link to this heading">#</a></h1>
+<p class="classref-comment">Data for a <a class="reference internal" href="portal.html#classes-portal"><span class="std std-ref">portal</span></a> that is remembered in the save file for when you return to the screen.</p>
+<p class="classref-comment">Load with <a class="reference internal" href="../globals/Game.html#globals-game-fun-loadsavedportal"><span class="std std-ref">Game-&gt;LoadSavedPortal()</span></a>, <a class="reference internal" href="../globals/Game.html#globals-game-var-savedportals"><span class="std std-ref">Game-&gt;SavedPortals[]</span></a>, or <a class="reference internal" href="../globals/Game.html#globals-game-fun-createsavedportal"><span class="std std-ref">Game-&gt;CreateSavedPortal()</span></a></p>
 <section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -567,32 +572,32 @@
 </section>
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="classes-savedportal-var-x"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>X</strong>  <a class="reference internal" href="#classes-savedportal-var-x"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/savedportal.zh#L7">Source</a></p>
+<p id="classes-savedportal-var-x"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>X</strong>  <a class="reference internal" href="#classes-savedportal-var-x"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/savedportal.zh#L11">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-savedportal-var-y"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Y</strong>  <a class="reference internal" href="#classes-savedportal-var-y"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/savedportal.zh#L10">Source</a></p>
+<p id="classes-savedportal-var-y"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Y</strong>  <a class="reference internal" href="#classes-savedportal-var-y"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/savedportal.zh#L14">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-savedportal-var-srcdmap"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SrcDMap</strong>  <a class="reference internal" href="#classes-savedportal-var-srcdmap"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/savedportal.zh#L13">Source</a></p>
+<p id="classes-savedportal-var-srcdmap"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SrcDMap</strong>  <a class="reference internal" href="#classes-savedportal-var-srcdmap"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/savedportal.zh#L17">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-savedportal-var-destdmap"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DestDMap</strong>  <a class="reference internal" href="#classes-savedportal-var-destdmap"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/savedportal.zh#L16">Source</a></p>
+<p id="classes-savedportal-var-destdmap"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DestDMap</strong>  <a class="reference internal" href="#classes-savedportal-var-destdmap"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/savedportal.zh#L20">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-savedportal-var-srcscreen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SrcScreen</strong>  <a class="reference internal" href="#classes-savedportal-var-srcscreen"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/savedportal.zh#L19">Source</a></p>
+<p id="classes-savedportal-var-srcscreen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>SrcScreen</strong>  <a class="reference internal" href="#classes-savedportal-var-srcscreen"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/savedportal.zh#L23">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-savedportal-var-destscreen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DestScreen</strong>  <a class="reference internal" href="#classes-savedportal-var-destscreen"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/savedportal.zh#L22">Source</a></p>
+<p id="classes-savedportal-var-destscreen"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DestScreen</strong>  <a class="reference internal" href="#classes-savedportal-var-destscreen"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/savedportal.zh#L26">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-savedportal-var-warpsfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WarpSFX</strong>  <a class="reference internal" href="#classes-savedportal-var-warpsfx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/savedportal.zh#L25">Source</a></p>
+<p id="classes-savedportal-var-warpsfx"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WarpSFX</strong>  <a class="reference internal" href="#classes-savedportal-var-warpsfx"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/savedportal.zh#L29">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-savedportal-var-warpeffect"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WarpEffect</strong>  <a class="reference internal" href="#classes-savedportal-var-warpeffect"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/savedportal.zh#L28">Source</a></p>
+<p id="classes-savedportal-var-warpeffect"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>WarpEffect</strong>  <a class="reference internal" href="#classes-savedportal-var-warpeffect"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/savedportal.zh#L32">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-savedportal-var-sprite"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Sprite</strong>  <a class="reference internal" href="#classes-savedportal-var-sprite"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/savedportal.zh#L31">Source</a></p>
+<p id="classes-savedportal-var-sprite"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>Sprite</strong>  <a class="reference internal" href="#classes-savedportal-var-sprite"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/savedportal.zh#L35">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-savedportal-var-portal"><a class="reference internal" href="portal.html#classes-portal"><span class="std std-ref">portal</span></a> <strong>Portal</strong>  <a class="reference internal" href="#classes-savedportal-var-portal"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/savedportal.zh#L34">Source</a></p>
+<p id="classes-savedportal-var-portal"><a class="reference internal" href="portal.html#classes-portal"><span class="std std-ref">portal</span></a> <strong>Portal</strong>  <a class="reference internal" href="#classes-savedportal-var-portal"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/savedportal.zh#L38">Source</a></p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-savedportal-fun-remove"><abbr title="No return value.">void</abbr> <strong>Remove</strong>() <a class="reference internal" href="#classes-savedportal-fun-remove"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/savedportal.zh#L39">Source</a></p>
+<p class="classref-method" id="classes-savedportal-fun-remove"><abbr title="No return value.">void</abbr> <strong>Remove</strong>() <a class="reference internal" href="#classes-savedportal-fun-remove"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/savedportal.zh#L43">Source</a></p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-savedportal-fun-generate"><a class="reference internal" href="portal.html#classes-portal"><span class="std std-ref">portal</span></a> <strong>Generate</strong>() <a class="reference internal" href="#classes-savedportal-fun-generate"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/4774704ceff07bbe524b1de6e71d297843f99d00/resources/include/bindings/savedportal.zh#L44">Source</a></p>
+<p class="classref-method" id="classes-savedportal-fun-generate"><a class="reference internal" href="portal.html#classes-portal"><span class="std std-ref">portal</span></a> <strong>Generate</strong>() <a class="reference internal" href="#classes-savedportal-fun-generate"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/savedportal.zh#L48">Source</a></p>
 </section>
 </section>
 
@@ -675,7 +680,7 @@
 
   <p class="copyright">
     
-      © Copyright 2025, ZQuest Classic Foundation.
+      © Copyright 2026, ZQuest Classic Foundation.
       <br/>
     
   </p>

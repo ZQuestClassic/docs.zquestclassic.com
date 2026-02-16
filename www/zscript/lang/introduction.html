@@ -52,7 +52,7 @@
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Comments" href="comments.html" />
+    <link rel="next" title="Debugger" href="debugger.html" />
     <link rel="prev" title="ZScript" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -281,6 +281,7 @@
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debugger.html">Debugger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="comments.html">Comments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="literals.html">Literals</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="keywords.html">Keywords and Operators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -364,6 +365,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../classes/lweapon.html">lweapon</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/mapdata.html">mapdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/messagedata.html">messagedata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classes/musicdata.html">musicdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/npc.html">npc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/npcdata.html">npcdata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/paldata.html">paldata</a></li>
@@ -392,6 +394,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/std_functions.html">std_functions.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/std_keyboard.html">std_keyboard.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/std_sideview.html">std_sideview.zh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libs/std/std_time.html">std_time.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/string_constants.html">string_constants.zh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libs/std/string_functions.html">string_functions.zh</a></li>
 </ul>
@@ -572,6 +575,13 @@ where ZC is installed</p></li>
 <p>Now ZScript files (<code class="docutils literal notranslate"><span class="pre">.zh</span></code>, <code class="docutils literal notranslate"><span class="pre">.zs</span></code>, or <code class="docutils literal notranslate"><span class="pre">.z</span></code>) will have syntax highlighting, error reporting, and various other productivity
 features like documentation tooltips and Go-To-Definition lookups (try hovering or right-clicking on variable/function names).</p>
 </section>
+<section id="debugger">
+<h2>Debugger<a class="headerlink" href="#debugger" title="Link to this heading">#</a></h2>
+<div class="versionadded">
+<p><span class="versionmodified added">Added in version 3.0.</span></p>
+</div>
+<p>You can use the <a class="reference internal" href="debugger.html#debugger"><span class="std std-ref">the debugger</span></a> to debug scripts you write.</p>
+</section>
 </section>
 
 
@@ -594,11 +604,11 @@ features like documentation tooltips and Go-To-Definition lookups (try hovering 
       </div>
     </a>
     <a class="right-next"
-       href="comments.html"
+       href="debugger.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Comments</p>
+        <p class="prev-next-title">Debugger</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -623,6 +633,7 @@ features like documentation tooltips and Go-To-Definition lookups (try hovering 
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compiling-scripts">Compiling scripts</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-studio-code">Visual Studio Code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#debugger">Debugger</a></li>
 </ul>
   </nav></div>
 
@@ -651,7 +662,7 @@ features like documentation tooltips and Go-To-Definition lookups (try hovering 
 
   <p class="copyright">
     
-      © Copyright 2025, ZQuest Classic Foundation.
+      © Copyright 2026, ZQuest Classic Foundation.
       <br/>
     
   </p>
