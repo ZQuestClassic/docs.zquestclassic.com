@@ -281,6 +281,10 @@
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Language</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../lang/introduction.html">Introduction</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lang/examples/index.html">Examples</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lang/examples/draw_origin.html"><code class="docutils literal notranslate"><span class="pre">Screen-&gt;DrawOrigin</span></code> examples</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../lang/debugger.html">Debugger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lang/comments.html">Comments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lang/literals.html">Literals</a></li>
@@ -557,7 +561,7 @@
 <section id="enumerations">
 <h2>Enumerations<a class="headerlink" href="#enumerations" title="Link to this heading">#</a></h2>
 <p id="globals-enum-bottleflag">enum <strong>BottleFlag</strong>: <a class="reference internal" href="#globals-enum-bottleflag"><span class="std std-ref">🔗</span></a>
-<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/bottledata.zh#L1">Source</a></p>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8a2c139275072f91931827044cbdfb2f539bbf05/resources/include/bindings/bottledata.zh#L1">Source</a></p>
 <p class="classref-enumeration-constant" id="globals-enum-member-btf-revive"><a class="reference internal" href="#globals-enum-bottleflag"><span class="std std-ref">BottleFlag</span></a> <strong>BTF_REVIVE</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
 <p class="classref-enumeration-constant" id="globals-enum-member-btf-usewhenfull"><a class="reference internal" href="#globals-enum-bottleflag"><span class="std std-ref">BottleFlag</span></a> <strong>BTF_USEWHENFULL</strong> = <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
 <p class="classref-enumeration-constant" id="globals-enum-member-btf-cureswordjinx"><a class="reference internal" href="#globals-enum-bottleflag"><span class="std std-ref">BottleFlag</span></a> <strong>BTF_CURESWORDJINX</strong> = <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
@@ -568,36 +572,36 @@
 <hr class="classref-item-separator docutils" />
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="classes-bottledata-var-counter"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Counter</strong>  <a class="reference internal" href="#classes-bottledata-var-counter"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/bottledata.zh#L23">Source</a></p>
+<p id="classes-bottledata-var-counter"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Counter</strong>  <a class="reference internal" href="#classes-bottledata-var-counter"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8a2c139275072f91931827044cbdfb2f539bbf05/resources/include/bindings/bottledata.zh#L23">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">length</span></code> 3</p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="../globals/constants.html#globals-enum-counterindex"><span class="std std-ref">CounterIndex (CR_)</span></a></p>
 <p class="classref-comment">The refill counters of this bottle type.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-bottledata-var-amount"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Amount</strong>  <a class="reference internal" href="#classes-bottledata-var-amount"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/bottledata.zh#L30">Source</a></p>
+<p id="classes-bottledata-var-amount"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr>[] <strong>Amount</strong>  <a class="reference internal" href="#classes-bottledata-var-amount"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8a2c139275072f91931827044cbdfb2f539bbf05/resources/include/bindings/bottledata.zh#L30">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">length</span></code> 3</p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="../globals/constants.html#globals-enum-counterindex"><span class="std std-ref">CounterIndex (CR_)</span></a></p>
 <p class="classref-comment">The amount to refill each counter (0-65535)</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-bottledata-var-ispercent">bool[] <strong>IsPercent</strong>  <a class="reference internal" href="#classes-bottledata-var-ispercent"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/bottledata.zh#L38">Source</a></p>
+<p id="classes-bottledata-var-ispercent">bool[] <strong>IsPercent</strong>  <a class="reference internal" href="#classes-bottledata-var-ispercent"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8a2c139275072f91931827044cbdfb2f539bbf05/resources/include/bindings/bottledata.zh#L38">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">length</span></code> 3</p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="../globals/constants.html#globals-enum-counterindex"><span class="std std-ref">CounterIndex (CR_)</span></a></p>
 <p class="classref-comment">Whether the given counter refill is a percentage of max, instead of a
 direct value.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-bottledata-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-bottledata-var-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/bottledata.zh#L42">Source</a></p>
+<p id="classes-bottledata-var-flags">bool[] <strong>Flags</strong>  <a class="reference internal" href="#classes-bottledata-var-flags"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8a2c139275072f91931827044cbdfb2f539bbf05/resources/include/bindings/bottledata.zh#L42">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="#globals-enum-bottleflag"><span class="std std-ref">BottleFlag (BTF_)</span></a></p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-bottledata-var-nexttype"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NextType</strong>  <a class="reference internal" href="#classes-bottledata-var-nexttype"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/bottledata.zh#L48">Source</a></p>
+<p id="classes-bottledata-var-nexttype"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>NextType</strong>  <a class="reference internal" href="#classes-bottledata-var-nexttype"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8a2c139275072f91931827044cbdfb2f539bbf05/resources/include/bindings/bottledata.zh#L48">Source</a></p>
 <p class="classref-comment">What bottle type will remain in the bottle after drinking the current
 type.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-bottledata-fun-getname"><abbr title="No return value.">void</abbr> <strong>GetName</strong>(char32[] str) <a class="reference internal" href="#classes-bottledata-fun-getname"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/bottledata.zh#L56">Source</a></p>
+<p class="classref-method" id="classes-bottledata-fun-getname"><abbr title="No return value.">void</abbr> <strong>GetName</strong>(char32[] str) <a class="reference internal" href="#classes-bottledata-fun-getname"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8a2c139275072f91931827044cbdfb2f539bbf05/resources/include/bindings/bottledata.zh#L56">Source</a></p>
 <p class="classref-comment">Loads the name of the bottledata into the provided string buffer.</p>
 <hr class="classref-item-separator docutils" />
-<p class="classref-method" id="classes-bottledata-fun-setname"><abbr title="No return value.">void</abbr> <strong>SetName</strong>(char32[] str) <a class="reference internal" href="#classes-bottledata-fun-setname"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8207a3d9dd776474ea4767f79362ab2a6c29492e/resources/include/bindings/bottledata.zh#L64">Source</a></p>
+<p class="classref-method" id="classes-bottledata-fun-setname"><abbr title="No return value.">void</abbr> <strong>SetName</strong>(char32[] str) <a class="reference internal" href="#classes-bottledata-fun-setname"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/8a2c139275072f91931827044cbdfb2f539bbf05/resources/include/bindings/bottledata.zh#L64">Source</a></p>
 <p class="classref-comment">Sets the name of the bottledata to the provided string.</p>
 </section>
 </section>
