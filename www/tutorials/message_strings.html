@@ -53,7 +53,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Websockets" href="websockets.html" />
-    <link rel="prev" title="Z3 User Guide" href="z3_user_guide.html" />
+    <link rel="prev" title="Using a tileset" href="using_a_tileset.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -282,6 +282,7 @@
 <li class="toctree-l1"><a class="reference internal" href="z3_user_guide.html">Z3 User Guide</a></li>
 </ul>
 <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="using_a_tileset.html">Using a tileset</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Message strings</a></li>
 </ul>
 <ul class="nav bd-sidenav">
@@ -752,87 +753,92 @@
 <div class="line">0. WARPEFFECT_NONE</div>
 <div class="line">1. WARPEFFECT_ZAP</div>
 <div class="line">2. WARPEFFECT_WAVE</div>
-<div class="line">3. WARPEFFECT_INSTANT</div>
+<div class="line">3. WARPEFFECT_INSTANT (~30 frames of black)</div>
 <div class="line">4. WARPEFFECT_OPENWIPE</div>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>19</p></td>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>19</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\SetScreenD\dmap\screen\register\value\</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\19\dmap\screen\register\value</span></code></p></td>
 <td><p>Sets <code class="docutils literal notranslate"><span class="pre">Screen-&gt;D[register]</span> <span class="pre">=</span> <span class="pre">value</span></code> for the specified screen</p></td>
 </tr>
-<tr class="row-even"><td><p>20</p></td>
+<tr class="row-odd"><td><p>20</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\SFX\sfx_id\</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\20\sfx_id</span></code></p></td>
 <td><p>Plays a specified sfx</p></td>
 </tr>
-<tr class="row-odd"><td><p>21</p></td>
+<tr class="row-even"><td><p>21</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\MIDI\midi_id\</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\21\midi_id</span></code></p></td>
 <td><p>Plays a specified quest midi (cannot play the built-in midis)</p></td>
 </tr>
-<tr class="row-even"><td><p>29</p></td>
+<tr class="row-odd"><td><p>29</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\EndString\</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\29</span></code></p></td>
 <td><p>Immediately exits the current string. If there is a ‘next string’, it will begin immediately. The prompt to press ‘A’ to continue will be skipped</p></td>
 </tr>
-<tr class="row-odd"><td><p>30</p></td>
+<tr class="row-even"><td><p>30</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\WaitAdvance\</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\30</span></code></p></td>
 <td><p>Pauses the string and prompts the player to press A to continue (as normally occurs at the end of a string)</p></td>
 </tr>
-<tr class="row-even"><td><p>132</p></td>
+<tr class="row-odd"><td><p>132</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\TriggerSecrets\perm\</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\132\perm</span></code></p></td>
 <td><p>Triggers secrets, which are permanent unless ‘perm’ is ‘0’</p></td>
 </tr>
-<tr class="row-odd"><td><p>133</p></td>
+<tr class="row-even"><td><p>133</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\SetScreenState\state\value\</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\133\state\value</span></code></p></td>
 <td><p>Sets a screen state on the current screen. For values of “state”, see <a class="reference internal" href="../zscript/classes/mapdata.html#globals-enum-screenstate"><span class="std std-ref">ScreenState</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p>134</p></td>
+<tr class="row-odd"><td><p>134</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\SetAnyScreenState\map\screen\state\value\</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\134\map\screen\state\value</span></code></p></td>
 <td><p>Same as above, but for any map/screen</p></td>
 </tr>
-<tr class="row-odd"><td><p>146</p></td>
+<tr class="row-even"><td><p>146</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\SetScreenExState\state\value\</span></code></p></td>
 <td><p><em>not supported</em></p></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p>147</p></td>
+<tr class="row-odd"><td><p>147</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\SetAnyScreenExState\map\screen\state\value\</span></code></p></td>
 <td><p><em>not supported</em></p></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p>148</p></td>
+<tr class="row-even"><td><p>148</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\SetGlobalState\state\value\</span></code></p></td>
 <td><p><em>not supported</em></p></td>
 <td><p>Sets the global specified state. Values of -1 means “enabled”, 0 means “disabled”, and “&gt;0” means “enabled for x frames”</p></td>
 </tr>
-<tr class="row-even"><td><p>149</p></td>
+<tr class="row-odd"><td><p>149</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\SetLevelState\level\state\value\</span></code></p></td>
 <td><p><em>not supported</em></p></td>
 <td><p>Sets the level state. -1 for “level” means current level. Valid “state” is 0-31. “value” of 0 for false, non-zero for true.</p></td>
 </tr>
-<tr class="row-odd"><td><p>150</p></td>
+<tr class="row-even"><td><p>150</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\SetLevelItem\level\item\value\</span></code></p></td>
 <td><p><em>not supported</em></p></td>
 <td><p>Sets the level item. -1 for “level” means current level. Valid “item” is 0-15 (see order of <a class="reference internal" href="../zscript/globals/Game.html#globals-enum-levelitembitflags"><span class="std std-ref">LevelItemBitflags</span></a>). “value” of 0 for false, non-zero for true.</p></td>
 </tr>
-<tr class="row-even"><td><p>136</p></td>
+<tr class="row-odd"><td><p>136</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\RunFrozenGenericScript\generic_script_id\force_redraw\</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\136\generic_script_id\force_redraw</span></code></p></td>
 <td><p>Run the specified generic script, in RunFrozen mode</p></td>
 </tr>
-<tr class="row-odd"><td><p>137</p></td>
+<tr class="row-even"><td><p>137</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\TriggerComboCopycat\copy_cat_id\</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\137\copy_cat_id</span></code></p></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p>153</p></td>
+<tr class="row-odd"><td><p>153</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\KillHero\bypass_revive\</span></code></p></td>
 <td><p><em>not supported</em></p></td>
 <td><p>Kills the player instantly (plays the death animation). If bypass_revive is zero, fairies may prevent death.</p></td>
@@ -878,12 +884,12 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="z3_user_guide.html"
+       href="using_a_tileset.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Z3 User Guide</p>
+        <p class="prev-next-title">Using a tileset</p>
       </div>
     </a>
     <a class="right-next"

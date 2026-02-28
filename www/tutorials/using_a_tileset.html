@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Tutorials &#8212; ZQuest Classic  documentation</title>
+    <title>Using a tileset &#8212; ZQuest Classic  documentation</title>
   
   
   
@@ -45,15 +45,15 @@
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/using_a_tileset';</script>
     <script src="../_static/main.js?v=32ddbf82"></script>
     <script src="../_static/highlight-11.11.1.min.js?v=c8bc1c66"></script>
     <script src="../_static/zscript.js?v=0bdd3061"></script>
     <link rel="icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Using a tileset" href="using_a_tileset.html" />
-    <link rel="prev" title="Playing a Quest" href="../about/how-to-play.html" />
+    <link rel="next" title="Message strings" href="message_strings.html" />
+    <link rel="prev" title="Tutorials" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -146,7 +146,7 @@
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+  <a class="nav-link nav-internal" href="index.html">
     Tutorials
   </a>
 </li>
@@ -239,7 +239,7 @@
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+  <a class="nav-link nav-internal" href="index.html">
     Tutorials
   </a>
 </li>
@@ -278,10 +278,10 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="using_a_tileset.html">Using a tileset</a></li>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Using a tileset</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message_strings.html">Message strings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="z3_user_guide.html">Z3 user guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="z3_user_guide.html">Z3 User Guide</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="websockets.html">Websockets</a></li>
@@ -320,7 +320,10 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Tutorials</span></li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Tutorials</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Using a tileset</span></li>
   </ul>
 </nav>
 </div>
@@ -337,36 +340,53 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="tutorials">
-<h1>Tutorials<a class="headerlink" href="#tutorials" title="Link to this heading">#</a></h1>
-<p>More tutorials coming, soon* :)</p>
-<section id="editor">
-<h2>Editor<a class="headerlink" href="#editor" title="Link to this heading">#</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="using_a_tileset.html">Using a tileset</a></li>
-<li class="toctree-l1"><a class="reference internal" href="message_strings.html">Message strings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="z3_user_guide.html">Z3 user guide</a></li>
-</ul>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We currently have few recent tutorials for how to use the editor, but there are many old ones. Many features have been added since these were written; UI would have changed, and perhaps better approaches for some things exist now. If you need more recent advice, <a class="reference external" href="https://zquestclassic.com/community/">just reach out</a>!</p>
-<p>For now, some recent (but mostly pretty old) tutorials can be found here:</p>
+  <section id="using-a-tileset">
+<h1>Using a tileset<a class="headerlink" href="#using-a-tileset" title="Link to this heading">#</a></h1>
+<p>This tutorial explains how to start using a tileset.</p>
+<p>To start, select the <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span></code> option in the editor (this dialog is also shown when you open the editor for the very first time). This dialog is where you create your own <code class="docutils literal notranslate"><span class="pre">.qst</span></code> file, and this is the time to decide what tileset to use.</p>
+<section id="packaged-tilesets">
+<h2>Packaged tilesets<a class="headerlink" href="#packaged-tilesets" title="Link to this heading">#</a></h2>
+<p>Currently, ZQuest Classic comes packaged with two tilesets: Cambria and Classic.</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.purezc.net/forums/index.php?showforum=152">PureZC Tutorials</a></p></li>
-<li><p><a class="reference external" href="https://web.archive.org/web/20210910193102/https://zeldaclassic.com/wiki">Wiki Archive</a></p></li>
+<li><p>Cambria is a modern tileset based on Zelda 1 with a bunch of custom sprites and quality of life additions.</p></li>
+<li><p>Classic is a tileset which is mostly Zelda 1 sprites. The tileset is simpler.</p></li>
 </ul>
-</div>
+<p>Either option is solid if you just want to get your feet wet with the program. If you can’t decide what to pick, start with Cambria.</p>
 </section>
-<section id="zscript">
-<h2>ZScript<a class="headerlink" href="#zscript" title="Link to this heading">#</a></h2>
-<p>Start learning ZScript <a class="reference internal" href="../zscript/lang/introduction.html"><span class="doc">here</span></a>.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="websockets.html">Websockets</a></li>
+<section id="using-other-tilesets">
+<h2>Using other tilesets<a class="headerlink" href="#using-other-tilesets" title="Link to this heading">#</a></h2>
+<p>Many tilesets can be found on the <a class="reference external" href="https://www.purezc.net/index.php?page=tilesets">PureZC database</a>. To use any of these tilesets:</p>
+<ol class="arabic simple">
+<li><p>Download the <code class="docutils literal notranslate"><span class="pre">.qst</span></code> file from PureZC.</p>
+<ul class="simple">
+<li><p><strong>If the tileset comes in a zip folder, you will need to unzip it!</strong></p></li>
 </ul>
-</div>
+</li>
+<li><p>Create a project folder.</p>
+<ul class="simple">
+<li><p>Not strictly necessary (you can save your <code class="docutils literal notranslate"><span class="pre">.qst</span></code> file anywhere), but it’s good to keep everything for a specific project in one folder. Best to do this from the start.</p></li>
+</ul>
+</li>
+<li><p>Create a new quest file.</p>
+<ul class="simple">
+<li><p>At the top of the screen, select <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">New</span> <span class="pre">&gt;</span> <span class="pre">Choose</span> <span class="pre">from</span> <span class="pre">disk</span></code>.</p></li>
+<li><p>Navigate to the quest file and open it.</p></li>
+<li><p>Save this quest file in your new project folder.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="legacy-method">
+<h2>Legacy method<a class="headerlink" href="#legacy-method" title="Link to this heading">#</a></h2>
+<p>You can always just load the tileset using the <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Open</span></code> dialog.</p>
+<ol class="arabic simple">
+<li><p>Download the tileset.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Open</span></code>, select the tileset <code class="docutils literal notranslate"><span class="pre">.qst</span></code> file.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Save</span> <span class="pre">As</span></code>, save the quest file in your project folder.</p></li>
+</ol>
+<p>Older versions of the program don’t have a dedicated dialog for selecting a tileset, so this is the only option for those releases.</p>
+<hr class="docutils" />
+<p>You are now ready to start building your quest!</p>
 </section>
 </section>
 
@@ -381,20 +401,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../about/how-to-play.html"
+       href="index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Playing a Quest</p>
+        <p class="prev-next-title">Tutorials</p>
       </div>
     </a>
     <a class="right-next"
-       href="using_a_tileset.html"
+       href="message_strings.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Using a tileset</p>
+        <p class="prev-next-title">Message strings</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -417,8 +437,9 @@
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editor">Editor</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zscript">ZScript</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#packaged-tilesets">Packaged tilesets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-other-tilesets">Using other tilesets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legacy-method">Legacy method</a></li>
 </ul>
   </nav></div>
 

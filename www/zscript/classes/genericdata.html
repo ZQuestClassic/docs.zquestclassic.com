@@ -566,7 +566,7 @@
 <section id="enumerations">
 <h2>Enumerations<a class="headerlink" href="#enumerations" title="Link to this heading">#</a></h2>
 <p id="globals-enum-genericscriptstateindex">enum <strong>GenericScriptStateIndex</strong>: <a class="reference internal" href="#globals-enum-genericscriptstateindex"><span class="std std-ref">🔗</span></a>
-<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/dd3548fd0a286c4be6d6429b5cbff7d76e59f2d4/resources/include/bindings/genericdata.zh#L2">Source</a></p>
+<a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/c61d4bdd505b8feb9aabb1040deea5da98785733/resources/include/bindings/genericdata.zh#L2">Source</a></p>
 <p class="classref-comment">Used with <a class="reference internal" href="#classes-genericdata-var-exitstate"><span class="std std-ref">genericdata::ExitState[]</span></a> and <a class="reference internal" href="#classes-genericdata-var-reloadstate"><span class="std std-ref">genericdata::ReloadState[]</span></a>.</p>
 <p class="classref-enumeration-constant" id="globals-enum-member-genscr-st-reload"><a class="reference internal" href="#globals-enum-genericscriptstateindex"><span class="std std-ref">GenericScriptStateIndex</span></a> <strong>GENSCR_ST_RELOAD</strong> = <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
 <p class="classref-comment">When reloading from save select screen</p>
@@ -583,41 +583,41 @@
 <hr class="classref-item-separator docutils" />
 <section id="variable-descriptions">
 <h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p id="classes-genericdata-var-running">bool <strong>Running</strong>  <a class="reference internal" href="#classes-genericdata-var-running"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/dd3548fd0a286c4be6d6429b5cbff7d76e59f2d4/resources/include/bindings/genericdata.zh#L25">Source</a></p>
+<p id="classes-genericdata-var-running">bool <strong>Running</strong>  <a class="reference internal" href="#classes-genericdata-var-running"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/c61d4bdd505b8feb9aabb1040deea5da98785733/resources/include/bindings/genericdata.zh#L25">Source</a></p>
 <p class="classref-comment">True if the script is currently running passively.
 Set to false to stop it.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-genericdata-var-datasize"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DataSize</strong>  <a class="reference internal" href="#classes-genericdata-var-datasize"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/dd3548fd0a286c4be6d6429b5cbff7d76e59f2d4/resources/include/bindings/genericdata.zh#L32">Source</a></p>
+<p id="classes-genericdata-var-datasize"><abbr title="Not really an integer. In ZScript, int stores a fixed-position decimal number. For real integers, use the 'long' type.">int</abbr> <strong>DataSize</strong>  <a class="reference internal" href="#classes-genericdata-var-datasize"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/c61d4bdd505b8feb9aabb1040deea5da98785733/resources/include/bindings/genericdata.zh#L32">Source</a></p>
 <p class="classref-comment">The size of the script’s <a class="reference internal" href="#classes-genericdata-var-data"><span class="std std-ref">Data[]</span></a> (see below). Writing this
 resizes the array, where any area above the previous maximum is cleared
 to <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-genericdata-var-exitstate">bool[] <strong>ExitState</strong>  <a class="reference internal" href="#classes-genericdata-var-exitstate"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/dd3548fd0a286c4be6d6429b5cbff7d76e59f2d4/resources/include/bindings/genericdata.zh#L38">Source</a></p>
+<p id="classes-genericdata-var-exitstate">bool[] <strong>ExitState</strong>  <a class="reference internal" href="#classes-genericdata-var-exitstate"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/c61d4bdd505b8feb9aabb1040deea5da98785733/resources/include/bindings/genericdata.zh#L38">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="#globals-enum-genericscriptstateindex"><span class="std std-ref">GenericScriptStateIndex (GENSCR_ST_)</span></a></p>
 <p class="classref-comment">Arrays of exit and reload conditions. All states default to <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-genericdata-var-reloadstate">bool[] <strong>ReloadState</strong>  <a class="reference internal" href="#classes-genericdata-var-reloadstate"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/dd3548fd0a286c4be6d6429b5cbff7d76e59f2d4/resources/include/bindings/genericdata.zh#L44">Source</a></p>
+<p id="classes-genericdata-var-reloadstate">bool[] <strong>ReloadState</strong>  <a class="reference internal" href="#classes-genericdata-var-reloadstate"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/c61d4bdd505b8feb9aabb1040deea5da98785733/resources/include/bindings/genericdata.zh#L44">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="#globals-enum-genericscriptstateindex"><span class="std std-ref">GenericScriptStateIndex (GENSCR_ST_)</span></a></p>
 <p class="classref-comment">Arrays of exit and reload conditions. All states default to <code class="docutils literal notranslate"><span class="pre">false</span></code>.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-genericdata-var-eventlisten">bool[] <strong>EventListen</strong>  <a class="reference internal" href="#classes-genericdata-var-eventlisten"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/dd3548fd0a286c4be6d6429b5cbff7d76e59f2d4/resources/include/bindings/genericdata.zh#L52">Source</a></p>
+<p id="classes-genericdata-var-eventlisten">bool[] <strong>EventListen</strong>  <a class="reference internal" href="#classes-genericdata-var-eventlisten"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/c61d4bdd505b8feb9aabb1040deea5da98785733/resources/include/bindings/genericdata.zh#L52">Source</a></p>
 <p class="classref-comment"><code class="docutils literal notranslate"><span class="pre">index</span></code> <a class="reference internal" href="../globals/constants.html#globals-enum-genericscriptevent"><span class="std std-ref">GenericScriptEvent (GENSCR_EVENT_)</span></a></p>
 <p class="classref-comment">Array of event listener conditions. When <a class="reference internal" href="../globals/functions.html#globals-fun-waitevent"><span class="std std-ref">WaitEvent()</span></a> is called, the
 script will wait until any event which has a value of ‘true’ in this
 array occurs.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-genericdata-var-data"><abbr title="Could be any type.">untyped</abbr>[] <strong>Data</strong>  <a class="reference internal" href="#classes-genericdata-var-data"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/dd3548fd0a286c4be6d6429b5cbff7d76e59f2d4/resources/include/bindings/genericdata.zh#L58">Source</a></p>
+<p id="classes-genericdata-var-data"><abbr title="Could be any type.">untyped</abbr>[] <strong>Data</strong>  <a class="reference internal" href="#classes-genericdata-var-data"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/c61d4bdd505b8feb9aabb1040deea5da98785733/resources/include/bindings/genericdata.zh#L58">Source</a></p>
 <p class="classref-comment">A misc data array, resizable by writing to <a class="reference internal" href="#classes-genericdata-var-datasize"><span class="std std-ref">DataSize</span></a> (see above). All
 indexes are saved with the save file, including any resizing.</p>
 <hr class="classref-item-separator docutils" />
-<p id="classes-genericdata-var-initd"><abbr title="Could be any type.">untyped</abbr>[] <strong>InitD</strong>  <a class="reference internal" href="#classes-genericdata-var-initd"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/dd3548fd0a286c4be6d6429b5cbff7d76e59f2d4/resources/include/bindings/genericdata.zh#L64">Source</a></p>
+<p id="classes-genericdata-var-initd"><abbr title="Could be any type.">untyped</abbr>[] <strong>InitD</strong>  <a class="reference internal" href="#classes-genericdata-var-initd"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/c61d4bdd505b8feb9aabb1040deea5da98785733/resources/include/bindings/genericdata.zh#L64">Source</a></p>
 <p class="classref-comment">The 8 InitD[] parameters for the generic script. Shared by passive and
 frozen run modes.</p>
 </section>
 <hr class="classref-item-separator docutils" />
 <section id="function-descriptions">
 <h2>Function descriptions<a class="headerlink" href="#function-descriptions" title="Link to this heading">#</a></h2>
-<p class="classref-method" id="classes-genericdata-fun-runfrozen">bool <strong>RunFrozen</strong>() <a class="reference internal" href="#classes-genericdata-fun-runfrozen"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/dd3548fd0a286c4be6d6429b5cbff7d76e59f2d4/resources/include/bindings/genericdata.zh#L71">Source</a></p>
+<p class="classref-method" id="classes-genericdata-fun-runfrozen">bool <strong>RunFrozen</strong>() <a class="reference internal" href="#classes-genericdata-fun-runfrozen"><span class="std std-ref">🔗</span></a> <a class="reference external" href="https://github.com/ZQuestClassic/ZQuestClassic/blob/c61d4bdd505b8feb9aabb1040deea5da98785733/resources/include/bindings/genericdata.zh#L71">Source</a></p>
 <p class="classref-comment">Attempt to run the generic script in frozen mode.</p>
 </section>
 </section>
